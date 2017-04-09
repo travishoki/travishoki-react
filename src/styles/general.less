@@ -1,0 +1,132 @@
+body {
+    background: @gray-three;
+    color: @white;
+    a {
+        cursor: pointer;
+        color: @white;
+    }
+    p, a, li {
+        font-weight: 16px;
+    }
+    div, section {
+        &.center {
+            text-align: center;
+        }
+        &.bold {
+            font-weight: bold;
+        }
+    }
+    img {
+        max-width: 100%;
+        &.center {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    section {
+        padding: 20px;
+        &.white {
+            background: @white;
+            color: @gray-two;
+        }
+        &.primary {
+            background: @primary;
+            color: @white;
+        }
+        h3 {
+            margin: 0 0 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    .boxed {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 10px;
+        &.boxed-sm {
+            max-width: 300px;
+        }
+        &.boxed-md {
+            max-width: 600px;
+        }
+    }
+    #container {
+        margin: 20px 0;
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+    }
+}
+body.home {
+    #container {
+        margin: 0;
+    }
+}
+
+
+ul.staggered {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        overflow: hidden;
+        margin: 20px 0;
+        position: relative;
+        min-height: 200px;
+        @media (max-width: 767px) {
+            max-width: 320px;
+            margin: 0 auto 40px;
+            display: block;
+            .text {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        @media (min-width: 768px) {
+            .image {
+                position: absolute;
+                top: 0;
+                width: 200px;
+            }
+            .text {
+                padding: 10px;
+                width: 100%;
+            }
+            &:nth-child(even) {
+                .image {
+                    right: 0;
+                }
+                .text {
+                    float: left;
+                    padding-right: 220px;
+                }
+            }
+            &:nth-child(odd) {
+                .image {
+                    left: 0;
+                }
+                .text {
+                    float: right;
+                    padding-left: 220px;
+                }
+            }
+        }
+        li {
+            min-height: auto;
+            list-style: disc;
+            margin: 2px 0;
+        }
+    }
+}
+
+form {
+    input, textarea {
+        &.form-control {
+            border: none;
+            background: @gray-two;
+        }
+    }
+}

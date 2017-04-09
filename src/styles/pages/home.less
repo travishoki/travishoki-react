@@ -1,0 +1,42 @@
+.contact-info {
+    margin-top: 50px;
+    .social-icons {
+        margin: 20px auto;
+    }
+    .btn {
+        display: block;
+        max-width: 200px;
+        margin: 20px auto 0;
+    }
+}
+img.profile-pic {
+    @media (max-width: 767px) {
+        margin-top: 30px;
+    }
+    @media (min-width: 768px) {
+        max-height: 300px;
+    }
+}
+
+section {
+    &.experience {
+        .boxed {
+            li {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &.education {
+        img {
+            margin: 20px auto;
+        }
+        p {
+            font-size: 24px;
+            margin: 0;
+            &.degree {
+                font-weight: bold;
+            }
+        }
+    }
+}
