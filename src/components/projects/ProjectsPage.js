@@ -2,8 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 import Projects from './ProjectsData';
 
-const imgOvestock = require('../../../images/websites/overstock-thumbnail.jpg');
-
 class ProjectsPage extends React.Component {
   render() {
     return (
@@ -19,7 +17,7 @@ class ProjectsPage extends React.Component {
                             </div>
                             <div className="row">
                                 <div className="col-sm-6">
-                                    <img src={imgOvestock}/>
+                                    <img src={project.img}/>
                                 </div>
                                 <div className="col-sm-6">
                                     <p>{project.desc}</p>
