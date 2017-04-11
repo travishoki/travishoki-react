@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import ResumeData from './ResumeData';
+import Education from '../common/Education';
 
 const imgResume = require('../../../images/resume/resume.jpg');
 
@@ -44,6 +45,7 @@ class ResumePage extends React.Component {
                     })}
                 </ul>
             </div>
+            <Education />
         </div>
     );
   }

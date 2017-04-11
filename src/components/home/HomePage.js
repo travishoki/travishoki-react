@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Projects from '../projects/ProjectsData';
+import Education from '../common/Education';
 
 import SocialIcons from '../common/SocialIcons';
 
-const img_uvu = require('../../../images/home/uvu.png');
 const img_profile_pic = require('../../../images/home/travis-hoki.jpg');
 const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons-filters.png');
 
@@ -71,14 +71,7 @@ class HomePage extends React.Component {
                     </div>
                 </div>
             </section>
-
-            <section className="white center education">
-                <h3>Utah Valley University</h3>
-                <img className="center" src={img_uvu}/>
-                <p>Digital Media Major</p>
-                <p className="degree">Bachelor of Science</p>
-                <p>Internet Technology Emphasis</p>
-            </section>
+            <Education />
       </div>
     );
   }
