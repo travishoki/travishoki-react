@@ -7,13 +7,13 @@
 
 /* Components */
 @import "components/buttons.less";
+@import "components/staggeredList.less";
 @import "components/header.less";
 @import "components/footer.less";
 @import "components/social-icons.less";
 
 /* Pages */
-#container {
-    @import "pages/home.less";
-    @import "pages/projects.less";
-    @import "pages/resume.less";
-}
+#container.about      { @import "pages/about.less";       }
+#container.home       { @import "pages/home.less";        }
+#container.projects   { @import "pages/projects.less";    }
+#container.resume     { @import "pages/resume.less";      }
