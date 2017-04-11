@@ -2,22 +2,38 @@
     background: @secondary;
     color: @white;
     overflow: hidden;
-    height: 60px;
+    @media (max-width: 767px) {
+    }
+    @media (min-width: 768px) {
+        height: 60px;
+    }
     h1 {
-        float: left;
         line-height: 60px;
         margin: 0;
         padding: 0;
+        @media (max-width: 767px) {
+        }
+        @media (min-width: 768px) {
+            float: left;
+        }
         a {
             color: @white;
             text-decoration: none;
         }
     }
     .nav {
-        float: right;
+        @media (max-width: 767px) {
+        }
+        @media (min-width: 768px) {
+            float: right;
+        }
         li {
             line-height: 60px;
-            float: left;
+            @media (max-width: 767px) {
+            }
+            @media (min-width: 768px) {
+                float: left;
+            }
             a {
                 font-weight: bold;
                 padding: 0 20px;

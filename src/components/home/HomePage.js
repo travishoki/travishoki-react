@@ -6,6 +6,7 @@ import SocialIcons from '../common/SocialIcons';
 
 const img_uvu = require('../../../images/home/uvu.png');
 const img_profile_pic = require('../../../images/home/travis-hoki.jpg');
+const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons-filters.png');
 
 class HomePage extends React.Component {
   render() {
@@ -21,28 +22,28 @@ class HomePage extends React.Component {
                 <img className="profile-pic" src={img_profile_pic}/>
             </div>
 
-            <section className="white">
-                <h3>Skills</h3>
+            <section className="white skills">
+                <img src={img_tech_icons} className="center"/>
             </section>
 
             <section className="projects">
                 <h3>Projects</h3>
                 <div className="boxed boxed-lg">
-                    <div className="row">
+                    <ul>
                         {currentProjects.map((project, index)=>{
                             return (
-                                <div key={index} className="col-sm-4">
+                                <li key={index}>
                                     <div className="project-header">
                                         <div className="project-header-inner">
                                             <h2>{project.title}</h2>
                                             <h3>{project.subtitle}</h3>
                                         </div>
                                     </div>
-                                    <img src={project.img}/>
-                                </div>
+                                    <img src={project.imgThumb}/>
+                                </li>
                             );
                         })}
-                    </div>
+                    </ul>
                     <Link to="/projects" activeClassName="active" className="btn btn-primary btn-lg">Check Them Out</Link>
                 </div>
             </section>
