@@ -45,8 +45,19 @@ const imgSouthamConsulting = require('../../../images/websites/southam-consultin
 const ProjectsData = [
     {
         title: 'Overstock.com',
+        subtitle: 'Rewards for Reviews',
+        url: 'http://www.overstock.com/',
+        desc: 'Reward users for leaving a qualifying review.',
+        imgThumb: imgOvestockThumb,
+        img: imgOvestock,
+        contributions: ['Coordinate deployments with multiple departments.'],
+        techs: ['HTML','LESS-CSS','JavaScript','jQuery'],
+        live: true
+    },
+    {
+        title: 'Overstock.com',
         subtitle: 'Reviews breakout',
-        url: 'http://overstock.com/',
+        url: 'http://www.overstock.com/',
         desc: 'Allowing a user to leave rating only reviews.',
         imgThumb: imgOvestockThumb,
         img: imgOvestock,
@@ -57,7 +68,7 @@ const ProjectsData = [
     {
         title: 'Truly Lindsey Photography',
         subtitle: '',
-        url: 'http://trulylindseyphotography.com/',
+        url: 'http://www.trulylindseyphotography.com/',
         desc: 'Truly Lindsey Photography is my wife\'s photography company. I am helping to brand her company.',
         imgThumb: imgTrulyLindseyPhotographyThumb,
         img: imgTrulyLindseyPhotography,
@@ -68,7 +79,7 @@ const ProjectsData = [
     {
         title: 'Room Choice',
         subtitle: '',
-        url: 'http://roomchoice.com/',
+        url: 'http://www.roomchoice.com/',
         desc: 'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
         imgThumb: imgRoomChoiceThumb,
         img: imgRoomChoice,
@@ -79,7 +90,7 @@ const ProjectsData = [
     {
         title: 'Rooke Capital Management',
         subtitle: '',
-        url: 'http://rookecapital.com/',
+        url: 'http://www.rookecapital.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         imgThumb: imgRookeCapitalManagementThumb,
         img: imgRookeCapitalManagement,
@@ -90,7 +101,7 @@ const ProjectsData = [
     {
         title: 'RGDJanitorial',
         subtitle: '',
-        url: 'http://rgdjanitorial.com/',
+        url: 'http://www.rgdjanitorial.com/',
         desc: 'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
         imgThumb: imgRgdjanitorialThumb,
         img: imgRgdjanitorial,
@@ -101,7 +112,7 @@ const ProjectsData = [
     {
         title: 'Wedding Website',
         subtitle: '',
-        url: 'http://wedding.hokihappenings.com/',
+        url: 'http://www.wedding.hokihappenings.com/',
         desc: 'This is the wedding website that I made for my wedding.',
         imgThumb: imgWeddingThumb,
         img: imgWedding,
@@ -112,7 +123,7 @@ const ProjectsData = [
     {
         title: 'Eric Aroca',
         subtitle: '',
-        url: 'http://ericaroca.com/',
+        url: 'http://www.ericaroca.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         imgThumb: imgEricArocaThumb,
         img: imgEricAroca,
@@ -123,7 +134,7 @@ const ProjectsData = [
     {
         title: 'Saints and Sinners Half Marathon and Team Relay',
         subtitle: '',
-        url: 'http://saintsandsinnershalf.com/',
+        url: 'http://www.saintsandsinnershalf.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         imgThumb: imgSaintsAndSinnersThumb,
         img: imgSaintsAndSinners,
@@ -145,7 +156,7 @@ const ProjectsData = [
     {
         title: 'Creative Media Education',
         subtitle: '',
-        url: 'http://cmeducation.org/',
+        url: 'http://www.cmeducation.org/',
         desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
         imgThumb: imgCreativeMediaEducationThumb,
         img: imgCreativeMediaEducation,
@@ -156,7 +167,7 @@ const ProjectsData = [
     {
         title: 'LavaVolt',
         subtitle: '',
-        url: 'http://lavavolt.com',
+        url: 'http://www.lavavolt.com',
         desc: 'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
         imgThumb: imgLavavoltThumb,
         img: imgLavavolt,
@@ -167,7 +178,7 @@ const ProjectsData = [
     {
         title: 'Enspark LMS',
         subtitle: '',
-        url: 'http://lms.enspark.com',
+        url: 'http://www.lms.enspark.com',
         desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
         imgThumb: imgEnsparkLmsThumb,
         img: imgEnsparkLms,
@@ -178,7 +189,7 @@ const ProjectsData = [
     {
         title: 'First Mile',
         subtitle: '',
-        url: 'http://enspark.net/internationalfulfillment/',
+        url: 'http://www.enspark.net/internationalfulfillment/',
         desc: 'We provide discounted integrated solutions to ship your products or your customers products for less money.',
         imgThumb: imgFirstMileThumb,
         img: imgFirstMile,
@@ -189,7 +200,7 @@ const ProjectsData = [
     {
         title: 'The Putting Tour',
         subtitle: '',
-        url: 'http://theputtingtour.com',
+        url: 'http://www.theputtingtour.com',
         desc: 'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
         imgThumb: imgThePuttingTourThumb,
         img: imgThePuttingTour,
@@ -200,7 +211,7 @@ const ProjectsData = [
     {
         title: 'WinInsights',
         subtitle: '',
-        url: 'http://wininsights.com',
+        url: 'http://www.wininsights.com',
         desc: 'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
         imgThumb: imgWininsightsThumb,
         img: imgWininsights,
@@ -211,7 +222,7 @@ const ProjectsData = [
     {
         title: 'Barrier Pest Control',
         subtitle: '',
-        url: 'http://barrierpc.com',
+        url: 'http://www.barrierpc.com',
         desc: 'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
         imgThumb: imgBarrierThumb,
         img: imgBarrier,
@@ -222,7 +233,7 @@ const ProjectsData = [
     {
         title: 'Enspark',
         subtitle: '',
-        url: 'http://enspark.com',
+        url: 'http://www.enspark.com',
         desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
         imgThumb: imgEnsparkThumb,
         img: imgEnspark,
@@ -233,7 +244,7 @@ const ProjectsData = [
     {
         title: 'Utah Casa',
         subtitle: '',
-        url: 'http://utahcasa.org/',
+        url: 'http://www.utahcasa.org/',
         desc: 'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
         imgThumb: imgUtahCasaThumb,
         img: imgUtahCasa,
@@ -244,7 +255,7 @@ const ProjectsData = [
     {
         title: 'Paradigm Life',
         subtitle: '',
-        url: 'http://paradigmlife.net/',
+        url: 'http://www.paradigmlife.net/',
         desc: 'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
         imgThumb: imgParadigmLifeThumb,
         img: imgParadigmLife,
@@ -255,7 +266,7 @@ const ProjectsData = [
     {
         title: 'Debt Free Planning',
         subtitle: '',
-        url: 'http://debt-free-planning.com',
+        url: 'http://www.debt-free-planning.com',
         desc: 'Get a Free Online Report and recommended solution to your debt problem.',
         imgThumb: imgDebtFreePlanningThumb,
         img: imgDebtFreePlanning,
@@ -266,7 +277,7 @@ const ProjectsData = [
     {
         title: 'Southam Consulting',
         subtitle: '',
-        url: 'http://southamconsulting.net',
+        url: 'http://www.southamconsulting.net',
         desc: 'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
         imgThumb: imgSouthamConsultingThumb,
         img: imgSouthamConsulting,

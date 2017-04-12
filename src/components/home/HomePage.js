@@ -44,7 +44,7 @@ class HomePage extends React.Component {
                             );
                         })}
                     </ul>
-                    <Link to="/projects" activeClassName="active" className="btn btn-primary btn-lg">Check Them Out</Link>
+                    <Link to="/projects" activeClassName="active" className="btn btn-primary btn-lg">View All Projects</Link>
                 </div>
             </section>
 

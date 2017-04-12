@@ -41,7 +41,7 @@ class ProjectsPage extends React.Component {
                                     </div>
                                 </div>
                                 {project.live &&
-                                    <a href="{project.url}" className="btn btn-primary btn-lg">View Live Site</a>
+                                    <a href={project.url} className="btn btn-primary btn-lg" target="_blank">View Live Site</a>
                                 }
                             </li>
                         );
