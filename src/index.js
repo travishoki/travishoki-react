@@ -6,6 +6,7 @@ import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
+import '../node_modules/font-awesome/less/font-awesome.less';
 import '../node_modules/bootstrap/less/bootstrap.less';
 import './styles/styles.less';
 
