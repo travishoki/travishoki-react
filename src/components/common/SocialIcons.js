@@ -5,17 +5,17 @@ const SocialIcons = () => {
       <ul className="social-icons">
           <li>
               <a href="https://github.com/travishoki/" target="_blank" title="Travis's Github">
-                  <i className="fa fa-git"></i>
+                  <i className="circ-sm fa fa-git"></i>
               </a>
           </li>
           <li>
               <a href="https://www.linkedin.com/in/travishoki" target="_blank" title="Travis's Linked In">
-                  <i className="fa fa-linkedin"></i>
+                  <i className="circ-sm fa fa-linkedin"></i>
               </a>
           </li>
           <li>
               <a href="http://codepen.io/travis-hoki/" target="_blank" title="Travis's Codepen">
-                  <i className="fa fa-codepen"></i>
+                  <i className="circ-sm fa fa-codepen"></i>
               </a>
           </li>
       </ul>
