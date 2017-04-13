@@ -25,11 +25,6 @@ export default {
     ],
     module: {
         loaders: [
-            {test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, loader: 'url-loader'},
-
-            {test: /\.css$/, loader: "style!css!"},
-            {test: /\.less$/, loader: "style!css!less!"},
-
             {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
             {test: /\.(jpg|png)$/, loaders: ['file']},
             {test: /(\.less)$/, loaders: ['style', 'css', 'less']},
@@ -40,7 +35,6 @@ export default {
             //font-awesome
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
             { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
-
         ]
     }
 };
