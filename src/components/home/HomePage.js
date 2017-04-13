@@ -17,7 +17,7 @@ class HomePage extends React.Component {
                 <div className="contact-info">
                     <h1>Web Developer</h1>
                     <SocialIcons/>
-                    <a className="btn btn-primary btn-lg" ng-click="setRoute('contact')">Contact Me</a>
+                    <Link className="btn btn-primary btn-lg" to="/contact">Contact Me</Link>
                 </div>
                 <img className="profile-pic" src={img_profile_pic}/>
             </div>
