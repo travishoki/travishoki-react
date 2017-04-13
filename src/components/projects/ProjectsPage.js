@@ -21,6 +21,7 @@ class ProjectsPage extends React.Component {
                                         <img src={project.img}/>
                                     </div>
                                     <div className="col-sm-6">
+                                        <img src={project.imgLogo} className="logo center"/>
                                         <p>{project.desc}</p>
                                         <p className="list-heading">Contributions</p>
                                         <ul>

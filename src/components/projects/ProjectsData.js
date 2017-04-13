@@ -42,12 +42,35 @@ const imgParadigmLife = require('../../../images/websites/paradigm-life.jpg');
 const imgDebtFreePlanning = require('../../../images/websites/debt-free-planning.jpg');
 const imgSouthamConsulting = require('../../../images/websites/southam-consulting.jpg');
 
+const imgOvestockLogo = require('../../../images/clients/overstock.jpg');
+const imgTrulyLindseyPhotographyLogo = require('../../../images/clients/truly-lindsey-photography.jpg');
+const imgRoomChoiceLogo = require('../../../images/clients/roomchoice.jpg');
+const imgRookeCapitalManagementLogo = require('../../../images/clients/rooke-capital-management.jpg');
+const imgRgdjanitorialLogo = require('../../../images/clients/rgdjanitorial.jpg');
+const imgWeddingLogo = require('../../../images/clients/wedding.jpg');
+const imgEricArocaLogo = require('../../../images/clients/eric-aroca.jpg');
+const imgSaintsAndSinnersLogo = require('../../../images/clients/saints-and-sinners.jpg');
+const imgNewLifeRecoveryLogo = require('../../../images/clients/new-life-recovery.jpg');
+const imgCreativeMediaEducationLogo = require('../../../images/clients/creative-media-education.jpg');
+const imgLavavoltLogo = require('../../../images/clients/lavavolt.jpg');
+const imgEnsparkLmsLogo = require('../../../images/clients/enspark-lms.jpg');
+const imgFirstMileLogo = require('../../../images/clients/first-mile.jpg');
+const imgThePuttingTourLogo = require('../../../images/clients/the-putting-tour.jpg');
+const imgWininsightsLogo = require('../../../images/clients/wininsights.jpg');
+const imgBarrierLogo = require('../../../images/clients/barrier.jpg');
+const imgEnsparkLogo = require('../../../images/clients/enspark.jpg');
+const imgUtahCasaLogo = require('../../../images/clients/utah-casa.jpg');
+const imgParadigmLifeLogo = require('../../../images/clients/paradigm-life.jpg');
+const imgDebtFreePlanningLogo = require('../../../images/clients/debt-free-planning.jpg');
+const imgSouthamConsultingLogo = require('../../../images/clients/southam-consulting.jpg');
+
 const ProjectsData = [
     {
         title: 'Overstock.com',
         subtitle: 'Rewards for Reviews',
         url: 'http://www.overstock.com/',
         desc: 'Reward users for leaving a qualifying review.',
+        imgLogo: imgOvestockLogo,
         imgThumb: imgOvestockThumb,
         img: imgOvestock,
         contributions: ['Coordinate deployments with multiple departments.'],
@@ -59,6 +82,7 @@ const ProjectsData = [
         subtitle: 'Reviews breakout',
         url: 'http://www.overstock.com/',
         desc: 'Allowing a user to leave rating only reviews.',
+        imgLogo: imgOvestockLogo,
         imgThumb: imgOvestockThumb,
         img: imgOvestock,
         contributions: ['Coordinate deployments with multiple departments.'],
@@ -70,6 +94,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.trulylindseyphotography.com/',
         desc: 'Truly Lindsey Photography is my wife\'s photography company. I am helping to brand her company.',
+        imgLogo: imgTrulyLindseyPhotographyLogo,
         imgThumb: imgTrulyLindseyPhotographyThumb,
         img: imgTrulyLindseyPhotography,
         contributions: ['Wordpress customization, design and branding.'],
@@ -81,6 +106,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.roomchoice.com/',
         desc: 'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
+        imgLogo: imgRoomChoiceLogo,
         imgThumb: imgRoomChoiceThumb,
         img: imgRoomChoice,
         contributions: ['Full Stack Development','Django and python','Restful API calls.'],
@@ -92,6 +118,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.rookecapital.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
+        imgLogo: imgRookeCapitalManagementLogo,
         imgThumb: imgRookeCapitalManagementThumb,
         img: imgRookeCapitalManagement,
         contributions: ['Creationg of registration form','authorize.net intergration','customization of WordPress theme.'],
@@ -103,6 +130,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.rgdjanitorial.com/',
         desc: 'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
+        imgLogo: imgRgdjanitorialLogo,
         imgThumb: imgRgdjanitorialThumb,
         img: imgRgdjanitorial,
         contributions: ['Wordpress theme customization','WP Advanced Custom Fields','Design'],
@@ -114,6 +142,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.wedding.hokihappenings.com/',
         desc: 'This is the wedding website that I made for my wedding.',
+        imgLogo: imgWeddingLogo,
         imgThumb: imgWeddingThumb,
         img: imgWedding,
         contributions: ['Site design and development'],
@@ -125,6 +154,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.ericaroca.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
+        imgLogo: imgEricArocaLogo,
         imgThumb: imgEricArocaThumb,
         img: imgEricAroca,
         contributions: ['Creationg of registration form','customization of WordPress theme.'],
@@ -136,6 +166,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.saintsandsinnershalf.com/',
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
+        imgLogo: imgSaintsAndSinnersLogo,
         imgThumb: imgSaintsAndSinnersThumb,
         img: imgSaintsAndSinners,
         contributions: ['Creationg of registration form, authorize.net intergration|customization of WordPress theme.'],
@@ -147,6 +178,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.newlife-recovery.org/',
         desc: 'Creative Media Group is a full service media production house based in Orem|Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
+        imgLogo: imgNewLifeRecoveryLogo,
         imgThumb: imgNewLifeRecoveryThumb,
         img: imgNewLifeRecovery,
         contributions: ['Customization of WordPress theme.'],
@@ -158,6 +190,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.cmeducation.org/',
         desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
+        imgLogo: imgCreativeMediaEducationLogo,
         imgThumb: imgCreativeMediaEducationThumb,
         img: imgCreativeMediaEducation,
         contributions: ['Stripe Integration|Front-end and Back-end|integrating courses the custom LMS.'],
@@ -169,6 +202,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.lavavolt.com',
         desc: 'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
+        imgLogo: imgLavavoltLogo,
         imgThumb: imgLavavoltThumb,
         img: imgLavavolt,
         contributions: ['All of the back-end|everything from user accounts, to film uploading, to querying from the film library.'],
@@ -180,6 +214,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.lms.enspark.com',
         desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
+        imgLogo: imgEnsparkLmsLogo,
         imgThumb: imgEnsparkLmsThumb,
         img: imgEnsparkLms,
         contributions: ['Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jQuery AJAX.'],
@@ -191,6 +226,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.enspark.net/internationalfulfillment/',
         desc: 'We provide discounted integrated solutions to ship your products or your customers products for less money.',
+        imgLogo: imgFirstMileLogo,
         imgThumb: imgFirstMileThumb,
         img: imgFirstMile,
         contributions: ['All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.'],
@@ -202,6 +238,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.theputtingtour.com',
         desc: 'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
+        imgLogo: imgThePuttingTourLogo,
         imgThumb: imgThePuttingTourThumb,
         img: imgThePuttingTour,
         contributions: ['Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.'],
@@ -213,6 +250,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.wininsights.com',
         desc: 'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
+        imgLogo: imgWininsightsLogo,
         imgThumb: imgWininsightsThumb,
         img: imgWininsights,
         contributions: ['Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several WordPress pages.'],
@@ -224,6 +262,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.barrierpc.com',
         desc: 'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
+        imgLogo: imgBarrierLogo,
         imgThumb: imgBarrierThumb,
         img: imgBarrier,
         contributions: ["Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the WordPress site, fixing styles and updating images. "],
@@ -235,6 +274,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.enspark.com',
         desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
+        imgLogo: imgEnsparkLogo,
         imgThumb: imgEnsparkThumb,
         img: imgEnspark,
         contributions: ['Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.'],
@@ -246,6 +286,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.utahcasa.org/',
         desc: 'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
+        imgLogo: imgUtahCasaLogo,
         imgThumb: imgUtahCasaThumb,
         img: imgUtahCasa,
         contributions: ['Helped to fix the blog functionality and structure in WordPress as well as front-end fixes.'],
@@ -257,6 +298,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.paradigmlife.net/',
         desc: 'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
+        imgLogo: imgParadigmLifeLogo,
         imgThumb: imgParadigmLifeThumb,
         img: imgParadigmLife,
         contributions: ['Helped with the WordPress theme and structure architecture.'],
@@ -268,6 +310,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.debt-free-planning.com',
         desc: 'Get a Free Online Report and recommended solution to your debt problem.',
+        imgLogo: imgDebtFreePlanningLogo,
         imgThumb: imgDebtFreePlanningThumb,
         img: imgDebtFreePlanning,
         contributions: ['Front-end construction. Creating a email form for user information requests.'],
@@ -279,6 +322,7 @@ const ProjectsData = [
         subtitle: '',
         url: 'http://www.southamconsulting.net',
         desc: 'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
+        imgLogo: imgSouthamConsultingLogo,
         imgThumb: imgSouthamConsultingThumb,
         img: imgSouthamConsulting,
         contributions: ['Creating a email form for user information requests. Other front-end fixes.'],

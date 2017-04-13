@@ -14,7 +14,7 @@
 }
 p {
     &.list-heading {
-        margin: 10px 0 0;        
+        margin: 10px 0 0;
     }
 }
 ul.projects {
@@ -25,6 +25,17 @@ ul.projects {
         border-top: solid 1px @gray-one;
         padding: 20px 0;
         margin: 20px 0;
+        img {
+            &.logo {
+                .border-radius(50%);
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+        }
+        ul {
+            list-style: disc;
+        }
     }
 }
 .btn {
