@@ -21,11 +21,24 @@
             text-decoration: none;
         }
     }
+    .mobileMenuIcon {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 30px;
+        line-height: 60px;
+        cursor: pointer;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
     .nav {
         @media (max-width: 767px) {
+            display: none;
         }
         @media (min-width: 768px) {
             float: right;
+            display: block!important;
         }
         li {
             line-height: 60px;

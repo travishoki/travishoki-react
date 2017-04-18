@@ -1,16 +1,14 @@
 // This component handles the App template used on every page.
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import Header from './common/Header';
 import Footer from './common/Footer';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header
-          loading={this.props.loading}
-        />
+        <Header/>
         {this.props.children}
         <Footer />
       </div>
