@@ -22,7 +22,7 @@ class Header extends React.Component {
                         <i className="fa fa-bars mobileMenuIcon" onClick={this.toggleMobileMenu} />
                     </div>
 
-                    <ul className={'nav ' + (this.state.showResults ? 'show' : 'hide')}>
+                    <ul className={'nav ' + (this.state.showResults ? 'slide-down' : 'slide-up')}>
                         <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
                         <li><Link to="/projects" activeClassName="active">Projects</Link></li>
                         <li><Link to="/resume" activeClassName="active">Resume</Link></li>
