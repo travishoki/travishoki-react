@@ -2,11 +2,26 @@ import React from 'react';
 import { Link } from 'react-router';
 import Projects from '../projects/ProjectsData';
 import Education from '../common/Education';
+import ListSection from '../common/ListSection';
 
 import SocialIcons from '../common/SocialIcons';
 
 const img_profile_pic = require('../../../images/home/travis-hoki.jpg');
 const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons-filters.png');
+
+const experienceYears = new Date().getFullYear()-2011;
+
+const skillsList = [
+    'Preprocessed CSS (Less and SCSS)',
+    'Responsive CSS with Media Queries',
+    'JavaScript and CoffeeScript',
+    'JavaScript Framework in Angular',
+
+    'Small and Large business experience',
+    'Content Management Systems',
+    'Custom Wordpress Themes',
+    'SQL and restful API integration'
+];
 
 class HomePage extends React.Component {
   render() {
@@ -48,29 +63,8 @@ class HomePage extends React.Component {
                 </div>
             </section>
 
-            <section className="primary experience">
-                <h3>5+ Years Experience</h3>
-                <div className="boxed boxed-md">
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <ul>
-                                <li>Preprocessed CSS (Less and SCSS)</li>
-                                <li>Responsive CSS with Media Queries</li>
-                                <li>JavaScript and CoffeeScript</li>
-                                <li>JavaScript Framework in Angular</li>
-                            </ul>
-                        </div>
-                        <div className="col-sm-6">
-                            <ul>
-                                <li>Small and Large business experience</li>
-                                <li>Content Management Systems</li>
-                                <li>Custom Wordpress Themes</li>
-                                <li>SQL and restful API integration</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ListSection title={experienceYears + "+ Years Experience"} list={skillsList} />
+
             <Education />
       </div>
     );
