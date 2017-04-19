@@ -33,10 +33,12 @@
         }
     }
     .nav {
-        @fullMobileNavHeight: 635px;
+        @fullMobileNavHeight: 645px;
         @mobileNavAnimSpeed: .7s;
         @media (max-width: 767px) {
-            max-height: 0;
+            li:last-child {
+                margin-bottom: 15px;
+            }
             .transition(max-height @mobileNavAnimSpeed);
             &.slide-down {
                 max-height: @fullMobileNavHeight;
@@ -47,7 +49,6 @@
         }
         @media (min-width: 768px) {
             float: right;
-            max-height: @fullMobileNavHeight!important;
         }
         li {
             line-height: 60px;
