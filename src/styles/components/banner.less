@@ -1,0 +1,28 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    .banner-bg {
+        background: @gray-three;
+        @media (max-width: 767px) {
+            .opacity(0.5);
+        }
+        @media (min-width: 768px) {
+            .opacity(0.25);
+        }
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    img.banner-pic {
+        float: right;
+        @media (max-width: 767px) {
+            height: 175px;
+        }
+        @media (min-width: 768px) {
+            height: 350px;
+        }
+    }
+}

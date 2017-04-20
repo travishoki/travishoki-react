@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-const img_uvu = require('../../../images/home/uvu.png');
+const img_uvu = require('../../../images/global/uvu.png');
 
 const Education = () => {
   return (

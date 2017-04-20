@@ -6,7 +6,7 @@ import ListSection from '../common/ListSection';
 
 import SocialIcons from '../common/SocialIcons';
 
-const img_profile_pic = require('../../../images/home/travis-hoki.jpg');
+const img_profile_pic = require('../../../images/global/travis-hoki.png');
 const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons-filters.png');
 
 const experienceYears = new Date().getFullYear()-2011;
@@ -34,7 +34,8 @@ class HomePage extends React.Component {
                     <SocialIcons/>
                     <Link className="btn btn-primary btn-lg" to="/contact">Contact Me</Link>
                 </div>
-                <img className="profile-pic" src={img_profile_pic}/>
+                <div className="banner-bg"></div>
+                <img className="banner-pic" src={img_profile_pic}/>
             </div>
 
             <section className="white skills">

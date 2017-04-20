@@ -32,6 +32,9 @@ class ResumePage extends React.Component {
                 </a>
             </div>
 
+            <section className="white">
+            </section>
+
             <div className="boxed boxed-lg">
                 <h2>Experience</h2>
                 <ul className="staggered">
