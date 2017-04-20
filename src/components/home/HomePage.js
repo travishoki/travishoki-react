@@ -29,7 +29,7 @@ class HomePage extends React.Component {
     return (
         <div id="container" className="home">
             <div className="banner">
-                <div className="contact-info">
+                <div className="banner-cont">
                     <h1>Web Developer</h1>
                     <SocialIcons/>
                     <Link className="btn btn-primary btn-lg" to="/contact">Contact Me</Link>

@@ -26,6 +26,12 @@ ul.projects {
         padding: 20px 0;
         margin: 20px 0;
         img {
+            &.project-img {
+                @media (max-width: 767px) {
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
             &.logo {
                 .border-radius(50%);
                 width: 80px;

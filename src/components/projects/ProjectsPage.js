@@ -18,7 +18,7 @@ class ProjectsPage extends React.Component {
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-6">
-                                        <img src={project.img}/>
+                                        <img src={project.img} className="project-img" />
                                     </div>
                                     <div className="col-sm-6">
                                         <img src={project.imgLogo} className="logo center"/>

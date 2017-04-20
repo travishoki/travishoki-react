@@ -19,18 +19,25 @@ const skillsList = [
     'Actionscript 3'
 ];
 
+const img_profile_pic = require('../../../images/global/resume.png');
+
 class ResumePage extends React.Component {
   render() {
     return (
         <div id="container" className="resume">
-            <h1>Resume</h1>
-
-            <div className="resume-link">
-                <img className="center" src={imgResume}/>
-                <a className="btn btn-primary btn-lg" href="/pdf/travis-hoki-resume.pdf" target="_blank">
-                    <i className="fa fa-download"></i> Download
-                </a>
+            <div className="banner">
+                <div className="banner-cont">
+                    <h1>Resume</h1>
+                    <a className="btn btn-primary btn-lg" href="/pdf/travis-hoki-resume.pdf" target="_blank">
+                        <i className="fa fa-download"></i> Download
+                    </a>
+                </div>
+                <div className="banner-bg"></div>
+                <img className="banner-pic" src={img_profile_pic}/>
             </div>
+
+            <section className="primary">
+            </section>
 
             <section className="white">
             </section>
