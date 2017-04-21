@@ -6,11 +6,35 @@ class Header extends React.Component {
         super(props);
         this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
         this.state = {
-            showResults: false
+            showMobileNav: false
         };
     }
+    componentWillMount(){
+        const initialPath = location.pathname;
+        this.setState({
+          _routePath: initialPath
+        });
+    }
+    componentWillReceiveProps() {
+        const newPath = location.pathname;
+
+        if (this.state._routePath !== newPath) {
+            this.setState({
+              _routePath: newPath
+            });
+
+            if (this.onRouteChanged) {
+                this.onRouteChanged();
+            }
+        }
+    }
+    onRouteChanged(){
+        if(this.state.showMobileNav){
+            this.toggleMobileMenu();
+        }
+    }
     toggleMobileMenu(){
-        this.setState({ showResults: !this.state.showResults });
+        this.setState({ showMobileNav: !this.state.showMobileNav });
     }
     render() {
         return (
@@ -22,7 +46,7 @@ class Header extends React.Component {
                         <i className="fa fa-bars mobileMenuIcon" onClick={this.toggleMobileMenu} />
                     </div>
 
-                    <ul className={'nav ' + (this.state.showResults ? 'slide-down' : 'slide-up')}>
+                    <ul className={'nav ' + (this.state.showMobileNav ? 'slide-down' : 'slide-up')}>
                         <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
                         <li><Link to="/projects" activeClassName="active">Projects</Link></li>
                         <li><Link to="/resume" activeClassName="active">Resume</Link></li>
