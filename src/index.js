@@ -8,6 +8,7 @@ import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import '../node_modules/font-awesome/less/font-awesome.less';
 import '../node_modules/bootstrap/less/bootstrap.less';
+import '../node_modules/toastr/toastr.less';
 import './styles/styles.less';
 
 const store = configureStore();

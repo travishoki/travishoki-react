@@ -64,6 +64,16 @@ class CourseApi {
     });
   }
 
+  static sendMessage(message){
+      console.log("sendMessage");
+      console.log("message");console.dir(message);
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(Object.assign([], message));
+        }, delay);
+      });
+  }
+
   static saveCourse(course) {
     course = Object.assign({}, course); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {

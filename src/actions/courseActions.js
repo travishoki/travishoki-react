@@ -25,12 +25,12 @@ export function loadCourses() {
   };
 }
 
-export function saveCourse(course) {
+export function saveContactForm(message) {
   return function (dispatch, getState) {
     dispatch(beginAjaxCall());
-    return courseApi.saveCourse(course).then(course => {
-      course.id ? dispatch(updateCourseSuccess(course)) :
-        dispatch(createCourseSuccess(course));
+    return courseApi.sendMessage(message).then(message => {
+      message.id ? dispatch(updateCourseSuccess(message)) :
+        dispatch(createCourseSuccess(message));
     }).catch(error => {
       dispatch(ajaxCallError(error));
       throw(error);
