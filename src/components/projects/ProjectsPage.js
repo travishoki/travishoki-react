@@ -1,57 +1,43 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 import Projects from './ProjectsData';
+import ProjectItemList from '../common/ProjectItemList';
+import ProjectItemGrid from '../common/ProjectItemGrid';
 
 class ProjectsPage extends React.Component {
-  render() {
-    return (
-        <div id="container" className="projects">
-            <div className="boxed boxed-md">
-                <h1>Projects</h1>
-                <ul className="projects">
-                    {Projects.map((project, index)=>{
-                        return (
-                            <li key={index} className="project">
-                                <div className="projectHeading">
-                                    <h2>{project.title}</h2>
-                                    <h3>{project.subtitle}</h3>
-                                </div>
-                                <div className="row">
-                                    <div className="col-sm-6">
-                                        <img src={project.img} className="project-img" />
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <img src={project.imgLogo} className="logo center"/>
-                                        <p>{project.desc}</p>
-                                        <p className="list-heading">Contributions</p>
-                                        <ul>
-                                            {project.contributions.map((contribution, index)=>{
-                                                return (
-                                                    <li key={index}>{contribution}</li>
-                                                );
-                                            })}
-                                        </ul>
-                                        <p className="list-heading">Technology</p>
-                                        <ul>
-                                            {project.techs.map((tech, index)=>{
-                                                return (
-                                                    <li key={index}>{tech}</li>
-                                                );
-                                            })}
-                                        </ul>
-                                    </div>
-                                </div>
-                                {project.live &&
-                                    <a href={project.url} className="btn btn-primary btn-lg" target="_blank">View Live Site</a>
-                                }
-                            </li>
-                        );
-                    })}
-                </ul>
+    constructor(props) {
+        super(props);
+        this.toggleView = this.toggleView.bind(this);
+        this.state = {
+            grid: true
+        };
+    }
+    toggleView(){
+        this.setState({ grid: !this.state.grid });
+    }
+    render() {
+        return (
+            <div id="container" className="projects">
+                <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
+                    <h1 onClick={this.toggleView}>Projects</h1>
+                    <ul className="projects">
+                        {Projects.map((project, index)=>{
+                            return (
+                                <li key={index} className="project">
+                                    {this.state.grid &&
+                                        <ProjectItemGrid project={project}/>
+                                    }
+                                    {!this.state.grid &&
+                                        <ProjectItemList project={project}/>
+                                    }
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 export default ProjectsPage;
