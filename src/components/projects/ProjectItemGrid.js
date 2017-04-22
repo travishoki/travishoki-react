@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
-const ProjectGridItem = ({ project }) => {
+const ProjectGridItem = ({ project, index}) => {
   return (
       <div className="grid-item">
           <div className="popup">
               <div className="popup-inner">
                   <div className="popup-cont">
                       <img src={project.imgLogo} />
-                      <button className="btn btn-primary">View</button>
+                      <Link to={"/project/"+index} className="btn btn-primary">View</Link>
                   </div>
                  <div className="popup-overlay"></div>
              </div>
@@ -19,6 +20,7 @@ const ProjectGridItem = ({ project }) => {
 
 ProjectGridItem.propTypes = {
     project: PropTypes.array.isRequired
+    // index: PropTypes.number.isRequired
 };
 
 export default ProjectGridItem;

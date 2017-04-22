@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Projects from './ProjectsData';
-import ProjectItemList from '../common/ProjectItemList';
-import ProjectItemGrid from '../common/ProjectItemGrid';
+import ProjectItemList from './ProjectItemList';
+import ProjectItemGrid from './ProjectItemGrid';
 
 class ProjectsPage extends React.Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class ProjectsPage extends React.Component {
                             return (
                                 <li key={index} className="project">
                                     {this.state.grid &&
-                                        <ProjectItemGrid project={project}/>
+                                        <ProjectItemGrid project={project} index={index} />
                                     }
                                     {!this.state.grid &&
                                         <ProjectItemList project={project}/>
