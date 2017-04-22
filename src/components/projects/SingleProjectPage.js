@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import Projects from './ProjectsData';
 import ProjectItemList from './ProjectItemList';
@@ -27,6 +27,8 @@ class SingleProjectPage extends React.Component {
     }
 }
 
-SingleProjectPage
+SingleProjectPage.propTypes = {
+    params: PropTypes.string
+};
 
 export default SingleProjectPage;
