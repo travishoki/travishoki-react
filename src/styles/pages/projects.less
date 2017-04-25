@@ -1,10 +1,76 @@
+.filter-section {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+        width: 230px;
+    }
+    @media (min-width: 767px) {
+        width: 410px;
+    }
+    .filter-text {
+        text-align: center;
+        margin: 10px 0 0;
+    }
+    ul.filters {
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        li {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-image: url("../../../images/icons/tech-icons/tech-icons-filters-inactive.png");
+            &:last-child {
+                margin-right: 0;
+            }
+            @media (max-width: 767px) {
+                margin-top: 10px;
+            }
+            &.active {
+                background-image: url('../../../images/icons/tech-icons/tech-icons-filters.png');
+            }
+            &.HTML {
+    			background-position: 0 0;
+    		}
+    		&.JavaScript {
+    			background-position: -50px 0;
+    		}
+    		&.CSS {
+    			background-position: -100px 0;
+    		}
+    		&.jQuery {
+    			background-position: -150px 0;
+    		}
+    		&.AngularJs {
+    			background-position: -200px 0;
+    		}
+    		&.WordPress {
+    			background-position: -250px 0;
+    		}
+    		&.Python {
+    			background-position: -300px 0;
+    		}
+    		&.PHP {
+    			background-position: -350px 0;
+    		}
+    		&.LESS-CSS {
+    			background-position: -400px 0;
+    		}
+    		&.Coffee-Script {
+    			background-position: -450px 0;
+    		}
+        }
+    }
+}
 ul.projects {
     list-style: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    li.project {
-    }
 }
 .list-item {
     padding: 20px 0;
@@ -54,7 +120,12 @@ ul.projects {
 }
 .grid-item {
     float: left;
-    width: 25%;
+    @media (max-width: 767px) {
+        width: 50%;
+    }
+    @media (min-width: 768px) {
+        width: 25%;
+    }
     position: relative;
     padding: 4px;
     .popup {

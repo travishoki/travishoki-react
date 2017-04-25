@@ -11,7 +11,7 @@ import AboutPage from './components/about/AboutPage';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
-    <Route path="projects" component={ProjectsPage} />
+    <Route path="projects(/:filter)" component={ProjectsPage} />
     <Route path="project/:id" component={SingleProjectPage} />
     <Route path="resume" component={ResumePage} />
     <Route path="contact" component={ContactPage} />

@@ -19,8 +19,8 @@ const ProjectGridItem = ({ project, index}) => {
 };
 
 ProjectGridItem.propTypes = {
-    project: PropTypes.array.isRequired
-    // index: PropTypes.number.isRequired
+    project: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired
 };
 
 export default ProjectGridItem;

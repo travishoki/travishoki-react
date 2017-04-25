@@ -28,7 +28,7 @@ class SingleProjectPage extends React.Component {
 }
 
 SingleProjectPage.propTypes = {
-    params: PropTypes.string
+    params: PropTypes.string.isRequired
 };
 
 export default SingleProjectPage;

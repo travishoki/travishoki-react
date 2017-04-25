@@ -108,7 +108,7 @@ class ContactPage extends React.Component {
 function mapStateToProps(state, ownProps) {
     return  {
         email: 'thoki@o.co'
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch){
