@@ -65,8 +65,6 @@ class CourseApi {
   }
 
   static sendMessage(message){
-      console.log("sendMessage");
-      console.log("message");console.dir(message);
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(Object.assign([], message));

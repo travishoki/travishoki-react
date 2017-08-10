@@ -34,7 +34,6 @@ class ContactPage extends React.Component {
     }
 
     formIsValid() {
-        console.log("formIsValid");
         let formIsValid = true;
         let errors = {};
 
@@ -58,7 +57,6 @@ class ContactPage extends React.Component {
     }
 
     saveContactForm(event) {
-        console.log("saveContactForm");
         event.preventDefault();
 
         if (!this.formIsValid()) {
@@ -70,8 +68,6 @@ class ContactPage extends React.Component {
         this.props.actions.saveContactForm(this.state.message)
             .then(() => this.redirect())
             .catch(error => {
-            console.log('%c%s', 'color: green;', 'Success: actions.saveContactForm');
-            console.log("error: "+error);
             toastr.error(error);
             this.setState({saving: false});
         });

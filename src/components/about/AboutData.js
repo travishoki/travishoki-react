@@ -5,10 +5,12 @@ const imgBreakdance = require('../../../images/about/breakdance.png');
 const imgWedding = require('../../../images/about/wedding.png');
 const imgSkateboard = require('../../../images/about/skateboarding.png');
 
+const age = new Date().getFullYear()-1990;
+
 const AboutData = [
       {
           title: 'Hey',
-          desc: 'My name is Travis. I\'m from Orem. I\'m 26 years old.',
+          desc: `My name is Travis. I\'m from Orem. I\'m ${age} years old.`,
           img: imgProfilePic
       },
       {

@@ -22,7 +22,7 @@ const ProjectListItem = ({ project }) => {
                           );
                       })}
                   </ul>
-                  <p className="list-heading">Technology</p>
+                  <p className="list-heading">Technologies</p>
                   <ul>
                       {project.techs.map((tech, index)=>{
                           return (
