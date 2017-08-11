@@ -87,7 +87,7 @@
 ul.projects {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 .list-item {
@@ -139,16 +139,65 @@ ul.projects {
         list-style: disc;
     }
 }
+ul.projects {
+    &.results-1 {
+        max-width: 250px;
+        .grid-item {
+            width: 100%;
+        }
+    }
+    &.results-2 {
+        max-width: 500px;
+        .grid-item {
+            width: 50%;
+        }
+    }
+    &.results-3 {
+        max-width: 750px;
+        .grid-item {
+            width: 33.33333333%;
+        }
+    }
+    &.results-2,
+    &.results-3,
+    &.results-full {
+        @media (max-width: 349px) {
+            max-width: 250px;
+            .grid-item {
+                width: 100%;
+            }
+        }
+        @media (min-width: 350px) and (max-width: 499px) {
+            max-width: 500px;
+            .grid-item {
+                width: 50%;
+            }
+        }
+    }
+    &.results-full {
+        @media (min-width: 500px) and (max-width: 767px) {
+            max-width: 750px;
+            .grid-item {
+                width: 33.33333333%;
+            }
+        }
+        @media (min-width: 768px) {
+            .grid-item {
+                @media (min-width: 768px) {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
 .grid-item {
     float: left;
-    @media (max-width: 767px) {
-        width: 50%;
-    }
-    @media (min-width: 768px) {
-        width: 25%;
-    }
     position: relative;
     padding: 4px;
+    img.project-img {
+        margin: 0 auto;
+        display: block;
+    }
     .popup {
         display: none;
         position: absolute;

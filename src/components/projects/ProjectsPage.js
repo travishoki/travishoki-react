@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import ProjectsData from './ProjectsData';
 import ProjectItemList from './ProjectItemList';
@@ -17,10 +18,13 @@ class ProjectsPage extends React.Component {
         this.onClearFilter = this.onClearFilter.bind(this);
         this.onClearSearchTerm = this.onClearSearchTerm.bind(this);
 
+        console.log('props');
+        console.dir(props);
+
         this.state = {
             grid: true,
             filter: props.params.filter || null,
-            searchTerm: ''
+            searchTerm: props.params.search || ''
         };
     }
     inArr(item, arr) {
@@ -77,8 +81,17 @@ class ProjectsPage extends React.Component {
         const searchTerm = '';
         this.setState({ searchTerm });
     }
+    getResultsCountClass(num) {
+        const maxColumnCount = 4;
+        if (num < maxColumnCount) {
+            return `results-${num}`;
+        }
+
+        return 'results-full';
+    }
     render() {
         const projects = this.filterProjects();
+        const resultsCountClass = this.getResultsCountClass(projects.length);
         return (
             <div id="container" className="projects">
                 <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
@@ -122,7 +135,7 @@ class ProjectsPage extends React.Component {
                     </div>
 
                     {projects.length > 0 ? (
-                        <ul className="projects">
+                        <ul className={`projects ${resultsCountClass}`}>
                             {projects.map((project, index) => {
                                 return (
                                     <li key={index} className="project">
@@ -139,11 +152,12 @@ class ProjectsPage extends React.Component {
                     ) : (
                         <div className="no-results">
                             <h3>No results</h3>
+                            <p>Clear filter and search terms to find more results.</p>
                             {this.state.filter &&
-                                <p onClick={this.onClearFilter}>Clear Filter: {this.state.filter} <i className="fa fa-close" /></p>
+                                <p onClick={this.onClearFilter}>Filter: {this.state.filter} <i className="fa fa-close" /></p>
                             }
                             {this.state.searchTerm &&
-                                <p onClick={this.onClearSearchTerm}>Clear Search Term: {this.state.searchTerm} <i className="fa fa-close" /></p>
+                                <p onClick={this.onClearSearchTerm}>Search Term: {this.state.searchTerm} <i className="fa fa-close" /></p>
                             }
                         </div>
                     )}

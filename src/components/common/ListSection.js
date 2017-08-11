@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const ListSection = ({ title, list }) => {
     const midNum = Math.ceil(list.length/2);
