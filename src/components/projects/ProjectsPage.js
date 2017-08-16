@@ -18,9 +18,6 @@ class ProjectsPage extends React.Component {
         this.onClearFilter = this.onClearFilter.bind(this);
         this.onClearSearchTerm = this.onClearSearchTerm.bind(this);
 
-        console.log('props');
-        console.dir(props);
-
         this.state = {
             grid: true,
             filter: props.params.filter || null,

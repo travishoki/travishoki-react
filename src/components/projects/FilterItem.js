@@ -5,7 +5,7 @@ const FilterItem = ({ item, filter, onSelectFilter }) => {
     const clickItem = () => {
         onSelectFilter(item);
     };
-    const active = (filter == item) ? 'active' : '';
+    const active = (filter === null || filter === item) ? 'active' : '';
     return (
         <li
             onClick={clickItem}
