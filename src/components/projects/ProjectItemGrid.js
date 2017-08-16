@@ -6,13 +6,15 @@ const ProjectGridItem = ({ project, index}) => {
   return (
       <div className="grid-item">
           <div className="popup">
-              <div className="popup-inner">
-                  <div className="popup-cont">
-                      <img src={project.imgLogo} />
-                      <Link to={"/project/"+index} className="btn btn-primary">View</Link>
-                  </div>
-                 <div className="popup-overlay"></div>
-             </div>
+              <Link to={"/project/"+index}>
+                  <div className="popup-inner">
+                      <div className="popup-cont">
+                          <img src={project.imgLogo} />
+                          <p className="project-link">View</p>
+                      </div>
+                     <div className="popup-overlay"></div>
+                 </div>
+             </Link>
          </div>
          <img src={project.imgThumb} className="project-img" />
       </div>
