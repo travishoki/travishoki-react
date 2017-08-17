@@ -1,46 +1,50 @@
-const imgOvestockThumb = require('../../../images/websites/overstock-thumbnail.jpg');
-const imgTrulyLindseyPhotographyThumb = require('../../../images/websites/truly-lindsey-photography-thumbnail.jpg');
-const imgRoomChoiceThumb = require('../../../images/websites/roomchoice-thumbnail.jpg');
-const imgRookeCapitalManagementThumb = require('../../../images/websites/rooke-capital-management-thumbnail.jpg');
-const imgRgdjanitorialThumb = require('../../../images/websites/rgdjanitorial-thumbnail.jpg');
-const imgWeddingThumb = require('../../../images/websites/wedding-thumbnail.jpg');
-const imgEricArocaThumb = require('../../../images/websites/eric-aroca-thumbnail.jpg');
-const imgSaintsAndSinnersThumb = require('../../../images/websites/saints-and-sinners-thumbnail.jpg');
-const imgNewLifeRecoveryThumb = require('../../../images/websites/new-life-recovery-thumbnail.jpg');
-const imgCreativeMediaEducationThumb = require('../../../images/websites/creative-media-education-thumbnail.jpg');
-const imgLavavoltThumb = require('../../../images/websites/lavavolt-thumbnail.jpg');
-const imgEnsparkLmsThumb = require('../../../images/websites/enspark-lms-thumbnail.jpg');
-const imgFirstMileThumb = require('../../../images/websites/first-mile-thumbnail.jpg');
-const imgThePuttingTourThumb = require('../../../images/websites/the-putting-tour-thumbnail.jpg');
-const imgWininsightsThumb = require('../../../images/websites/wininsights-thumbnail.jpg');
-const imgBarrierThumb = require('../../../images/websites/barrier-thumbnail.jpg');
-const imgEnsparkThumb = require('../../../images/websites/enspark-thumbnail.jpg');
-const imgUtahCasaThumb = require('../../../images/websites/utah-casa-thumbnail.jpg');
-const imgParadigmLifeThumb = require('../../../images/websites/paradigm-life-thumbnail.jpg');
-const imgDebtFreePlanningThumb = require('../../../images/websites/debt-free-planning-thumbnail.jpg');
-const imgSouthamConsultingThumb = require('../../../images/websites/southam-consulting-thumbnail.jpg');
+const imgOverstockAdminPortalThumb = require('../../../images/websites/overstock-admin-portal/sm.jpg');
+const imgOverstockAmpFeatureProdThumb = require('../../../images/websites/overstock-amp-featured-product/sm.jpg');
+const imgOvestockThumb = require('../../../images/websites/overstock/sm.jpg');
+const imgTrulyLindseyPhotographyThumb = require('../../../images/websites/truly-lindsey-photography/sm.jpg');
+const imgRoomChoiceThumb = require('../../../images/websites/roomchoice/sm.jpg');
+const imgRookeCapitalManagementThumb = require('../../../images/websites/rooke-capital-management/sm.jpg');
+const imgRgdjanitorialThumb = require('../../../images/websites/rgdjanitorial/sm.jpg');
+const imgWeddingThumb = require('../../../images/websites/wedding/sm.jpg');
+const imgEricArocaThumb = require('../../../images/websites/eric-aroca/sm.jpg');
+const imgSaintsAndSinnersThumb = require('../../../images/websites/saints-and-sinners/sm.jpg');
+const imgNewLifeRecoveryThumb = require('../../../images/websites/new-life-recovery/sm.jpg');
+const imgCreativeMediaEducationThumb = require('../../../images/websites/creative-media-education/sm.jpg');
+const imgLavavoltThumb = require('../../../images/websites/lavavolt/sm.jpg');
+const imgEnsparkLmsThumb = require('../../../images/websites/enspark-lms/sm.jpg');
+const imgFirstMileThumb = require('../../../images/websites/first-mile/sm.jpg');
+const imgThePuttingTourThumb = require('../../../images/websites/the-putting-tour/sm.jpg');
+const imgWininsightsThumb = require('../../../images/websites/wininsights/sm.jpg');
+const imgBarrierThumb = require('../../../images/websites/barrier/sm.jpg');
+const imgEnsparkThumb = require('../../../images/websites/enspark/sm.jpg');
+const imgUtahCasaThumb = require('../../../images/websites/utah-casa/sm.jpg');
+const imgParadigmLifeThumb = require('../../../images/websites/paradigm-life/sm.jpg');
+const imgDebtFreePlanningThumb = require('../../../images/websites/debt-free-planning/sm.jpg');
+const imgSouthamConsultingThumb = require('../../../images/websites/southam-consulting/sm.jpg');
 
-const imgOvestock = require('../../../images/websites/overstock.jpg');
-const imgTrulyLindseyPhotography = require('../../../images/websites/truly-lindsey-photography.jpg');
-const imgRoomChoice = require('../../../images/websites/roomchoice.jpg');
-const imgRookeCapitalManagement = require('../../../images/websites/rooke-capital-management.jpg');
-const imgRgdjanitorial = require('../../../images/websites/rgdjanitorial.jpg');
-const imgWedding = require('../../../images/websites/wedding.jpg');
-const imgEricAroca = require('../../../images/websites/eric-aroca.jpg');
-const imgSaintsAndSinners = require('../../../images/websites/saints-and-sinners.jpg');
-const imgNewLifeRecovery = require('../../../images/websites/new-life-recovery.jpg');
-const imgCreativeMediaEducation = require('../../../images/websites/creative-media-education.jpg');
-const imgLavavolt = require('../../../images/websites/lavavolt.jpg');
-const imgEnsparkLms = require('../../../images/websites/enspark-lms.jpg');
-const imgFirstMile = require('../../../images/websites/first-mile.jpg');
-const imgThePuttingTour = require('../../../images/websites/the-putting-tour.jpg');
-const imgWininsights = require('../../../images/websites/wininsights.jpg');
-const imgBarrier = require('../../../images/websites/barrier.jpg');
-const imgEnspark = require('../../../images/websites/enspark.jpg');
-const imgUtahCasa = require('../../../images/websites/utah-casa.jpg');
-const imgParadigmLife = require('../../../images/websites/paradigm-life.jpg');
-const imgDebtFreePlanning = require('../../../images/websites/debt-free-planning.jpg');
-const imgSouthamConsulting = require('../../../images/websites/southam-consulting.jpg');
+const imgOverstockAdminPortal = require('../../../images/websites/overstock-admin-portal/lg.jpg');
+const imgOverstockAmpFeatureProd = require('../../../images/websites/overstock-amp-featured-product/lg.jpg');
+const imgOvestock = require('../../../images/websites/overstock/lg.jpg');
+const imgTrulyLindseyPhotography = require('../../../images/websites/truly-lindsey-photography/lg.jpg');
+const imgRoomChoice = require('../../../images/websites/roomchoice/lg.jpg');
+const imgRookeCapitalManagement = require('../../../images/websites/rooke-capital-management/lg.jpg');
+const imgRgdjanitorial = require('../../../images/websites/rgdjanitorial/lg.jpg');
+const imgWedding = require('../../../images/websites/wedding/lg.jpg');
+const imgEricAroca = require('../../../images/websites/eric-aroca/lg.jpg');
+const imgSaintsAndSinners = require('../../../images/websites/saints-and-sinners/lg.jpg');
+const imgNewLifeRecovery = require('../../../images/websites/new-life-recovery/lg.jpg');
+const imgCreativeMediaEducation = require('../../../images/websites/creative-media-education/lg.jpg');
+const imgLavavolt = require('../../../images/websites/lavavolt/lg.jpg');
+const imgEnsparkLms = require('../../../images/websites/enspark-lms/lg.jpg');
+const imgFirstMile = require('../../../images/websites/first-mile/lg.jpg');
+const imgThePuttingTour = require('../../../images/websites/the-putting-tour/lg.jpg');
+const imgWininsights = require('../../../images/websites/wininsights/lg.jpg');
+const imgBarrier = require('../../../images/websites/barrier/lg.jpg');
+const imgEnspark = require('../../../images/websites/enspark/lg.jpg');
+const imgUtahCasa = require('../../../images/websites/utah-casa/lg.jpg');
+const imgParadigmLife = require('../../../images/websites/paradigm-life/lg.jpg');
+const imgDebtFreePlanning = require('../../../images/websites/debt-free-planning/lg.jpg');
+const imgSouthamConsulting = require('../../../images/websites/southam-consulting/lg.jpg');
 
 const imgOvestockLogo = require('../../../images/clients/overstock.jpg');
 const imgTrulyLindseyPhotographyLogo = require('../../../images/clients/truly-lindsey-photography.jpg');
@@ -65,6 +69,30 @@ const imgDebtFreePlanningLogo = require('../../../images/clients/debt-free-plann
 const imgSouthamConsultingLogo = require('../../../images/clients/southam-consulting.jpg');
 
 const ProjectsData = [
+    {
+        title: 'Overstock.com',
+        subtitle: 'AMP Rewards for Reviews',
+        url: 'http://www.overstock.com/',
+        desc: 'Accelerate Mobile Page',
+        imgLogo: imgOvestockLogo,
+        imgThumb: imgOverstockAmpFeatureProdThumb,
+        img: imgOverstockAmpFeatureProd,
+        contributions: ['Coordinate deployments with multiple departments.'],
+        techs: ['HTML','LESS-CSS','JavaScript', 'AMP-Bind'],
+        live: false
+    },
+    {
+        title: 'Overstock.com',
+        subtitle: 'Admin Portal',
+        url: 'http://www.overstock.com/',
+        desc: 'Accelerate Mobile Page',
+        imgLogo: imgOvestockLogo,
+        imgThumb: imgOverstockAdminPortalThumb,
+        img: imgOverstockAdminPortal,
+        contributions: ['Ground up'],
+        techs: ['HTML','LESS-CSS','JavaScript', 'ReactJs', 'Redux'],
+        live: false
+    },
     {
         title: 'Overstock.com',
         subtitle: 'Rewards for Reviews',
