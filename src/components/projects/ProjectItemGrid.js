@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
+const images = require.context('../../../images/websites', true);
+const logos = require.context('../../../images/clients', true);
 
 const ProjectGridItem = ({ project}) => {
   return (
@@ -9,14 +11,14 @@ const ProjectGridItem = ({ project}) => {
               <Link to={"/project/"+project.key}>
                   <div className="popup-inner">
                       <div className="popup-cont">
-                          <img src={project.imgLogo} />
+                          <img src={logos(`./${project.company}.jpg`)} />
                           <p className="project-link">View</p>
                       </div>
                      <div className="popup-overlay"></div>
                  </div>
              </Link>
          </div>
-         <img src={project.imgThumb} className="project-img" />
+         <img src={images(`./${project.key}/sm.jpg`)} className="project-img" />
       </div>
   );
 };

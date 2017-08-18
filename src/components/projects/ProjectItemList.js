@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+const images = require.context('../../../images/websites', true);
+const logos = require.context('../../../images/clients', true);
 
 const ProjectListItem = ({ project }) => {
   return (
@@ -10,10 +12,10 @@ const ProjectListItem = ({ project }) => {
           </div>
           <div className="row">
               <div className="col-sm-6">
-                  <img src={project.img} className="project-img" />
+                  <img src={images(`./${project.key}/lg.jpg`)} className="project-img" />
               </div>
               <div className="col-sm-6">
-                  <img src={project.imgLogo} className="logo center"/>
+                  <img src={logos(`./${project.company}.jpg`)} className="logo center"/>
                   <p>{project.desc}</p>
                   <p className="list-heading">Contributions</p>
                   <ul>
