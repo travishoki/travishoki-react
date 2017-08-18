@@ -5,7 +5,15 @@ import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
 import FilterItem from './FilterItem';
 
-const filterList = ['jQuery', 'WordPress', 'Python', 'AngularJs', 'PHP', 'SCSS', 'LESS-CSS'];
+const filterList = [
+    'jQuery',
+    'WordPress',
+    'Python',
+    'AngularJs',
+    'PHP',
+    'SCSS',
+    'LESS-CSS'
+];
 
 class ProjectsPage extends React.Component {
     constructor(props) {
@@ -88,10 +96,11 @@ class ProjectsPage extends React.Component {
     render() {
         const projects = this.filterProjects();
         const resultsCountClass = this.getResultsCountClass(projects.length);
+        const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
         return (
             <div id="container" className="projects">
                 <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
-                    <h1 onClick={this.toggleView}>Projects</h1>
+                    <h1>Projects</h1>
 
                     <div className="filter-section">
                         <p>Click on the icons below to filter my work by different technologies</p>
@@ -128,6 +137,12 @@ class ProjectsPage extends React.Component {
                                 }
                             </div>
                         </form>
+                        {showResultsCount &&
+                            <p className="results-count">Results: {projects.length}</p>
+                        }
+                        {projects.length > 0 &&
+                            <p className="view-controls" onClick={this.toggleView}>View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} /></p>
+                        }
                     </div>
 
                     {projects.length > 0 ? (
