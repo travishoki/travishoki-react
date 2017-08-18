@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router';
 import ProjectsData from './ProjectsData';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
@@ -137,7 +136,7 @@ class ProjectsPage extends React.Component {
                                 return (
                                     <li key={index} className="project">
                                         {this.state.grid &&
-                                            <ProjectItemGrid project={project} index={index} />
+                                            <ProjectItemGrid project={project} />
                                         }
                                         {!this.state.grid &&
                                             <ProjectItemList project={project}/>

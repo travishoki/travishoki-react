@@ -12,9 +12,10 @@ class SingleProjectPage extends React.Component {
         this.state = {
             grid: true
         };
-        singleProject = Projects.filter((project, index) => {
-            return index.toString() === this.props.params.id;
-        })[0];
+
+        singleProject = Projects.find((project) => {
+            return project.key === props.params.key;
+        });
     }
     render() {
         return (
