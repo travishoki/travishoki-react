@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
+import TechIcon from './TechIcon';
 
 const ProjectListItem = ({ project }) => {
   return (
@@ -30,7 +31,7 @@ const ProjectListItem = ({ project }) => {
                       {project.techs.map((tech, index)=>{
                           return (
                               <li key={index} className="tech-icon-item">
-                                <div className={`tech-icon tech-${tech}`} />
+                                <TechIcon name={tech} />
                                 <p>{tech}</p>
                               </li>
                           );

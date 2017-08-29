@@ -4,6 +4,7 @@ import ProjectsData from './ProjectsData';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
 import FilterItem from './FilterItem';
+import TechIcon from './TechIcon';
 
 const filterList = [
     'angularjs',
@@ -139,7 +140,7 @@ class ProjectsPage extends React.Component {
                         <p className="center">Click on the icons below to filter my work by different technologies</p>
                         {this.state.filter ? (
                             <div className="tech-icon-item">
-                                <div className={`tech-icon tech-${this.state.filter}`} />
+                                <TechIcon name={this.state.filter} />
                                 <p>{this.state.filter}</p>
                                 <i className="fa fa-close pointer f-right" onClick={this.onClearAndCloseFilter} />
                             </div>

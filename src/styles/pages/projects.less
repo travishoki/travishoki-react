@@ -1,37 +1,44 @@
 @iconW: 40px;
-.tech-icon {
+.tech-icon-holder {
     float: left;
-    width: @iconW;
-    height: @iconW;
-    background-image: url('../../../images/icons/tech-icons/tech-icons.jpg');
+    width: (@iconW+2);
+    height: (@iconW+2);
+    border: solid 1px @white;
     border-radius: 50%;
+    margin-right: 10px;
+    .tech-icon {
+        width: @iconW;
+        height: @iconW;
+        background-image: url('../../../images/icons/tech-icons/tech-icons.jpg');
+        border-radius: 50%;
 
-    .pos (@xPos, @yPos){
-        background-position: -((@xPos - 1)*@iconW) -((@yPos - 1)*@iconW);
+        .pos (@xPos, @yPos){
+            background-position: -((@xPos - 1)*@iconW) -((@yPos - 1)*@iconW);
+        }
+
+        &.tech-html {          .pos (1, 1); }
+        &.tech-javascript {    .pos (2, 1); }
+        &.tech-css {           .pos (3, 1); }
+        &.tech-jquery {        .pos (4, 1); }
+        &.tech-angularjs {     .pos (5, 1); }
+
+        &.tech-wordpress {     .pos (6, 1); }
+        &.tech-python {        .pos (7, 1); }
+        &.tech-php {           .pos (8, 1); }
+        &.tech-less-css {      .pos (9, 1); }
+        &.tech-coffee-script { .pos (10, 1); }
+
+        &.tech-reactjs {       .pos (1, 2); }
+        &.tech-redux {         .pos (2, 2); }
+        &.tech-sql {           .pos (3, 2); }
+        &.tech-amp-bind {      .pos (4, 2); }
+        &.tech-handlebarsjs {  .pos (5, 2); }
+
+        &.tech-django {        .pos (6, 2); }
+        &.tech-grunt {         .pos (7, 2); }
+        &.tech-webpack {       .pos (8, 2); }
+        &.tech-nodejs {        .pos (9, 2); }
     }
-
-    &.tech-html {          .pos (1, 1); }
-    &.tech-javascript {    .pos (2, 1); }
-    &.tech-css {           .pos (3, 1); }
-    &.tech-jquery {        .pos (4, 1); }
-    &.tech-angularjs {     .pos (5, 1); }
-
-    &.tech-wordpress {     .pos (6, 1); }
-    &.tech-python {        .pos (7, 1); }
-    &.tech-php {           .pos (8, 1); }
-    &.tech-less-css {      .pos (9, 1); }
-    &.tech-coffee-script { .pos (10, 1); }
-
-    &.tech-reactjs {       .pos (1, 2); }
-    &.tech-redux {         .pos (2, 2); }
-    &.tech-sql {           .pos (3, 2); }
-    &.tech-amp-bind {      .pos (4, 2); }
-    &.tech-handlebarsjs {  .pos (5, 2); }
-
-    &.tech-django {        .pos (6, 2); }
-    &.tech-grunt {         .pos (7, 2); }
-    &.tech-webpack {       .pos (8, 2); }
-    &.tech-nodejs {        .pos (9, 2); }
 }
 .tech-icon-list {
     padding: 10px;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import TechIcon from './TechIcon';
 
 const FilterItem = ({ item, filter, onSelectFilter }) => {
     const clickItem = () => {
@@ -11,7 +12,7 @@ const FilterItem = ({ item, filter, onSelectFilter }) => {
             onClick={clickItem}
             className={`filter-item tech-icon-item ${active}`}
         >
-            <div className={`tech-icon tech-${item}`} />
+            <TechIcon name={item} />
             <p>{item}</p>
         </li>
     );
