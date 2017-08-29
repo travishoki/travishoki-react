@@ -6,13 +6,25 @@ import ProjectItemGrid from './ProjectItemGrid';
 import FilterItem from './FilterItem';
 
 const filterList = [
-    'jQuery',
-    'WordPress',
-    'Python',
-    'AngularJs',
-    'PHP',
-    'SCSS',
-    'LESS-CSS'
+    'angularjs',
+    'amp-bind',
+    'css',
+    'coffee-script',
+    'django',
+    'grunt',
+    'handlebarsjs',
+    'html',
+    'javascript',
+    'jquery',
+    'less-css',
+    'nodejs',
+    'php',
+    'python',
+    'redux',
+    'reactjs',
+    'sql',
+    'webpack',
+    'wordpress'
 ];
 
 class ProjectsPage extends React.Component {
@@ -24,11 +36,16 @@ class ProjectsPage extends React.Component {
         this.onChangeSearch = this.onChangeSearch.bind(this);
         this.onClearFilter = this.onClearFilter.bind(this);
         this.onClearSearchTerm = this.onClearSearchTerm.bind(this);
+        this.onChangeFilter = this.onChangeFilter.bind(this);
+        this.toggleOpenFilter = this.toggleOpenFilter.bind(this);
+        this.onClearAndCloseFilter = this.onClearAndCloseFilter.bind(this);
 
         this.state = {
             grid: true,
             filter: props.params.filter || null,
-            searchTerm: props.params.search || ''
+            searchTerm: props.params.search || '',
+            filterTerm: props.params.filter || null,
+            isFilterOpen: false
         };
     }
     inArr(item, arr) {
@@ -71,7 +88,8 @@ class ProjectsPage extends React.Component {
         if(filter === this.state.filter){
             filter = null;
         }
-        this.setState({ filter });
+        const filterTerm = filter;
+        this.setState({ filter, filterTerm });
     }
     onChangeSearch(e) {
         const searchTerm = e.currentTarget.value;
@@ -79,7 +97,8 @@ class ProjectsPage extends React.Component {
     }
     onClearFilter() {
         const filter = null;
-        this.setState({ filter });
+        const filterTerm = null;
+        this.setState({ filter, filterTerm });
     }
     onClearSearchTerm() {
         const searchTerm = '';
@@ -93,32 +112,85 @@ class ProjectsPage extends React.Component {
 
         return 'results-full';
     }
+    onChangeFilter(e) {
+        const filterTerm = e.target.value;
+        this.setState({ filterTerm });
+    }
+    toggleOpenFilter() {
+        this.setState({ isFilterOpen: !this.state.isFilterOpen });
+    }
+    onClearAndCloseFilter() {
+        this.onClearFilter();
+        this.toggleOpenFilter();
+    }
     render() {
         const projects = this.filterProjects();
         const resultsCountClass = this.getResultsCountClass(projects.length);
         const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
+        const filterListFiltered = filterList.filter((item) =>{
+            return this.state.filterTerm === null || item.toLowerCase().indexOf(this.state.filterTerm.toLowerCase()) > -1;
+        });
         return (
             <div id="container" className="projects">
                 <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
                     <h1>Projects</h1>
 
                     <div className="filter-section">
-                        <p>Click on the icons below to filter my work by different technologies</p>
-                        <ul className="filters">
-                            {filterList.map((item, index) => {
-                                return (
-                                    <FilterItem
-                                        key={index}
-                                        item={item}
-                                        filter={this.state.filter}
-                                        onSelectFilter={this.onSelectFilter}
-                                    />
-                                );
-                            })}
-                        </ul>
-                        {this.state.filter &&
-                            <p className="filter-text">Filter: {this.state.filter}</p>
-                        }
+                        <p className="center">Click on the icons below to filter my work by different technologies</p>
+                        {this.state.filter ? (
+                            <div className="tech-icon-item">
+                                <div className={`tech-icon tech-${this.state.filter}`} />
+                                <p>{this.state.filter}</p>
+                                <i className="fa fa-close pointer f-right" onClick={this.onClearAndCloseFilter} />
+                            </div>
+                        ):(
+                            <div>
+                                {this.state.isFilterOpen ? (
+                                    <div>
+                                        <form>
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                maxLength="25"
+                                                placeholder="Tech Filter"
+                                                value={this.state.filterTerm}
+                                                onChange={this.onChangeFilter}
+                                            />
+                                        </form>
+                                        {filterListFiltered.length > 0 ? (
+                                            <ul className="tech-icon-list filters">
+                                                {!this.state.filterTerm &&
+                                                    <li
+                                                        onClick={this.onClearAndCloseFilter}
+                                                        className="filter-item tech-icon-item"
+                                                    >
+                                                        <p>All</p>
+                                                    </li>
+                                                }
+                                                {filterListFiltered.map((item, index) => {
+                                                    return (
+                                                        <FilterItem
+                                                            key={index}
+                                                            item={item}
+                                                            filter={this.state.filter}
+                                                            onSelectFilter={this.onSelectFilter}
+                                                        />
+                                                    );
+                                                })}
+                                            </ul>
+                                        ):(
+                                            <p className="center">No Results</p>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <div onClick={this.toggleOpenFilter} className="filter-item pointer">
+                                        <p className="f-left">Filter by Tech</p>
+                                        <i className="fa fa-chevron-down f-right"/>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        <div className="clearfix" />
                         <form>
                             <div
                                 id="input-holder"
@@ -128,7 +200,7 @@ class ProjectsPage extends React.Component {
                                     type="text"
                                     className="form-control"
                                     maxLength="25"
-                                    placeholder="Search"
+                                    placeholder="Search Term"
                                     value={this.state.searchTerm}
                                     onChange={this.onChangeSearch}
                                 />

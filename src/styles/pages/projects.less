@@ -1,3 +1,61 @@
+@iconW: 40px;
+.tech-icon {
+    float: left;
+    width: @iconW;
+    height: @iconW;
+    background-image: url('../../../images/icons/tech-icons/tech-icons.jpg');
+    border-radius: 50%;
+
+    .pos (@xPos, @yPos){
+        background-position: -((@xPos - 1)*@iconW) -((@yPos - 1)*@iconW);
+    }
+
+    &.tech-html {          .pos (1, 1); }
+    &.tech-javascript {    .pos (2, 1); }
+    &.tech-css {           .pos (3, 1); }
+    &.tech-jquery {        .pos (4, 1); }
+    &.tech-angularjs {     .pos (5, 1); }
+
+    &.tech-wordpress {     .pos (6, 1); }
+    &.tech-python {        .pos (7, 1); }
+    &.tech-php {           .pos (8, 1); }
+    &.tech-less-css {      .pos (9, 1); }
+    &.tech-coffee-script { .pos (10, 1); }
+
+    &.tech-reactjs {       .pos (1, 2); }
+    &.tech-redux {         .pos (2, 2); }
+    &.tech-sql {           .pos (3, 2); }
+    &.tech-amp-bind {      .pos (4, 2); }
+    &.tech-handlebarsjs {  .pos (5, 2); }
+
+    &.tech-django {        .pos (6, 2); }
+    &.tech-grunt {         .pos (7, 2); }
+    &.tech-webpack {       .pos (8, 2); }
+    &.tech-nodejs {        .pos (9, 2); }
+}
+.tech-icon-list {
+    padding: 10px;
+    list-style: none;
+    display: block;
+    .tech-icon-item {
+        margin-bottom: 10px;
+    }
+}
+.tech-icon-item {
+    overflow: hidden;
+    p {
+        text-transform: uppercase;
+        float: left;
+        margin: 0;
+    }
+    p, i {
+        line-height: @iconW;
+    }
+    .tech-icon {
+        margin-right: 10px;
+    }
+}
+
 .filter-section {
     margin: 0 auto 20px;
     @media (max-width: 767px) {
@@ -6,64 +64,20 @@
     @media (min-width: 767px) {
         width: 410px;
     }
-    p {
-        text-align: center;
-    }
-    .filter-text {
-        margin: 10px 0 0;
+    input {
+        .border-radius(0);
+        .box-shadow(none);
     }
     ul.filters {
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: block;
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background: @gray-two;
         li {
-            float: left;
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
             cursor: pointer;
-            background-image: url("../../../images/icons/tech-icons/tech-icons-filters-inactive.png");
             &:last-child {
-                margin-right: 0;
+                margin: 0;
             }
-            @media (max-width: 767px) {
-                margin-top: 10px;
-            }
-            &.active {
-                background-image: url('../../../images/icons/tech-icons/tech-icons-filters.png');
-            }
-            &.HTML {
-    			background-position: 0 0;
-    		}
-    		&.JavaScript {
-    			background-position: -50px 0;
-    		}
-    		&.CSS {
-    			background-position: -100px 0;
-    		}
-    		&.jQuery {
-    			background-position: -150px 0;
-    		}
-    		&.AngularJs {
-    			background-position: -200px 0;
-    		}
-    		&.WordPress {
-    			background-position: -250px 0;
-    		}
-    		&.Python {
-    			background-position: -300px 0;
-    		}
-    		&.PHP {
-    			background-position: -350px 0;
-    		}
-    		&.LESS-CSS {
-    			background-position: -400px 0;
-    		}
-    		&.Coffee-Script {
-    			background-position: -450px 0;
-    		}
         }
     }
     form {
@@ -134,9 +148,6 @@ ul.projects {
         max-width: 200px;
         margin: 20px auto 0;
         display: block;
-    }
-    ul {
-        list-style: disc;
     }
 }
 ul.projects {

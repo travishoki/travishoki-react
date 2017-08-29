@@ -16,20 +16,23 @@ const ProjectListItem = ({ project }) => {
               </div>
               <div className="col-sm-6">
                   <img src={logos(`./${project.company}.jpg`)} className="logo center"/>
-                  <p>{project.desc}</p>
-                  <p className="list-heading">Contributions</p>
-                  <ul>
+                  <p className="indent">{project.desc}</p>
+                  <p className="list-heading">Contributions:</p>
+                  <ul className="m-l-20 disc">
                       {project.contributions.map((contribution, index)=>{
                           return (
                               <li key={index}>{contribution}</li>
                           );
                       })}
                   </ul>
-                  <p className="list-heading">Technologies</p>
-                  <ul>
+                  <p className="list-heading">Technologies:</p>
+                  <ul className="m-l-20 tech-icon-list">
                       {project.techs.map((tech, index)=>{
                           return (
-                              <li key={index}>{tech}</li>
+                              <li key={index} className="tech-icon-item">
+                                <div className={`tech-icon tech-${tech}`} />
+                                <p>{tech}</p>
+                              </li>
                           );
                       })}
                   </ul>

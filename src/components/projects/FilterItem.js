@@ -9,8 +9,11 @@ const FilterItem = ({ item, filter, onSelectFilter }) => {
     return (
         <li
             onClick={clickItem}
-            className={`${item} ${active}`}
-        ></li>
+            className={`filter-item tech-icon-item ${active}`}
+        >
+            <div className={`tech-icon tech-${item}`} />
+            <p>{item}</p>
+        </li>
     );
 };
 

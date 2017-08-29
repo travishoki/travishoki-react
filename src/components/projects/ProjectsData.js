@@ -6,19 +6,19 @@ const ProjectsData = [
         desc: 'Accelerate Mobile Page',
         key: 'overstock-amp-featured-product',
         company: 'overstock',
-        contributions: ['Coordinate deployments with multiple departments.'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'AMP-Bind'],
+        contributions: ['Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit withing AMP specifications.'],
+        techs: ['html', 'javascript', 'amp-bind', 'webpack', 'less-css'],
         live: false
     },
     {
         title: 'Overstock.com',
         subtitle: 'Admin Portal',
         url: 'http://www.overstock.com/',
-        desc: 'Accelerate Mobile Page',
+        desc: 'Internal SEO tool that enables business employees to do things such as manipulte seo titles for taxonomy display names.',
         key: 'overstock-admin-portal',
         company: 'overstock',
-        contributions: ['Ground up'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'ReactJs', 'Redux'],
+        contributions: ['I pushed myself to learn Redux.'],
+        techs: ['reactjs', 'redux', 'nodejs', 'html', 'less-css', 'javascript', 'webpack'],
         live: false
     },
     {
@@ -29,7 +29,7 @@ const ProjectsData = [
         key: 'overstock-hackathon-2017',
         company: 'overstock',
         contributions: ['Ground up'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'ReactJs', 'Redux'],
+        techs: ['html', 'less-css', 'javascript', 'reactjs', 'redux', 'jquery', 'webpack'],
         live: false
     },
     {
@@ -40,7 +40,7 @@ const ProjectsData = [
         key: 'overstock-rewards-for-reviews',
         company: 'overstock',
         contributions: ['Coordinate deployments with multiple departments.'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'jQuery'],
+        techs: ['html', 'less-css', 'javascript', 'jquery', 'handlebarsjs', 'grunt'],
         live: true
     },
     {
@@ -51,7 +51,7 @@ const ProjectsData = [
         key: 'overstock-responsive-sarp',
         company: 'overstock',
         contributions: ['I implemented an AB test that resulted in lift during a 2 week period.'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'jQuery', 'Handlbars'],
+        techs: ['html', 'less-css', 'javascript', 'jquery', 'handlebarsjs', 'grunt'],
         live: true
     },
     {
@@ -62,7 +62,7 @@ const ProjectsData = [
         key: 'overstock-sarp-mobile-atc',
         company: 'overstock',
         contributions: ['Componentize the ATC functionality into a react module.'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'ReactJs'],
+        techs: ['html', 'less-css', 'javascript', 'reactjs'],
         live: true
     },
     {
@@ -73,7 +73,7 @@ const ProjectsData = [
         key: 'overstock-reviews-breakout',
         company: 'overstock',
         contributions: ['Coordinate deployments with multiple departments.'],
-        techs: ['HTML', 'LESS-CSS', 'JavaScript', 'jQuery'],
+        techs: ['html', 'less-css', 'javascript', 'handlebarsjs', 'jquery'],
         live: true
     },
     {
@@ -83,8 +83,8 @@ const ProjectsData = [
         desc: 'Truly Lindsey Photography is my wife\'s photography company. I am helping to brand her company.',
         key: 'truly-lindsey-photography',
         company: 'truly-lindsey-photography',
-        contributions: ['Wordpress customization, design and branding.'],
-        techs: ['WordPress', 'HTML', 'CSS'],
+        contributions: ['wordpress customization, design and branding.'],
+        techs: ['wordpress', 'html', 'css'],
         live: true
     },
     {
@@ -95,7 +95,7 @@ const ProjectsData = [
         key: 'roomchoice',
         company: 'roomchoice',
         contributions: ['Full Stack Development', 'Django and python', 'Restful API calls.'],
-        techs: ['Python', 'AngularJs', 'JavaScript', 'HTML', 'LESS-CSS'],
+        techs: ['python', 'django', 'angularjs', 'javascript', 'html', 'less-css'],
         live: true
     },
     {
@@ -105,8 +105,8 @@ const ProjectsData = [
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         key: 'rooke-capital-management',
         company: 'rooke-capital-management',
-        contributions: ['Creationg of registration form', 'authorize.net intergration', 'customization of WordPress theme.'],
-        techs: ['PHP', 'WordPress', 'JavaScript', 'jQuery', 'HTML', 'CSS'],
+        contributions: ['Creationg of registration form', 'authorize.net intergration', 'customization of wordpress theme.'],
+        techs: ['php', 'wordpress', 'javascript', 'jquery', 'html', 'css'],
         live: true
     },
     {
@@ -116,8 +116,8 @@ const ProjectsData = [
         desc: 'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
         key: 'rgdjanitorial',
         company: 'rgdjanitorial',
-        contributions: ['Wordpress theme customization', 'WP Advanced Custom Fields', 'Design'],
-        techs: ['PHP', 'WordPress', 'JavaScript', 'HTML', 'CSS'],
+        contributions: ['wordpress theme customization', 'WP Advanced Custom Fields', 'Design'],
+        techs: ['php', 'wordpress', 'javascript', 'html', 'css'],
         live: true
     },
     {
@@ -128,7 +128,7 @@ const ProjectsData = [
         key: 'wedding',
         company: 'wedding',
         contributions: ['Site design and development'],
-        techs: ['AngularJs', 'JavaScript', 'HTML', 'SCSS'],
+        techs: ['angularjs', 'javascript', 'html', 'Scss'],
         live: true
     },
     {
@@ -138,8 +138,8 @@ const ProjectsData = [
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         key: 'eric-aroca',
         company: 'eric-aroca',
-        contributions: ['Creationg of registration form', 'customization of WordPress theme.'],
-        techs: ['PHP', 'WordPress', 'JavaScript', 'jQuery', 'HTML', 'CSS'],
+        contributions: ['Creationg of registration form', 'customization of wordpress theme.'],
+        techs: ['php', 'wordpress', 'javascript', 'jquery', 'html', 'css'],
         live: true
     },
     {
@@ -149,19 +149,19 @@ const ProjectsData = [
         desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
         key: 'saints-and-sinners',
         company: 'saints-and-sinners',
-        contributions: ['Creationg of registration form, authorize.net intergration|customization of WordPress theme.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Creationg of registration form, authorize.net intergration', 'customization of wordpress theme.'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
         title: 'New Life Recovery',
         subtitle: '',
         url: 'http://www.newlife-recovery.org/',
-        desc: 'Creative Media Group is a full service media production house based in Orem|Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
+        desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
         key: 'new-life-recovery',
         company: 'new-life-recovery',
-        contributions: ['Customization of WordPress theme.'],
-        techs: ['PHP|WordPress|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Customization of wordpress theme.'],
+        techs: ['php', 'wordpress', 'javascript', 'jquery', 'HTML', 'css'],
         live: false
     },
     {
@@ -171,8 +171,8 @@ const ProjectsData = [
         desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
         key: 'creative-media-education',
         company: 'creative-media-education',
-        contributions: ['Stripe Integration|Front-end and Back-end|integrating courses the custom LMS.'],
-        techs: ['AngularJs|PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Stripe Integration', 'Front-end and Back-end', 'integrating courses the custom LMS.'],
+        techs: ['angularjs', 'php', 'javascript', 'jquery', 'HTML', 'css'],
         live: false
     },
     {
@@ -182,8 +182,8 @@ const ProjectsData = [
         desc: 'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
         key: 'lavavolt',
         company: 'lavavolt',
-        contributions: ['All of the back-end|everything from user accounts, to film uploading, to querying from the film library.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['All of the back-end', 'everything from user accounts, to film uploading, to querying from the film library.'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -193,8 +193,8 @@ const ProjectsData = [
         desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
         key: 'enspark-lms',
         company: 'enspark',
-        contributions: ['Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jQuery AJAX.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -205,7 +205,7 @@ const ProjectsData = [
         key: 'first-mile',
         company: 'first-mile',
         contributions: ['All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.'],
-        techs: ['PHP|AngularJs|JavaScript|jQuery|HTML|CSS'],
+        techs: ['php', 'angularjs', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -216,7 +216,7 @@ const ProjectsData = [
         key: 'the-putting-tour',
         company: 'the-putting-tour',
         contributions: ['Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -226,8 +226,8 @@ const ProjectsData = [
         desc: 'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
         key: 'wininsights',
         company: 'wininsights',
-        contributions: ['Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several WordPress pages.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -237,8 +237,8 @@ const ProjectsData = [
         desc: 'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
         key: 'barrier',
         company: 'barrier',
-        contributions: ["Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the WordPress site, fixing styles and updating images. "],
-        techs: ['JavaScript|jQuery|HTML|CSS'],
+        contributions: ["Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. "],
+        techs: ['javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -249,7 +249,7 @@ const ProjectsData = [
         key: 'enspark',
         company: 'enspark',
         contributions: ['Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.'],
-        techs: ['JavaScript|jQuery|HTML|CSS'],
+        techs: ['javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -259,8 +259,8 @@ const ProjectsData = [
         desc: 'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
         key: 'utah-casa',
         company: 'utah-casa',
-        contributions: ['Helped to fix the blog functionality and structure in WordPress as well as front-end fixes.'],
-        techs: ['PHP|HTML|CSS'],
+        contributions: ['Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.'],
+        techs: ['php', 'HTML', 'css'],
         live: true
     },
     {
@@ -270,8 +270,8 @@ const ProjectsData = [
         desc: 'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
         key: 'paradigm-life',
         company: 'paradigm-life',
-        contributions: ['Helped with the WordPress theme and structure architecture.'],
-        techs: ['PHP|JavaScript|jQuery|HTML|CSS'],
+        contributions: ['Helped with the wordpress theme and structure architecture.'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
         live: true
     },
     {
@@ -282,7 +282,7 @@ const ProjectsData = [
         key: 'debt-free-planning',
         company: 'debt-free-planning',
         contributions: ['Front-end construction. Creating a email form for user information requests.'],
-        techs: ['PHP,Less-CSS|HTML|JavaScript'],
+        techs: ['php', 'less-css', 'HTML', 'javascript'],
         live: false
     },
     {
@@ -293,7 +293,7 @@ const ProjectsData = [
         key: 'southam-consulting',
         company: 'southam-consulting',
         contributions: ['Creating a email form for user information requests. Other front-end fixes.'],
-        techs: ['PHP|CSS|HTML|JavaScript'],
+        techs: ['php', 'css', 'HTML', 'javascript'],
         live: true
     }
 ];
