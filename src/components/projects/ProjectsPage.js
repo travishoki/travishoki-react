@@ -41,11 +41,13 @@ class ProjectsPage extends React.Component {
         this.toggleOpenFilter = this.toggleOpenFilter.bind(this);
         this.onClearAndCloseFilter = this.onClearAndCloseFilter.bind(this);
 
+        const filter = (props.params.filter === 'all') ? null : props.params.filter;
+
         this.state = {
             grid: true,
-            filter: props.params.filter || null,
+            filter: filter || null,
             searchTerm: props.params.search || '',
-            filterTerm: props.params.filter || null,
+            filterTerm: filter || null,
             isFilterOpen: false
         };
     }
