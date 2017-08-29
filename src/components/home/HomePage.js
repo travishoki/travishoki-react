@@ -8,6 +8,7 @@ import SocialIcons from '../common/SocialIcons';
 
 const img_profile_pic = require('../../../images/global/travis-hoki.png');
 const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons.jpg');
+const images = require.context('../../../images/websites', true);
 
 const experienceYears = new Date().getFullYear()-2011;
 
@@ -55,7 +56,10 @@ class HomePage extends React.Component {
                                             <h3>{project.subtitle}</h3>
                                         </div>
                                     </div>
-                                    <img src={project.imgThumb}/>
+                                    <img
+                                        src={images(`./${project.key}/sm.jpg`)}
+                                        className="project-img"
+                                    />
                                 </li>
                             );
                         })}
