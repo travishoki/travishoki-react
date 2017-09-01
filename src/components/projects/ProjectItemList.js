@@ -17,6 +17,7 @@ const ProjectListItem = ({ project }) => {
               </div>
               <div className="col-sm-6">
                   <img src={logos(`./${project.company}.jpg`)} className="logo center"/>
+                  <p className="list-heading">Description:</p>
                   <p className="indent">{project.desc}</p>
                   <p className="list-heading">Contributions:</p>
                   <ul className="m-l-20 disc">
@@ -26,6 +27,12 @@ const ProjectListItem = ({ project }) => {
                           );
                       })}
                   </ul>
+                  {project.learned &&
+                      <div>
+                        <p className="list-heading">What I Learned:</p>
+                        <p className="indent">{project.learned}</p>
+                      </div>
+                  }
                   <p className="list-heading">Technologies:</p>
                   <ul className="m-l-20 tech-icon-list">
                       {project.techs.map((tech, index)=>{
