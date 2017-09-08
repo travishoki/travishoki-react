@@ -28,7 +28,7 @@ class ResumePage extends React.Component {
             <div className="banner">
                 <div className="banner-cont">
                     <h1>Resume</h1>
-                    <a className="btn btn-primary btn-lg" href="/pdf/travis-hoki-resume.pdf" target="_blank">
+                    <a className="btn btn-primary btn-lg" href="/portfolio/pdf/travis-hoki-resume.pdf" target="_blank">
                         <i className="fa fa-download"></i> Download
                     </a>
                 </div>
