@@ -26,7 +26,7 @@ const ProjectsData = [
     {
         title: 'Overstock.com',
         subtitle: 'Hackathon 2017',
-        url: 'http://www.overstock.com/',
+        url: 'https://www.overstock.com/94864/static.html',
         desc: "Project for the Overstock Hackathon. It's goal was to increase the amount of reviews and user generated images.",
         key: 'overstock-hackathon-2017',
         company: 'overstock',

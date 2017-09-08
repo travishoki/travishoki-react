@@ -67,11 +67,12 @@ class ContactPage extends React.Component {
         this.setState({saving: true});
 
         this.props.actions.saveContactForm(this.state.message)
-            .then(() => this.redirect())
+            .then(() => {
+            })
             .catch(error => {
-            toastr.error(error);
-            this.setState({saving: false});
-        });
+                toastr.error(error);
+                this.setState({saving: false});
+            });
     }
 
   render() {
@@ -84,7 +85,6 @@ class ContactPage extends React.Component {
                         <img src={img_profile_pic}/>
                     </div>
                     <div className="col-sm-6">
-                        <p>Needing full-time or contract work</p>
                         <p>Contact me with comments or critiques</p>
                         <p>801-691-2373</p>
                         <p>travis.hoki@gmail.com</p>

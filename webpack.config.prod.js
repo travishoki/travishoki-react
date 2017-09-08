@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
+const FtpOutputPlugin = require('ftp-output-webpack-plugin');
+const ftpOptions = require('./ftpOptions');
 
 module.exports = {
     debug: true,
@@ -12,16 +14,14 @@ module.exports = {
     ],
     target: 'web',
     output: {
-        path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
-        publicPath: '/',
+        path: '/portfolio-react', // Note: Physical files are only output by the production build task `npm run build`.
+        publicPath: '/portfolio-react/',
         filename: 'bundle.js'
-    },
-    devServer: {
-        contentBase: path.resolve(__dirname, 'src')
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new FtpOutputPlugin(ftpOptions) // ftpOptions see as above description
     ],
     module: {
         loaders: [

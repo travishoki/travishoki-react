@@ -1,6 +1,7 @@
+import axios from 'axios';
 import * as types from './actionTypes';
 import courseApi from '../api/mockCourseApi';
-import {beginAjaxCall, ajaxCallError} from './ajaxStatusActions';
+import { beginAjaxCall, ajaxCallError } from './ajaxStatusActions';
 
 export function loadCoursesSuccess(courses) {
   return { type: types.LOAD_COURSES_SUCCESS, courses};
@@ -28,12 +29,16 @@ export function loadCourses() {
 export function saveContactForm(message) {
   return function (dispatch, getState) {
     dispatch(beginAjaxCall());
-    return courseApi.sendMessage(message).then(message => {
-      message.id ? dispatch(updateCourseSuccess(message)) :
-        dispatch(createCourseSuccess(message));
-    }).catch(error => {
-      dispatch(ajaxCallError(error));
-      throw(error);
-    });
+    const { name, email, comment } = message;
+    const cmd = 'sendContactForm';
+    return axios.post('http://travishoki.com/portfolio-api.php', {
+            cmd, name, email, comment
+        })
+        .then(function () {
+        })
+        .catch(function (error) {
+            dispatch(ajaxCallError(error));
+            throw(error);
+        });
   };
 }
