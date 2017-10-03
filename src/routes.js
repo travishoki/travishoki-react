@@ -7,6 +7,7 @@ import SingleProjectPage from './components/projects/SingleProjectPage';
 import ResumePage from './components/resume/ResumePage';
 import ContactPage from './components/contact/ContactPage';
 import AboutPage from './components/about/AboutPage';
+import notFoundPage from './components/notFound/NotFoundPage';
 
 export default (
   <Route path="/" component={App}>
@@ -16,5 +17,6 @@ export default (
     <Route path="resume" component={ResumePage} />
     <Route path="contact" component={ContactPage} />
     <Route path="about" component={AboutPage} />
+    <Route path='*' component={notFoundPage} />
   </Route>
 );
