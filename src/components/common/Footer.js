@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, IndexLink } from 'react-router';
 
 import SocialIcons from '../common/SocialIcons';
+import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
 
 class Footer extends React.Component {
     constructor(props) {
@@ -25,8 +26,11 @@ class Footer extends React.Component {
         return (
             <div>
                 <div id="subFooter">
-                    <SocialIcons/>
-                    <Link to="/contact" activeClassName="active" className="contact-link">Contact Me</Link>
+                    <div className="contact-info">
+                        <SocialIcons/>
+                        <Link to="/contact" activeClassName="active" className="contact-link">Contact Me</Link>
+                    </div>
+                    <BluehostAffiliate />
                 </div>
                 <div id="footer" className="center">
                     <p>Copyright Travishoki.com All Rights Reserved</p>

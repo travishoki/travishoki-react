@@ -23,14 +23,51 @@
 }
 #subFooter {
     background: @gray-two;
-    padding: 20px;
     overflow: hidden;
+
+    @media (max-width: 499px) {
+    }
+    @media (min-width: 500px) {
+        padding: 10px;
+    }
+
+    .contact-info {
+        @media (max-width: 499px) {
+            margin: 10px;
+        }
+        @media (min-width: 500px) {
+            float: left;
+        }
+    }
     .social-icons {
         float: left;
+        height: 40px;
+        line-height: 40px;
+
+        @media (max-width: 499px) {
+        }
+        @media (min-width: 500px) {
+        }
     }
     a.contact-link {
         color: @white;
-        line-height: 30px;
+        line-height: 40px;
         margin-left: 20px;
+    }
+    .affiliates {
+        @media (max-width: 499px) {
+            background: #1d73da;
+            padding: 5px 0;
+        }
+        @media (min-width: 500px) {
+            float: right;
+        }
+
+        img {
+            @media (max-width: 499px) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
     }
 }
