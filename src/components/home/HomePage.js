@@ -13,14 +13,12 @@ const images = require.context('../../../images/websites', true);
 const experienceYears = new Date().getFullYear()-2011;
 
 const skillsList = [
+	'React JS and Redux',
     'Preprocessed CSS (Less and SCSS)',
     'Responsive CSS with Media Queries',
-    'JavaScript and CoffeeScript',
-    'JavaScript Framework in Angular',
 
-    'Small and Large business experience',
-    'Content Management Systems',
-    'Custom Wordpress Themes',
+	'Node JS Server-side rendering for SEO and optimization',
+    'Small and large business experience',
     'SQL and restful API integration'
 ];
 

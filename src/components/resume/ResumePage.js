@@ -8,9 +8,10 @@ const imgResume = require('../../../images/resume/resume.jpg');
 
 const skillsList = [
 	'JavaScript',
-	'ReactJs',
+	'React JS',
 	'Redux',
 	'Reselect',
+	'Node JS',
 	'HTML',
 	'CSS',
 

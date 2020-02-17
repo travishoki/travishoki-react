@@ -13,8 +13,8 @@ const ResumeData = [
         dateEnd: 'Present',
         tasks: [
 			'Create/maintain web features and projects for the Books and Cards teams',
-			'Actively convert AngularJs to ReactJs while keeping product code stable',
-			'NodeJs Server-side rendering for SEO and optimization'
+			'Actively convert Angular JS to React JS while keeping product code stable',
+			'Node JS Server-side rendering for SEO and optimization'
         ],
         img: imgChatbooks
     },
