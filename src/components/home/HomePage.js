@@ -10,7 +10,20 @@ const img_profile_pic = require('../../../images/global/travis-hoki.png');
 const img_tech_icons = require('../../../images/icons/tech-icons/tech-icons.jpg');
 const images = require.context('../../../images/websites', true);
 
-const experienceYears = new Date().getFullYear()-2011;
+const experienceYears = () => {
+	const MONTH = 11;
+	const YEAR = 2011;
+	const d = new Date();
+	const monthNum = d.getMonth() + 1;
+	const yearNum = d.getFullYear();
+	const fullYearsExperience = yearNum - YEAR;
+
+	if (monthNum < MONTH) {
+		return fullYearsExperience - 1;
+	}
+
+	return fullYearsExperience;
+};
 
 const skillsList = [
 	'React JS and Redux',
@@ -66,7 +79,7 @@ class HomePage extends React.Component {
                 </div>
             </section>
 
-            <ListSection title={experienceYears + "+ Years Experience"} list={skillsList} />
+            <ListSection title={experienceYears() + "+ Years Experience"} list={skillsList} />
 
             <Education />
       </div>
