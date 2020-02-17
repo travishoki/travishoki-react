@@ -7,16 +7,19 @@ import ListSection from '../common/ListSection';
 const imgResume = require('../../../images/resume/resume.jpg');
 
 const skillsList = [
+	'JavaScript',
+	'ReactJs',
+	'Redux',
+	'Reselect',
+	'HTML',
+	'CSS',
+
+	'Angular JS',
+	'SASS',
+	'LESS',
+	'jQuery',
     'PHP',
     'SQL',
-    'JavaScript',
-    'jQuery',
-    'Angular JS',
-    'HTML 5',
-    'CSS 3',
-    'SASS',
-    'LESS',
-    'Actionscript 3'
 ];
 
 const img_profile_pic = require('../../../images/global/resume.png');

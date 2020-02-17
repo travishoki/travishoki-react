@@ -1,3 +1,4 @@
+const imgChatbooks = require('../../../images/experience/chatbooks.png');
 const imgOvestock = require('../../../images/experience/overstock.png');
 const imgRoomChoice = require('../../../images/experience/roomchoice.png');
 const imgEnspark = require('../../../images/experience/enspark.png');
@@ -6,15 +7,27 @@ const imgAllAm = require('../../../images/experience/all-american-sod-farms.png'
 
 const ResumeData = [
     {
-        title: 'Overstock.com',
-        position: 'Front-end Developer',
-        dateStart: 'Sept 2015',
+        title: 'Chatbooks',
+        position: 'Web Developer',
+		dateStart: 'Mar 2019',
         dateEnd: 'Present',
         tasks: [
-            'Pioneer affiliate links program',
-            'Enhancements to customer reviews functionality',
-            'Manage the Front-End for all user generated content',
-            'Manage pixels for retargeting and third party integrations'
+			'Create/maintain web features and projects for the Books and Cards teams',
+			'Actively convert AngularJs to ReactJs while keeping product code stable',
+			'NodeJs Server-side rendering for SEO and optimization'
+        ],
+        img: imgChatbooks
+    },
+	{
+        title: 'Overstock',
+        position: 'Front-end Developer',
+        dateStart: 'Sep 2015',
+        dateEnd: 'Mar 2019',
+        tasks: [
+			'Enhancements to customer reviews functionality',
+			'Manage the Front-End for all User Generated Content',
+            'Manage pixels for retargeting and third party integrations',
+			'Pioneer affiliate links program'
         ],
         img: imgOvestock
     },
@@ -22,10 +35,10 @@ const ResumeData = [
         title: 'Room Choice',
         position: 'Full Stack Web-App Developer',
         dateStart: 'Dec 2014',
-        dateEnd: 'Sept 2015',
+        dateEnd: 'Sep 2015',
         tasks: [
             'Query user data via Python and Django',
-            'Manage and enhance front-end via Angular, CoffeeScript, and Classy',
+            'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
             'In house developement on student housing software',
             'Finding ways to speedup and enhance the user experience of the software'
         ],
