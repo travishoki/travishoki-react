@@ -21,7 +21,7 @@
     "bootstrap": "3.3.6",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "0.0.5-beta.2",
-    "jquery": "2.2.3",
+    "jquery": "3.4.0",
     "react": "15.0.2",
     "react-dom": "15.0.2",
     "react-redux": "4.4.5",
