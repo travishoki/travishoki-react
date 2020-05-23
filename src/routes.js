@@ -17,6 +17,6 @@ export default (
     <Route path="resume" component={ResumePage} />
     <Route path="contact" component={ContactPage} />
     <Route path="about" component={AboutPage} />
-    <Route path='*' component={notFoundPage} />
+    <Route path="*" component={notFoundPage} />
   </Route>
 );

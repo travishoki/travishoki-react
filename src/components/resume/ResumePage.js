@@ -20,7 +20,7 @@ const skillsList = [
 	'LESS',
 	'jQuery',
     'PHP',
-    'SQL',
+    'SQL'
 ];
 
 const img_profile_pic = require('../../../images/global/resume.png');
