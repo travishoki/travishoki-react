@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+
 import Projects from '../projects/ProjectsData';
 import Education from '../common/Education';
+import HokiSkateboards from '../common/HokiSkateboards';
 import ListSection from '../common/ListSection';
-
 import SocialIcons from '../common/SocialIcons';
 
 const img_profile_pic = require('../../../images/global/travis-hoki.png');
@@ -82,6 +83,8 @@ class HomePage extends React.Component {
             <ListSection title={experienceYears() + "+ Years Experience"} list={skillsList} />
 
             <Education />
+
+			<HokiSkateboards />
       </div>
     );
   }
