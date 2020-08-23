@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import Projects from '../projects/ProjectsData';
+import Projects from '../projects/ProjectsPage.data';
 import Education from '../common/Education';
 import HokiSkateboards from '../common/HokiSkateboards';
 import ListSection from '../common/ListSection';
