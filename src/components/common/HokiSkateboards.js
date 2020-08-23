@@ -5,7 +5,7 @@ const HokiSkateboards = () => {
   return (
 	  <div className="hoki-skateboards">
 		  <div className="hoki-skateboards-inner">
-			<h3>Side Project</h3>
+			<h3>Passion Project</h3>
 
 			<a
 				title="Hoki Skateboards"
