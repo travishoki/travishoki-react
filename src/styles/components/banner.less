@@ -1,63 +1,77 @@
 .banner {
+	overflow: hidden;
     position: relative;
-    overflow: hidden;
+
     .banner-cont {
-        position: absolute;
-        z-index: 1;
         left: 0;
+		position: absolute;
         right: 0;
+		z-index: 1;
+
         @media (max-width: 767px) {
             top: 20px;
-        }
+		}
+
         @media (min-width: 768px) {
             top: 90px;
         }
+
         h1 {
             margin: 0;
+
             @media (max-width: 767px) {
                 font-size: 20px;
             }
+
             @media (min-width: 768px) {
-                margin-bottom: 10px;
                 font-size: 30px;
+				margin-bottom: 10px;
             }
         }
         .btn {
             display: block;
             margin: 0 auto;
+
             @media (max-width: 767px) {
-                width: 120px;
                 margin-top: 10px;
+				width: 120px;
             }
+
             @media (min-width: 768px) {
                 width: 200px;
                 margin-top: 20px;
             }
         }
+
         .social-icons {
             margin: 20px auto;
         }
     }
     .banner-bg {
         background: @gray-three;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 0;
+
         @media (max-width: 767px) {
             .opacity(0.5);
         }
+
         @media (min-width: 768px) {
             .opacity(0.25);
         }
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
     }
+
     img.banner-pic {
         float: right;
+
         @media (max-width: 767px) {
             height: 175px;
         }
+
         @media (min-width: 768px) {
             height: 350px;
         }

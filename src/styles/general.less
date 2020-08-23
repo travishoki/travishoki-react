@@ -1,21 +1,27 @@
 .pointer {
     cursor: pointer;
 }
+
 .center {
     text-align: center;
 }
+
 .f-left {
     float: left;
 }
+
 .f-right {
     float: right;
 }
+
 ul.disc {
     list-style: disc;
 }
+
 .m-l-20 {
     margin-left: 20px;
 }
+
 p.indent {
     text-indent: 20px;
 }
@@ -27,17 +33,22 @@ body {
         cursor: pointer;
         color: @white;
     }
+
     p, a, li {
         font-weight: 16px;
     }
+
     div, section {
+
         &.center {
             text-align: center;
         }
+
         &.bold {
             font-weight: bold;
         }
     }
+
     img {
         max-width: 100%;
         &.center {
@@ -45,48 +56,60 @@ body {
             display: block;
         }
     }
+
     section {
         padding: 20px;
+
         &.white {
             background: @white;
             color: @gray-two;
         }
+
         &.primary {
             background: @primary;
             color: @white;
         }
+
         h3 {
+			font-weight: bold;
             margin: 0 0 20px;
-            text-align: center;
-            font-weight: bold;
+			text-align: center;
+
             @media (max-width: 767px) {
                 font-size: 25px;
             }
+
             @media (min-width: 768px) {
                 font-size: 30px;
             }
         }
     }
+
     .boxed {
         max-width: 1024px;
         margin: 0 auto;
         padding: 0 10px;
+
         &.boxed-sm {
             max-width: 300px;
         }
+
         &.boxed-md {
             max-width: 600px;
         }
+
         &.boxed-lg {
             max-width: 900px;
         }
     }
+
     #container {
         margin: 20px 0;
+
         h1 {
-            text-align: center;
+			font-weight: bold;
             margin-bottom: 30px;
-            font-weight: bold;
+			text-align: center;
         }
     }
 }
@@ -94,8 +117,8 @@ body {
 form {
     input, textarea {
         &.form-control {
+			background: @gray-two;
             border: none;
-            background: @gray-two;
         }
     }
 }
