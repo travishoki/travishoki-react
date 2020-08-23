@@ -5,14 +5,17 @@ import { Link, IndexLink } from 'react-router';
 class Header extends React.Component {
     constructor(props) {
         super(props);
-        this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+
         this.state = {
             showMobileNav: false
         };
+
+		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
     }
 
     componentWillMount(){
         const initialPath = location.pathname;
+
         this.setState({
           _routePath: initialPath
         });
@@ -49,7 +52,10 @@ class Header extends React.Component {
                     <h1><Link to="/">Travis Hoki</Link></h1>
 
                     <div className="menu-btn">
-                        <i className="fa fa-bars mobileMenuIcon" onClick={this.toggleMobileMenu} />
+                        <i
+							className="fa fa-bars mobileMenuIcon"
+							onClick={this.toggleMobileMenu}
+						/>
                     </div>
 
                     <ul className={'nav ' + (this.state.showMobileNav ? 'slide-down' : 'slide-up')}>

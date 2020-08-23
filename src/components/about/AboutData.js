@@ -6,12 +6,12 @@ const imgSkateboard = require('../../../images/about/skateboarding.png');
 const imgBallroom = require('../../../images/about/ballroom.png');
 const imgBreakdance = require('../../../images/about/breakdance.png');
 
-const age = new Date().getFullYear()-1990;
+const AGE = new Date().getFullYear()-1990;
 
 const AboutData = [
       {
           title: 'Hey',
-          desc: `My name is Travis. I\'m from Orem. I\'m ${age} years old.`,
+          desc: `My name is Travis. I\'m from Orem. I\'m ${AGE} years old.`,
           img: imgProfilePic
       },
       {

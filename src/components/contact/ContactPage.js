@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import toastr from 'toastr';
+
 import * as courseActions from '../../actions/courseActions';
 import ContactForm from '../contact/ContactForm';
-import toastr from 'toastr';
 
 const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 
@@ -22,8 +23,8 @@ class ContactPage extends React.Component {
             }
         };
 
+		this.saveContactForm = this.saveContactForm.bind(this);
         this.updateContactFormState = this.updateContactFormState.bind(this);
-        this.saveContactForm = this.saveContactForm.bind(this);
     }
 
     updateContactFormState(event) {

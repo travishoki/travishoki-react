@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+
 import ResumeData from './ResumeData';
 import Education from '../common/Education';
 import ListSection from '../common/ListSection';

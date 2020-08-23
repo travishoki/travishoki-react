@@ -65,22 +65,20 @@ const HomePage = () => {
                 <h3>Projects</h3>
                 <div className="boxed boxed-lg">
                     <ul>
-                        {currentProjects.map((project, index)=>{
-                            return (
-                                <li key={index}>
-                                    <div className="project-header">
-                                        <div className="project-header-inner">
-                                            <h2>{project.title}</h2>
-                                            <h3>{project.subtitle}</h3>
-                                        </div>
+                        {currentProjects.map((project, index) => (
+                            <li key={index}>
+                                <div className="project-header">
+                                    <div className="project-header-inner">
+                                        <h2>{project.title}</h2>
+                                        <h3>{project.subtitle}</h3>
                                     </div>
-                                    <img
-                                        src={images(`./${project.key}/sm.jpg`)}
-                                        className="project-img"
-                                    />
-                                </li>
-                            );
-                        })}
+                                </div>
+                                <img
+                                    src={images(`./${project.key}/sm.jpg`)}
+                                    className="project-img"
+                                />
+                            </li>
+                        ))}
                     </ul>
                     <Link
 						to="/projects"
@@ -90,7 +88,10 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <ListSection title={experienceYears() + "+ Years Experience"} list={skillsList} />
+            <ListSection
+				title={experienceYears() + "+ Years Experience"}
+				list={skillsList}
+			/>
 
             <Education />
 

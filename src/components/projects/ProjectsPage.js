@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import ProjectsData from './ProjectsData';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';

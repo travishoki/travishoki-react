@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, IndexLink } from 'react-router';
 
-import SocialIcons from '../common/SocialIcons';
 import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
+import SocialIcons from '../common/SocialIcons';
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
+
         this.scrollToTop = this.scrollToTop.bind(this);
     }
 
