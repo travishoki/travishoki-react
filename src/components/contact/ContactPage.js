@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -9,7 +9,7 @@ import ContactForm from '../contact/ContactForm';
 
 const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 
-class ContactPage extends React.Component {
+class ContactPage extends Component {
     constructor(props, context) {
         super(props, context);
 

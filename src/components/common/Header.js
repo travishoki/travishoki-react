@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, IndexLink } from 'react-router';
 
-class Header extends React.Component {
+class Header extends Component {
     constructor(props) {
         super(props);
 

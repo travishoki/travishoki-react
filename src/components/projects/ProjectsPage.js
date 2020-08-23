@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import ProjectsPageData from './ProjectsPage.data';
@@ -29,7 +29,7 @@ const filterList = [
     'wordpress'
 ];
 
-class ProjectsPage extends React.Component {
+class ProjectsPage extends Component {
     constructor(props) {
         super(props);
 

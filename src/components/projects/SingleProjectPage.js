@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
-import Projects from './ProjectsData';
+import Projects from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList';
 
 let singleProject;
 
-class SingleProjectPage extends React.Component {
+class SingleProjectPage extends Component {
     constructor(props) {
         super(props);
 
