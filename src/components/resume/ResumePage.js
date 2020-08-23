@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import ResumeData from './ResumeData';
+import ResumePageData from './ResumePage.data';
 import Education from '../common/Education';
 import ListSection from '../common/ListSection';
 
@@ -59,7 +59,7 @@ const ResumePage = () => (
             <h2>Experience</h2>
 
             <ul className="staggered">
-                {ResumeData.map((job, index) => (
+                {ResumePageData.map((job, index) => (
                     <li key={index}>
                         <div className="image">
                             <img src={job.img}/>

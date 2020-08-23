@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import AboutData from './AboutData';
+import AboutPageData from './AboutPage.data';
 
 const AboutPage = () => (
     <div
@@ -12,7 +12,7 @@ const AboutPage = () => (
             <h1>About Me</h1>
 
             <ul className="staggered">
-                {AboutData.map((item, index) => (
+                {AboutPageData.map((item, index) => (
                     <li key={index}>
                         <div className="image">
                             <img src={item.img}/>
