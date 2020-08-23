@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TextInput from '../common/TextInput';
 import TextArea from '../common/TextArea';
 
@@ -46,10 +47,10 @@ const ContactForm = ({
 );
 
 ContactForm.propTypes = {
-	onSave: React.PropTypes.func.isRequired,
-	onChange: React.PropTypes.func.isRequired,
-	saving: React.PropTypes.bool,
-	errors: React.PropTypes.object
+	onSave: PropTypes.func.isRequired,
+	onChange: PropTypes.func.isRequired,
+	saving: PropTypes.bool,
+	errors: PropTypes.object
 };
 
 export default ContactForm;

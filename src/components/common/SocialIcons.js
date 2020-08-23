@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const SocialIcons = () => (
 	<ul className="social-icons">
