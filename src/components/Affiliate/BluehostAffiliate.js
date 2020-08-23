@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BluehostAffiliate = () => (
+const BluehostAffiliate = () => (
     <div className="affiliates">
         <a
             href="https://www.bluehost.com/track/travishoki/"
