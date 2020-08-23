@@ -44,7 +44,10 @@ class Footer extends React.Component {
                     <BluehostAffiliate />
                 </div>
 
-                <div id="footer" className="center">
+                <div
+					id="footer"
+					className="center"
+				>
                     <p>Copyright Travishoki.com All Rights Reserved</p>
                     <i
 						className="circ-sm fa fa-angle-up back-to-top"

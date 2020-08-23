@@ -51,9 +51,9 @@ const ResumePage = () => (
 			/>
         </div>
 
-        <section className="primary"></section>
+        <section className="primary" />
 
-        <section className="white"></section>
+        <section className="white" />
 
         <div className="boxed boxed-lg">
             <h2>Experience</h2>

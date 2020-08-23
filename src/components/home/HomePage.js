@@ -40,7 +40,10 @@ const HomePage = () => {
     const currentProjects = [Projects[0], Projects[1], Projects[2]];
 
     return (
-        <div id="container" className="home">
+        <div
+			id="container"
+			className="home"
+		>
             <div className="banner">
                 <div className="banner-cont">
                     <h1>Web Developer</h1>

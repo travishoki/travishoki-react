@@ -33,23 +33,23 @@ class ProjectsPage extends React.Component {
     constructor(props) {
         super(props);
 
-        this.toggleView = this.toggleView.bind(this);
-        this.onSelectFilter = this.onSelectFilter.bind(this);
-        this.onChangeSearch = this.onChangeSearch.bind(this);
-        this.onClearFilter = this.onClearFilter.bind(this);
+		this.onChangeFilter = this.onChangeFilter.bind(this);
+		this.onChangeSearch = this.onChangeSearch.bind(this);
+		this.onClearAndCloseFilter = this.onClearAndCloseFilter.bind(this);
+		this.onClearFilter = this.onClearFilter.bind(this);
         this.onClearSearchTerm = this.onClearSearchTerm.bind(this);
-        this.onChangeFilter = this.onChangeFilter.bind(this);
-        this.toggleOpenFilter = this.toggleOpenFilter.bind(this);
-        this.onClearAndCloseFilter = this.onClearAndCloseFilter.bind(this);
+		this.onSelectFilter = this.onSelectFilter.bind(this);
+		this.toggleOpenFilter = this.toggleOpenFilter.bind(this);
+		this.toggleView = this.toggleView.bind(this);
 
         const filter = (props.params.filter === 'all') ? null : props.params.filter;
 
         this.state = {
+			filter: filter || null,
+			filterTerm: filter || null,
             grid: true,
-            filter: filter || null,
-            searchTerm: props.params.search || '',
-            filterTerm: filter || null,
-            isFilterOpen: false
+			isFilterOpen: false,
+            searchTerm: props.params.search || ''
         };
     }
 
@@ -74,13 +74,16 @@ class ProjectsPage extends React.Component {
         if (searchTerm !== '') {
             projects = projects.filter((item) => {
                 const a = ["title", "subtitle", "desc", "contributions"];
+
                 for (let i = 0 ; i < a.length ; i++) {
                     const key = a[i];
                     const str = String(item[key]).toLowerCase();
+
                     if (str.indexOf(searchTerm.toLowerCase()) > -1) {
                         return true;
                     }
                 }
+
                 return false;
             });
         }
@@ -246,7 +249,12 @@ class ProjectsPage extends React.Component {
                         }
 
                         {projects.length > 0 &&
-                            <p className="view-controls" onClick={this.toggleView}>View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} /></p>
+                            <p
+								className="view-controls"
+								onClick={this.toggleView}
+							>
+								View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} />
+							</p>
                         }
                     </div>
 
@@ -254,12 +262,11 @@ class ProjectsPage extends React.Component {
                         <ul className={`projects ${resultsCountClass}`}>
                             {projects.map((project, index) => (
                                 <li key={index} className="project">
-                                    {this.state.grid &&
+                                    {this.state.grid ? (
                                         <ProjectItemGrid project={project} />
-                                    }
-                                    {!this.state.grid &&
+                                    ) : (
                                         <ProjectItemList project={project}/>
-                                    }
+                                    )}
                                 </li>
                             ))}
                         </ul>
@@ -269,11 +276,15 @@ class ProjectsPage extends React.Component {
                             <p>Clear filter and search terms to find more results.</p>
 
                             {this.state.filter &&
-                                <p onClick={this.onClearFilter}>Filter: {this.state.filter} <i className="fa fa-close" /></p>
+                                <p onClick={this.onClearFilter}>
+									Filter: {this.state.filter} <i className="fa fa-close" />
+								</p>
 							}
 
                             {this.state.searchTerm &&
-                                <p onClick={this.onClearSearchTerm}>Search Term: {this.state.searchTerm} <i className="fa fa-close" /></p>
+                                <p onClick={this.onClearSearchTerm}>
+									Search Term: {this.state.searchTerm} <i className="fa fa-close" />
+								</p>
                             }
                         </div>
                     )}

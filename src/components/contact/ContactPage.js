@@ -74,7 +74,7 @@ class ContactPage extends React.Component {
             })
             .catch(error => {
                 toastr.error(error);
-                this.setState({saving: false});
+                this.setState({ saving: false });
             });
     }
 
@@ -83,6 +83,7 @@ class ContactPage extends React.Component {
         <div id="container" className="contact">
             <div className="boxed">
                 <h1>Contact Me</h1>
+
                 <div className="row">
                     <div className="col-sm-6">
                         <img src={img_profile_pic}/>

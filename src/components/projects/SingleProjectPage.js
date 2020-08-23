@@ -22,7 +22,10 @@ class SingleProjectPage extends React.Component {
 
     render() {
         return (
-            <div id="container" className="projects">
+            <div
+				id="container"
+				className="projects"
+			>
                 <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
                     <Link
 						to="/projects"

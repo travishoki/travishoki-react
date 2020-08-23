@@ -9,6 +9,7 @@ const ProjectGridItem = ({ project}) => (
 	<div className="grid-item">
 		<div className="popup">
 			<Link to={"/project/"+project.key}>
+
 			<div className="popup-inner">
 				<div className="popup-cont">
 					<img
