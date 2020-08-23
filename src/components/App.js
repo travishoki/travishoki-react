@@ -5,10 +5,12 @@ import { connect } from 'react-redux';
 import Header from './common/Header';
 import Footer from './common/Footer';
 
-const App = () => (
+const App = ({
+	children
+}) => (
 	<div>
 		<Header/>
-			{this.props.children}
+			{children}
 		<Footer />
 	</div>
 );
