@@ -46,23 +46,23 @@ const courses = [
   }
 ];
 
-function replaceAll(str, find, replace) {
-  return str.replace(new RegExp(find, 'g'), replace);
-}
+const replaceAll = (str, find, replace) => {
+	return str.replace(new RegExp(find, 'g'), replace);
+};
 
 //This would be performed on the server in a real app. Just stubbing in.
 const generateId = (course) => {
-  return replaceAll(course.title, ' ', '-');
+	return replaceAll(course.title, ' ', '-');
 };
 
 class CourseApi {
-  static getAllCourses() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(Object.assign([], courses));
-      }, delay);
-    });
-  }
+	static getAllCourses() {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve(Object.assign([], courses));
+			}, delay);
+		});
+	}
 
   static sendMessage(message){
       return new Promise((resolve, reject) => {
