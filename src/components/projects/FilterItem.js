@@ -2,11 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TechIcon from './TechIcon';
 
-const FilterItem = ({ item, filter, onSelectFilter }) => {
+const FilterItem = ({
+	item,
+	filter,
+	onSelectFilter
+}) => {
     const clickItem = () => {
         onSelectFilter(item);
     };
+
     const active = (filter === null || filter === item) ? 'active' : '';
+
     return (
         <li
             onClick={clickItem}

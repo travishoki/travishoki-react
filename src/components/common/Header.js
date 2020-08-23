@@ -10,12 +10,14 @@ class Header extends React.Component {
             showMobileNav: false
         };
     }
+
     componentWillMount(){
         const initialPath = location.pathname;
         this.setState({
           _routePath: initialPath
         });
     }
+
     componentWillReceiveProps() {
         const newPath = location.pathname;
 
@@ -29,14 +31,17 @@ class Header extends React.Component {
             }
         }
     }
+
     onRouteChanged(){
         if(this.state.showMobileNav){
             this.toggleMobileMenu();
         }
     }
+
     toggleMobileMenu(){
         this.setState({ showMobileNav: !this.state.showMobileNav });
     }
+
     render() {
         return (
             <div id="header">

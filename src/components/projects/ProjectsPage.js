@@ -51,11 +51,13 @@ class ProjectsPage extends React.Component {
             isFilterOpen: false
         };
     }
+
     inArr(item, arr) {
         return arr.filter((thing) => {
             return thing === item;
         }).length > 0;
     }
+
     filterProjects(){
         const { filter, searchTerm } = this.state;
         let projects = ProjectsData;
@@ -84,55 +86,72 @@ class ProjectsPage extends React.Component {
 
         return projects;
     }
+
     toggleView(){
         this.setState({ grid: !this.state.grid });
     }
+
     onSelectFilter(filter){
         if(filter === this.state.filter){
             filter = null;
         }
+
         const filterTerm = filter;
+
         this.setState({ filter, filterTerm });
     }
     onChangeSearch(e) {
         const searchTerm = e.currentTarget.value;
+
         this.setState({ searchTerm });
     }
+
     onClearFilter() {
         const filter = null;
         const filterTerm = null;
+
         this.setState({ filter, filterTerm });
     }
+
     onClearSearchTerm() {
         const searchTerm = '';
+
         this.setState({ searchTerm });
     }
+
     getResultsCountClass(num) {
         const maxColumnCount = 4;
+
         if (num < maxColumnCount) {
             return `results-${num}`;
         }
 
         return 'results-full';
     }
+
     onChangeFilter(e) {
         const filterTerm = e.target.value;
+
         this.setState({ filterTerm });
     }
+
     toggleOpenFilter() {
         this.setState({ isFilterOpen: !this.state.isFilterOpen });
     }
+
     onClearAndCloseFilter() {
         this.onClearFilter();
         this.toggleOpenFilter();
     }
+
     render() {
         const projects = this.filterProjects();
         const resultsCountClass = this.getResultsCountClass(projects.length);
         const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
-        const filterListFiltered = filterList.filter((item) =>{
+        const filterListFiltered = filterList.filter((item) => {
             return this.state.filterTerm === null || item.toLowerCase().indexOf(this.state.filterTerm.toLowerCase()) > -1;
         });
+
         return (
             <div id="container" className="projects">
                 <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
@@ -140,11 +159,15 @@ class ProjectsPage extends React.Component {
 
                     <div className="filter-section">
                         <p className="center">Click on the icons below to filter my work by different technologies</p>
+
                         {this.state.filter ? (
                             <div className="tech-icon-item">
                                 <TechIcon name={this.state.filter} />
                                 <p>{this.state.filter}</p>
-                                <i className="fa fa-close pointer f-right" onClick={this.onClearAndCloseFilter} />
+                                <i
+									className="fa fa-close pointer f-right"
+									onClick={this.onClearAndCloseFilter}
+								/>
                             </div>
                         ):(
                             <div>
@@ -170,30 +193,34 @@ class ProjectsPage extends React.Component {
                                                         <p>All</p>
                                                     </li>
                                                 }
-                                                {filterListFiltered.map((item, index) => {
-                                                    return (
-                                                        <FilterItem
-                                                            key={index}
-                                                            item={item}
-                                                            filter={this.state.filter}
-                                                            onSelectFilter={this.onSelectFilter}
-                                                        />
-                                                    );
-                                                })}
+
+                                                {filterListFiltered.map((item, index) => (
+                                                    <FilterItem
+                                                        key={index}
+                                                        item={item}
+                                                        filter={this.state.filter}
+                                                        onSelectFilter={this.onSelectFilter}
+                                                    />
+                                                ))}
                                             </ul>
                                         ):(
                                             <p className="center">No Results</p>
                                         )}
                                     </div>
                                 ) : (
-                                    <div onClick={this.toggleOpenFilter} className="filter-item pointer">
+                                    <div
+										onClick={this.toggleOpenFilter}
+										className="filter-item pointer"
+									>
                                         <p className="f-left">Filter by Tech</p>
                                         <i className="fa fa-chevron-down f-right"/>
                                     </div>
                                 )}
                             </div>
                         )}
+
                         <div className="clearfix" />
+
                         <form>
                             <div
                                 id="input-holder"
@@ -212,9 +239,11 @@ class ProjectsPage extends React.Component {
                                 }
                             </div>
                         </form>
+
                         {showResultsCount &&
                             <p className="results-count">Results: {projects.length}</p>
                         }
+
                         {projects.length > 0 &&
                             <p className="view-controls" onClick={this.toggleView}>View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} /></p>
                         }
@@ -222,26 +251,26 @@ class ProjectsPage extends React.Component {
 
                     {projects.length > 0 ? (
                         <ul className={`projects ${resultsCountClass}`}>
-                            {projects.map((project, index) => {
-                                return (
-                                    <li key={index} className="project">
-                                        {this.state.grid &&
-                                            <ProjectItemGrid project={project} />
-                                        }
-                                        {!this.state.grid &&
-                                            <ProjectItemList project={project}/>
-                                        }
-                                    </li>
-                                );
-                            })}
+                            {projects.map((project, index) => (
+                                <li key={index} className="project">
+                                    {this.state.grid &&
+                                        <ProjectItemGrid project={project} />
+                                    }
+                                    {!this.state.grid &&
+                                        <ProjectItemList project={project}/>
+                                    }
+                                </li>
+                            ))}
                         </ul>
                     ) : (
                         <div className="no-results">
                             <h3>No results</h3>
                             <p>Clear filter and search terms to find more results.</p>
+
                             {this.state.filter &&
                                 <p onClick={this.onClearFilter}>Filter: {this.state.filter} <i className="fa fa-close" /></p>
-                            }
+							}
+
                             {this.state.searchTerm &&
                                 <p onClick={this.onClearSearchTerm}>Search Term: {this.state.searchTerm} <i className="fa fa-close" /></p>
                             }

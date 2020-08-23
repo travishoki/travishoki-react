@@ -30,7 +30,9 @@ class ContactPage extends React.Component {
         const field = event.target.name;
         const value = event.target.value;
         let message = this.state.message;
+
         message[field] = event.target.value;
+
         return this.setState({course: value});
     }
 
@@ -84,16 +86,18 @@ class ContactPage extends React.Component {
                     <div className="col-sm-6">
                         <img src={img_profile_pic}/>
                     </div>
+
                     <div className="col-sm-6">
                         <p>Contact me with comments or critiques</p>
                         <p>801-691-2373</p>
                         <p>travis.hoki@gmail.com</p>
+
                         <ContactForm
                             onChange={this.updateContactFormState}
                             onSave={this.saveContactForm}
                             errors={this.state.errors}
                             saving={this.state.saving}
-                            />
+                        />
                     </div>
                 </div>
             </div>
@@ -102,17 +106,13 @@ class ContactPage extends React.Component {
   }
 }
 
-function mapStateToProps(state, ownProps) {
-    return  {
-        email: 'thoki@o.co'
-    };
-}
+const mapStateToProps = (state, ownProps) => ({
+    email: 'thoki@o.co'
+});
 
-function mapDispatchToProps(dispatch){
-    return {
-        actions: bindActionCreators(courseActions, dispatch)
-    };
-}
+const mapDispatchToProps = (dispatch) => ({
+    actions: bindActionCreators(courseActions, dispatch)
+});
 
 ContactPage.propTypes = {
   email: PropTypes.string.isRequired,

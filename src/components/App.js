@@ -4,27 +4,21 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 import { connect } from 'react-redux';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header/>
-        {this.props.children}
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => (
+	<div>
+		<Header/>
+			{this.props.children}
+		<Footer />
+	</div>
+);
 
 App.propTypes = {
-  children: PropTypes.object.isRequired,
-  loading: PropTypes.bool.isRequired
+	children: PropTypes.object.isRequired,
+	loading: PropTypes.bool.isRequired
 };
 
-function mapStateToProps(state, ownProps) {
-  return {
-    loading: state.ajaxCallsInProgress > 0
-  };
-}
+const mapStateToProps = (state, ownProps) => ({
+	loading: state.ajaxCallsInProgress > 0
+});
 
 export default connect(mapStateToProps)(App);

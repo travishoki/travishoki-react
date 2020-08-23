@@ -10,13 +10,13 @@ import AboutPage from './components/about/AboutPage';
 import notFoundPage from './components/notFound/NotFoundPage';
 
 export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
-    <Route path="projects(/:filter/:search)" component={ProjectsPage} />
-    <Route path="project/:key" component={SingleProjectPage} />
-    <Route path="resume" component={ResumePage} />
-    <Route path="contact" component={ContactPage} />
-    <Route path="about" component={AboutPage} />
-    <Route path="*" component={notFoundPage} />
-  </Route>
+	<Route path="/" component={App}>
+		<IndexRoute component={HomePage} />
+		<Route path="projects(/:filter/:search)" component={ProjectsPage} />
+		<Route path="project/:key" component={SingleProjectPage} />
+		<Route path="resume" component={ResumePage} />
+		<Route path="contact" component={ContactPage} />
+		<Route path="about" component={AboutPage} />
+		<Route path="*" component={notFoundPage} />
+	</Route>
 );

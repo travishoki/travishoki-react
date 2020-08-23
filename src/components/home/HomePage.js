@@ -36,23 +36,29 @@ const skillsList = [
     'SQL and restful API integration'
 ];
 
-class HomePage extends React.Component {
-  render() {
+const HomePage = () => {
     const currentProjects = [Projects[0], Projects[1], Projects[2]];
+
     return (
         <div id="container" className="home">
             <div className="banner">
                 <div className="banner-cont">
                     <h1>Web Developer</h1>
                     <SocialIcons/>
-                    <Link className="btn btn-primary btn-lg" to="/contact">Contact Me</Link>
+                    <Link
+						className="btn btn-primary btn-lg"
+						to="/contact"
+					>Contact Me</Link>
                 </div>
                 <div className="banner-bg"></div>
                 <img className="banner-pic" src={img_profile_pic}/>
             </div>
 
             <section className="white skills">
-                <img src={img_tech_icons} className="center"/>
+                <img
+					src={img_tech_icons}
+					className="center"
+				/>
             </section>
 
             <section className="projects">
@@ -76,7 +82,11 @@ class HomePage extends React.Component {
                             );
                         })}
                     </ul>
-                    <Link to="/projects" activeClassName="active" className="btn btn-primary btn-lg">View All Projects</Link>
+                    <Link
+						to="/projects"
+						activeClassName="active"
+						className="btn btn-primary btn-lg"
+					>View All Projects</Link>
                 </div>
             </section>
 
@@ -87,7 +97,6 @@ class HomePage extends React.Component {
 			<HokiSkateboards />
       </div>
     );
-  }
-}
+};
 
 export default HomePage;

@@ -2,36 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ListSection = ({ title, list }) => {
-    const midNum = Math.ceil(list.length/2);
-    const listA = list.slice(0, midNum);
-    const listB = list.splice(midNum, list.length);
-  return (
-      <section className="primary list-section">
-          <h3>{title}</h3>
-          <div className="boxed boxed-md">
-              <div className="row">
-                  <div className="col-sm-6">
-                      <ul>
-                        {listA.map((item, index)=>{
-                            return (
-                                <li key={index}>{item}</li>
-                            );
-                        })}
-                      </ul>
-                  </div>
-                  <div className="col-sm-6">
-                      <ul>
-                      {listB.map((item, index)=>{
-                          return (
-                              <li key={index}>{item}</li>
-                          );
-                      })}
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
-  );
+	const MID_NUM = Math.ceil(list.length/2);
+	const LIST_A = list.slice(0, MID_NUM);
+	const LIST_B = list.splice(MID_NUM, list.length);
+
+	return (
+		<section className="primary list-section">
+			<h3>{title}</h3>
+
+			<div className="boxed boxed-md">
+				<div className="row">
+					<div className="col-sm-6">
+						<ul>
+							{LIST_A.map((item, index) => (
+								<li key={index}>{item}</li>
+							))}
+						</ul>
+					</div>
+					<div className="col-sm-6">
+						<ul>
+							{LIST_B.map((item, index) => (
+								<li key={index}>{item}</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 ListSection.propTypes = {
