@@ -10,7 +10,7 @@ const ResumeData = [
         title: 'Chatbooks',
         position: 'Web Developer',
 		dateStart: 'Mar 2019',
-        dateEnd: 'Present',
+        dateEnd: 'Aug 2020',
         tasks: [
 			'Create/maintain web features and projects for the Books and Cards teams',
 			'Actively convert Angular JS to React JS while keeping product code stable',
