@@ -1,0 +1,25 @@
+import React from 'react';
+import { Link } from 'react-router';
+
+import SocialIcons from '../../common/SocialIcons';
+const img_profile_pic = require('../../../../images/global/travis-hoki.png');
+
+const Banner = () => (
+    <div className="banner">
+        <div className="banner-cont">
+            <h1>Web Developer</h1>
+            <SocialIcons/>
+            <Link
+				className="btn btn-primary btn-lg"
+				to="/contact"
+			>Contact Me</Link>
+        </div>
+        <div className="banner-bg"></div>
+        <img
+			className="banner-pic"
+			src={img_profile_pic}
+		/>
+    </div>
+);
+
+export default Banner;

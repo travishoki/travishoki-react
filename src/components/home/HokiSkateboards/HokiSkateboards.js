@@ -1,9 +1,9 @@
 import React from 'react';
 
 import SocialMedia from './SocialMedia';
+
 const hokiSkateboardsImage = require('../../../../images/home/hoki-skateboards.jpg');
 const youShouldAlwaysSkateboardImage = require('../../../../images/home/you-should-always-skateboard.jpg');
-
 
 const HokiSkateboards = () => (
 	<div className="hoki-skateboards">
