@@ -1,7 +1,9 @@
 import React from 'react';
 
-import hokiSkateboardsImage from '../../../images/home/hoki-skateboards.jpg';
-import youShouldAlwaysSkateboardImage from '../../../images/home/you-should-always-skateboard.jpg';
+import SocialMedia from './SocialMedia';
+const hokiSkateboardsImage = require('../../../../images/home/hoki-skateboards.jpg');
+const youShouldAlwaysSkateboardImage = require('../../../../images/home/you-should-always-skateboard.jpg');
+
 
 const HokiSkateboards = () => (
 	<div className="hoki-skateboards">
@@ -51,57 +53,7 @@ const HokiSkateboards = () => (
 				</div>
 			</div>
 
-			<ul className="social-media">
-				<li>
-					<a
-						href="https://www.facebook.com/hokiskateboards"
-						title="Facebook | Hoki Skateboards"
-						target="_blank"
-						aria-label="Facebook"
-					>
-						<i className="fa fa-facebook"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://twitter.com/hokiskateboards"
-						title="Twitter | Hoki Skateboards"
-						target="_blank"
-						aria-label="Twitter"
-					>
-						<i className="fa fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://instagram.com/hokiskateboards"
-						title="Instagram | Hoki Skateboards"
-						target="_blank"
-						aria-label="Instagram">
-						<i className="fa fa-instagram"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://instagram.com/hokiskateboards.kids"
-						title="Instagram | Hoki Skateboards Kids"
-						target="_blank"
-						aria-label="Kids Instagram"
-					>
-						<i className="fa fa-instagram"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.youtube.com/channel/UCT6ba8pGTUQyYpEk8pnc8og"
-						title="Instagram | Hoki Skateboards"
-						target="_blank"
-						aria-label="Youtube"
-					>
-						<i className="fa fa-youtube"></i>
-					</a>
-				</li>
-			</ul>
+			<SocialMedia />
 		</div>
 	</div>
 );
