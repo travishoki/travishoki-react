@@ -19,7 +19,7 @@ const ResumePage = () => (
 
                 <a
 					className="btn btn-primary btn-lg"
-					href="/portfolio/pdfs/travis-hoki-resume.pdf"
+					href="http://travishoki.com/portfolio/pdfs/travis-hoki-resume.pdf"
 					target="_blank"
 				>
                     <i className="fa fa-download" /> Download
