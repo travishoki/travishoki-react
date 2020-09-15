@@ -80,7 +80,10 @@ class ContactPage extends Component {
 
   render() {
     return (
-        <div id="container" className="contact">
+        <div
+			id="container"
+			className="contact"
+		>
             <div className="boxed">
                 <h1>Contact Me</h1>
 

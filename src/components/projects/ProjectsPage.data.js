@@ -1,3 +1,25 @@
+export const filterList = [
+    'angularjs',
+    'amp-bind',
+    'css',
+    'coffee-script',
+    'django',
+    'grunt',
+    'handlebarsjs',
+    'html',
+    'javascript',
+    'jquery',
+    'less-css',
+    'nodejs',
+    'php',
+    'python',
+    'redux',
+    'reactjs',
+    'sql',
+    'webpack',
+    'wordpress'
+];
+
 export const ProjectsData = [
     {
         title: 'Overstock.com',

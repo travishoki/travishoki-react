@@ -14,7 +14,9 @@ const Banner = () => (
 				to="/contact"
 			>Contact Me</Link>
         </div>
+
         <div className="banner-bg" />
+
         <img
 			className="banner-pic"
 			src={img_profile_pic}

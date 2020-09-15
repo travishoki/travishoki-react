@@ -35,12 +35,12 @@ const ProjectListItem = ({ project }) => (
 					))}
 				</ul>
 
-				{project.learned &&
+				{project.learned && (
 					<div>
 						<p className="list-heading">What I Learned:</p>
 						<p className="indent">{project.learned}</p>
 					</div>
-				}
+				)}
 
 				<p className="list-heading">Technologies:</p>
 				<ul className="m-l-20 tech-icon-list">
@@ -57,14 +57,14 @@ const ProjectListItem = ({ project }) => (
 			</div>
 		</div>
 
-		{project.live &&
+		{project.live && (
 			<a
 				href={project.url}
 				className="btn btn-primary btn-lg"
 				target="_blank"
 			>View Live Site</a>
-		}
-  </div>
+		)}
+	</div>
 );
 
 ProjectListItem.propTypes = {

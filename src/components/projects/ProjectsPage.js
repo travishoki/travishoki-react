@@ -1,33 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { ProjectsData } from './ProjectsPage.data';
+import { filterList, ProjectsData } from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
 import FilterItem from './FilterItem';
 import TechIcon from './TechIcon';
-
-const filterList = [
-    'angularjs',
-    'amp-bind',
-    'css',
-    'coffee-script',
-    'django',
-    'grunt',
-    'handlebarsjs',
-    'html',
-    'javascript',
-    'jquery',
-    'less-css',
-    'nodejs',
-    'php',
-    'python',
-    'redux',
-    'reactjs',
-    'sql',
-    'webpack',
-    'wordpress'
-];
 
 class ProjectsPage extends Component {
     constructor(props) {
@@ -104,6 +82,7 @@ class ProjectsPage extends Component {
 
         this.setState({ filter, filterTerm });
     }
+
     onChangeSearch(e) {
         const searchTerm = e.currentTarget.value;
 
@@ -189,14 +168,14 @@ class ProjectsPage extends Component {
                                         </form>
                                         {filterListFiltered.length > 0 ? (
                                             <ul className="tech-icon-list filters">
-                                                {!this.state.filterTerm &&
+                                                {!this.state.filterTerm && (
                                                     <li
                                                         onClick={this.onClearAndCloseFilter}
                                                         className="filter-item tech-icon-item"
                                                     >
                                                         <p>All</p>
                                                     </li>
-                                                }
+                                                )}
 
                                                 {filterListFiltered.map((item, index) => (
                                                     <FilterItem
@@ -238,24 +217,24 @@ class ProjectsPage extends Component {
                                     value={this.state.searchTerm}
                                     onChange={this.onChangeSearch}
                                 />
-                                {this.state.searchTerm &&
+                                {this.state.searchTerm && (
                                     <i className="fa fa-close" onClick={this.onClearSearchTerm} />
-                                }
+                                )}
                             </div>
                         </form>
 
-                        {showResultsCount &&
+                        {showResultsCount && (
                             <p className="results-count">Results: {projects.length}</p>
-                        }
+                        )}
 
-                        {projects.length > 0 &&
+                        {projects.length > 0 && (
                             <p
 								className="view-controls"
 								onClick={this.toggleView}
 							>
 								View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} />
 							</p>
-                        }
+                        )}
                     </div>
 
                     {projects.length > 0 ? (
@@ -275,17 +254,17 @@ class ProjectsPage extends Component {
                             <h3>No results</h3>
                             <p>Clear filter and search terms to find more results.</p>
 
-                            {this.state.filter &&
+                            {this.state.filter && (
                                 <p onClick={this.onClearFilter}>
 									Filter: {this.state.filter} <i className="fa fa-close" />
 								</p>
-							}
+							)}
 
-                            {this.state.searchTerm &&
+                            {this.state.searchTerm && (
                                 <p onClick={this.onClearSearchTerm}>
 									Search Term: {this.state.searchTerm} <i className="fa fa-close" />
 								</p>
-                            }
+                            )}
                         </div>
                     )}
                 </div>

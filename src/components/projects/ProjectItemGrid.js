@@ -19,6 +19,7 @@ const ProjectGridItem = ({ project}) => (
 				</div>
 				<div className="popup-overlay" />
 			</div>
+
 			</Link>
 		</div>
 

@@ -19,6 +19,7 @@ const currentProjects = [ProjectsData[0], ProjectsData[1], ProjectsData[2]];
 const Projects = () => (
     <section className="projects">
         <h3>Projects</h3>
+
         <div className="boxed boxed-lg">
             <ul>
                 {currentProjects.map((project, index) => (
@@ -36,6 +37,7 @@ const Projects = () => (
                     </li>
                 ))}
             </ul>
+
             <Link
 				to="/projects"
 				activeClassName="active"
