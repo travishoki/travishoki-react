@@ -1,29 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import ResumePageData from './ResumePage.data';
+import { ResumeData, SKILLS_LIST } from './ResumePage.data';
 import Education from '../common/Education';
 import ListSection from '../common/ListSection';
 
 const imgResume = require('../../../images/resume/resume.jpg');
-
-const SKILLS_LIST = [
-	'JavaScript',
-	'React JS',
-	'Redux',
-	'Reselect',
-	'Node JS',
-	'HTML',
-	'CSS',
-
-	'Angular JS',
-	'SASS',
-	'LESS',
-	'jQuery',
-    'PHP',
-    'SQL'
-];
-
 const img_profile_pic = require('../../../images/global/resume.png');
 
 const ResumePage = () => (
@@ -59,7 +41,7 @@ const ResumePage = () => (
             <h2>Experience</h2>
 
             <ul className="staggered">
-                {ResumePageData.map((job, index) => (
+                {ResumeData.map((job, index) => (
                     <li key={index}>
                         <div className="image">
                             <img src={job.img}/>

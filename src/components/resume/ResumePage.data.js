@@ -5,7 +5,24 @@ const imgEnspark = require('../../../images/experience/enspark.png');
 const imgWendys = require('../../../images/experience/wendys.png');
 const imgAllAm = require('../../../images/experience/all-american-sod-farms.png');
 
-const ResumeData = [
+export const SKILLS_LIST = [
+	'JavaScript',
+	'React JS',
+	'Redux',
+	'Reselect',
+	'Node JS',
+	'HTML',
+	'CSS',
+
+	'Angular JS',
+	'SASS',
+	'LESS',
+	'jQuery',
+    'PHP',
+    'SQL'
+];
+
+export const ResumeData = [
     {
         title: 'Chatbooks',
         position: 'Web Developer',
@@ -83,5 +100,3 @@ const ResumeData = [
         img: imgWendys
     }
 ];
-
-export default ResumeData;
