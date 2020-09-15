@@ -48,7 +48,9 @@ class Header extends Component {
         return (
             <div id="header">
                 <div className="boxed">
-                    <h1><Link to="/">Travis Hoki</Link></h1>
+                    <h1>
+						<Link to="/">Travis Hoki</Link>
+					</h1>
 
                     <div className="menu-btn">
                         <i

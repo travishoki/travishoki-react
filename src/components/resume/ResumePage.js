@@ -40,11 +40,11 @@ const ResumePage = () => (
 					href="/portfolio/pdfs/travis-hoki-resume.pdf"
 					target="_blank"
 				>
-                    <i className="fa fa-download"></i> Download
+                    <i className="fa fa-download" /> Download
                 </a>
             </div>
 
-            <div className="banner-bg"></div>
+            <div className="banner-bg" />
             <img
 				className="banner-pic"
 				src={img_profile_pic}

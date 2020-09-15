@@ -9,7 +9,7 @@ const SocialMedia = () => (
 				target="_blank"
 				aria-label="Facebook"
 			>
-				<i className="fa fa-facebook"></i>
+				<i className="fa fa-facebook" />
 			</a>
 		</li>
 		<li>
@@ -19,7 +19,7 @@ const SocialMedia = () => (
 				target="_blank"
 				aria-label="Twitter"
 			>
-				<i className="fa fa-twitter"></i>
+				<i className="fa fa-twitter" />
 			</a>
 		</li>
 		<li>
@@ -28,7 +28,7 @@ const SocialMedia = () => (
 				title="Instagram | Hoki Skateboards"
 				target="_blank"
 				aria-label="Instagram">
-				<i className="fa fa-instagram"></i>
+				<i className="fa fa-instagram" />
 			</a>
 		</li>
 		<li>
@@ -38,7 +38,7 @@ const SocialMedia = () => (
 				target="_blank"
 				aria-label="Kids Instagram"
 			>
-				<i className="fa fa-instagram"></i>
+				<i className="fa fa-instagram" />
 			</a>
 		</li>
 		<li>
@@ -48,7 +48,7 @@ const SocialMedia = () => (
 				target="_blank"
 				aria-label="Youtube"
 			>
-				<i className="fa fa-youtube"></i>
+				<i className="fa fa-youtube" />
 			</a>
 		</li>
 	</ul>
