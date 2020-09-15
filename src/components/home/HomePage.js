@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import HokiSkateboards from './HokiSkateboards';
 import { skillsList } from './HomePage.data';
-import Projects from '../projects/ProjectsPage.data';
+import { ProjectsData } from '../projects/ProjectsPage.data';
 import Education from '../common/Education';
-import HokiSkateboards from '../common/HokiSkateboards';
 import ListSection from '../common/ListSection';
 import SocialIcons from '../common/SocialIcons';
 
@@ -28,7 +28,7 @@ const experienceYears = () => {
 };
 
 const HomePage = () => {
-    const currentProjects = [Projects[0], Projects[1], Projects[2]];
+    const currentProjects = [ProjectsData[0], ProjectsData[1], ProjectsData[2]];
 
     return (
         <div

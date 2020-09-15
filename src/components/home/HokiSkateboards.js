@@ -1,5 +1,8 @@
 import React from 'react';
 
+import hokiSkateboardsImage from '../../../images/home/hoki-skateboards.jpg';
+import youShouldAlwaysSkateboardImage from '../../../images/home/you-should-always-skateboard.jpg';
+
 const HokiSkateboards = () => (
 	<div className="hoki-skateboards">
 		<div className="hoki-skateboards-inner">
@@ -27,7 +30,7 @@ const HokiSkateboards = () => (
 					>
 						<img
 							alt="Hoki Skateboards"
-							src="http://links.hokiskateboards.com/images/hoki-skateboards-picture.jpg"
+							src={hokiSkateboardsImage}
 							className="center"
 						/>
 					</a>
@@ -41,7 +44,7 @@ const HokiSkateboards = () => (
 					>
 						<img
 							alt="You Should Always Skateboard"
-							src="https://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/images/books/you-should-always-skateboard-medium.jpg"
+							src={youShouldAlwaysSkateboardImage}
 						/>
 					</a>
 					<p>Illustrated kid's book about skateboarding.</p>
