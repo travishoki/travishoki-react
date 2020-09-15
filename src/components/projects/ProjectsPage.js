@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import ProjectsPageData from './ProjectsPage.data';
+import { ProjectsData } from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
 import FilterItem from './FilterItem';
@@ -61,7 +61,7 @@ class ProjectsPage extends Component {
 
     filterProjects(){
         const { filter, searchTerm } = this.state;
-        let projects = ProjectsPageData;
+        let projects = ProjectsData;
 
         //Filter
         if (filter !== null){
