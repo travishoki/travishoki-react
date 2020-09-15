@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import { skillsList } from './HomePage.data';
 import Projects from '../projects/ProjectsPage.data';
 import Education from '../common/Education';
 import HokiSkateboards from '../common/HokiSkateboards';
@@ -25,16 +26,6 @@ const experienceYears = () => {
 
 	return fullYearsExperience;
 };
-
-const skillsList = [
-	'React JS and Redux',
-    'Preprocessed CSS (Less and SCSS)',
-    'Responsive CSS with Media Queries',
-
-	'Node JS Server-side rendering for SEO and optimization',
-    'Small and large business experience',
-    'SQL and restful API integration'
-];
 
 const HomePage = () => {
     const currentProjects = [Projects[0], Projects[1], Projects[2]];

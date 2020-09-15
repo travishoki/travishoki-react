@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
-import Projects from './ProjectsPage.data';
+import { ProjectsData } from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList';
 
 let singleProject;
@@ -15,7 +15,7 @@ class SingleProjectPage extends Component {
             grid: true
         };
 
-        singleProject = Projects.find((project) => {
+        singleProject = ProjectsData.find((project) => {
             return project.key === props.params.key;
         });
     }

@@ -1,4 +1,4 @@
-const ProjectsData = [
+export const ProjectsData = [
     {
         title: 'Overstock.com',
         subtitle: 'AMP Featured Product',
@@ -348,5 +348,3 @@ const ProjectsData = [
         live: true
     }
 ];
-
-export default ProjectsData;
