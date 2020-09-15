@@ -3,6 +3,13 @@
 	color: @white;
 	padding: 20px;
 
+	h3 {
+		@media (max-width: 767px) {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+	}
+
 	.hoki-skateboards-inner {
 		margin: 0 auto;
 		max-width: 600px;
@@ -17,6 +24,12 @@
 	.hoki-skateboards-inner-content {
 		margin-bottom: 20px;
 		text-align: center;
+
+		p {
+			@media (max-width: 767px) {
+				margin-bottom: 20px;
+			}
+		}
 
 		img {
 			height: auto;
