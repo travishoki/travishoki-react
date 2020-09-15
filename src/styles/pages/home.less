@@ -1,100 +1,102 @@
-margin: 0;
+#container.home {
+	margin: 0;
 
-section {
-    &.skills {
-        img {
-            margin: 10px auto;
-        }
-    }
+	section {
+	    &.skills {
+	        img {
+	            margin: 10px auto;
+	        }
+	    }
 
-    &.projects {
-        margin-bottom: 10px;
+	    &.projects {
+	        margin-bottom: 10px;
 
-        ul {
-			list-style: none;
-			margin: 0;
-            overflow: hidden;
-			padding: 0;
-            position: relative;
+	        ul {
+				list-style: none;
+				margin: 0;
+	            overflow: hidden;
+				padding: 0;
+	            position: relative;
 
-            @media (max-width: 767px) {
-                max-width: 300px;
-                margin: 0 auto;
-            }
+	            @media (max-width: 767px) {
+	                max-width: 300px;
+	                margin: 0 auto;
+	            }
 
-            li {
-                @media (max-width: 767px) {
-                    &:first-child {
-                        float: left;
-                    }
+	            li {
+	                @media (max-width: 767px) {
+	                    &:first-child {
+	                        float: left;
+	                    }
 
-                    &:nth-child(2) {
-						.box-shadow(0 0 20px 0 #000000);
-						left: 50%;
-						margin-left: -75px;
-                        position: absolute;
-						top: 0;
-						width: 150px;
-                    }
+	                    &:nth-child(2) {
+							.box-shadow(0 0 20px 0 #000000);
+							left: 50%;
+							margin-left: -75px;
+	                        position: absolute;
+							top: 0;
+							width: 150px;
+	                    }
 
-                    &:last-child {
-                        float: right;
-                    }
+	                    &:last-child {
+	                        float: right;
+	                    }
 
-                    &:first-child,
-                    &:last-child {
-                        width: 100px;
-                        margin: 20px 0;
-                    }
-                }
+	                    &:first-child,
+	                    &:last-child {
+	                        width: 100px;
+	                        margin: 20px 0;
+	                    }
+	                }
 
-                @media (min-width: 768px) {
-					float: left;
-                    width: 33.33333333%;
-                }
+	                @media (min-width: 768px) {
+						float: left;
+	                    width: 33.33333333%;
+	                }
 
-                .project-header {
-					height: 50px;
-                    margin-bottom: 10px;
-                    position: relative;
+	                .project-header {
+						height: 50px;
+	                    margin-bottom: 10px;
+	                    position: relative;
 
-                    @media (max-width: 767px) {
-                        display: none;
-                    }
+	                    @media (max-width: 767px) {
+	                        display: none;
+	                    }
 
-                    @media (min-width: 768px) {
-                    }
+	                    @media (min-width: 768px) {
+	                    }
 
-                    .project-header-inner {
-						bottom: 0;
-                        position: absolute;
-                        width: 100%;
+	                    .project-header-inner {
+							bottom: 0;
+	                        position: absolute;
+	                        width: 100%;
 
-                        h2, h3 {
-                            margin: 0;
-							text-align: center;
-                        }
+	                        h2, h3 {
+	                            margin: 0;
+								text-align: center;
+	                        }
 
-                        h2 {
-                            font-size: 22px;
-                        }
+	                        h2 {
+	                            font-size: 22px;
+	                        }
 
-                        h3 {
-                            font-size: 14px;
-                            color: @gray-one;
-                        }
-                    }
-                }
-                img {
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-        }
-        .btn {
-			display: block;
-            margin: 20px auto 0;
-            width: 200px;
-        }
-    }
+	                        h3 {
+	                            font-size: 14px;
+	                            color: @gray-one;
+	                        }
+	                    }
+	                }
+	                img {
+	                    display: block;
+	                    margin: 0 auto;
+	                }
+	            }
+	        }
+	        .btn {
+				display: block;
+	            margin: 20px auto 0;
+	            width: 200px;
+	        }
+	    }
+	}
 }
