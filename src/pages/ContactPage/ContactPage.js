@@ -112,17 +112,12 @@ class ContactPage extends Component {
 	}
 }
 
-const mapStateToProps = (state) => ({
-    email: 'travis.hoki@gmail.com'
-});
-
 const mapDispatchToProps = (dispatch) => ({
     actions: bindActionCreators(courseActions, dispatch)
 });
 
 ContactPage.propTypes = {
-	email: PropTypes.string.isRequired,
 	actions: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
+export default connect(null, mapDispatchToProps)(ContactPage);
