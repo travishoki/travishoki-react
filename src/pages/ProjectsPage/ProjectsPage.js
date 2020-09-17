@@ -237,21 +237,22 @@ class ProjectsPage extends Component {
                         )}
                     </div>
 
-                    {projects.length > 0 ? (
+                    {projects.length > 0 && (
                         <ul className={`projects ${resultsCountClass}`}>
 							<Projects
 								projects={projects}
 								grid={this.state.grid}
 							/>
                         </ul>
-                    ) : (
-						<NoResults
-							filter={this.state.filter}
-							onClearFilter={this.onClearFilter}
-							onClearSearchTerm={this.onClearSearchTerm}
-							searchTerm={this.state.searchTerm}
-						/>
                     )}
+
+					<NoResults
+						filter={this.state.filter}
+						isVisible={projects.length === 0}
+						onClearFilter={this.onClearFilter}
+						onClearSearchTerm={this.onClearSearchTerm}
+						searchTerm={this.state.searchTerm}
+					/>
                 </div>
             </div>
         );
