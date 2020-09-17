@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { filterList, ProjectsData } from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid';
-import FilterItem from './FilterItem';
 import TechIcon from './TechIcon';
+import FilterItem from './Filter/FilterItem';
 
 class ProjectsPage extends Component {
     constructor(props) {

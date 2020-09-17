@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TechIcon from './TechIcon';
+
+import TechIcon from '../TechIcon';
 
 const FilterItem = ({
 	item,
