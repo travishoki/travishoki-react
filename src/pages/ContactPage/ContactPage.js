@@ -79,35 +79,35 @@ class ContactPage extends Component {
             });
     }
 
-  render() {
-    return (
-        <div
-			id="container"
-			className="contact"
-		>
-            <div className="boxed">
-                <h1>Contact Me</h1>
+	render() {
+		return (
+			<div
+				id="container"
+				className="contact"
+			>
+				<div className="boxed">
+					<h1>Contact Me</h1>
 
-                <div className="row">
-                    <div className="col-sm-6">
-                        <img src={img_profile_pic}/>
-                    </div>
+					<div className="row">
+						<div className="col-sm-6">
+							<img src={img_profile_pic}/>
+						</div>
 
-                    <div className="col-sm-6">
-						<ContactInfo />
+						<div className="col-sm-6">
+							<ContactInfo />
 
-                        <ContactForm
-                            onChange={this.updateContactFormState}
-                            onSave={this.saveContactForm}
-                            errors={this.state.errors}
-                            saving={this.state.saving}
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-  }
+							<ContactForm
+								onChange={this.updateContactFormState}
+								onSave={this.saveContactForm}
+								errors={this.state.errors}
+								saving={this.state.saving}
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 const mapStateToProps = (state) => ({
@@ -119,8 +119,8 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 ContactPage.propTypes = {
-  email: PropTypes.string.isRequired,
-  actions: PropTypes.object.isRequired
+	email: PropTypes.string.isRequired,
+	actions: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
