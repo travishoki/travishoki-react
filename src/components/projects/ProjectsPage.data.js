@@ -9,18 +9,31 @@ export const filterList = [
     'html',
     'javascript',
     'jquery',
-    'less-css',
+	'less-css',
     'nodejs',
     'php',
     'python',
     'redux',
     'reactjs',
+	'scss-css',
     'sql',
     'webpack',
     'wordpress'
 ];
 
 export const ProjectsData = [
+	{
+        title: 'Chatbooks.com',
+        subtitle: 'Book Creation',
+        url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
+        desc: 'Revamp existing create book page with new UI written in ReactJs',
+        key: 'chatbooks-create-page',
+        company: 'chatbooks',
+        contributions: ['Tie into existing API\'s to create a new book.', 'Create reusable UI components'],
+        techs: ['reactjs', 'redux', 'javascript', 'html', 'scss-css'],
+        learned: '',
+        live: true
+    },
     {
         title: 'Overstock.com',
         subtitle: 'AMP Featured Product',
