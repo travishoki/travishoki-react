@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TextInput from '../common/TextInput';
-import TextArea from '../common/TextArea';
+
+import TextInput from '../../components/TextInput/TextInput';
+import TextArea from '../../components/TextArea/TextArea';
 
 const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 

@@ -2,8 +2,8 @@ import React, { Component, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
-import { ProjectsData } from '../projects/ProjectsPage.data';
-import ProjectItemList from '../projects/ProjectItemList';
+import { ProjectsData } from '../ProjectsPage/ProjectsPage.data';
+import ProjectItemList from '../ProjectsPage/ProjectItemList.js';
 
 const SingleProjectPage = ({
 	params

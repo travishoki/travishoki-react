@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import SocialIcons from '../../common/SocialIcons';
+import SocialIcons from '../../../components/SocialIcons/SocialIcons';
 const img_profile_pic = require('../../../../images/global/travis-hoki.png');
 
 const Banner = () => (

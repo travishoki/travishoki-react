@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, IndexLink } from 'react-router';
 
 import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
-import SocialIcons from '../common/SocialIcons';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 class Footer extends Component {
     constructor(props) {

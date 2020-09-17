@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import { ResumeData, SKILLS_LIST } from './ResumePage.data';
-import Education from '../common/Education';
-import ListSection from '../common/ListSection';
+import Education from '../../components/Education/Education';
+import ListSection from '../../components/ListSection/ListSection';
 
 const imgResume = require('../../../images/resume/resume.jpg');
 const img_profile_pic = require('../../../images/global/resume.png');

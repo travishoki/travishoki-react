@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import toastr from 'toastr';
 
 import * as courseActions from '../../actions/courseActions';
-import ContactForm from '../contact/ContactForm';
+import ContactForm from './ContactForm';
 
 const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 
