@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import NoResults from './NoResults/NoResults';
+import Projects from './Projects/Projects';
 import { filterList, ProjectsData } from './ProjectsPage.data';
-import ProjectItemList from './ProjectItemList/ProjectItemList';
-import ProjectItemGrid from './ProjectItemGrid/ProjectItemGrid';
 import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
 
@@ -240,15 +239,10 @@ class ProjectsPage extends Component {
 
                     {projects.length > 0 ? (
                         <ul className={`projects ${resultsCountClass}`}>
-                            {projects.map((project, index) => (
-                                <li key={index} className="project">
-                                    {this.state.grid ? (
-                                        <ProjectItemGrid {...project} />
-                                    ) : (
-                                        <ProjectItemList {...project}/>
-                                    )}
-                                </li>
-                            ))}
+							<Projects
+								projects={projects}
+								grid={this.state.grid}
+							/>
                         </ul>
                     ) : (
 						<NoResults
