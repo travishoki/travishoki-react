@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import { filterProjects } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
 import ViewControl from './ViewControl/ViewControl';
@@ -30,44 +31,6 @@ class ProjectsPage extends Component {
 			isFilterOpen: false,
             searchTerm: props.params.search || ''
         };
-    }
-
-    inArr(item, arr) {
-        return arr.filter((thing) => {
-            return thing === item;
-        }).length > 0;
-    }
-
-    filterProjects(){
-        const { filter, searchTerm } = this.state;
-        let projects = ProjectsData;
-
-        //Filter
-        if (filter !== null){
-            projects = projects.filter((item) => {
-                return this.inArr(filter, item.techs);
-            });
-        }
-
-        //Search
-        if (searchTerm !== '') {
-            projects = projects.filter((item) => {
-                const a = ["title", "subtitle", "desc", "contributions"];
-
-                for (let i = 0 ; i < a.length ; i++) {
-                    const itemKey = a[i];
-                    const str = String(item[itemKey]).toLowerCase();
-
-                    if (str.indexOf(searchTerm.toLowerCase()) > -1) {
-                        return true;
-                    }
-                }
-
-                return false;
-            });
-        }
-
-        return projects;
     }
 
     toggleView(){
@@ -119,7 +82,11 @@ class ProjectsPage extends Component {
     }
 
     render() {
-        const projects = this.filterProjects();
+        const projects = filterProjects(
+			ProjectsData,
+			this.state.filter,
+			this.state.searchTerm
+		);
         const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
         const filterListFiltered = filterList.filter((item) => {
             return this.state.filterTerm === null || item.toLowerCase().indexOf(this.state.filterTerm.toLowerCase()) > -1;
