@@ -14,11 +14,11 @@ const img_profile_pic = require('../../../../images/global/travis-hoki.png');
 const img_tech_icons = require('../../../../images/icons/tech-icons/tech-icons.jpg');
 const images = require.context('../../../../images/websites', true);
 
-const currentProjects = [ProjectsData[0], ProjectsData[1], ProjectsData[2]];
+const currentProjects = ProjectsData.slice(0, 3);
 
 const Projects = () => (
     <section className="projects">
-        <h3>Projects</h3>
+        <h3>Recent Projects</h3>
 
         <div className="boxed boxed-lg">
             <ul>
