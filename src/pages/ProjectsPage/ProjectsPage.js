@@ -102,16 +102,6 @@ class ProjectsPage extends Component {
         this.setState({ searchTerm });
     }
 
-    getResultsCountClass(num) {
-        const maxColumnCount = 4;
-
-        if (num < maxColumnCount) {
-            return `results-${num}`;
-        }
-
-        return 'results-full';
-    }
-
     onChangeFilter(e) {
         const filterTerm = e.target.value;
 
@@ -129,7 +119,6 @@ class ProjectsPage extends Component {
 
     render() {
         const projects = this.filterProjects();
-        const resultsCountClass = this.getResultsCountClass(projects.length);
         const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
         const filterListFiltered = filterList.filter((item) => {
             return this.state.filterTerm === null || item.toLowerCase().indexOf(this.state.filterTerm.toLowerCase()) > -1;
@@ -237,14 +226,10 @@ class ProjectsPage extends Component {
                         )}
                     </div>
 
-                    {projects.length > 0 && (
-                        <ul className={`projects ${resultsCountClass}`}>
-							<Projects
-								projects={projects}
-								grid={this.state.grid}
-							/>
-                        </ul>
-                    )}
+					<Projects
+						projects={projects}
+						grid={this.state.grid}
+					/>
 
 					<NoResults
 						filter={this.state.filter}
