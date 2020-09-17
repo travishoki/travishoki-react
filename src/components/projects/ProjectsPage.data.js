@@ -1,24 +1,47 @@
+import {
+	ANGULAR_JS,
+	AMP,
+	CSS,
+	COFFEE_SCRIPT,
+	DJANG,
+	GRUNT,
+	HANDLEBARS,
+	HTML,
+	JAVSCRIPT,
+	JQUERY,
+	LESS_CSS,
+	NODE_JS,
+	PHP,
+	PYTHON,
+	REDUX,
+	REACT_JS,
+	SCSS_CSS,
+	SQL,
+	WEBPACK,
+	WORDPRESS
+} from './ProjectsPage.const';
+
 export const filterList = [
-    'angularjs',
-    'amp-bind',
-    'css',
-    'coffee-script',
-    'django',
-    'grunt',
-    'handlebarsjs',
-    'html',
-    'javascript',
-    'jquery',
-	'less-css',
-    'nodejs',
-    'php',
-    'python',
-    'redux',
-    'reactjs',
-	'scss-css',
-    'sql',
-    'webpack',
-    'wordpress'
+	ANGULAR_JS,
+	AMP,
+	CSS,
+	COFFEE_SCRIPT,
+	DJANG,
+	GRUNT,
+	HANDLEBARS,
+	HTML,
+	JAVSCRIPT,
+	JQUERY,
+	LESS_CSS,
+	NODE_JS,
+	PHP,
+	PYTHON,
+	REDUX,
+	REACT_JS,
+	SCSS_CSS,
+	SQL,
+	WEBPACK,
+	WORDPRESS
 ];
 
 export const ProjectsData = [
@@ -235,7 +258,7 @@ export const ProjectsData = [
         contributions: ['Creationg of registration form', 'customization of wordpress theme.'],
         techs: ['php', 'wordpress', 'javascript', 'jquery', 'html', 'css'],
         learned: '',
-        live: true
+        live: false
     },
     {
         title: 'Saints and Sinners Half Marathon and Team Relay',
@@ -245,7 +268,7 @@ export const ProjectsData = [
         key: 'saints-and-sinners',
         company: 'saints-and-sinners',
         contributions: ['Creationg of registration form, authorize.net intergration', 'customization of wordpress theme.'],
-        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css', 'sql'],
         learned: '',
         live: true
     },
@@ -341,7 +364,7 @@ export const ProjectsData = [
         key: 'barrier',
         company: 'barrier',
         contributions: ["Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. "],
-        techs: ['javascript', 'jquery', 'HTML', 'css'],
+        techs: ['javascript', 'jquery', 'HTML', 'css', 'sql'],
         learned: '',
         live: true
     },
@@ -353,7 +376,7 @@ export const ProjectsData = [
         key: 'enspark',
         company: 'enspark',
         contributions: ['Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.'],
-        techs: ['javascript', 'jquery', 'HTML', 'css'],
+        techs: ['javascript', 'jquery', 'HTML', 'css', 'php', 'sql'],
         learned: '',
         live: true
     },
@@ -377,7 +400,7 @@ export const ProjectsData = [
         key: 'paradigm-life',
         company: 'paradigm-life',
         contributions: ['Helped with the wordpress theme and structure architecture.'],
-        techs: ['php', 'javascript', 'jquery', 'HTML', 'css'],
+        techs: ['php', 'javascript', 'jquery', 'HTML', 'css', 'sql'],
         learned: '',
         live: true
     },
