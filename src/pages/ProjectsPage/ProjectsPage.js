@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
+import ViewControl from './ViewControl/ViewControl';
 import { filterList, ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
@@ -216,14 +217,11 @@ class ProjectsPage extends Component {
                             <p className="results-count">Results: {projects.length}</p>
                         )}
 
-                        {projects.length > 0 && (
-                            <p
-								className="view-controls"
-								onClick={this.toggleView}
-							>
-								View: <i className={`fa fa-${(this.state.grid) ? 'th-large' : 'th-list'}`} />
-							</p>
-                        )}
+						<ViewControl
+							grid={this.state.grid}
+							isVisible={projects.length > 0}
+							toggleView={this.toggleView}
+						/>
                     </div>
 
 					<Projects
