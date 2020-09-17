@@ -19,7 +19,7 @@ import {
 	SQL,
 	WEBPACK,
 	WORDPRESS
-} from './ProjectsPage.const';
+} from '../../const/Tech.const';
 
 export const filterList = [
 	ANGULAR_JS,
