@@ -24,6 +24,8 @@ class ContactPage extends Component {
             }
         };
 
+
+		this.formIsValid = this.formIsValid.bind(this);
 		this.saveContactForm = this.saveContactForm.bind(this);
         this.updateContactFormState = this.updateContactFormState.bind(this);
     }
