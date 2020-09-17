@@ -34,6 +34,17 @@ export const ProjectsData = [
         learned: '',
         live: true
     },
+	{
+        title: 'Hoki Skateboards',
+        subtitle: 'React Native Game',
+        desc: 'Teaching myself React Native as a passion project',
+        key: 'hoki-skateboards-react-native',
+        company: 'hoki-skateboards',
+        contributions: ['React Native development', 'UI/UX Design', 'Character illustrations'],
+        techs: ['reactjs', 'css'],
+        learned: '',
+        live: false
+    },
     {
         title: 'Overstock.com',
         subtitle: 'AMP Featured Product',
