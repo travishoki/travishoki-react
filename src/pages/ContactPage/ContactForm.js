@@ -38,7 +38,7 @@ const ContactForm = ({
         <input
             type="submit"
             disabled={saving}
-            value={saving ? 'Saving...' : 'Save'}
+            value={saving ? 'Sending...' : 'Send'}
             className="btn btn-primary btn-lg"
             onClick={onSave}
 		/>
