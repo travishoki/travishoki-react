@@ -5,15 +5,18 @@ import { Link } from 'react-router';
 const images = require.context('../../../../images/websites', true);
 const logos = require.context('../../../../images/clients', true);
 
-const ProjectItemGrid = ({ project }) => (
+const ProjectItemGrid = ({
+	company,
+	itemKey,
+}) => (
 	<div className="grid-item">
 		<div className="popup">
-			<Link to={"/project/"+project.key}>
+			<Link to={`/project/${itemKey}`}>
 
 			<div className="popup-inner">
 				<div className="popup-cont">
 					<img
-						src={logos(`./${project.company}.jpg`)}
+						src={logos(`./${company}.jpg`)}
 					/>
 					<p className="project-link">View</p>
 				</div>
@@ -24,14 +27,15 @@ const ProjectItemGrid = ({ project }) => (
 		</div>
 
 		<img
-			src={images(`./${project.key}/sm.jpg`)}
+			src={images(`./${itemKey}/sm.jpg`)}
 			className="project-img"
 		/>
 	</div>
 );
 
 ProjectItemGrid.propTypes = {
-    project: PropTypes.object.isRequired
+	company: PropTypes.string,
+	itemKey: PropTypes.string,
 };
 
 export default ProjectItemGrid;

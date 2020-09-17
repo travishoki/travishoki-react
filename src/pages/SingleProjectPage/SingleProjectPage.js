@@ -8,7 +8,7 @@ import ProjectItemList from '../ProjectsPage/ProjectItemList/ProjectItemList';
 const SingleProjectPage = ({
 	params
 }) => {
-    const singleProject = ProjectsData.find((project) => project.key === params.key);
+    const singleProject = ProjectsData.find((project) => project.itemKey === params.itemKey);
 
     return (
         <div
@@ -20,7 +20,7 @@ const SingleProjectPage = ({
 					to="/projects"
 					className="btn btn-primary"
 				>View All</Link>
-                <ProjectItemList project={singleProject}/>
+                <ProjectItemList {...singleProject}/>
             </div>
         </div>
     );

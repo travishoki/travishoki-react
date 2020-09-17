@@ -5,46 +5,57 @@ const images = require.context('../../../../images/websites', true);
 const logos = require.context('../../../../images/clients', true);
 import TechIcon from '../TechIcon/TechIcon';
 
-const ProjectItemList = ({ project }) => (
+const ProjectItemList = ({
+	company,
+	contributions,
+	desc,
+	itemKey,
+	learned,
+	live,
+	subtitle,
+	techs,
+	title,
+	url,
+}) => (
 	<div className="list-item">
 		<div className="projectHeading">
-			<h2>{project.title}</h2>
-			<h3>{project.subtitle}</h3>
+			<h2>{title}</h2>
+			<h3>{subtitle}</h3>
 		</div>
 
 		<div className="row">
 			<div className="col-sm-6">
 				<img
-					src={images(`./${project.key}/lg.jpg`)}
+					src={images(`./${itemKey}/lg.jpg`)}
 					className="project-img"
 				/>
 			</div>
 			<div className="col-sm-6">
 				<img
-					src={logos(`./${project.company}.jpg`)}
+					src={logos(`./${company}.jpg`)}
 					className="logo center"
 				/>
 
 				<p className="list-heading">Description:</p>
-				<p className="indent">{project.desc}</p>
+				<p className="indent">{desc}</p>
 				<p className="list-heading">Contributions:</p>
 
 				<ul className="m-l-20 disc">
-					{project.contributions.map((contribution, index) => (
+					{contributions.map((contribution, index) => (
 						<li key={index}>{contribution}</li>
 					))}
 				</ul>
 
-				{project.learned && (
+				{learned && (
 					<div>
 						<p className="list-heading">What I Learned:</p>
-						<p className="indent">{project.learned}</p>
+						<p className="indent">{learned}</p>
 					</div>
 				)}
 
 				<p className="list-heading">Technologies:</p>
 				<ul className="m-l-20 tech-icon-list">
-					{project.techs.map((tech, index) => (
+					{techs.map((tech, index) => (
 						<li
 							key={index}
 							className="tech-icon-item"
@@ -57,9 +68,9 @@ const ProjectItemList = ({ project }) => (
 			</div>
 		</div>
 
-		{project.live && (
+		{live && (
 			<a
-				href={project.url}
+				href={url}
 				className="btn btn-primary btn-lg"
 				target="_blank"
 			>View Live Site</a>
@@ -68,7 +79,20 @@ const ProjectItemList = ({ project }) => (
 );
 
 ProjectItemList.propTypes = {
-    project: PropTypes.array.isRequired
+	company: PropTypes.string,
+	contributions: PropTypes.string,
+	desc: PropTypes.string,
+	itemKey: PropTypes.string,
+	learned: PropTypes.string,
+	live: PropTypes.bool,
+	subtitle: PropTypes.string,
+	techs: PropTypes.string,
+	title: PropTypes.string,
+	url: PropTypes.string,
+};
+
+ProjectItemList.defaultProps = {
+	live: false,
 };
 
 export default ProjectItemList;

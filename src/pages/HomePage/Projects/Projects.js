@@ -21,7 +21,7 @@ const Projects = () => (
                             </div>
                         </div>
                         <img
-                            src={images(`./${project.key}/sm.jpg`)}
+                            src={images(`./${project.itemKey}/sm.jpg`)}
                             className="project-img"
                         />
                     </li>

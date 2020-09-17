@@ -54,8 +54,8 @@ class ProjectsPage extends Component {
                 const a = ["title", "subtitle", "desc", "contributions"];
 
                 for (let i = 0 ; i < a.length ; i++) {
-                    const key = a[i];
-                    const str = String(item[key]).toLowerCase();
+                    const itemKey = a[i];
+                    const str = String(item[itemKey]).toLowerCase();
 
                     if (str.indexOf(searchTerm.toLowerCase()) > -1) {
                         return true;
@@ -242,9 +242,9 @@ class ProjectsPage extends Component {
                             {projects.map((project, index) => (
                                 <li key={index} className="project">
                                     {this.state.grid ? (
-                                        <ProjectItemGrid project={project} />
+                                        <ProjectItemGrid {...project} />
                                     ) : (
-                                        <ProjectItemList project={project}/>
+                                        <ProjectItemList {...project}/>
                                     )}
                                 </li>
                             ))}
