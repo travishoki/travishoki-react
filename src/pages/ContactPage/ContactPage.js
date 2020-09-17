@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import toastr from 'toastr';
 
-import * as courseActions from '../../actions/courseActions';
+import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
+import * as courseActions from '../../actions/courseActions';
 
 const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 
@@ -93,9 +94,7 @@ class ContactPage extends Component {
                     </div>
 
                     <div className="col-sm-6">
-                        <p>Contact me with comments or critiques</p>
-                        <p>801-691-2373</p>
-                        <p>travis.hoki@gmail.com</p>
+						<ContactInfo />
 
                         <ContactForm
                             onChange={this.updateContactFormState}
@@ -123,6 +122,5 @@ ContactPage.propTypes = {
   email: PropTypes.string.isRequired,
   actions: PropTypes.object.isRequired
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);

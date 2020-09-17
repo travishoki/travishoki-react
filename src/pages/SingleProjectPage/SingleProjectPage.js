@@ -8,9 +8,7 @@ import ProjectItemList from '../ProjectsPage/ProjectItemList.js';
 const SingleProjectPage = ({
 	params
 }) => {
-    const singleProject = ProjectsData.find((project) => {
-        return project.key === params.key;
-    });
+    const singleProject = ProjectsData.find((project) => project.key === params.key);
 
     return (
         <div

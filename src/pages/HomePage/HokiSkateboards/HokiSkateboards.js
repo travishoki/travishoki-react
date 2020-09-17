@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Logo from './Logo';
 import SocialMedia from './SocialMedia';
 
 const hokiSkateboardsImage = require('../../../../images/home/hoki-skateboards.jpg');
@@ -10,18 +11,7 @@ const HokiSkateboards = () => (
 		<div className="hoki-skateboards-inner">
 			<h3>Passion Project</h3>
 
-			<a
-				title="Hoki Skateboards"
-				href="https://hokiskateboards.com"
-				target="_blank"
-				className="hoki-skateboards-logo"
-			>
-				<img
-					alt="Hoki Skateboards"
-					src="http://links.hokiskateboards.com/images/logo.png"
-					className="center"
-				/>
-			</a>
+			<Logo />
 
 			<div className="row hoki-skateboards-inner-content">
 				<div className="col-sm-6">
