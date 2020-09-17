@@ -4,7 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import HomePage from './components/home/HomePage';
 import ProjectsPage from './components/projects/ProjectsPage';
-import SingleProjectPage from './components/projects/SingleProjectPage';
+import SingleProjectPage from './components/SingleProjectPage/SingleProjectPage';
 import ResumePage from './components/resume/ResumePage';
 import ContactPage from './components/contact/ContactPage';
 import AboutPage from './components/about/AboutPage';
