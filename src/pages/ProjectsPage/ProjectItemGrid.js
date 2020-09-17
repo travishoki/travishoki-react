@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
 
-const ProjectGridItem = ({ project}) => (
+const ProjectGridItem = ({ project }) => (
 	<div className="grid-item">
 		<div className="popup">
 			<Link to={"/project/"+project.key}>
