@@ -143,6 +143,18 @@ export const ProjectsData = [
         live: true
     },
     {
+        title: 'Hoki Skateboards',
+        subtitle: '',
+        url: 'http://www.hokiskateboards.com/',
+        desc: 'Passion project skateboard company I am helping to brand her company.',
+        key: 'hoki-skateboards',
+        company: 'hoki-skateboards',
+        contributions: ['wordpress customization, design and branding.','Woocommerce integration'],
+        techs: ['wordpress', 'php', 'jquery', 'html', 'css', 'reactjs'],
+        learned: '',
+        live: true
+    },
+	{
         title: 'Truly Lindsey Photography',
         subtitle: '',
         url: 'http://www.trulylindseyphotography.com/',
