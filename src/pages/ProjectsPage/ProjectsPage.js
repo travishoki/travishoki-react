@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import NoResults from './NoResults/NoResults';
 import { filterList, ProjectsData } from './ProjectsPage.data';
 import ProjectItemList from './ProjectItemList/ProjectItemList';
 import ProjectItemGrid from './ProjectItemGrid/ProjectItemGrid';
@@ -250,22 +251,12 @@ class ProjectsPage extends Component {
                             ))}
                         </ul>
                     ) : (
-                        <div className="no-results">
-                            <h3>No results</h3>
-                            <p>Clear filter and search terms to find more results.</p>
-
-                            {this.state.filter && (
-                                <p onClick={this.onClearFilter}>
-									Filter: {this.state.filter} <i className="fa fa-close" />
-								</p>
-							)}
-
-                            {this.state.searchTerm && (
-                                <p onClick={this.onClearSearchTerm}>
-									Search Term: {this.state.searchTerm} <i className="fa fa-close" />
-								</p>
-                            )}
-                        </div>
+						<NoResults
+							filter={this.state.filter}
+							onClearFilter={this.onClearFilter}
+							onClearSearchTerm={this.onClearSearchTerm}
+							searchTerm={this.state.searchTerm}
+						/>
                     )}
                 </div>
             </div>
