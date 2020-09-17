@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import Banner from './Banner';
 import Experience from './Experience';

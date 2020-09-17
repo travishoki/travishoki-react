@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import AboutPageData from './AboutPage.data';
 

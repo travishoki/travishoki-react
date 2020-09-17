@@ -65,7 +65,7 @@ class CourseApi {
 	}
 
 	static sendMessage(message){
-		return new Promise((resolve, reject) => {
+		return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(Object.assign([], message));
 			}, delay);
@@ -103,7 +103,7 @@ class CourseApi {
 	}
 
 	static deleteCourse(courseId) {
-		return new Promise((resolve, reject) => {
+		return new Promise((resolve) => {
 			setTimeout(() => {
 				const indexOfCourseToDelete = courses.findIndex(course => {
 					course.id == courseId;

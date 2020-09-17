@@ -111,8 +111,8 @@ class ContactPage extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-    email: 'thoki@o.co'
+const mapStateToProps = (state) => ({
+    email: 'travis.hoki@gmail.com'
 });
 
 const mapDispatchToProps = (dispatch) => ({

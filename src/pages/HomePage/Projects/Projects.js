@@ -1,19 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import Banner from '../Banner/Banner';
-import HokiSkateboards from '../HokiSkateboards/HokiSkateboards';
-import { skillsList } from '../HomePage.data';
-import { getExperienceYears } from '../HomePage.helpers';
 import { ProjectsData } from '../../ProjectsPage/ProjectsPage.data';
-import Education from '../../../components/Education/Education';
-import ListSection from '../../../components/ListSection/ListSection';
-import SocialIcons from '../../../components/SocialIcons/SocialIcons';
 
-const img_profile_pic = require('../../../../images/global/travis-hoki.png');
-const img_tech_icons = require('../../../../images/icons/tech-icons/tech-icons.jpg');
 const images = require.context('../../../../images/websites', true);
-
 const currentProjects = ProjectsData.slice(0, 3);
 
 const Projects = () => (

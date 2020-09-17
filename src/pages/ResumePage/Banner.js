@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 const img_resume = require('../../../images/global/resume.png');
 
