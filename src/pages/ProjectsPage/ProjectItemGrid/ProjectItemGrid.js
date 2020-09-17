@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
-const images = require.context('../../../images/websites', true);
-const logos = require.context('../../../images/clients', true);
+const images = require.context('../../../../images/websites', true);
+const logos = require.context('../../../../images/clients', true);
 
-const ProjectGridItem = ({ project }) => (
+const ProjectItemGrid = ({ project }) => (
 	<div className="grid-item">
 		<div className="popup">
 			<Link to={"/project/"+project.key}>
@@ -30,8 +30,8 @@ const ProjectGridItem = ({ project }) => (
 	</div>
 );
 
-ProjectGridItem.propTypes = {
+ProjectItemGrid.propTypes = {
     project: PropTypes.object.isRequired
 };
 
-export default ProjectGridItem;
+export default ProjectItemGrid;

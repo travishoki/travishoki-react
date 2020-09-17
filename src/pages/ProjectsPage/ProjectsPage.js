@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { filterList, ProjectsData } from './ProjectsPage.data';
-import ProjectItemList from './ProjectItemList';
-import ProjectItemGrid from './ProjectItemGrid';
-import TechIcon from './TechIcon';
+import ProjectItemList from './ProjectItemList/ProjectItemList';
+import ProjectItemGrid from './ProjectItemGrid/ProjectItemGrid';
+import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
 
 class ProjectsPage extends Component {

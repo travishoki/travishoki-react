@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const images = require.context('../../../images/websites', true);
-const logos = require.context('../../../images/clients', true);
-import TechIcon from './TechIcon';
+const images = require.context('../../../../images/websites', true);
+const logos = require.context('../../../../images/clients', true);
+import TechIcon from '../TechIcon/TechIcon';
 
-const ProjectListItem = ({ project }) => (
+const ProjectItemList = ({ project }) => (
 	<div className="list-item">
 		<div className="projectHeading">
 			<h2>{project.title}</h2>
@@ -67,8 +67,8 @@ const ProjectListItem = ({ project }) => (
 	</div>
 );
 
-ProjectListItem.propTypes = {
+ProjectItemList.propTypes = {
     project: PropTypes.array.isRequired
 };
 
-export default ProjectListItem;
+export default ProjectItemList;

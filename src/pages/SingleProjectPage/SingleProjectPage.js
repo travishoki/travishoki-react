@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 
 import { ProjectsData } from '../ProjectsPage/ProjectsPage.data';
-import ProjectItemList from '../ProjectsPage/ProjectItemList.js';
+import ProjectItemList from '../ProjectsPage/ProjectItemList/ProjectItemList';
 
 const SingleProjectPage = ({
 	params
