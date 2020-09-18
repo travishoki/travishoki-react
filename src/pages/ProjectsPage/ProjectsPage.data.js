@@ -55,7 +55,7 @@ export const ProjectsData = [
         contributions: ['Tie into existing API\'s to create a new book.', 'Create reusable UI components'],
         techs: [REACT_JS, REDUX, JAVSCRIPT, HTML, SCSS_CSS],
         learned: '',
-        live: true
+        live: true,
     },
 	{
         title: 'Hoki Skateboards',
@@ -66,7 +66,7 @@ export const ProjectsData = [
         contributions: ['React Native development', 'UI/UX Design', 'Character illustrations'],
         techs: [REACT_JS, CSS],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'Overstock.com',
@@ -78,7 +78,7 @@ export const ProjectsData = [
         contributions: ['Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit withing AMP specifications.'],
         techs: [HTML, JAVSCRIPT, AMP, WEBPACK, LESS_CSS],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'Overstock.com',
@@ -90,7 +90,7 @@ export const ProjectsData = [
         contributions: ['I incorporated react router and set the project up to be extendable with future pages/tools.'],
         techs: [REACT_JS, REDUX, NODE_JS, HTML, LESS_CSS, JAVSCRIPT, WEBPACK],
         learned: 'I got a deeper understanding of the the Redux flow.',
-        live: false
+        live: false,
     },
     {
         title: 'Overstock.com',
@@ -102,7 +102,7 @@ export const ProjectsData = [
         contributions: ['The initial project was build within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality withing a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed to jump into new stacks that I had never done before and to prioritize time.'],
         techs: [HTML, LESS_CSS, JAVSCRIPT, REACT_JS, REDUX, JQUERY, WEBPACK],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -114,7 +114,7 @@ export const ProjectsData = [
         contributions: ['Coordinate deployments with multiple departments.'],
         techs: [HTML, LESS_CSS, JAVSCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -126,7 +126,7 @@ export const ProjectsData = [
         contributions: ['I implemented an AB test that resulted in lift during a 2 week period.'],
         techs: [HTML, LESS_CSS, JAVSCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
         learned: 'The A/B site test origianlly failed due to routing errors. I had to be persistant at keeping the conversation going and getting help from the right people.',
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -138,7 +138,7 @@ export const ProjectsData = [
         contributions: ['Componentize the Add To Cart functionality into a react module.'],
         techs: [HTML, LESS_CSS, JAVSCRIPT, REACT_JS],
         learned: 'This was my first production level ReactJs work.',
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -150,7 +150,7 @@ export const ProjectsData = [
         contributions: ['Coordinate deployments with multiple departments.'],
         techs: [HTML, LESS_CSS, JAVSCRIPT, HANDLEBARS_JS, JQUERY],
         learned: 'This project was a huge undertaking. Perviously at other companies I had been full-stack. This project helped me understand the limitations and resonsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -162,7 +162,7 @@ export const ProjectsData = [
         contributions: ["I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shoppting site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me."],
         techs: [HTML, LESS_CSS, JAVSCRIPT, HANDLEBARS_JS, JQUERY],
         learned: "I was able to get a deep dive into Overstock's processes across many different teams.",
-        live: true
+        live: true,
     },
     {
         title: 'Overstock.com',
@@ -174,7 +174,19 @@ export const ProjectsData = [
         contributions: ['Took the basic wordpress plugin and rearchitected it.'],
         techs: [JAVSCRIPT, JQUERY, PHP, HTML, LESS_CSS, GRUNT],
         learned: '',
-        live: true
+        live: true,
+    },
+	{
+        title: 'LindseyHoki.com',
+        subtitle: '',
+        url: 'http://www.lindseyhoki.com/',
+        desc: 'Lindsey Hoki Photography is my wife\'s photography company. I am helping to brand her company.',
+        itemKey: 'lindsey-hoki-photography',
+        company: 'lindsey-hoki-photography',
+        contributions: ['Wordpress customization', 'Design and branding'],
+        techs: [WORDPRESS, HTML, CSS],
+        learned: '',
+        live: true,
     },
     {
         title: 'Hoki Skateboards',
@@ -186,7 +198,7 @@ export const ProjectsData = [
         contributions: ['Wordpress customization', 'Design and branding','Woocommerce integration'],
         techs: [WORDPRESS, PHP, JQUERY, HTML, CSS, REACT_JS],
         learned: '',
-        live: true
+        live: true,
     },
 	{
         title: 'Truly Lindsey Photography',
@@ -198,7 +210,7 @@ export const ProjectsData = [
         contributions: ['Wordpress customization', 'Design and branding'],
         techs: [WORDPRESS, HTML, CSS],
         learned: '',
-        live: true
+        live: false,
     },
     {
         title: 'Room Choice',
@@ -210,7 +222,7 @@ export const ProjectsData = [
         contributions: ['Full Stack Development', 'Django and python', 'Restful API calls.'],
         techs: ['python', 'django', ANGULAR_JS, JAVSCRIPT, HTML, LESS_CSS],
         learned: 'At Roomchoice I got my first experience with external developers. I had to learn to communicate effectily with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
-        live: true
+        live: true,
     },
     {
         title: 'Rooke Capital Management',
@@ -222,7 +234,7 @@ export const ProjectsData = [
         contributions: ['Creationg of registration form', 'authorize.net intergration', 'customization of wordpress theme.'],
         techs: [PHP, WORDPRESS, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'RGDJanitorial',
@@ -234,7 +246,7 @@ export const ProjectsData = [
         contributions: ['wordpress theme customization', 'WP Advanced Custom Fields', 'Design'],
         techs: [PHP, WORDPRESS, JAVSCRIPT, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Wedding Website',
@@ -246,7 +258,7 @@ export const ProjectsData = [
         contributions: ['Site design and development'],
         techs: [ANGULAR_JS, JAVSCRIPT, HTML, SCSS_CSS],
         learned: 'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
-        live: true
+        live: true,
     },
     {
         title: 'Eric Aroca',
@@ -258,7 +270,7 @@ export const ProjectsData = [
         contributions: ['Creationg of registration form', 'customization of wordpress theme.'],
         techs: [PHP, WORDPRESS, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'Saints and Sinners Half Marathon and Team Relay',
@@ -270,7 +282,7 @@ export const ProjectsData = [
         contributions: ['Creationg of registration form, authorize.net intergration', 'customization of wordpress theme.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS, SQL],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'New Life Recovery',
@@ -282,7 +294,7 @@ export const ProjectsData = [
         contributions: ['Customization of wordpress theme.'],
         techs: [PHP, WORDPRESS, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'Creative Media Education',
@@ -294,7 +306,7 @@ export const ProjectsData = [
         contributions: ['Stripe Integration', 'Front-end and Back-end', 'integrating courses the custom LMS.'],
         techs: [ANGULAR_JS, PHP, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'LavaVolt',
@@ -306,7 +318,7 @@ export const ProjectsData = [
         contributions: ['All of the back-end', 'everything from user accounts, to film uploading, to querying from the film library.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Enspark LMS',
@@ -318,7 +330,7 @@ export const ProjectsData = [
         contributions: ['Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: 'This is one of my first full-stack projects.',
-        live: true
+        live: true,
     },
     {
         title: 'First Mile',
@@ -330,7 +342,7 @@ export const ProjectsData = [
         contributions: ['All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.'],
         techs: [PHP, ANGULAR_JS, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'The Putting Tour',
@@ -342,7 +354,7 @@ export const ProjectsData = [
         contributions: ['Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'WinInsights',
@@ -354,7 +366,7 @@ export const ProjectsData = [
         contributions: ['Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Barrier Pest Control',
@@ -366,7 +378,7 @@ export const ProjectsData = [
         contributions: ["Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. "],
         techs: [JAVSCRIPT, JQUERY, HTML, CSS, SQL],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Enspark',
@@ -378,7 +390,7 @@ export const ProjectsData = [
         contributions: ['Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.'],
         techs: [JAVSCRIPT, JQUERY, HTML, CSS, PHP, SQL],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Utah Casa',
@@ -390,7 +402,7 @@ export const ProjectsData = [
         contributions: ['Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.'],
         techs: [PHP, HTML, CSS],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Paradigm Life',
@@ -402,7 +414,7 @@ export const ProjectsData = [
         contributions: ['Helped with the wordpress theme and structure architecture.'],
         techs: [PHP, JAVSCRIPT, JQUERY, HTML, CSS, SQL],
         learned: '',
-        live: true
+        live: true,
     },
     {
         title: 'Debt Free Planning',
@@ -414,7 +426,7 @@ export const ProjectsData = [
         contributions: ['Front-end construction. Creating a email form for user information requests.'],
         techs: [PHP, LESS_CSS, HTML, JAVSCRIPT],
         learned: '',
-        live: false
+        live: false,
     },
     {
         title: 'Southam Consulting',
@@ -426,6 +438,6 @@ export const ProjectsData = [
         contributions: ['Creating a email form for user information requests. Other front-end fixes.'],
         techs: [PHP, CSS, HTML, JAVSCRIPT],
         learned: '',
-        live: true
+        live: true,
     }
 ];
