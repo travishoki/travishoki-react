@@ -8,7 +8,8 @@ import Projects from './Projects/Projects';
 import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
 import { ProjectsData } from './ProjectsPage.data';
-import CurrentFilter from './Filter/CurrentFilter';
+import Filter from './Filter/Filter';
+import FilterClean from './Filter/FilterClean';
 import FilterItems from './Filter/FilterItems';
 import FilterForm from './Filter/FilterForm';
 
@@ -107,7 +108,7 @@ const ProjectsPage = ({
                 <div className="filter-section">
                     <p className="center">Click on the icons below to filter my work by different technologies</p>
 
-					<CurrentFilter
+					<Filter
 						filter={filter}
 						onClearAndCloseFilter={onClearAndCloseFilter}
 					/>
@@ -128,13 +129,9 @@ const ProjectsPage = ({
 									/>
                                 </Fragment>
                             ) : (
-                                <div
-									onClick={toggleOpenFilter}
-									className="filter-item pointer"
-								>
-                                    <p className="f-left">Filter by Tech</p>
-                                    <i className="fa fa-chevron-down f-right"/>
-                                </div>
+								<FilterClean
+									toggleOpenFilter={toggleOpenFilter}
+								/>
                             )}
                         </Fragment>
                     )}
