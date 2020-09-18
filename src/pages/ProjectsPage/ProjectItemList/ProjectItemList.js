@@ -41,7 +41,9 @@ const ProjectItemList = ({
 				{desc && (
 					<Fragment>
 						<p className="list-heading">Description:</p>
-						<p className="answer-section">{desc}</p>
+						<div className="answer-section">
+							<p>{desc}</p>
+						</div>
 					</Fragment>
 				)}
 
@@ -63,7 +65,9 @@ const ProjectItemList = ({
 				{learned && (
 					<Fragment>
 						<p className="list-heading">What I Learned:</p>
-						<p className="answer-section">{learned}</p>
+						<div className="answer-section">
+							<p>{learned}</p>
+						</div>
 					</Fragment>
 				)}
 
@@ -71,22 +75,24 @@ const ProjectItemList = ({
 				{techs && techs.length > 0 && (
 					<Fragment>
 						<p className="list-heading">Technologies:</p>
-						<ul className="answer-section tech-icon-list">
-							{techs.map((tech, index) => (
-								<li
-									key={index}
-									className="tech-icon-item"
-								>
-									<Link
-										title={tech}
-										to={`/projects/${tech}`}
+						<div className="answer-section">
+							<ul className="tech-icon-list">
+								{techs.map((tech, index) => (
+									<li
+										key={index}
+										className="tech-icon-item"
 									>
-										<TechIcon name={tech} />
-										<p>{tech}</p>
-									</Link>
-								</li>
-							))}
-						</ul>
+										<Link
+											title={tech}
+											to={`/projects/${tech}`}
+										>
+											<TechIcon name={tech} />
+											<p>{tech}</p>
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
 					</Fragment>
 				)}
 			</div>

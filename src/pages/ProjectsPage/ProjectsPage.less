@@ -16,10 +16,6 @@
 		display: block;
 		list-style: none;
 		padding: 0;
-
-	    .tech-icon-item {
-	        margin-bottom: 10px;
-	    }
 	}
 
 	.tech-icon-item {
@@ -46,18 +42,19 @@
 		ul {
 			padding: 0 0 0 20px;
 		}
+
+		ul.tech-icon-list {
+			padding: 0;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
 	}
 
 	.find-section {
+		max-width: 400px;
 	    margin: 0 auto 20px;
-
-	    @media (max-width: 767px) {
-	        width: 230px;
-	    }
-
-	    @media (min-width: 767px) {
-	        width: 410px;
-	    }
 
 		.filter-item {
 			overflow: hidden;
