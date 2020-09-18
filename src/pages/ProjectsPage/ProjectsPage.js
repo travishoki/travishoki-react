@@ -8,7 +8,7 @@ import Projects from './Projects/Projects';
 import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
 import { ProjectsData } from './ProjectsPage.data';
-import TechIcon from './TechIcon/TechIcon';
+import CurrentFilter from './Filter/CurrentFilter';
 import FilterItems from './Filter/FilterItems';
 import FilterForm from './Filter/FilterForm';
 
@@ -107,16 +107,12 @@ const ProjectsPage = ({
                 <div className="filter-section">
                     <p className="center">Click on the icons below to filter my work by different technologies</p>
 
-                    {filter ? (
-                        <div className="tech-icon-item">
-                            <TechIcon name={filter} />
-                            <p>{filter}</p>
-                            <i
-								className="fa fa-close pointer f-right"
-								onClick={onClearAndCloseFilter}
-							/>
-                        </div>
-                    ):(
+					<CurrentFilter
+						filter={filter}
+						onClearAndCloseFilter={onClearAndCloseFilter}
+					/>
+
+                    {!filter && (
                         <Fragment>
                             {isFilterOpen ? (
                                 <Fragment>
