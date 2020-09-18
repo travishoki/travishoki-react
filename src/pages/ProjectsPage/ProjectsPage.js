@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { filterProjects, createProjectsPageUrl } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
+import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
 import { filterList, ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
@@ -169,24 +170,11 @@ const ProjectsPage = ({
 
                     <div className="clearfix" />
 
-                    <form>
-                        <div
-                            id="input-holder"
-                            className={searchTerm ? 'hasSearchTerm' : ''}
-                        >
-                            <input
-                                type="text"
-                                className="form-control"
-                                maxLength="25"
-                                placeholder="Search Term"
-                                value={searchTerm || ''}
-                                onChange={onChangeSearch}
-                            />
-                            {searchTerm && (
-                                <i className="fa fa-close" onClick={onClearSearchTerm} />
-                            )}
-                        </div>
-                    </form>
+					<SearchForm
+						onChangeSearch={onChangeSearch}
+						onClearSearchTerm={onClearSearchTerm}
+						searchTerm={searchTerm}
+					/>
 
                     {showResultsCount && (
                         <p className="results-count">Results: {projects.length}</p>
