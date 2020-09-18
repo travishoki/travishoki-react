@@ -14,17 +14,19 @@ const Projects = () => (
             <ul>
                 {currentProjects.map((project, index) => (
                     <li key={index}>
-                        <div className="project-header">
-                            <div className="project-header-inner">
-                                <h2>{project.title}</h2>
-                                <h3>{project.subtitle}</h3>
-                            </div>
-                        </div>
-                        <img
-                            src={images(`./${project.itemKey}/sm.jpg`)}
-                            className="project-img"
-                        />
-                    </li>
+						<Link to={`/project/${project.itemKey}`}>
+							<div className="project-header">
+								<div className="project-header-inner">
+									<h2>{project.title}</h2>
+									<h3>{project.subtitle}</h3>
+								</div>
+							</div>
+							<img
+								src={images(`./${project.itemKey}/sm.jpg`)}
+								className="project-img"
+							/>
+						</Link>
+					</li>
                 ))}
             </ul>
 
