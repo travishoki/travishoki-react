@@ -7,13 +7,16 @@ import TechIcon from '../../../components/TechIcon/TechIcon';
 const TechTiles = () => (
 	<section className="white tech-tiles">
 		<ul>
-			{filterList.map((item, index) => (
+			{filterList.map((tech, index) => (
 				<li
 					key={index}
 				>
-					<Link to={`/projects/${item}`}>
+					<Link
+						title={tech}
+						to={`/projects/${tech}`}
+					>
 						<TechIcon
-							name={item}
+							name={tech}
 						/>
 					</Link>
 				</li>

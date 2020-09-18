@@ -77,7 +77,10 @@ const ProjectItemList = ({
 									key={index}
 									className="tech-icon-item"
 								>
-									<Link to={`/projects/${tech}`}>
+									<Link
+										title={tech}
+										to={`/projects/${tech}`}
+									>
 										<TechIcon name={tech} />
 										<p>{tech}</p>
 									</Link>
