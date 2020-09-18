@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 
-import { filterProjects } from './ProjectsPage.helpers';
+import { filterProjects, createProjectsPageUrl } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
 import ViewControl from './ViewControl/ViewControl';
@@ -10,15 +10,17 @@ import { filterList, ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
 
+const PROJECTS_PAGE_URL = '/projects';
+
 const ProjectsPage = ({
-	params,
+	history,
 }) => {
 	const { paramFilter, paramSearch } = useParams();
 
 	let initialFilter = null;
 
-	if (params) {
-		initialFilter = (paramFilter === 'all') ? null : paramFilter;
+	if (paramFilter) {
+		initialFilter = (paramFilter === 'all' || paramFilter === 'null') ? null : paramFilter;
 	}
 
 	const initialSearch = paramSearch || '';
@@ -35,26 +37,48 @@ const ProjectsPage = ({
 
     const onSelectFilter = (filterProp) => {
 		const newFilter = (filter === filterProp) ? null : filterProp;
+		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter, searchTerm);
+
+		history.push(newLocation);
 
 		setFilter(newFilter);
 		setFilterTerm(newFilter);
     };
 
     const onChangeSearch = (e) => {
-        setSearchTerm(e.currentTarget.value);
+		const newSearchTerm = e.currentTarget.value;
+
+		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, filter, newSearchTerm);
+
+		history.push(newLocation);
+
+        setSearchTerm(newSearchTerm);
     };
 
     const onClearFilter = () => {
+		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL);
+
+		history.push(newLocation);
+
 		setFilter(null);
 		setFilterTerm(null);
     };
 
     const onClearSearchTerm = () => {
+		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, filter);
+
+		history.push(newLocation);
+
         setSearchTerm('');
     };
 
     const onChangeFilter = (e) => {
-		setFilterTerm(e.target.value);
+		const newFilter = e.target.value;
+		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter);
+
+		history.push(newLocation);
+
+		setFilterTerm(newFilter);
     };
 
     const toggleOpenFilter = () => {
@@ -193,7 +217,7 @@ const ProjectsPage = ({
 };
 
 ProjectsPage.propTypes = {
-    params: PropTypes.object
+    history: PropTypes.object
 };
 
 export default ProjectsPage;

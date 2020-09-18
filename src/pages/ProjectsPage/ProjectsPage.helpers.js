@@ -32,3 +32,13 @@ export const filterProjects = (projects, filter, searchTerm) => {
 
 	return projects;
 };
+
+export const createProjectsPageUrl = (path, filter, search) => {
+	if (search) {
+		return `${path}/${filter || null}/${search}`;
+	} else if (filter) {
+		return `${path}/${filter}`;
+	}
+
+	return path;
+};
