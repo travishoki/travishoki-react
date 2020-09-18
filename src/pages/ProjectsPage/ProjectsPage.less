@@ -1,6 +1,7 @@
 #container.projects   {
 	@iconW: 40px;
 
+	@import './Filter/Filter.less';
 	@import './TechIcon/TechIcon.less';
 
 	.tech-icon-list {
@@ -51,21 +52,6 @@
 	        .box-shadow(none);
 			border-bottom: solid 1px @gray-three;
 		}
-
-	    ul.filters {
-			background: @gray-two;
-	        max-height: 200px;
-	        overflow-x: hidden;
-	        overflow-y: scroll;
-
-	        li {
-	            cursor: pointer;
-
-	            &:last-child {
-	                margin: 0;
-	            }
-	        }
-	    }
 
 	    form {
 	        #input-holder {

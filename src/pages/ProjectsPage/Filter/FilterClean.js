@@ -6,7 +6,7 @@ const FilterClean = ({
 }) => (
 	<div
 		onClick={toggleOpenFilter}
-		className="filter-item pointer"
+		className="filter-clean filter-item pointer"
 	>
 		<p className="f-left">Filter by Tech</p>
 		<i className="fa fa-chevron-down f-right"/>

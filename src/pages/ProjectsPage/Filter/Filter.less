@@ -1,0 +1,29 @@
+.filter-section {
+	@import './CurrentFilter.less';
+	@import './FilterClear.less';
+
+	form {
+		margin: 0;
+	}
+
+	.filter-item {
+		p {
+			margin: 0;
+		}
+	}
+
+	ul.filters {
+		background: @gray-two;
+		max-height: 200px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+
+		li {
+			cursor: pointer;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}

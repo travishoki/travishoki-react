@@ -15,7 +15,7 @@ const Filter = ({
 	onSelectFilter,
 	toggleOpenFilter,
 }) => (
-	<Fragment>
+	<div className="filter-section">
 		<CurrentFilter
 			filter={filter}
 			onClearAndCloseFilter={onClearAndCloseFilter}
@@ -43,7 +43,7 @@ const Filter = ({
 				)}
 			</Fragment>
 		)}
-	</Fragment>
+	</div>
 );
 
 Filter.propTypes = {

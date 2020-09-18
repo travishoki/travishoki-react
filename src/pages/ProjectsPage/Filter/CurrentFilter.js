@@ -10,7 +10,7 @@ const CurrentFilter = ({
 	if (!filter) return null;
 
 	return (
-		<div className="tech-icon-item">
+		<div className="current-filter tech-icon-item">
 			<TechIcon name={filter} />
 			<p>{filter}</p>
 			<i
