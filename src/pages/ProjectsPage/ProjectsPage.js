@@ -152,7 +152,7 @@ const ProjectsPage = ({
 };
 
 ProjectsPage.propTypes = {
-    history: PropTypes.object
+    history: PropTypes.object,
 };
 
 export default ProjectsPage;

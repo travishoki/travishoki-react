@@ -28,7 +28,7 @@ const FilterItem = ({
 FilterItem.propTypes = {
     item: PropTypes.string.isRequired,
     filter: PropTypes.string,
-    onSelectFilter: PropTypes.func.isRequired
+    onSelectFilter: PropTypes.func.isRequired,
 };
 
 export default FilterItem;

@@ -18,7 +18,7 @@ const App = ({
 
 App.propTypes = {
 	children: PropTypes.object.isRequired,
-	loading: PropTypes.bool.isRequired
+	loading: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = (state) => ({

@@ -117,7 +117,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 ContactPage.propTypes = {
-	actions: PropTypes.object.isRequired
+	actions: PropTypes.object.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(ContactPage);

@@ -49,7 +49,7 @@ ContactForm.propTypes = {
 	onSave: PropTypes.func.isRequired,
 	onChange: PropTypes.func.isRequired,
 	saving: PropTypes.bool,
-	errors: PropTypes.object
+	errors: PropTypes.object,
 };
 
 export default ContactForm;

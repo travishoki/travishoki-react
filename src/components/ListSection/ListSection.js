@@ -34,7 +34,7 @@ const ListSection = ({ title, list }) => {
 
 ListSection.propTypes = {
     title: PropTypes.string.isRequired,
-    list: PropTypes.array.isRequired
+    list: PropTypes.array.isRequired,
 };
 
 export default ListSection;
