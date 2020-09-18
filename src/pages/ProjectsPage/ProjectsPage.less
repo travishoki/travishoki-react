@@ -2,7 +2,15 @@
 	@iconW: 40px;
 
 	@import './Filter/Filter.less';
-	@import './TechIcon/TechIcon.less';
+
+	.tech-icon-holder {
+		border: solid 1px @white;
+		border-radius: 50%;
+		float: left;
+		height: (@iconW+2);
+		margin-right: 10px;
+		width: (@iconW+2);
+	}
 
 	.tech-icon-list {
 		display: block;

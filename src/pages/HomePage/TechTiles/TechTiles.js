@@ -1,13 +1,24 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const img_tech_icons = require('../../../../images/icons/tech-icons/tech-icons.jpg');
+import { filterList } from '../../ProjectsPage/ProjectsPage.data';
+import TechIcon from '../../../components/TechIcon/TechIcon';
 
 const TechTiles = () => (
-	<section className="white skills">
-		<img
-			src={img_tech_icons}
-			className="center"
-		/>
+	<section className="white tech-tiles">
+		<ul>
+			{filterList.map((item, index) => (
+				<li
+					key={index}
+				>
+					<Link to={`/projects/${item}`}>
+						<TechIcon
+							name={item}
+						/>
+					</Link>
+				</li>
+			))}
+		</ul>
 	</section>
 );
 
