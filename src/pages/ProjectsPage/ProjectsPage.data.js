@@ -80,6 +80,17 @@ export const ProjectsData = [
         learned: '',
         live: false,
     },
+	{
+		title: 'Chatbooks.com',
+        subtitle: 'Cards Taxonomy Pages',
+        desc: 'Creating cards taxonomy pages with categories and search filters.',
+        itemKey: 'chatbooks-cards-taxonomy',
+        company: 'chatbooks',
+        contributions: ['Server-side rendering for SEO value', 'Work closely with designers and marketing', 'Integrating with new APIS'],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, HTML, SCSS_CSS],
+        learned: '',
+        live: false,
+    },
     {
         title: 'Overstock.com',
         subtitle: 'AMP Featured Product',
