@@ -18,7 +18,7 @@ import {
 	SCSS_CSS,
 	SQL,
 	WEBPACK,
-	WORDPRESS
+	WORDPRESS,
 } from '../../const/Tech.const';
 
 export const filterList = [
@@ -41,7 +41,7 @@ export const filterList = [
 	SCSS_CSS,
 	SQL,
 	WEBPACK,
-	WORDPRESS
+	WORDPRESS,
 ];
 
 export const ProjectsData = [

@@ -19,7 +19,7 @@ export const SKILLS_LIST = [
 	'LESS',
 	'jQuery',
     'PHP',
-    'SQL'
+    'SQL',
 ];
 
 export const ResumeData = [
@@ -31,9 +31,9 @@ export const ResumeData = [
         tasks: [
 			'Create/maintain web features and projects for the Books and Cards teams',
 			'Actively convert Angular JS to React JS while keeping product code stable',
-			'Node JS Server-side rendering for SEO and optimization'
+			'Node JS Server-side rendering for SEO and optimization',
         ],
-        img: imgChatbooks
+        img: imgChatbooks,
     },
 	{
         title: 'Overstock',
@@ -44,9 +44,9 @@ export const ResumeData = [
 			'Enhancements to customer reviews functionality',
 			'Manage the Front-End for all User Generated Content',
             'Manage pixels for retargeting and third party integrations',
-			'Pioneer affiliate links program'
+			'Pioneer affiliate links program',
         ],
-        img: imgOvestock
+        img: imgOvestock,
     },
     {
         title: 'Room Choice',
@@ -57,9 +57,9 @@ export const ResumeData = [
             'Query user data via Python and Django',
             'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
             'In house developement on student housing software',
-            'Finding ways to speedup and enhance the user experience of the software'
+            'Finding ways to speedup and enhance the user experience of the software',
         ],
-        img: imgRoomChoice
+        img: imgRoomChoice,
     },
     {
         title: 'Enspark',
@@ -70,9 +70,9 @@ export const ResumeData = [
             'Full-stack development via PHP and JavaScript',
             'LMS reconstruction and user account tracking',
             'Front-end development and WordPress maintenance',
-            'Custom banner and eLearning course development in Adobe Flash AS3'
+            'Custom banner and eLearning course development in Adobe Flash AS3',
         ],
-        img: imgEnspark
+        img: imgEnspark,
     },
     {
         title: 'All American Sod Farms',
@@ -82,9 +82,9 @@ export const ResumeData = [
         tasks: [
             'Scheduling and dispatching deliveries',
             'Bill collecting and register operation',
-            'Customer service and clerical work'
+            'Customer service and clerical work',
         ],
-        img: imgAllAm
+        img: imgAllAm,
     },
     {
         title: 'Wendy\'s',
@@ -95,8 +95,8 @@ export const ResumeData = [
             'Register operation',
             'Workstation sanitation and stocking',
             'Train new employees in various positions',
-            'Maintain service and courtesy standards during stressful situations'
+            'Maintain service and courtesy standards during stressful situations',
         ],
-        img: imgWendys
+        img: imgWendys,
     }
 ];

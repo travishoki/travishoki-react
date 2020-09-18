@@ -4,5 +4,5 @@ export const skillsList = [
     'Responsive CSS with Media Queries',
 	'Node JS Server-side rendering for SEO and optimization',
     'Small and large business experience',
-    'SQL and restful API integration'
+    'SQL and restful API integration',
 ];
