@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 
@@ -9,9 +9,6 @@ import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
 import { ProjectsData } from './ProjectsPage.data';
 import Filter from './Filter/Filter';
-import FilterClean from './Filter/FilterClean';
-import FilterItems from './Filter/FilterItems';
-import FilterForm from './Filter/FilterForm';
 
 const PROJECTS_PAGE_URL = '/projects';
 
@@ -110,31 +107,13 @@ const ProjectsPage = ({
 
 					<Filter
 						filter={filter}
+						filterTerm={filterTerm}
+						isFilterOpen={isFilterOpen}
+						onChangeFilter={onChangeFilter}
 						onClearAndCloseFilter={onClearAndCloseFilter}
+						onSelectFilter={onSelectFilter}
+						toggleOpenFilter={toggleOpenFilter}
 					/>
-
-                    {!filter && (
-                        <Fragment>
-                            {isFilterOpen ? (
-                                <Fragment>
-									<FilterForm
-										filterTerm={filterTerm}
-										onChangeFilter={onChangeFilter}
-									/>
-									<FilterItems
-										filter={filter}
-										filterTerm={filterTerm}
-										onClearAndCloseFilter={onClearAndCloseFilter}
-										onSelectFilter={onSelectFilter}
-									/>
-                                </Fragment>
-                            ) : (
-								<FilterClean
-									toggleOpenFilter={toggleOpenFilter}
-								/>
-                            )}
-                        </Fragment>
-                    )}
 
                     <div className="clearfix" />
 
