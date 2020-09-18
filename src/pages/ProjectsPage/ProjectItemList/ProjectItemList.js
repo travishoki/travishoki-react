@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 const images = require.context('../../../../images/websites', true);
 const logos = require.context('../../../../images/clients', true);
-import TechIcon from '../TechIcon/TechIcon';
+import TechIcon from '../../../components/TechIcon/TechIcon';
 
 const ProjectItemList = ({
 	company,
@@ -60,8 +61,10 @@ const ProjectItemList = ({
 							key={index}
 							className="tech-icon-item"
 						>
-							<TechIcon name={tech} />
-							<p>{tech}</p>
+							<Link to={`/projects/${tech}`}>
+								<TechIcon name={tech} />
+								<p>{tech}</p>
+							</Link>
 						</li>
 					))}
 				</ul>
