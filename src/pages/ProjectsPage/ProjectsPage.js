@@ -10,6 +10,7 @@ import ViewControl from './ViewControl/ViewControl';
 import { filterList, ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
+import FilterForm from './Filter/FilterForm';
 
 const PROJECTS_PAGE_URL = '/projects';
 
@@ -122,16 +123,10 @@ const ProjectsPage = ({
                         <Fragment>
                             {isFilterOpen ? (
                                 <Fragment>
-                                    <form>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            maxLength="25"
-                                            placeholder="Tech Filter"
-                                            value={filterTerm || ''}
-                                            onChange={onChangeFilter}
-                                        />
-                                    </form>
+									<FilterForm
+										filterTerm={filterTerm}
+										onChangeFilter={onChangeFilter}
+									/>
                                     {filterListFiltered.length > 0 ? (
                                         <ul className="tech-icon-list filters">
                                             {!filterTerm && (
