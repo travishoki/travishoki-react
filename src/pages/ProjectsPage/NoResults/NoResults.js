@@ -38,7 +38,7 @@ NoResults.propTypes = {
 	searchTerm: PropTypes.string,
 };
 
-NoResults.propTypes = {
+NoResults.defaulProps = {
 	isVisible: false,
 };
 

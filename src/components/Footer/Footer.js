@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
 import SocialIcons from '../SocialIcons/SocialIcons';
@@ -34,11 +34,11 @@ class Footer extends Component {
                 <div id="subFooter">
                     <div className="contact-info">
                         <SocialIcons/>
-                        <Link
+                        <NavLink
 							to="/contact"
 							activeClassName="active"
 							className="contact-link"
-						>Contact Me</Link>
+						>Contact Me</NavLink>
                     </div>
                     <BluehostAffiliate />
                 </div>

@@ -80,13 +80,13 @@ const ProjectItemList = ({
 
 ProjectItemList.propTypes = {
 	company: PropTypes.string,
-	contributions: PropTypes.string,
+	contributions: PropTypes.array,
 	desc: PropTypes.string,
 	itemKey: PropTypes.string,
 	learned: PropTypes.string,
 	live: PropTypes.bool,
 	subtitle: PropTypes.string,
-	techs: PropTypes.string,
+	techs: PropTypes.array,
 	title: PropTypes.string,
 	url: PropTypes.string,
 };

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 
 import { filterProjects } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
@@ -9,205 +10,187 @@ import { filterList, ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
 import FilterItem from './Filter/FilterItem';
 
-class ProjectsPage extends Component {
-    constructor(props) {
-        super(props);
+const ProjectsPage = ({
+	params,
+}) => {
+	const { paramFilter, paramSearch } = useParams();
 
-		this.onChangeFilter = this.onChangeFilter.bind(this);
-		this.onChangeSearch = this.onChangeSearch.bind(this);
-		this.onClearAndCloseFilter = this.onClearAndCloseFilter.bind(this);
-		this.onClearFilter = this.onClearFilter.bind(this);
-        this.onClearSearchTerm = this.onClearSearchTerm.bind(this);
-		this.onSelectFilter = this.onSelectFilter.bind(this);
-		this.toggleOpenFilter = this.toggleOpenFilter.bind(this);
-		this.toggleView = this.toggleView.bind(this);
+	let initialFilter = null;
 
-        const filter = (props.params.filter === 'all') ? null : props.params.filter;
+	if (params) {
+		initialFilter = (paramFilter === 'all') ? null : paramFilter;
+	}
 
-        this.state = {
-			filter: filter || null,
-			filterTerm: filter || null,
-            grid: true,
-			isFilterOpen: false,
-            searchTerm: props.params.search || ''
-        };
-    }
+	const initialSearch = paramSearch || '';
 
-    toggleView(){
-        this.setState({ grid: !this.state.grid });
-    }
+	const [ filter, setFilter ] = useState(initialFilter || null);
+	const [ filterTerm, setFilterTerm ] = useState(initialFilter || null);
+	const [ grid, setGrid ] = useState(true);
+	const [ isFilterOpen, setIsFilterOpen ] = useState(false);
+	const [ searchTerm, setSearchTerm ] = useState(initialSearch);
 
-    onSelectFilter(filter){
-        if(filter === this.state.filter){
-            filter = null;
-        }
+    const toggleView = () => {
+        setGrid(!grid);
+    };
 
-        const filterTerm = filter;
+    const onSelectFilter = (filterProp) => {
+		const newFilter = (filter === filterProp) ? null : filterProp;
 
-        this.setState({ filter, filterTerm });
-    }
+		setFilter(newFilter);
+		setFilterTerm(newFilter);
+    };
 
-    onChangeSearch(e) {
-        const searchTerm = e.currentTarget.value;
+    const onChangeSearch = (e) => {
+        setSearchTerm(e.currentTarget.value);
+    };
 
-        this.setState({ searchTerm });
-    }
+    const onClearFilter = () => {
+		setFilter(null);
+		setFilterTerm(null);
+    };
 
-    onClearFilter() {
-        const filter = null;
-        const filterTerm = null;
+    const onClearSearchTerm = () => {
+        setSearchTerm('');
+    };
 
-        this.setState({ filter, filterTerm });
-    }
+    const onChangeFilter = (e) => {
+		setFilterTerm(e.target.value);
+    };
 
-    onClearSearchTerm() {
-        const searchTerm = '';
+    const toggleOpenFilter = () => {
+		setIsFilterOpen(!isFilterOpen);
+    };
 
-        this.setState({ searchTerm });
-    }
+    const onClearAndCloseFilter = () => {
+        onClearFilter();
+        toggleOpenFilter();
+    };
 
-    onChangeFilter(e) {
-        const filterTerm = e.target.value;
+    const projects = filterProjects(
+		ProjectsData,
+		filter,
+		searchTerm
+	);
+    const showResultsCount = (filter || searchTerm) && projects.length > 0;
+    const filterListFiltered = filterList.filter((item) => {
+        return filterTerm === null || item.toLowerCase().indexOf(filterTerm.toLowerCase()) > -1;
+    });
 
-        this.setState({ filterTerm });
-    }
+    return (
+        <div id="container" className="projects">
+            <div className={'projects-container '+(grid ? 'grid' : 'list')}>
+                <h1>Projects</h1>
 
-    toggleOpenFilter() {
-        this.setState({ isFilterOpen: !this.state.isFilterOpen });
-    }
+                <div className="filter-section">
+                    <p className="center">Click on the icons below to filter my work by different technologies</p>
 
-    onClearAndCloseFilter() {
-        this.onClearFilter();
-        this.toggleOpenFilter();
-    }
+                    {filter ? (
+                        <div className="tech-icon-item">
+                            <TechIcon name={filter} />
+                            <p>{filter}</p>
+                            <i
+								className="fa fa-close pointer f-right"
+								onClick={onClearAndCloseFilter}
+							/>
+                        </div>
+                    ):(
+                        <div>
+                            {isFilterOpen ? (
+                                <div>
+                                    <form>
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            maxLength="25"
+                                            placeholder="Tech Filter"
+                                            value={filterTerm || ''}
+                                            onChange={onChangeFilter}
+                                        />
+                                    </form>
+                                    {filterListFiltered.length > 0 ? (
+                                        <ul className="tech-icon-list filters">
+                                            {!filterTerm && (
+                                                <li
+                                                    onClick={onClearAndCloseFilter}
+                                                    className="filter-item tech-icon-item"
+                                                >
+                                                    <p>All</p>
+                                                </li>
+                                            )}
 
-    render() {
-        const projects = filterProjects(
-			ProjectsData,
-			this.state.filter,
-			this.state.searchTerm
-		);
-        const showResultsCount = (this.state.filter || this.state.searchTerm) && projects.length > 0;
-        const filterListFiltered = filterList.filter((item) => {
-            return this.state.filterTerm === null || item.toLowerCase().indexOf(this.state.filterTerm.toLowerCase()) > -1;
-        });
+                                            {filterListFiltered.map((item, index) => (
+                                                <FilterItem
+                                                    key={index}
+                                                    item={item}
+                                                    filter={filter}
+                                                    onSelectFilter={onSelectFilter}
+                                                />
+                                            ))}
+                                        </ul>
+                                    ):(
+                                        <p className="center">No Results</p>
+                                    )}
+                                </div>
+                            ) : (
+                                <div
+									onClick={toggleOpenFilter}
+									className="filter-item pointer"
+								>
+                                    <p className="f-left">Filter by Tech</p>
+                                    <i className="fa fa-chevron-down f-right"/>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
-        return (
-            <div id="container" className="projects">
-                <div className={'projects-container '+(this.state.grid ? 'grid' : 'list')}>
-                    <h1>Projects</h1>
+                    <div className="clearfix" />
 
-                    <div className="filter-section">
-                        <p className="center">Click on the icons below to filter my work by different technologies</p>
+                    <form>
+                        <div
+                            id="input-holder"
+                            className={searchTerm ? 'hasSearchTerm' : ''}
+                        >
+                            <input
+                                type="text"
+                                className="form-control"
+                                maxLength="25"
+                                placeholder="Search Term"
+                                value={searchTerm || ''}
+                                onChange={onChangeSearch}
+                            />
+                            {searchTerm && (
+                                <i className="fa fa-close" onClick={onClearSearchTerm} />
+                            )}
+                        </div>
+                    </form>
 
-                        {this.state.filter ? (
-                            <div className="tech-icon-item">
-                                <TechIcon name={this.state.filter} />
-                                <p>{this.state.filter}</p>
-                                <i
-									className="fa fa-close pointer f-right"
-									onClick={this.onClearAndCloseFilter}
-								/>
-                            </div>
-                        ):(
-                            <div>
-                                {this.state.isFilterOpen ? (
-                                    <div>
-                                        <form>
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                maxLength="25"
-                                                placeholder="Tech Filter"
-                                                value={this.state.filterTerm}
-                                                onChange={this.onChangeFilter}
-                                            />
-                                        </form>
-                                        {filterListFiltered.length > 0 ? (
-                                            <ul className="tech-icon-list filters">
-                                                {!this.state.filterTerm && (
-                                                    <li
-                                                        onClick={this.onClearAndCloseFilter}
-                                                        className="filter-item tech-icon-item"
-                                                    >
-                                                        <p>All</p>
-                                                    </li>
-                                                )}
+                    {showResultsCount && (
+                        <p className="results-count">Results: {projects.length}</p>
+                    )}
 
-                                                {filterListFiltered.map((item, index) => (
-                                                    <FilterItem
-                                                        key={index}
-                                                        item={item}
-                                                        filter={this.state.filter}
-                                                        onSelectFilter={this.onSelectFilter}
-                                                    />
-                                                ))}
-                                            </ul>
-                                        ):(
-                                            <p className="center">No Results</p>
-                                        )}
-                                    </div>
-                                ) : (
-                                    <div
-										onClick={this.toggleOpenFilter}
-										className="filter-item pointer"
-									>
-                                        <p className="f-left">Filter by Tech</p>
-                                        <i className="fa fa-chevron-down f-right"/>
-                                    </div>
-                                )}
-                            </div>
-                        )}
-
-                        <div className="clearfix" />
-
-                        <form>
-                            <div
-                                id="input-holder"
-                                className={this.state.searchTerm ? 'hasSearchTerm' : ''}
-                            >
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    maxLength="25"
-                                    placeholder="Search Term"
-                                    value={this.state.searchTerm}
-                                    onChange={this.onChangeSearch}
-                                />
-                                {this.state.searchTerm && (
-                                    <i className="fa fa-close" onClick={this.onClearSearchTerm} />
-                                )}
-                            </div>
-                        </form>
-
-                        {showResultsCount && (
-                            <p className="results-count">Results: {projects.length}</p>
-                        )}
-
-						<ViewControl
-							grid={this.state.grid}
-							isVisible={projects.length > 0}
-							toggleView={this.toggleView}
-						/>
-                    </div>
-
-					<Projects
-						projects={projects}
-						grid={this.state.grid}
-					/>
-
-					<NoResults
-						filter={this.state.filter}
-						isVisible={projects.length === 0}
-						onClearFilter={this.onClearFilter}
-						onClearSearchTerm={this.onClearSearchTerm}
-						searchTerm={this.state.searchTerm}
+					<ViewControl
+						grid={grid}
+						isVisible={projects.length > 0}
+						toggleView={toggleView}
 					/>
                 </div>
+
+				<Projects
+					projects={projects}
+					grid={grid}
+				/>
+
+				<NoResults
+					filter={filter}
+					isVisible={projects.length === 0}
+					onClearFilter={onClearFilter}
+					onClearSearchTerm={onClearSearchTerm}
+					searchTerm={searchTerm}
+				/>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 ProjectsPage.propTypes = {
     params: PropTypes.object

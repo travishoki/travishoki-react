@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import App from './App';
 import HomePage from './pages/HomePage/HomePage';
@@ -11,13 +11,17 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 export default (
-	<Route path="/" component={App}>
-		<IndexRoute component={HomePage} />
-		<Route path="projects(/:filter/:search)" component={ProjectsPage} />
-		<Route path="project/:itemKey" component={SingleProjectPage} />
-		<Route path="resume" component={ResumePage} />
-		<Route path="contact" component={ContactPage} />
-		<Route path="about" component={AboutPage} />
-		<Route path="*" component={NotFoundPage} />
-	</Route>
+	<Router>
+		<App>
+			<Switch>
+				<Route path="/" exact component={HomePage} />
+				<Route path="/projects/:paramFilter?/:paramSearch?" component={ProjectsPage} />
+				<Route path="/project/:paramItemKey" component={SingleProjectPage} />
+				<Route path="/resume" component={ResumePage} />
+				<Route path="/contact" component={ContactPage} />
+				<Route path="/about" component={AboutPage} />
+				<Route path="*" component={NotFoundPage} />
+			</Switch>
+		</App>
+	</Router>
 );

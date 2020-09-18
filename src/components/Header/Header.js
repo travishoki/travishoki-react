@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -49,7 +49,7 @@ class Header extends Component {
             <div id="header">
                 <div className="boxed">
                     <h1>
-						<Link to="/">Travis Hoki</Link>
+						<NavLink to="/">Travis Hoki</NavLink>
 					</h1>
 
                     <div className="menu-btn">
@@ -60,11 +60,11 @@ class Header extends Component {
                     </div>
 
                     <ul className={'nav ' + (this.state.showMobileNav ? 'slide-down' : 'slide-up')}>
-                        <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-                        <li><Link to="/projects" activeClassName="active">Projects</Link></li>
-                        <li><Link to="/resume" activeClassName="active">Resume</Link></li>
-                        <li><Link to="/about" activeClassName="active">About</Link></li>
-                        <li><Link to="/contact" activeClassName="active">Contact</Link></li>
+                        <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
+                        <li><NavLink to="/projects" activeClassName="active">Projects</NavLink></li>
+                        <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
+                        <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+                        <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
                     </ul>
                 </div>
             </div>

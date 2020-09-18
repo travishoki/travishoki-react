@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from "react-router-dom";
 
 import { ProjectsData } from '../../ProjectsPage/ProjectsPage.data';
 
@@ -30,7 +30,6 @@ const Projects = () => (
 
             <Link
 				to="/projects"
-				activeClassName="active"
 				className="btn btn-primary btn-lg"
 			>View All Projects</Link>
         </div>

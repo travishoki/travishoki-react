@@ -1,14 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router';
+import { Link, useParams } from 'react-router-dom';
 
 import { ProjectsData } from '../ProjectsPage/ProjectsPage.data';
 import ProjectItemList from '../ProjectsPage/ProjectItemList/ProjectItemList';
 
-const SingleProjectPage = ({
-	params
-}) => {
-    const singleProject = ProjectsData.find((project) => project.itemKey === params.itemKey);
+const SingleProjectPage = () => {
+	const { paramItemKey } = useParams();
+    const singleProject = ProjectsData.find((project) => project.itemKey === paramItemKey);
 
     return (
         <div
@@ -24,10 +22,6 @@ const SingleProjectPage = ({
             </div>
         </div>
     );
-};
-
-SingleProjectPage.propTypes = {
-    params: PropTypes.string.isRequired
 };
 
 export default SingleProjectPage;
