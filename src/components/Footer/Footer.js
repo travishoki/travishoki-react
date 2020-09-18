@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
@@ -30,7 +30,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <div id="subFooter">
                     <div className="contact-info">
                         <SocialIcons/>
@@ -53,7 +53,7 @@ class Footer extends Component {
 						onClick={this.scrollToTop}
 					/>
                 </div>
-            </div>
+            </Fragment>
         );
     }
 }

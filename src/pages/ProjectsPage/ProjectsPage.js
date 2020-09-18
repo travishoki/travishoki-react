@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 
@@ -78,7 +78,7 @@ const ProjectsPage = ({
 
     return (
         <div id="container" className="projects">
-            <div className={'projects-container '+(grid ? 'grid' : 'list')}>
+            <div className={`projects-container ${(grid ? 'grid' : 'list')}`}>
                 <h1>Projects</h1>
 
                 <div className="filter-section">
@@ -94,9 +94,9 @@ const ProjectsPage = ({
 							/>
                         </div>
                     ):(
-                        <div>
+                        <Fragment>
                             {isFilterOpen ? (
-                                <div>
+                                <Fragment>
                                     <form>
                                         <input
                                             type="text"
@@ -130,7 +130,7 @@ const ProjectsPage = ({
                                     ):(
                                         <p className="center">No Results</p>
                                     )}
-                                </div>
+                                </Fragment>
                             ) : (
                                 <div
 									onClick={toggleOpenFilter}
@@ -140,7 +140,7 @@ const ProjectsPage = ({
                                     <i className="fa fa-chevron-down f-right"/>
                                 </div>
                             )}
-                        </div>
+                        </Fragment>
                     )}
 
                     <div className="clearfix" />

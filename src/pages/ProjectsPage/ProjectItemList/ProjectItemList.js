@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 const images = require.context('../../../../images/websites', true);
@@ -47,10 +47,10 @@ const ProjectItemList = ({
 				</ul>
 
 				{learned && (
-					<div>
+					<Fragment>
 						<p className="list-heading">What I Learned:</p>
 						<p className="indent">{learned}</p>
-					</div>
+					</Fragment>
 				)}
 
 				<p className="list-heading">Technologies:</p>

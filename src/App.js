@@ -1,5 +1,5 @@
 // This component handles the App template used on every page.
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -9,11 +9,11 @@ import Footer from './components/Footer/Footer';
 const App = ({
 	children
 }) => (
-	<div>
+	<Fragment>
 		<Header/>
 		{children}
 		<Footer />
-	</div>
+	</Fragment>
 );
 
 App.propTypes = {
