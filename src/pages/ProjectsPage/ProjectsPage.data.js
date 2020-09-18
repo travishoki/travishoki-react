@@ -183,7 +183,7 @@ export const ProjectsData = [
         desc: 'Passion project skateboard company I am helping to brand her company.',
         itemKey: 'hoki-skateboards',
         company: 'hoki-skateboards',
-        contributions: ['wordpress customization, design and branding.','Woocommerce integration'],
+        contributions: ['Wordpress customization', 'Design and branding','Woocommerce integration'],
         techs: [WORDPRESS, PHP, JQUERY, HTML, CSS, REACT_JS],
         learned: '',
         live: true
@@ -195,7 +195,7 @@ export const ProjectsData = [
         desc: 'Truly Lindsey Photography is my wife\'s photography company. I am helping to brand her company.',
         itemKey: 'truly-lindsey-photography',
         company: 'truly-lindsey-photography',
-        contributions: ['wordpress customization, design and branding.'],
+        contributions: ['Wordpress customization', 'Design and branding'],
         techs: [WORDPRESS, HTML, CSS],
         learned: '',
         live: true
