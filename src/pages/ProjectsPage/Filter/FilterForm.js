@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 const FilterForm = ({
 	filterTerm,
 	onChangeFilter,
+	onClearAndCloseFilter,
 }) => (
-	<form>
+	<form className="filter-form">
 		<input
 			type="text"
 			className="form-control"
@@ -14,12 +15,17 @@ const FilterForm = ({
 			value={filterTerm || ''}
 			onChange={onChangeFilter}
 		/>
+		<i
+			className="fa fa-close pointer f-right"
+			onClick={onClearAndCloseFilter}
+		/>
 	</form>
 );
 
 FilterForm.propTypes = {
 	filterTerm: PropTypes.string,
 	onChangeFilter: PropTypes.func,
+	onClearAndCloseFilter: PropTypes.func,
 };
 
 export default FilterForm;

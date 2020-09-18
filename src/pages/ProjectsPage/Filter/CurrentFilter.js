@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TechIcon from '../TechIcon/TechIcon';
+import TechIcon from '../../../components/TechIcon/TechIcon';
 
 const CurrentFilter = ({
 	filter,

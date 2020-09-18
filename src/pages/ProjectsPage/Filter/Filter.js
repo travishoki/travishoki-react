@@ -28,6 +28,7 @@ const Filter = ({
 						<FilterForm
 							filterTerm={filterTerm}
 							onChangeFilter={onChangeFilter}
+							onClearAndCloseFilter={onClearAndCloseFilter}
 						/>
 						<FilterItems
 							filter={filter}
