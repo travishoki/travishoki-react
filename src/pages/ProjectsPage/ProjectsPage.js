@@ -102,7 +102,7 @@ const ProjectsPage = ({
             <div className={`projects-container ${(grid ? 'grid' : 'list')}`}>
                 <h1>Projects</h1>
 
-                <div className="filter-section">
+                <div className="find-section">
                     <p className="center">Click on the icons below to filter my work by different technologies</p>
 
 					<Filter
