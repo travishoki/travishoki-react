@@ -37,37 +37,55 @@ const ProjectItemList = ({
 					className="logo center"
 				/>
 
-				<p className="list-heading">Description:</p>
-				<p className="indent">{desc}</p>
-				<p className="list-heading">Contributions:</p>
-
-				<ul className="m-l-20 disc">
-					{contributions.map((contribution, index) => (
-						<li key={index}>{contribution}</li>
-					))}
-				</ul>
-
-				{learned && (
+				{/* Description */}
+				{desc && (
 					<Fragment>
-						<p className="list-heading">What I Learned:</p>
-						<p className="indent">{learned}</p>
+						<p className="list-heading">Description:</p>
+						<p className="answer-section">{desc}</p>
 					</Fragment>
 				)}
 
-				<p className="list-heading">Technologies:</p>
-				<ul className="m-l-20 tech-icon-list">
-					{techs.map((tech, index) => (
-						<li
-							key={index}
-							className="tech-icon-item"
-						>
-							<Link to={`/projects/${tech}`}>
-								<TechIcon name={tech} />
-								<p>{tech}</p>
-							</Link>
-						</li>
-					))}
-				</ul>
+				{/* Contributions */}
+				{contributions && contributions.length > 0 && (
+					<Fragment>
+						<p className="list-heading">Contributions:</p>
+						<div className="answer-section">
+							<ul className="disc">
+								{contributions.map((contribution, index) => (
+									<li key={index}>{contribution}</li>
+								))}
+							</ul>
+						</div>
+					</Fragment>
+				)}
+
+				{/* What I learned */}
+				{learned && (
+					<Fragment>
+						<p className="list-heading">What I Learned:</p>
+						<p className="answer-section">{learned}</p>
+					</Fragment>
+				)}
+
+				{/* Technologies */}
+				{techs && techs.length > 0 && (
+					<Fragment>
+						<p className="list-heading">Technologies:</p>
+						<ul className="answer-section tech-icon-list">
+							{techs.map((tech, index) => (
+								<li
+									key={index}
+									className="tech-icon-item"
+								>
+									<Link to={`/projects/${tech}`}>
+										<TechIcon name={tech} />
+										<p>{tech}</p>
+									</Link>
+								</li>
+							))}
+						</ul>
+					</Fragment>
+				)}
 			</div>
 		</div>
 
