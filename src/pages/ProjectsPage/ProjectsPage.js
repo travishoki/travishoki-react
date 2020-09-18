@@ -7,9 +7,9 @@ import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
 import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
-import { filterList, ProjectsData } from './ProjectsPage.data';
+import { ProjectsData } from './ProjectsPage.data';
 import TechIcon from './TechIcon/TechIcon';
-import FilterItem from './Filter/FilterItem';
+import FilterItems from './Filter/FilterItems';
 import FilterForm from './Filter/FilterForm';
 
 const PROJECTS_PAGE_URL = '/projects';
@@ -98,9 +98,6 @@ const ProjectsPage = ({
 		searchTerm
 	);
     const showResultsCount = (filter || searchTerm) && projects.length > 0;
-    const filterListFiltered = filterList.filter((item) => {
-        return filterTerm === null || item.toLowerCase().indexOf(filterTerm.toLowerCase()) > -1;
-    });
 
     return (
         <div id="container" className="projects">
@@ -127,29 +124,12 @@ const ProjectsPage = ({
 										filterTerm={filterTerm}
 										onChangeFilter={onChangeFilter}
 									/>
-                                    {filterListFiltered.length > 0 ? (
-                                        <ul className="tech-icon-list filters">
-                                            {!filterTerm && (
-                                                <li
-                                                    onClick={onClearAndCloseFilter}
-                                                    className="filter-item tech-icon-item"
-                                                >
-                                                    <p>All</p>
-                                                </li>
-                                            )}
-
-                                            {filterListFiltered.map((item, index) => (
-                                                <FilterItem
-                                                    key={index}
-                                                    item={item}
-                                                    filter={filter}
-                                                    onSelectFilter={onSelectFilter}
-                                                />
-                                            ))}
-                                        </ul>
-                                    ):(
-                                        <p className="center">No Results</p>
-                                    )}
+									<FilterItems
+										filter={filter}
+										filterTerm={filterTerm}
+										onClearAndCloseFilter={onClearAndCloseFilter}
+										onSelectFilter={onSelectFilter}
+									/>
                                 </Fragment>
                             ) : (
                                 <div
