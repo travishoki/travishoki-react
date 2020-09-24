@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Nav from './Nav';
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -52,20 +54,10 @@ class Header extends Component {
 						<NavLink to="/">Travis Hoki</NavLink>
 					</h1>
 
-                    <div className="menu-btn">
-                        <i
-							className="fa fa-bars mobileMenuIcon"
-							onClick={this.toggleMobileMenu}
-						/>
-                    </div>
-
-                    <ul className={'nav ' + (this.state.showMobileNav ? 'slide-down' : 'slide-up')}>
-                        <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
-                        <li><NavLink to="/projects" activeClassName="active">Projects</NavLink></li>
-                        <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
-                        <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-                        <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
-                    </ul>
+					<Nav
+						showMobileNav={this.state.showMobileNav}
+						toggleMobileMenu={this.toggleMobileMenu}
+					/>
                 </div>
             </div>
         );
