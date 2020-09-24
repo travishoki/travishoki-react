@@ -37,7 +37,7 @@ class BackToTop extends Component {
     render() {
         return (
             <i
-				className="circ-sm fa fa-angle-up back-to-top"
+				className="circ-sm fa fa-angle-up"
 				onClick={this.scrollToTop}
 			/>
         );

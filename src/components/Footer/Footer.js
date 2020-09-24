@@ -1,24 +1,11 @@
 import React, { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import BackToTop from './BackToTop';
-import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
-import SocialIcons from '../SocialIcons/SocialIcons';
+import SubFooter from './SubFooter';
 
 const Footer = () => (
     <Fragment>
-        <div id="subFooter">
-            <div className="contact-info">
-                <SocialIcons/>
-                <NavLink
-					to="/contact"
-					activeClassName="active"
-					className="contact-link"
-				>Contact Me</NavLink>
-            </div>
-            <BluehostAffiliate />
-        </div>
-
+		<SubFooter />
         <div
 			id="footer"
 			className="center"
