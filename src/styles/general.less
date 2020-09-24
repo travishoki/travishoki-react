@@ -1,3 +1,8 @@
+body {
+    background: @gray-three;
+    color: @white;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -26,99 +31,87 @@ p.indent {
     text-indent: 20px;
 }
 
-body {
-    background: @gray-three;
+a {
+    cursor: pointer;
     color: @white;
-    a {
-        cursor: pointer;
+}
+
+p, a, li {
+    font-weight: 16px;
+}
+
+div,
+section {
+    &.center {
+        text-align: center;
+    }
+
+    &.bold {
+        font-weight: bold;
+    }
+}
+
+img {
+    max-width: 100%;
+
+    &.center {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+section {
+    padding: 20px;
+
+    &.white {
+        background: @white;
+        color: @gray-two;
+    }
+
+    &.primary {
+        background: @primary;
         color: @white;
     }
 
-    p, a, li {
-        font-weight: 16px;
-    }
+    h3 {
+		font-weight: bold;
+        margin: 0 0 20px;
+		text-align: center;
 
-    div, section {
-
-        &.center {
-            text-align: center;
+        @media (max-width: 767px) {
+            font-size: 25px;
         }
 
-        &.bold {
-            font-weight: bold;
-        }
-    }
-
-    img {
-        max-width: 100%;
-        &.center {
-            margin: 0 auto;
-            display: block;
-        }
-    }
-
-    section {
-        padding: 20px;
-
-        &.white {
-            background: @white;
-            color: @gray-two;
-        }
-
-        &.primary {
-            background: @primary;
-            color: @white;
-        }
-
-        h3 {
-			font-weight: bold;
-            margin: 0 0 20px;
-			text-align: center;
-
-            @media (max-width: 767px) {
-                font-size: 25px;
-            }
-
-            @media (min-width: 768px) {
-                font-size: 30px;
-            }
-        }
-    }
-
-    .boxed {
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 0 10px;
-
-        &.boxed-sm {
-            max-width: 300px;
-        }
-
-        &.boxed-md {
-            max-width: 600px;
-        }
-
-        &.boxed-lg {
-            max-width: 900px;
-        }
-    }
-
-    #container {
-        margin: 20px 0;
-
-        h1 {
-			font-weight: bold;
-            margin-bottom: 30px;
-			text-align: center;
+        @media (min-width: 768px) {
+            font-size: 30px;
         }
     }
 }
 
-form {
-    input, textarea {
-        &.form-control {
-			background: @gray-two;
-            border: none;
-        }
+.boxed {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    &.boxed-sm {
+        max-width: 300px;
+    }
+
+    &.boxed-md {
+        max-width: 600px;
+    }
+
+    &.boxed-lg {
+        max-width: 900px;
+    }
+}
+
+#container {
+    margin: 20px 0;
+
+    h1 {
+		font-weight: bold;
+        margin-bottom: 30px;
+		text-align: center;
     }
 }
