@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
+import classnames from 'classnames';
 
 import { filterProjects, createProjectsPageUrl } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
@@ -99,7 +100,15 @@ const ProjectsPage = ({
 
     return (
         <div id="container" className="projects">
-            <div className={`projects-container ${(grid ? 'grid' : 'list')}`}>
+            <div
+				className={classnames(
+					'projects-container',
+					{
+						grid,
+						list: !grid,
+					}
+				)}
+			>
                 <h1>Projects</h1>
 
                 <div className="find-section">
