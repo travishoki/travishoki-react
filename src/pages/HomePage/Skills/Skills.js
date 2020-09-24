@@ -6,7 +6,7 @@ import ListSection from '../../../components/ListSection/ListSection';
 
 const Skills = () => (
     <ListSection
-		title={getExperienceYears() + "+ Years Experience"}
+		title={`${getExperienceYears()}+ Years Experience`}
 		list={skillsList}
 	/>
 );

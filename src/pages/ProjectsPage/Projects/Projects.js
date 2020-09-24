@@ -35,6 +35,7 @@ Projects.propTypes = {
 
 Projects.defaultProps = {
 	grid: false,
+	projects: [],
 };
 
 export default Projects;

@@ -60,6 +60,7 @@ class ContactPage extends Component {
         }
 
         this.setState({errors: errors});
+
         return formIsValid;
     }
 
@@ -73,8 +74,7 @@ class ContactPage extends Component {
         this.setState({saving: true});
 
         this.props.actions.saveContactForm(this.state.message)
-            .then(() => {
-            })
+            .then()
             .catch(error => {
                 toastr.error(error);
                 this.setState({ saving: false });

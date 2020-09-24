@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 const SearchForm = ({
 	onChangeSearch,
@@ -9,7 +10,9 @@ const SearchForm = ({
 	<form>
 		<div
 			id="input-holder"
-			className={searchTerm ? 'hasSearchTerm' : ''}
+			className={classnames({
+				hasSearchTerm: searchTerm,
+			})}
 		>
 			<input
 				type="text"
@@ -20,7 +23,10 @@ const SearchForm = ({
 				onChange={onChangeSearch}
 			/>
 			{searchTerm && (
-				<i className="fa fa-close" onClick={onClearSearchTerm} />
+				<i
+					className="fa fa-close"
+					onClick={onClearSearchTerm}
+				/>
 			)}
 		</div>
 	</form>
