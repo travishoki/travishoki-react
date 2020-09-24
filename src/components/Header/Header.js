@@ -1,67 +1,16 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Nav from './Nav';
+import Title from './Title';
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
+const Header = () => (
+    <div id="header">
+        <div className="boxed">
+			<Title />
+			<Nav />
+        </div>
+    </div>
+);
 
-        this.state = {
-            showMobileNav: false
-        };
-
-		this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
-    }
-
-    componentWillMount(){
-        const initialPath = location.pathname;
-
-        this.setState({
-          _routePath: initialPath
-        });
-    }
-
-    componentWillReceiveProps() {
-        const newPath = location.pathname;
-
-        if (this.state._routePath !== newPath) {
-            this.setState({
-              _routePath: newPath
-            });
-
-            if (this.onRouteChanged) {
-                this.onRouteChanged();
-            }
-        }
-    }
-
-    onRouteChanged(){
-        if(this.state.showMobileNav){
-            this.toggleMobileMenu();
-        }
-    }
-
-    toggleMobileMenu(){
-        this.setState({ showMobileNav: !this.state.showMobileNav });
-    }
-
-    render() {
-        return (
-            <div id="header">
-                <div className="boxed">
-                    <h1>
-						<NavLink to="/">Travis Hoki</NavLink>
-					</h1>
-
-					<Nav
-						showMobileNav={this.state.showMobileNav}
-						toggleMobileMenu={this.toggleMobileMenu}
-					/>
-                </div>
-            </div>
-        );
-    }
-}
-
-export default Header;
+export default withRouter(Header);
