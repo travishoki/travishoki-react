@@ -2,26 +2,34 @@ import React, { Component } from 'react';
 
 import { scrollWindow } from './Footer.helpers';
 
+const DELAY_IN_MS = 16.66;
+const SCROLL_STEPS_IN_PX = 50;
+
 class BackToTop extends Component {
     constructor(props) {
         super(props);
+
+		this.state = {
+			intervalId: null,
+		};
 
         this.scrollToTop = this.scrollToTop.bind(this);
     }
 
     scrollStep(){
-        const scrollStepInPx = 50;
-
         if (window.pageYOffset === 0) {
             clearInterval(this.state.intervalId);
         }
 
-        scrollWindow(0, window.pageYOffset - scrollStepInPx);
+		const yPosition = window.pageYOffset - SCROLL_STEPS_IN_PX;
+
+        scrollWindow(0, yPosition);
     }
 
     scrollToTop(){
-        const delayInMs = 16.66;
-        let intervalId = setInterval(this.scrollStep.bind(this), delayInMs);
+        const intervalId = setInterval(() => {
+			this.scrollStep();
+		}, DELAY_IN_MS);
 
         this.setState({ intervalId });
     }
