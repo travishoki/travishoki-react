@@ -4,9 +4,11 @@ import { skillsList } from '../HomePage.data';
 import { getExperienceYears } from '../HomePage.helpers';
 import ListSection from '../../../components/ListSection/ListSection';
 
+const yearsOfExperience = getExperienceYears();
+
 const Skills = () => (
     <ListSection
-		title={`${getExperienceYears()}+ Years Experience`}
+		title={`${yearsOfExperience}+ Years Experience`}
 		list={skillsList}
 	/>
 );
