@@ -46,11 +46,11 @@
 
             .transition(max-height @mobileNavAnimSpeed);
 
-            &.slide-down {
+            &.open {
                 max-height: @fullMobileNavHeight;
             }
 
-            &.slide-up {
+            &:not(.open) {
                 max-height: 0;
             }
         }

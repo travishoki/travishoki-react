@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import classnames from 'classnames';
 
 const Nav = ({
 	showMobileNav,
@@ -14,7 +15,14 @@ const Nav = ({
 			/>
         </div>
 
-        <ul className={'nav ' + (showMobileNav ? 'slide-down' : 'slide-up')}>
+        <ul
+			className={classnames(
+				'nav',
+				{
+					open: showMobileNav,
+				}
+			)}
+		>
             <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
             <li><NavLink to="/projects" activeClassName="active">Projects</NavLink></li>
             <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
