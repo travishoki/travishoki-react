@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import BluehostAffiliate from '../Affiliate/BluehostAffiliate';
+import BluehostAffiliate from './BluehostAffiliate';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
 const SubFooter = () => (
-    <div id="subFooter">
+    <div id="subfooter">
         <div className="contact-info">
             <SocialIcons/>
             <NavLink
