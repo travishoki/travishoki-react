@@ -1,55 +1,134 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
+import * as courseActions from '../../actions/courseActions';
 import TextInput from '../../components/TextInput/TextInput';
 import TextArea from '../../components/TextArea/TextArea';
 
-const ContactForm = ({
-	onSave,
-	onChange,
-	saving,
-	errors
-}) => (
-    <form>
-        <TextInput
-            name="name"
-            label="Name"
-            onChange={onChange}
-            placeholder="Name"
-            error={errors.name}
-        />
+class ContactForm extends Component {
+	constructor(props, context) {
+		super(props, context);
 
-        <TextInput
-            name="email"
-            label="Email"
-            onChange={onChange}
-            placeholder="Email"
-            error={errors.email}
-        />
+		this.state = {
+			errors: {},
+			saving: false,
+			message: {
+				name: '',
+				email: '',
+				comment: ''
+			}
+		};
 
-        <TextArea
-            name="comment"
-            label="Comment"
-            onChange={onChange}
-            placeholder="Comment"
-            error={errors.comment}
-        />
+		this.formIsValid = this.formIsValid.bind(this);
+		this.saveContactForm = this.saveContactForm.bind(this);
+		this.updateContactFormState = this.updateContactFormState.bind(this);
+	}
 
-        <input
-            type="submit"
-            disabled={saving}
-            value={saving ? 'Sending...' : 'Send'}
-            className="btn btn-primary btn-lg"
-            onClick={onSave}
-		/>
-    </form>
-);
+	updateContactFormState(event) {
+		const field = event.target.name;
+		const value = event.target.value;
+		let message = this.state.message;
+
+		message[field] = event.target.value;
+
+		return this.setState({course: value});
+	}
+
+	formIsValid() {
+		let formIsValid = true;
+		let errors = {};
+
+		if (this.state.message.name.length < 5) {
+			errors.name = 'Name must be at least 5 characters.';
+			formIsValid = false;
+		}
+
+		if (this.state.message.email.length < 5) {
+			errors.email = 'Email must be at least 5 characters.';
+			formIsValid = false;
+		}
+
+		if (this.state.message.comment.length < 5) {
+			errors.comment = 'Comment must be at least 5 characters.';
+			formIsValid = false;
+		}
+
+		this.setState({errors: errors});
+
+		return formIsValid;
+	}
+
+	saveContactForm(event) {
+		event.preventDefault();
+
+		if (!this.formIsValid()) {
+			return;
+		}
+
+		this.setState({saving: true});
+
+		this.props.actions.saveContactForm(this.state.message)
+			.then()
+			.catch(() => {
+				this.setState({
+					saving: false,
+					hasErrorMessage: true,
+				});
+			});
+	}
+
+	render() {
+		return (
+			<form
+				onSubmit={this.saveContactForm}
+			>
+				<TextInput
+					name="name"
+					label="Name"
+					onChange={this.updateContactFormState}
+					placeholder="Name"
+					error={this.state.errors.name}
+				/>
+
+				<TextInput
+					name="email"
+					label="Email"
+					onChange={this.updateContactFormState}
+					placeholder="Email"
+					error={this.state.errors.email}
+				/>
+
+				<TextArea
+					name="comment"
+					label="Comment"
+					onChange={this.updateContactFormState}
+					placeholder="Comment"
+					error={this.state.errors.comment}
+				/>
+
+				<input
+					type="submit"
+					disabled={this.saving}
+					value={this.saving ? 'Sending...' : 'Send'}
+					className="btn btn-primary btn-lg"
+				/>
+			</form>
+		);
+	}
+}
 
 ContactForm.propTypes = {
-	onSave: PropTypes.func.isRequired,
-	onChange: PropTypes.func.isRequired,
-	saving: PropTypes.bool,
-	errors: PropTypes.object,
+	actions: PropTypes.object,
 };
 
-export default ContactForm;
+const mapDispatchToProps = (dispatch) => ({
+    actions: bindActionCreators(courseActions, dispatch)
+});
+
+ContactForm.propTypes = {
+	actions: PropTypes.object.isRequired,
+};
+
+export default connect(null, mapDispatchToProps)(ContactForm);
