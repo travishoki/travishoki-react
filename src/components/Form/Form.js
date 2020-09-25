@@ -4,17 +4,21 @@ import PropTypes from 'prop-types';
 const Form = ({
 	children,
 	onSubmit,
-}) => (
-	<form
-		onSubmit={(event) => {
-			event.preventDefault();
+}) => {
+	const submit = (event) => {
+		event.preventDefault();
 
-			onSubmit(event);
-		}}
-	>
-		{children}
-	</form>
-);
+		onSubmit(event);
+	};
+
+	return (
+		<form
+			onSubmit={submit}
+		>
+			{children}
+		</form>
+	);
+};
 
 Form.propTypes = {
 	children: PropTypes.node,
