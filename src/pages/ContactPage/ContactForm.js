@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as courseActions from '../../actions/courseActions';
+import Form from '../../components/Form/Form';
 import TextInput from '../../components/Form/TextInput/TextInput';
 import TextArea from '../../components/Form/TextArea/TextArea';
 
@@ -67,7 +68,7 @@ class ContactForm extends Component {
 			return;
 		}
 
-		this.setState({saving: true});
+		this.setState({ saving: true });
 
 		this.props.actions.saveContactForm(this.state.message)
 			.then()
@@ -81,7 +82,7 @@ class ContactForm extends Component {
 
 	render() {
 		return (
-			<form
+			<Form
 				onSubmit={this.saveContactForm}
 			>
 				<TextInput
@@ -114,7 +115,7 @@ class ContactForm extends Component {
 					value={this.saving ? 'Sending...' : 'Send'}
 					className="btn btn-primary btn-lg"
 				/>
-			</form>
+			</Form>
 		);
 	}
 }
@@ -126,9 +127,5 @@ ContactForm.propTypes = {
 const mapDispatchToProps = (dispatch) => ({
     actions: bindActionCreators(courseActions, dispatch)
 });
-
-ContactForm.propTypes = {
-	actions: PropTypes.object.isRequired,
-};
 
 export default connect(null, mapDispatchToProps)(ContactForm);
