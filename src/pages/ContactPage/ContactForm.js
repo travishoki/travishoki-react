@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import * as courseActions from '../../actions/courseActions';
+import * as formActions from '../../actions/formActions';
 import Form from '../../components/Form/Form';
 import SubmitButton from '../../components/Form/SubmitButton/SubmitButton';
 import TextInput from '../../components/Form/TextInput/TextInput';
@@ -125,7 +125,7 @@ ContactForm.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    actions: bindActionCreators(courseActions, dispatch)
+    actions: bindActionCreators(formActions, dispatch)
 });
 
 export default connect(null, mapDispatchToProps)(ContactForm);
