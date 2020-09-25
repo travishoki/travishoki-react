@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as courseActions from '../../actions/courseActions';
-import TextInput from '../../components/TextInput/TextInput';
-import TextArea from '../../components/TextArea/TextArea';
+import TextInput from '../../components/Form/TextInput/TextInput';
+import TextArea from '../../components/Form/TextArea/TextArea';
 
 class ContactForm extends Component {
 	constructor(props, context) {
