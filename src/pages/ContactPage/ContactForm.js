@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import * as courseActions from '../../actions/courseActions';
 import Form from '../../components/Form/Form';
+import SubmitButton from '../../components/Form/SubmitButton/SubmitButton';
 import TextInput from '../../components/Form/TextInput/TextInput';
 import TextArea from '../../components/Form/TextArea/TextArea';
 
@@ -56,7 +57,7 @@ class ContactForm extends Component {
 			formIsValid = false;
 		}
 
-		this.setState({errors: errors});
+		this.setState({ errors });
 
 		return formIsValid;
 	}
@@ -109,11 +110,10 @@ class ContactForm extends Component {
 					error={this.state.errors.comment}
 				/>
 
-				<input
-					type="submit"
+				<SubmitButton
+					className="btn btn-primary btn-lg"
 					disabled={this.saving}
 					value={this.saving ? 'Sending...' : 'Send'}
-					className="btn btn-primary btn-lg"
 				/>
 			</Form>
 		);
