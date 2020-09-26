@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const ContactInfo = () => (
-	<Fragment>
+	<div className="contact-info">
 		<p>Contact me with comments or critiques</p>
 		<p>801-691-2373</p>
 		<p>travis.hoki@gmail.com</p>
-	</Fragment>
+	</div>
 );
 
 export default ContactInfo;

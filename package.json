@@ -25,7 +25,6 @@
     "deep-get-set": "^1.1.0",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "0.0.5-beta.2",
-    "jquery": "2.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "7.2.1",
@@ -33,8 +32,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-redux": "4.0.8",
     "redux": "4.0.5",
-    "redux-thunk": "2.3.0",
-    "toastr": "2.1.2"
+    "redux-thunk": "2.3.0"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",

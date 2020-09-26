@@ -8,7 +8,10 @@ export const saveContactForm = (message) => {
 		const cmd = 'sendContactForm';
 
 		return axios.post('http://travishoki.com/portfolio-api.php', {
-				cmd, name, email, comment
+				cmd,
+				name,
+				email,
+				comment
 			})
 			.then()
 			.catch((error) => {

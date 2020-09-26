@@ -1,124 +1,128 @@
-import React, { Component } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import Message from './Message';
 import * as formActions from '../../actions/formActions';
 import Form from '../../components/Form/Form';
 import SubmitButton from '../../components/Form/SubmitButton/SubmitButton';
 import TextInput from '../../components/Form/TextInput/TextInput';
 import TextArea from '../../components/Form/TextArea/TextArea';
 
-class ContactForm extends Component {
-	constructor(props, context) {
-		super(props, context);
+const ContactForm = ({
+	actions,
+}) => {
+	const [ hasErrorMessage, setHasErrorMessage ] = useState(false);
+	const [ hasSuccessMessage, setHasSuccessMessage ] = useState(false);
+	const [ saving, setSaving ] = useState(false);
+	const [ errors, setErrors ] = useState({});
+	const [ message, setMessage ] = useState({
+		name: '',
+		email: '',
+		comment: ''
+	});
 
-		this.state = {
-			errors: {},
-			saving: false,
-			message: {
-				name: '',
-				email: '',
-				comment: ''
-			}
-		};
-
-		this.formIsValid = this.formIsValid.bind(this);
-		this.saveContactForm = this.saveContactForm.bind(this);
-		this.updateContactFormState = this.updateContactFormState.bind(this);
-	}
-
-	updateContactFormState(event) {
+	const updateContactFormState = (event) => {
 		const field = event.target.name;
 		const value = event.target.value;
-		let message = this.state.message;
+		const newMessage = message;
 
-		message[field] = event.target.value;
+		newMessage[field] = value;
 
-		return this.setState({course: value});
-	}
+		setMessage(newMessage);
+	};
 
-	formIsValid() {
+	const formIsValid = () => {
 		let formIsValid = true;
-		let errors = {};
+		let errorObj = {};
 
-		if (this.state.message.name.length < 5) {
-			errors.name = 'Name must be at least 5 characters.';
+		if (message.name.length < 5) {
+			errorObj.name = 'Name must be at least 5 characters.';
 			formIsValid = false;
 		}
 
-		if (this.state.message.email.length < 5) {
-			errors.email = 'Email must be at least 5 characters.';
+		if (message.email.length < 5) {
+			errorObj.email = 'Email must be at least 5 characters.';
 			formIsValid = false;
 		}
 
-		if (this.state.message.comment.length < 5) {
-			errors.comment = 'Comment must be at least 5 characters.';
+		if (message.comment.length < 5) {
+			errorObj.comment = 'Comment must be at least 5 characters.';
 			formIsValid = false;
 		}
 
-		this.setState({ errors });
+		setErrors(errorObj);
 
 		return formIsValid;
-	}
+	};
 
-	saveContactForm(event) {
+	const saveContactForm = (event) => {
 		event.preventDefault();
 
-		if (!this.formIsValid()) {
-			return;
-		}
+		if (!formIsValid()) return;
 
-		this.setState({ saving: true });
+		setSaving(true);
 
-		this.props.actions.saveContactForm(this.state.message)
-			.then()
-			.catch(() => {
-				this.setState({
-					saving: false,
-					hasErrorMessage: true,
-				});
-			});
-	}
+		actions.saveContactForm(message)
+			.then(() => setHasSuccessMessage(true))
+			.catch(() => setHasErrorMessage(true));
+	};
 
-	render() {
-		return (
-			<Form
-				onSubmit={this.saveContactForm}
-			>
-				<TextInput
-					name="name"
-					label="Name"
-					onChange={this.updateContactFormState}
-					placeholder="Name"
-					error={this.state.errors.name}
-				/>
+	const hasBeenSubmitted = hasErrorMessage || hasSuccessMessage;
 
-				<TextInput
-					name="email"
-					label="Email"
-					onChange={this.updateContactFormState}
-					placeholder="Email"
-					error={this.state.errors.email}
-				/>
+	return (
+		<Fragment>
+			<Message
+				text="Something went wrong. Please try again later."
+				isVisible={hasErrorMessage}
+				className="danger"
+			/>
 
-				<TextArea
-					name="comment"
-					label="Comment"
-					onChange={this.updateContactFormState}
-					placeholder="Comment"
-					error={this.state.errors.comment}
-				/>
+			<Message
+				text="Thanks for sending me an email. I'll get back to you when I can."
+				isVisible={hasSuccessMessage}
+				className="success"
+			/>
 
-				<SubmitButton
-					className="btn btn-primary btn-lg"
-					disabled={this.saving}
-					value={this.saving ? 'Sending...' : 'Send'}
-				/>
-			</Form>
-		);
-	}
-}
+			{!hasBeenSubmitted && (
+				<Form
+					onSubmit={saveContactForm}
+				>
+					<TextInput
+						name="name"
+						label="Name"
+						onChange={updateContactFormState}
+						placeholder="Name"
+						error={errors.name}
+					/>
+
+					<TextInput
+						name="email"
+						label="Email"
+						onChange={updateContactFormState}
+						placeholder="Email"
+						error={errors.email}
+					/>
+
+					<TextArea
+						name="comment"
+						label="Comment"
+						onChange={updateContactFormState}
+						placeholder="Comment"
+						error={errors.comment}
+					/>
+
+					<SubmitButton
+						className="btn btn-primary btn-lg"
+						disabled={saving}
+						value={saving ? 'Sending...' : 'Send'}
+					/>
+				</Form>
+			)}
+		</Fragment>
+	);
+};
 
 ContactForm.propTypes = {
 	actions: PropTypes.object,
