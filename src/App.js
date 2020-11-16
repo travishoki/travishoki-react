@@ -11,7 +11,7 @@ const App = ({
 }) => (
 	<Fragment>
 		<Header/>
-		{children}
+			{children}
 		<Footer />
 	</Fragment>
 );
