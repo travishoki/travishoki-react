@@ -4,6 +4,7 @@ const imgRoomChoice = require('../../../images/experience/roomchoice.png');
 const imgEnspark = require('../../../images/experience/enspark.png');
 const imgWendys = require('../../../images/experience/wendys.png');
 const imgAllAm = require('../../../images/experience/all-american-sod-farms.png');
+const imgXant = require('../../../images/experience/xant.png');
 
 export const SKILLS_LIST = [
 	'JavaScript',
@@ -24,6 +25,19 @@ export const SKILLS_LIST = [
 
 export const ResumeData = [
     {
+        title: 'Xant/Inside Sales',
+        position: 'Sr. Software Engineer',
+		dateStart: 'Dec 2020',
+        dateEnd: 'Present',
+        tasks: [
+            'Creating and documenting standards and best practices for the Front End Team',
+			'Mentoring and pair-programming with other Software Engineers',
+            'Upgrading Front End technology and code syntax',
+            'Fixing bugs and reinforcing existing software',
+        ],
+        img: imgXant,
+    },
+    {
         title: 'Chatbooks',
         position: 'Web Developer',
 		dateStart: 'Mar 2019',
@@ -35,7 +49,7 @@ export const ResumeData = [
         ],
         img: imgChatbooks,
     },
-	{
+    {
         title: 'Overstock',
         position: 'Front-end Developer',
         dateStart: 'Sep 2015',
