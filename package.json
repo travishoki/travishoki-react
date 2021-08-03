@@ -13,7 +13,7 @@
     "build:dev": "webpack --config ./webpack.config.dev.js",
     "build:prod": "webpack --config ./webpack.config.prod.js",
     "deploy": "npm run build:prod",
-	"bounce": "rm -rf node_modules && yarn"
+    "bounce": "rm -rf node_modules && yarn"
   },
   "author": "Travis Hoki",
   "license": "MIT",
