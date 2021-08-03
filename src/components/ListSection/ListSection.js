@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { splitListInHalf } from './ListSection.utils';
+
 const ListSection = ({ title, list }) => {
-	const MID_NUM = Math.ceil(list.length / 2);
-	const LIST_A = list.slice(0, MID_NUM);
-	const LIST_B = list.splice(MID_NUM, list.length);
+	const [ LIST_A, LIST_B ] = splitListInHalf(list);
 
 	return (
 		<section className="primary list-section">
