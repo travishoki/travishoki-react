@@ -23,7 +23,7 @@ export const SKILLS_LIST = [
     'SQL',
 ];
 
-export const ResumeData = [
+export const RESUME_DATA = [
     {
         title: 'Xant/Inside Sales',
         position: 'Sr. Software Engineer',

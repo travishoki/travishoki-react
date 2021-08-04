@@ -8,7 +8,7 @@ import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
 import SearchForm from './SearchForm/SearchForm';
 import ViewControl from './ViewControl/ViewControl';
-import { ProjectsData } from './ProjectsPage.data';
+import { PROJECTS_DATA } from './ProjectsPage.data';
 import Filter from './Filter/Filter';
 
 const PROJECTS_PAGE_URL = '/projects';
@@ -92,7 +92,7 @@ const ProjectsPage = ({
     };
 
     const projects = filterProjects(
-		ProjectsData,
+		PROJECTS_DATA,
 		filter,
 		searchTerm
 	);

@@ -21,7 +21,7 @@ import {
 	WORDPRESS,
 } from '../../const/Tech.const';
 
-export const filterList = [
+export const FILTER_LIST = [
 	ANGULAR_JS,
 	AMP,
 	CSS,
@@ -44,7 +44,7 @@ export const filterList = [
 	WORDPRESS,
 ];
 
-export const ProjectsData = [
+export const PROJECTS_DATA = [
 	{
         title: 'Hoki Skateboards',
         subtitle: 'React Native Game',

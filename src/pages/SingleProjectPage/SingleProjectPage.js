@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { ProjectsData } from '../ProjectsPage/ProjectsPage.data';
+import { PROJECTS_DATA } from '../ProjectsPage/ProjectsPage.data';
 import ProjectItemList from '../ProjectsPage/ProjectItemList/ProjectItemList';
 
 const SingleProjectPage = () => {
 	const { paramItemKey } = useParams();
-    const singleProject = ProjectsData.find((project) => project.itemKey === paramItemKey);
+    const singleProject = PROJECTS_DATA.find((project) => project.itemKey === paramItemKey);
 
     return (
         <div

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import FilterItem from './FilterItem';
-import { filterList } from '../ProjectsPage.data';
+import { FILTER_LIST } from '../ProjectsPage.data';
 
 const FilterItems = ({
 	filter,
@@ -10,7 +10,7 @@ const FilterItems = ({
 	onClearAndCloseFilter,
 	onSelectFilter,
 }) => {
-	const filterListFiltered = filterList.filter((item) => {
+	const filterListFiltered = FILTER_LIST.filter((item) => {
         return filterTerm === null || item.toLowerCase().indexOf(filterTerm.toLowerCase()) > -1;
     });
 
