@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImgResume from '../../images/global/resume.png';
+import ImgResume from '~images/global/resume.png';
 
 const Banner = () => (
     <div className="banner">

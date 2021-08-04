@@ -25,7 +25,15 @@
     "import/ignore": [
       "node_modules",
       "\\.(png|jpg)$"
-    ]
+    ],
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["~images", "./src/images"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
   },
   "rules": {
     "comma-dangle": 0,

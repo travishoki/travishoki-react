@@ -1,10 +1,10 @@
-import ImgChatbooks from '../../images/experience/chatbooks.png';
-import ImgOvestock from '../../images/experience/overstock.png';
-import ImgRoomChoice from '../../images/experience/roomchoice.png';
-import ImgEnspark from '../../images/experience/enspark.png';
-import ImgWendys from '../../images/experience/wendys.png';
-import ImgAllAm from '../../images/experience/all-american-sod-farms.png';
-import ImgXant from '../../images/experience/xant.png';
+import ImgChatbooks from '~images/experience/chatbooks.png';
+import ImgOvestock from '~images/experience/overstock.png';
+import ImgRoomChoice from '~images/experience/roomchoice.png';
+import ImgEnspark from '~images/experience/enspark.png';
+import ImgWendys from '~images/experience/wendys.png';
+import ImgAllAm from '~images/experience/all-american-sod-farms.png';
+import ImgXant from '~images/experience/xant.png';
 
 export const SKILLS_LIST = [
 	'JavaScript',

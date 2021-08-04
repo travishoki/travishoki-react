@@ -13,6 +13,11 @@ module.exports = {
         'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
         path.resolve(srcPath, 'index.js')
     ],
+    resolve: {
+        alias: {
+            '~images': path.resolve(__dirname, `${srcPath}/images`),
+        },
+    },
     module: {
         loaders: [
             {test: /\.js$/, include: srcPath, loaders: ['babel']},
