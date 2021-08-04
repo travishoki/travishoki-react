@@ -29,8 +29,10 @@
     "import/resolver": {
       "alias": {
         "map": [
+          ["~actions", "./src/redux/actions"],
           ["~components", "./src/components"],
-          ["~images", "./src/images"]
+          ["~images", "./src/images"],
+          ["~reducers", "./src/redux/reducers"]
         ],
         "extensions": [".js", ".jsx"]
       }

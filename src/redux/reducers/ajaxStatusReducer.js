@@ -1,4 +1,5 @@
-import * as types from '../actions/actionTypes';
+import * as types from '~actions/actionTypes';
+
 import initialState from './initialState';
 
 const actionTypeEndsInSuccess = (type) => {

@@ -15,8 +15,10 @@ module.exports = {
     ],
     resolve: {
         alias: {
+            '~actions': path.resolve(__dirname, `${srcPath}/redux/actions`),
             '~components': path.resolve(__dirname, `${srcPath}/components`),
             '~images': path.resolve(__dirname, `${srcPath}/images`),
+            '~reducers': path.resolve(__dirname, `${srcPath}/redux/reducers`),
         },
     },
     module: {

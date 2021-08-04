@@ -2,8 +2,10 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
+            "~actions/*": ["./src/redux/actions/*"],
             "~components/*": ["./src/components/*"],
-            "~images/*": ["./src/images/*"]
+            "~images/*": ["./src/images/*"],
+            "~reducers/*": ["./src/redux/reducers/*"],
         }
     },
     "exclude": ["node_modules", "dist"]

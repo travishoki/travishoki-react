@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import * as formActions from '~actions/formActions';
 import Form from '~components/Form/Form';
 import SubmitButton from '~components/Form/SubmitButton/SubmitButton';
 import TextArea from '~components/Form/TextArea/TextArea';
 import TextInput from '~components/Form/TextInput/TextInput';
 
 import Message from './Message';
-import * as formActions from '../../redux/actions/formActions';
 
 const ContactForm = ({
 	actions,
