@@ -1,13 +1,13 @@
 import React from 'react';
 
-const img_uvu = require('../../../images/global/uvu.png');
+import imgUvu from '../../../images/global/uvu.png';
 
 const Education = () => (
 	<section className="white center education">
 		<h3>Utah Valley University</h3>
 		<img
 			className="center"
-			src={img_uvu}
+			src={imgUvu}
 		/>
 
 		<p>Digital Media Major</p>

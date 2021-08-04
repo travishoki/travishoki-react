@@ -1,10 +1,10 @@
-const imgChatbooks = require('../../../images/experience/chatbooks.png');
-const imgOvestock = require('../../../images/experience/overstock.png');
-const imgRoomChoice = require('../../../images/experience/roomchoice.png');
-const imgEnspark = require('../../../images/experience/enspark.png');
-const imgWendys = require('../../../images/experience/wendys.png');
-const imgAllAm = require('../../../images/experience/all-american-sod-farms.png');
-const imgXant = require('../../../images/experience/xant.png');
+import ImgChatbooks from '../../../images/experience/chatbooks.png';
+import ImgOvestock from '../../../images/experience/overstock.png';
+import ImgRoomChoice from '../../../images/experience/roomchoice.png';
+import ImgEnspark from '../../../images/experience/enspark.png';
+import ImgWendys from '../../../images/experience/wendys.png';
+import ImgAllAm from '../../../images/experience/all-american-sod-farms.png';
+import ImgXant from '../../../images/experience/xant.png';
 
 export const SKILLS_LIST = [
 	'JavaScript',
@@ -35,7 +35,7 @@ export const ResumeData = [
             'Upgrading Front End technology and code syntax',
             'Fixing bugs and reinforcing existing software',
         ],
-        img: imgXant,
+        img: ImgXant,
     },
     {
         title: 'Chatbooks',
@@ -47,7 +47,7 @@ export const ResumeData = [
 			'Actively convert Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
         ],
-        img: imgChatbooks,
+        img: ImgChatbooks,
     },
     {
         title: 'Overstock',
@@ -60,7 +60,7 @@ export const ResumeData = [
             'Manage pixels for retargeting and third party integrations',
 			'Pioneer affiliate links program',
         ],
-        img: imgOvestock,
+        img: ImgOvestock,
     },
     {
         title: 'Room Choice',
@@ -73,7 +73,7 @@ export const ResumeData = [
             'In house developement on student housing software',
             'Finding ways to speedup and enhance the user experience of the software',
         ],
-        img: imgRoomChoice,
+        img: ImgRoomChoice,
     },
     {
         title: 'Enspark',
@@ -86,7 +86,7 @@ export const ResumeData = [
             'Front-end development and WordPress maintenance',
             'Custom banner and eLearning course development in Adobe Flash AS3',
         ],
-        img: imgEnspark,
+        img: ImgEnspark,
     },
     {
         title: 'All American Sod Farms',
@@ -98,7 +98,7 @@ export const ResumeData = [
             'Bill collecting and register operation',
             'Customer service and clerical work',
         ],
-        img: imgAllAm,
+        img: ImgAllAm,
     },
     {
         title: 'Wendy\'s',
@@ -111,6 +111,6 @@ export const ResumeData = [
             'Train new employees in various positions',
             'Maintain service and courtesy standards during stressful situations',
         ],
-        img: imgWendys,
+        img: ImgWendys,
     }
 ];

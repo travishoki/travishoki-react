@@ -1,10 +1,10 @@
 import React from 'react';
 
+import ImgHokiSkateboardsLogo from '../../../../images/home/hoki-skateboards.jpg';
+import ImgYouShouldAlwaysSkateboard from '../../../../images/home/you-should-always-skateboard.jpg';
+
 import Logo from './Logo';
 import SocialMedia from './SocialMedia';
-
-const hokiSkateboardsImage = require('../../../../images/home/hoki-skateboards.jpg');
-const youShouldAlwaysSkateboardImage = require('../../../../images/home/you-should-always-skateboard.jpg');
 
 const HokiSkateboards = () => (
 	<div className="hoki-skateboards">
@@ -22,7 +22,7 @@ const HokiSkateboards = () => (
 					>
 						<img
 							alt="Hoki Skateboards"
-							src={hokiSkateboardsImage}
+							src={ImgHokiSkateboardsLogo}
 							className="center"
 						/>
 					</a>
@@ -36,7 +36,7 @@ const HokiSkateboards = () => (
 					>
 						<img
 							alt="You Should Always Skateboard"
-							src={youShouldAlwaysSkateboardImage}
+							src={ImgYouShouldAlwaysSkateboard}
 						/>
 					</a>
 					<p>Illustrated kid's book about skateboarding.</p>

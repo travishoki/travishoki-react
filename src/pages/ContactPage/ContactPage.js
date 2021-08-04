@@ -1,9 +1,9 @@
 import React from 'react';
 
+import ImgProfilePic from '../../../images/global/travis-hoki-2.jpg';
+
 import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
-
-const img_profile_pic = require('../../../images/global/travis-hoki-2.jpg');
 
 const ContactPage = () => (
 	<div
@@ -15,7 +15,7 @@ const ContactPage = () => (
 
 			<div className="row">
 				<div className="col-sm-6">
-					<img src={img_profile_pic}/>
+					<img src={ImgProfilePic}/>
 				</div>
 
 				<div className="col-sm-6">

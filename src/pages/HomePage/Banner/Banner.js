@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import SocialIcons from '../../../components/SocialIcons/SocialIcons';
-const img_profile_pic = require('../../../../images/global/travis-hoki.png');
+import ImgProfilePic from '../../../../images/global/travis-hoki.png';
 
 const Banner = () => (
     <div className="banner">
@@ -19,7 +19,7 @@ const Banner = () => (
 
 		<img
 			className="banner-pic"
-			src={img_profile_pic}
+			src={ImgProfilePic}
 		/>
     </div>
 );

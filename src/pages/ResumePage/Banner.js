@@ -1,6 +1,6 @@
 import React from 'react';
 
-const img_resume = require('../../../images/global/resume.png');
+import ImgResume from '../../../images/global/resume.png';
 
 const Banner = () => (
     <div className="banner">
@@ -19,7 +19,7 @@ const Banner = () => (
         <div className="banner-bg" />
         <img
 			className="banner-pic"
-			src={img_resume}
+			src={ImgResume}
 		/>
     </div>
 );
