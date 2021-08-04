@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import Message from './Message';
-import * as formActions from '../../actions/formActions';
+import * as formActions from '../../redux/actions/formActions';
 import Form from '../../components/Form/Form';
 import SubmitButton from '../../components/Form/SubmitButton/SubmitButton';
 import TextInput from '../../components/Form/TextInput/TextInput';
