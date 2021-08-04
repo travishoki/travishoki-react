@@ -2,9 +2,10 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
+import TechIcon from '~components/TechIcon/TechIcon';
+
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
-import TechIcon from '../../../components/TechIcon/TechIcon';
 
 const ProjectItemList = ({
 	company,

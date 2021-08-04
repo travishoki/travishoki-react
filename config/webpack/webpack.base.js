@@ -15,6 +15,7 @@ module.exports = {
     ],
     resolve: {
         alias: {
+            '~components': path.resolve(__dirname, `${srcPath}/components`),
             '~images': path.resolve(__dirname, `${srcPath}/images`),
         },
     },

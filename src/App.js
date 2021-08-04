@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from '~components/Header/Header';
+import Footer from '~components/Footer/Footer';
 
 const App = ({
 	children

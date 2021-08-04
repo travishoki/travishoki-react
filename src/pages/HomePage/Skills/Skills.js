@@ -1,8 +1,9 @@
 import React from 'react';
 
+import ListSection from '~components/ListSection/ListSection';
+
 import { SKILLS_LIST } from '../HomePage.data';
 import { getExperienceYears } from '../HomePage.helpers';
-import ListSection from '../../../components/ListSection/ListSection';
 
 const yearsOfExperience = getExperienceYears();
 

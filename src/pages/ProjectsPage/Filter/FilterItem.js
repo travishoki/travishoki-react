@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import TechIcon from '../../../components/TechIcon/TechIcon';
+import TechIcon from '~components/TechIcon/TechIcon';
 
 const FilterItem = ({
 	item,
