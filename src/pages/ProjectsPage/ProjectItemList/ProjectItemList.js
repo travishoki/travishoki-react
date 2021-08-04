@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
-const images = require.context('../../../../images/websites', true);
-const logos = require.context('../../../../images/clients', true);
+const images = require.context('../../../images/websites', true);
+const logos = require.context('../../../images/clients', true);
 import TechIcon from '../../../components/TechIcon/TechIcon';
 
 const ProjectItemList = ({

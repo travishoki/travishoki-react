@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { orderTopThree } from './Projects.utils';
 import { ProjectsData } from '../../ProjectsPage/ProjectsPage.data';
 
-const images = require.context('../../../../images/websites', true);
+const images = require.context('../../../images/websites', true);
 const currentProjects = orderTopThree(ProjectsData.slice(0, 3));
 
 const Projects = () => (

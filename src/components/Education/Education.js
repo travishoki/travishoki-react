@@ -1,6 +1,6 @@
 import React from 'react';
 
-import imgUvu from '../../../images/global/uvu.png';
+import imgUvu from '../../images/global/uvu.png';
 
 const Education = () => (
 	<section className="white center education">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImgProfilePic from '../../../images/global/travis-hoki-2.jpg';
+import ImgProfilePic from '../../images/global/travis-hoki-2.jpg';
 
 import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
