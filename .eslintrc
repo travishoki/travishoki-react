@@ -21,6 +21,12 @@
     "jquery": true,
     "mocha": true
   },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.(png|jpg)$"
+    ]
+  },
   "rules": {
     "comma-dangle": 0,
     "quotes": 0,
