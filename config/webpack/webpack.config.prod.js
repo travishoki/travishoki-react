@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const FtpOutputPlugin = require('ftp-output-webpack-plugin');
-const ftpOptions = require('../../ftpOptions');
+const ftpOptions = require('../ftpOptions');
 
 const rootDir = path.resolve(__dirname, '../../');
 const srcPath = path.resolve(rootDir, 'src');

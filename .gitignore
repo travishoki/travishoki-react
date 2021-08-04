@@ -38,4 +38,4 @@ dist
 .DS_Store
 
 # FTP Credentials
-ftpOptions.js
+config/ftpOptions.js
