@@ -1,5 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
+const FtpOutputPlugin = require('ftp-output-webpack-plugin');
+const ftpOptions = require('../../ftpOptions');
+
+const rootDir = path.resolve(__dirname, '../../');
+const srcPath = path.resolve(rootDir, 'src');
 
 module.exports = {
     debug: true,
@@ -8,24 +13,22 @@ module.exports = {
     entry: [
         'eventsource-polyfill', // necessary for hot reloading with IE
         'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-        path.resolve(__dirname, 'src/index')
+        path.resolve(srcPath, 'index.js')
     ],
     target: 'web',
     output: {
-        path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
-        publicPath: '/',
+        path: '/portfolio-react', // Note: Physical files are only output by the production build task `npm run build`.
+        publicPath: '/portfolio-react/',
         filename: 'bundle.js'
-    },
-    devServer: {
-        contentBase: path.resolve(__dirname, 'src')
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new FtpOutputPlugin(ftpOptions) // ftpOptions see as above description
     ],
     module: {
         loaders: [
-            {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
+            {test: /\.js$/, include: srcPath, loaders: ['babel']},
             {test: /\.(jpg|png)$/, loaders: ['file']},
             {test: /(\.less)$/, loaders: ['style', 'css', 'less']},
             {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
@@ -38,5 +41,3 @@ module.exports = {
         ]
     }
 };
-
-export default {};
