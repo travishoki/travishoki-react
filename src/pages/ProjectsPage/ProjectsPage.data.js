@@ -46,6 +46,17 @@ export const filterList = [
 
 export const ProjectsData = [
 	{
+        title: 'Hoki Skateboards',
+        subtitle: 'React Native Game',
+        desc: 'Teaching myself React Native as a passion project',
+        itemKey: 'hoki-skateboards-react-native',
+        company: 'hoki-skateboards',
+        contributions: ['React Native development', 'UI/UX Design', 'Character illustrations'],
+        techs: [REACT_JS, CSS],
+        learned: '',
+        live: false,
+    },
+	{
 		title: 'Chatbooks.com',
 		subtitle: 'Book Creation',
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
@@ -65,17 +76,6 @@ export const ProjectsData = [
         company: 'chatbooks',
         contributions: ['Create Branch links for redirecting to IOS or android apps.', 'Create screen for selecting the data source as well as a screen platform specific pages info.'],
 		techs: [REACT_JS, REDUX, JAVSCRIPT, HTML, SCSS],
-        learned: '',
-        live: false,
-    },
-	{
-        title: 'Hoki Skateboards',
-        subtitle: 'React Native Game',
-        desc: 'Teaching myself React Native as a passion project',
-        itemKey: 'hoki-skateboards-react-native',
-        company: 'hoki-skateboards',
-        contributions: ['React Native development', 'UI/UX Design', 'Character illustrations'],
-        techs: [REACT_JS, CSS],
         learned: '',
         live: false,
     },
