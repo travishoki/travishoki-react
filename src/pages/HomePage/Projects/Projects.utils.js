@@ -6,4 +6,4 @@ export const orderTopThree = (list) => {
     if (list.length >= 3) resp.push(list[2]);
 
     return resp;
-}
+};
