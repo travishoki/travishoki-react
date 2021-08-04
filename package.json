@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-polyfill": "6.8.0",
-    "bootstrap": "3.3.6",
+    "bootstrap": "3.4.1",
     "classnames": "^2.2.6",
     "deep-get-set": "^1.1.0",
     "font-awesome": "^4.7.0",
