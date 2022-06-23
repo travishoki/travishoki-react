@@ -61,7 +61,7 @@
     "file-loader": "^0.8.5",
     "font-awesome": "^4.7.0",
     "ftp-output-webpack-plugin": "^1.0.1",
-    "jsdom": "8.5.0",
+    "jsdom": "16.5.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.3",
     "mocha": "2.4.5",
