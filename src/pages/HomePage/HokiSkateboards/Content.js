@@ -2,6 +2,7 @@ import React from "react";
 
 import ImgHokiSkateboardsLogo from "~images/home/hoki-skateboards.jpg";
 import ImgYouShouldAlwaysSkateboard from "~images/home/you-should-always-skateboard.jpg";
+
 import Title from "./Title";
 
 const Content = () => (
