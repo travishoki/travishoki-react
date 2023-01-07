@@ -20,15 +20,19 @@ const Content = () => (
             src={ImgHokiSkateboardsLogo}
             className="center"
           />
+          <p className="button-link">Go to Site</p>
         </a>
         <p>
+          Description:
+          <br />
           Hoki Skateboards is a small family-owned online skateboard company.
         </p>
         <p>
+          Tech:
+          <br />
           Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
           PHP and React.
         </p>
-        <p className="button-link">Go to Site</p>
       </div>
       <div className="col-sm-6">
         <a
@@ -41,10 +45,19 @@ const Content = () => (
             alt="You Should Always Skateboard"
             src={ImgYouShouldAlwaysSkateboard}
           />
+          <p className="button-link">View on Amazon</p>
         </a>
-        <p>Illustrated kid's book about skateboarding.</p>
-        <p>Self authored, illustrated, and published.</p>
-        <p className="button-link">View on Amazon</p>
+        <p>
+          Description:
+          <br />
+          Illustrated kid's book about skateboarding.
+        </p>
+        <p>
+          Contribution:
+          <br />
+          Self authored, illustrated, and published. Successfully Kickstarter
+          backed.
+        </p>
       </div>
     </div>
   </div>

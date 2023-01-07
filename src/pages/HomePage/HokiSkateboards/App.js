@@ -11,7 +11,14 @@ const App = () => (
       title="Hoki Skateboards App"
       width="200"
     />
-    <p className="app-description">
+    <p>
+      Description:
+      <br />
+      Kids skateboarding game
+    </p>
+    <p>
+      Tech:
+      <br />
       Built in React Native with Typescript, using the react-native-game-engine
       and MatterJs
     </p>
