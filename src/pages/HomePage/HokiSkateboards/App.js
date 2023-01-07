@@ -1,8 +1,9 @@
 import React from "react";
+import Title from "./Title";
 
 const App = () => (
   <div className="app-section">
-    <p className="app-description">Mobile App built in React Native</p>
+    <Title title="Mobile App" />
     <img
       className="app-icon"
       height="200"
@@ -42,9 +43,8 @@ const App = () => (
     </div>
 
     <p className="copyright">
-      © 2022, Travis Hoki, All Rights Reserved. Apple and the Apple logo are
-      trademarks of Apple Inc. Android, Google Play and the Google Play logo are
-      trademarks of Google LLC.
+      Apple and the Apple logo are trademarks of Apple Inc. Android, Google Play
+      and the Google Play logo are trademarks of Google LLC.
     </p>
   </div>
 );
