@@ -5,12 +5,13 @@ const App = () => (
     <p className="app-description">Mobile App built in React Native</p>
     <img
       className="app-icon"
-      height="150"
+      height="200"
       src="http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png"
       title="Hoki Skateboards App"
-      width="150"
+      width="200"
     />
     <p className="app-description">Download our new app!</p>
+
     <div className="app-badges">
       <a
         href="https://apps.apple.com/us/app/hoki-skateboards/id1622675312"
