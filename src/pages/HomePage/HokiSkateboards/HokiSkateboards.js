@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import SocialMedia from "./SocialMedia";
 
 const HokiSkateboards = () => (
-  <div className="hoki-skateboards">
+  <section className="hoki-skateboards">
     <div className="hoki-skateboards-inner">
       <h3>Passion Project</h3>
 
@@ -15,7 +15,7 @@ const HokiSkateboards = () => (
       <Content />
       <App />
     </div>
-  </div>
+  </section>
 );
 
 export default HokiSkateboards;

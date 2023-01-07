@@ -11,7 +11,10 @@ const App = () => (
       title="Hoki Skateboards App"
       width="200"
     />
-    <p className="app-description">Download our new app!</p>
+    <p className="app-description">
+      Built in React Native with Typescript, using the react-native-game-engine
+      and MatterJs
+    </p>
 
     <div className="app-badges">
       <a

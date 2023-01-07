@@ -24,6 +24,10 @@ const Content = () => (
         <p>
           Hoki Skateboards is a small family-owned online skateboard company.
         </p>
+        <p>
+          Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
+          PHP and React.
+        </p>
         <p className="button-link">Go to Site</p>
       </div>
       <div className="col-sm-6">
@@ -39,6 +43,7 @@ const Content = () => (
           />
         </a>
         <p>Illustrated kid's book about skateboarding.</p>
+        <p>Self authored, illustrated, and published.</p>
         <p className="button-link">View on Amazon</p>
       </div>
     </div>
