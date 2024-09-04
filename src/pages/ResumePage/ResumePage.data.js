@@ -21,7 +21,7 @@ export const SKILLS_LIST = [
 
 export const RESUME_DATA = [
   {
-    title: "Spiff",
+    title: "Salesforce",
     position: "Sr. Member of the Technical Staff",
     dateStart: "March 2024",
     dateEnd: "Present",
@@ -30,7 +30,7 @@ export const RESUME_DATA = [
     img: ImgXant,
   },
   {
-    title: "Salesforce",
+    title: "Spiff",
     position: "Sr. Software Engineer",
     dateStart: "Aug 2021",
     dateEnd: "Present",
