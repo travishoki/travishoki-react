@@ -5,9 +5,9 @@ import ImgGuitar from "~images/about/guitar.png";
 import ImgSkateboard from "~images/about/skateboarding.png";
 import ImgBallroom from "~images/about/ballroom.png";
 import ImgBreakdance from "~images/about/breakdance.png";
+import { getAge } from "./AboutPage.helpers";
 
-const BIRTH_YEAR = 1990;
-const AGE = new Date().getFullYear() - BIRTH_YEAR;
+const AGE = getAge();
 
 const AboutData = [
   {
