@@ -5,9 +5,13 @@ import ImgGuitar from "~images/about/guitar.png";
 import ImgSkateboard from "~images/about/skateboarding.png";
 import ImgBallroom from "~images/about/ballroom.png";
 import ImgBreakdance from "~images/about/breakdance.png";
-import { getAge } from "./AboutPage.helpers";
+import { getYearsSince } from "./AboutPage.helpers";
 
-const AGE = getAge();
+const BIRTH_YEAR = 1990;
+const AGE = getYearsSince(BIRTH_YEAR);
+
+const MARRIAGE_YEAR = 2015;
+const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
 const AboutData = [
   {
@@ -22,7 +26,7 @@ const AboutData = [
   },
   {
     title: "Wife",
-    desc: "I am married to my best friend and high school sweet heart Lindsey. We’ve had many adventures together in the last 9 years.",
+    desc: `I am married to my best friend and high school sweet heart Lindsey. We’ve had many adventures together in the last ${YEARS_MARRIED} years.`,
     img: ImgWedding,
   },
   {

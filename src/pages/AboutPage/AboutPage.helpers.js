@@ -1,3 +1,5 @@
-const BIRTH_YEAR = 1990;
+export const getYearsSince = (year) => {
+  const thisYear = new Date().getFullYear();
 
-export const getAge = new Date().getFullYear() - BIRTH_YEAR;
+  return thisYear - year;
+};
