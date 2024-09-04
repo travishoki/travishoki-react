@@ -1,86 +1,88 @@
 ul.staggered {
-	margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    li {
-		list-style: none;
-        margin: 20px 0;
-        min-height: 200px;
-		position: relative;
+  li {
+    list-style: none;
+    margin: 20px 0;
+    min-height: 200px;
+    position: relative;
 
-        @media (max-width: 767px) {
-			border-bottom: solid 1px @gray-one;
-			display: block;
-			margin: 0 auto 40px;
-            max-width: 320px;
+    @media (max-width: 767px) {
+      border-bottom: solid 1px @gray-one;
+      display: block;
+      margin: 0 auto 40px;
+      max-width: 320px;
 
-            .image {
-                padding: 40px 0 10px;
+      .image {
+        padding: 40px 0 10px;
 
-                img {
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
 
-            .text {
-                h2 {
-                    margin: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                }
-
-                h2, h3, p {
-                    text-align: center;
-                }
-
-                margin-bottom: 20px;
-            }
+      .text {
+        h2 {
+          margin: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
         }
 
-        @media (min-width: 768px) {
-            .image {
-                position: absolute;
-                top: 0;
-                width: 200px;
-            }
-
-            .text {
-                padding: 10px;
-                width: 100%;
-            }
-
-            &:nth-child(even) {
-                .image {
-                    right: 0;
-                }
-
-                .text {
-                    float: left;
-                    padding-right: 220px;
-                }
-            }
-
-            &:nth-child(odd) {
-                .image {
-                    left: 0;
-                }
-
-                .text {
-                    float: right;
-                    padding-left: 220px;
-                }
-            }
+        h2,
+        h3,
+        p {
+          text-align: center;
         }
 
-        ul {
-            li {
-				border: none;
-				margin: 2px 0;
-                min-height: auto;
-                list-style: disc;
-            }
-        }
+        margin-bottom: 20px;
+      }
     }
+
+    @media (min-width: 768px) {
+      .image {
+        position: absolute;
+        top: 0;
+        width: 200px;
+      }
+
+      .text {
+        padding: 10px;
+        width: 100%;
+      }
+
+      &:nth-child(even) {
+        .image {
+          right: 0;
+        }
+
+        .text {
+          float: left;
+          padding-right: 220px;
+        }
+      }
+
+      &:nth-child(odd) {
+        .image {
+          left: 0;
+        }
+
+        .text {
+          float: right;
+          padding-left: 220px;
+        }
+      }
+    }
+
+    ul {
+      li {
+        border: none;
+        margin: 2px 0;
+        min-height: auto;
+        list-style: disc;
+      }
+    }
+  }
 }

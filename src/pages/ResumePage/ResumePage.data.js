@@ -1,9 +1,9 @@
+import ImgAllAm from "~images/experience/all-american-sod-farms.png";
 import ImgChatbooks from "~images/experience/chatbooks.png";
+import ImgEnspark from "~images/experience/enspark.png";
 import ImgOvestock from "~images/experience/overstock.png";
 import ImgRoomChoice from "~images/experience/roomchoice.png";
-import ImgEnspark from "~images/experience/enspark.png";
 import ImgWendys from "~images/experience/wendys.png";
-import ImgAllAm from "~images/experience/all-american-sod-farms.png";
 import ImgXant from "~images/experience/xant.png";
 
 export const SKILLS_LIST = [
@@ -14,15 +14,27 @@ export const SKILLS_LIST = [
   "Node JS",
   "HTML",
   "CSS",
-
   "SASS",
   "LESS",
-  "jQuery",
-  "PHP",
-  "SQL",
 ];
 
 export const RESUME_DATA = [
+  {
+    title: "Spiff",
+    position: "Sr. Member of the Technical Staff",
+    dateStart: "March 2024",
+    dateEnd: "Present",
+    tasks: [],
+    img: ImgXant,
+  },
+  {
+    title: "Salesforce",
+    position: "Sr. Software Engineer",
+    dateStart: "Aug 2021",
+    dateEnd: "Present",
+    tasks: [],
+    img: ImgXant,
+  },
   {
     title: "Xant/Inside Sales",
     position: "Sr. Software Engineer",

@@ -1,25 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import Education from '~components/Education/Education';
+import Education from "~components/Education/Education";
 
-import Banner from './Banner/Banner';
-import Projects from './Projects/Projects';
-import HokiSkateboards from './HokiSkateboards/HokiSkateboards';
-import Skills from './Skills/Skills';
-import TechTiles from './TechTiles/TechTiles';
+import Banner from "./Banner/Banner";
+import Projects from "./Projects/Projects";
+import HokiSkateboards from "./HokiSkateboards/HokiSkateboards";
+import Skills from "./Skills/Skills";
+import TechTiles from "./TechTiles/TechTiles";
 
 const HomePage = () => (
-    <div
-		id="container"
-		className="home"
-	>
-		<Banner />
-		<TechTiles />
-		<Projects />
-		<Skills />
-		<Education />
-		<HokiSkateboards />
-	</div>
+  <div id="container" className="home">
+    <Banner />
+    <TechTiles />
+    <Projects />
+    <Skills />
+    <Education />
+    <HokiSkateboards />
+  </div>
 );
 
 export default HomePage;

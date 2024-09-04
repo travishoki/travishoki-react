@@ -1,28 +1,28 @@
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    textarea {
-        min-height: 150px;
+  textarea {
+    min-height: 150px;
+  }
+
+  input,
+  textarea {
+    &.form-control {
+      background: @gray-two;
+      border: none;
+      color: @gray-one;
+      font-size: 16px;
+      height: 60px;
+      padding: 10px 20px;
     }
+  }
 
-	input,
-    textarea {
-        &.form-control {
-			background: @gray-two;
-			border: none;
-            color: @gray-one;
-			font-size: 16px;
-			height: 60px;
-			padding: 10px 20px;
-        }
+  .alert {
+    border: none;
+
+    &.alert-danger {
+      color: @red-one;
+      background: @red-two;
     }
-
-    .alert {
-        border: none;
-
-        &.alert-danger {
-            color: @red-one;
-            background: @red-two;
-        }
-    }
+  }
 }

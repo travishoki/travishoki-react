@@ -1,32 +1,26 @@
-import React from 'react';
+import React from "react";
 
-import Education from '~components/Education/Education';
-import ListSection from '~components/ListSection/ListSection';
+import Education from "~components/Education/Education";
+import ListSection from "~components/ListSection/ListSection";
 
-import Banner from './Banner';
-import Experience from './Experience';
-import { SKILLS_LIST } from './ResumePage.data';
+import Banner from "./Banner";
+import Experience from "./Experience";
+import { SKILLS_LIST } from "./ResumePage.data";
 
 const ResumePage = () => (
-    <div
-		id="container"
-		className="resume"
-	>
-		<Banner />
+  <div id="container" className="resume">
+    <Banner />
 
-        <section className="primary" />
+    <section className="primary" />
 
-        <section className="white" />
+    <section className="white" />
 
-		<Experience />
+    <Experience />
 
-        <ListSection
-			title="Skills"
-			list={SKILLS_LIST}
-		/>
+    <ListSection title="Skills" list={SKILLS_LIST} />
 
-        <Education />
-    </div>
+    <Education />
+  </div>
 );
 
 export default ResumePage;
