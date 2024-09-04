@@ -1,5 +1,5 @@
 module.exports = {
-    host: 'xxx',
-    user: 'xxx',
-	password: 'xxx'
+  host: "xxx",
+  user: "xxx",
+  password: "xxx",
 };
