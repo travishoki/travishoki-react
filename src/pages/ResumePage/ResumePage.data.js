@@ -119,7 +119,7 @@ export const RESUME_DATA = [
       "Bill collecting and register operation",
       "Customer service and clerical work",
     ],
-    techs: [CSS, HTML],
+    techs: [],
     img: ImgAllAm,
   },
   {
@@ -133,7 +133,7 @@ export const RESUME_DATA = [
       "Train new employees in various positions",
       "Maintain service and courtesy standards during stressful situations",
     ],
-    techs: [CSS, HTML],
+    techs: [],
     img: ImgWendys,
   },
 ];
