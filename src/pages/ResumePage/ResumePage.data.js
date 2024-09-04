@@ -1,3 +1,4 @@
+import { CSS, HTML } from "~const/Tech.const";
 import ImgAllAm from "~images/experience/all-american-sod-farms.png";
 import ImgChatbooks from "~images/experience/chatbooks.png";
 import ImgEnspark from "~images/experience/enspark.png";
@@ -25,6 +26,7 @@ export const RESUME_DATA = [
     dateStart: "March 2024",
     dateEnd: "Present",
     tasks: [],
+    techs: [CSS, HTML],
     img: ImgXant,
   },
   {
@@ -33,6 +35,7 @@ export const RESUME_DATA = [
     dateStart: "Aug 2021",
     dateEnd: "Present",
     tasks: [],
+    techs: [CSS, HTML],
     img: ImgXant,
   },
   {
@@ -46,6 +49,7 @@ export const RESUME_DATA = [
       "Upgrading Front End technology and code syntax",
       "Fixing bugs and reinforcing existing software",
     ],
+    techs: [CSS, HTML],
     img: ImgXant,
   },
   {
@@ -58,6 +62,7 @@ export const RESUME_DATA = [
       "Actively convert Angular JS to React JS while keeping product code stable",
       "Node JS Server-side rendering for SEO and optimization",
     ],
+    techs: [CSS, HTML],
     img: ImgChatbooks,
   },
   {
@@ -71,6 +76,7 @@ export const RESUME_DATA = [
       "Manage pixels for retargeting and third party integrations",
       "Pioneer affiliate links program",
     ],
+    techs: [CSS, HTML],
     img: ImgOvestock,
   },
   {
@@ -84,6 +90,7 @@ export const RESUME_DATA = [
       "In house developement on student housing software",
       "Finding ways to speedup and enhance the user experience of the software",
     ],
+    techs: [CSS, HTML],
     img: ImgRoomChoice,
   },
   {
@@ -97,6 +104,7 @@ export const RESUME_DATA = [
       "Front-end development and WordPress maintenance",
       "Custom banner and eLearning course development in Adobe Flash AS3",
     ],
+    techs: [CSS, HTML],
     img: ImgEnspark,
   },
   {
@@ -109,6 +117,7 @@ export const RESUME_DATA = [
       "Bill collecting and register operation",
       "Customer service and clerical work",
     ],
+    techs: [CSS, HTML],
     img: ImgAllAm,
   },
   {
@@ -122,6 +131,7 @@ export const RESUME_DATA = [
       "Train new employees in various positions",
       "Maintain service and courtesy standards during stressful situations",
     ],
+    techs: [CSS, HTML],
     img: ImgWendys,
   },
 ];

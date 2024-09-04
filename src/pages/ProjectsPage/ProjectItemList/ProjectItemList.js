@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-
-import TechIcon from "~components/TechIcon/TechIcon";
+import TechList from "./TechList";
 
 const images = require.context("../../../images/websites", true);
 const logos = require.context("../../../images/clients", true);
@@ -71,16 +69,7 @@ const ProjectItemList = ({
           <Fragment>
             <p className="list-heading">Technologies:</p>
             <div className="answer-section">
-              <ul className="tech-icon-list">
-                {techs.map((tech, index) => (
-                  <li key={index} className="tech-icon-item">
-                    <Link title={tech} to={`/projects/${tech}`}>
-                      <TechIcon name={tech} />
-                      <p>{tech}</p>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <TechList techs={techs} />
             </div>
           </Fragment>
         )}
