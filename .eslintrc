@@ -26,6 +26,7 @@
         "map": [
           ["~actions", "./src/redux/actions"],
           ["~components", "./src/components"],
+          ["~const", "./src/redux/const"],
           ["~images", "./src/images"],
           ["~reducers", "./src/redux/reducers"]
         ],
