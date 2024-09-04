@@ -4,6 +4,8 @@ import ImgChatbooks from "~images/experience/chatbooks.png";
 import ImgEnspark from "~images/experience/enspark.png";
 import ImgOvestock from "~images/experience/overstock.png";
 import ImgRoomChoice from "~images/experience/roomchoice.png";
+import ImgSalesforce from "~images/experience/salesforce.png";
+import ImgSpiff from "~images/experience/spiff.png";
 import ImgWendys from "~images/experience/wendys.png";
 import ImgXant from "~images/experience/xant.png";
 
@@ -27,7 +29,7 @@ export const RESUME_DATA = [
     dateEnd: "Present",
     tasks: [],
     techs: [CSS, HTML],
-    img: ImgXant,
+    img: ImgSalesforce,
   },
   {
     title: "Spiff",
@@ -36,7 +38,7 @@ export const RESUME_DATA = [
     dateEnd: "Present",
     tasks: [],
     techs: [CSS, HTML],
-    img: ImgXant,
+    img: ImgSpiff,
   },
   {
     title: "Xant/Inside Sales",
