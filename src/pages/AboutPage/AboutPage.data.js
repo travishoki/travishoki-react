@@ -26,7 +26,7 @@ const AboutData = [
   },
   {
     title: "Wife",
-    desc: `I am married to my best friend and high school sweet heart Lindsey. We’ve had many adventures together in the last ${YEARS_MARRIED} years.`,
+    desc: `I am married to my best friend and high school sweet heart, Lindsey. We’ve had many adventures together in the last ${YEARS_MARRIED} years.`,
     img: ImgWedding,
   },
   {
