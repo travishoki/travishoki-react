@@ -13,7 +13,8 @@
     "build:dev": "webpack --config ./config/webpack/webpack.config.dev.js",
     "build:prod": "webpack --config ./config/webpack/webpack.config.prod.js",
     "deploy": "npm run build:prod",
-    "bounce": "rm -rf node_modules && yarn"
+    "bounce": "rm -rf node_modules && yarn",
+    "prepare": "husky install"
   },
   "author": "Travis Hoki",
   "license": "MIT",
@@ -61,6 +62,7 @@
     "file-loader": "^0.8.5",
     "font-awesome": "^4.7.0",
     "ftp-output-webpack-plugin": "^1.0.1",
+    "husky": "^9.1.5",
     "jsdom": "8.5.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.3",
@@ -82,5 +84,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/coryhouse/pluralsight-redux-starter"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --cache --fix"
+    ]
   }
 }

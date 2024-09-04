@@ -3091,6 +3091,11 @@ https-browserify@0.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.0.tgz#b3ffdfe734b2a3d4a9efd58e8654c91fce86eafd"
   integrity sha1-s//f5zSyo9Sp79WOhlTJH86G6v0=
 
+husky@^9.1.5:
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.1.5.tgz#2b6edede53ee1adbbd3a3da490628a23f5243b83"
+  integrity sha512-rowAVRUBfI0b4+niA4SJMhfQwc107VLkBUgEYYAOQAbqDCnra1nYh83hF/MDmhYs9t9n1E3DuKOrs2LYNC+0Ag==
+
 iconv-lite@^0.4.13:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
