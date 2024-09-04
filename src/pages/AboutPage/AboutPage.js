@@ -9,7 +9,7 @@ const AboutPage = () => (
 
       <ul className="staggered">
         {AboutPageData.map((item, index) => (
-          <li key={index}>
+          <li key={index} className="staggered-item">
             <div className="image">
               <img src={item.img} />
             </div>

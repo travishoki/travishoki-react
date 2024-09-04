@@ -11,7 +11,7 @@ const ExperienceItem = ({
   techs,
   title,
 }) => (
-  <li>
+  <li className="staggered-item">
     <div className="image">
       <img src={img} />
     </div>
@@ -24,9 +24,12 @@ const ExperienceItem = ({
           {dateStart} - {dateEnd}
         </p>
       </div>
-      <ul class="bulleted">
+
+      <ul className="bulleted">
         {tasks.map((task, index) => (
-          <li key={index}>{task}</li>
+          <li key={index} className="bulleted-item">
+            {task}
+          </li>
         ))}
       </ul>
 

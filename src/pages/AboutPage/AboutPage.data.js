@@ -15,7 +15,7 @@ const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
 const AboutData = [
   {
-    title: "Hey",
+    title: "Hey,",
     desc: `My name is Travis. I\'m from Orem. I\'m ${AGE} years old.`,
     img: ImgProfilePic,
   },
