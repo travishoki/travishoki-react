@@ -11,10 +11,10 @@ const inArr = (item: string, arr: string[]) => {
 
 export const filterProjects = (
 	projects: ProjectType[],
-	filter: string | null,
+	filter: TechFilterType,
 	searchTerm: string,
 ) => {
-	let newProjects: ProjectType[] = [];
+	let newProjects = projects;
 
 	//Filter
 	if (filter !== null) {
