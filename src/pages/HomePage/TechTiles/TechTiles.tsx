@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import TechIcon from '~components/TechIcon/TechIcon';
 
 import { FILTER_LIST } from '../../ProjectsPage/ProjectsPage.data';
+import './TechTiles.scss';
 
 const TechTiles = () => (
 	<section className="white tech-tiles">

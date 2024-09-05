@@ -10,12 +10,12 @@
 @import 'general.scss';
 
 /* Components */
-@import 'components/icons.scss';
-@import 'components/buttons.scss';
-@import 'components/banner.scss';
-@import 'components/forms.scss';
-@import 'components/staggeredList.scss';
-@import 'components/bulletedList.scss';
+@import '../components/icons.scss';
+@import '../components/buttons.scss';
+@import '../components/banner.scss';
+@import '../components/forms.scss';
+@import '../components/staggeredList.scss';
+@import '../components/bulletedList.scss';
 
 @import '../components/Header/Header.scss';
 @import '../components/Footer/Footer.scss';

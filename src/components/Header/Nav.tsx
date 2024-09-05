@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import classnames from 'classnames';
 
+import './Nav.scss';
+
 const Nav = () => {
 	const location = useLocation();
 	const [open, setOpen] = useState(false);
