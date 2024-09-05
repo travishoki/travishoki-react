@@ -1,3 +1,24 @@
+import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
+import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
+import ImgCoffeeScript from '~images/icons/tech-icons/.jpg';
+import ImgCss from '~images/icons/tech-icons/css.jpg';
+import ImgDjango from '~images/icons/tech-icons/django.jpg';
+import ImgGrunt from '~images/icons/tech-icons/grunt.jpg';
+import ImgHandlebarsJs from '~images/icons/tech-icons/handlebars-js.jpg';
+import ImgHtml from '~images/icons/tech-icons/html.jpg';
+import ImgJavascript from '~images/icons/tech-icons/javascript.jpg';
+import ImgJquery from '~images/icons/tech-icons/jquery.jpg';
+import ImgLessCss from '~images/icons/tech-icons/less-css.jpg';
+import ImgNodeJs from '~images/icons/tech-icons/node-js.jpg';
+import ImgPhp from '~images/icons/tech-icons/php.jpg';
+import ImgPython from '~images/icons/tech-icons/python.jpg';
+import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
+import ImgRedux from '~images/icons/tech-icons/redux.jpg';
+import ImgScss from '~images/icons/tech-icons/scss.jpg';
+import ImgSql from '~images/icons/tech-icons/sql.jpg';
+import ImgWebpack from '~images/icons/tech-icons/webpack.jpg';
+import ImgWordpress from '~images/icons/tech-icons/wordpress.jpg';
+
 export const AMP = 'AMP';
 export const ANGULAR_JS = 'ANGULAR_JS';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
@@ -43,3 +64,26 @@ export type TechKeys = {
 };
 
 export type TechFilterType = keyof TechKeys | null | 'all' | 'null';
+
+export const TECH_IMAGES = {
+	AMP: ImgAmp,
+	ANGULAR_JS: ImgAngularJs,
+	COFFEE_SCRIPT: ImgCoffeeScript,
+	CSS: ImgCss,
+	DJANGO: ImgDjango,
+	GRUNT: ImgGrunt,
+	HANDLEBARS_JS: ImgHandlebarsJs,
+	HTML: ImgHtml,
+	JAVSCRIPT: ImgJavascript,
+	JQUERY: ImgJquery,
+	LESS_CSS: ImgLessCss,
+	NODE_JS: ImgNodeJs,
+	PHP: ImgPhp,
+	PYTHON: ImgPython,
+	REACT_JS: ImgReactJs,
+	REDUX: ImgRedux,
+	SCSS: ImgScss,
+	SQL: ImgSql,
+	WEBPACK: ImgWebpack,
+	WORDPRESS: ImgWordpress,
+};

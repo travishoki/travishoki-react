@@ -1,6 +1,5 @@
 import React from 'react';
-import { TechKeys } from '~const/Tech.const';
-import { TECH_IMAGES } from './const';
+import { TECH_IMAGES, TechKeys } from '~const/Tech.const';
 
 const TechIcon = ({ name }: TechIconProps) => (
 	<div className="tech-icon-holder">
