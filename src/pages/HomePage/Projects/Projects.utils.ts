@@ -1,11 +1,7 @@
 import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.data';
 
-export const orderTopThree = (list: ProjectType[]) => {
-	const resp = [];
+export const orderTopThreeInPodium = (list: ProjectType[]) => {
+	if (list.length < 3) return list;
 
-	if (list.length >= 2) resp.push(list[1]);
-	if (list.length >= 1) resp.push(list[0]);
-	if (list.length >= 3) resp.push(list[2]);
-
-	return resp;
+	return [list[1], list[0], list[2]];
 };
