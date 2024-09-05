@@ -12,7 +12,7 @@ const ProjectItemList = ({
 	desc,
 	itemKey,
 	learned,
-	live,
+	live = false,
 	subtitle,
 	techs,
 	title,
@@ -91,9 +91,5 @@ const ProjectItemList = ({
 );
 
 type ProjectItemListProps = ProjectType;
-
-ProjectItemList.defaultProps = {
-	live: false,
-};
 
 export default ProjectItemList;

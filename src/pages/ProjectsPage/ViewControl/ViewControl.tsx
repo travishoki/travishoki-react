@@ -1,6 +1,10 @@
 import React from 'react';
 
-const ViewControl = ({ grid, isVisible, toggleView }: ViewControlProps) => {
+const ViewControl = ({
+	grid = false,
+	isVisible = false,
+	toggleView,
+}: ViewControlProps) => {
 	if (!isVisible) return null;
 
 	return (
@@ -14,11 +18,6 @@ type ViewControlProps = {
 	grid: boolean;
 	isVisible: boolean;
 	toggleView: () => void;
-};
-
-ViewControl.defaultProps = {
-	grid: false,
-	isVisible: false,
 };
 
 export default ViewControl;

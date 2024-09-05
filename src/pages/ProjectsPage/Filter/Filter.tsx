@@ -9,7 +9,7 @@ import { TechFilterType } from '~const/Tech.const';
 const Filter = ({
 	filter,
 	filterTerm,
-	isFilterOpen,
+	isFilterOpen = false,
 	onChangeFilter,
 	onClearAndCloseFilter,
 	onSelectFilter,
@@ -48,15 +48,11 @@ const Filter = ({
 type FilterProps = {
 	filter: TechFilterType;
 	filterTerm: TechFilterType;
-	isFilterOpen: boolean;
+	isFilterOpen?: boolean;
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;
 	onClearAndCloseFilter: () => void;
 	onSelectFilter: (filter: TechFilterType) => void;
 	toggleOpenFilter: () => void;
-};
-
-Filter.defaultProps = {
-	isFilterOpen: false,
 };
 
 export default Filter;

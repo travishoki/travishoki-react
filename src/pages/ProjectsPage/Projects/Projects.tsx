@@ -5,7 +5,7 @@ import ProjectItemList from '../ProjectItemList/ProjectItemList';
 import ProjectItemGrid from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectType } from '../ProjectsPage.data';
 
-const Projects = ({ grid, projects }: ProjectsProps) => {
+const Projects = ({ grid = false, projects = [] }: ProjectsProps) => {
 	if (projects.length === 0) return null;
 
 	const resultsCountClass = getResultsCountClass(projects.length);
@@ -28,11 +28,6 @@ const Projects = ({ grid, projects }: ProjectsProps) => {
 type ProjectsProps = {
 	grid: boolean;
 	projects: ProjectType[];
-};
-
-Projects.defaultProps = {
-	grid: false,
-	projects: [],
 };
 
 export default Projects;

@@ -572,7 +572,7 @@ export type ProjectType = {
 	desc: string;
 	itemKey: string;
 	learned: string;
-	live: boolean;
+	live?: boolean;
 	subtitle: string;
 	techs: (keyof TechKeys)[];
 	title: string;
