@@ -1,76 +1,71 @@
 .tech-icon {
 	$iconW: 40px;
 
-	background-image: url('../../images/icons/tech-icons/tech-icons.jpg');
 	border-radius: 50%;
 	height: $iconW;
 	width: $iconW;
 
-	@mixin pos($xPos, $yPos) {
-		background-position: -(($xPos - 1) * $iconW) -(($yPos - 1) * $iconW);
-	}
-
 	&.tech-html {
-		@include pos(1, 1);
+		background-image: url('../../images/icons//tech-icons/html.jpg');
 	}
 	&.tech-javascript {
-		@include pos(2, 1);
+		background-image: url('../../images/icons/tech-icons/javascript.jpg');
 	}
 	&.tech-css {
-		@include pos(3, 1);
+		background-image: url('../../images/icons/tech-icons/css.jpg');
 	}
 	&.tech-jquery {
-		@include pos(4, 1);
+		background-image: url('../../images/icons/tech-icons/jquery.jpg');
 	}
 	&.tech-angularjs {
-		@include pos(5, 1);
+		background-image: url('../../images/icons/tech-icons/angular-js.jpg');
 	}
 
 	&.tech-wordpress {
-		@include pos(6, 1);
+		background-image: url('../../images/icons/tech-icons/wordpress.jpg');
 	}
 	&.tech-python {
-		@include pos(7, 1);
+		background-image: url('../../images/icons/tech-icons/python.jpg');
 	}
 	&.tech-php {
-		@include pos(8, 1);
+		background-image: url('../../images/icons/tech-icons/php.jpg');
 	}
 	&.tech-less-css {
-		@include pos(9, 1);
+		background-image: url('../../images/icons/tech-icons/less-css.jpg');
 	}
 	&.tech-coffee-script {
-		@include pos(10, 1);
+		background-image: url('../../images/icons/tech-icons/coffee-script.jpg');
 	}
 
 	&.tech-reactjs {
-		@include pos(1, 2);
+		background-image: url('../../images/icons/tech-icons/react-js.jpg');
 	}
 	&.tech-redux {
-		@include pos(2, 2);
+		background-image: url('../../images/icons/tech-icons/redux.jpg');
 	}
 	&.tech-sql {
-		@include pos(3, 2);
+		background-image: url('../../images/icons/tech-icons/sql.jpg');
 	}
 	&.tech-amp-bind {
-		@include pos(4, 2);
+		background-image: url('../../images/icons/tech-icons/amp-bind.jpg');
 	}
 	&.tech-handlebarsjs {
-		@include pos(5, 2);
+		background-image: url('../../images/icons/tech-icons/handlebars-js.jpg');
 	}
 
 	&.tech-django {
-		@include pos(6, 2);
+		background-image: url('../../images/icons/tech-icons/django.jpg');
 	}
 	&.tech-grunt {
-		@include pos(7, 2);
+		background-image: url('../../images/icons/tech-icons/grunt.jpg');
 	}
 	&.tech-webpack {
-		@include pos(8, 2);
+		background-image: url('../../images/icons/tech-icons/webpack.jpg');
 	}
 	&.tech-nodejs {
-		@include pos(9, 2);
+		background-image: url('../../images/icons/tech-icons/node-js.jpg');
 	}
 	&.tech-scss {
-		@include pos(10, 2);
+		background-image: url('../../images/icons/tech-icons/sass.jpg');
 	}
 }
