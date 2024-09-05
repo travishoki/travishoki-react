@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { TechKeys } from '~const/Tech.const';
+
 import TechList from './TechList';
 
 const ExperienceItem = ({
@@ -43,7 +46,7 @@ type ExperienceItemPropTypes = {
 	img: string;
 	position: string;
 	tasks: string[];
-	techs: string[];
+	techs: (keyof TechKeys)[];
 	title: string;
 };
 

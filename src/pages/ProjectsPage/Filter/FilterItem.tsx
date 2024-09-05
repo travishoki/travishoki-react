@@ -3,6 +3,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import TechIcon from '~components/TechIcon/TechIcon';
+import { TechKeys, TechFilterType } from '~const/Tech.const';
 
 const FilterItem = ({ filter, item, onSelectFilter }: FilterItemProps) => (
 	<li
@@ -17,9 +18,9 @@ const FilterItem = ({ filter, item, onSelectFilter }: FilterItemProps) => (
 );
 
 type FilterItemProps = {
-	filter: string | null;
-	item: string;
-	onSelectFilter: (filter: string) => void;
+	filter: TechFilterType;
+	item: keyof TechKeys;
+	onSelectFilter: (filter: TechFilterType) => void;
 };
 
 export default FilterItem;

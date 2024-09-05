@@ -17,11 +17,12 @@ import {
 	REDUX,
 	SCSS,
 	SQL,
+	TechKeys,
 	WEBPACK,
 	WORDPRESS,
 } from '../../const/Tech.const';
 
-export const FILTER_LIST = [
+export const FILTER_LIST: (keyof TechKeys)[] = [
 	AMP,
 	ANGULAR_JS,
 	COFFEE_SCRIPT,
@@ -573,7 +574,7 @@ export type ProjectType = {
 	learned: string;
 	live: boolean;
 	subtitle: string;
-	techs: string[];
+	techs: (keyof TechKeys)[];
 	title: string;
 	url?: string;
 };

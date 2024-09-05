@@ -4,6 +4,7 @@ import CurrentFilter from './CurrentFilter';
 import FilterClean from './FilterClean';
 import FilterItems from './FilterItems';
 import FilterForm from './FilterForm';
+import { TechFilterType } from '~const/Tech.const';
 
 const Filter = ({
 	filter,
@@ -45,12 +46,12 @@ const Filter = ({
 );
 
 type FilterProps = {
-	filter: string | null;
-	filterTerm: string | null;
+	filter: TechFilterType;
+	filterTerm: TechFilterType;
 	isFilterOpen: boolean;
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;
 	onClearAndCloseFilter: () => void;
-	onSelectFilter: (filter: string) => void;
+	onSelectFilter: (filter: TechFilterType) => void;
 	toggleOpenFilter: () => void;
 };
 

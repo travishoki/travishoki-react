@@ -1,4 +1,5 @@
 import React from 'react';
+import { TechFilterType } from '~const/Tech.const';
 
 const FilterForm = ({
 	filterTerm,
@@ -22,7 +23,7 @@ const FilterForm = ({
 );
 
 type FilterFormProps = {
-	filterTerm: string | null;
+	filterTerm: TechFilterType;
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;
 	onClearAndCloseFilter: () => void;
 };

@@ -1,4 +1,4 @@
-import { CSS, HTML } from '~const/Tech.const';
+import { CSS, HTML, TechKeys } from '~const/Tech.const';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
 import ImgChatbooks from '~images/experience/chatbooks.png';
 import ImgEnspark from '~images/experience/enspark.png';
@@ -21,7 +21,7 @@ export const SKILLS_LIST = [
 	'LESS',
 ];
 
-export const RESUME_DATA = [
+export const RESUME_DATA: ResumeDataType[] = [
 	{
 		dateEnd: 'Present',
 		dateStart: 'March 2024',
@@ -137,3 +137,13 @@ export const RESUME_DATA = [
 		title: "Wendy's",
 	},
 ];
+
+type ResumeDataType = {
+	dateEnd: string;
+	dateStart: string;
+	img: string;
+	position: string;
+	tasks: string[];
+	techs: (keyof TechKeys)[];
+	title: string;
+};

@@ -2,6 +2,7 @@ import React from 'react';
 
 import FilterItem from './FilterItem';
 import { FILTER_LIST } from '../ProjectsPage.data';
+import { TechFilterType } from '~const/Tech.const';
 
 const FilterItems = ({
 	filter,
@@ -44,10 +45,10 @@ const FilterItems = ({
 };
 
 type FilterItemsProps = {
-	filter: string | null;
+	filter: TechFilterType;
 	filterTerm: string | null;
 	onClearAndCloseFilter: () => void;
-	onSelectFilter: (filter: string) => void;
+	onSelectFilter: (filter: TechFilterType) => void;
 };
 
 export default FilterItems;

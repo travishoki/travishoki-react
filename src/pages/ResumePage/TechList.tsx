@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import TechIcon from '~components/TechIcon/TechIcon';
+import { TechKeys } from '~const/Tech.const';
 
 const TechList = ({ techs }: TechListProps) => {
 	return (
@@ -19,7 +20,7 @@ const TechList = ({ techs }: TechListProps) => {
 };
 
 type TechListProps = {
-	techs: string[];
+	techs: (keyof TechKeys)[];
 };
 
 export default TechList;

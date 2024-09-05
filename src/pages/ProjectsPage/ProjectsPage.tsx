@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import classnames from 'classnames';
 
+import { TechFilterType } from '~const/Tech.const';
+
 import { filterProjects, createProjectsPageUrl } from './ProjectsPage.helpers';
 import NoResults from './NoResults/NoResults';
 import Projects from './Projects/Projects';
@@ -17,17 +19,20 @@ const ProjectsPage = () => {
 	const { paramFilter, paramSearch } = useParams();
 	const navigate = useNavigate();
 
-	let initialFilter = null;
+	let initialFilter: TechFilterType = null;
 
 	if (paramFilter) {
-		initialFilter =
-			paramFilter === 'all' || paramFilter === 'null' ? null : paramFilter;
+		const noFilter = paramFilter !== 'all' && paramFilter !== 'null';
+
+		if (noFilter) {
+			initialFilter = paramFilter as TechFilterType;
+		}
 	}
 
-	const initialSearch = paramSearch || '';
+	const initialSearch = paramSearch ?? '';
 
-	const [filter, setFilter] = useState(initialFilter || null);
-	const [filterTerm, setFilterTerm] = useState(initialFilter || null);
+	const [filter, setFilter] = useState<TechFilterType>(initialFilter);
+	const [filterTerm, setFilterTerm] = useState<TechFilterType>(initialFilter);
 	const [grid, setGrid] = useState(true);
 	const [isFilterOpen, setIsFilterOpen] = useState(false);
 	const [searchTerm, setSearchTerm] = useState(initialSearch);
@@ -36,7 +41,7 @@ const ProjectsPage = () => {
 		setGrid(!grid);
 	};
 
-	const onSelectFilter = (filterProp: string) => {
+	const onSelectFilter = (filterProp: TechFilterType) => {
 		const newFilter = filter === filterProp ? null : filterProp;
 		const newLocation = createProjectsPageUrl(
 			PROJECTS_PAGE_URL,
@@ -82,7 +87,7 @@ const ProjectsPage = () => {
 	};
 
 	const onChangeFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const newFilter = e.target.value;
+		const newFilter = e.target.value as TechFilterType;
 		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter);
 
 		navigate(newLocation);

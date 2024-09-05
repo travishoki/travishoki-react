@@ -1,3 +1,4 @@
+import { TechFilterType } from '~const/Tech.const';
 import { ProjectType } from './ProjectsPage.data';
 
 const inArr = (item: string, arr: string[]) => {
@@ -50,7 +51,7 @@ export const filterProjects = (
 
 export const createProjectsPageUrl = (
 	path: string,
-	filter?: string | null,
+	filter?: TechFilterType,
 	search?: string,
 ) => {
 	if (search) {

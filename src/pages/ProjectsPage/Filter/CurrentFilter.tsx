@@ -1,12 +1,13 @@
 import React from 'react';
 
 import TechIcon from '~components/TechIcon/TechIcon';
+import { TechFilterType } from '~const/Tech.const';
 
 const CurrentFilter = ({
 	filter,
 	onClearAndCloseFilter,
 }: CurrentFilterProps) => {
-	if (!filter) return null;
+	if (!filter || filter === 'all' || filter === 'null') return null;
 
 	return (
 		<div className="current-filter tech-icon-item">
@@ -21,7 +22,7 @@ const CurrentFilter = ({
 };
 
 type CurrentFilterProps = {
-	filter: string | null;
+	filter: TechFilterType;
 	onClearAndCloseFilter: () => void;
 };
 
