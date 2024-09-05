@@ -1,0 +1,29 @@
+#footer {
+	background: $secondary;
+	height: 60px;
+	position: relative;
+
+	p {
+		line-height: 18px;
+		margin: 0;
+
+		@media (max-width: 499px) {
+			margin: 0 auto;
+			padding-top: 12px;
+			width: 185px;
+		}
+
+		@media (min-width: 500px) {
+			padding-top: 20px;
+		}
+	}
+
+	i {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		font-size: 20px;
+	}
+}
+
+@import './SubFooter.scss';

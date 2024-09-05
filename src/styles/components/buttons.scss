@@ -1,0 +1,10 @@
+.btn {
+	&.btn-primary {
+		background: $primary;
+		border: none;
+
+		&:hover {
+			background: $secondary;
+		}
+	}
+}

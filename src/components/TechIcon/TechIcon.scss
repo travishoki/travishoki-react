@@ -1,0 +1,76 @@
+.tech-icon {
+	$iconW: 40px;
+
+	background-image: url('../../images/icons/tech-icons/tech-icons.jpg');
+	border-radius: 50%;
+	height: $iconW;
+	width: $iconW;
+
+	@mixin pos($xPos, $yPos) {
+		background-position: -(($xPos - 1) * $iconW) -(($yPos - 1) * $iconW);
+	}
+
+	&.tech-html {
+		@include pos(1, 1);
+	}
+	&.tech-javascript {
+		@include pos(2, 1);
+	}
+	&.tech-css {
+		@include pos(3, 1);
+	}
+	&.tech-jquery {
+		@include pos(4, 1);
+	}
+	&.tech-angularjs {
+		@include pos(5, 1);
+	}
+
+	&.tech-wordpress {
+		@include pos(6, 1);
+	}
+	&.tech-python {
+		@include pos(7, 1);
+	}
+	&.tech-php {
+		@include pos(8, 1);
+	}
+	&.tech-less-css {
+		@include pos(9, 1);
+	}
+	&.tech-coffee-script {
+		@include pos(10, 1);
+	}
+
+	&.tech-reactjs {
+		@include pos(1, 2);
+	}
+	&.tech-redux {
+		@include pos(2, 2);
+	}
+	&.tech-sql {
+		@include pos(3, 2);
+	}
+	&.tech-amp-bind {
+		@include pos(4, 2);
+	}
+	&.tech-handlebarsjs {
+		@include pos(5, 2);
+	}
+
+	&.tech-django {
+		@include pos(6, 2);
+	}
+	&.tech-grunt {
+		@include pos(7, 2);
+	}
+	&.tech-webpack {
+		@include pos(8, 2);
+	}
+	&.tech-nodejs {
+		@include pos(9, 2);
+	}
+	&.tech-scss {
+		@include pos(10, 2);
+	}
+}

@@ -1,0 +1,12 @@
+.filter-clean {
+	border: solid 1px $gray-two;
+	display: flex;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	justify-content: space-between;
+
+	i {
+		line-height: 60px;
+	}
+}

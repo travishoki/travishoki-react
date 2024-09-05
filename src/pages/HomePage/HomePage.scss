@@ -1,0 +1,101 @@
+#container.home {
+	margin: 0;
+
+	@import './HokiSkateboards/HokiSkateboards.scss';
+	@import './TechTiles/TechTiles.scss';
+
+	section.projects {
+		margin-bottom: 10px;
+
+		a:hover {
+			color: $white;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			position: relative;
+
+			@media (max-width: 767px) {
+				max-width: 300px;
+				margin: 0 auto;
+			}
+
+			li {
+				@media (max-width: 767px) {
+					&:first-child {
+						float: left;
+					}
+
+					&:nth-child(2) {
+						@include box-shadow(0 0 20px 0 #000000);
+						left: 50%;
+						margin-left: -75px;
+						position: absolute;
+						top: 0;
+						width: 150px;
+					}
+
+					&:last-child {
+						float: right;
+					}
+
+					&:first-child,
+					&:last-child {
+						width: 100px;
+						margin: 20px 0;
+					}
+				}
+
+				@media (min-width: 768px) {
+					float: left;
+					width: 33.33333333%;
+				}
+
+				.project-header {
+					height: 50px;
+					margin-bottom: 10px;
+					position: relative;
+
+					@media (max-width: 767px) {
+						display: none;
+					}
+
+					.project-header-inner {
+						bottom: 0;
+						position: absolute;
+						width: 100%;
+
+						h2,
+						h3 {
+							margin: 0;
+							text-align: center;
+						}
+
+						h2 {
+							font-size: 22px;
+						}
+
+						h3 {
+							font-size: 14px;
+							color: $gray-one;
+						}
+					}
+				}
+
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.btn {
+			display: block;
+			margin: 20px auto 0;
+			width: 200px;
+		}
+	}
+}

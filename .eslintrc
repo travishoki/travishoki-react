@@ -1,82 +1,155 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
-  ],
-  "plugins": ["react"],
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "no-only-tests",
+    "sort-destructure-keys",
+    "typescript-sort-keys",
+    "promise",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    // General
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "no-duplicate-imports": "error",
+    "no-else-return": "error",
+    "no-extra-boolean-cast": 0,
+    "no-nested-ternary": "error",
+    "no-only-tests/no-only-tests": "error",
+    "no-param-reassign": "error",
+    "no-unused-vars": "off",
+    "promise/catch-or-return": ["error", { "allowFinally": true }],
+    "promise/no-nesting": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "warn", // or error
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "no-var": 1,
+    "object-shorthand": [1, "properties"],
+    "prefer-const": 1,
+    "quotes": [
+      1,
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "semi": [2, "always"],
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "sort-keys": "error",
+    "yoda": "error",
+
+    // Layout & Formatting
+    "arrow-parens": [1, "always", { "requireForBlockBody": false }],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": [2, "tab", { "SwitchCase": 1 }],
+    "keyword-spacing": [1],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-trailing-spaces": 1,
+    "object-curly-spacing": ["error", "always"],
+    "padding-line-between-statements": [
+      1,
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "space-before-blocks": 1,
+
+    // React
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/display-name": 0,
+    "react/jsx-key": 1,
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-sort-props": ["error", { "reservedFirst": ["key"] }],
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/jsx-boolean-value": "error",
+    "react/jsx-curly-brace-presence": "error",
+    "react/no-danger": 1,
+    "react/no-direct-mutation-state": 1,
+    "react/no-unknown-property": 1,
+    "react/prefer-es6-class": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/self-closing-comp": 1,
+
+    // Typescript
+    "@typescript-eslint/explicit-function-return-type": "off", // handled by Typescript
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "class",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "enum",
+        "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "typeAlias",
+        "format": ["PascalCase"]
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": "error",
+    "typescript-sort-keys/interface": "error",
+    "typescript-sort-keys/string-enum": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "react/no-string-refs": ["off"] // Remove eventually
+      }
+    }
+  ],
   "env": {
-    "es6": true,
     "browser": true,
-    "node": true,
-    "jquery": true,
-    "mocha": true
+    "node": true
   },
   "settings": {
-    "import/ignore": ["node_modules", "\\.(png|jpg)$"],
+    "react": {
+      "pragma": "React",
+      "version": "0.14.8"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
-      "alias": {
-        "map": [
+			"alias": {
+				"map": [
           ["~actions", "./src/redux/actions"],
           ["~components", "./src/components"],
           ["~const", "./src/const"],
           ["~images", "./src/images"],
           ["~reducers", "./src/redux/reducers"]
-        ],
-        "extensions": [".js", ".jsx"]
-      }
-    }
-  },
-  "rules": {
-    "comma-dangle": 0,
-    "quotes": 0,
-    "no-console": 1,
-    "no-debugger": 1,
-    "no-var": 1,
-    "semi": [1, "always"],
-    "eol-last": 0,
-    "no-unused-vars": 1,
-    "no-underscore-dangle": 0,
-    "no-alert": 0,
-    "no-lone-blocks": 0,
-    "jsx-quotes": 1,
-    "react/display-name": [1, { "ignoreTranspilerName": false }],
-    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
-    "react/jsx-boolean-value": 1,
-    "react/jsx-closing-bracket-location": 0,
-    "react/jsx-curly-spacing": 1,
-    "react/jsx-indent-props": 0,
-    "react/jsx-key": 1,
-    "react/jsx-max-props-per-line": 0,
-    "react/jsx-no-bind": 0,
-    "react/jsx-no-duplicate-props": 1,
-    "react/jsx-no-literals": 0,
-    "react/jsx-no-undef": 1,
-    "react/jsx-pascal-case": 1,
-    "react/jsx-sort-prop-types": 0,
-    "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 1,
-    "react/no-danger": 1,
-    "react/no-did-mount-set-state": 1,
-    "react/no-did-update-set-state": 1,
-    "react/no-direct-mutation-state": 1,
-    "react/no-multi-comp": 1,
-    "react/no-set-state": 0,
-    "react/no-unknown-property": 1,
-    "react/prefer-es6-class": 1,
-    "react/prop-types": 1,
-    "react/react-in-jsx-scope": 1,
-    "react/require-extension": 1,
-    "react/self-closing-comp": 1,
-    "react/sort-comp": 1,
-    "react/wrap-multilines": 1
+				]
+			}
+		}
   }
 }
+
+
+

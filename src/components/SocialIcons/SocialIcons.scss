@@ -1,0 +1,22 @@
+ul.social-icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 110px;
+
+	li {
+		float: left;
+		margin-right: 10px;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		i {
+			&:hover {
+				background: $primary;
+			}
+		}
+	}
+}

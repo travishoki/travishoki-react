@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"jsx": "react",
+		"strict": true,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"typeRoots": ["node_modules/@types", "src/types"],
+		"paths": {
+			"~actions/*": ["./src/redux/actions/*"],
+			"~components/*": ["./src/components/*"],
+			"~const/*": ["./src/const/*"],
+			"~images/*": ["./src/images/*"],
+			"~reducers/*": ["./src/redux/reducers/*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}

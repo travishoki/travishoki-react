@@ -1,0 +1,32 @@
+/* Libraries */
+// @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Setup */
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* General */
+@import 'general.scss';
+
+/* Components */
+@import 'components/icons.scss';
+@import 'components/buttons.scss';
+@import 'components/banner.scss';
+@import 'components/forms.scss';
+@import 'components/staggeredList.scss';
+@import 'components/bulletedList.scss';
+
+@import '../components/Header/Header.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/SocialIcons/SocialIcons.scss';
+@import '../components/Education/Education.scss';
+@import '../components/ListSection/ListSection.scss';
+@import '../components/TechIcon/TechIcon.scss';
+
+/* Pages */
+@import '../pages/ContactPage/ContactPage.scss';
+@import '../pages/HomePage/HomePage.scss';
+@import '../pages/ProjectsPage/ProjectsPage.scss';
+@import '../pages/ResumePage/ResumePage.scss';
+@import '../pages/NotFoundPage/NotFoundPage.scss';
