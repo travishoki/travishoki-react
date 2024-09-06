@@ -15,7 +15,7 @@ const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
 const AboutData = [
 	{
-		desc: `My name is Travis. I'm from Orem. I'm ${AGE} years old.`,
+		desc: `My name is Travis. I'm from Orem. I'm ${AGE} years old. I drive a grey Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		img: ImgProfilePic,
 		title: 'Hey,',
 	},
