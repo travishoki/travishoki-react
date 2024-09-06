@@ -32,6 +32,7 @@ const Nav = () => {
 				<NavItem title="Projects" to="projects" />
 				<NavItem title="Resume" to="resume" />
 				<NavItem title="About" to="about" />
+				<NavItem title="Passion" to="passion" />
 				<NavItem title="Contact" to="contact" />
 			</ul>
 		</>
