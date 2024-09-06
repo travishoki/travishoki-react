@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import PassionPage from './pages/PassionPage/AboutPage';
+import PassionPage from './pages/PassionPage/PassionPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import ResumePage from './pages/ResumePage/ResumePage';
 import SingleProjectPage from './pages/SingleProjectPage/SingleProjectPage';

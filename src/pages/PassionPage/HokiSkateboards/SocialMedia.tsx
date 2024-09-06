@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SocialMedia.scss';
+
 const SocialMedia = () => (
 	<ul className="social-media">
 		<li>
