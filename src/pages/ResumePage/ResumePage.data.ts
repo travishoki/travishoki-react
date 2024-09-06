@@ -44,6 +44,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	{
 		dateEnd: 'Present',
 		dateStart: 'Aug 2021',
+		details: 'Acquired by Salesforce',
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
 		tasks: [],
@@ -80,6 +81,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	{
 		dateEnd: 'Mar 2019',
 		dateStart: 'Sep 2015',
+		details: 'Now known as Bed Bath & Beyond',
 		img: ImgOvestock,
 		position: 'Front-end Developer',
 		tasks: [
@@ -137,7 +139,11 @@ export const RESUME_DATA: ResumeDataType[] = [
 		dateStart: 'May 2009',
 		img: ImgAcademyOfBallet,
 		position: 'Breakdance Instructor',
-		tasks: ['Plan and carry out curriculum', 'Prepare students for recitals'],
+		tasks: [
+			'Plan and carry out curriculum',
+			'Prepare students for recitals',
+			'Perform sweet dance moves',
+		],
 		techs: [],
 		title: 'Academy of Balley',
 	},
@@ -160,6 +166,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 type ResumeDataType = {
 	dateEnd: string;
 	dateStart: string;
+	details?: string;
 	img: string;
 	position: string;
 	tasks: string[];

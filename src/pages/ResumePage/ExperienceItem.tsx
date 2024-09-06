@@ -7,6 +7,7 @@ import TechList from './TechList';
 const ExperienceItem = ({
 	dateEnd,
 	dateStart,
+	details,
 	img,
 	position,
 	tasks,
@@ -35,6 +36,8 @@ const ExperienceItem = ({
 				))}
 			</ul>
 
+			{details && <p className="details">{details}</p>}
+
 			<TechList techs={techs} />
 		</div>
 	</li>
@@ -43,6 +46,7 @@ const ExperienceItem = ({
 type ExperienceItemPropTypes = {
 	dateEnd: string;
 	dateStart: string;
+	details?: string;
 	img: string;
 	position: string;
 	tasks: string[];
