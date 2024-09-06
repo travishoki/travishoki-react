@@ -4,6 +4,7 @@ import { useLocation, NavLink } from 'react-router-dom';
 import classnames from 'classnames';
 
 import './Nav.scss';
+import NavItem from './NavItem';
 
 const Nav = () => {
 	const location = useLocation();
@@ -27,46 +28,11 @@ const Nav = () => {
 					open,
 				})}
 			>
-				<li>
-					<NavLink
-						className={(navData) => (navData.isActive ? 'active' : '')}
-						to="/"
-					>
-						Home
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className={(navData) => (navData.isActive ? 'active' : '')}
-						to="/projects"
-					>
-						Projects
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className={(navData) => (navData.isActive ? 'active' : '')}
-						to="/resume"
-					>
-						Resume
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className={(navData) => (navData.isActive ? 'active' : '')}
-						to="/about"
-					>
-						About
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						className={(navData) => (navData.isActive ? 'active' : '')}
-						to="/contact"
-					>
-						Contact
-					</NavLink>
-				</li>
+				<NavItem title="Home" to="/" />
+				<NavItem title="Projects" to="projects" />
+				<NavItem title="Resume" to="resume" />
+				<NavItem title="About" to="about" />
+				<NavItem title="Contact" to="contact" />
 			</ul>
 		</>
 	);
