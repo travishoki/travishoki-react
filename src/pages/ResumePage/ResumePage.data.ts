@@ -8,6 +8,7 @@ import {
 	REDUX,
 	TechKeys,
 } from '~const/Tech.const';
+import ImgAcademyOfBallet from '~images/experience/academy-of-ballet.png';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
 import ImgChatbooks from '~images/experience/chatbooks.png';
 import ImgEnspark from '~images/experience/enspark.png';
@@ -130,6 +131,15 @@ export const RESUME_DATA: ResumeDataType[] = [
 		],
 		techs: [],
 		title: 'All American Sod Farms',
+	},
+	{
+		dateEnd: 'Jan 2009',
+		dateStart: 'May 2009',
+		img: ImgAcademyOfBallet,
+		position: 'Breakdance Instructor',
+		tasks: ['Plan and carry out curriculum', 'Prepare students for recitals'],
+		techs: [],
+		title: 'Academy of Balley',
 	},
 	{
 		dateEnd: 'Jun 2011',
