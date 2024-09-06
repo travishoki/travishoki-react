@@ -4,6 +4,8 @@ import {
 	HTML,
 	JAVSCRIPT,
 	PYTHON,
+	REACT_JS,
+	REDUX,
 	TechKeys,
 } from '~const/Tech.const';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
@@ -35,7 +37,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSalesforce,
 		position: 'Sr. Member of the Technical Staff',
 		tasks: [],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, JAVSCRIPT, CSS, HTML],
 		title: 'Salesforce',
 	},
 	{
@@ -44,7 +46,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
 		tasks: [],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, JAVSCRIPT, CSS, HTML],
 		title: 'Spiff',
 	},
 	{
@@ -58,7 +60,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Upgrading Front End technology and code syntax',
 			'Fixing bugs and reinforcing existing software',
 		],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, CSS, HTML],
 		title: 'Xant/Inside Sales',
 	},
 	{
@@ -71,7 +73,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Actively convert Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, CSS, HTML],
 		title: 'Chatbooks',
 	},
 	{
