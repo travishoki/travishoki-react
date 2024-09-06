@@ -163,7 +163,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	},
 ];
 
-type ResumeDataType = {
+export type ResumeDataType = {
 	dateEnd: string;
 	dateStart: string;
 	details?: string;

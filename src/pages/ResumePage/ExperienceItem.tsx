@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { TechKeys } from '~const/Tech.const';
-
 import TechList from './TechList';
+import { ResumeDataType } from './ResumePage.data';
 
 const ExperienceItem = ({
 	dateEnd,
@@ -43,15 +42,6 @@ const ExperienceItem = ({
 	</li>
 );
 
-type ExperienceItemPropTypes = {
-	dateEnd: string;
-	dateStart: string;
-	details?: string;
-	img: string;
-	position: string;
-	tasks: string[];
-	techs: (keyof TechKeys)[];
-	title: string;
-};
+type ExperienceItemPropTypes = ResumeDataType;
 
 export default ExperienceItem;
