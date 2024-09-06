@@ -127,6 +127,7 @@
 
 		img {
 			&.project-img {
+				// Mobile
 				@media (max-width: 767px) {
 					display: block;
 					margin: 0 auto;
@@ -139,6 +140,7 @@
 				margin-bottom: 20px;
 				width: 80px;
 
+				// Mobile
 				@media (max-width: 767px) {
 					margin-top: 20px;
 				}
@@ -206,6 +208,7 @@
 				}
 			}
 
+			// Desktop
 			@media (min-width: 768px) {
 				.grid-item {
 					@media (min-width: 768px) {
@@ -290,10 +293,12 @@
 	}
 
 	.projects-container {
+		// Mobile
 		@media (max-width: 767px) {
 			margin: 0 10px;
 		}
 
+		// Desktop
 		@media (min-width: 768px) {
 			margin: 0 auto;
 		}

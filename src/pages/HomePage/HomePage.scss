@@ -15,12 +15,14 @@
 			padding: 0;
 			position: relative;
 
+			// Mobile
 			@media (max-width: 767px) {
 				max-width: 300px;
 				margin: 0 auto;
 			}
 
 			li {
+				// Mobile
 				@media (max-width: 767px) {
 					&:first-child {
 						float: left;
@@ -46,6 +48,7 @@
 					}
 				}
 
+				// Desktop
 				@media (min-width: 768px) {
 					float: left;
 					width: 33.33333333%;
@@ -56,6 +59,7 @@
 					margin-bottom: 10px;
 					position: relative;
 
+					// Mobile
 					@media (max-width: 767px) {
 						display: none;
 					}

@@ -2,6 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .menu-btn {
+	// Desktop
 	@media (min-width: 768px) {
 		display: none;
 	}
@@ -20,6 +21,7 @@
 	$fullMobileNavHeight: 645px;
 	$mobileNavAnimSpeed: 0.7s;
 
+	// Mobile
 	@media (max-width: 767px) {
 		li:last-child {
 			margin-bottom: 15px;
@@ -36,6 +38,7 @@
 		}
 	}
 
+	// Desktop
 	@media (min-width: 768px) {
 		float: right;
 	}
@@ -43,6 +46,7 @@
 	li {
 		line-height: 60px;
 
+		// Desktop
 		@media (min-width: 768px) {
 			float: left;
 		}

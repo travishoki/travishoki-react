@@ -1,5 +1,6 @@
 section .list-section {
 	ul {
+		// Mobile
 		@media (max-width: 767px) {
 			display: block;
 			margin: 0 auto;
