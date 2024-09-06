@@ -28,27 +28,42 @@ const Nav = () => {
 				})}
 			>
 				<li>
-					<NavLink className="active" to="/">
+					<NavLink
+						className={(navData) => (navData.isActive ? 'active' : '')}
+						to="/"
+					>
 						Home
 					</NavLink>
 				</li>
 				<li>
-					<NavLink className="active" to="/projects">
+					<NavLink
+						className={(navData) => (navData.isActive ? 'active' : '')}
+						to="/projects"
+					>
 						Projects
 					</NavLink>
 				</li>
 				<li>
-					<NavLink className="active" to="/resume">
+					<NavLink
+						className={(navData) => (navData.isActive ? 'active' : '')}
+						to="/resume"
+					>
 						Resume
 					</NavLink>
 				</li>
 				<li>
-					<NavLink className="active" to="/about">
+					<NavLink
+						className={(navData) => (navData.isActive ? 'active' : '')}
+						to="/about"
+					>
 						About
 					</NavLink>
 				</li>
 				<li>
-					<NavLink className="active" to="/contact">
+					<NavLink
+						className={(navData) => (navData.isActive ? 'active' : '')}
+						to="/contact"
+					>
 						Contact
 					</NavLink>
 				</li>
