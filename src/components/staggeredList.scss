@@ -8,8 +8,7 @@ ul.staggered {
 		min-height: 200px;
 		display: flex;
 
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			border-bottom: solid 1px $gray-one;
 			display: block;
 			justify-content: center;
@@ -24,15 +23,13 @@ ul.staggered {
 			overflow: hidden;
 			margin: 0 auto;
 
-			// Mobile
-			@media (max-width: 767px) {
+			@include phone-down {
 				height: 300px;
 				width: 300px;
 				margin-bottom: 20px;
 			}
 
-			// Desktop
-			@media (min-width: 768px) {
+			@include tablet-up {
 				height: 200px;
 				width: 200px;
 			}
@@ -44,8 +41,7 @@ ul.staggered {
 			}
 		}
 
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			.text {
 				h2 {
 					margin: 0;
@@ -62,8 +58,7 @@ ul.staggered {
 			}
 		}
 
-		// Desktop
-		@media (min-width: 768px) {
+		@include tablet-up {
 			.text {
 				padding: 10px 20px;
 				width: 100%;

@@ -3,8 +3,7 @@
 	color: $white;
 	overflow: hidden;
 
-	// Desktop
-	@media (min-width: 768px) {
+	@include tablet-up {
 		height: 60px;
 	}
 

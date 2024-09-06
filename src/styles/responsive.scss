@@ -1,0 +1,11 @@
+@mixin phone-down {
+	@include phone-down {
+		@content;
+	}
+}
+
+@mixin tablet-up {
+	@include tablet-up {
+		@content;
+	}
+}

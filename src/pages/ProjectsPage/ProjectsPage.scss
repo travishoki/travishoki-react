@@ -127,8 +127,7 @@
 
 		img {
 			&.project-img {
-				// Mobile
-				@media (max-width: 767px) {
+				@include phone-down {
 					display: block;
 					margin: 0 auto;
 				}
@@ -140,8 +139,7 @@
 				margin-bottom: 20px;
 				width: 80px;
 
-				// Mobile
-				@media (max-width: 767px) {
+				@include phone-down {
 					margin-top: 20px;
 				}
 			}
@@ -208,10 +206,9 @@
 				}
 			}
 
-			// Desktop
-			@media (min-width: 768px) {
+			@include tablet-up {
 				.grid-item {
-					@media (min-width: 768px) {
+					@include tablet-up {
 						width: 25%;
 					}
 				}
@@ -293,13 +290,11 @@
 	}
 
 	.projects-container {
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			margin: 0 10px;
 		}
 
-		// Desktop
-		@media (min-width: 768px) {
+		@include tablet-up {
 			margin: 0 auto;
 		}
 

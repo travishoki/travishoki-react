@@ -80,13 +80,11 @@ section {
 		margin: 0 0 20px;
 		text-align: center;
 
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			font-size: 25px;
 		}
 
-		// Desktop
-		@media (min-width: 768px) {
+		@include tablet-up {
 			font-size: 30px;
 		}
 	}

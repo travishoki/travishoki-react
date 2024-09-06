@@ -2,8 +2,7 @@ section.education {
 	img {
 		margin: 20px auto;
 
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			max-width: 250px;
 		}
 	}

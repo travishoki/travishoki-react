@@ -1,7 +1,6 @@
 section .list-section {
 	ul {
-		// Mobile
-		@media (max-width: 767px) {
+		@include phone-down {
 			display: block;
 			margin: 0 auto;
 			max-width: 340px;

@@ -2,8 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .menu-btn {
-	// Desktop
-	@media (min-width: 768px) {
+	@include tablet-up {
 		display: none;
 	}
 
@@ -21,8 +20,7 @@
 	$fullMobileNavHeight: 645px;
 	$mobileNavAnimSpeed: 0.7s;
 
-	// Mobile
-	@media (max-width: 767px) {
+	@include phone-down {
 		li:last-child {
 			margin-bottom: 15px;
 		}
@@ -38,16 +36,14 @@
 		}
 	}
 
-	// Desktop
-	@media (min-width: 768px) {
+	@include tablet-up {
 		float: right;
 	}
 
 	li {
 		line-height: 60px;
 
-		// Desktop
-		@media (min-width: 768px) {
+		@include tablet-up {
 			float: left;
 		}
 	}
