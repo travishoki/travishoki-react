@@ -1,4 +1,11 @@
-import { CSS, HTML, TechKeys } from '~const/Tech.const';
+import {
+	ANGULAR_JS,
+	CSS,
+	HTML,
+	JAVSCRIPT,
+	PYTHON,
+	TechKeys,
+} from '~const/Tech.const';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
 import ImgChatbooks from '~images/experience/chatbooks.png';
 import ImgEnspark from '~images/experience/enspark.png';
@@ -28,7 +35,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSalesforce,
 		position: 'Sr. Member of the Technical Staff',
 		tasks: [],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Salesforce',
 	},
 	{
@@ -37,7 +44,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
 		tasks: [],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Spiff',
 	},
 	{
@@ -51,7 +58,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Upgrading Front End technology and code syntax',
 			'Fixing bugs and reinforcing existing software',
 		],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Xant/Inside Sales',
 	},
 	{
@@ -64,7 +71,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Actively convert Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Chatbooks',
 	},
 	{
@@ -78,7 +85,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage pixels for retargeting and third party integrations',
 			'Pioneer affiliate links program',
 		],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Overstock',
 	},
 	{
@@ -92,7 +99,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'In house developement on student housing software',
 			'Finding ways to speedup and enhance the user experience of the software',
 		],
-		techs: [CSS, HTML],
+		techs: [ANGULAR_JS, PYTHON, JAVSCRIPT, CSS, HTML],
 		title: 'Room Choice',
 	},
 	{
@@ -106,7 +113,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Front-end development and WordPress maintenance',
 			'Custom banner and eLearning course development in Adobe Flash AS3',
 		],
-		techs: [CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML],
 		title: 'Enspark',
 	},
 	{
