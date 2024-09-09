@@ -18,8 +18,6 @@ ul.staggered {
 
 		.image {
 			display: block;
-			height: 200px;
-			width: 200px;
 			overflow: hidden;
 			margin: 0 auto;
 
@@ -30,6 +28,7 @@ ul.staggered {
 			}
 
 			@include tablet-up {
+				flex: 1 0 200px;
 				height: 200px;
 				width: 200px;
 			}
