@@ -1,11 +1,11 @@
 @mixin phone-down {
-	@include phone-down {
+	@media (max-width: 767px) {
 		@content;
 	}
 }
 
 @mixin tablet-up {
-	@include tablet-up {
+	@media (min-width: 768px) {
 		@content;
 	}
 }

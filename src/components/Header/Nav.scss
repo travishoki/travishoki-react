@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
 
 .menu-btn {
 	@include tablet-up {
