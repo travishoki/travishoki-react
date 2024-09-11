@@ -6,7 +6,7 @@ const ContactInfo = () => (
 		<p>801-691-2373</p>
 		<p>travis.hoki@gmail.com</p>
 		<p>Based out of Pleasant Grove, UT</p>
-		<p>Open to Remove Work.</p>
+		<p>Open to remove work.</p>
 	</div>
 );
 
