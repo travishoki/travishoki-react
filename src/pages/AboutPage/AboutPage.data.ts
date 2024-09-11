@@ -3,7 +3,7 @@ import ImgFamily from '~images/about/family.png';
 import ImgWedding from '~images/about/wedding.png';
 import ImgGuitar from '~images/about/guitar.png';
 import ImgSkateboard from '~images/about/skateboarding.png';
-import ImgBallroom from '~images/about/ballroom.jpg';
+import ImgBallroom from '~images/about/ballroom.png';
 import ImgBreakdance from '~images/about/breakdance.png';
 import { getYearsSince } from './AboutPage.helpers';
 
