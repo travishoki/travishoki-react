@@ -31,6 +31,7 @@ const Nav = () => {
 				<NavItem title="Home" to="/" />
 				<NavItem title="Projects" to="projects" />
 				<NavItem title="Resume" to="resume" />
+				<NavItem title="Education" to="education" />
 				<NavItem title="About" to="about" />
 				<NavItem title="Passion" to="passion" />
 				<NavItem title="Contact" to="contact" />
