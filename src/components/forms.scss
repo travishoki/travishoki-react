@@ -5,6 +5,15 @@ form {
 		min-height: 150px;
 	}
 
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	label {
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
 	input,
 	textarea {
 		&.form-control {
