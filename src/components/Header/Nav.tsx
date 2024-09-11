@@ -24,7 +24,7 @@ const Nav = () => {
 			</div>
 
 			<ul
-				className={classnames('nav', {
+				className={classnames('navigation', {
 					open,
 				})}
 			>

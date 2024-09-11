@@ -17,9 +17,13 @@
 	}
 }
 
-.nav {
+.navigation {
 	$fullMobileNavHeight: 645px;
 	$mobileNavAnimSpeed: 0.7s;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 
 	@include phone-down {
 		li:last-child {
@@ -39,21 +43,25 @@
 
 	@include tablet-up {
 		float: right;
+		display: flex;
 	}
 
 	li {
 		line-height: 60px;
 
+		@include phone-down {
+			display: block;
+		}
+
 		@include tablet-up {
-			float: left;
 		}
 	}
 
 	a {
 		display: block;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: bold;
-		padding: 0 20px;
+		padding: 0 10px;
 		text-decoration: none;
 
 		&:focus,
