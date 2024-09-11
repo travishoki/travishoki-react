@@ -1,3 +1,24 @@
 .contact-info {
 	margin-bottom: 40px;
+
+	p {
+		margin: 0;
+	}
+
+	.block {
+		margin-bottom: 10px;
+	}
+}
+
+.linked-link {
+	text-decoration: none;
+
+	.fa {
+		margin-left: 5px;
+	}
+}
+
+.linkedin-profile-image {
+	border-radius: 100%;
+	margin-right: 5px;
 }
