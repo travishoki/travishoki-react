@@ -23,9 +23,8 @@ const TextArea = ({
 				name={name}
 				onChange={onChange}
 				placeholder={placeholder}
-			>
-				{value}
-			</textarea>
+				value={value}
+			/>
 			{error && <div className="alert alert-danger">{error}</div>}
 		</div>
 	</div>
