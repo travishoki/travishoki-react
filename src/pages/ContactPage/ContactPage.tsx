@@ -3,7 +3,6 @@ import React from 'react';
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
 import ContactInfo from './ContactInfo';
-import ContactForm from './ContactForm';
 
 const ContactPage = () => (
 	<div className="contact" id="container">
@@ -17,7 +16,6 @@ const ContactPage = () => (
 
 				<div className="col-sm-6">
 					<ContactInfo />
-					<ContactForm />
 				</div>
 			</div>
 		</div>
