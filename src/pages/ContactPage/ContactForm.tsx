@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
 
-import { connect } from 'react-redux';
-import { bindActionCreators, Dispatch } from 'redux';
-
-import * as formActions from '~actions/formActions';
 import Form from '~components/Form/Form';
 import SubmitButton from '~components/Form/SubmitButton/SubmitButton';
 import TextArea from '~components/Form/TextArea/TextArea';
 import TextInput from '~components/Form/TextInput/TextInput';
-import { FormActionTypes } from '../../redux/actions/actionTypes';
 
+import { saveContactForm } from './ContactForm.helpers';
 import Message from './Message';
-
-export type MessageType = {
-	comment: string;
-	email: string;
-	name: string;
-};
 
 type ErrorType = {
 	comment?: string;
@@ -24,44 +14,30 @@ type ErrorType = {
 	name?: string;
 };
 
-const ContactForm = ({ actions }: ContactFormProps) => {
+const ContactForm = () => {
 	const [hasErrorMessage, setHasErrorMessage] = useState(false);
 	const [hasSuccessMessage, setHasSuccessMessage] = useState(false);
 	const [saving, setSaving] = useState(false);
 	const [errors, setErrors] = useState<ErrorType>({});
-	const [message, setMessage] = useState<MessageType>({
-		comment: '',
-		email: '',
-		name: '',
-	});
-
-	const updateContactFormState = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-	) => {
-		const field = e.target.name as keyof MessageType;
-		const value = e.target.value;
-		const newMessage: MessageType = message;
-
-		newMessage[field] = value;
-
-		setMessage(newMessage);
-	};
+	const [comment, setComment] = useState('');
+	const [email, setEmail] = useState('');
+	const [name, setName] = useState('');
 
 	const formIsValid = () => {
 		let formIsValid = true;
 		const errorObj: ErrorType = {};
 
-		if (message.name.length < 5) {
+		if (name.length < 5) {
 			errorObj.name = 'Name must be at least 5 characters.';
 			formIsValid = false;
 		}
 
-		if (message.email.length < 5) {
+		if (email.length < 5) {
 			errorObj.email = 'Email must be at least 5 characters.';
 			formIsValid = false;
 		}
 
-		if (message.comment.length < 5) {
+		if (comment.length < 5) {
 			errorObj.comment = 'Comment must be at least 5 characters.';
 			formIsValid = false;
 		}
@@ -71,17 +47,20 @@ const ContactForm = ({ actions }: ContactFormProps) => {
 		return formIsValid;
 	};
 
-	const saveContactForm = (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSaveContactForm = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		if (!formIsValid()) return;
 
 		setSaving(true);
 
-		// actions
-		// 	.saveContactForm(message)
-		// 	.then(() => setHasSuccessMessage(true))
-		// 	.catch(() => setHasErrorMessage(true));
+		saveContactForm({
+			comment,
+			email,
+			name,
+		})
+			.then(() => setHasSuccessMessage(true))
+			.catch(() => setHasErrorMessage(true));
 	};
 
 	const hasBeenSubmitted = hasErrorMessage || hasSuccessMessage;
@@ -101,32 +80,32 @@ const ContactForm = ({ actions }: ContactFormProps) => {
 			/>
 
 			{!hasBeenSubmitted && (
-				<Form onSubmit={saveContactForm}>
+				<Form onSubmit={handleSaveContactForm}>
 					<TextInput
 						error={errors.name}
 						label="Name"
 						name="name"
-						onChange={updateContactFormState}
+						onChange={(e) => setName(e.target.value)}
 						placeholder="Name"
-						value={message.name}
+						value={name}
 					/>
 
 					<TextInput
 						error={errors.email}
 						label="Email"
 						name="email"
-						onChange={updateContactFormState}
+						onChange={(e) => setEmail(e.target.value)}
 						placeholder="Email"
-						value={message.email}
+						value={email}
 					/>
 
 					<TextArea
 						error={errors.comment}
 						label="Comment"
 						name="comment"
-						onChange={updateContactFormState}
+						onChange={(e) => setComment(e.target.value)}
 						placeholder="Comment"
-						value={message.comment}
+						value={comment}
 					/>
 
 					<SubmitButton
@@ -140,12 +119,4 @@ const ContactForm = ({ actions }: ContactFormProps) => {
 	);
 };
 
-type ContactFormProps = {
-	actions: typeof formActions;
-};
-
-const mapDispatchToProps = (dispatch: Dispatch<FormActionTypes>) => ({
-	actions: bindActionCreators(formActions, dispatch),
-});
-
-export default connect(null, mapDispatchToProps)(ContactForm);
+export default ContactForm;
