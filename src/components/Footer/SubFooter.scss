@@ -23,24 +23,4 @@
 		line-height: 40px;
 		margin-left: 20px;
 	}
-
-	.affiliates {
-		background: #1d73da;
-
-		@media (max-width: 499px) {
-			padding: 5px 0;
-		}
-
-		@media (min-width: 500px) {
-			float: right;
-			padding: 10px;
-		}
-
-		img {
-			@media (max-width: 499px) {
-				display: block;
-				margin: 0 auto;
-			}
-		}
-	}
 }
