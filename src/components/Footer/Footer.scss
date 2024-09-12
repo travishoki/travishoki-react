@@ -1,3 +1,7 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
 #footer {
 	background: $secondary;
 	height: 60px;

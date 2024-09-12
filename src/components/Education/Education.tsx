@@ -2,6 +2,8 @@ import React from 'react';
 
 import imgUvu from '~images/global/uvu.png';
 
+import './Education.scss';
+
 const Education = () => (
 	<section className="white center education">
 		<h3>Utah Valley University</h3>

@@ -3,6 +3,8 @@ import React from 'react';
 import BackToTop from './BackToTop';
 import SubFooter from './SubFooter';
 
+import './Footer.scss';
+
 const Footer = () => (
 	<>
 		<SubFooter />
