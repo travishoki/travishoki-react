@@ -1,4 +1,6 @@
-@import '../responsive.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
 
 .banner {
 	overflow: hidden;

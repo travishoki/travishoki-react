@@ -2,6 +2,8 @@ import React from 'react';
 
 import ImgResume from '~images/global/resume.png';
 
+import './Banner.scss';
+
 const Banner = () => (
 	<div className="banner">
 		<div className="banner-cont">
