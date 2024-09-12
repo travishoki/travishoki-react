@@ -2,9 +2,28 @@ import React from 'react';
 
 import ImgHokiSkateboardsLogo from '~images/home/hoki-skateboards.jpg';
 import ImgYouShouldAlwaysSkateboard from '~images/home/you-should-always-skateboard.jpg';
+import {
+	CSS,
+	HTML,
+	JAVSCRIPT,
+	PHP,
+	REACT_JS,
+	TechKeys,
+	WORDPRESS,
+} from '~const/Tech.const';
 
 import Title from './Title';
 import './Content.scss';
+import TechList from 'src/pages/ResumePage/TechList';
+
+const websiteTechs: (keyof TechKeys)[] = [
+	CSS,
+	HTML,
+	JAVSCRIPT,
+	PHP,
+	REACT_JS,
+	WORDPRESS,
+];
 
 const Content = () => (
 	<div className="hoki-skateboards-inner-content">
@@ -31,7 +50,7 @@ const Content = () => (
 				</p>
 				<p>
 					Tech:
-					<br />
+					<TechList techs={websiteTechs} />
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
 					PHP and React.
 				</p>
