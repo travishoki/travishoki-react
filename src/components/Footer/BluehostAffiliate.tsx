@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './BluehostAffiliate.scss';
+
 const BluehostAffiliate = () => (
 	<div className="affiliates">
 		<a
