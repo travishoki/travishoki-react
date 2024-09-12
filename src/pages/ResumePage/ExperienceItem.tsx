@@ -2,6 +2,7 @@ import React from 'react';
 
 import TechList from './TechList';
 import { ResumeDataType } from './ResumePage.data';
+import BulletedList from '~components/bulletedList/BulletedList';
 
 const ExperienceItem = ({
 	dateEnd,
@@ -27,13 +28,7 @@ const ExperienceItem = ({
 				</p>
 			</div>
 
-			<ul className="bulleted">
-				{tasks.map((task, index) => (
-					<li key={index} className="bulleted-item">
-						{task}
-					</li>
-				))}
-			</ul>
+			<BulletedList list={tasks} />
 
 			{details && <p className="details">{details}</p>}
 
