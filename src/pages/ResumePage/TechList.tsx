@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import TechIcon from '~components/TechIcon/TechIcon';
 import { TechKeys } from '~const/Tech.const';
+import './TechList.scss';
 
 const TechList = ({ techs }: TechListProps) => {
 	return (

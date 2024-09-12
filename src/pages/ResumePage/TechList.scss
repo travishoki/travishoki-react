@@ -1,0 +1,10 @@
+ul.tech-icon-list-horizontal {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		margin-right: 10px;
+	}
+}
