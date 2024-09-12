@@ -1,25 +1,44 @@
 import React from 'react';
 
-import imgUvu from '~images/global/uvu.png';
+import imgTimpanogos from '~images/education/timpanogos.png';
+import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
+import imgUvu from '~images/education/uvu.png';
+import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 
 import './EducationPage.scss';
 
 const EducationPage = () => (
-	<section className="white center education">
-		<h3>Utah Valley University</h3>
-		<img className="center" src={imgUvu} />
+	<>
+		<section className="white center education">
+			<h3>Utah Valley University</h3>
+			<img className="center school" src={imgUvu} />
 
-		<div className="text-block">
-			<p>Digital Media Major</p>
-			<p className="degree">Bachelor of Science</p>
-			<p>Internet Technology Emphasis</p>
-		</div>
+			<div className="text-block">
+				<p>Digital Media Major</p>
+				<p className="degree">Bachelor of Science</p>
+				<p>Internet Technology Emphasis</p>
+				<p>Aug 2009 - Apr 2014</p>
+			</div>
 
-		<div className="text-block">
-			<p className="degree">Associate in Applied Science</p>
-			<p>Digital Communication Technology</p>
-		</div>
-	</section>
+			<div className="text-block">
+				<p className="degree">Associate in Applied Science</p>
+				<p>Digital Communication Technology</p>
+			</div>
+			<img className="center picture" src={imgUvuGraduation} />
+		</section>
+		<section className="white center education">
+			<h3>Timpanogos High School</h3>
+			<img className="center school" src={imgTimpanogos} />
+			<p>High School Diploma</p>
+			<p>Aug 2009 - Apr 2006</p>
+			<p>
+				Activities and Societies: Timpanogos Ballroom Team, UVU Breakdance Club,
+				BYU Breakdance Club, Timpanogos Hip-hop Club, Orem High Breakdance Club,
+				Provo High Breakdance Club
+			</p>
+			<img className="center picture" src={imgTimpanogosGraduation} />
+		</section>
+	</>
 );
 
 export default EducationPage;

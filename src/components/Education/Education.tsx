@@ -1,6 +1,6 @@
 import React from 'react';
 
-import imgUvu from '~images/global/uvu.png';
+import imgUvu from '~images/education/uvu.png';
 
 import './Education.scss';
 
