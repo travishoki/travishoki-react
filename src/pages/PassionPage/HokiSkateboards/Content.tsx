@@ -49,7 +49,7 @@ const Content = () => (
 					Hoki Skateboards is a small family-owned online skateboard company.
 				</p>
 				<p>
-					Tech:
+					Technology:
 					<TechList techs={websiteTechs} />
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
 					PHP and React.
