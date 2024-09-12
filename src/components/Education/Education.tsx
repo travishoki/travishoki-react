@@ -5,7 +5,7 @@ import imgUvu from '~images/education/uvu.png';
 import './Education.scss';
 
 const Education = () => (
-	<section className="white center education">
+	<section className="white center education-component">
 		<h3>Utah Valley University</h3>
 		<img className="center" src={imgUvu} />
 

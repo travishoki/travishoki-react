@@ -1,0 +1,17 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
+.pannels {
+	@include tablet-up {
+		display: flex;
+	}
+
+	flex-direction: row-reverse;
+
+	&.reverse {
+		@include tablet-up {
+			flex-direction: row;
+		}
+	}
+}

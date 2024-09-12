@@ -1,11 +1,44 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
+section.education {
+	img {
+		@include phone-down {
+			margin: 20px auto;
+		}
+	}
+
+	p {
+		font-size: 24px;
+		margin: 0;
+
+		&.degree {
+			font-weight: bold;
+		}
+	}
+}
+
 .text-block {
 	margin-bottom: 20px;
 }
 
 img.school {
-	max-width: 300px;
+	@include phone-down {
+		max-width: 200px;
+	}
+
+	@include tablet-up {
+		max-width: 250px;
+	}
 }
 
 img.picture {
-	max-width: 600px;
+	@include phone-down {
+		max-width: 100%;
+	}
+
+	@include tablet-up {
+		max-width: 600px;
+	}
 }
