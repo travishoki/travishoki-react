@@ -10,8 +10,8 @@
 @import 'general.scss';
 
 /* Components */
-@import '../components/icons.scss';
-@import '../components/buttons.scss';
-@import '../components/banner.scss';
-@import '../components/forms.scss';
-@import '../components/staggeredList.scss';
+@import './components/banner.scss';
+@import './components/buttons.scss';
+@import './components/forms.scss';
+@import './components/icons.scss';
+@import './components/staggeredList.scss';
