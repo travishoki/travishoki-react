@@ -1,6 +1,6 @@
 import React from 'react';
 
-import App from './App';
+import MobileApp from './MobileApp';
 import Content from './Content';
 import Logo from './Logo';
 import SocialMedia from './SocialMedia';
@@ -13,7 +13,7 @@ const HokiSkateboards = () => (
 			<Logo />
 			<SocialMedia />
 			<Content />
-			<App />
+			<MobileApp />
 		</div>
 	</section>
 );

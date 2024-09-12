@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 
-const App = () => (
+const MobileApp = () => (
 	<div className="app-section">
 		<Title title="Mobile App" />
 		<img
@@ -61,4 +61,4 @@ const App = () => (
 	</div>
 );
 
-export default App;
+export default MobileApp;
