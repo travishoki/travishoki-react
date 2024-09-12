@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ImgHokiSkateboardsLogo from '~images/home/hoki-skateboards.jpg';
-import ImgYouShouldAlwaysSkateboard from '~images/home/you-should-always-skateboard.jpg';
+import ImgHokiSkateboardsLogo from '~images/passion/hoki-skateboards.jpg';
+import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 import {
 	CSS,
 	HTML,
