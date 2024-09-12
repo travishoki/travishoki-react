@@ -7,6 +7,8 @@ import Banner from './Banner';
 import Experience from './Experience';
 import { SKILLS_LIST } from './ResumePage.data';
 
+import './ResumePage.scss';
+
 const ResumePage = () => (
 	<div className="resume" id="container">
 		<Banner />

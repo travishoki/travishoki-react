@@ -4,6 +4,7 @@ import ImgHokiSkateboardsLogo from '~images/home/hoki-skateboards.jpg';
 import ImgYouShouldAlwaysSkateboard from '~images/home/you-should-always-skateboard.jpg';
 
 import Title from './Title';
+import './Content.scss';
 
 const Content = () => (
 	<div className="hoki-skateboards-inner-content">

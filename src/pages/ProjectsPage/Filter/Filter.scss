@@ -1,8 +1,6 @@
-.filter-section {
-	@import './CurrentFilter.scss';
-	@import './FilterClean.scss';
-	@import './FilterForm.scss';
+@import '../../../styles/variables.scss';
 
+.filter-section {
 	form {
 		margin: 0;
 	}

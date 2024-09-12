@@ -13,6 +13,8 @@ import ViewControl from './ViewControl/ViewControl';
 import { PROJECTS_DATA } from './ProjectsPage.data';
 import Filter from './Filter/Filter';
 
+import './ProjectsPage.scss';
+
 const PROJECTS_PAGE_URL = '/projects';
 
 const ProjectsPage = () => {

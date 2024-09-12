@@ -1,7 +1,9 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
 #container.projects {
 	$iconW: 40px;
-
-	@import './Filter/Filter.scss';
 
 	.tech-icon-holder {
 		border: solid 1px $white;

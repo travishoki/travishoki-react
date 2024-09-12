@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Logo.scss';
+
 const Logo = () => (
 	<a
 		className="hoki-skateboards-logo"

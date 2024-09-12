@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import BluehostAffiliate from './BluehostAffiliate';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
+import './SubFooter.scss';
+
 const SubFooter = () => (
 	<div id="subfooter">
 		<div className="contact-info">

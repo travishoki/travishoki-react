@@ -7,6 +7,8 @@ import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
 import TechTiles from './TechTiles/TechTiles';
 
+import './HomePage.scss';
+
 const HomePage = () => (
 	<div className="home" id="container">
 		<Banner />

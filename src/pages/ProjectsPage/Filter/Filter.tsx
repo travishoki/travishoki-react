@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { TechFilterType } from '~const/Tech.const';
+
 import CurrentFilter from './CurrentFilter';
 import FilterClean from './FilterClean';
 import FilterItems from './FilterItems';
 import FilterForm from './FilterForm';
-import { TechFilterType } from '~const/Tech.const';
+
+import './Filter.scss';
 
 const Filter = ({
 	filter,
