@@ -11,3 +11,7 @@ yarn install
 ## Development
 
 yarn start
+
+## Build
+
+yarn build
