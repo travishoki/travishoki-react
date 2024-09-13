@@ -15,7 +15,9 @@ const AboutPage = () => (
 						</div>
 						<div className="text">
 							<h2>{item.title}</h2>
-							<p>{item.desc}</p>
+							{item.desc.map((desc, index) => (
+								<p key={index}>{desc}</p>
+							))}
 						</div>
 					</li>
 				))}
