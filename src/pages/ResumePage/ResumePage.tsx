@@ -3,17 +3,16 @@ import React from 'react';
 import { Education } from '~components/Education/Education';
 import { ListSection } from '~components/ListSection/ListSection';
 
-import { DownloadButton } from './DownloadButton';
+import { DownloadSection } from './DownloadSection';
 import { Experience } from './Experience';
 import { SKILLS_LIST } from './ResumePage.data';
-
 import './ResumePage.scss';
 
 export const ResumePage = () => (
 	<div className="resume" id="container">
 		<h1>Resume</h1>
 
-		<DownloadButton />
+		<DownloadSection />
 
 		<Experience />
 
