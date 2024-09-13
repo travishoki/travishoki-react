@@ -42,11 +42,9 @@ export const EducationPage = () => (
 			</div>
 		</section>
 		<section className="gray">
-			<ImageMaximizable
-				className="center picture"
-				src={imgDiplomaSmall}
-				srcLarge={imgDiploma}
-			/>
+			<a href={imgDiploma} rel="noreferrer" target="_blank">
+				<img className="center picture" src={imgDiplomaSmall} />
+			</a>
 		</section>
 
 		<section className="white center education">
