@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SocialIcons.scss';
 
-const SocialIcons = () => (
+export const SocialIcons = () => (
 	<ul className="social-icons">
 		<li>
 			<a
@@ -36,5 +36,3 @@ const SocialIcons = () => (
 		</li>
 	</ul>
 );
-
-export default SocialIcons;

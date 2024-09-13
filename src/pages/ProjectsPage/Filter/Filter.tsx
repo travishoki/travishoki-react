@@ -2,14 +2,14 @@ import React from 'react';
 
 import { TechFilterType } from '~const/Tech.const';
 
-import CurrentFilter from './CurrentFilter';
-import FilterClean from './FilterClean';
-import FilterItems from './FilterItems';
-import FilterForm from './FilterForm';
+import { CurrentFilter } from './CurrentFilter';
+import { FilterClean } from './FilterClean';
+import { FilterItems } from './FilterItems';
+import { FilterForm } from './FilterForm';
 
 import './Filter.scss';
 
-const Filter = ({
+export const Filter = ({
 	filter,
 	filterTerm,
 	isFilterOpen = false,
@@ -57,5 +57,3 @@ type FilterProps = {
 	onSelectFilter: (filter: TechFilterType) => void;
 	toggleOpenFilter: () => void;
 };
-
-export default Filter;

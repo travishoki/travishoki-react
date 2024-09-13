@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom';
 import classnames from 'classnames';
 
 import './Nav.scss';
-import NavItem from './NavItem';
+import { NavItem } from './NavItem';
 
-const Nav = () => {
+export const Nav = () => {
 	const location = useLocation();
 	const [open, setOpen] = useState(false);
 
@@ -39,5 +39,3 @@ const Nav = () => {
 		</>
 	);
 };
-
-export default Nav;

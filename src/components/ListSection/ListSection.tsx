@@ -4,7 +4,7 @@ import { splitListInHalf } from './ListSection.utils';
 
 import './ListSection.scss';
 
-const ListSection = ({ list, title }: ListSectionProps) => {
+export const ListSection = ({ list, title }: ListSectionProps) => {
 	const [LIST_A, LIST_B] = splitListInHalf(list);
 
 	return (
@@ -37,5 +37,3 @@ type ListSectionProps = {
 	list: string[];
 	title: string;
 };
-
-export default ListSection;

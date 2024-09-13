@@ -1,8 +1,8 @@
 import React from 'react';
 
-import AboutPageData from './AboutPage.data';
+import { AboutPageData } from './AboutPage.data';
 
-const AboutPage = () => (
+export const AboutPage = () => (
 	<div className="about" id="container">
 		<div className="boxed boxed-md">
 			<h1>About Me</h1>
@@ -25,5 +25,3 @@ const AboutPage = () => (
 		</div>
 	</div>
 );
-
-export default AboutPage;

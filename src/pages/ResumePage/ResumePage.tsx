@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Education from '~components/Education/Education';
-import ListSection from '~components/ListSection/ListSection';
+import { Education } from '~components/Education/Education';
+import { ListSection } from '~components/ListSection/ListSection';
 
-import DownloadButton from './DownloadButton';
-import Experience from './Experience';
+import { DownloadButton } from './DownloadButton';
+import { Experience } from './Experience';
 import { SKILLS_LIST } from './ResumePage.data';
 
 import './ResumePage.scss';
 
-const ResumePage = () => (
+export const ResumePage = () => (
 	<div className="resume" id="container">
 		<h1>Resume</h1>
 
@@ -22,5 +22,3 @@ const ResumePage = () => (
 		<Education />
 	</div>
 );
-
-export default ResumePage;

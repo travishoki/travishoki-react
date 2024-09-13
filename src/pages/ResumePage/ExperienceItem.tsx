@@ -1,11 +1,11 @@
 import React from 'react';
 
-import BulletedList from '~components/bulletedList/BulletedList';
-import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+import { BulletedList } from '~components/bulletedList/BulletedList';
+import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
 
 import { ResumeDataType } from './ResumePage.data';
 
-const ExperienceItem = ({
+export const ExperienceItem = ({
 	dateEnd,
 	dateStart,
 	details,
@@ -39,5 +39,3 @@ const ExperienceItem = ({
 );
 
 type ExperienceItemPropTypes = ResumeDataType;
-
-export default ExperienceItem;

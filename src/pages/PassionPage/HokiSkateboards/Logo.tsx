@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Logo.scss';
 
-const Logo = () => (
+export const Logo = () => (
 	<a
 		className="hoki-skateboards-logo"
 		href="https://hokiskateboards.com"
@@ -17,5 +17,3 @@ const Logo = () => (
 		/>
 	</a>
 );
-
-export default Logo;

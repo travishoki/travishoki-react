@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import SoftwareIcon from '~components/SoftwareListHorizontal/SoftwareIcon';
+import { SoftwareIcon } from '~components/SoftwareListHorizontal/SoftwareIcon';
 import { SoftwareKeys } from '~const/Software.const';
 import './SoftwareListHorizontal.scss';
 
-const SoftwareListHorizontal = ({ list }: TechListProps) => {
+export const SoftwareListHorizontal = ({ list }: TechListProps) => {
 	return (
 		<ul className="software-list">
 			{list.map((tech, index) => (
@@ -23,5 +23,3 @@ const SoftwareListHorizontal = ({ list }: TechListProps) => {
 type TechListProps = {
 	list: (keyof SoftwareKeys)[];
 };
-
-export default SoftwareListHorizontal;

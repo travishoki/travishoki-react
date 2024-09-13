@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SocialMedia.scss';
 
-const SocialMedia = () => (
+export const SocialMedia = () => (
 	<ul className="social-media">
 		<li>
 			<a
@@ -50,5 +50,3 @@ const SocialMedia = () => (
 		</li>
 	</ul>
 );
-
-export default SocialMedia;

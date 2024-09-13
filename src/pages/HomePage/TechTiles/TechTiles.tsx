@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import TechIcon from '~components/TechIcon/TechIcon';
+import { TechIcon } from '~components/TechIcon/TechIcon';
 
 import { FILTER_LIST } from '../../ProjectsPage/ProjectsPage.data';
 import './TechTiles.scss';
 
-const TechTiles = () => (
+export const TechTiles = () => (
 	<section className="white tech-tiles">
 		<ul>
 			{FILTER_LIST.map((tech, index) => (
@@ -19,5 +19,3 @@ const TechTiles = () => (
 		</ul>
 	</section>
 );
-
-export default TechTiles;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Nav from './Nav';
-import Title from './Title';
+import { Nav } from './Nav';
+import { Title } from './Title';
 
 import './Header.scss';
 
-const Header = () => (
+export const Header = () => (
 	<div id="header">
 		<div className="boxed">
 			<Title />
@@ -13,5 +13,3 @@ const Header = () => (
 		</div>
 	</div>
 );
-
-export default Header;

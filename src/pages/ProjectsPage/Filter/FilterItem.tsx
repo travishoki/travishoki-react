@@ -2,10 +2,14 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-import TechIcon from '~components/TechIcon/TechIcon';
+import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TechKeys, TechFilterType } from '~const/Tech.const';
 
-const FilterItem = ({ filter, item, onSelectFilter }: FilterItemProps) => (
+export const FilterItem = ({
+	filter,
+	item,
+	onSelectFilter,
+}: FilterItemProps) => (
 	<li
 		className={classnames('filter-item tech-icon-item', {
 			active: filter === null || filter === item,
@@ -22,5 +26,3 @@ type FilterItemProps = {
 	item: keyof TechKeys;
 	onSelectFilter: (filter: TechFilterType) => void;
 };
-
-export default FilterItem;

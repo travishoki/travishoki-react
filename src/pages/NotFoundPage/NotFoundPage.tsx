@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './NotFoundPage.scss';
 
-const NotFoundPage = () => (
+export const NotFoundPage = () => (
 	<div className="not-found" id="container">
 		<h1>Page Not Found</h1>
 
@@ -26,5 +26,3 @@ const NotFoundPage = () => (
 		</div>
 	</div>
 );
-
-export default NotFoundPage;

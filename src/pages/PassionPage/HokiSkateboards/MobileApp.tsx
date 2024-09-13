@@ -1,15 +1,15 @@
 import React from 'react';
 
-import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
 import { CSS, HTML, JAVSCRIPT, REACT_JS, TechKeys } from '~const/Tech.const';
 
-import PassionLabel from './PassionLabel';
-import Title from './Title';
+import { PassionLabel } from './PassionLabel';
+import { Title } from './Title';
 import './MobileApp.scss';
 
 const techs: (keyof TechKeys)[] = [CSS, HTML, JAVSCRIPT, REACT_JS];
 
-const MobileApp = () => (
+export const MobileApp = () => (
 	<div className="app-section">
 		<Title title="Mobile App" />
 		<img
@@ -68,5 +68,3 @@ const MobileApp = () => (
 		</p>
 	</div>
 );
-
-export default MobileApp;

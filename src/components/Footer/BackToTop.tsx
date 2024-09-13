@@ -5,7 +5,7 @@ import { scrollWindow } from './Footer.helpers';
 const DELAY_IN_MS = 16.66;
 const SCROLL_STEPS_IN_PX = 50;
 
-const BackToTop = () => {
+export const BackToTop = () => {
 	const scrollToTop = () => {
 		const timer = setInterval(() => {
 			if (window.pageYOffset === 0) {
@@ -20,5 +20,3 @@ const BackToTop = () => {
 
 	return <i className="circ-sm fa fa-angle-up" onClick={scrollToTop} />;
 };
-
-export default BackToTop;

@@ -2,9 +2,9 @@ import React from 'react';
 
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
-import ContactInfo from './ContactInfo';
+import { ContactInfo } from './ContactInfo';
 
-const ContactPage = () => (
+export const ContactPage = () => (
 	<div className="contact" id="container">
 		<div className="boxed">
 			<h1>Contact Me</h1>
@@ -21,5 +21,3 @@ const ContactPage = () => (
 		</div>
 	</div>
 );
-
-export default ContactPage;

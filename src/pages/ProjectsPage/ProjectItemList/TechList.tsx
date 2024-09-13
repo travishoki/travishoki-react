@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import TechIcon from '~components/TechIcon/TechIcon';
+import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TechKeys } from '~const/Tech.const';
 
 import './TechList.scss';
 
-const TechList = ({ list }: TechListProps) => {
+export const TechList = ({ list }: TechListProps) => {
 	return (
 		<ul className="tech-icon-list">
 			{list.map((tech, index) => (
@@ -25,5 +25,3 @@ const TechList = ({ list }: TechListProps) => {
 type TechListProps = {
 	list: (keyof TechKeys)[];
 };
-
-export default TechList;

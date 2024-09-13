@@ -2,7 +2,7 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-const TextInput = ({
+export const TextInput = ({
 	error,
 	label,
 	name,
@@ -39,5 +39,3 @@ type TextInputProps = {
 	placeholder: string;
 	value: string;
 };
-
-export default TextInput;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import TechIcon from '~components/TechIcon/TechIcon';
+import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TechFilterType } from '~const/Tech.const';
 
 import './CurrentFilter.scss';
 
-const CurrentFilter = ({
+export const CurrentFilter = ({
 	filter,
 	onClearAndCloseFilter,
 }: CurrentFilterProps) => {
@@ -27,5 +27,3 @@ type CurrentFilterProps = {
 	filter: TechFilterType;
 	onClearAndCloseFilter: () => void;
 };
-
-export default CurrentFilter;

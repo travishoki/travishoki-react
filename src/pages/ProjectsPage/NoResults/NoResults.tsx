@@ -1,8 +1,8 @@
 import React from 'react';
 
-const NoResults = ({
+export const NoResults = ({
 	filter,
-	isVisible,
+	isVisible = false,
 	onClearFilter,
 	onClearSearchTerm,
 	searchTerm,
@@ -36,9 +36,3 @@ type NoResultsProps = {
 	onClearSearchTerm: () => void;
 	searchTerm: string;
 };
-
-NoResults.defaulProps = {
-	isVisible: false,
-};
-
-export default NoResults;

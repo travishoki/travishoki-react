@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ContactInfo.scss';
 
-const ContactInfo = () => (
+export const ContactInfo = () => (
 	<div className="contact-info">
 		<div className="block">
 			<p>Travis Hoki</p>
@@ -33,5 +33,3 @@ const ContactInfo = () => (
 		</a>
 	</div>
 );
-
-export default ContactInfo;

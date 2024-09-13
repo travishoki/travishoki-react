@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SoftwareListHorizontal from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
-import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+import { SoftwareListHorizontal } from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
+import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
 import {
 	ILLUSTRATOR,
 	INDESIGN,
@@ -20,10 +20,10 @@ import {
 import ImgHokiSkateboardsLogo from '~images/passion/hoki-skateboards.jpg';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
-import Title from './Title';
+import { Title } from './Title';
 import './Content.scss';
 
-import PassionLabel from './PassionLabel';
+import { PassionLabel } from './PassionLabel';
 
 const websiteTechList: (keyof TechKeys)[] = [
 	CSS,
@@ -39,7 +39,7 @@ const appSoftwareList: (keyof SoftwareKeys)[] = [
 	PHOTOSHOP,
 ];
 
-const Content = () => (
+export const Content = () => (
 	<div className="hoki-skateboards-inner-content">
 		<div className="row">
 			<div className="col-sm-6">
@@ -97,5 +97,3 @@ const Content = () => (
 		</div>
 	</div>
 );
-
-export default Content;

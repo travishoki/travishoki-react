@@ -2,7 +2,7 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-const SearchForm = ({
+export const SearchForm = ({
 	onChangeSearch,
 	onClearSearchTerm,
 	searchTerm,
@@ -32,5 +32,3 @@ type SearchFormProps = {
 	onClearSearchTerm: () => void;
 	searchTerm: string;
 };
-
-export default SearchForm;

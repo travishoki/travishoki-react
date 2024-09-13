@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import SocialIcons from '~components/SocialIcons/SocialIcons';
+import { SocialIcons } from '~components/SocialIcons/SocialIcons';
 import ImgProfilePic from '~images/global/travis-hoki.png';
 
 import './Banner.scss';
 
-const Banner = () => (
+export const Banner = () => (
 	<div className="home-banner">
 		<div className="banner-cont">
 			<h1>Web Developer</h1>
@@ -21,5 +21,3 @@ const Banner = () => (
 		<img className="banner-pic" src={ImgProfilePic} />
 	</div>
 );
-
-export default Banner;

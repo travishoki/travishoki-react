@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import './Nav.scss';
 
-const NavItem = ({ title, to }: NavItemProps) => {
+export const NavItem = ({ title, to }: NavItemProps) => {
 	return (
 		<li>
 			<NavLink
@@ -21,5 +21,3 @@ type NavItemProps = {
 	title: string;
 	to: string;
 };
-
-export default NavItem;

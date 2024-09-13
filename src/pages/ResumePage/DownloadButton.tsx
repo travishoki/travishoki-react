@@ -2,7 +2,7 @@ import React from 'react';
 
 import './DownloadButton.scss';
 
-const DownloadButton = () => (
+export const DownloadButton = () => (
 	<a
 		className="btn btn-primary btn-lg download-button"
 		href="http://travishoki.com/travis-hoki-resume.pdf"
@@ -12,5 +12,3 @@ const DownloadButton = () => (
 		<i className="fa fa-download" /> Download
 	</a>
 );
-
-export default DownloadButton;

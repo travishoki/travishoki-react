@@ -1,12 +1,12 @@
 import React from 'react';
 
-import TechList from './TechList';
+import { TechList } from './TechList';
 import { ProjectType } from '../ProjectsPage.data';
 
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
 
-const ProjectItemList = ({
+export const ProjectItemList = ({
 	company,
 	contributions,
 	desc,
@@ -91,5 +91,3 @@ const ProjectItemList = ({
 );
 
 type ProjectItemListProps = ProjectType;
-
-export default ProjectItemList;

@@ -1,12 +1,10 @@
 import React from 'react';
 
-import HokiSkateboards from './HokiSkateboards/HokiSkateboards';
+import { HokiSkateboards } from './HokiSkateboards/HokiSkateboards';
 
-const PassionPage = () => (
+export const PassionPage = () => (
 	<div className="passion" id="container">
 		<h1>My Passions</h1>
 		<HokiSkateboards />
 	</div>
 );
-
-export default PassionPage;

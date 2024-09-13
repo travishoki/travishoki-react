@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import TechIcon from '~components/TechIcon/TechIcon';
+import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TechKeys } from '~const/Tech.const';
 import './TechListHorizontal.scss';
 
-const TechListHorizontal = ({ list }: TechListProps) => {
+export const TechListHorizontal = ({ list }: TechListProps) => {
 	return (
 		<ul className="tech-icon-list-horizontal">
 			{list.map((tech, index) => (
@@ -23,5 +23,3 @@ const TechListHorizontal = ({ list }: TechListProps) => {
 type TechListProps = {
 	list: (keyof TechKeys)[];
 };
-
-export default TechListHorizontal;

@@ -3,7 +3,7 @@ import { TechFilterType } from '~const/Tech.const';
 
 import './FilterForm.scss';
 
-const FilterForm = ({
+export const FilterForm = ({
 	filterTerm,
 	onChangeFilter,
 	onClearAndCloseFilter,
@@ -29,5 +29,3 @@ type FilterFormProps = {
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;
 	onClearAndCloseFilter: () => void;
 };
-
-export default FilterForm;

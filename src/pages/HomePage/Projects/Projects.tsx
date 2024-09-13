@@ -7,7 +7,7 @@ import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 const images = require.context('../../../images/websites', true);
 const currentProjects = orderTopThreeInPodium(PROJECTS_DATA.slice(0, 3));
 
-const Projects = () => (
+export const Projects = () => (
 	<section className="projects">
 		<h3>Recent Projects</h3>
 
@@ -37,5 +37,3 @@ const Projects = () => (
 		</div>
 	</section>
 );
-
-export default Projects;

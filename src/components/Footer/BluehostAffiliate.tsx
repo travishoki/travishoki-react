@@ -2,7 +2,7 @@ import React from 'react';
 
 import './BluehostAffiliate.scss';
 
-const BluehostAffiliate = () => (
+export const BluehostAffiliate = () => (
 	<div className="affiliates">
 		<a
 			href="https://www.bluehost.com/track/travishoki/"
@@ -13,5 +13,3 @@ const BluehostAffiliate = () => (
 		</a>
 	</div>
 );
-
-export default BluehostAffiliate;

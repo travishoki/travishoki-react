@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Pannel from '~components/Pannels/Pannel';
-import Pannels from '~components/Pannels/Pannels';
+import { Pannel } from '~components/Pannels/Pannel';
+import { Pannels } from '~components/Pannels/Pannels';
 import imgTimpanogos from '~images/education/timpanogos.png';
 import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
 import imgUvu from '~images/education/uvu.png';
@@ -9,7 +9,7 @@ import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 
 import './EducationPage.scss';
 
-const EducationPage = () => (
+export const EducationPage = () => (
 	<div className="education" id="container">
 		<h1>Education</h1>
 
@@ -58,5 +58,3 @@ const EducationPage = () => (
 		</section>
 	</div>
 );
-
-export default EducationPage;

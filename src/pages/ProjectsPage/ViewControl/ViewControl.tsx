@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ViewControl = ({
+export const ViewControl = ({
 	grid = false,
 	isVisible = false,
 	toggleView,
@@ -19,5 +19,3 @@ type ViewControlProps = {
 	isVisible: boolean;
 	toggleView: () => void;
 };
-
-export default ViewControl;

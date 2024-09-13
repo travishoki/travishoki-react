@@ -1,10 +1,10 @@
 import React from 'react';
 
-import FilterItem from './FilterItem';
+import { FilterItem } from './FilterItem';
 import { FILTER_LIST } from '../ProjectsPage.data';
 import { TechFilterType } from '~const/Tech.const';
 
-const FilterItems = ({
+export const FilterItems = ({
 	filter,
 	filterTerm,
 	onClearAndCloseFilter,
@@ -50,5 +50,3 @@ type FilterItemsProps = {
 	onClearAndCloseFilter: () => void;
 	onSelectFilter: (filter: TechFilterType) => void;
 };
-
-export default FilterItems;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-const TextArea = ({
+export const TextArea = ({
 	error,
 	label,
 	name,
@@ -38,5 +38,3 @@ type TextAreaProps = {
 	placeholder: string;
 	value: string;
 };
-
-export default TextArea;

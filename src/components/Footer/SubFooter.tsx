@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import BluehostAffiliate from './BluehostAffiliate';
-import SocialIcons from '../SocialIcons/SocialIcons';
+import { BluehostAffiliate } from './BluehostAffiliate';
+import { SocialIcons } from '../SocialIcons/SocialIcons';
 
 import './SubFooter.scss';
 
-const SubFooter = () => (
+export const SubFooter = () => (
 	<div id="subfooter">
 		<div className="contact-info">
 			<SocialIcons />
@@ -17,5 +17,3 @@ const SubFooter = () => (
 		<BluehostAffiliate />
 	</div>
 );
-
-export default SubFooter;

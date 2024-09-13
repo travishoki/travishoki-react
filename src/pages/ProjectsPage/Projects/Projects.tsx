@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { getResultsCountClass } from './Projects.helpers';
-import ProjectItemList from '../ProjectItemList/ProjectItemList';
-import ProjectItemGrid from '../ProjectItemGrid/ProjectItemGrid';
+import { ProjectItemList } from '../ProjectItemList/ProjectItemList';
+import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectType } from '../ProjectsPage.data';
 
-const Projects = ({ grid = false, projects = [] }: ProjectsProps) => {
+export const Projects = ({ grid = false, projects = [] }: ProjectsProps) => {
 	if (projects.length === 0) return null;
 
 	const resultsCountClass = getResultsCountClass(projects.length);
@@ -29,5 +29,3 @@ type ProjectsProps = {
 	grid: boolean;
 	projects: ProjectType[];
 };
-
-export default Projects;

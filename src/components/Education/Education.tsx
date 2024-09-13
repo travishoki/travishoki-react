@@ -4,7 +4,7 @@ import imgUvu from '~images/education/uvu.png';
 
 import './Education.scss';
 
-const Education = () => (
+export const Education = () => (
 	<section className="white center education-component">
 		<h3>Utah Valley University</h3>
 		<img className="center" src={imgUvu} />
@@ -14,5 +14,3 @@ const Education = () => (
 		<p>Internet Technology Emphasis</p>
 	</section>
 );
-
-export default Education;

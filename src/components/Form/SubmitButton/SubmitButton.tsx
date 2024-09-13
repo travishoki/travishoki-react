@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubmitButton = ({
+export const SubmitButton = ({
 	className,
 	disabled = false,
 	value = 'Send',
@@ -18,5 +18,3 @@ type SubmitButtonProps = {
 	disabled: boolean;
 	value: string;
 };
-
-export default SubmitButton;

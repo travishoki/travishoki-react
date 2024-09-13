@@ -16,7 +16,7 @@ const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 const DATING_YEAR = 2008;
 const YEARS_DATING = getYearsSince(DATING_YEAR);
 
-const AboutData: AboutType[] = [
+export const AboutPageData: AboutType[] = [
 	{
 		desc: [
 			`My name is Travis. I'm from Orem. I'm ${AGE} years old. I drive a grey Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
@@ -78,5 +78,3 @@ type AboutType = {
 	img: string;
 	title: string;
 };
-
-export default AboutData;

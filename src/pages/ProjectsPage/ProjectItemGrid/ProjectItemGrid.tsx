@@ -6,7 +6,7 @@ import { ProjectType } from '../ProjectsPage.data';
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
 
-const ProjectItemGrid = ({ company, itemKey }: ProjectItemGridProps) => (
+export const ProjectItemGrid = ({ company, itemKey }: ProjectItemGridProps) => (
 	<div className="grid-item">
 		<div className="popup">
 			<Link to={`/project/${itemKey}`}>
@@ -25,5 +25,3 @@ const ProjectItemGrid = ({ company, itemKey }: ProjectItemGridProps) => (
 );
 
 type ProjectItemGridProps = Pick<ProjectType, 'company' | 'itemKey'>;
-
-export default ProjectItemGrid;

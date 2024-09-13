@@ -6,18 +6,18 @@ import classnames from 'classnames';
 import { TechFilterType } from '~const/Tech.const';
 
 import { filterProjects, createProjectsPageUrl } from './ProjectsPage.helpers';
-import NoResults from './NoResults/NoResults';
-import Projects from './Projects/Projects';
-import SearchForm from './SearchForm/SearchForm';
-import ViewControl from './ViewControl/ViewControl';
+import { NoResults } from './NoResults/NoResults';
+import { Projects } from './Projects/Projects';
+import { SearchForm } from './SearchForm/SearchForm';
+import { ViewControl } from './ViewControl/ViewControl';
 import { PROJECTS_DATA } from './ProjectsPage.data';
-import Filter from './Filter/Filter';
+import { Filter } from './Filter/Filter';
 
 import './ProjectsPage.scss';
 
 const PROJECTS_PAGE_URL = '/projects';
 
-const ProjectsPage = () => {
+export const ProjectsPage = () => {
 	const { paramFilter, paramSearch } = useParams();
 	const navigate = useNavigate();
 
@@ -166,5 +166,3 @@ const ProjectsPage = () => {
 		</div>
 	);
 };
-
-export default ProjectsPage;
