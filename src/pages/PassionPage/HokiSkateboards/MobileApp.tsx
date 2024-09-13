@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { CSS, HTML, JAVSCRIPT, REACT_JS, TechKeys } from '~const/Tech.const';
 import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+import { CSS, HTML, JAVSCRIPT, REACT_JS, TechKeys } from '~const/Tech.const';
 
+import PassionLabel from './PassionLabel';
 import Title from './Title';
 import './MobileApp.scss';
 
@@ -18,11 +19,10 @@ const MobileApp = () => (
 			title="Hoki Skateboards App"
 			width="200"
 		/>
-		<p>
-			Description:
-			<br />
-			Kids skateboarding game
-		</p>
+		<PassionLabel>Description:</PassionLabel>
+		<p>Kids skateboarding game</p>
+
+		<PassionLabel>Technologies:</PassionLabel>
 		<div className="tech-container">
 			<TechListHorizontal list={techs} />
 		</div>

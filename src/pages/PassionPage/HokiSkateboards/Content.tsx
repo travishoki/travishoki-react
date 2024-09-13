@@ -3,6 +3,12 @@ import React from 'react';
 import SoftwareListHorizontal from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
 import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
 import {
+	ILLUSTRATOR,
+	INDESIGN,
+	PHOTOSHOP,
+	SoftwareKeys,
+} from '~const/Software.const';
+import {
 	CSS,
 	HTML,
 	JAVSCRIPT,
@@ -16,12 +22,8 @@ import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skat
 
 import Title from './Title';
 import './Content.scss';
-import {
-	ILLUSTRATOR,
-	INDESIGN,
-	PHOTOSHOP,
-	SoftwareKeys,
-} from '~const/Software.const';
+
+import PassionLabel from './PassionLabel';
 
 const websiteTechList: (keyof TechKeys)[] = [
 	CSS,
@@ -55,13 +57,12 @@ const Content = () => (
 					/>
 					<p className="button-link">Go to Site</p>
 				</a>
+				<PassionLabel>Description:</PassionLabel>
 				<p>
-					Description:
-					<br />
 					Hoki Skateboards is a small family-owned online skateboard company.
 				</p>
 
-				<p>Technology:</p>
+				<PassionLabel>Technology:</PassionLabel>
 				<TechListHorizontal list={websiteTechList} />
 				<p>
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
@@ -83,14 +84,10 @@ const Content = () => (
 					/>
 					<p className="button-link">View on Amazon</p>
 				</a>
+				<PassionLabel>Description:</PassionLabel>
+				<p>Illustrated kid&apos;s book about skateboarding.</p>
+				<PassionLabel>Contribution:</PassionLabel>
 				<p>
-					Description:
-					<br />
-					Illustrated kid&apos;s book about skateboarding.
-				</p>
-				<p>
-					Contribution:
-					<br />
 					Self authored, illustrated, and published. Successfully Kickstarter
 					backed.
 				</p>
