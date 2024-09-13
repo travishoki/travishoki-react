@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { AboutPageData, AboutType } from './AboutPage.data';
+import { AboutPageData } from './AboutPage.data';
 import { ImageModal } from '~components/ImageModal/ImageModal';
+import { useImageModal } from '~components/ImageModal/useImageModal';
 
 export const AboutPage = () => {
-	const [selectedImg, setSelectedImg] = useState<string | null>(null);
-
-	const onClickImage = (item: AboutType) => {
-		setSelectedImg(item.img);
-	};
-
-	const onCloseImage = () => {
-		setSelectedImg(null);
-	};
+	const { onClickImage, onCloseImage, selectedImg } = useImageModal();
 
 	return (
 		<>
-			{selectedImg && <ImageModal onClose={onCloseImage} src={selectedImg} />}
+			<ImageModal onClose={onCloseImage} src={selectedImg} />
 
 			<div className="about" id="container">
 				<div className="boxed boxed-md">
@@ -26,7 +19,7 @@ export const AboutPage = () => {
 						{AboutPageData.map((item, index) => (
 							<li key={index} className="staggered-item">
 								<div className="image">
-									<img onClick={() => onClickImage(item)} src={item.img} />
+									<img onClick={() => onClickImage(item.img)} src={item.img} />
 								</div>
 								<div className="text">
 									<h2>{item.title}</h2>
