@@ -3,11 +3,11 @@ import React from 'react';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { Pannel } from '~components/Pannels/Pannel';
 import { Pannels } from '~components/Pannels/Pannels';
-import imgTimpanogos from '~images/education/timpanogos.png';
-import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
-import imgUvu from '~images/education/uvu.png';
 import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
-
+import imgUvu from '~images/education/uvu.png';
+import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
+import imgTimpanogos from '~images/education/timpanogos.png';
+import imgDiploma from '~images/education/travis-hoki-diploma-small.jpg';
 import './EducationPage.scss';
 
 export const EducationPage = () => (
@@ -40,6 +40,10 @@ export const EducationPage = () => (
 				</Pannels>
 			</div>
 		</section>
+		<section className="gray">
+			<ImageMaximizable className="center picture" src={imgDiploma} />
+		</section>
+
 		<section className="white center education">
 			<div className="boxed">
 				<Pannels className="reverse">
