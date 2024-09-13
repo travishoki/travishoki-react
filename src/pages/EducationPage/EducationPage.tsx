@@ -10,7 +10,9 @@ import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 import './EducationPage.scss';
 
 const EducationPage = () => (
-	<>
+	<div className="education" id="container">
+		<h1>Education</h1>
+
 		<section className="white center education">
 			<div className="boxed">
 				<Pannels>
@@ -54,7 +56,7 @@ const EducationPage = () => (
 				</Pannels>
 			</div>
 		</section>
-	</>
+	</div>
 );
 
 export default EducationPage;

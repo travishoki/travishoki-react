@@ -3,7 +3,7 @@ import React from 'react';
 import Education from '~components/Education/Education';
 import ListSection from '~components/ListSection/ListSection';
 
-import Banner from './Banner';
+import DownloadButton from './DownloadButton';
 import Experience from './Experience';
 import { SKILLS_LIST } from './ResumePage.data';
 
@@ -11,7 +11,9 @@ import './ResumePage.scss';
 
 const ResumePage = () => (
 	<div className="resume" id="container">
-		<Banner />
+		<h1>Resume</h1>
+
+		<DownloadButton />
 
 		<section className="primary" />
 
