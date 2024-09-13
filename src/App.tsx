@@ -4,7 +4,7 @@ import { Header } from '~components/Header/Header';
 import { Footer } from '~components/Footer/Footer';
 import './styles/styles.scss';
 
-const App = ({ children }: AppProps) => (
+export const App = ({ children }: AppProps) => (
 	<>
 		<Header />
 		{children}
@@ -15,5 +15,3 @@ const App = ({ children }: AppProps) => (
 type AppProps = {
 	children: ReactNode;
 };
-
-export default App;
