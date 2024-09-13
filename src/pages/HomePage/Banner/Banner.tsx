@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import SocialIcons from '~components/SocialIcons/SocialIcons';
 import ImgProfilePic from '~images/global/travis-hoki.png';
 
+import './Banner.scss';
+
 const Banner = () => (
-	<div className="banner">
+	<div className="home-banner">
 		<div className="banner-cont">
 			<h1>Web Developer</h1>
 			<SocialIcons />

@@ -1,11 +1,9 @@
 import React from 'react';
 
-import ImgResume from '~images/global/resume.png';
-
 import './Banner.scss';
 
 const Banner = () => (
-	<div className="banner">
+	<div className="resume-banner">
 		<div className="banner-cont">
 			<h1>Resume</h1>
 
@@ -20,7 +18,6 @@ const Banner = () => (
 		</div>
 
 		<div className="banner-bg" />
-		<img className="banner-pic" src={ImgResume} />
 	</div>
 );
 
