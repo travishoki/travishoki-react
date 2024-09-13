@@ -1,5 +1,13 @@
-## FTP Deploy
+# Travis Hoki
 
-Create a file in the root called `ftpOptions.js` from `ftpOptions.sample.js`.
+Resume website
+[travishoki.com](https://travishoki.com/)
 
-To deploy to production run `yarn build:prod`
+## Setup
+
+nvm use
+yarn install
+
+## Development
+
+yarn start
