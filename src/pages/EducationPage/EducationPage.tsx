@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { Pannel } from '~components/Pannels/Pannel';
 import { Pannels } from '~components/Pannels/Pannels';
 import imgTimpanogos from '~images/education/timpanogos.png';
@@ -31,7 +32,10 @@ export const EducationPage = () => (
 						</div>
 					</Pannel>
 					<Pannel>
-						<img className="center picture" src={imgUvuGraduation} />{' '}
+						<ImageMaximizable
+							className="center picture"
+							src={imgUvuGraduation}
+						/>
 					</Pannel>
 				</Pannels>
 			</div>
@@ -51,7 +55,10 @@ export const EducationPage = () => (
 						</p>
 					</Pannel>
 					<Pannel>
-						<img className="center picture" src={imgTimpanogosGraduation} />
+						<ImageMaximizable
+							className="center picture"
+							src={imgTimpanogosGraduation}
+						/>
 					</Pannel>
 				</Pannels>
 			</div>
