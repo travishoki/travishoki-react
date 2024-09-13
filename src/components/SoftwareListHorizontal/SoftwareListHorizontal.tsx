@@ -1,0 +1,27 @@
+import React from 'react';
+
+import { Link } from 'react-router-dom';
+
+import SoftwareIcon from '~components/SoftwareListHorizontal/SoftwareIcon';
+import { SoftwareKeys } from '~const/Software.const';
+import './SoftwareListHorizontal.scss';
+
+const SoftwareListHorizontal = ({ list }: TechListProps) => {
+	return (
+		<ul className="software-list">
+			{list.map((tech, index) => (
+				<li key={index} className="tech-icon-item">
+					<Link title={tech} to={`/projects/${tech}`}>
+						<SoftwareIcon name={tech} />
+					</Link>
+				</li>
+			))}
+		</ul>
+	);
+};
+
+type TechListProps = {
+	list: (keyof SoftwareKeys)[];
+};
+
+export default SoftwareListHorizontal;

@@ -33,7 +33,7 @@ const ExperienceItem = ({
 
 			{details && <p className="details">{details}</p>}
 
-			<TechListHorizontal techs={techs} />
+			<TechListHorizontal list={techs} />
 		</div>
 	</li>
 );

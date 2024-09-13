@@ -70,7 +70,7 @@ const ProjectItemList = ({
 					<>
 						<p className="list-heading">Technologies:</p>
 						<div className="answer-section">
-							<TechList techs={techs} />
+							<TechList list={techs} />
 						</div>
 					</>
 				)}

@@ -24,7 +24,7 @@ const MobileApp = () => (
 			Kids skateboarding game
 		</p>
 		<div className="tech-container">
-			<TechListHorizontal techs={techs} />
+			<TechListHorizontal list={techs} />
 		</div>
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine

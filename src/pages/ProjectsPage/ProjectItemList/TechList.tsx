@@ -7,10 +7,10 @@ import { TechKeys } from '~const/Tech.const';
 
 import './TechList.scss';
 
-const TechList = ({ techs }: TechListProps) => {
+const TechList = ({ list }: TechListProps) => {
 	return (
 		<ul className="tech-icon-list">
-			{techs.map((tech, index) => (
+			{list.map((tech, index) => (
 				<li key={index} className="tech-icon-item">
 					<Link title={tech} to={`/projects/${tech}`}>
 						<TechIcon name={tech} />
@@ -23,7 +23,7 @@ const TechList = ({ techs }: TechListProps) => {
 };
 
 type TechListProps = {
-	techs: (keyof TechKeys)[];
+	list: (keyof TechKeys)[];
 };
 
 export default TechList;

@@ -6,10 +6,10 @@ import TechIcon from '~components/TechIcon/TechIcon';
 import { TechKeys } from '~const/Tech.const';
 import './TechListHorizontal.scss';
 
-const TechListHorizontal = ({ techs }: TechListProps) => {
+const TechListHorizontal = ({ list }: TechListProps) => {
 	return (
 		<ul className="tech-icon-list-horizontal">
-			{techs.map((tech, index) => (
+			{list.map((tech, index) => (
 				<li key={index} className="tech-icon-item">
 					<Link title={tech} to={`/projects/${tech}`}>
 						<TechIcon name={tech} />
@@ -21,7 +21,7 @@ const TechListHorizontal = ({ techs }: TechListProps) => {
 };
 
 type TechListProps = {
-	techs: (keyof TechKeys)[];
+	list: (keyof TechKeys)[];
 };
 
 export default TechListHorizontal;

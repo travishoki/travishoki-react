@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SoftwareListHorizontal from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
 import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
 import {
 	CSS,
@@ -15,14 +16,25 @@ import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skat
 
 import Title from './Title';
 import './Content.scss';
+import {
+	ILLUSTRATOR,
+	INDESIGN,
+	PHOTOSHOP,
+	SoftwareKeys,
+} from '~const/Software.const';
 
-const websiteTechs: (keyof TechKeys)[] = [
+const websiteTechList: (keyof TechKeys)[] = [
 	CSS,
 	HTML,
 	JAVSCRIPT,
 	PHP,
 	REACT_JS,
 	WORDPRESS,
+];
+const appSoftwareList: (keyof SoftwareKeys)[] = [
+	ILLUSTRATOR,
+	INDESIGN,
+	PHOTOSHOP,
 ];
 
 const Content = () => (
@@ -38,7 +50,7 @@ const Content = () => (
 					<Title title="Retail Website" />
 					<img
 						alt="Hoki Skateboards"
-						className="center"
+						className="center product-image"
 						src={ImgHokiSkateboardsLogo}
 					/>
 					<p className="button-link">Go to Site</p>
@@ -50,7 +62,7 @@ const Content = () => (
 				</p>
 
 				<p>Technology:</p>
-				<TechListHorizontal techs={websiteTechs} />
+				<TechListHorizontal list={websiteTechList} />
 				<p>
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
 					PHP and React.
@@ -66,6 +78,7 @@ const Content = () => (
 					<Title title="Children's Book" />
 					<img
 						alt="You Should Always Skateboard"
+						className="center product-image"
 						src={ImgYouShouldAlwaysSkateboard}
 					/>
 					<p className="button-link">View on Amazon</p>
@@ -81,6 +94,8 @@ const Content = () => (
 					Self authored, illustrated, and published. Successfully Kickstarter
 					backed.
 				</p>
+				<p>Software:</p>
+				<SoftwareListHorizontal list={appSoftwareList} />
 			</div>
 		</div>
 	</div>
