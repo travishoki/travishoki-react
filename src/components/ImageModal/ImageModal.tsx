@@ -3,8 +3,6 @@ import React from 'react';
 import './ImageModal.scss';
 
 export const ImageModal = ({ onClose, src }: ImageModalProps) => {
-	if (!src) return null;
-
 	return (
 		<div className="image-modal">
 			<div className="image-modal-inner">
@@ -17,5 +15,5 @@ export const ImageModal = ({ onClose, src }: ImageModalProps) => {
 
 type ImageModalProps = {
 	onClose: () => void;
-	src: string | null;
+	src: string;
 };
