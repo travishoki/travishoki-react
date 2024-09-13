@@ -12,7 +12,7 @@ import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { ResumePage } from './pages/ResumePage/ResumePage';
 import { SingleProjectPage } from './pages/SingleProjectPage/SingleProjectPage';
 
-export const AppRoutes = (
+export const AppRoutes = () => (
 	<Router>
 		<App>
 			<Routes>
