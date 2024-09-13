@@ -6,12 +6,18 @@ import { useImageModal } from '~components/ImageModal/useImageModal';
 
 import './ImageMaximizable.scss';
 
-export const ImageMaximizable = ({ className, src }: ImageMaximizableProps) => {
+export const ImageMaximizable = ({
+	className,
+	src,
+	srcLarge,
+}: ImageMaximizableProps) => {
 	const { onClickImage, onCloseImage, selectedImg } = useImageModal();
 
 	return (
 		<>
-			{selectedImg && <ImageModal onClose={onCloseImage} src={selectedImg} />}
+			{selectedImg && (
+				<ImageModal onClose={onCloseImage} src={srcLarge ?? selectedImg} />
+			)}
 			<img
 				className={classNames('image-maximizable', className)}
 				onClick={() => onClickImage(src)}
@@ -24,4 +30,5 @@ export const ImageMaximizable = ({ className, src }: ImageMaximizableProps) => {
 type ImageMaximizableProps = {
 	className?: string;
 	src: string;
+	srcLarge?: string;
 };

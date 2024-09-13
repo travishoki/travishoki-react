@@ -7,7 +7,8 @@ import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 import imgUvu from '~images/education/uvu.png';
 import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
 import imgTimpanogos from '~images/education/timpanogos.png';
-import imgDiploma from '~images/education/travis-hoki-diploma-small.jpg';
+import imgDiplomaSmall from '~images/education/travis-hoki-diploma-small.jpg';
+import imgDiploma from '~images/education/travis-hoki-diploma.jpg';
 import './EducationPage.scss';
 
 export const EducationPage = () => (
@@ -41,7 +42,11 @@ export const EducationPage = () => (
 			</div>
 		</section>
 		<section className="gray">
-			<ImageMaximizable className="center picture" src={imgDiploma} />
+			<ImageMaximizable
+				className="center picture"
+				src={imgDiplomaSmall}
+				srcLarge={imgDiploma}
+			/>
 		</section>
 
 		<section className="white center education">
