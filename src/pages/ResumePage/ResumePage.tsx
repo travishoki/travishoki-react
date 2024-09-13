@@ -15,10 +15,6 @@ const ResumePage = () => (
 
 		<DownloadButton />
 
-		<section className="primary" />
-
-		<section className="white" />
-
 		<Experience />
 
 		<ListSection list={SKILLS_LIST} title="Skills" />
