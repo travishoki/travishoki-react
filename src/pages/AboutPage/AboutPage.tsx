@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { AboutPageData, AboutType } from './AboutPage.data';
-import { SelectedImage } from './SelectedImage';
+import { ImageModal } from '~components/ImageModal/ImageModal';
 
 export const AboutPage = () => {
 	const [selectedImg, setSelectedImg] = useState<string | null>(null);
@@ -16,9 +16,7 @@ export const AboutPage = () => {
 
 	return (
 		<>
-			{selectedImg && (
-				<SelectedImage onClose={onCloseImage} src={selectedImg} />
-			)}
+			{selectedImg && <ImageModal onClose={onCloseImage} src={selectedImg} />}
 
 			<div className="about" id="container">
 				<div className="boxed boxed-md">

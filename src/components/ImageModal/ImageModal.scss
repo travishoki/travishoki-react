@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/responsive.scss';
 
-.selected-image {
+.image-modal {
 	background: rgba(0, 0, 0, 0.9);
 	display: block;
 	z-index: 100;
@@ -33,7 +33,7 @@
 		}
 	}
 
-	.selected-image-inner {
+	.image-modal-inner {
 		position: relative;
 
 		@include tablet-up {
