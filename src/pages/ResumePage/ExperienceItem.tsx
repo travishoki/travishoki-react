@@ -1,8 +1,9 @@
 import React from 'react';
 
-import TechList from './TechList';
-import { ResumeDataType } from './ResumePage.data';
 import BulletedList from '~components/bulletedList/BulletedList';
+import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+
+import { ResumeDataType } from './ResumePage.data';
 
 const ExperienceItem = ({
 	dateEnd,
@@ -32,7 +33,7 @@ const ExperienceItem = ({
 
 			{details && <p className="details">{details}</p>}
 
-			<TechList techs={techs} />
+			<TechListHorizontal techs={techs} />
 		</div>
 	</li>
 );

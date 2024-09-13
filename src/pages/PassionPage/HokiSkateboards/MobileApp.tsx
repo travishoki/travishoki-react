@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { CSS, HTML, JAVSCRIPT, REACT_JS, TechKeys } from '~const/Tech.const';
+import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
+
 import Title from './Title';
-import TechList from 'src/pages/ResumePage/TechList';
 import './MobileApp.scss';
 
 const techs: (keyof TechKeys)[] = [CSS, HTML, JAVSCRIPT, REACT_JS];
@@ -22,7 +24,7 @@ const MobileApp = () => (
 			Kids skateboarding game
 		</p>
 		<div className="tech-container">
-			<TechList techs={techs} />
+			<TechListHorizontal techs={techs} />
 		</div>
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine

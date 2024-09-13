@@ -1,7 +1,6 @@
 import React from 'react';
 
-import ImgHokiSkateboardsLogo from '~images/passion/hoki-skateboards.jpg';
-import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
+import TechListHorizontal from '~components/TechListHorizontal/TechListHorizontal';
 import {
 	CSS,
 	HTML,
@@ -11,10 +10,11 @@ import {
 	TechKeys,
 	WORDPRESS,
 } from '~const/Tech.const';
+import ImgHokiSkateboardsLogo from '~images/passion/hoki-skateboards.jpg';
+import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
 import Title from './Title';
 import './Content.scss';
-import TechList from 'src/pages/ResumePage/TechList';
 
 const websiteTechs: (keyof TechKeys)[] = [
 	CSS,
@@ -50,7 +50,7 @@ const Content = () => (
 				</p>
 
 				<p>Technology:</p>
-				<TechList techs={websiteTechs} />
+				<TechListHorizontal techs={websiteTechs} />
 				<p>
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
 					PHP and React.
