@@ -17,7 +17,7 @@ import {
 	TechKeys,
 	WORDPRESS,
 } from '~const/Tech.const';
-import ImgHokiSkateboardsLogo from '~images/passion/hoki-skateboards.jpg';
+import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
 import { Title } from './Title';
@@ -53,7 +53,7 @@ export const Content = () => (
 					<img
 						alt="Hoki Skateboards"
 						className="center product-image"
-						src={ImgHokiSkateboardsLogo}
+						src={ImgHokiSkateboardsWebsite}
 					/>
 					<p className="button-link">Go to Site</p>
 				</a>
@@ -84,15 +84,18 @@ export const Content = () => (
 					/>
 					<p className="button-link">View on Amazon</p>
 				</a>
+
 				<PassionLabel>Description:</PassionLabel>
 				<p>Illustrated kid&apos;s book about skateboarding.</p>
+
+				<PassionLabel>Software:</PassionLabel>
+				<SoftwareListHorizontal list={appSoftwareList} />
+
 				<PassionLabel>Contribution:</PassionLabel>
 				<p>
 					Self authored, illustrated, and published. Successfully Kickstarter
 					backed.
 				</p>
-				<p>Software:</p>
-				<SoftwareListHorizontal list={appSoftwareList} />
 			</div>
 		</div>
 	</div>

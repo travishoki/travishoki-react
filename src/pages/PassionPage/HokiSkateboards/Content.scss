@@ -3,10 +3,6 @@
 .hoki-skateboards-inner-content {
 	margin-bottom: 20px;
 
-	p {
-		margin-bottom: 20px;
-	}
-
 	p.button-link {
 		background-color: $blue-three;
 		border-radius: 8px;
@@ -14,6 +10,9 @@
 		padding: 5px;
 		text-align: center;
 		text-transform: uppercase;
+		max-width: 200px;
+		display: block;
+		margin: 0 auto 20px;
 	}
 
 	a {

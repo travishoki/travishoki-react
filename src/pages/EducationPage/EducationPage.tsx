@@ -34,6 +34,7 @@ export const EducationPage = () => (
 					</Pannel>
 					<Pannel>
 						<ImageMaximizable
+							alt="University Graduation"
 							className="center picture"
 							src={imgUvuGraduation}
 						/>
@@ -63,6 +64,7 @@ export const EducationPage = () => (
 					</Pannel>
 					<Pannel>
 						<ImageMaximizable
+							alt="High School Graduation"
 							className="center picture"
 							src={imgTimpanogosGraduation}
 						/>

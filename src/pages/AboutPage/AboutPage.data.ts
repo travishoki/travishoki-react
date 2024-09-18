@@ -18,6 +18,7 @@ const YEARS_DATING = getYearsSince(DATING_YEAR);
 
 export const AboutPageData: AboutType[] = [
 	{
+		alt: 'Travis Hoki',
 		desc: [
 			`My name is Travis Hoki. I'm from Orem. I'm ${AGE} years old. I drive a grey Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		],
@@ -74,6 +75,7 @@ export const AboutPageData: AboutType[] = [
 ];
 
 export type AboutType = {
+	alt?: string;
 	desc: string[];
 	img: string;
 	title: string;

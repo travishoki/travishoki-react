@@ -13,7 +13,7 @@ export const AboutPage = () => {
 					{AboutPageData.map((item, index) => (
 						<li key={index} className="staggered-item">
 							<div className="image">
-								<ImageMaximizable src={item.img} />
+								<ImageMaximizable alt={item.alt ?? item.title} src={item.img} />
 							</div>
 							<div className="text">
 								<h2>{item.title}</h2>
