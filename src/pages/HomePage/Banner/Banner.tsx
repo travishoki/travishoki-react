@@ -10,7 +10,8 @@ export const Banner = () => (
 	<div className="boxed home-banner">
 		<img className="banner-pic" src={ImgProfilePic} />
 		<div>
-			<h1>Web Developer</h1>
+			<p className="banner-name">Travis Hoki</p>
+			<p className="job-title">Web Developer</p>
 			<SocialIcons />
 			<Link className="btn btn-primary btn-lg" to="/contact">
 				Contact Me

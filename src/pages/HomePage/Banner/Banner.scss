@@ -33,17 +33,17 @@
 		}
 	}
 
-	h1 {
+	p.job-title {
+		font-size: 30px;
+		font-weight: bold;
 		margin: 0;
+		margin-bottom: 10px;
+	}
 
-		@include phone-down {
-			font-size: 20px;
-		}
-
-		@include tablet-up {
-			font-size: 30px;
-			margin-bottom: 10px;
-		}
+	p.banner-name {
+		font-size: 20px;
+		margin: 0;
+		text-align: center;
 	}
 
 	.btn {
