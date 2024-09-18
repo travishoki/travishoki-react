@@ -12,9 +12,12 @@ export const AboutPage = () => {
 				<ul className="staggered">
 					{AboutPageData.map((item, index) => (
 						<li key={index} className="staggered-item">
-							<div className="image">
-								<ImageMaximizable alt={item.alt ?? item.title} src={item.img} />
-							</div>
+							<ImageMaximizable
+								alt={item.alt ?? item.title}
+								className="round image"
+								src={item.img}
+								srcLarge={item.imgLarge ?? item.img}
+							/>
 							<div className="text">
 								<h2>{item.title}</h2>
 								{item.desc.map((desc, index) => (

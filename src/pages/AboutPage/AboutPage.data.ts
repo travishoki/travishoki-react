@@ -1,11 +1,13 @@
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
 import ImgEagleScout from '~images/about/eagle-scout.jpg';
+import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
 import ImgFamily from '~images/about/family.png';
 import ImgWedding from '~images/about/wedding.png';
 import ImgGuitar from '~images/about/guitar.png';
 import ImgSkateboard from '~images/about/skateboarding.png';
 import ImgBallroom from '~images/about/ballroom.png';
-import ImgBreakdance from '~images/about/breakdance.png';
+import ImgBreakdance from '~images/about/green-man-group.jpg';
+import ImgBreakdanceSmall from '~images/about/green-man-group-small.png';
 import { getYearsSince } from './AboutPage.helpers';
 
 const BIRTH_YEAR = 1990;
@@ -62,7 +64,8 @@ export const AboutPageData: AboutType[] = [
 			'I started breakdancing in Jr High. I got really involved in the HipHop culture and scene. I went to as many breakdance clubs as I could and competed in breakdance battles.',
 			"In college, I joined the Green Man Group. They are UVU's Drum Line. We performed at UVU basketball games, a variety of UVU events, Grizzly Hockey games, the Olympic Oval, the Hope of America, and Jazz Basketball games.",
 		],
-		img: ImgBreakdance,
+		img: ImgBreakdanceSmall,
+		imgLarge: ImgBreakdance,
 		title: 'Breakdance',
 	},
 	{
@@ -77,7 +80,8 @@ export const AboutPageData: AboutType[] = [
 		desc: [
 			'I loved the scouting program and so many of the lessons it taught me.',
 		],
-		img: ImgEagleScout,
+		img: ImgEagleScoutSmall,
+		imgLarge: ImgEagleScout,
 		title: 'Eagle Scout',
 	},
 ];
@@ -86,5 +90,6 @@ export type AboutType = {
 	alt?: string;
 	desc: string[];
 	img: string;
+	imgLarge?: string;
 	title: string;
 };
