@@ -12,7 +12,7 @@ import './HokiSkateboards.scss';
 
 export const HokiSkateboards = () => (
 	<section className="hoki-skateboards">
-		<div className="hoki-skateboards-inner">
+		<div className="boxed">
 			<Logo />
 			<ImageMaximizable
 				alt="Hoki Skateboards"
