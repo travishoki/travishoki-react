@@ -9,11 +9,16 @@ ul.staggered {
 		display: flex;
 
 		@include phone-down {
-			border-bottom: solid 1px $gray-one;
 			display: block;
 			justify-content: center;
 			margin: 0 auto 40px;
 			max-width: 400px;
+		}
+
+		&:not(:last-child) {
+			@include phone-down {
+				border-bottom: solid 1px $gray-one;
+			}
 		}
 
 		.image {
@@ -22,9 +27,9 @@ ul.staggered {
 			margin: 0 auto;
 
 			@include phone-down {
-				height: 300px;
-				width: 300px;
+				height: 250px;
 				margin-bottom: 20px;
+				width: 250px;
 			}
 
 			@include tablet-up {

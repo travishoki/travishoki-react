@@ -16,9 +16,7 @@ export const ExperienceItem = ({
 	title,
 }: ExperienceItemPropTypes) => (
 	<li className="staggered-item">
-		<div className="image round">
-			<img src={img} />
-		</div>
+		<img className="image round" src={img} />
 
 		<div className="text">
 			<h3>{title}</h3>
