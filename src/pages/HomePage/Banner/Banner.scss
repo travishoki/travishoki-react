@@ -3,83 +3,65 @@
 @import '../../../styles/variables.scss';
 
 .home-banner {
-	overflow: hidden;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	position: relative;
 
-	.banner-cont {
-		left: 0;
-		position: absolute;
-		right: 0;
-		z-index: 1;
-
-		@include phone-down {
-			top: 20px;
-		}
-
-		@include tablet-up {
-			top: 90px;
-		}
-
-		h1 {
-			margin: 0;
-
-			@include phone-down {
-				font-size: 20px;
-			}
-
-			@include tablet-up {
-				font-size: 30px;
-				margin-bottom: 10px;
-			}
-		}
-
-		.btn {
-			display: block;
-			margin: 0 auto;
-
-			@include phone-down {
-				margin-top: 10px;
-				width: 120px;
-			}
-
-			@include tablet-up {
-				width: 200px;
-				margin-top: 20px;
-			}
-		}
-
-		.social-icons {
-			margin: 20px auto;
-		}
+	@include phone-down {
+		flex-direction: column;
+		padding: 40px 0;
 	}
 
-	.banner-bg {
-		background: $gray-three;
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 0;
-
-		@include phone-down {
-			@include opacity(0.5);
-		}
-
-		@include tablet-up {
-			@include opacity(0.25);
-		}
+	@include tablet-up {
+		flex-direction: row;
+		height: 350px;
 	}
 
 	img.banner-pic {
-		float: right;
+		border-radius: 80%;
+		height: 100%;
 
 		@include phone-down {
-			height: 175px;
+			height: 250px;
+			margin-bottom: 20px;
 		}
 
 		@include tablet-up {
-			height: 350px;
+			height: 300px;
+			margin-right: 20px;
 		}
+	}
+
+	h1 {
+		margin: 0;
+
+		@include phone-down {
+			font-size: 20px;
+		}
+
+		@include tablet-up {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.btn {
+		display: block;
+		margin: 0 auto;
+
+		@include phone-down {
+			margin-top: 10px;
+			width: 150px;
+		}
+
+		@include tablet-up {
+			width: 200px;
+			margin-top: 20px;
+		}
+	}
+
+	.social-icons {
+		margin: 0 auto 20px;
 	}
 }
