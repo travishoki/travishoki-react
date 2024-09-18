@@ -1,4 +1,5 @@
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
+import ImgEagleScout from '~images/about/eagle-scout.jpg';
 import ImgFamily from '~images/about/family.png';
 import ImgWedding from '~images/about/wedding.png';
 import ImgGuitar from '~images/about/guitar.png';
@@ -71,6 +72,13 @@ export const AboutPageData: AboutType[] = [
 		],
 		img: ImgBallroom,
 		title: 'Ballroom',
+	},
+	{
+		desc: [
+			'I loved the scouting program and so many of the lessons it taught me.',
+		],
+		img: ImgEagleScout,
+		title: 'Eagle Scout',
 	},
 ];
 
