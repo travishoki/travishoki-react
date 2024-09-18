@@ -1,15 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .app-section {
-	p {
-		max-width: 300px;
-		margin: 0 auto 20px;
-	}
-
-	.tech-container {
-		display: flex;
-		justify-content: center;
-	}
+	max-width: 300px;
+	margin: 0 auto 20px;
 
 	.app-icon {
 		display: block;

@@ -23,9 +23,8 @@ export const MobileApp = () => (
 		<p>Kids skateboarding game</p>
 
 		<PassionLabel>Technologies:</PassionLabel>
-		<div className="tech-container">
-			<TechListHorizontal list={techs} />
-		</div>
+		<TechListHorizontal list={techs} />
+
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine
 			and MatterJs
