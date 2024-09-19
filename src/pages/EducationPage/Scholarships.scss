@@ -1,0 +1,20 @@
+.scholarships {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+
+	img {
+		width: 50px;
+		margin-right: 10px;
+	}
+
+	a {
+		color: black;
+	}
+
+	p.scholarship-description {
+		font-size: 16px;
+		text-align: left;
+	}
+}
