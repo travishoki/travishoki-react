@@ -3,9 +3,11 @@
 @import '../../styles/variables.scss';
 
 section.education {
-	img {
+	img.picture {
+		margin-bottom: 5px;
+
 		@include phone-down {
-			margin: 20px auto;
+			margin: 0px auto 10px;
 		}
 	}
 
@@ -15,6 +17,11 @@ section.education {
 
 		&.degree {
 			font-weight: bold;
+		}
+
+		&.image-caption {
+			font-size: 14px;
+			color: $gray-three;
 		}
 	}
 }

@@ -30,6 +30,7 @@ export const Uvu = () => (
 						className="center picture"
 						src={imgUvuGraduation}
 					/>
+					<p className="image-caption">(College graduation with my wife.)</p>
 				</Pannel>
 			</Pannels>
 		</div>

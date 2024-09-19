@@ -9,6 +9,12 @@
 
 	flex-direction: row-reverse;
 
+	.pannel:first-child {
+		@include phone-down {
+			margin-bottom: 20px;
+		}
+	}
+
 	&.reverse {
 		@include tablet-up {
 			flex-direction: row;

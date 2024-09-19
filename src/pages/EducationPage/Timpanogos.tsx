@@ -32,6 +32,9 @@ export const Timpanogos = () => (
 						className="center picture"
 						src={imgTimpanogosGraduation}
 					/>
+					<p className="image-caption">
+						(High School Graduation with girlfriend at the time, eventual wife.)
+					</p>
 				</Pannel>
 			</Pannels>
 		</div>
