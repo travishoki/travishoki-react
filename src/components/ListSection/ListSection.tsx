@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import { splitListInHalf } from './ListSection.utils';
 
 import './ListSection.scss';
 
 export const ListSection = ({ list, title }: ListSectionProps) => {
-	const [LIST_A, LIST_B] = splitListInHalf(list);
+	const [LIST_A, LIST_B] = useMemo(() => splitListInHalf(list), [list]);
 
 	return (
 		<section className="primary list-section">
