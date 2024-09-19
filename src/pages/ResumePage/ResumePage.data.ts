@@ -1,5 +1,6 @@
 import {
 	ACTION_SCRIPT,
+	AMP,
 	ANGULAR_JS,
 	COFFEE_SCRIPT,
 	CSS,
@@ -97,7 +98,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage pixels for retargeting and third party integrations',
 			'Pioneer affiliate links program',
 		],
-		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVSCRIPT, CSS, HTML, AMP],
 		title: 'Overstock',
 	},
 	{
