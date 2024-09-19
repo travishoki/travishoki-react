@@ -1,11 +1,9 @@
 import React from 'react';
 
 import { Education } from '~components/Education/Education';
-import { ListSection } from '~components/ListSection/ListSection';
 
 import { DownloadSection } from './DownloadSection';
 import { Experience } from './Experience';
-import { SKILLS_LIST } from './ResumePage.data';
 import './ResumePage.scss';
 
 export const ResumePage = () => (
@@ -15,8 +13,6 @@ export const ResumePage = () => (
 		<DownloadSection />
 
 		<Experience />
-
-		<ListSection list={SKILLS_LIST} title="Skills" />
 
 		<Education />
 	</div>

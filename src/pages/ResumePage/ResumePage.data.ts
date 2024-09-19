@@ -27,18 +27,6 @@ import ImgSpiff from '~images/experience/spiff.png';
 import ImgWendys from '~images/experience/wendys.png';
 import ImgXant from '~images/experience/xant.png';
 
-export const SKILLS_LIST = [
-	'JavaScript',
-	'React JS',
-	'Redux',
-	'Reselect',
-	'Node JS',
-	'HTML',
-	'CSS',
-	'SASS',
-	'LESS',
-];
-
 export const RESUME_DATA: ResumeDataType[] = [
 	{
 		dateEnd: 'Present',
