@@ -1,4 +1,5 @@
 import {
+	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
 	COFFEE_SCRIPT,
@@ -18,11 +19,13 @@ import {
 	SCSS,
 	SQL,
 	TechKeys,
+	TYPESCRIPT,
 	WEBPACK,
 	WORDPRESS,
 } from '../../const/Tech.const';
 
 export const FILTER_LIST: (keyof TechKeys)[] = [
+	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
 	COFFEE_SCRIPT,
@@ -41,6 +44,7 @@ export const FILTER_LIST: (keyof TechKeys)[] = [
 	REDUX,
 	SCSS,
 	SQL,
+	TYPESCRIPT,
 	WEBPACK,
 	WORDPRESS,
 ];
