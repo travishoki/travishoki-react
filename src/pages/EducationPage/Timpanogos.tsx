@@ -18,13 +18,13 @@ export const Timpanogos = () => (
 					<img className="center school" src={imgTimpanogos} />
 					<p>High School Diploma</p>
 					<p>Aug 2009 - Apr 2006</p>
+					<Scholarships />
 					<p className="label">Activities and Societies:</p>
 					<p className="activities">
 						Timpanogos Ballroom Team, UVU Breakdance Club, BYU Breakdance Club,
 						Timpanogos Hip-hop Club, Orem High Breakdance Club, Provo High
 						Breakdance Club
 					</p>
-					<Scholarships />
 				</Pannel>
 				<Pannel>
 					<ImageMaximizable
