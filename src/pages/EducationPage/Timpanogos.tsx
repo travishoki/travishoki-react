@@ -33,7 +33,7 @@ export const Timpanogos = () => (
 						src={imgTimpanogosGraduation}
 					/>
 					<p className="image-caption">
-						(High School Graduation with girlfriend at the time, eventual wife.)
+						(High School graduation with girlfriend at the time, eventual wife.)
 					</p>
 				</Pannel>
 			</Pannels>
