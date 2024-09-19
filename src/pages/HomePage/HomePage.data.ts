@@ -21,15 +21,6 @@ import {
 	WORDPRESS,
 } from '~const/Tech.const';
 
-export const SKILLS_LIST = [
-	'React JS and Redux',
-	'Preprocessed CSS (Less and SCSS)',
-	'Responsive CSS with Media Queries',
-	'Node JS Server-side rendering for SEO and optimization',
-	'Small and large business experience',
-	'SQL and restful API integration',
-];
-
 // Ordered for display by what I want to advertise first
 export const DISPLAYED_LIST: (keyof TechKeys)[] = [
 	REACT_JS,
