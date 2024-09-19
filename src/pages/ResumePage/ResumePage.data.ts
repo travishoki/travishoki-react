@@ -1,12 +1,19 @@
 import {
+	ACTION_SCRIPT,
 	ANGULAR_JS,
+	COFFEE_SCRIPT,
 	CSS,
+	HANDLEBARS_JS,
 	HTML,
 	JAVSCRIPT,
+	JQUERY,
+	PHP,
 	PYTHON,
 	REACT_JS,
 	REDUX,
+	SQL,
 	TechKeys,
+	TYPESCRIPT,
 } from '~const/Tech.const';
 import ImgAcademyOfBallet from '~images/experience/academy-of-ballet.png';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
@@ -38,7 +45,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSalesforce,
 		position: 'Sr. Member of the Technical Staff',
 		tasks: [],
-		techs: [REACT_JS, JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Salesforce',
 	},
 	{
@@ -48,7 +55,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
 		tasks: ['Help to build out the infrastructure for string translations'],
-		techs: [REACT_JS, JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Spiff',
 	},
 	{
@@ -62,7 +69,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Upgrading Front End technology and code syntax',
 			'Fixing bugs and reinforcing existing software',
 		],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Xant/Inside Sales',
 	},
 	{
@@ -75,7 +82,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Actively convert Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Chatbooks',
 	},
 	{
@@ -90,7 +97,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage pixels for retargeting and third party integrations',
 			'Pioneer affiliate links program',
 		],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVSCRIPT, CSS, HTML],
 		title: 'Overstock',
 	},
 	{
@@ -104,7 +111,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
 			'Finding ways to speedup and enhance the user experience of the software',
 		],
-		techs: [ANGULAR_JS, PYTHON, JAVSCRIPT, CSS, HTML],
+		techs: [ANGULAR_JS, PYTHON, JAVSCRIPT, COFFEE_SCRIPT, CSS, HTML],
 		title: 'Room Choice',
 	},
 	{
@@ -118,7 +125,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Front-end development and WordPress maintenance',
 			'Custom banner and eLearning course development in Adobe Flash AS3',
 		],
-		techs: [JAVSCRIPT, CSS, HTML],
+		techs: [JAVSCRIPT, CSS, HTML, ACTION_SCRIPT, JQUERY, PHP, SQL],
 		title: 'Enspark',
 	},
 	{

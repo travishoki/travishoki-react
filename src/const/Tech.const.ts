@@ -1,3 +1,4 @@
+import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
 import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
 import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
@@ -16,9 +17,11 @@ import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
 import ImgRedux from '~images/icons/tech-icons/redux.jpg';
 import ImgScss from '~images/icons/tech-icons/sass.jpg';
 import ImgSql from '~images/icons/tech-icons/sql.jpg';
+import ImgTypescript from '~images/icons/tech-icons/typescript.jpg';
 import ImgWebpack from '~images/icons/tech-icons/webpack.jpg';
 import ImgWordpress from '~images/icons/tech-icons/wordpress.jpg';
 
+export const ACTION_SCRIPT = 'ACTION_SCRIPT';
 export const AMP = 'AMP';
 export const ANGULAR_JS = 'ANGULAR_JS';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
@@ -37,10 +40,12 @@ export const REACT_JS = 'REACT_JS';
 export const REDUX = 'REDUX';
 export const SCSS = 'SCSS';
 export const SQL = 'SQL';
+export const TYPESCRIPT = 'TYPESCRIPT';
 export const WEBPACK = 'WEBPACK';
 export const WORDPRESS = 'WORDPRESS';
 
 export type TechKeys = {
+	ACTION_SCRIPT: 'ACTION_SCRIPT';
 	AMP: 'AMP';
 	ANGULAR_JS: 'ANGULAR_JS';
 	COFFEE_SCRIPT: 'COFFEE_SCRIPT';
@@ -59,6 +64,7 @@ export type TechKeys = {
 	REDUX: 'REDUX';
 	SCSS: 'SCSS';
 	SQL: 'SQL';
+	TYPESCRIPT: 'TYPESCRIPT';
 	WEBPACK: 'WEBPACK';
 	WORDPRESS: 'WORDPRESS';
 };
@@ -66,6 +72,7 @@ export type TechKeys = {
 export type TechFilterType = keyof TechKeys | null | 'all' | 'null';
 
 export const TECH_IMAGES = {
+	ACTION_SCRIPT: ImgActionScript,
 	AMP: ImgAmp,
 	ANGULAR_JS: ImgAngularJs,
 	COFFEE_SCRIPT: ImgCoffeeScript,
@@ -84,6 +91,7 @@ export const TECH_IMAGES = {
 	REDUX: ImgRedux,
 	SCSS: ImgScss,
 	SQL: ImgSql,
+	TYPESCRIPT: ImgTypescript,
 	WEBPACK: ImgWebpack,
 	WORDPRESS: ImgWordpress,
 };
