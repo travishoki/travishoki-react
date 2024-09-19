@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
 
-import { FILTER_LIST } from '../../ProjectsPage/ProjectsPage.data';
+import { DISPLAYED_LIST } from '../HomePage.data';
 import './TechTiles.scss';
 
 export const TechTiles = () => (
 	<section className="white tech-tiles">
 		<ul>
-			{FILTER_LIST.map((tech, index) => (
+			{DISPLAYED_LIST.map((tech, index) => (
 				<li key={index}>
 					<Link title={tech} to={`/projects/${tech}`}>
 						<TechIcon name={tech} />

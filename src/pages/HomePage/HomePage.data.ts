@@ -1,3 +1,26 @@
+import {
+	ACTION_SCRIPT,
+	CSS,
+	DJANGO,
+	GRUNT,
+	HANDLEBARS_JS,
+	HTML,
+	JAVSCRIPT,
+	JQUERY,
+	LESS_CSS,
+	NODE_JS,
+	PHP,
+	PYTHON,
+	REACT_JS,
+	REDUX,
+	SCSS,
+	SQL,
+	TechKeys,
+	TYPESCRIPT,
+	WEBPACK,
+	WORDPRESS,
+} from '~const/Tech.const';
+
 export const SKILLS_LIST = [
 	'React JS and Redux',
 	'Preprocessed CSS (Less and SCSS)',
@@ -5,4 +28,28 @@ export const SKILLS_LIST = [
 	'Node JS Server-side rendering for SEO and optimization',
 	'Small and large business experience',
 	'SQL and restful API integration',
+];
+
+// Ordered for display by what I want to advertise first
+export const DISPLAYED_LIST: (keyof TechKeys)[] = [
+	REACT_JS,
+	REDUX,
+	TYPESCRIPT,
+	JAVSCRIPT,
+	NODE_JS,
+	CSS,
+	HTML,
+	LESS_CSS,
+	SCSS,
+
+	ACTION_SCRIPT,
+	DJANGO,
+	GRUNT,
+	HANDLEBARS_JS,
+	JQUERY,
+	PHP,
+	PYTHON,
+	SQL,
+	WEBPACK,
+	WORDPRESS,
 ];
