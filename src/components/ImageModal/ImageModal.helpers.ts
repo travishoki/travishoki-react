@@ -1,11 +1,12 @@
-const PADDING = 50;
-
 export const getDimensions = (srcLargeDimensions: number[]) => {
-	const originalWidth = srcLargeDimensions[0];
-	const originalHeight = srcLargeDimensions[1];
+	const isMobile = window.innerWidth < 768;
+	const PADDING = isMobile ? 50 : 50;
 
 	const screenWidth = window.innerWidth - PADDING * 2;
 	const screenHeight = window.innerHeight - PADDING * 2;
+
+	const originalWidth = srcLargeDimensions[0];
+	const originalHeight = srcLargeDimensions[1];
 
 	const isPortrait = originalHeight > originalWidth;
 
