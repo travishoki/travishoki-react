@@ -19,7 +19,7 @@ export const HokiSkateboards = () => (
 				className="main-image"
 				src={ImgHokiSkateboardsSmall}
 				srcLarge={ImgHokiSkateboards}
-				srcLargeDimensions={[600, 400]}
+				srcLargeDimensions={[1541, 1030]}
 			/>
 			<SocialMedia />
 			<Content />
