@@ -50,6 +50,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	{
 		dateEnd: 'Aug 2021',
 		dateStart: 'Dec 2020',
+		details: 'Formally Inside Sales',
 		img: ImgXant,
 		position: 'Sr. Software Engineer',
 		tasks: [
