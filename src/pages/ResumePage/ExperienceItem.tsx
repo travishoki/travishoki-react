@@ -4,6 +4,7 @@ import { BulletedList } from '~components/bulletedList/BulletedList';
 import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
 
 import { ResumeDataType } from './ResumePage.data';
+import './ExperienceItem.scss';
 
 export const ExperienceItem = ({
 	dateEnd,
@@ -16,7 +17,7 @@ export const ExperienceItem = ({
 	title,
 }: ExperienceItemPropTypes) => (
 	<li className="staggered-item">
-		<img className="image round" src={img} />
+		<img className="image round experience-image" src={img} />
 
 		<div className="text">
 			<h3>{title}</h3>
