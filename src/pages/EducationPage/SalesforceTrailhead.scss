@@ -1,8 +1,8 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+
 .trailhead {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
+	position: relative;
 
 	h2 {
 		font-size: 24px;
@@ -25,11 +25,39 @@
 		max-width: 600px;
 	}
 
-	.earned {
-		margin-bottom: 20px;
+	$breakpoint1: 400px;
+	$breakpoint2: 768px;
+
+	.trailhead-image {
+		@media (max-width: $breakpoint1) {
+			display: block;
+			margin: 0 auto 10px;
+		}
+		@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+			float: left;
+			margin-bottom: 15px;
+			margin-right: 15px;
+		}
+		@media (min-width: $breakpoint2) {
+			left: 0;
+			position: absolute;
+		}
 	}
 
-	.trailhead-content {
-		margin-left: 20px;
+	.earned {
+		margin-bottom: 10px;
+
+		@media (min-width: $breakpoint2) {
+			margin-left: 200px;
+		}
+	}
+
+	.rank {
+		@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+			clear: both;
+		}
+		@media (min-width: $breakpoint2) {
+			margin-left: 200px;
+		}
 	}
 }
