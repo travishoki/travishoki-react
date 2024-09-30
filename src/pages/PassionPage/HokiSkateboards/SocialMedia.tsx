@@ -1,10 +1,10 @@
 import React from 'react';
 
 import './SocialMedia.scss';
-import { SvgIconTikTok } from 'src/svg/SvgIconTikTok';
-import { SvgIconFacebook } from 'src/svg/SvgIconFacebook';
-import { SvgIconYoutube } from 'src/svg/SvgIconYoutube';
-import { SvgIconInstagram } from 'src/svg/SvgIconInstagram';
+import { SvgIconTikTok } from '~svg/SvgIconTikTok';
+import { SvgIconFacebook } from '~svg/SvgIconFacebook';
+import { SvgIconYoutube } from '~svg/SvgIconYoutube';
+import { SvgIconInstagram } from '~svg/SvgIconInstagram';
 import { WHITE } from '~const/colors.const';
 
 const iconProps = {

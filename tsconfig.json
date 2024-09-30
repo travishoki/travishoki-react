@@ -11,7 +11,8 @@
 			"~components/*": ["./src/components/*"],
 			"~const/*": ["./src/const/*"],
 			"~images/*": ["./src/images/*"],
-			"~reducers/*": ["./src/redux/reducers/*"]
+			"~reducers/*": ["./src/redux/reducers/*"],
+			"~svg/*": ["./src/svg/*"]
 		}
 	},
 	"include": ["src/**/*"],
