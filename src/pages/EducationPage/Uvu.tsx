@@ -29,6 +29,7 @@ export const Uvu = () => (
 						alt="University Graduation"
 						className="center picture"
 						src={imgUvuGraduation}
+						srcLargeDimensions={[1200, 800]}
 					/>
 					<p className="image-caption">(College graduation with my wife.)</p>
 				</Pannel>

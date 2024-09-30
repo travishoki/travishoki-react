@@ -19,6 +19,7 @@ export const HokiSkateboards = () => (
 				className="main-image"
 				src={ImgHokiSkateboardsSmall}
 				srcLarge={ImgHokiSkateboards}
+				srcLargeDimensions={[600, 400]}
 			/>
 			<SocialMedia />
 			<Content />

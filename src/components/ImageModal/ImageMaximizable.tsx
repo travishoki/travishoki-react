@@ -11,13 +11,18 @@ export const ImageMaximizable = ({
 	className,
 	src,
 	srcLarge,
+	srcLargeDimensions,
 }: ImageMaximizableProps) => {
 	const { onClickImage, onCloseImage, selectedImg } = useImageModal();
 
 	return (
 		<>
 			{selectedImg && (
-				<ImageModal onClose={onCloseImage} src={srcLarge ?? selectedImg} />
+				<ImageModal
+					onClose={onCloseImage}
+					src={srcLarge ?? selectedImg}
+					srcLargeDimensions={srcLargeDimensions}
+				/>
 			)}
 			<img
 				alt={alt}
@@ -34,4 +39,5 @@ type ImageMaximizableProps = {
 	className?: string;
 	src: string;
 	srcLarge?: string;
+	srcLargeDimensions: number[];
 };

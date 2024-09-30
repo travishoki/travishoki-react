@@ -82,6 +82,7 @@ export const AboutPageData: AboutType[] = [
 		],
 		img: ImgEagleScoutSmall,
 		imgLarge: ImgEagleScout,
+		imgLargeDimensions: [1688, 2000],
 		title: 'Eagle Scout',
 	},
 ];
@@ -91,5 +92,6 @@ export type AboutType = {
 	desc: string[];
 	img: string;
 	imgLarge?: string;
+	imgLargeDimensions?: number[];
 	title: string;
 };

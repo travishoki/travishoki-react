@@ -17,6 +17,7 @@ export const AboutPage = () => {
 								className="round image"
 								src={item.img}
 								srcLarge={item.imgLarge ?? item.img}
+								srcLargeDimensions={item.imgLargeDimensions ?? [200, 200]}
 							/>
 							<div className="text">
 								<h2>{item.title}</h2>
