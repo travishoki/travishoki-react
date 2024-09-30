@@ -11,7 +11,7 @@ export const ContactPage = () => (
 
 			<div className="row">
 				<div className="col-sm-6">
-					<img src={ImgProfilePic} />
+					<img className="content-image" src={ImgProfilePic} />
 				</div>
 
 				<div className="col-sm-6">
