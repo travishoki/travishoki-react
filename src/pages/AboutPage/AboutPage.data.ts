@@ -10,13 +10,13 @@ import ImgBreakdance from '~images/about/green-man-group.jpg';
 import ImgBreakdanceSmall from '~images/about/green-man-group-small.png';
 import { getYearsSince } from './AboutPage.helpers';
 
-const BIRTH_YEAR = 1990;
+const BIRTH_YEAR = '1990-07-08';
 const AGE = getYearsSince(BIRTH_YEAR);
 
-const MARRIAGE_YEAR = 2015;
+const MARRIAGE_YEAR = '2015-06-06';
 const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
-const DATING_YEAR = 2008;
+const DATING_YEAR = '2008-04-15';
 const YEARS_DATING = getYearsSince(DATING_YEAR);
 
 export const AboutPageData: AboutType[] = [
