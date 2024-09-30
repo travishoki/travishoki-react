@@ -35,13 +35,5 @@
 
 	.image-modal-inner {
 		position: relative;
-
-		@include tablet-up {
-			padding: 50px;
-		}
-	}
-
-	img {
-		max-width: 100%;
 	}
 }
