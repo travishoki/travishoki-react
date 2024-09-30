@@ -66,6 +66,7 @@ export const AboutPageData: AboutType[] = [
 		],
 		img: ImgBreakdanceSmall,
 		imgLarge: ImgBreakdance,
+		imgLargeDimensions: [620, 413],
 		title: 'Breakdance',
 	},
 	{
