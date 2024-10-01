@@ -2,7 +2,7 @@
 @import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
-section .list-section {
+section.list-section {
 	ul {
 		@include phone-down {
 			display: block;
@@ -12,7 +12,7 @@ section .list-section {
 
 		li {
 			font-size: 16px;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 		}
 	}
 }
