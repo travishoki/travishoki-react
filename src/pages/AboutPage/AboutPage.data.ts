@@ -36,8 +36,7 @@ export const AboutPageData: AboutType[] = [
 		desc: [
 			'In 2021, I graduated from the Improv Broadway Stand-up Comedy class! In a six month serries of classes, we studied joke writing and story telling. We analyzed bits from other comedians and worked on creating our own bits. We took turns pitching our sets, and receiving feedback from everyone else in the class.',
 			'It was really cool to see how classmates would take feedback and improve their stories. Every time a story was pitched it was better than before. You quickly grow a comradery with people in the stand up community. It was so awesome to see classmates develop their sets then get up at open mic and actually perform!',
-			'Watching comedy and creative writing has helped me through the last couple of years. Sharing my humor and creativity with others has been a way of coping with my own anxiety and depression. I’ve had fun being able to dabble in it myself now.',
-			'This was an awesome experience!',
+			'Watching comedy and creative writing has helped me through the last couple of years. Sharing my humor and creativity with others has been a way of coping with my own anxiety and depression. I’ve had fun being able to dabble in it myself now. This was an awesome experience!',
 			'In 2019, I completed a five-week workshop at Comedy Sports. 2 hours a week we practiced improv exercises and skits, and pushed ourselves to change the way we think and communicate.',
 			'I wanted to challenge myself to get out side of my comfort zone, loosen up, and put myself out there. I wanted to improve my public speaking skills, and gain some more confidence.',
 			'This was a fun experience, and I’m glad I was able to do it. It’s such a positive atmosphere. Everyone collaborated and builds off of each other.',
@@ -91,7 +90,7 @@ export const AboutPageData: AboutType[] = [
 	{
 		desc: [
 			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joinging the Timpanogos High School team.',
-			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class',
+			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class.',
 		],
 		img: ImgBallroom,
 		title: 'Ballroom',

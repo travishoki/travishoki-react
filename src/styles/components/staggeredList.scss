@@ -49,6 +49,10 @@ ul.staggered {
 				}
 			}
 
+			@include tablet-up {
+				flex: 100%;
+			}
+
 			h2,
 			h3 {
 				text-align: left;
