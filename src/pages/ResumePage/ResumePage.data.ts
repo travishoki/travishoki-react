@@ -18,8 +18,10 @@ import {
 } from '~const/Tech.const';
 import ImgAcademyOfBallet from '~images/experience/academy-of-ballet.png';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
+import ImgBedBathAndBeyond from '~images/experience/bed-bath-and-beyond.png';
 import ImgChatbooks from '~images/experience/chatbooks.png';
 import ImgEnspark from '~images/experience/enspark.png';
+import ImgInsideSales from '~images/experience/inside-sales.png';
 import ImgOvestock from '~images/experience/overstock.png';
 import ImgRoomChoice from '~images/experience/roomchoice.png';
 import ImgSalesforce from '~images/experience/salesforce.png';
@@ -29,18 +31,12 @@ import ImgXant from '~images/experience/xant.png';
 
 export const RESUME_DATA: ResumeDataType[] = [
 	{
-		dateEnd: 'Present',
-		dateStart: 'March 2024',
-		img: ImgSalesforce,
-		position: 'Sr. Member of the Technical Staff',
-		tasks: [],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
-		title: 'Salesforce',
-	},
-	{
+		affiliatedCompany: {
+			img: ImgSalesforce,
+			title: 'Acquired by Salesforce (March 2024)',
+		},
 		dateEnd: 'Present',
 		dateStart: 'Aug 2021',
-		details: 'Acquired by Salesforce',
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
 		tasks: ['Help to build out the infrastructure for string translations'],
@@ -48,9 +44,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Spiff',
 	},
 	{
+		affiliatedCompany: {
+			img: ImgInsideSales,
+			title: 'Formally Inside Sales',
+		},
 		dateEnd: 'Aug 2021',
 		dateStart: 'Dec 2020',
-		details: 'Formally Inside Sales',
 		img: ImgXant,
 		position: 'Sr. Software Engineer',
 		tasks: [
@@ -76,9 +75,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Chatbooks',
 	},
 	{
+		affiliatedCompany: {
+			img: ImgBedBathAndBeyond,
+			title: 'Now known as Bed Bath & Beyond',
+		},
 		dateEnd: 'Mar 2019',
 		dateStart: 'Sep 2015',
-		details: 'Now known as Bed Bath & Beyond',
 		img: ImgOvestock,
 		position: 'Front-end Developer',
 		tasks: [
@@ -161,9 +163,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 ];
 
 export type ResumeDataType = {
+	affiliatedCompany?: {
+		img: string;
+		title: string;
+	};
 	dateEnd: string;
 	dateStart: string;
-	details?: string;
 	img: string;
 	position: string;
 	tasks: string[];

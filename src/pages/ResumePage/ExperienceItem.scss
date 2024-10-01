@@ -1,3 +1,29 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
 .experience-image {
 	background-color: white;
+}
+
+section.experience {
+	.affiliated-company {
+		align-items: center;
+		background-color: $gray-two;
+		display: flex;
+		margin-bottom: 10px;
+		padding: 10px;
+
+		p {
+			font-size: 18px;
+			margin: 0;
+		}
+
+		img {
+			background-color: $white;
+			height: 50px;
+			margin-right: 10px;
+			width: 50px;
+		}
+	}
 }

@@ -7,9 +7,9 @@ import { ResumeDataType } from './ResumePage.data';
 import './ExperienceItem.scss';
 
 export const ExperienceItem = ({
+	affiliatedCompany,
 	dateEnd,
 	dateStart,
-	details,
 	img,
 	position,
 	tasks,
@@ -30,7 +30,12 @@ export const ExperienceItem = ({
 
 			<BulletedList list={tasks} />
 
-			{details && <p className="details">{details}</p>}
+			{affiliatedCompany && (
+				<div className="affiliated-company">
+					<img className="round" src={affiliatedCompany.img} />
+					<p>{affiliatedCompany.title}</p>
+				</div>
+			)}
 
 			<TechListHorizontal list={techs} />
 		</div>
