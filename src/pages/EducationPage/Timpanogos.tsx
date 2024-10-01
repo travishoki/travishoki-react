@@ -16,7 +16,7 @@ export const Timpanogos = () => (
 				<Pannel>
 					<h3>Timpanogos High School</h3>
 					<img className="center school" src={imgTimpanogos} />
-					<p>High School Diploma</p>
+					<p className="degree">High School Diploma</p>
 					<p>Aug 2009 - Apr 2006</p>
 					<Scholarships />
 					<p className="label">Activities and Societies:</p>
