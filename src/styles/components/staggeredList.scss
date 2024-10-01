@@ -12,7 +12,7 @@ ul.staggered {
 			display: block;
 			justify-content: center;
 			margin: 0 auto 40px;
-			max-width: 400px;
+			max-width: 600px;
 		}
 
 		&:not(:last-child) {
@@ -39,20 +39,19 @@ ul.staggered {
 			}
 		}
 
-		@include phone-down {
-			.text {
+		.text {
+			@include phone-down {
+				margin-bottom: 20px;
+
 				h2 {
 					margin: 0;
 					width: 100%;
 				}
+			}
 
-				h2,
-				h3,
-				p {
-					text-align: center;
-				}
-
-				margin-bottom: 20px;
+			h2,
+			h3 {
+				text-align: left;
 			}
 		}
 
