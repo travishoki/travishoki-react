@@ -1,16 +1,18 @@
-import ImgBallroom from '~images/about/ballroom.png';
+import ImgBallroom from '~images/about/ballroom.jpg';
+import ImgBallroomSmall from '~images/about/ballroom-small.jpg';
 import ImgBreakdance from '~images/about/green-man-group.jpg';
 import ImgBreakdanceSmall from '~images/about/green-man-group-small.png';
 import ImgEagleScout from '~images/about/eagle-scout.jpg';
 import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
 import ImgFamily from '~images/about/family.png';
-import ImgGuitar from '~images/about/guitar.png';
+import ImgGuitar from '~images/about/guitar.jpg';
+import ImgGuitarSmall from '~images/about/guitar-small.jpg';
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
 import ImgSkateboard from '~images/about/skateboarding.png';
 import ImgStandupComedy from '~images/about/standup-comedy.jpg';
 import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
-
-import ImgWedding from '~images/about/wedding.png';
+import ImgWedding from '~images/about/wedding.jpg';
+import ImgWeddingSmall from '~images/about/wedding-small.jpg';
 
 import { getYearsSince } from './AboutPage.helpers';
 
@@ -57,7 +59,9 @@ export const AboutPageData: AboutType[] = [
 		desc: [
 			`I am married to my best friend and high school sweet heart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}.`,
 		],
-		img: ImgWedding,
+		img: ImgWeddingSmall,
+		imgLarge: ImgWedding,
+		imgLargeDimensions: [2048, 1367],
 		title: 'Wife',
 	},
 	{
@@ -73,7 +77,9 @@ export const AboutPageData: AboutType[] = [
 			'In 2015, at The Festival of Trees they gave me the stage.',
 			"Now days I still play the guitar just for fun and as a way to relax and destress. A few times I've accopanied family sing alongs around the camp fire.",
 		],
-		img: ImgGuitar,
+		img: ImgGuitarSmall,
+		imgLarge: ImgGuitar,
+		imgLargeDimensions: [2048, 1366],
 		title: 'Guitar',
 	},
 	{
@@ -92,7 +98,9 @@ export const AboutPageData: AboutType[] = [
 			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joinging the Timpanogos High School team.',
 			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class.',
 		],
-		img: ImgBallroom,
+		img: ImgBallroomSmall,
+		imgLarge: ImgBallroom,
+		imgLargeDimensions: [453, 604],
 		title: 'Ballroom',
 	},
 	{

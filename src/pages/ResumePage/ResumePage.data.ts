@@ -39,7 +39,10 @@ export const RESUME_DATA: ResumeDataType[] = [
 		dateStart: 'Aug 2021',
 		img: ImgSpiff,
 		position: 'Sr. Software Engineer',
-		tasks: ['Help to build out the infrastructure for string translations'],
+		tasks: [
+			'Help to build out the infrastructure for string translations',
+			'Building out scripts to analyze code cleanliness and convention. Moving forward code standards through the Eslint, Unit Testing, and Typescript coverage.',
+		],
 		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Spiff',
 	},
