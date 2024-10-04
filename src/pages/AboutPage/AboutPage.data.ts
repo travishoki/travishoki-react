@@ -4,7 +4,8 @@ import ImgBreakdance from '~images/about/green-man-group.jpg';
 import ImgBreakdanceSmall from '~images/about/green-man-group-small.png';
 import ImgEagleScout from '~images/about/eagle-scout.jpg';
 import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
-import ImgFamily from '~images/about/family.png';
+import ImgFamily from '~images/about/family.jpg';
+import ImgFamilySmall from '~images/about/family-small.jpg';
 import ImgGuitar from '~images/about/guitar.jpg';
 import ImgGuitarSmall from '~images/about/guitar-small.jpg';
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
@@ -52,7 +53,9 @@ export const AboutPageData: AboutType[] = [
 		desc: [
 			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "scream"! I love my family, even if we are all a little "Hoki"!',
 		],
-		img: ImgFamily,
+		img: ImgFamilySmall,
+		imgLarge: ImgFamily,
+		imgLargeDimensions: [1463, 2048],
 		title: 'Family',
 	},
 	{
