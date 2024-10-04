@@ -51,19 +51,20 @@ ul.staggered {
 
 			@include tablet-up {
 				flex: 100%;
+				padding: 10px 20px;
 			}
 
 			h2,
 			h3 {
 				text-align: left;
 			}
+
+			p {
+				margin-bottom: 10px;
+			}
 		}
 
 		@include tablet-up {
-			.text {
-				padding: 10px 20px;
-			}
-
 			&:nth-child(even) {
 				flex-direction: row-reverse;
 			}

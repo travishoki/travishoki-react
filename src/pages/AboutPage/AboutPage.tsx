@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AboutPageData } from './AboutPage.data';
+import { ABOUT_PAGE_DATA } from './AboutPage.data';
 import { AboutItem } from './AboutItem';
 
 export const AboutPage = () => {
@@ -10,7 +10,7 @@ export const AboutPage = () => {
 				<h1>About Me</h1>
 
 				<ul className="staggered">
-					{AboutPageData.map((item, index) => (
+					{ABOUT_PAGE_DATA.map((item, index) => (
 						<AboutItem key={index} {...item} />
 					))}
 				</ul>

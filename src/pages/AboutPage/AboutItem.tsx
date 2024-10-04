@@ -8,7 +8,7 @@ export const AboutItem = (item: AboutType) => {
 	const [readMore, setReadMore] = useState(false);
 
 	const hasReadMore = item.desc.length > 1;
-	const onClickReadMore = () => setReadMore(true);
+	const onClickReadMore = () => setReadMore(!readMore);
 
 	return (
 		<li className="staggered-item about-item">
@@ -29,14 +29,13 @@ export const AboutItem = (item: AboutType) => {
 						))}
 					</>
 				) : (
-					<>
-						<p>{item.desc[0]}</p>
-						{hasReadMore && (
-							<p className="pointer read-more" onClick={onClickReadMore}>
-								Read More
-							</p>
-						)}
-					</>
+					<p>{item.desc[0]}</p>
+				)}
+
+				{hasReadMore && (
+					<p className="pointer read-more" onClick={onClickReadMore}>
+						{readMore ? 'Read Less' : 'Read More'}
+					</p>
 				)}
 			</div>
 		</li>

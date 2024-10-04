@@ -28,7 +28,7 @@ const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 const DATING_YEAR = '2008-04-15';
 const YEARS_DATING = getYearsSince(DATING_YEAR);
 
-export const AboutPageData: AboutType[] = [
+export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
 		desc: [
