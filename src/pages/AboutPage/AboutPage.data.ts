@@ -1,7 +1,9 @@
 import ImgBallroom from '~images/about/ballroom.jpg';
 import ImgBallroomSmall from '~images/about/ballroom-small.jpg';
 import ImgBreakdance from '~images/about/green-man-group.jpg';
-import ImgBreakdanceSmall from '~images/about/green-man-group-small.png';
+import ImgBreakdanceSmall from '~images/about/green-man-group-small.jpg';
+import ImgChildrensBook from '~images/about/childrens-book.jpg';
+import ImgChildrensBookSmall from '~images/about/childrens-book-small.jpg';
 import ImgEagleScout from '~images/about/eagle-scout.jpg';
 import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
 import ImgFamily from '~images/about/family.jpg';
@@ -37,6 +39,15 @@ export const AboutPageData: AboutType[] = [
 	},
 	{
 		desc: [
+			"I've always enjoyed reading books with my kids when putting them to bed. I have illustrated two children's books, and self published each of them. They are available on Amazon and other book platforms.",
+		],
+		img: ImgChildrensBookSmall,
+		imgLarge: ImgChildrensBook,
+		imgLargeDimensions: [960, 1200],
+		title: "Children's Book Illustrator",
+	},
+	{
+		desc: [
 			'In 2021, I graduated from the Improv Broadway Stand-up Comedy class! In a six month serries of classes, we studied joke writing and story telling. We analyzed bits from other comedians and worked on creating our own bits. We took turns pitching our sets, and receiving feedback from everyone else in the class.',
 			'It was really cool to see how classmates would take feedback and improve their stories. Every time a story was pitched it was better than before. You quickly grow a comradery with people in the stand up community. It was so awesome to see classmates develop their sets then get up at open mic and actually perform!',
 			'Watching comedy and creative writing has helped me through the last couple of years. Sharing my humor and creativity with others has been a way of coping with my own anxiety and depression. I’ve had fun being able to dabble in it myself now. This was an awesome experience!',
@@ -60,19 +71,19 @@ export const AboutPageData: AboutType[] = [
 	},
 	{
 		desc: [
+			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard.',
+		],
+		img: ImgSkateboard,
+		title: 'Skateboarding',
+	},
+	{
+		desc: [
 			`I am married to my best friend and high school sweet heart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}.`,
 		],
 		img: ImgWeddingSmall,
 		imgLarge: ImgWedding,
 		imgLargeDimensions: [2048, 1367],
 		title: 'Wife',
-	},
-	{
-		desc: [
-			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard.',
-		],
-		img: ImgSkateboard,
-		title: 'Skateboarding',
 	},
 	{
 		desc: [
