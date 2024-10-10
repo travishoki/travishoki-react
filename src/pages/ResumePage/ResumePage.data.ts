@@ -38,7 +38,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		dateEnd: 'Present',
 		dateStart: 'Aug 2021',
 		img: ImgSpiff,
-		position: 'Sr. Software Engineer',
+		position: 'Senior Member of Technical Staff',
 		tasks: [
 			'Help to build out the infrastructure for string translations',
 			'Building out scripts to analyze code cleanliness and convention. Moving forward code standards through the Eslint, Unit Testing, and Typescript coverage.',
@@ -54,7 +54,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		dateEnd: 'Aug 2021',
 		dateStart: 'Dec 2020',
 		img: ImgXant,
-		position: 'Sr. Software Engineer',
+		position: 'Senior Software Engineer',
 		tasks: [
 			'Creating and documenting standards and best practices for the Front End Team',
 			'Mentoring and pair-programming with other Software Engineers',
