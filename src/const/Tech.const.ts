@@ -4,6 +4,7 @@ import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
 import ImgCss from '~images/icons/tech-icons/css.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
+import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
 import ImgGrunt from '~images/icons/tech-icons/grunt.jpg';
 import ImgHandlebarsJs from '~images/icons/tech-icons/handlebars-js.jpg';
 import ImgHtml from '~images/icons/tech-icons/html.jpg';
@@ -28,6 +29,7 @@ export const ANGULAR_JS = 'ANGULAR_JS';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
 export const DJANGO = 'DJANGO';
+export const FIREBASE = 'FIREBASE';
 export const GRUNT = 'GRUNT';
 export const HANDLEBARS_JS = 'HANDLEBARS_JS';
 export const HTML = 'HTML';
@@ -53,6 +55,7 @@ export type TechKeys = {
 	COFFEE_SCRIPT: 'COFFEE_SCRIPT';
 	CSS: 'CSS';
 	DJANGO: 'DJANGO';
+	FIREBASE: 'FIREBASE';
 	GRUNT: 'GRUNT';
 	HANDLEBARS_JS: 'HANDLEBARS_JS';
 	HTML: 'HTML';
@@ -81,6 +84,7 @@ export const TECH_IMAGES = {
 	COFFEE_SCRIPT: ImgCoffeeScript,
 	CSS: ImgCss,
 	DJANGO: ImgDjango,
+	FIREBASE: ImgFirebase,
 	GRUNT: ImgGrunt,
 	HANDLEBARS_JS: ImgHandlebarsJs,
 	HTML: ImgHtml,

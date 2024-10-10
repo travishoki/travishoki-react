@@ -4,6 +4,7 @@ import {
 	DJANGO,
 	GRUNT,
 	HANDLEBARS_JS,
+	FIREBASE,
 	HTML,
 	JAVSCRIPT,
 	JQUERY,
@@ -45,4 +46,5 @@ export const DISPLAYED_LIST: (keyof TechKeys)[] = [
 	SQL,
 	WEBPACK,
 	WORDPRESS,
+	FIREBASE,
 ];
