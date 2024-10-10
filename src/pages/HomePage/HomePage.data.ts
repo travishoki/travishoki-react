@@ -12,6 +12,7 @@ import {
 	PHP,
 	PYTHON,
 	REACT_JS,
+	REACT_NATIVE,
 	REDUX,
 	SCSS,
 	SQL,
@@ -24,6 +25,7 @@ import {
 // Ordered for display by what I want to advertise first
 export const DISPLAYED_LIST: (keyof TechKeys)[] = [
 	REACT_JS,
+	REACT_NATIVE,
 	REDUX,
 	TYPESCRIPT,
 	JAVSCRIPT,

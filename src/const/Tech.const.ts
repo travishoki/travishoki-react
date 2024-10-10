@@ -14,6 +14,7 @@ import ImgNodeJs from '~images/icons/tech-icons/node-js.jpg';
 import ImgPhp from '~images/icons/tech-icons/php.jpg';
 import ImgPython from '~images/icons/tech-icons/python.jpg';
 import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
+import ImgReactNative from '~images/icons/tech-icons/react-native.jpg';
 import ImgRedux from '~images/icons/tech-icons/redux.jpg';
 import ImgScss from '~images/icons/tech-icons/sass.jpg';
 import ImgSql from '~images/icons/tech-icons/sql.jpg';
@@ -37,6 +38,7 @@ export const NODE_JS = 'NODE_JS';
 export const PHP = 'PHP';
 export const PYTHON = 'PYTHON';
 export const REACT_JS = 'REACT_JS';
+export const REACT_NATIVE = 'REACT_NATIVE';
 export const REDUX = 'REDUX';
 export const SCSS = 'SCSS';
 export const SQL = 'SQL';
@@ -61,6 +63,7 @@ export type TechKeys = {
 	PHP: 'PHP';
 	PYTHON: 'PYTHON';
 	REACT_JS: 'REACT_JS';
+	REACT_NATIVE: 'REACT_NATIVE';
 	REDUX: 'REDUX';
 	SCSS: 'SCSS';
 	SQL: 'SQL';
@@ -88,6 +91,7 @@ export const TECH_IMAGES = {
 	PHP: ImgPhp,
 	PYTHON: ImgPython,
 	REACT_JS: ImgReactJs,
+	REACT_NATIVE: ImgReactNative,
 	REDUX: ImgRedux,
 	SCSS: ImgScss,
 	SQL: ImgSql,
