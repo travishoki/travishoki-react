@@ -64,6 +64,7 @@ export const Content = () => (
 
 				<PassionLabel>Technology:</PassionLabel>
 				<TechListHorizontal list={websiteTechList} />
+
 				<p>
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,
 					PHP and React.
@@ -91,7 +92,6 @@ export const Content = () => (
 				<PassionLabel>Software:</PassionLabel>
 				<SoftwareListHorizontal list={appSoftwareList} />
 
-				<PassionLabel>Contribution:</PassionLabel>
 				<p>
 					Self authored, illustrated, and published. Successfully Kickstarter
 					backed.

@@ -1,13 +1,28 @@
 import React from 'react';
 
 import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
-import { CSS, HTML, JAVSCRIPT, REACT_JS, TechKeys } from '~const/Tech.const';
+import {
+	CSS,
+	FIREBASE,
+	HTML,
+	JAVSCRIPT,
+	REACT_JS,
+	REACT_NATIVE,
+	TechKeys,
+} from '~const/Tech.const';
 
 import { PassionLabel } from './PassionLabel';
 import { Title } from './Title';
 import './MobileApp.scss';
 
-const techs: (keyof TechKeys)[] = [CSS, HTML, JAVSCRIPT, REACT_JS];
+const techs: (keyof TechKeys)[] = [
+	CSS,
+	HTML,
+	JAVSCRIPT,
+	REACT_JS,
+	REACT_NATIVE,
+	FIREBASE,
+];
 
 export const MobileApp = () => (
 	<div className="app-section">
@@ -20,14 +35,14 @@ export const MobileApp = () => (
 			width="200"
 		/>
 		<PassionLabel>Description:</PassionLabel>
-		<p>Kids skateboarding game</p>
+		<p>Kid&apos;s skateboarding game</p>
 
 		<PassionLabel>Technologies:</PassionLabel>
 		<TechListHorizontal list={techs} />
 
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine
-			and MatterJs
+			and MatterJs.
 		</p>
 
 		<div className="app-badges">
