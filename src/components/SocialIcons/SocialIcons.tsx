@@ -24,15 +24,5 @@ export const SocialIcons = () => (
 				<i className="circ-sm fa fa-linkedin" />
 			</a>
 		</li>
-		<li>
-			<a
-				href="http://codepen.io/travis-hoki/"
-				rel="noreferrer"
-				target="_blank"
-				title="Travis's Codepen"
-			>
-				<i className="circ-sm fa fa-codepen" />
-			</a>
-		</li>
 	</ul>
 );
