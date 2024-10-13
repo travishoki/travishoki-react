@@ -1,4 +1,5 @@
 import { CSS, REACT_JS, TechKeys } from '../../const/Tech.const';
+import { ProjectType } from '../ProjectsPage/ProjectsPage.data';
 
 export const FILTER_LIST: (keyof TechKeys)[] = [REACT_JS];
 
@@ -20,16 +21,3 @@ export const PROJECTS_DATA: ProjectType[] = [
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 ];
-
-export type ProjectType = {
-	company: string;
-	contributions: string[];
-	desc: string;
-	itemKey: string;
-	learned: string;
-	live?: boolean;
-	subtitle: string;
-	techs: (keyof TechKeys)[];
-	title: string;
-	url?: string;
-};
