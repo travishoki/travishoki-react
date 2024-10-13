@@ -8,12 +8,13 @@ export const getDimensions = (srcLargeDimensions: number[]) => {
 	const originalWidth = srcLargeDimensions[0];
 	const originalHeight = srcLargeDimensions[1];
 
-	const isPortrait = originalHeight > originalWidth;
-
 	let width: number;
 	let height: number;
 
-	if (isPortrait) {
+	const screenRatio = screenWidth / screenHeight;
+	const originalRatio = originalWidth / originalHeight;
+
+	if (screenRatio > originalRatio) {
 		height = getSmallerNum(screenHeight, originalHeight);
 		width = getWidthFromHeight(height, originalWidth, originalHeight);
 	} else {
