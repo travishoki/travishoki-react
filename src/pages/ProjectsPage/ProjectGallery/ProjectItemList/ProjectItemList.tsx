@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { TechList } from './TechList';
-import { ProjectType } from '../ProjectsPage.data';
+import { ProjectType } from '../../ProjectsPage.data';
 
-const images = require.context('../../../images/websites', true);
-const logos = require.context('../../../images/clients', true);
+const images = require.context('../../../../images/websites', true);
+const logos = require.context('../../../../images/clients', true);
 
 export const ProjectItemList = ({
 	company,

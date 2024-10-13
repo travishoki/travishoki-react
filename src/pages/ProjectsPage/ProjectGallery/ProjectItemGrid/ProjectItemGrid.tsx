@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { ProjectType } from '../ProjectsPage.data';
+import { ProjectType } from '../../ProjectsPage.data';
 
-const images = require.context('../../../images/websites', true);
-const logos = require.context('../../../images/clients', true);
+const images = require.context('../../../../images/websites', true);
+const logos = require.context('../../../../images/clients', true);
 
 export const ProjectItemGrid = ({ company, itemKey }: ProjectItemGridProps) => (
 	<div className="grid-item">

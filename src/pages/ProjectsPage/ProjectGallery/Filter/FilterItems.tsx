@@ -1,7 +1,7 @@
 import React from 'react';
 
+import { FILTER_LIST } from '../../ProjectsPage.data';
 import { FilterItem } from './FilterItem';
-import { FILTER_LIST } from '../ProjectsPage.data';
 import { TechFilterType } from '~const/Tech.const';
 
 export const FilterItems = ({
