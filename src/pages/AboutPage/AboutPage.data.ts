@@ -78,7 +78,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			`I am married to my best friend and high school sweet heart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}.`,
+			`I am married to my best friend and high school sweet heart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
 		],
 		img: ImgWeddingSmall,
 		imgLarge: ImgWedding,
