@@ -12,6 +12,7 @@ import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { ArtPage } from './pages/ArtPage/ArtPage';
 import { ResumePage } from './pages/ResumePage/ResumePage';
 import { SingleProjectPage } from './pages/SingleProjectPage/SingleProjectPage';
+import { SingleArtProjectPage } from './pages/SingleArtProjectPage/SingleArtProjectPage';
 
 export const AppRoutes = () => (
 	<Router>
@@ -24,6 +25,10 @@ export const AppRoutes = () => (
 				/>
 				<Route element={<ArtPage />} path="/art/:paramFilter?/:paramSearch?" />
 				<Route element={<SingleProjectPage />} path="/project/:paramItemKey" />
+				<Route
+					element={<SingleArtProjectPage />}
+					path="/artproject/:paramItemKey"
+				/>
 				<Route element={<ResumePage />} path="/resume" />
 				<Route element={<EducationPage />} path="/education" />
 				<Route element={<ContactPage />} path="/contact" />

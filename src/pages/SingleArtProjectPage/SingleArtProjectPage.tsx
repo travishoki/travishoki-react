@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { ProjectItemList } from '../ProjectsPage/ProjectGallery/ProjectItemList/ProjectItemList';
-import { PROJECTS_DATA } from '../ProjectsPage/ProjectsPage.data';
+import { PROJECTS_DATA } from '../ArtPage/ArtPage.data';
 
-export const SingleProjectPage = () => {
+export const SingleArtProjectPage = () => {
 	const { paramItemKey } = useParams();
 	const singleProject = PROJECTS_DATA.find(
 		(project) => project.itemKey === paramItemKey,

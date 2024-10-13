@@ -5,7 +5,7 @@ import classnames from 'classnames';
 
 import { TechFilterType, TechKeys } from '~const/Tech.const';
 
-import { PROJECTS_DATA } from '../ProjectsPage.data';
+import { ProjectType } from '../ProjectsPage.data';
 import {
 	filterProjects,
 	createProjectsPageUrl,
@@ -20,7 +20,10 @@ import './ProjectGallery.scss';
 
 const PROJECTS_PAGE_URL = '/projects';
 
-export const ProjectGallery = ({ filterList }: ProjectGalleryProps) => {
+export const ProjectGallery = ({
+	filterList,
+	projectsData,
+}: ProjectGalleryProps) => {
 	const { paramFilter, paramSearch } = useParams();
 	const navigate = useNavigate();
 
@@ -109,7 +112,7 @@ export const ProjectGallery = ({ filterList }: ProjectGalleryProps) => {
 		toggleOpenFilter();
 	};
 
-	const projects = filterProjects(PROJECTS_DATA, filter, searchTerm);
+	const projects = filterProjects(projectsData, filter, searchTerm);
 	const showResultsCount = (filter || searchTerm) && projects.length > 0;
 
 	return (
@@ -173,4 +176,5 @@ export const ProjectGallery = ({ filterList }: ProjectGalleryProps) => {
 
 type ProjectGalleryProps = {
 	filterList: (keyof TechKeys)[];
+	projectsData: ProjectType[];
 };
