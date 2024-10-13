@@ -22,6 +22,7 @@ const PROJECTS_PAGE_URL = '/projects';
 
 export const ProjectGallery = ({
 	filterList,
+	projectLink,
 	projectsData,
 }: ProjectGalleryProps) => {
 	const { paramFilter, paramSearch } = useParams();
@@ -160,7 +161,7 @@ export const ProjectGallery = ({
 					/>
 				</div>
 
-				<Projects grid={grid} projects={projects} />
+				<Projects grid={grid} projectLink={projectLink} projects={projects} />
 
 				<NoResults
 					filter={filter}
@@ -176,5 +177,6 @@ export const ProjectGallery = ({
 
 type ProjectGalleryProps = {
 	filterList: (keyof TechKeys)[];
+	projectLink: string;
 	projectsData: ProjectType[];
 };

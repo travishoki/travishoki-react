@@ -15,7 +15,7 @@ export const SingleArtProjectPage = () => {
 	return (
 		<div className="projects" id="container">
 			<div className="projects-container grid">
-				<Link className="btn btn-primary" to="/projects">
+				<Link className="btn btn-primary" to="/art">
 					View All
 				</Link>
 				<ProjectItemList {...singleProject} />
