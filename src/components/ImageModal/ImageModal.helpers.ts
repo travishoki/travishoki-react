@@ -1,13 +1,9 @@
-export const getDimensions = (srcLargeDimensions: number[]) => {
-	const isMobile = window.innerWidth < 768;
-	const PADDING = isMobile ? 50 : 50;
-
-	const screenWidth = window.innerWidth - PADDING * 2;
-	const screenHeight = window.innerHeight - PADDING * 2;
-
-	const originalWidth = srcLargeDimensions[0];
-	const originalHeight = srcLargeDimensions[1];
-
+export const getDimensions = (
+	originalWidth: number,
+	originalHeight: number,
+	screenWidth: number,
+	screenHeight: number,
+) => {
 	let width: number;
 	let height: number;
 

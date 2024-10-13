@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { getDimensions } from './ImageModal.helpers';
+import { useScrollLock } from './ImageModal.hooks';
 import './ImageModal.scss';
 
 export const ImageModal = ({
@@ -8,7 +9,21 @@ export const ImageModal = ({
 	src,
 	srcLargeDimensions,
 }: ImageModalProps) => {
-	const [width, height] = getDimensions(srcLargeDimensions);
+	useScrollLock();
+
+	const isMobile = window.innerWidth < 768;
+	const PADDING = isMobile ? 50 : 50;
+	const originalWidth = srcLargeDimensions[0];
+	const originalHeight = srcLargeDimensions[1];
+	const screenWidth = window.innerWidth - PADDING * 2;
+	const screenHeight = window.innerHeight - PADDING * 2;
+
+	const [width, height] = getDimensions(
+		originalWidth,
+		originalHeight,
+		screenWidth,
+		screenHeight,
+	);
 
 	return (
 		<div className="image-modal" onClick={onClose}>
