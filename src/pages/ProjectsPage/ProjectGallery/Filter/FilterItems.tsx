@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { FILTER_LIST } from '../../ProjectsPage.data';
 import { FilterItem } from './FilterItem';
-import { TechFilterType } from '~const/Tech.const';
+import { TechFilterType, TechKeys } from '~const/Tech.const';
 
 export const FilterItems = ({
 	filter,
+	filterList,
 	filterTerm,
 	onClearAndCloseFilter,
 	onSelectFilter,
 }: FilterItemsProps) => {
-	const filterListFiltered = FILTER_LIST.filter((item) => {
+	const filterListFiltered = filterList.filter((item) => {
 		return (
 			filterTerm === null ||
 			item.toLowerCase().indexOf(filterTerm.toLowerCase()) > -1
@@ -46,6 +46,7 @@ export const FilterItems = ({
 
 type FilterItemsProps = {
 	filter: TechFilterType;
+	filterList: (keyof TechKeys)[];
 	filterTerm: string | null;
 	onClearAndCloseFilter: () => void;
 	onSelectFilter: (filter: TechFilterType) => void;

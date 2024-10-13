@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import classnames from 'classnames';
 
-import { TechFilterType } from '~const/Tech.const';
+import { TechFilterType, TechKeys } from '~const/Tech.const';
 
 import { PROJECTS_DATA } from '../ProjectsPage.data';
 import {
@@ -20,7 +20,7 @@ import './ProjectGallery.scss';
 
 const PROJECTS_PAGE_URL = '/projects';
 
-export const ProjectGallery = () => {
+export const ProjectGallery = ({ filterList }: ProjectGalleryProps) => {
 	const { paramFilter, paramSearch } = useParams();
 	const navigate = useNavigate();
 
@@ -129,6 +129,7 @@ export const ProjectGallery = () => {
 
 					<Filter
 						filter={filter}
+						filterList={filterList}
 						filterTerm={filterTerm}
 						isFilterOpen={isFilterOpen}
 						onChangeFilter={onChangeFilter}
@@ -168,4 +169,8 @@ export const ProjectGallery = () => {
 			</div>
 		</div>
 	);
+};
+
+type ProjectGalleryProps = {
+	filterList: (keyof TechKeys)[];
 };

@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { ProjectsPage } from '../ProjectsPage/ProjectsPage';
+import { ProjectGallery } from '../ProjectsPage/ProjectGallery/ProjectGallery';
+
+import { FILTER_LIST } from './ArtPage.data';
 
 export const ArtPage = () => {
-	return <ProjectsPage />;
+	return <ProjectGallery filterList={FILTER_LIST} />;
 };

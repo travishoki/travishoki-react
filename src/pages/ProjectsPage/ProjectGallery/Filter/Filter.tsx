@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechFilterType } from '~const/Tech.const';
+import { TechFilterType, TechKeys } from '~const/Tech.const';
 
 import { CurrentFilter } from './CurrentFilter';
 import { FilterClean } from './FilterClean';
@@ -11,6 +11,7 @@ import './Filter.scss';
 
 export const Filter = ({
 	filter,
+	filterList,
 	filterTerm,
 	isFilterOpen = false,
 	onChangeFilter,
@@ -35,6 +36,7 @@ export const Filter = ({
 						/>
 						<FilterItems
 							filter={filter}
+							filterList={filterList}
 							filterTerm={filterTerm}
 							onClearAndCloseFilter={onClearAndCloseFilter}
 							onSelectFilter={onSelectFilter}
@@ -50,6 +52,7 @@ export const Filter = ({
 
 type FilterProps = {
 	filter: TechFilterType;
+	filterList: (keyof TechKeys)[];
 	filterTerm: TechFilterType;
 	isFilterOpen?: boolean;
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;
