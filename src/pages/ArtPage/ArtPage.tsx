@@ -4,7 +4,7 @@ import { ProjectGallery } from '../ProjectsPage/ProjectGallery/ProjectGallery';
 
 import { FILTER_LIST, PROJECTS_DATA } from './ArtPage.data';
 
-const projectLink = '/artproject';
+const projectLink = '/art-project';
 
 export const ArtPage = () => {
 	return (

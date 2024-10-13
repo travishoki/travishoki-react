@@ -27,7 +27,7 @@ export const AppRoutes = () => (
 				<Route element={<SingleProjectPage />} path="/project/:paramItemKey" />
 				<Route
 					element={<SingleArtProjectPage />}
-					path="/artproject/:paramItemKey"
+					path="/art-project/:paramItemKey"
 				/>
 				<Route element={<ResumePage />} path="/resume" />
 				<Route element={<EducationPage />} path="/education" />
