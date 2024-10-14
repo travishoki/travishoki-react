@@ -4,6 +4,8 @@ import { getDimensions } from './ImageModal.helpers';
 import { useScrollLock } from './ImageModal.hooks';
 import './ImageModal.scss';
 
+const PADDING = 50;
+
 export const ImageModal = ({
 	onClose,
 	src,
@@ -11,8 +13,6 @@ export const ImageModal = ({
 }: ImageModalProps) => {
 	useScrollLock();
 
-	const isMobile = window.innerWidth < 768;
-	const PADDING = isMobile ? 50 : 50;
 	const originalWidth = srcLargeDimensions[0];
 	const originalHeight = srcLargeDimensions[1];
 	const screenWidth = window.innerWidth - PADDING * 2;
