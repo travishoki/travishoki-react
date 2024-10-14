@@ -5,7 +5,7 @@ import {
 	CSS,
 	FIREBASE,
 	HTML,
-	JAVSCRIPT,
+	JAVASCRIPT,
 	REACT_JS,
 	REACT_NATIVE,
 	TechKeys,
@@ -18,7 +18,7 @@ import './MobileApp.scss';
 const techs: (keyof TechKeys)[] = [
 	CSS,
 	HTML,
-	JAVSCRIPT,
+	JAVASCRIPT,
 	REACT_JS,
 	REACT_NATIVE,
 	FIREBASE,

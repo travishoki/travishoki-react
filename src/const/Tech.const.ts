@@ -33,7 +33,7 @@ export const FIREBASE = 'FIREBASE';
 export const GRUNT = 'GRUNT';
 export const HANDLEBARS_JS = 'HANDLEBARS_JS';
 export const HTML = 'HTML';
-export const JAVSCRIPT = 'JAVSCRIPT';
+export const JAVASCRIPT = 'JAVASCRIPT';
 export const JQUERY = 'JQUERY';
 export const LESS_CSS = 'LESS_CSS';
 export const NODE_JS = 'NODE_JS';
@@ -59,7 +59,7 @@ export type TechKeys = {
 	GRUNT: 'GRUNT';
 	HANDLEBARS_JS: 'HANDLEBARS_JS';
 	HTML: 'HTML';
-	JAVSCRIPT: 'JAVSCRIPT';
+	JAVASCRIPT: 'JAVASCRIPT';
 	JQUERY: 'JQUERY';
 	LESS_CSS: 'LESS_CSS';
 	NODE_JS: 'NODE_JS';
@@ -88,7 +88,7 @@ export const TECH_IMAGES = {
 	GRUNT: ImgGrunt,
 	HANDLEBARS_JS: ImgHandlebarsJs,
 	HTML: ImgHtml,
-	JAVSCRIPT: ImgJavascript,
+	JAVASCRIPT: ImgJavascript,
 	JQUERY: ImgJquery,
 	LESS_CSS: ImgLessCss,
 	NODE_JS: ImgNodeJs,

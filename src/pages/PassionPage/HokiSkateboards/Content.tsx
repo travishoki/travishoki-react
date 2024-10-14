@@ -11,7 +11,7 @@ import {
 import {
 	CSS,
 	HTML,
-	JAVSCRIPT,
+	JAVASCRIPT,
 	PHP,
 	REACT_JS,
 	TechKeys,
@@ -27,7 +27,7 @@ import './Content.scss';
 const websiteTechList: (keyof TechKeys)[] = [
 	CSS,
 	HTML,
-	JAVSCRIPT,
+	JAVASCRIPT,
 	PHP,
 	REACT_JS,
 	WORDPRESS,

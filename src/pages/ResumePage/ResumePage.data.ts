@@ -6,7 +6,7 @@ import {
 	CSS,
 	HANDLEBARS_JS,
 	HTML,
-	JAVSCRIPT,
+	JAVASCRIPT,
 	JQUERY,
 	PHP,
 	PYTHON,
@@ -43,7 +43,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Help to build out the infrastructure for string translations',
 			'Building out scripts to analyze code cleanliness and convention. Moving forward code standards through the Eslint, Unit Testing, and Typescript coverage.',
 		],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Spiff',
 	},
 	{
@@ -61,7 +61,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Upgrading Front End technology and code syntax',
 			'Fixing bugs and reinforcing existing software',
 		],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Xant/Inside Sales',
 	},
 	{
@@ -74,7 +74,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Actively convert Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
-		techs: [REACT_JS, REDUX, JAVSCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Chatbooks',
 	},
 	{
@@ -92,7 +92,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage pixels for retargeting and third party integrations',
 			'Pioneer affiliate links program',
 		],
-		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVSCRIPT, CSS, HTML, AMP],
+		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVASCRIPT, CSS, HTML, AMP],
 		title: 'Overstock',
 	},
 	{
@@ -106,7 +106,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
 			'Finding ways to speedup and enhance the user experience of the software',
 		],
-		techs: [ANGULAR_JS, PYTHON, JAVSCRIPT, COFFEE_SCRIPT, CSS, HTML],
+		techs: [ANGULAR_JS, PYTHON, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
 		title: 'Room Choice',
 	},
 	{
@@ -120,7 +120,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Front-end development and WordPress maintenance',
 			'Custom banner and eLearning course development in Adobe Flash AS3',
 		],
-		techs: [JAVSCRIPT, CSS, HTML, ACTION_SCRIPT, JQUERY, PHP, SQL],
+		techs: [JAVASCRIPT, CSS, HTML, ACTION_SCRIPT, JQUERY, PHP, SQL],
 		title: 'Enspark',
 	},
 	{
