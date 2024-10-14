@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { TechKeys } from '~const/Tech.const';
-import { TechList } from '~components/TechList/TechList';
-import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
+import { TechList } from '~components/TechListSwitcher/TechList/TechList';
+import { TechListHorizontal } from '~components/TechListSwitcher/TechListHorizontal/TechListHorizontal';
 
 export const TechListSwitcher = ({
 	intialExpanded = false,
