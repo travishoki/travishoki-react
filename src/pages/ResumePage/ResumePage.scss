@@ -24,7 +24,16 @@
 
 		.date {
 			margin: 0;
-			color: $gray-one;
+
+			@include phone-down {
+				color: $gray-one;
+				font-size: 14px;
+			}
+
+			@include tablet-up {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 	}
 }

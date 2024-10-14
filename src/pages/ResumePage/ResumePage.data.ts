@@ -36,7 +36,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			title: 'Acquired by Salesforce (March 2024)',
 		},
 		dateEnd: 'Present',
-		dateStart: 'Aug 2021',
+		dateStart: 'Aug. 2021',
 		img: ImgSpiff,
 		position: 'Senior Member of the Technical Staff',
 		tasks: [
@@ -51,8 +51,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 			img: ImgInsideSales,
 			title: 'Formally Inside Sales',
 		},
-		dateEnd: 'Aug 2021',
-		dateStart: 'Dec 2020',
+		dateEnd: 'Aug. 2021',
+		dateStart: 'Dec. 2020',
 		img: ImgXant,
 		position: 'Senior Software Engineer',
 		tasks: [
@@ -65,8 +65,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Xant/Inside Sales',
 	},
 	{
-		dateEnd: 'Aug 2020',
-		dateStart: 'Mar 2019',
+		dateEnd: 'Aug. 2020',
+		dateStart: 'Mar. 2019',
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
@@ -82,8 +82,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 			img: ImgBedBathAndBeyond,
 			title: 'Now known as Bed Bath & Beyond',
 		},
-		dateEnd: 'Mar 2019',
-		dateStart: 'Sep 2015',
+		dateEnd: 'Mar. 2019',
+		dateStart: 'Sept. 2015',
 		img: ImgOvestock,
 		position: 'Front-end Developer',
 		tasks: [
@@ -96,8 +96,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Overstock',
 	},
 	{
-		dateEnd: 'Sep 2015',
-		dateStart: 'Dec 2014',
+		dateEnd: 'Sept. 2015',
+		dateStart: 'Dec. 2014',
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
@@ -110,8 +110,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Room Choice',
 	},
 	{
-		dateEnd: 'Dec 2014',
-		dateStart: 'Nov 2011',
+		dateEnd: 'Dec. 2014',
+		dateStart: 'Nov. 2011',
 		img: ImgEnspark,
 		position: 'Custom Web Developer',
 		tasks: [
@@ -124,8 +124,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Enspark',
 	},
 	{
-		dateEnd: 'Jun 2012',
-		dateStart: 'Jun 2011',
+		dateEnd: 'Jun. 2012',
+		dateStart: 'Jun. 2011',
 		img: ImgAllAm,
 		position: 'Office Manager / Web Master',
 		tasks: [
@@ -137,7 +137,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'All American Sod Farms',
 	},
 	{
-		dateEnd: 'Jan 2009',
+		dateEnd: 'Jan. 2009',
 		dateStart: 'May 2009',
 		img: ImgAcademyOfBallet,
 		position: 'Breakdance Instructor',
@@ -150,8 +150,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Academy of Balley',
 	},
 	{
-		dateEnd: 'Jun 2011',
-		dateStart: 'Dec 2006',
+		dateEnd: 'Jun. 2011',
+		dateStart: 'Dec. 2006',
 		img: ImgWendys,
 		position: 'Crew Member',
 		tasks: [
