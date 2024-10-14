@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { TechKeys } from '~const/Tech.const';
-import { TechList } from '~components/TechListSwitcher/TechList/TechList';
+import { TechListVertical } from '~components/TechListSwitcher/TechListVertical/TechListVertical';
 import { TechListHorizontal } from '~components/TechListSwitcher/TechListHorizontal/TechListHorizontal';
 
 export const TechListSwitcher = ({
@@ -14,7 +14,11 @@ export const TechListSwitcher = ({
 
 	return (
 		<>
-			{expanded ? <TechList list={list} /> : <TechListHorizontal list={list} />}
+			{expanded ? (
+				<TechListVertical list={list} />
+			) : (
+				<TechListHorizontal list={list} />
+			)}
 			<button className="btn btn-primary" onClick={onClick}>
 				{expanded ? 'Minimize' : 'Expand'}
 			</button>

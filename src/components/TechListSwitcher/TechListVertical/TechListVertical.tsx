@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TechKeys } from '~const/Tech.const';
 
-import './TechList.scss';
+import './TechListVertical.scss';
 
-export const TechList = ({ list }: TechListProps) => {
+export const TechListVertical = ({ list }: TechListVerticalProps) => {
 	if (list.length === 0) return null;
 
 	return (
@@ -24,6 +24,6 @@ export const TechList = ({ list }: TechListProps) => {
 	);
 };
 
-type TechListProps = {
+type TechListVerticalProps = {
 	list: (keyof TechKeys)[];
 };
