@@ -71,7 +71,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
-			'Create/maintain web features and projects for the Books and Cards teams',
+			'Create and maintain web features and projects for the Books and Cards teams',
 			'Actively converted Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
@@ -90,7 +90,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		tasks: [
 			'Enhancements to customer reviews functionality',
 			'Managed the Front-End for all User Generated Content',
-			'Managed pixels for retargeting and third party integrations',
+			'Managed pixels for retargeting and third-party integrations',
 			'Pioneered the affiliate links program',
 		],
 		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVASCRIPT, CSS, HTML, AMP],
@@ -143,9 +143,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgAcademyOfBallet,
 		position: 'Breakdance Instructor',
 		tasks: [
-			'Developed and execute breakdance curriculum',
+			'Developed and executed breakdance curriculum',
 			'Mentored and prepared students for successful recitals',
-			'Along side the students, break it down with sweet dance moves',
+			'Alongside the students, break it down with sweet dance moves',
 		],
 		techs: [],
 		title: 'Academy of Balley',
