@@ -15,4 +15,23 @@
 	.tech-icon-holder {
 		float: left;
 	}
+
+	.tech-icon {
+		margin-right: 10px;
+	}
+
+	.tech-icon-item {
+		overflow: hidden;
+
+		p {
+			float: left;
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		p,
+		i {
+			line-height: $iconW;
+		}
+	}
 }

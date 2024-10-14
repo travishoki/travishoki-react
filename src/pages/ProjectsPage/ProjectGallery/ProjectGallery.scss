@@ -5,25 +5,6 @@
 #container.projects {
 	$iconW: 40px;
 
-	.tech-icon-item {
-		overflow: hidden;
-
-		p {
-			float: left;
-			margin: 0;
-			text-transform: uppercase;
-		}
-
-		p,
-		i {
-			line-height: $iconW;
-		}
-
-		.tech-icon {
-			margin-right: 10px;
-		}
-	}
-
 	.answer-section {
 		margin: 10px 0 0 20px;
 
