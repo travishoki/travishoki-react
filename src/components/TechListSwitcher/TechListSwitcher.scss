@@ -11,6 +11,11 @@
 
 .tech-list-switcher-button {
 	border-radius: 0px 0px 10px 10px;
+	display: flex;
+	height: 25px;
 	margin: 0 !important;
+	padding: 0;
 	width: 100px;
+	align-items: center;
+	justify-content: center;
 }
