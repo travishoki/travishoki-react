@@ -3,7 +3,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
-import { TechKeys, TechFilterType } from '~const/Tech.const';
+import { TechKeys, TechFilterType, TechStrings } from '~const/Tech.const';
 
 export const FilterItem = ({
 	filter,
@@ -17,7 +17,7 @@ export const FilterItem = ({
 		onClick={() => onSelectFilter(item)}
 	>
 		<TechIcon name={item} />
-		<p>{item}</p>
+		<p>{TechStrings[item]}</p>
 	</li>
 );
 

@@ -75,6 +75,33 @@ export type TechKeys = {
 	WORDPRESS: 'WORDPRESS';
 };
 
+export const TechStrings: Record<keyof TechKeys, string> = {
+	ACTION_SCRIPT: 'Action Script',
+	AMP: 'AMP',
+	ANGULAR_JS: 'Angular JS',
+	COFFEE_SCRIPT: 'Coffee Script',
+	CSS: 'CSS',
+	DJANGO: 'Django',
+	FIREBASE: 'Firebase',
+	GRUNT: 'Grunt',
+	HANDLEBARS_JS: 'Handlebars JS',
+	HTML: 'HTML',
+	JAVASCRIPT: 'Javascript',
+	JQUERY: 'jQuery',
+	LESS_CSS: 'LESS CSS',
+	NODE_JS: 'Node JS',
+	PHP: 'PHP',
+	PYTHON: 'Python',
+	REACT_JS: 'React JS',
+	REACT_NATIVE: 'React Native',
+	REDUX: 'Redux',
+	SCSS: 'SCSS',
+	SQL: 'SQL',
+	TYPESCRIPT: 'Typescript',
+	WEBPACK: 'Webpack',
+	WORDPRESS: 'Wordpress',
+};
+
 export type TechFilterType = keyof TechKeys | null | 'all' | 'null';
 
 export const TECH_IMAGES = {

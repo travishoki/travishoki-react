@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
-import { TechKeys } from '~const/Tech.const';
+import { TechKeys, TechStrings } from '~const/Tech.const';
 
 import './TechListVertical.scss';
 
@@ -16,7 +16,7 @@ export const TechListVertical = ({ list }: TechListVerticalProps) => {
 				<li key={index} className="tech-icon-item">
 					<Link title={tech} to={`/projects/${tech}`}>
 						<TechIcon name={tech} />
-						<p>{tech}</p>
+						<p>{TechStrings[tech]}</p>
 					</Link>
 				</li>
 			))}
