@@ -37,7 +37,7 @@ export const ExperienceItem = ({
 				</div>
 			)}
 
-			<TechListHorizontal list={techs} />
+			{techs.length > 0 && <TechListHorizontal list={techs} />}
 		</div>
 	</li>
 );
