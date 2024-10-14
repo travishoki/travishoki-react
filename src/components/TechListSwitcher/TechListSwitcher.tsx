@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { TechKeys } from '~const/Tech.const';
 import { TechListVertical } from '~components/TechListSwitcher/TechListVertical/TechListVertical';
 import { TechListHorizontal } from '~components/TechListSwitcher/TechListHorizontal/TechListHorizontal';
+import './TechListSwitcher.scss';
 
 export const TechListSwitcher = ({
 	intialExpanded = false,
@@ -13,7 +14,7 @@ export const TechListSwitcher = ({
 	const onClick = () => setExpanded(!expanded);
 
 	return (
-		<>
+		<div className="tech-list-switcher">
 			{expanded ? (
 				<TechListVertical list={list} />
 			) : (
@@ -22,7 +23,7 @@ export const TechListSwitcher = ({
 			<button className="btn btn-primary" onClick={onClick}>
 				{expanded ? 'Minimize' : 'Expand'}
 			</button>
-		</>
+		</div>
 	);
 };
 
