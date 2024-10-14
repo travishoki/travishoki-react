@@ -8,6 +8,8 @@ import { TechKeys } from '~const/Tech.const';
 import './TechList.scss';
 
 export const TechList = ({ list }: TechListProps) => {
+	if (list.length === 0) return null;
+
 	return (
 		<ul className="tech-icon-list">
 			{list.map((tech, index) => (

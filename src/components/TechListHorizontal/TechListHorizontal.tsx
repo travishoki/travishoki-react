@@ -7,6 +7,8 @@ import { TechKeys } from '~const/Tech.const';
 import './TechListHorizontal.scss';
 
 export const TechListHorizontal = ({ list }: TechListProps) => {
+	if (list.length === 0) return null;
+
 	return (
 		<ul className="tech-icon-list-horizontal">
 			{list.map((tech, index) => (
