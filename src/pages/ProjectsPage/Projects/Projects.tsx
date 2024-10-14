@@ -3,7 +3,7 @@ import React from 'react';
 import { getResultsCountClass } from './Projects.helpers';
 import { ProjectItemList } from '../ProjectItemList/ProjectItemList';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
-import { ProjectType } from '../../ProjectsPage.data';
+import { ProjectType } from '../ProjectsPage.data';
 
 export const Projects = ({
 	grid = false,

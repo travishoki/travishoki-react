@@ -6,7 +6,7 @@ import { SearchForm } from './SearchForm/SearchForm';
 import { ViewControl } from './ViewControl/ViewControl';
 import { Filter } from './Filter/Filter';
 import { TechFilterType, TechKeys } from '~const/Tech.const';
-import { createProjectsPageUrl } from '../ProjectGallery.helpers';
+import { createProjectsPageUrl } from '../ProjectsPage.helpers';
 
 const PROJECTS_PAGE_URL = '/projects';
 

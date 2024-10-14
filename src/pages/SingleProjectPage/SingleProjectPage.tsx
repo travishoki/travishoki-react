@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { ProjectItemList } from '../ProjectsPage/ProjectGallery/ProjectItemList/ProjectItemList';
+import { ProjectItemList } from '../ProjectsPage/ProjectItemList/ProjectItemList';
 import { PROJECTS_DATA } from '../ProjectsPage/ProjectsPage.data';
 
 export const SingleProjectPage = () => {
