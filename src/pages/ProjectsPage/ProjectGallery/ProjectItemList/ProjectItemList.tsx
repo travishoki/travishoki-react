@@ -46,7 +46,7 @@ export const ProjectItemList = ({
 					<>
 						<p className="list-heading">Contributions:</p>
 						<div className="answer-section">
-							<ul className="disc">
+							<ul className="disc answer-section-list">
 								{contributions.map((contribution, index) => (
 									<li key={index}>{contribution}</li>
 								))}

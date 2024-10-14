@@ -1,8 +1,9 @@
-ul.tech-icon-list-horizontal {
+.tech-list-horizontal {
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 
 	li {
 		margin-right: 10px;

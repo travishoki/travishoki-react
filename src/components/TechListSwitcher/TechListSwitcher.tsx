@@ -15,13 +15,23 @@ export const TechListSwitcher = ({
 
 	return (
 		<div className="tech-list-switcher">
-			{expanded ? (
-				<TechListVertical list={list} />
-			) : (
-				<TechListHorizontal list={list} />
-			)}
-			<button className="btn btn-primary" onClick={onClick}>
-				{expanded ? 'Minimize' : 'Expand'}
+			<div className="tech-list-switcher-content">
+				{expanded ? (
+					<TechListVertical list={list} />
+				) : (
+					<TechListHorizontal list={list} />
+				)}
+			</div>
+
+			<button
+				className="btn btn-primary tech-list-switcher-button"
+				onClick={onClick}
+			>
+				{expanded ? (
+					<i className="fa fa-chevron-up" />
+				) : (
+					<i className="fa fa-chevron-down" />
+				)}
 			</button>
 		</div>
 	);

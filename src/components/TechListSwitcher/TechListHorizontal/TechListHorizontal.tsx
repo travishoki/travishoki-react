@@ -10,7 +10,7 @@ export const TechListHorizontal = ({ list }: TechListProps) => {
 	if (list.length === 0) return null;
 
 	return (
-		<ul className="tech-icon-list-horizontal">
+		<ul className="tech-list-horizontal">
 			{list.map((tech, index) => (
 				<li key={index} className="tech-icon-item">
 					<Link title={tech} to={`/projects/${tech}`}>

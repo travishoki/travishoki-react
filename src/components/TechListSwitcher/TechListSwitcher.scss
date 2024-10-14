@@ -1,3 +1,16 @@
+@import '../../styles/variables.scss';
+
 .tech-list-switcher {
 	margin-bottom: 20px;
+
+	.tech-list-switcher-content {
+		padding: 10px;
+		border: solid 1px $primary;
+	}
+}
+
+.tech-list-switcher-button {
+	border-radius: 0px 0px 10px 10px;
+	margin: 0 !important;
+	width: 100px;
 }
