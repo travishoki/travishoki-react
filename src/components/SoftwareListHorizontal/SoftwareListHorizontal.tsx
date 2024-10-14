@@ -10,7 +10,7 @@ export const SoftwareListHorizontal = ({ list }: TechListProps) => {
 	return (
 		<ul className="software-list">
 			{list.map((tech, index) => (
-				<li key={index} className="tech-icon-item">
+				<li key={index}>
 					<Link title={tech} to={`/projects/${tech}`}>
 						<SoftwareIcon name={tech} />
 					</Link>

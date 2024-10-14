@@ -68,7 +68,7 @@ export const ProjectItemList = ({
 				{/* Technologies */}
 				{techs && techs.length > 0 && (
 					<>
-						<p className="list-heading">Technologies:</p>
+						<p className="list-heading">Technology:</p>
 						<div className="answer-section">
 							<TechListSwitcher intialExpanded list={techs} />
 						</div>
