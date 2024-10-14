@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { BulletedList } from '~components/bulletedList/BulletedList';
-import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
 
 import { ResumeDataType } from './ResumePage.data';
 import './ExperienceItem.scss';
+import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 
 export const ExperienceItem = ({
 	affiliatedCompany,
@@ -37,7 +37,7 @@ export const ExperienceItem = ({
 				</div>
 			)}
 
-			<TechListHorizontal list={techs} />
+			<TechListSwitcher list={techs} />
 		</div>
 	</li>
 );

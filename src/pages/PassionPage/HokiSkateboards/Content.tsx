@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SoftwareListHorizontal } from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
-import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
+import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 import {
 	ILLUSTRATOR,
 	INDESIGN,
@@ -21,9 +21,8 @@ import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
 import { Title } from './Title';
-import './Content.scss';
-
 import { PassionLabel } from './PassionLabel';
+import './Content.scss';
 
 const websiteTechList: (keyof TechKeys)[] = [
 	CSS,
@@ -63,7 +62,7 @@ export const Content = () => (
 				</p>
 
 				<PassionLabel>Technology:</PassionLabel>
-				<TechListHorizontal list={websiteTechList} />
+				<TechListSwitcher list={websiteTechList} />
 
 				<p>
 					Built in Wordpress with a custom Wordpress Plugin, using Woocommerce,

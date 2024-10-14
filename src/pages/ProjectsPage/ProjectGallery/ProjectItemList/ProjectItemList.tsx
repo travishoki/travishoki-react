@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { TechList } from '~components/TechList/TechList';
 import { ProjectType } from '../../ProjectsPage.data';
+import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 
 const images = require.context('../../../../images/websites', true);
 const logos = require.context('../../../../images/clients', true);
@@ -70,7 +70,7 @@ export const ProjectItemList = ({
 					<>
 						<p className="list-heading">Technologies:</p>
 						<div className="answer-section">
-							<TechList list={techs} />
+							<TechListSwitcher intialExpanded list={techs} />
 						</div>
 					</>
 				)}

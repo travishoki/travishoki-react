@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechListHorizontal } from '~components/TechListHorizontal/TechListHorizontal';
+import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 import {
 	CSS,
 	FIREBASE,
@@ -38,7 +38,7 @@ export const MobileApp = () => (
 		<p>Kid&apos;s skateboarding game</p>
 
 		<PassionLabel>Technologies:</PassionLabel>
-		<TechListHorizontal list={techs} />
+		<TechListSwitcher list={techs} />
 
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine
