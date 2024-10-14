@@ -13,22 +13,26 @@
 
 	ul.filters {
 		background: $gray-two;
+		margin: 0;
 		max-height: 200px;
 		overflow-x: hidden;
 		overflow-y: scroll;
+		padding: 0;
 
 		li {
+			align-items: center;
 			cursor: pointer;
+			display: flex;
+			margin: 0;
+			padding: 10px;
 
 			&:last-child {
 				margin: 0;
 			}
-		}
-	}
 
-	.tech-icon-list {
-		li {
-			padding: 10px;
+			.tech-icon-holder {
+				margin-right: 10px;
+			}
 		}
 	}
 }

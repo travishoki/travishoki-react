@@ -22,12 +22,9 @@ export const FilterItems = ({
 	}
 
 	return (
-		<ul className="tech-icon-list filters">
+		<ul className="filters">
 			{!filterTerm && (
-				<li
-					className="filter-item tech-icon-item"
-					onClick={onClearAndCloseFilter}
-				>
+				<li className="filter-item" onClick={onClearAndCloseFilter}>
 					<p>All</p>
 				</li>
 			)}

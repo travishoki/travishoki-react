@@ -11,7 +11,7 @@ export const FilterItem = ({
 	onSelectFilter,
 }: FilterItemProps) => (
 	<li
-		className={classnames('filter-item tech-icon-item', {
+		className={classnames('filter-item', {
 			active: filter === null || filter === item,
 		})}
 		onClick={() => onSelectFilter(item)}

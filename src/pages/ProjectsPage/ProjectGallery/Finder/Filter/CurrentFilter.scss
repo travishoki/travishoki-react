@@ -3,8 +3,24 @@
 .current-filter {
 	border: solid 1px $gray-two;
 	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
 	i {
 		font-size: 26px;
+	}
+
+	.tech-container {
+		display: flex;
+		align-items: center;
+
+		.tech-icon-holder {
+			margin-right: 20px;
+		}
+	}
+
+	p {
+		margin: 0;
 	}
 }
