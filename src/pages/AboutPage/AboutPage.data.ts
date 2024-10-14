@@ -32,7 +32,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
 		desc: [
-			`My name is Travis Hoki. I'm from Orem. I'm ${AGE} years old. I drive a grey Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
+			`My name is Travis Hoki. I'm from Orem. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		],
 		img: ImgProfilePic,
 		title: 'Hey,',
@@ -48,7 +48,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'In 2021, I graduated from the Improv Broadway Stand-up Comedy class! In a six month serries of classes, we studied joke writing and story telling. We analyzed bits from other comedians and worked on creating our own bits. We took turns pitching our sets, and receiving feedback from everyone else in the class.',
+			'In 2021, I graduated from the Improv Broadway Stand-up Comedy class! In a six month series of classes, we studied joke writing and storytelling. We analyzed bits from other comedians and worked on creating our own bits. We took turns pitching our sets, and receiving feedback from everyone else in the class.',
 			'It was really cool to see how classmates would take feedback and improve their stories. Every time a story was pitched it was better than before. You quickly grow a comradery with people in the stand up community. It was so awesome to see classmates develop their sets then get up at open mic and actually perform!',
 			'Watching comedy and creative writing has helped me through the last couple of years. Sharing my humor and creativity with others has been a way of coping with my own anxiety and depression. I’ve had fun being able to dabble in it myself now. This was an awesome experience!',
 			'In 2019, I completed a five-week workshop at Comedy Sports. 2 hours a week we practiced improv exercises and skits, and pushed ourselves to change the way we think and communicate.',
@@ -71,14 +71,14 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard.',
+			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard?',
 		],
 		img: ImgSkateboard,
 		title: 'Skateboarding',
 	},
 	{
 		desc: [
-			`I am married to my best friend and high school sweet heart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
+			`I am married to my best friend and high school sweetheart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
 		],
 		img: ImgWeddingSmall,
 		imgLarge: ImgWedding,
@@ -98,7 +98,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			"Breakdancing is my favorite form of exercise. Other developer don't seem to have the need to spin on the ground like I do, wierd!",
+			"Breakdancing is my favorite form of exercise. Other developers don't seem to have the need to spin on the ground like I do, weird!",
 			'I started breakdancing in Jr High. I got really involved in the HipHop culture and scene. I went to as many breakdance clubs as I could and competed in breakdance battles.',
 			"In college, I joined the Green Man Group. They are UVU's Drum Line. We performed at UVU basketball games, a variety of UVU events, Grizzly Hockey games, the Olympic Oval, the Hope of America, and Jazz Basketball games.",
 		],
@@ -109,7 +109,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joinging the Timpanogos High School team.',
+			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joining the Timpanogos High School team.',
 			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class.',
 		],
 		img: ImgBallroomSmall,
