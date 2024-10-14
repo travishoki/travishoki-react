@@ -3,7 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
-import { TechKeys } from '~const/Tech.const';
+import { TechKeys, TechStrings } from '~const/Tech.const';
+
 import './TechListHorizontal.scss';
 
 export const TechListHorizontal = ({ list }: TechListProps) => {
@@ -13,7 +14,7 @@ export const TechListHorizontal = ({ list }: TechListProps) => {
 		<ul className="tech-list-horizontal">
 			{list.map((tech, index) => (
 				<li key={index} className="tech-icon-item">
-					<Link title={tech} to={`/projects/${tech}`}>
+					<Link title={TechStrings[tech]} to={`/projects/${tech}`}>
 						<TechIcon name={tech} />
 					</Link>
 				</li>
