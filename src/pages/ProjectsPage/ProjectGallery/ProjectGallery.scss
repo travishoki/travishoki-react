@@ -5,7 +5,8 @@
 #container.projects {
 	$iconW: 40px;
 
-	.tech-icon-holder {
+	.tech-icon-holder,
+	.software-icon-holder {
 		border: solid 1px $white;
 		border-radius: 50%;
 		float: left;
