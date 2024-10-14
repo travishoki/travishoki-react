@@ -5,16 +5,6 @@
 #container.projects {
 	$iconW: 40px;
 
-	.tech-icon-holder,
-	.software-icon-holder {
-		border: solid 1px $white;
-		border-radius: 50%;
-		float: left;
-		height: ($iconW + 2);
-		margin-right: 10px;
-		width: ($iconW + 2);
-	}
-
 	.tech-icon-item {
 		overflow: hidden;
 
@@ -39,14 +29,6 @@
 
 		ul {
 			padding: 0 0 0 20px;
-		}
-
-		ul.tech-icon-list {
-			padding: 0;
-
-			li {
-				margin-bottom: 10px;
-			}
 		}
 	}
 
