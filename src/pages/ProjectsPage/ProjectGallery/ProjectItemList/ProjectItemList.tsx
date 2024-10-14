@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechList } from './TechList';
+import { TechList } from '~components/TechList/TechList';
 import { ProjectType } from '../../ProjectsPage.data';
 
 const images = require.context('../../../../images/websites', true);
