@@ -13,6 +13,8 @@ export const TechListSwitcher = ({
 
 	const onClick = () => setExpanded(!expanded);
 
+	if (list.length === 0) return null;
+
 	return (
 		<div className="tech-list-switcher">
 			<div className="tech-list-switcher-content">
