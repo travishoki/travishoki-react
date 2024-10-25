@@ -4,8 +4,6 @@ import { getDimensions } from './ImageModal.helpers';
 import { useScrollLock } from './ImageModal.hooks';
 import './ImageModal.scss';
 
-const PADDING = 50;
-
 export const ImageModal = ({
 	onClose,
 	src,
@@ -15,8 +13,8 @@ export const ImageModal = ({
 
 	const originalWidth = srcLargeDimensions[0];
 	const originalHeight = srcLargeDimensions[1];
-	const screenWidth = window.innerWidth - PADDING * 2;
-	const screenHeight = window.innerHeight - PADDING * 2;
+	const screenWidth = window.innerWidth;
+	const screenHeight = window.innerHeight;
 
 	const [width, height] = getDimensions(
 		originalWidth,
@@ -35,7 +33,9 @@ export const ImageModal = ({
 						width,
 					}}
 				/>
-				<i className="fa fa-close close-icon" />
+				<button className="close-icon">
+					<i className="fa fa-close" />
+				</button>
 			</div>
 		</div>
 	);
