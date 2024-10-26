@@ -16,7 +16,7 @@ export const ExperienceItem = ({
 	techs,
 	title,
 }: ExperienceItemPropTypes) => (
-	<li className="staggered-item">
+	<li className="experience-item staggered-item">
 		<div className="image-container">
 			<img className="image round experience-image" src={img} />
 		</div>

@@ -6,6 +6,21 @@
 	background-color: white;
 }
 
+.experience-item {
+	&.staggered-item {
+		.image {
+			height: 200px;
+			width: 200px;
+		}
+
+		.image-container {
+			@include tablet-up {
+				flex: 1 0 200px;
+			}
+		}
+	}
+}
+
 section.experience {
 	.affiliated-company {
 		align-items: center;

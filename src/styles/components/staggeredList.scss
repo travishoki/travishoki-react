@@ -24,8 +24,6 @@ ul.staggered {
 			display: block;
 			overflow: hidden;
 			margin: 0 auto;
-			height: 250px;
-			width: 250px;
 		}
 
 		.image-container {
@@ -35,10 +33,6 @@ ul.staggered {
 
 			@include phone-down {
 				margin-bottom: 20px;
-			}
-
-			@include tablet-up {
-				flex: 1 0 250px;
 			}
 		}
 
