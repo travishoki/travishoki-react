@@ -29,8 +29,8 @@ export const Timpanogos = () => (
 				<Pannel>
 					<ImageMaximizable
 						alt="High School Graduation"
-						className="picture"
 						dimensions={[600, 400]}
+						imageClassName="picture"
 						src={imgTimpanogosGraduation}
 					/>
 					<p className="image-caption">

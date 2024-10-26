@@ -27,8 +27,8 @@ export const Uvu = () => (
 				<Pannel>
 					<ImageMaximizable
 						alt="University Graduation"
-						className="picture"
 						dimensions={[600, 400]}
+						imageClassName="picture"
 						src={imgUvuGraduation}
 						srcLargeDimensions={[1200, 800]}
 					/>
