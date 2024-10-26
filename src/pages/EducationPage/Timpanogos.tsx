@@ -15,7 +15,7 @@ export const Timpanogos = () => (
 			<Pannels className="reverse">
 				<Pannel>
 					<h3>Timpanogos High School</h3>
-					<img className="center school" src={imgTimpanogos} />
+					<img className="school" src={imgTimpanogos} />
 					<p className="degree">High School Diploma</p>
 					<p>Aug 2009 - Apr 2006</p>
 					<Scholarships />
@@ -29,9 +29,9 @@ export const Timpanogos = () => (
 				<Pannel>
 					<ImageMaximizable
 						alt="High School Graduation"
-						className="center picture"
+						className="picture"
+						dimensions={[600, 400]}
 						src={imgTimpanogosGraduation}
-						srcLargeDimensions={[600, 400]}
 					/>
 					<p className="image-caption">
 						(High School graduation with girlfriend at the time, eventual wife.)

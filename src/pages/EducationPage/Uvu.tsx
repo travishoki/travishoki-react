@@ -12,7 +12,7 @@ export const Uvu = () => (
 			<Pannels>
 				<Pannel>
 					<h3>Utah Valley University</h3>
-					<img className="center school" src={imgUvu} />
+					<img className="center" src={imgUvu} />
 					<div className="text-block">
 						<p>Digital Media Major</p>
 						<p className="degree">Bachelor of Science</p>
@@ -27,7 +27,8 @@ export const Uvu = () => (
 				<Pannel>
 					<ImageMaximizable
 						alt="University Graduation"
-						className="center picture"
+						className="picture"
+						dimensions={[600, 400]}
 						src={imgUvuGraduation}
 						srcLargeDimensions={[1200, 800]}
 					/>

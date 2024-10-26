@@ -1,5 +1,13 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/responsive.scss';
+
 .about-item {
 	.read-more {
 		text-decoration: underline;
 	}
+}
+
+.about-item-image {
+	@include border-radius(50%);
+	overflow: hidden;
 }

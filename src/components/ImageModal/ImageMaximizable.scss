@@ -1,3 +1,35 @@
 .image-maximizable {
+	display: block;
+	margin: 0;
+	position: relative;
+
+	.zoom-overlay {
+		display: none;
+	}
+
+	&:hover {
+		.zoom-overlay {
+			display: flex;
+		}
+	}
+
+	img {
+		height: auto;
+	}
+}
+
+.zoom-overlay {
+	background: rgba(0, 0, 0, 0.75);
+	height: 100%;
+	width: 100%;
+	position: absolute;
 	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	z-index: 1px;
+
+	i {
+		font-size: 40px;
+		color: white;
+	}
 }

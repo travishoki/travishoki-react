@@ -5,7 +5,6 @@ ul.staggered {
 	li.staggered-item {
 		list-style: none;
 		margin: 25px 0;
-		min-height: 200px;
 		display: flex;
 
 		@include phone-down {
@@ -25,17 +24,21 @@ ul.staggered {
 			display: block;
 			overflow: hidden;
 			margin: 0 auto;
+			height: 250px;
+			width: 250px;
+		}
+
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
 			@include phone-down {
-				height: 250px;
 				margin-bottom: 20px;
-				width: 250px;
 			}
 
 			@include tablet-up {
-				flex: 1 0 200px;
-				height: 200px;
-				width: 200px;
+				flex: 1 0 250px;
 			}
 		}
 

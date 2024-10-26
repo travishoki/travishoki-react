@@ -4,6 +4,8 @@ import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { AboutType } from './AboutPage.data';
 import './AboutItem.scss';
 
+const defaultImageSize = [200, 200];
+
 export const AboutItem = (item: AboutType) => {
 	const [readMore, setReadMore] = useState(false);
 
@@ -12,13 +14,17 @@ export const AboutItem = (item: AboutType) => {
 
 	return (
 		<li className="staggered-item about-item">
-			<ImageMaximizable
-				alt={item.alt ?? item.title}
-				className="round image"
-				src={item.img}
-				srcLarge={item.imgLarge ?? item.img}
-				srcLargeDimensions={item.imgLargeDimensions ?? [200, 200]}
-			/>
+			<div className="image-container">
+				<ImageMaximizable
+					alt={item.alt ?? item.title}
+					className="about-item-image"
+					dimensions={defaultImageSize}
+					imageClassName="image"
+					src={item.img}
+					srcLarge={item.imgLarge ?? item.img}
+					srcLargeDimensions={item.imgLargeDimensions ?? defaultImageSize}
+				/>
+			</div>
 			<div className="text">
 				<h2>{item.title}</h2>
 

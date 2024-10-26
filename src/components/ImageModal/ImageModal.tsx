@@ -4,15 +4,11 @@ import { getDimensions } from './ImageModal.helpers';
 import { useScrollLock } from './ImageModal.hooks';
 import './ImageModal.scss';
 
-export const ImageModal = ({
-	onClose,
-	src,
-	srcLargeDimensions,
-}: ImageModalProps) => {
+export const ImageModal = ({ dimensions, onClose, src }: ImageModalProps) => {
 	useScrollLock();
 
-	const originalWidth = srcLargeDimensions[0];
-	const originalHeight = srcLargeDimensions[1];
+	const originalWidth = dimensions[0];
+	const originalHeight = dimensions[1];
 	const screenWidth = window.innerWidth;
 	const screenHeight = window.innerHeight;
 
@@ -42,7 +38,7 @@ export const ImageModal = ({
 };
 
 type ImageModalProps = {
+	dimensions: number[];
 	onClose: () => void;
 	src: string;
-	srcLargeDimensions: number[];
 };

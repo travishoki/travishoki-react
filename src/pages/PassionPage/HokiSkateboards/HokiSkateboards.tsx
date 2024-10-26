@@ -17,6 +17,7 @@ export const HokiSkateboards = () => (
 			<ImageMaximizable
 				alt="Hoki Skateboards"
 				className="main-image"
+				dimensions={[600, 400]}
 				src={ImgHokiSkateboardsSmall}
 				srcLarge={ImgHokiSkateboards}
 				srcLargeDimensions={[1541, 1030]}
