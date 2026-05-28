@@ -6,7 +6,7 @@ import { ContactInfo } from './ContactInfo';
 
 export const ContactPage = () => (
 	<div className="contact" id="container">
-		<div className="boxed">
+		<div className="boxed boxed-lg">
 			<h1>Contact Me</h1>
 
 			<div className="row">
