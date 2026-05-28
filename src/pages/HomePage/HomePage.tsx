@@ -6,6 +6,7 @@ import { Banner } from './Banner/Banner';
 import { Projects } from './Projects/Projects';
 import { Skills } from './Skills/Skills';
 import { TechTiles } from './TechTiles/TechTiles';
+import { Volunteer } from './Volunteer/Volunteer';
 
 import './HomePage.scss';
 
@@ -15,6 +16,7 @@ export const HomePage = () => (
 		<TechTiles />
 		<Projects />
 		<Skills />
+		<Volunteer />
 		<Education />
 	</div>
 );

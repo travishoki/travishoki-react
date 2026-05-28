@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.ts,.tsx src/",
     "bounce": "rm -rf node_modules && yarn install",
     "ts-check": "npx tsc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "bash scripts/patch-schema-utils.sh"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.5.0",
@@ -75,11 +76,24 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.10",
-    "sass": "^1.89.0",
+    "patch-package": "^8.0.1",
     "prettier": "^3.3.3",
     "redux-immutable-state-invariant": "^2.1.0",
+    "sass": "^1.89.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2"
+  },
+  "overrides": {
+    "ajv-keywords": "^3.5.2",
+    "schema-utils": "^3.3.0",
+    "fork-ts-checker-webpack-plugin": {
+      "schema-utils": "2.7.0"
+    }
+  },
+  "resolutions": {
+    "ajv-keywords": "^3.5.2",
+    "schema-utils": "^3.3.0",
+    "fork-ts-checker-webpack-plugin/schema-utils": "2.7.0"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [

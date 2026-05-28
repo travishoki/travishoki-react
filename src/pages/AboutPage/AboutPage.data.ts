@@ -4,6 +4,8 @@ import ImgBreakdance from '~images/about/green-man-group.jpg';
 import ImgBreakdanceSmall from '~images/about/green-man-group-small.jpg';
 import ImgChildrensBook from '~images/about/childrens-book.jpg';
 import ImgChildrensBookSmall from '~images/about/childrens-book-small.jpg';
+import ImgCubScouts from '~images/about/cub-scouts.jpg';
+import ImgCubScoutsSmall from '~images/about/cub-scouts-small.jpg';
 import ImgEagleScout from '~images/about/eagle-scout.jpg';
 import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
 import ImgFamily from '~images/about/family.jpg';
@@ -36,6 +38,15 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		],
 		img: ImgProfilePic,
 		title: 'Hey,',
+	},
+	{
+		desc: [
+			"In 2025, I started volunteering with Cub Scouts. I'm happy the scouting program that I loved as a kid, is still around for my sons. Each of us parents are active in the pack. I'm the Bear's den leader. I've enjoyed working with the kids and other leaders.",
+		],
+		img: ImgCubScoutsSmall,
+		imgLarge: ImgCubScouts,
+		imgLargeDimensions: [1518, 2024],
+		title: 'Cub Scouts',
 	},
 	{
 		desc: [

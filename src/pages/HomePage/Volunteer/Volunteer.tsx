@@ -1,0 +1,22 @@
+import React from 'react';
+
+import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
+import './Volunteer.scss';
+
+export const Volunteer = () => (
+	<section className="blue center volunteer-component">
+		<h3>Scouting America</h3>
+
+		<div className="volunteer-org">
+			<img
+				className="center"
+				height="226"
+				src={imgScoutingAmerica}
+				width="200"
+			/>
+			<h4>Volunteering in Cub Scouts Since 2025</h4>
+			<p>Bear&apos;s Assistant Den Leader since spring of 2025</p>
+			<p>Tentative Webelo&apos;s Den Leader Spring of 2026</p>
+		</div>
+	</section>
+);
