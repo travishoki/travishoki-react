@@ -13,7 +13,9 @@ export const Logo = () => (
 		<img
 			alt="Hoki Skateboards"
 			className="center"
+			height="142px"
 			src="http://links.hokiskateboards.com/images/logo.png"
+			width="275px"
 		/>
 	</a>
 );
