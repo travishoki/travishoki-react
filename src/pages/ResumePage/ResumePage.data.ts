@@ -32,13 +32,28 @@ import ImgXant from '~images/experience/xant.png';
 export const RESUME_DATA: ResumeDataType[] = [
 	{
 		affiliatedCompany: {
+			img: ImgSpiff,
+			title: 'Spiff acquired by Salesforce (March 2024)',
+		},
+		dateEnd: 'Present',
+		dateStart: 'Mar. 2024',
+		img: ImgSalesforce,
+		position: 'Senior Member of the Technical Staff',
+		tasks: [
+			'Brought the code up to Salesforce standard by adding a large amount of unit tests.',
+		],
+		techs: [REACT_JS, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		title: 'Salesforce',
+	},
+	{
+		affiliatedCompany: {
 			img: ImgSalesforce,
-			title: 'Acquired by Salesforce (March 2024)',
+			title: 'Spiff Acquired by Salesforce (March 2024)',
 		},
 		dateEnd: 'Present',
 		dateStart: 'Aug. 2021',
 		img: ImgSpiff,
-		position: 'Senior Member of the Technical Staff',
+		position: 'Frontend Engineer',
 		tasks: [
 			'Develop infrastructure for string translations, enhancing global accessibility',
 			'Create scripts to ensure code cleanliness, improving maintainability',
