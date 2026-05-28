@@ -19,17 +19,17 @@
 }
 
 .zoom-overlay {
-	background: rgba(0, 0, 0, 0.75);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	cursor: pointer;
-	justify-content: center;
 	align-items: center;
+	background: rgba(0, 0, 0, 0.75);
+	cursor: pointer;
+	height: 100%;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
 	z-index: 1;
 
 	i {
-		font-size: 40px;
 		color: white;
+		font-size: 40px;
 	}
 }

@@ -1,13 +1,13 @@
 .scholarships {
-	display: flex;
-	justify-content: flex-start;
 	align-items: center;
+	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
 	margin-bottom: 10px;
 
 	img {
-		width: 50px;
 		margin-right: 10px;
+		width: 50px;
 	}
 
 	a {

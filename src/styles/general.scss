@@ -44,8 +44,8 @@ p.indent {
 }
 
 a {
-	cursor: pointer;
 	color: $white;
+	cursor: pointer;
 }
 
 p,
@@ -69,8 +69,8 @@ img {
 	max-width: 100%;
 
 	&.center {
-		margin: 0 auto;
 		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -113,8 +113,8 @@ section {
 }
 
 .boxed {
-	max-width: 1024px;
 	margin: 0 auto;
+	max-width: 1024px;
 	padding: 0 10px;
 
 	&.boxed-sm {
@@ -131,10 +131,10 @@ section {
 }
 
 h1 {
+	border-bottom: solid 1px $gray-four;
 	font-weight: bold;
 	margin: 0;
 	padding: 30px 0;
-	border-bottom: solid 1px $gray-four;
 	text-align: center;
 }
 

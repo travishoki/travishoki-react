@@ -19,8 +19,8 @@
 	}
 
 	.find-section {
-		max-width: 400px;
 		margin: 0 auto 20px;
+		max-width: 400px;
 
 		.filter-item {
 			overflow: hidden;
@@ -78,9 +78,9 @@
 
 			h2,
 			h3 {
-				text-align: center;
 				margin: 0;
 				padding: 0;
+				text-align: center;
 			}
 		}
 
@@ -111,9 +111,9 @@
 		}
 
 		.btn {
-			max-width: 200px;
-			margin: 20px auto 0;
 			display: block;
+			margin: 20px auto 0;
+			max-width: 200px;
 		}
 	}
 
@@ -192,9 +192,9 @@
 		}
 
 		.popup {
-			display: none;
 			bottom: 0;
 			cursor: pointer;
+			display: none;
 			left: 0;
 			position: absolute;
 			right: 0;

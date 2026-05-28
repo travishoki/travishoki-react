@@ -4,9 +4,9 @@ ul.staggered {
 
 	li.staggered-item {
 		border-top: solid 1px $gray-four;
+		display: flex;
 		list-style: none;
 		padding: 25px 0;
-		display: flex;
 
 		@include phone-down {
 			display: block;
@@ -17,8 +17,8 @@ ul.staggered {
 
 		.image {
 			display: block;
-			overflow: hidden;
 			margin: 0 auto;
+			overflow: hidden;
 		}
 
 		.image-container {

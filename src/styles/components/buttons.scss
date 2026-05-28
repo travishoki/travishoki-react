@@ -9,12 +9,12 @@
 	}
 
 	&.btn-secondary {
-		border: solid 3px $secondary;
 		background: $secondary;
+		border: solid 3px $secondary;
 
 		&:hover {
-			border: solid 3px $secondary;
 			background: $primary;
+			border: solid 3px $secondary;
 		}
 	}
 }

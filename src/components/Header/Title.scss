@@ -3,11 +3,11 @@
 @import '../../styles/variables.scss';
 
 .nav-title {
+	color: $white;
+	font-size: 35px;
+	font-weight: bold;
 	line-height: 60px;
 	margin: 0;
 	padding: 0;
-	color: $white;
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 35px;
 }

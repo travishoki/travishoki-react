@@ -21,12 +21,12 @@
 		background: black;
 		border: none;
 		cursor: pointer;
+		height: $buttonSize;
 		position: fixed;
 		right: 20px;
-		width: $buttonSize;
-		height: $buttonSize;
 		text-align: center;
 		top: 15px;
+		width: $buttonSize;
 
 		i {
 			color: $white;

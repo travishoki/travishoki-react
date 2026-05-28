@@ -20,8 +20,8 @@
 			position: relative;
 
 			@include phone-down {
-				max-width: 300px;
 				margin: 0 auto;
+				max-width: 300px;
 			}
 
 			li {
@@ -45,8 +45,8 @@
 
 					&:first-child,
 					&:last-child {
-						width: 100px;
 						margin: 20px 0;
+						width: 100px;
 					}
 				}
 
@@ -80,8 +80,8 @@
 						}
 
 						h3 {
-							font-size: 14px;
 							color: $gray-one;
+							font-size: 14px;
 						}
 					}
 				}

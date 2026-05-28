@@ -1,19 +1,19 @@
 @import '../../../../styles/variables.scss';
 
 .current-filter {
-	border: solid 1px $gray-two;
-	padding: 10px;
-	display: flex;
 	align-items: center;
+	border: solid 1px $gray-two;
+	display: flex;
 	justify-content: space-between;
+	padding: 10px;
 
 	i {
 		font-size: 26px;
 	}
 
 	.tech-container {
-		display: flex;
 		align-items: center;
+		display: flex;
 
 		.tech-icon-holder {
 			margin-right: 20px;

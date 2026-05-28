@@ -21,9 +21,9 @@
 	$fullMobileNavHeight: 645px;
 	$mobileNavAnimSpeed: 0.7s;
 	display: block;
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	list-style: none;
 
 	@include phone-down {
 		li:last-child {
@@ -42,8 +42,8 @@
 	}
 
 	@include tablet-up {
-		float: right;
 		display: flex;
+		float: right;
 	}
 
 	li {
