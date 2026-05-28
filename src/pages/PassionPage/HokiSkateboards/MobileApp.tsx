@@ -41,6 +41,8 @@ export const MobileApp = () => (
 		<PassionLabel>Technology:</PassionLabel>
 		<TechListSwitcher list={techs} />
 
+		<h3>Download My App!</h3>
+
 		<p>
 			Built in React Native with Typescript, using the react-native-game-engine
 			and MatterJs.
