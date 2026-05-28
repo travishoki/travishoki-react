@@ -5,6 +5,11 @@
 #container.projects {
 	$iconW: 40px;
 
+	.projects-content {
+		border-top: solid 1px $gray-four;
+		padding-top: 20px;
+	}
+
 	.answer-section {
 		margin: 10px 0 0 20px;
 
