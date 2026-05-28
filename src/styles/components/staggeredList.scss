@@ -22,9 +22,6 @@ ul.staggered {
 		}
 
 		.image-container {
-			display: flex;
-			justify-content: center;
-
 			@include phone-down {
 				margin-bottom: 20px;
 			}
