@@ -66,31 +66,29 @@ export const ProjectsPage = () => {
 			>
 				<h1>Projects</h1>
 
-				<div className="projects-content">
-					<Finder
-						filter={filter}
-						filterList={FILTER_LIST}
-						filterTerm={filterTerm}
-						grid={grid}
-						onClearFilter={onClearFilter}
-						onClearSearchTerm={onClearSearchTerm}
-						projectsLength={projects.length}
-						searchTerm={searchTerm}
-						setFilter={setFilter}
-						setFilterTerm={setFilterTerm}
-						setGrid={setGrid}
-						setSearchTerm={setSearchTerm}
-					/>
-					<Projects grid={grid} projectLink={projectLink} projects={projects} />
+				<Finder
+					filter={filter}
+					filterList={FILTER_LIST}
+					filterTerm={filterTerm}
+					grid={grid}
+					onClearFilter={onClearFilter}
+					onClearSearchTerm={onClearSearchTerm}
+					projectsLength={projects.length}
+					searchTerm={searchTerm}
+					setFilter={setFilter}
+					setFilterTerm={setFilterTerm}
+					setGrid={setGrid}
+					setSearchTerm={setSearchTerm}
+				/>
+				<Projects grid={grid} projectLink={projectLink} projects={projects} />
 
-					<NoResults
-						filter={filter}
-						isVisible={projects.length === 0}
-						onClearFilter={onClearFilter}
-						onClearSearchTerm={onClearSearchTerm}
-						searchTerm={searchTerm}
-					/>
-				</div>
+				<NoResults
+					filter={filter}
+					isVisible={projects.length === 0}
+					onClearFilter={onClearFilter}
+					onClearSearchTerm={onClearSearchTerm}
+					searchTerm={searchTerm}
+				/>
 			</div>
 		</div>
 	);
