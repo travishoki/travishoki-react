@@ -10,9 +10,9 @@ export const Volunteer = () => (
 		<div className="volunteer-org">
 			<img
 				className="center"
-				height="226"
+				height="200"
 				src={imgScoutingAmerica}
-				width="200"
+				width="177"
 			/>
 			<h4>Volunteering in Cub Scouts Since 2025</h4>
 			<p>Bear&apos;s Assistant Den Leader since spring of 2025</p>
