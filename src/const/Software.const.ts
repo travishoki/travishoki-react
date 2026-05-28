@@ -17,3 +17,9 @@ export const SOFTWARE_IMAGES = {
 	INDESIGN: ImgIndesign,
 	PHOTOSHOP: ImgPhotoshop,
 };
+
+export const SOFTWARE_STRINGS: Record<keyof SoftwareKeys, string> = {
+	ILLUSTRATOR: 'Adobe Illustrator',
+	INDESIGN: 'Adobe InDesign',
+	PHOTOSHOP: 'Adobe Photoshop',
+};
