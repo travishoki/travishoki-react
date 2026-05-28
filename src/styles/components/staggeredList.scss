@@ -3,13 +3,10 @@ ul.staggered {
 	padding: 0;
 
 	li.staggered-item {
+		border-top: solid 1px $gray-four;
 		list-style: none;
 		padding: 25px 0;
 		display: flex;
-
-		&:not(:last-child) {
-			border-bottom: solid 1px $gray-four;
-		}
 
 		@include phone-down {
 			display: block;
