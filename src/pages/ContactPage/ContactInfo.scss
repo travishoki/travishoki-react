@@ -1,30 +1,36 @@
 @import '../../styles/variables.scss';
 
-.contact-info {
-	margin-bottom: 40px;
-
-	p {
-		margin: 0;
+#container.contact {
+	.contact-content {
+		padding-top: 30px;
 	}
 
-	.block {
-		margin-bottom: 10px;
+	.contact-info {
+		margin-bottom: 40px;
+
+		p {
+			margin: 0;
+		}
+
+		.block {
+			margin-bottom: 10px;
+		}
 	}
-}
 
-.content-image {
-	padding-bottom: 20px;
-}
-
-.linked-link {
-	text-decoration: none;
-
-	.fa {
-		margin-left: 5px;
+	.content-image {
+		padding-bottom: 20px;
 	}
-}
 
-.linkedin-profile-image {
-	border-radius: 100%;
-	margin-right: 5px;
+	.linked-link {
+		text-decoration: none;
+
+		.fa {
+			margin-left: 5px;
+		}
+	}
+
+	.linkedin-profile-image {
+		border-radius: 100%;
+		margin-right: 5px;
+	}
 }

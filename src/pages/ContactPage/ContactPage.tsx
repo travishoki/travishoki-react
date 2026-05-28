@@ -8,14 +8,15 @@ export const ContactPage = () => (
 	<div className="contact" id="container">
 		<div className="boxed boxed-lg">
 			<h1>Contact Me</h1>
+			<div className="contact-content">
+				<div className="row">
+					<div className="col-sm-6">
+						<img className="content-image" src={ImgProfilePic} />
+					</div>
 
-			<div className="row">
-				<div className="col-sm-6">
-					<img className="content-image" src={ImgProfilePic} />
-				</div>
-
-				<div className="col-sm-6">
-					<ContactInfo />
+					<div className="col-sm-6">
+						<ContactInfo />
+					</div>
 				</div>
 			</div>
 		</div>
