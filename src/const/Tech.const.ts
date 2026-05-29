@@ -1,6 +1,7 @@
 import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
 import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
 import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
+import ImgClaudeCode from '~images/icons/tech-icons/claude-code.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
 import ImgCss from '~images/icons/tech-icons/css.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
@@ -26,6 +27,7 @@ import ImgWordpress from '~images/icons/tech-icons/wordpress.jpg';
 export const ACTION_SCRIPT = 'ACTION_SCRIPT';
 export const AMP = 'AMP';
 export const ANGULAR_JS = 'ANGULAR_JS';
+export const CLAUDE_CODE = 'CLAUDE_CODE';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
 export const DJANGO = 'DJANGO';
@@ -52,6 +54,7 @@ export type TechKeys = {
 	ACTION_SCRIPT: 'ACTION_SCRIPT';
 	AMP: 'AMP';
 	ANGULAR_JS: 'ANGULAR_JS';
+	CLAUDE_CODE: 'CLAUDE_CODE';
 	COFFEE_SCRIPT: 'COFFEE_SCRIPT';
 	CSS: 'CSS';
 	DJANGO: 'DJANGO';
@@ -79,6 +82,7 @@ export const TechStrings: Record<keyof TechKeys, string> = {
 	ACTION_SCRIPT: 'Action Script',
 	AMP: 'AMP',
 	ANGULAR_JS: 'Angular JS',
+	CLAUDE_CODE: 'Claude Code',
 	COFFEE_SCRIPT: 'Coffee Script',
 	CSS: 'CSS',
 	DJANGO: 'Django',
@@ -108,6 +112,7 @@ export const TECH_IMAGES = {
 	ACTION_SCRIPT: ImgActionScript,
 	AMP: ImgAmp,
 	ANGULAR_JS: ImgAngularJs,
+	CLAUDE_CODE: ImgClaudeCode,
 	COFFEE_SCRIPT: ImgCoffeeScript,
 	CSS: ImgCss,
 	DJANGO: ImgDjango,

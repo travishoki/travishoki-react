@@ -21,10 +21,12 @@ import {
 	TYPESCRIPT,
 	WEBPACK,
 	WORDPRESS,
+	CLAUDE_CODE,
 } from '~const/Tech.const';
 
 // Ordered for display by what I want to advertise first
 export const DISPLAYED_LIST: (keyof TechKeys)[] = [
+	CLAUDE_CODE,
 	REACT_JS,
 	REACT_NATIVE,
 	REDUX,
