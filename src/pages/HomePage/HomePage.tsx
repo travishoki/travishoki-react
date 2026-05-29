@@ -16,7 +16,7 @@ export const HomePage = () => (
 		<TechTiles />
 		<Projects />
 		<Skills />
-		<Volunteer />
 		<Education />
+		<Volunteer />
 	</div>
 );
