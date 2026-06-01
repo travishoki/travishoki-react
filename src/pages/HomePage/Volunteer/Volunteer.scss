@@ -16,8 +16,15 @@ section.volunteer-component {
 		font-size: 36px;
 	}
 
-	p {
-		font-size: 16px;
-		margin: 0;
+	.volunteer-roles {
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		margin-top: 10px;
+
+		p {
+			font-size: 16px;
+			margin: 0;
+		}
 	}
 }
