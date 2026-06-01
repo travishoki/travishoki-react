@@ -12,10 +12,10 @@ export const Volunteer = () => (
 		<div className="volunteer-roles">
 			<div>
 				<p>Bear&apos;s Assistant Den Leader</p>
-				<p>since spring of 2025</p>
+				<p>since Spring of 2025</p>
 			</div>
 			<div>
-				<p>Tentative Webelos Den Leader</p>
+				<p>Webelos Den Leader</p>
 				<p>Spring of 2026</p>
 			</div>
 		</div>
