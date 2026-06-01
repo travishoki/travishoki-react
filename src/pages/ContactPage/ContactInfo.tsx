@@ -7,9 +7,16 @@ export const ContactInfo = () => (
 	<div className="contact-info">
 		<div className="block">
 			<p>Travis Hoki</p>
-			<p>801-691-2373</p>
-			<p>travis.hoki@gmail.com</p>
-			<p>Based out of Pleasant Grove, UT, United States</p>
+			<p>
+				<i className="fa fa-phone" /> 801-691-2373
+			</p>
+			<p>
+				<i className="fa fa-envelope" /> travis.hoki@gmail.com
+			</p>
+			<p>
+				<i className="fa fa-map-marker" /> Based out of Pleasant Grove, UT,
+				United States
+			</p>
 		</div>
 
 		<div className="block">
