@@ -3,8 +3,22 @@
 .tech-list-switcher {
 	margin-bottom: 20px;
 
+	.tech-list-switcher-header {
+		background: $primary;
+		border: solid 1px $primary;
+		padding: 4px 10px;
+
+		p {
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0;
+			text-align: left;
+		}
+	}
+
 	.tech-list-switcher-content {
 		border: solid 1px $primary;
+		border-top: none;
 		padding: 10px;
 	}
 }

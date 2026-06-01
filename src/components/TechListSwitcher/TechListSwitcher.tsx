@@ -6,6 +6,7 @@ import { TechListHorizontal } from '~components/TechListSwitcher/TechListHorizon
 import './TechListSwitcher.scss';
 
 export const TechListSwitcher = ({
+	header = 'Tech Stack',
 	intialExpanded = false,
 	list,
 }: TechListProps) => {
@@ -17,6 +18,9 @@ export const TechListSwitcher = ({
 
 	return (
 		<div className="tech-list-switcher">
+			<div className="tech-list-switcher-header">
+				<p>{header}</p>
+			</div>
 			<div className="tech-list-switcher-content">
 				{expanded ? (
 					<TechListVertical list={list} />
@@ -40,6 +44,7 @@ export const TechListSwitcher = ({
 };
 
 type TechListProps = {
+	header?: string;
 	intialExpanded?: boolean;
 	list: (keyof TechKeys)[];
 };
