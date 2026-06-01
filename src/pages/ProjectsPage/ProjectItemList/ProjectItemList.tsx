@@ -20,7 +20,7 @@ export const ProjectItemList = ({
 	url,
 }: ProjectItemListProps) => (
 	<div className="list-item">
-		<div className="projectHeading">
+		<div className="project-heading">
 			<h2>{title}</h2>
 			<h3>{subtitle}</h3>
 		</div>

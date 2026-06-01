@@ -20,7 +20,7 @@ export const Nav = () => {
 	return (
 		<>
 			<div className="menu-btn">
-				<i className="fa fa-bars mobileMenuIcon" onClick={toggleOpen} />
+				<i className="fa fa-bars mobile-menu-icon" onClick={toggleOpen} />
 			</div>
 
 			<ul
