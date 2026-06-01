@@ -6,6 +6,7 @@ import {
 	ILLUSTRATOR,
 	INDESIGN,
 	PHOTOSHOP,
+	PROCREATE,
 	SoftwareKeys,
 } from '~const/Software.const';
 import {
@@ -36,6 +37,7 @@ const appSoftwareList: (keyof SoftwareKeys)[] = [
 	ILLUSTRATOR,
 	INDESIGN,
 	PHOTOSHOP,
+	PROCREATE,
 ];
 
 export const Content = () => (
