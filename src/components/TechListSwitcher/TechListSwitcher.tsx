@@ -1,50 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { TechKeys } from '~const/Tech.const';
-import { TechListVertical } from '~components/TechListSwitcher/TechListVertical/TechListVertical';
-import { TechListHorizontal } from '~components/TechListSwitcher/TechListHorizontal/TechListHorizontal';
-import './TechListSwitcher.scss';
+import {
+	ListSwitcher,
+	ListSwitcherItem,
+} from '~components/ListSwitcher/ListSwitcher';
+import { TECH_IMAGES, TechKeys, TechStrings } from '~const/Tech.const';
+
+type TechListProps = {
+	header?: string;
+	intialExpanded?: boolean;
+	list: (keyof TechKeys)[];
+};
 
 export const TechListSwitcher = ({
 	header = 'Tech Stack',
 	intialExpanded = false,
 	list,
 }: TechListProps) => {
-	const [expanded, setExpanded] = useState(intialExpanded);
-
-	const onClick = () => setExpanded(!expanded);
-
-	if (list.length === 0) return null;
+	const items: ListSwitcherItem[] = list.map((tech) => ({
+		image: TECH_IMAGES[tech],
+		label: TechStrings[tech],
+		to: `/projects/${tech}`,
+	}));
 
 	return (
-		<div className="tech-list-switcher">
-			<div className="tech-list-switcher-header">
-				<p>{header}</p>
-			</div>
-			<div className="tech-list-switcher-content">
-				{expanded ? (
-					<TechListVertical list={list} />
-				) : (
-					<TechListHorizontal list={list} />
-				)}
-			</div>
-
-			<button
-				className="btn btn-primary tech-list-switcher-button"
-				onClick={onClick}
-			>
-				{expanded ? (
-					<i className="fa fa-chevron-up" />
-				) : (
-					<i className="fa fa-chevron-down" />
-				)}
-			</button>
-		</div>
+		<ListSwitcher
+			circle
+			header={header}
+			initialExpanded={intialExpanded}
+			items={items}
+		/>
 	);
-};
-
-type TechListProps = {
-	header?: string;
-	intialExpanded?: boolean;
-	list: (keyof TechKeys)[];
 };

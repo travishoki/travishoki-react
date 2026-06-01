@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+.list-switcher {
+	margin-bottom: 20px;
+
+	.list-switcher-content {
+		border: solid 1px $primary;
+		border-top: none;
+		padding: 10px;
+	}
+
+	.list-switcher-header {
+		background: $primary;
+		border: solid 1px $primary;
+		padding: 4px 10px;
+
+		p {
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0;
+			text-align: left;
+		}
+	}
+}
+
+.list-switcher-button {
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	height: 25px;
+	justify-content: center;
+	margin: 0 !important;
+	padding: 0;
+	width: 100px;
+}
+
+.list-switcher-icon {
+	$iconW: 40px;
+	height: $iconW;
+	width: $iconW;
+
+	&.circle {
+		border-radius: 50%;
+	}
+}
+
+ul.list-switcher-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin-right: 10px;
+	}
+}
+
+ul.list-switcher-vertical {
+	$iconW: 40px;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a,
+		.list-switcher-item {
+			align-items: center;
+			display: flex;
+		}
+
+		.list-switcher-icon {
+			margin-right: 10px;
+		}
+
+		p {
+			line-height: $iconW;
+			margin: 0;
+		}
+	}
+}
