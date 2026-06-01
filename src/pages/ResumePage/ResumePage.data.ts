@@ -41,6 +41,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		position: 'Senior Member of the Technical Staff',
 		tasks: [
 			'Brought the code up to Salesforce standard by adding a large amount of unit tests.',
+			'Helped to scale the Spiff software from the user capacity of a small business to a large enterprise software company.',
 		],
 		techs: [REACT_JS, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Salesforce',
