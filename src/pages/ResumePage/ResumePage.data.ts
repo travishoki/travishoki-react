@@ -2,6 +2,7 @@ import {
 	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
+	CLAUDE_CODE,
 	COFFEE_SCRIPT,
 	CSS,
 	HANDLEBARS_JS,
@@ -43,7 +44,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Brought the code up to Salesforce standard by adding a large amount of unit tests.',
 			'Helped to scale the Spiff software from the user capacity of a small business to a large enterprise software company.',
 		],
-		techs: [REACT_JS, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [CLAUDE_CODE, REACT_JS, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
 		title: 'Salesforce',
 	},
 	{
