@@ -141,7 +141,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'overstock',
 		contributions: [
-			'I incorporated react router and set the project up to be extendable with future pages/tools.',
+			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
 		],
 		desc: 'Internal SEO tool that enables business employees to do things such as manipulte seo titles for taxonomy display names.',
 		itemKey: 'overstock-admin-portal',
