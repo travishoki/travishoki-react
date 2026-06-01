@@ -59,6 +59,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'UI/UX Design',
 			'Character illustrations',
 		],
+		date: '2024',
 		desc: 'Teaching myself React Native as a passion project',
 		itemKey: 'hoki-skateboards-react-native',
 		learned: '',
@@ -575,6 +576,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 export type ProjectType = {
 	company: string;
 	contributions: string[];
+	date?: string;
 	desc: string;
 	itemKey: string;
 	learned: string;

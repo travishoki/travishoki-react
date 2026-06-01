@@ -9,6 +9,7 @@ const logos = require.context('../../../images/clients', true);
 export const ProjectItemList = ({
 	company,
 	contributions,
+	date,
 	desc,
 	itemKey,
 	learned,
@@ -31,10 +32,13 @@ export const ProjectItemList = ({
 			<div className="col-sm-6">
 				<img className="logo center" src={logos(`./${company}.jpg`)} />
 
+				{/* Date */}
+				{date && <p className="project-date">{date}</p>}
+
 				{/* Description */}
 				{desc && (
 					<>
-						<p className="list-heading">Description:</p>
+						<p className="label">Description:</p>
 						<div className="answer-section">
 							<p>{desc}</p>
 						</div>
@@ -44,7 +48,7 @@ export const ProjectItemList = ({
 				{/* Contributions */}
 				{contributions && contributions.length > 0 && (
 					<>
-						<p className="list-heading">Contributions:</p>
+						<p className="label">Contributions:</p>
 						<div className="answer-section">
 							<ul className="disc answer-section-list">
 								{contributions.map((contribution, index) => (
@@ -58,7 +62,7 @@ export const ProjectItemList = ({
 				{/* What I learned */}
 				{learned && (
 					<>
-						<p className="list-heading">What I Learned:</p>
+						<p className="label">What I Learned:</p>
 						<div className="answer-section">
 							<p>{learned}</p>
 						</div>
@@ -68,7 +72,7 @@ export const ProjectItemList = ({
 				{/* Technologies */}
 				{techs && techs.length > 0 && (
 					<>
-						<p className="list-heading">Technology:</p>
+						<p className="label">Technology:</p>
 						<div className="answer-section">
 							<TechListSwitcher intialExpanded list={techs} />
 						</div>
