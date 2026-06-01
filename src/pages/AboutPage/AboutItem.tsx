@@ -25,7 +25,7 @@ export const AboutItem = (item: AboutType) => {
 					srcLargeDimensions={item.imgLargeDimensions ?? defaultImageSize}
 				/>
 			</div>
-			<div className="text">
+			<div className="info-box">
 				<h2>{item.title}</h2>
 
 				{readMore ? (

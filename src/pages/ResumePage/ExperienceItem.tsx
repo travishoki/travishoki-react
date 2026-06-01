@@ -21,7 +21,7 @@ export const ExperienceItem = ({
 			<img className="image round experience-image" src={img} />
 		</div>
 
-		<div className="text">
+		<div className="info-box">
 			<h3>{title}</h3>
 			<div className="sub-line">
 				<h4>{position}</h4>
