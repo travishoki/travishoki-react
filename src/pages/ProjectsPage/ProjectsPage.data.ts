@@ -90,7 +90,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Create Branch links for redirecting to IOS or android apps.',
 			'Create screen for selecting the data source as well as a screen platform specific pages info.',
 		],
-		desc: "Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagrams's store front, then create a book by picking a data source.",
+		desc: "Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
 		itemKey: 'chatbooks-quick-flow-sources',
 		learned: '',
 		live: false,
@@ -101,7 +101,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'chatbooks',
 		contributions: ["Tie into existing API's to allow for layflat."],
-		desc: 'Enable Premium layflat book types for the desktop. This was a break through for the company as it is a better experience to create premium laylfat sized books at a desktop size.',
+		desc: 'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		itemKey: 'chatbooks-layflat',
 		learned: '',
 		live: true,
@@ -128,9 +128,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'overstock',
 		contributions: [
-			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit withing AMP specifications.',
+			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
 		],
-		desc: 'A version of the search/navigation page was build as an Accelerate Mobile Page for fast loading on mobile devices and for SEO.',
+		desc: 'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
 		itemKey: 'overstock-amp-featured-product',
 		learned: '',
 		live: false,
@@ -144,9 +144,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 		contributions: [
 			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
 		],
-		desc: 'Internal SEO tool that enables business employees to do things such as manipulte seo titles for taxonomy display names.',
+		desc: 'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
 		itemKey: 'overstock-admin-portal',
-		learned: 'I got a deeper understanding of the the Redux flow.',
+		learned: 'I got a deeper understanding of the Redux flow.',
 		live: false,
 		subtitle: 'Admin Portal',
 		techs: [REACT_JS, REDUX, NODE_JS, HTML, LESS_CSS, JAVASCRIPT, WEBPACK],
@@ -156,9 +156,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'overstock',
 		contributions: [
-			'The initial project was build within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality withing a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed to jump into new stacks that I had never done before and to prioritize time.',
+			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
 		],
-		desc: "Project for the Overstock Hackathon. It's goal was to increase the amount of reviews and user generated images.",
+		desc: 'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
 		itemKey: 'overstock-hackathon-2017',
 		learned: '',
 		live: true,
@@ -187,7 +187,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 		desc: 'Site that resizes down to mobile devices',
 		itemKey: 'overstock-responsive-sarp',
 		learned:
-			'The A/B site test origianlly failed due to routing errors. I had to be persistant at keeping the conversation going and getting help from the right people.',
+			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
 		live: true,
 		subtitle: 'Responsive See All Reviews Page',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
@@ -199,7 +199,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 		contributions: [
 			'Componentize the Add To Cart functionality into a react module.',
 		],
-		desc: 'On mobile devices ad and add to cart popup.',
+		desc: 'On mobile devices, an add to cart popup.',
 		itemKey: 'overstock-sarp-mobile-atc',
 		learned: 'This was my first production level ReactJs work.',
 		live: true,
@@ -214,7 +214,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 		desc: 'Allowing a user to leave rating only reviews.',
 		itemKey: 'overstock-reviews-breakout',
 		learned:
-			'This project was a huge undertaking. Perviously at other companies I had been full-stack. This project helped me understand the limitations and resonsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
+			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
 		live: true,
 		subtitle: 'Reviews Breakout',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, HANDLEBARS_JS, JQUERY],
@@ -224,7 +224,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'overstock',
 		contributions: [
-			"I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shoppting site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
+			"I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
 		desc: 'Rating reviews stars',
 		itemKey: 'overstock-rating-review-stars',
@@ -239,7 +239,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 	{
 		company: 'overstock',
 		contributions: ['Took the basic wordpress plugin and rearchitected it.'],
-		desc: 'Embedable affiliate links',
+		desc: 'Embeddable affiliate links',
 		itemKey: 'oversock-affiliate-links',
 		learned: '',
 		live: true,

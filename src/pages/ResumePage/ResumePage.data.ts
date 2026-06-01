@@ -67,7 +67,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	{
 		affiliatedCompany: {
 			img: ImgInsideSales,
-			title: 'Formally Inside Sales',
+			title: 'Formerly Inside Sales',
 		},
 		dateEnd: 'Aug. 2021',
 		dateStart: 'Dec. 2020',
@@ -119,10 +119,10 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
-			'In house developement on student housing software',
+			'In-house development on student housing software',
 			'Query user data via Python and Django',
 			'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
-			'Found ways to speedup and enhance the user experience of the software',
+			'Found ways to speed up and enhance the user experience of the software',
 		],
 		techs: [ANGULAR_JS, PYTHON, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
 		title: 'Room Choice',
@@ -165,7 +165,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Alongside the students, break it down with sweet dance moves',
 		],
 		techs: [],
-		title: 'Academy of Balley',
+		title: 'Academy of Ballet',
 	},
 	{
 		dateEnd: 'Jun. 2011',
