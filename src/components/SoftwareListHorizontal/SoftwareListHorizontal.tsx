@@ -6,13 +6,19 @@ import { SoftwareIcon } from '~components/SoftwareListHorizontal/SoftwareIcon';
 import { SOFTWARE_STRINGS, SoftwareKeys } from '~const/Software.const';
 import './SoftwareListHorizontal.scss';
 
-export const SoftwareListHorizontal = ({ list }: SoftwareListProps) => {
+export const SoftwareListHorizontal = ({
+	header = 'Software',
+	list,
+}: SoftwareListProps) => {
 	const [expanded, setExpanded] = useState(false);
 
 	if (list.length === 0) return null;
 
 	return (
 		<div className="software-list-switcher">
+			<div className="software-list-switcher-header">
+				<p>{header}</p>
+			</div>
 			<div className="software-list-switcher-content">
 				<ul className={expanded ? 'software-list-vertical' : 'software-list'}>
 					{list.map((software, index) => (
@@ -44,5 +50,6 @@ export const SoftwareListHorizontal = ({ list }: SoftwareListProps) => {
 };
 
 type SoftwareListProps = {
+	header?: string;
 	list: (keyof SoftwareKeys)[];
 };
