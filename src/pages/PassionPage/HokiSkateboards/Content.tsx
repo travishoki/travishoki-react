@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SoftwareListHorizontal } from '~components/SoftwareListHorizontal/SoftwareListHorizontal';
+import { SoftwareListSwitcher } from '~components/SoftwareListSwitcher/SoftwareListSwitcher';
 import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 import {
 	ILLUSTRATOR,
@@ -91,7 +91,7 @@ export const Content = () => (
 				<p>Illustrated kid&apos;s book about skateboarding.</p>
 
 				<PassionLabel>Software:</PassionLabel>
-				<SoftwareListHorizontal list={appSoftwareList} />
+				<SoftwareListSwitcher list={appSoftwareList} />
 
 				<p>
 					Self authored, illustrated, and published. Successfully Kickstarter

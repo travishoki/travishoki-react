@@ -15,7 +15,7 @@ type SoftwareListProps = {
 	list: (keyof SoftwareKeys)[];
 };
 
-export const SoftwareListHorizontal = ({
+export const SoftwareListSwitcher = ({
 	header = 'Software',
 	list,
 }: SoftwareListProps) => {

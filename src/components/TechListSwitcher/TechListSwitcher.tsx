@@ -8,13 +8,13 @@ import { TECH_IMAGES, TechKeys, TechStrings } from '~const/Tech.const';
 
 type TechListProps = {
 	header?: string;
-	intialExpanded?: boolean;
+	initialExpanded?: boolean;
 	list: (keyof TechKeys)[];
 };
 
 export const TechListSwitcher = ({
 	header = 'Tech Stack',
-	intialExpanded = false,
+	initialExpanded = false,
 	list,
 }: TechListProps) => {
 	const items: ListSwitcherItem[] = list.map((tech) => ({
@@ -27,7 +27,7 @@ export const TechListSwitcher = ({
 		<ListSwitcher
 			circle
 			header={header}
-			initialExpanded={intialExpanded}
+			initialExpanded={initialExpanded}
 			items={items}
 		/>
 	);

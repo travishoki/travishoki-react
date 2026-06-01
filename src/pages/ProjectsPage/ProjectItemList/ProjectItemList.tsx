@@ -74,7 +74,7 @@ export const ProjectItemList = ({
 					<>
 						<p className="label">Technology:</p>
 						<div className="answer-section">
-							<TechListSwitcher intialExpanded list={techs} />
+							<TechListSwitcher initialExpanded list={techs} />
 						</div>
 					</>
 				)}
