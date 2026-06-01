@@ -4,7 +4,7 @@ import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
 import './Volunteer.scss';
 
 export const Volunteer = () => (
-	<section className="blue center volunteer-component">
+	<section className="center primary volunteer-component">
 		<h3>Scouting America</h3>
 
 		<img className="center" height="200" src={imgScoutingAmerica} width="177" />
