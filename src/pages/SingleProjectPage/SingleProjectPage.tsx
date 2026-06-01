@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { ProjectItemList } from '../ProjectsPage/ProjectItemList/ProjectItemList';
 import { PROJECTS_DATA } from '../ProjectsPage/ProjectsPage.data';
+
+import { BackButton } from './BackButton/BackButton';
 
 export const SingleProjectPage = () => {
 	const { paramItemKey } = useParams();
@@ -15,9 +17,7 @@ export const SingleProjectPage = () => {
 	return (
 		<div className="projects" id="container">
 			<div className="projects-container grid">
-				<Link className="btn btn-primary" to="/projects">
-					View All
-				</Link>
+				<BackButton />
 				<ProjectItemList {...singleProject} />
 			</div>
 		</div>
