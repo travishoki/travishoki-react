@@ -24,6 +24,8 @@ export const AboutItem = (item: AboutType) => (
 			<h2>{item.title}</h2>
 
 			<TextWithReadMore paragraphs={item.desc} />
+
+			{item.hasSignature && <p className="signature">- Travis Hoki</p>}
 		</div>
 	</li>
 );
