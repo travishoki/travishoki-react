@@ -15,8 +15,8 @@ export const AboutItem = (item: AboutType) => (
 				className="about-item-image"
 				dimensions={defaultImageSize}
 				imageClassName="image"
-				src={item.img}
-				srcLarge={item.imgLarge ?? item.img}
+				src={item.imgSmall}
+				srcLarge={item.imgLarge ?? item.imgSmall}
 				srcLargeDimensions={item.imgLargeDimensions ?? defaultImageSize}
 			/>
 		</div>

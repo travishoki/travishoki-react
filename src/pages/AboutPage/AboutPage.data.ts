@@ -13,7 +13,8 @@ import ImgFamilySmall from '~images/about/family-small.jpg';
 import ImgGuitar from '~images/about/guitar.jpg';
 import ImgGuitarSmall from '~images/about/guitar-small.jpg';
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
-import ImgSkateboard from '~images/about/skateboarding.png';
+import ImgSkateboard from '~images/about/skateboarding.jpg';
+import ImgSkateboardSmall from '~images/about/skateboarding-small.jpg';
 import ImgStandupComedy from '~images/about/standup-comedy.jpg';
 import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
 import ImgWedding from '~images/about/wedding.jpg';
@@ -36,25 +37,27 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		desc: [
 			`My name is Travis Hoki. I'm from Orem. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		],
-		img: ImgProfilePic,
+		imgLarge: ImgProfilePic,
+		imgLargeDimensions: [300, 300],
+		imgSmall: ImgProfilePic,
 		title: 'Hey,',
 	},
 	{
 		desc: [
 			"In 2025, I started volunteering with Cub Scouts. I'm happy the scouting program that I loved as a kid, is still around for my sons. Each of us parents are active in the pack. I'm the Bear's den leader. I've enjoyed working with the kids and other leaders.",
 		],
-		img: ImgCubScoutsSmall,
 		imgLarge: ImgCubScouts,
 		imgLargeDimensions: [1518, 2024],
+		imgSmall: ImgCubScoutsSmall,
 		title: 'Cub Scouts',
 	},
 	{
 		desc: [
 			"I've always enjoyed reading books with my kids when putting them to bed. I have illustrated two children's books, and self published each of them. They are available on Amazon and other book platforms.",
 		],
-		img: ImgChildrensBookSmall,
 		imgLarge: ImgChildrensBook,
 		imgLargeDimensions: [960, 1200],
+		imgSmall: ImgChildrensBookSmall,
 		title: "Children's Book Illustrator",
 	},
 	{
@@ -66,34 +69,36 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 			'I wanted to challenge myself to get out side of my comfort zone, loosen up, and put myself out there. I wanted to improve my public speaking skills, and gain some more confidence.',
 			'This was a fun experience, and I’m glad I was able to do it. It’s such a positive atmosphere. Everyone collaborated and builds off of each other.',
 		],
-		img: ImgStandupComedySmall,
 		imgLarge: ImgStandupComedy,
 		imgLargeDimensions: [1440, 1440],
+		imgSmall: ImgStandupComedySmall,
 		title: 'Standup Comedy',
 	},
 	{
 		desc: [
 			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "scream"! I love my family, even if we are all a little "Hoki"!',
 		],
-		img: ImgFamilySmall,
 		imgLarge: ImgFamily,
 		imgLargeDimensions: [1463, 2048],
+		imgSmall: ImgFamilySmall,
 		title: 'Family',
 	},
 	{
 		desc: [
 			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard?',
 		],
-		img: ImgSkateboard,
+		imgLarge: ImgSkateboard,
+		imgLargeDimensions: [2048, 1367],
+		imgSmall: ImgSkateboardSmall,
 		title: 'Skateboarding',
 	},
 	{
 		desc: [
 			`I am married to my best friend and high school sweetheart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
 		],
-		img: ImgWeddingSmall,
 		imgLarge: ImgWedding,
 		imgLargeDimensions: [2048, 1367],
+		imgSmall: ImgWeddingSmall,
 		title: 'Wife',
 	},
 	{
@@ -102,9 +107,9 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 			'In 2015, at The Festival of Trees they gave me the stage.',
 			"Now days I still play the guitar just for fun and as a way to relax and destress. A few times I've accopanied family sing alongs around the camp fire.",
 		],
-		img: ImgGuitarSmall,
 		imgLarge: ImgGuitar,
 		imgLargeDimensions: [2048, 1366],
+		imgSmall: ImgGuitarSmall,
 		title: 'Guitar',
 	},
 	{
@@ -113,9 +118,9 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 			'I started breakdancing in Jr High. I got really involved in the HipHop culture and scene. I went to as many breakdance clubs as I could and competed in breakdance battles.',
 			"In college, I joined the Green Man Group. They are UVU's Drum Line. We performed at UVU basketball games, a variety of UVU events, Grizzly Hockey games, the Olympic Oval, the Hope of America, and Jazz Basketball games.",
 		],
-		img: ImgBreakdanceSmall,
 		imgLarge: ImgBreakdance,
 		imgLargeDimensions: [620, 413],
+		imgSmall: ImgBreakdanceSmall,
 		title: 'Breakdance',
 	},
 	{
@@ -123,18 +128,18 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joining the Timpanogos High School team.',
 			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class.',
 		],
-		img: ImgBallroomSmall,
 		imgLarge: ImgBallroom,
 		imgLargeDimensions: [453, 604],
+		imgSmall: ImgBallroomSmall,
 		title: 'Ballroom',
 	},
 	{
 		desc: [
 			'I loved the scouting program and so many of the lessons it taught me.',
 		],
-		img: ImgEagleScoutSmall,
 		imgLarge: ImgEagleScout,
 		imgLargeDimensions: [1688, 2000],
+		imgSmall: ImgEagleScoutSmall,
 		title: 'Eagle Scout',
 	},
 ];
@@ -142,8 +147,8 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 export type AboutType = {
 	alt?: string;
 	desc: string[];
-	img: string;
-	imgLarge?: string;
-	imgLargeDimensions?: number[];
+	imgLarge: string;
+	imgLargeDimensions: number[];
+	imgSmall: string;
 	title: string;
 };
