@@ -5,10 +5,10 @@ import './Volunteer.scss';
 
 export const Volunteer = () => (
 	<section className="center primary volunteer-component">
-		<h3>Scouting America</h3>
+		<h2>Scouting America</h2>
 
 		<img className="center" height="200" src={imgScoutingAmerica} width="177" />
-		<h4>Volunteering in Cub Scouts Since 2025</h4>
+		<h3>Volunteering in Cub Scouts Since 2025</h3>
 		<div className="volunteer-roles">
 			<div>
 				<p>Bear&apos;s Assistant Den Leader</p>

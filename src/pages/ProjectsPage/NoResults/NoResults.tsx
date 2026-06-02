@@ -13,7 +13,7 @@ export const NoResults = ({
 
 	return (
 		<div className="no-results">
-			<h3>No results</h3>
+			<h2>No results</h2>
 			<p>Clear filter and search terms to find more results.</p>
 
 			{filter && (

@@ -9,7 +9,7 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 
 	return (
 		<section className="primary list-section">
-			<h3>{title}</h3>
+			<h2>{title}</h2>
 
 			<div className="boxed boxed-md">
 				<div className="row">

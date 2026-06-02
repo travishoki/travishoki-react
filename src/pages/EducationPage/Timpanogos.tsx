@@ -14,7 +14,7 @@ export const Timpanogos = () => (
 		<div className="boxed timpanogos">
 			<Pannels className="reverse">
 				<Pannel>
-					<h3>Timpanogos High School</h3>
+					<h2>Timpanogos High School</h2>
 					<img className="school" src={imgTimpanogos} />
 					<p className="degree">High School Diploma</p>
 					<p>Aug 2009 - Apr 2006</p>

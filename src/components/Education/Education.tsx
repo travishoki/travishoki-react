@@ -6,7 +6,7 @@ import './Education.scss';
 
 export const Education = () => (
 	<section className="white center education-component">
-		<h3>Utah Valley University</h3>
+		<h2>Utah Valley University</h2>
 		<img className="center" src={imgUvu} />
 
 		<p>Digital Media Major</p>

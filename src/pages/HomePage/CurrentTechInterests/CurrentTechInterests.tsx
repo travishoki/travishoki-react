@@ -7,7 +7,7 @@ import './CurrentTechInterests.scss';
 export const CurrentTechInterests = () => (
 	<section className="blue center current-tech-interests-component">
 		<div className="current-tech-interests-component-header">
-			<h3>Current Tech Interests</h3>
+			<h2>Current Tech Interests</h2>
 			<p>Things that I&apos;m interested in learning more about</p>
 		</div>
 

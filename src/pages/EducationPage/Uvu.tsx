@@ -11,7 +11,7 @@ export const Uvu = () => (
 		<div className="boxed">
 			<Pannels>
 				<Pannel>
-					<h3>Utah Valley University</h3>
+					<h2>Utah Valley University</h2>
 					<img className="center" src={imgUvu} />
 					<div className="text-block">
 						<p>Digital Media Major</p>

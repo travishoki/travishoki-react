@@ -10,7 +10,7 @@ const currentProjects = orderTopThreeInPodium(PROJECTS_DATA.slice(0, 3));
 
 export const Projects = () => (
 	<section className="projects">
-		<h3>Recent Projects</h3>
+		<h2>Recent Projects</h2>
 
 		<div className="boxed boxed-lg">
 			<ul>
@@ -19,8 +19,8 @@ export const Projects = () => (
 						<Link to={`/project/${project.itemKey}`}>
 							<div className="project-header">
 								<div className="project-header-inner">
-									<h2>{project.title}</h2>
-									<h3>{project.subtitle}</h3>
+									<h3>{project.title}</h3>
+									<h4>{project.subtitle}</h4>
 								</div>
 							</div>
 							<img
