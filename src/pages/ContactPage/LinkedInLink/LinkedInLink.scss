@@ -5,9 +5,11 @@ $height: 50px;
 a.linked-link {
 	align-items: center;
 	border: solid 1px $blue-three;
-	display: inline-flex;
+	display: flex;
 	height: $height;
+	margin: 0 auto;
 	text-decoration: none;
+	width: fit-content;
 
 	&:hover {
 		border: solid 1px $blue-four;
