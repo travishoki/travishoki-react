@@ -1,0 +1,11 @@
+@import '../../../styles/responsive.scss';
+
+.contact-info-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 20px;
+
+	@include phone-down {
+		grid-template-columns: 1fr;
+	}
+}

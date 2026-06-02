@@ -3,6 +3,7 @@ import React from 'react';
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
 import { ContactInfo } from './ContactInfo';
+import './ContactPage.scss';
 
 export const ContactPage = () => (
 	<div className="contact" id="container">

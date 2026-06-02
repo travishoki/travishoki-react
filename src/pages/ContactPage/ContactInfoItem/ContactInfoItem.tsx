@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ContactInfoItemData } from '../ContactInfo.data';
+import './ContactInfoItem.scss';
 
 export const ContactInfoItem = ({ icon, lines }: ContactInfoItemData) => (
 	<div className="contact-info-item">

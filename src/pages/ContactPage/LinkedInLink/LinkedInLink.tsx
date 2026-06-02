@@ -2,6 +2,8 @@ import React from 'react';
 
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
 
+import './LinkedInLink.scss';
+
 export const LinkedInLink = () => (
 	<a
 		className="linked-link"

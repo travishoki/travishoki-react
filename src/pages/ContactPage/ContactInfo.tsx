@@ -8,9 +8,8 @@ export const ContactInfo = () => (
 	<Fragment>
 		<div className="contact-info-header">
 			<h2>Get In Touch With Me</h2>
+			<p>Travis Hoki</p>
 		</div>
-
-		<p className="my-name">Travis Hoki</p>
 
 		<ContactInfoGrid />
 
