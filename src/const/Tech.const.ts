@@ -56,15 +56,7 @@ export type TechInfo = {
 	legacy?: boolean;
 };
 
-const LEGACY_TECH = {
-	ACTION_SCRIPT: {
-		image: ImgActionScript,
-		label: 'Action Script',
-		legacy: true,
-	},
-	JQUERY: { image: ImgJquery, label: 'jQuery', legacy: true },
-};
-
+/* eslint-disable sort-keys */
 export const TECH = {
 	AMP: { image: ImgAmp, label: 'AMP' },
 	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS' },
@@ -89,8 +81,14 @@ export const TECH = {
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack' },
 	WORDPRESS: { image: ImgWordpress, label: 'Wordpress' },
-	...LEGACY_TECH,
+	ACTION_SCRIPT: {
+		image: ImgActionScript,
+		label: 'Action Script',
+		legacy: true,
+	},
+	JQUERY: { image: ImgJquery, label: 'jQuery', legacy: true },
 } satisfies Record<string, TechInfo>;
+/* eslint-enable */
 
 export type TechKey = keyof typeof TECH;
 
