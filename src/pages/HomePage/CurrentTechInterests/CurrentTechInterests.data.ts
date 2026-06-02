@@ -18,7 +18,7 @@ export const CURRENT_TECH_INTERESTS: InterestItem[] = [
 	},
 	{
 		desc: [
-			'React Native allows you to build truly native mobile apps for iOS and Android using the same React skills used for the web. Rather than running in a browser, it renders real native UI components — giving apps the look and feel users expect on their platform.',
+			'React Native allows you to build truly native mobile apps for iOS and Android using the same React skills used for the web. Rather than running in a browser, it renders real native UI components. This gives apps the look and feel users expect on their platform.',
 			"As a web developer with a passion for building things outside of work, React Native is a natural next step. I'm exploring it through my Hoki Skateboards app project, where the goal is to ship something real and learn by doing.",
 		],
 		img: imgReactNative,
@@ -26,7 +26,7 @@ export const CURRENT_TECH_INTERESTS: InterestItem[] = [
 	},
 	{
 		desc: [
-			"Firebase is Google's app development platform, offering a suite of backend services — including a real-time NoSQL database, user authentication, cloud functions, and hosting — all without managing a server.",
+			"Firebase is Google's app development platform. It offers a suite of backend services including a real-time NoSQL database, user authentication, cloud functions, and hosting. No server management required.",
 			'As someone who primarily lives on the front end, Firebase fills a meaningful gap. It lets me build full-featured apps independently, handling the backend complexity so I can stay focused on the experience. It pairs naturally with both React and React Native.',
 		],
 		img: imgFirebase,
