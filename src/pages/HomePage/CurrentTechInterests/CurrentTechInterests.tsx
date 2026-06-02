@@ -11,7 +11,7 @@ export const CurrentTechInterests = () => (
 			<p>Things that I&apos;m interested in learning more about</p>
 		</div>
 
-		<div className="interest-columns">
+		<div className="row g-4 interest-columns">
 			{CURRENT_TECH_INTERESTS.map((item, index) => (
 				<InterestItem key={index} {...item} />
 			))}
