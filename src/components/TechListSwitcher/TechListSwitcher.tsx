@@ -4,7 +4,7 @@ import {
 	ListSwitcher,
 	ListSwitcherItemData,
 } from '~components/ListSwitcher/ListSwitcher';
-import { TECH_IMAGES, TechKeys, TechStrings } from '~const/Tech.const';
+import { TECH, TechKeys } from '~const/Tech.const';
 
 type TechListProps = {
 	header?: string;
@@ -18,8 +18,7 @@ export const TechListSwitcher = ({
 	list,
 }: TechListProps) => {
 	const items: ListSwitcherItemData[] = list.map((tech) => ({
-		image: TECH_IMAGES[tech],
-		label: TechStrings[tech],
+		...TECH[tech],
 		to: `/projects/${tech}`,
 	}));
 

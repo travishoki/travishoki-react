@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
-import { TechFilterType, TechStrings } from '~const/Tech.const';
+import { TECH, TechFilterType } from '~const/Tech.const';
 
 import './CurrentFilter.scss';
 
@@ -11,11 +11,13 @@ export const CurrentFilter = ({
 }: CurrentFilterProps) => {
 	if (!filter || filter === 'all' || filter === 'null') return null;
 
+	const { label } = TECH[filter];
+
 	return (
 		<div className="current-filter">
 			<div className="tech-container">
 				<TechIcon name={filter} />
-				<p>{TechStrings[filter]}</p>
+				<p>{label}</p>
 			</div>
 			<i
 				className="fa fa-close pointer f-right"
