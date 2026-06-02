@@ -4,9 +4,11 @@ import {
 	DJANGO,
 	GRUNT,
 	HANDLEBARS_JS,
+	EXPRESS,
 	FIREBASE,
 	HTML,
 	JAVASCRIPT,
+	JEST,
 	JQUERY,
 	LESS_CSS,
 	NODE_JS,
@@ -33,6 +35,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 	REDUX,
 	TYPESCRIPT,
 	JAVASCRIPT,
+	JEST,
 	CSS,
 	HTML,
 	LESS_CSS,
@@ -40,6 +43,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 
 	// Backend
 	NODE_JS,
+	EXPRESS,
 	DJANGO,
 	HANDLEBARS_JS,
 	PHP,

@@ -6,11 +6,13 @@ import ImgClaudeCode from '~images/icons/tech-icons/claude-code.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
 import ImgCss from '~images/icons/tech-icons/css.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
+import ImgExpress from '~images/icons/tech-icons/express.jpg';
 import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
 import ImgGrunt from '~images/icons/tech-icons/grunt.jpg';
 import ImgHandlebarsJs from '~images/icons/tech-icons/handlebars-js.jpg';
 import ImgHtml from '~images/icons/tech-icons/html.jpg';
 import ImgJavascript from '~images/icons/tech-icons/javascript.jpg';
+import ImgJest from '~images/icons/tech-icons/jest.jpg';
 import ImgJquery from '~images/icons/tech-icons/jquery.jpg';
 import ImgLessCss from '~images/icons/tech-icons/less-css.jpg';
 import ImgNodeJs from '~images/icons/tech-icons/node-js.jpg';
@@ -33,11 +35,13 @@ export const CLAUDE_CODE = 'CLAUDE_CODE';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
 export const DJANGO = 'DJANGO';
+export const EXPRESS = 'EXPRESS';
 export const FIREBASE = 'FIREBASE';
 export const GRUNT = 'GRUNT';
 export const HANDLEBARS_JS = 'HANDLEBARS_JS';
 export const HTML = 'HTML';
 export const JAVASCRIPT = 'JAVASCRIPT';
+export const JEST = 'JEST';
 export const JQUERY = 'JQUERY';
 export const LESS_CSS = 'LESS_CSS';
 export const NODE_JS = 'NODE_JS';
@@ -71,6 +75,7 @@ export const TECH = {
 	},
 	CSS: { image: ImgCss, label: 'CSS', type: 'frontend' },
 	DJANGO: { image: ImgDjango, label: 'Django', type: 'backend' },
+	EXPRESS: { image: ImgExpress, label: 'Express', type: 'backend' },
 	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: 'backend' },
 	GRUNT: { image: ImgGrunt, label: 'Grunt', type: 'tool' },
 	HANDLEBARS_JS: {
@@ -80,6 +85,7 @@ export const TECH = {
 	},
 	HTML: { image: ImgHtml, label: 'HTML', type: 'frontend' },
 	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript', type: 'frontend' },
+	JEST: { image: ImgJest, label: 'Jest', type: 'frontend' },
 	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: 'frontend' },
 	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: 'backend' },
 	PHP: { image: ImgPhp, label: 'PHP', type: 'backend' },
