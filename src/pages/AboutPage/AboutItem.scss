@@ -2,10 +2,6 @@
 @import '../../styles/responsive.scss';
 
 .about-item {
-	.read-more {
-		text-decoration: underline;
-	}
-
 	&.staggered-item {
 		.image {
 			height: 250px;
