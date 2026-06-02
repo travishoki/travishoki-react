@@ -38,20 +38,22 @@ export const ListSwitcher = ({
 				</div>
 			)}
 			<div className="list-switcher-content">
-				<ul
+				<div
 					className={
 						expanded ? 'list-switcher-vertical' : 'list-switcher-horizontal'
 					}
 				>
-					{items.map((item, index) => (
-						<ListSwitcherItem
-							key={index}
-							expanded={expanded}
-							iconClass={iconClass}
-							{...item}
-						/>
-					))}
-				</ul>
+					<ul>
+						{items.map((item, index) => (
+							<ListSwitcherItem
+								key={index}
+								expanded={expanded}
+								iconClass={iconClass}
+								{...item}
+							/>
+						))}
+					</ul>
+				</div>
 			</div>
 			<button
 				className="btn btn-primary list-switcher-button"

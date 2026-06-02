@@ -45,7 +45,7 @@
 	}
 }
 
-ul.list-switcher-horizontal {
+.list-switcher-horizontal ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -55,7 +55,7 @@ ul.list-switcher-horizontal {
 	padding: 0;
 }
 
-ul.list-switcher-vertical {
+.list-switcher-vertical ul {
 	$iconW: 40px;
 	display: block;
 	list-style: none;
