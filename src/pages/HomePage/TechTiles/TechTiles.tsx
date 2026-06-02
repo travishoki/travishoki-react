@@ -6,7 +6,7 @@ import { DISPLAYED_LIST } from '../HomePage.data';
 import './TechTiles.scss';
 
 export const TechTiles = () => (
-	<section className="white tech-tiles">
+	<section className="tech-tiles">
 		<TechListSwitcher header="Tech & Frameworks" list={DISPLAYED_LIST} />
 	</section>
 );
