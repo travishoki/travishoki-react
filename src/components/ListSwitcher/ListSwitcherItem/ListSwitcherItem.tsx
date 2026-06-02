@@ -7,16 +7,18 @@ import { ListSwitcherItemData } from '../ListSwitcher';
 type ListSwitcherItemProps = ListSwitcherItemData & {
 	expanded: boolean;
 	iconClass: string;
+	itemClassName?: string;
 };
 
 export const ListSwitcherItem = ({
 	expanded,
 	iconClass,
 	image,
+	itemClassName,
 	label,
 	to,
 }: ListSwitcherItemProps) => (
-	<li>
+	<li className={itemClassName}>
 		{to ? (
 			<Link title={label} to={to}>
 				<img alt={label} className={iconClass} src={image} />

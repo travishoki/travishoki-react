@@ -9,12 +9,14 @@ import { TECH, TechKey } from '~const/Tech.const';
 type TechListProps = {
 	header?: string;
 	initialExpanded?: boolean;
+	itemClassName?: string;
 	list: TechKey[];
 };
 
 export const TechListSwitcher = ({
 	header = 'Tech Stack',
 	initialExpanded = false,
+	itemClassName,
 	list,
 }: TechListProps) => {
 	const items: ListSwitcherItemData[] = list.map((tech) => ({
@@ -27,6 +29,7 @@ export const TechListSwitcher = ({
 			circle
 			header={header}
 			initialExpanded={initialExpanded}
+			itemClassName={itemClassName}
 			items={items}
 		/>
 	);

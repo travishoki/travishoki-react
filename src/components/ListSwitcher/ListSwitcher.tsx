@@ -22,6 +22,7 @@ type ListSwitcherProps = {
 	circle?: boolean;
 	header?: string;
 	initialExpanded?: boolean;
+	itemClassName?: string;
 	items: ListSwitcherItemData[];
 };
 
@@ -37,6 +38,7 @@ export const ListSwitcher = ({
 	circle = false,
 	header,
 	initialExpanded = false,
+	itemClassName,
 	items,
 }: ListSwitcherProps) => {
 	const [expanded, setExpanded] = useState(initialExpanded);
@@ -68,6 +70,7 @@ export const ListSwitcher = ({
 									<ListSwitcherList
 										expanded={expanded}
 										iconClass={iconClass}
+										itemClassName={itemClassName}
 										items={group}
 									/>
 								</Fragment>

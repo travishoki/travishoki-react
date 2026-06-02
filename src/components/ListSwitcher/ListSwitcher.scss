@@ -55,6 +55,13 @@
 	padding: 0;
 }
 
+// When an itemClassName grid is passed, defer layout to the Bootstrap row/col
+// classes (overrides the orientation display + gap rules above/below).
+.list-switcher ul.row {
+	display: flex;
+	gap: 0;
+}
+
 .list-switcher-legacy-label {
 	background: $blue-three;
 	color: $white;
