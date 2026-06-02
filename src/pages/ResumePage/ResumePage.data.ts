@@ -5,6 +5,7 @@ import {
 	CLAUDE_CODE,
 	COFFEE_SCRIPT,
 	CSS,
+	DJANGO,
 	HANDLEBARS_JS,
 	HTML,
 	JAVASCRIPT,
@@ -124,7 +125,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
 			'Found ways to speed up and enhance the user experience of the software',
 		],
-		techs: [ANGULAR_JS, PYTHON, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
+		techs: [ANGULAR_JS, PYTHON, DJANGO, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
 		title: 'Room Choice',
 	},
 	{
