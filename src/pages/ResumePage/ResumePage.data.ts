@@ -9,6 +9,7 @@ import {
 	HANDLEBARS_JS,
 	HTML,
 	JAVASCRIPT,
+	JEST,
 	JQUERY,
 	PHP,
 	PYTHON,
@@ -17,6 +18,7 @@ import {
 	SQL,
 	TechKey,
 	TYPESCRIPT,
+	WORDPRESS,
 } from '~const/Tech.const';
 import ImgAcademyOfBallet from '~images/experience/academy-of-ballet.png';
 import ImgAllAm from '~images/experience/all-american-sod-farms.png';
@@ -45,7 +47,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Brought the code up to Salesforce standard by adding a large amount of unit tests.',
 			'Helped to scale the Spiff software from the user capacity of a small business to a large enterprise software company.',
 		],
-		techs: [CLAUDE_CODE, REACT_JS, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [CLAUDE_CODE, REACT_JS, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Salesforce',
 	},
 	{
@@ -62,7 +64,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Create scripts to ensure code cleanliness, improving maintainability',
 			'Advance code standards through Eslint, Unit Testing, and Typescript for robust software quality',
 		],
-		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Spiff',
 	},
 	{
@@ -80,7 +82,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Upgraded Front End technology and code syntax',
 			'Fixed bugs and reinforced existing software',
 		],
-		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Xant/Inside Sales',
 	},
 	{
@@ -93,7 +95,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Actively converted Angular JS to React JS while keeping product code stable',
 			'Node JS Server-side rendering for SEO and optimization',
 		],
-		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, CSS, HTML],
+		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Chatbooks',
 	},
 	{
@@ -107,11 +109,11 @@ export const RESUME_DATA: ResumeDataType[] = [
 		position: 'Front-end Developer',
 		tasks: [
 			'Enhancements to customer reviews functionality',
-			'Managed the Front-End for all User Generated Content',
+			'Managed the Front-End for all User Generated Content include; reviews, product images, and Q&A',
 			'Managed pixels for retargeting and third-party integrations',
 			'Pioneered the affiliate links program',
 		],
-		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVASCRIPT, CSS, HTML, AMP],
+		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVASCRIPT, JEST, CSS, HTML, AMP],
 		title: 'Overstock',
 	},
 	{
@@ -139,7 +141,17 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Front-end development and WordPress maintenance',
 			'Custom banner and eLearning course development in Adobe Flash AS3',
 		],
-		techs: [JAVASCRIPT, CSS, HTML, ACTION_SCRIPT, JQUERY, PHP, SQL],
+		techs: [
+			JAVASCRIPT,
+			CSS,
+			HTML,
+			ACTION_SCRIPT,
+			JQUERY,
+			PHP,
+			SQL,
+			ANGULAR_JS,
+			WORDPRESS,
+		],
 		title: 'Enspark',
 	},
 	{
