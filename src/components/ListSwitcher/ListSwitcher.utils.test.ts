@@ -22,6 +22,7 @@ describe('groupTechByType', () => {
 				{ image: 'node.jpg', label: 'Node JS', type: 'backend' },
 				{ image: 'php.jpg', label: 'PHP', type: 'backend' },
 			],
+			cms: [],
 			frontend: [
 				{ image: 'react.jpg', label: 'React', type: 'frontend' },
 				{ image: 'ts.jpg', label: 'Typescript', type: 'frontend' },
@@ -36,6 +37,7 @@ describe('groupTechByType', () => {
 
 		expect(result).toEqual({
 			backend: [],
+			cms: [],
 			frontend: [],
 			legacy: [],
 			tool: [],
@@ -52,6 +54,7 @@ describe('groupTechByType', () => {
 
 		expect(result.frontend).toEqual(items);
 		expect(result.backend).toEqual([]);
+		expect(result.cms).toEqual([]);
 		expect(result.tool).toEqual([]);
 		expect(result.legacy).toEqual([]);
 	});

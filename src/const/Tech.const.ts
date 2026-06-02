@@ -74,7 +74,7 @@ export const TECH = {
 	HANDLEBARS_JS: {
 		image: ImgHandlebarsJs,
 		label: 'Handlebars JS',
-		type: 'frontend',
+		type: 'backend',
 	},
 	HTML: { image: ImgHtml, label: 'HTML', type: 'frontend' },
 	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript', type: 'frontend' },
@@ -93,7 +93,7 @@ export const TECH = {
 	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
-	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'backend' },
+	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
 	ACTION_SCRIPT: {
 		image: ImgActionScript,
 		label: 'Action Script',

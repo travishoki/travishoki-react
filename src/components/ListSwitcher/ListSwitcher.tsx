@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import classnames from 'classnames';
 
@@ -9,7 +9,7 @@ import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
 import { groupTechByType } from './ListSwitcher.utils';
 import './ListSwitcher.scss';
 
-export type TechType = 'frontend' | 'backend' | 'tool' | 'legacy';
+export type TechType = 'frontend' | 'backend' | 'cms' | 'tool' | 'legacy';
 
 export type ListSwitcherItemData = {
 	image: string;
@@ -28,8 +28,9 @@ type ListSwitcherProps = {
 const TYPE_SECTIONS: { label: string; type: TechType }[] = [
 	{ label: 'Frontend', type: 'frontend' },
 	{ label: 'Backend', type: 'backend' },
+	{ label: 'Content Management System', type: 'cms' },
 	{ label: 'Tools', type: 'tool' },
-	{ label: 'Legacy Tech & Frameworks', type: 'legacy' },
+	{ label: 'Legacy Tech', type: 'legacy' },
 ];
 
 export const ListSwitcher = ({
@@ -62,14 +63,14 @@ export const ListSwitcher = ({
 							if (group.length === 0) return null;
 
 							return (
-								<React.Fragment key={type}>
+								<Fragment key={type}>
 									<ListSectionLabel label={label} />
 									<ListSwitcherList
 										expanded={expanded}
 										iconClass={iconClass}
 										items={group}
 									/>
-								</React.Fragment>
+								</Fragment>
 							);
 						})
 					) : (
