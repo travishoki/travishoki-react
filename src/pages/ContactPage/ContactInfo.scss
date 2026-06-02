@@ -10,6 +10,10 @@
 		padding-bottom: 20px;
 	}
 
+	p.my-name {
+		text-align: center;
+	}
+
 	.contact-info-header {
 		margin-bottom: 20px;
 
@@ -24,6 +28,7 @@
 	.contact-info-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		margin-bottom: 20px;
 
 		@include phone-down {
 			grid-template-columns: 1fr;
@@ -95,6 +100,7 @@
 			background: $blue-three;
 			color: $white;
 			display: flex;
+			font-size: 20px;
 			height: 50px;
 			justify-content: center;
 			width: 50px;

@@ -11,7 +11,7 @@ export const ContactInfo = () => (
 			<h2>Get In Touch With Me</h2>
 		</div>
 
-		<p>Travis Hoki</p>
+		<p className="my-name">Travis Hoki</p>
 
 		<div className="contact-info-grid">
 			{CONTACT_INFO.map((item) => (
