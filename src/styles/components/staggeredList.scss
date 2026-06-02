@@ -14,7 +14,7 @@ ul.staggered {
 		@include phone-down {
 			display: block;
 			justify-content: center;
-			margin: 0 auto 40px;
+			margin: 0 auto 20px;
 			max-width: 600px;
 		}
 
@@ -35,7 +35,7 @@ ul.staggered {
 				margin-bottom: 20px;
 
 				h2 {
-					margin: 0;
+					margin-top: 0;
 					width: 100%;
 				}
 			}
