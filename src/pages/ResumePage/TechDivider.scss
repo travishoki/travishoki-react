@@ -1,9 +1,24 @@
+@import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
-.tech-divider {
-	background: $blue-three;
-	border-bottom: solid 1px $gray-four;
-	list-style-type: none;
-	margin: 100px 0;
-	padding: 20px 0;
+#container.resume {
+	.tech-divider {
+		background: $blue-three;
+		border-bottom: solid 1px $gray-four;
+		list-style-type: none;
+		margin: 100px 0;
+		padding: 20px 0;
+
+		@include phone-down {
+			margin: 50px 0;
+		}
+
+		h2 {
+			margin: 0;
+
+			@include phone-down {
+				font-size: 30px;
+			}
+		}
+	}
 }
