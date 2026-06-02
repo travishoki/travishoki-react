@@ -19,13 +19,23 @@ export const CONTACT_INFO: ContactInfoItemData[] = [
 		icon: 'fa-envelope',
 		id: 'email',
 		lines: [
-			{ href: 'mailto:travis.hoki@gmail.com', text: 'travis.hoki@gmail.com' },
+			{
+				href: 'mailto:travis.hoki@gmail.com',
+				text: 'travis.hoki@gmail.com',
+			},
+			{
+				text: '(Preferred)',
+			},
 		],
 	},
 	{
 		icon: 'fa-map-marker',
 		id: 'location',
-		lines: [{ text: 'Pleasant Grove, UT' }, { text: 'United States' }],
+		lines: [
+			{ text: 'Pleasant Grove, UT' },
+			{ text: 'United States' },
+			{ text: 'Mountain Time (MT)' },
+		],
 	},
 	{
 		icon: 'fa-clock-o',
