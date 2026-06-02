@@ -38,15 +38,17 @@ export const DISPLAYED_LIST: TechKey[] = [
 	LESS_CSS,
 	SCSS,
 
-	ACTION_SCRIPT,
 	DJANGO,
 	GRUNT,
 	HANDLEBARS_JS,
-	JQUERY,
 	PHP,
 	PYTHON,
 	SQL,
 	WEBPACK,
 	WORDPRESS,
 	FIREBASE,
+
+	// Legacy Tech & Frameworks
+	ACTION_SCRIPT,
+	JQUERY,
 ];

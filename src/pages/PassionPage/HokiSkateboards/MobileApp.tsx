@@ -38,7 +38,6 @@ export const MobileApp = () => (
 		<PassionLabel>Description:</PassionLabel>
 		<p>Kid&apos;s skateboarding game</p>
 
-		<PassionLabel>Technology:</PassionLabel>
 		<TechListSwitcher list={techs} />
 
 		<h3>Download My App!</h3>

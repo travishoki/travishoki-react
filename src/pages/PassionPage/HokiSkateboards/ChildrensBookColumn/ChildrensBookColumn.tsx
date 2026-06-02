@@ -39,13 +39,11 @@ export const ChildrensBookColumn = () => (
 
 		<PassionLabel>Description:</PassionLabel>
 		<p>Illustrated kid&apos;s book about skateboarding.</p>
-
-		<PassionLabel>Software:</PassionLabel>
-		<SoftwareListSwitcher list={appSoftwareList} />
-
 		<p>
 			Self authored, illustrated, and published. Successfully Kickstarter
 			backed.
 		</p>
+
+		<SoftwareListSwitcher list={appSoftwareList} />
 	</div>
 );

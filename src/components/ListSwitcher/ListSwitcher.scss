@@ -55,6 +55,15 @@
 	padding: 0;
 }
 
+.list-switcher-legacy-label {
+	background: $blue-three;
+	color: $white;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 0;
+	padding: 4px 10px;
+}
+
 .list-switcher-vertical ul {
 	$iconW: 40px;
 	display: block;

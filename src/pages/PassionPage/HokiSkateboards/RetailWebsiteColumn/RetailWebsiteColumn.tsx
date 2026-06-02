@@ -43,13 +43,11 @@ export const RetailWebsiteColumn = () => (
 
 		<PassionLabel>Description:</PassionLabel>
 		<p>Hoki Skateboards is a small family-owned online skateboard company.</p>
-
-		<PassionLabel>Technology:</PassionLabel>
-		<TechListSwitcher list={websiteTechList} />
-
 		<p>
 			Built in Wordpress with a custom Wordpress Plugin, using Woocommerce, PHP
 			and React.
 		</p>
+
+		<TechListSwitcher list={websiteTechList} />
 	</div>
 );

@@ -53,10 +53,19 @@ export const WORDPRESS = 'WORDPRESS';
 export type TechInfo = {
 	image: string;
 	label: string;
+	legacy?: boolean;
+};
+
+const LEGACY_TECH = {
+	ACTION_SCRIPT: {
+		image: ImgActionScript,
+		label: 'Action Script',
+		legacy: true,
+	},
+	JQUERY: { image: ImgJquery, label: 'jQuery', legacy: true },
 };
 
 export const TECH = {
-	ACTION_SCRIPT: { image: ImgActionScript, label: 'Action Script' },
 	AMP: { image: ImgAmp, label: 'AMP' },
 	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS' },
 	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code' },
@@ -68,7 +77,6 @@ export const TECH = {
 	HANDLEBARS_JS: { image: ImgHandlebarsJs, label: 'Handlebars JS' },
 	HTML: { image: ImgHtml, label: 'HTML' },
 	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript' },
-	JQUERY: { image: ImgJquery, label: 'jQuery' },
 	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS' },
 	NODE_JS: { image: ImgNodeJs, label: 'Node JS' },
 	PHP: { image: ImgPhp, label: 'PHP' },
@@ -81,6 +89,7 @@ export const TECH = {
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack' },
 	WORDPRESS: { image: ImgWordpress, label: 'Wordpress' },
+	...LEGACY_TECH,
 } satisfies Record<string, TechInfo>;
 
 export type TechKey = keyof typeof TECH;

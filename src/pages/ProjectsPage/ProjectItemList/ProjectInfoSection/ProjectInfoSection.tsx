@@ -56,12 +56,7 @@ export const ProjectInfoSection = ({
 		)}
 
 		{techs && techs.length > 0 && (
-			<>
-				<p className="label">Technology:</p>
-				<div className="answer-section">
-					<TechListSwitcher initialExpanded list={techs} />
-				</div>
-			</>
+			<TechListSwitcher initialExpanded list={techs} />
 		)}
 	</div>
 );

@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 
 import classnames from 'classnames';
 
-import { ListSwitcherItem } from './ListSwitcherItem/ListSwitcherItem';
+import { ListSectionLabel } from './ListSectionLabel/ListSectionLabel';
+import { ListSwitcherButton } from './ListSwitcherButton/ListSwitcherButton';
+import { ListSwitcherHeader } from './ListSwitcherHeader/ListSwitcherHeader';
+import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
+import { splitByLegacy } from './ListSwitcher.utils';
 import './ListSwitcher.scss';
 
 export type ListSwitcherItemData = {
 	image: string;
 	label: string;
+	legacy?: boolean;
 	to?: string;
 };
 
@@ -30,37 +35,46 @@ export const ListSwitcher = ({
 
 	const iconClass = classnames('list-switcher-icon', { circle });
 
+	const { currentTech, legacyTech } = splitByLegacy(items);
+
 	return (
 		<div className="list-switcher">
-			{header && (
-				<div className="list-switcher-header">
-					<p>{header}</p>
-				</div>
-			)}
+			{header && <ListSwitcherHeader header={header} />}
 			<div className="list-switcher-content">
 				<div
 					className={
 						expanded ? 'list-switcher-vertical' : 'list-switcher-horizontal'
 					}
 				>
-					<ul>
-						{items.map((item, index) => (
-							<ListSwitcherItem
-								key={index}
+					{expanded ? (
+						<>
+							<ListSwitcherList
 								expanded={expanded}
 								iconClass={iconClass}
-								{...item}
+								items={currentTech}
 							/>
-						))}
-					</ul>
+							{legacyTech.length > 0 && (
+								<ListSectionLabel label="Legacy Tech & Frameworks" />
+							)}
+							<ListSwitcherList
+								expanded={expanded}
+								iconClass={iconClass}
+								items={legacyTech}
+							/>
+						</>
+					) : (
+						<ListSwitcherList
+							expanded={expanded}
+							iconClass={iconClass}
+							items={items}
+						/>
+					)}
 				</div>
 			</div>
-			<button
-				className="btn btn-primary list-switcher-button"
+			<ListSwitcherButton
+				expanded={expanded}
 				onClick={() => setExpanded(!expanded)}
-			>
-				<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
-			</button>
+			/>
 		</div>
 	);
 };
