@@ -23,12 +23,12 @@ export const ContactInfoGrid = () => (
 			<i className="fa fa-map-marker contact-info-icon" />
 			<p>Pleasant Grove, Utah</p>
 			<p>United States</p>
-			<p>Mountain Time (MT)</p>
 		</div>
 
 		<div className="contact-info-item">
 			<i className="fa fa-clock-o contact-info-icon" />
 			<p>Open to remote work</p>
+			<p>Mountain Time (MT)</p>
 		</div>
 	</div>
 );

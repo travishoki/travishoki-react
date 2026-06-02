@@ -1,15 +1,30 @@
 @import '../../../styles/variables.scss';
 
+$height: 50px;
+
 a.linked-link {
 	align-items: center;
-	background: $white;
-	color: $blue-three;
+	border: solid 1px $blue-three;
 	display: inline-flex;
+	height: $height;
 	text-decoration: none;
 
+	&:hover {
+		border: solid 1px $blue-four;
+	}
+
 	p {
+		color: $white;
+		height: 100%;
+		line-height: $height;
 		margin: 0;
 		padding: 0 20px;
+	}
+
+	&:hover {
+		p {
+			color: $gray-one;
+		}
 	}
 
 	i {
@@ -18,8 +33,12 @@ a.linked-link {
 		color: $white;
 		display: flex;
 		font-size: 20px;
-		height: 50px;
+		height: $height;
 		justify-content: center;
-		width: 50px;
+		width: $height;
+	}
+
+	&:hover i {
+		background: $blue-four;
 	}
 }
