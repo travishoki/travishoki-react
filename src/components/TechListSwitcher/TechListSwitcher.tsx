@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
 	ListSwitcher,
-	ListSwitcherItem,
+	ListSwitcherItemData,
 } from '~components/ListSwitcher/ListSwitcher';
 import { TECH_IMAGES, TechKeys, TechStrings } from '~const/Tech.const';
 
@@ -17,7 +17,7 @@ export const TechListSwitcher = ({
 	initialExpanded = false,
 	list,
 }: TechListProps) => {
-	const items: ListSwitcherItem[] = list.map((tech) => ({
+	const items: ListSwitcherItemData[] = list.map((tech) => ({
 		image: TECH_IMAGES[tech],
 		label: TechStrings[tech],
 		to: `/projects/${tech}`,

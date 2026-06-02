@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
 	ListSwitcher,
-	ListSwitcherItem,
+	ListSwitcherItemData,
 } from '~components/ListSwitcher/ListSwitcher';
 import {
 	SOFTWARE_IMAGES,
@@ -19,7 +19,7 @@ export const SoftwareListSwitcher = ({
 	header = 'Software',
 	list,
 }: SoftwareListProps) => {
-	const items: ListSwitcherItem[] = list.map((software) => ({
+	const items: ListSwitcherItemData[] = list.map((software) => ({
 		image: SOFTWARE_IMAGES[software],
 		label: SOFTWARE_STRINGS[software],
 	}));

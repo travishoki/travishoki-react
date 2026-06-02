@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
+import { ListSwitcherItem } from './ListSwitcherItem/ListSwitcherItem';
 import './ListSwitcher.scss';
 
-export type ListSwitcherItem = {
+export type ListSwitcherItemData = {
 	image: string;
 	label: string;
 	to?: string;
@@ -15,7 +15,7 @@ type ListSwitcherProps = {
 	circle?: boolean;
 	header?: string;
 	initialExpanded?: boolean;
-	items: ListSwitcherItem[];
+	items: ListSwitcherItemData[];
 };
 
 export const ListSwitcher = ({
@@ -43,20 +43,13 @@ export const ListSwitcher = ({
 						expanded ? 'list-switcher-vertical' : 'list-switcher-horizontal'
 					}
 				>
-					{items.map(({ image, label, to }, index) => (
-						<li key={index}>
-							{to ? (
-								<Link title={label} to={to}>
-									<img alt={label} className={iconClass} src={image} />
-									{expanded && <p>{label}</p>}
-								</Link>
-							) : (
-								<div className="list-switcher-item">
-									<img alt={label} className={iconClass} src={image} />
-									{expanded && <p>{label}</p>}
-								</div>
-							)}
-						</li>
+					{items.map((item, index) => (
+						<ListSwitcherItem
+							key={index}
+							expanded={expanded}
+							iconClass={iconClass}
+							{...item}
+						/>
 					))}
 				</ul>
 			</div>

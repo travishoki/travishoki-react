@@ -1,0 +1,55 @@
+import React from 'react';
+
+import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import {
+	CSS,
+	HTML,
+	JAVASCRIPT,
+	PHP,
+	REACT_JS,
+	TechKeys,
+	WORDPRESS,
+} from '~const/Tech.const';
+import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
+
+import { PassionLabel } from '../PassionLabel';
+import { Title } from '../Title';
+
+const websiteTechList: (keyof TechKeys)[] = [
+	CSS,
+	HTML,
+	JAVASCRIPT,
+	PHP,
+	REACT_JS,
+	WORDPRESS,
+];
+
+export const RetailWebsiteColumn = () => (
+	<div className="hoki-skateboards-inner-content-col col-sm-6">
+		<a
+			href="https://hokiskateboards.com"
+			rel="noreferrer"
+			target="_blank"
+			title="Hoki Skateboards"
+		>
+			<Title title="Retail Website" />
+			<img
+				alt="Hoki Skateboards"
+				className="center product-image"
+				src={ImgHokiSkateboardsWebsite}
+			/>
+			<p className="button-link">Go to Site</p>
+		</a>
+
+		<PassionLabel>Description:</PassionLabel>
+		<p>Hoki Skateboards is a small family-owned online skateboard company.</p>
+
+		<PassionLabel>Technology:</PassionLabel>
+		<TechListSwitcher list={websiteTechList} />
+
+		<p>
+			Built in Wordpress with a custom Wordpress Plugin, using Woocommerce, PHP
+			and React.
+		</p>
+	</div>
+);

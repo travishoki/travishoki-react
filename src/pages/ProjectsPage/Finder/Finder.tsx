@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { TechFilterType, TechKeys } from '~const/Tech.const';
 
 import { SearchForm } from './SearchForm/SearchForm';
 import { ViewControl } from './ViewControl/ViewControl';
 import { Filter } from './Filter/Filter';
-import { TechFilterType, TechKeys } from '~const/Tech.const';
-import { createProjectsPageUrl } from '../ProjectsPage.helpers';
-
-const PROJECTS_PAGE_URL = '/projects';
+import { useFinderHandlers } from './hooks/useFinderHandlers';
 
 export const Finder = ({
 	filter,
@@ -24,58 +21,24 @@ export const Finder = ({
 	setGrid,
 	setSearchTerm,
 }: FinderProps) => {
-	const navigate = useNavigate();
-
-	const [isFilterOpen, setIsFilterOpen] = useState(false);
+	const {
+		isFilterOpen,
+		onChangeFilter,
+		onChangeSearch,
+		onClearAndCloseFilter,
+		onSelectFilter,
+		toggleOpenFilter,
+	} = useFinderHandlers({
+		filter,
+		onClearFilter,
+		searchTerm,
+		setFilter,
+		setFilterTerm,
+		setSearchTerm,
+	});
 
 	const toggleView = () => {
 		setGrid(!grid);
-	};
-
-	const onSelectFilter = (filterProp: TechFilterType) => {
-		const newFilter = filter === filterProp ? null : filterProp;
-		const newLocation = createProjectsPageUrl(
-			PROJECTS_PAGE_URL,
-			newFilter,
-			searchTerm,
-		);
-
-		navigate(newLocation);
-
-		setFilter(newFilter);
-		setFilterTerm(newFilter);
-	};
-
-	const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const newSearchTerm = e.currentTarget.value;
-
-		const newLocation = createProjectsPageUrl(
-			PROJECTS_PAGE_URL,
-			filter,
-			newSearchTerm,
-		);
-
-		navigate(newLocation);
-
-		setSearchTerm(newSearchTerm);
-	};
-
-	const onChangeFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const newFilter = e.target.value as TechFilterType;
-		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter);
-
-		navigate(newLocation);
-
-		setFilterTerm(newFilter);
-	};
-
-	const toggleOpenFilter = () => {
-		setIsFilterOpen(!isFilterOpen);
-	};
-
-	const onClearAndCloseFilter = () => {
-		onClearFilter();
-		toggleOpenFilter();
 	};
 
 	const showResultsCount = (filter || searchTerm) && projectsLength > 0;
