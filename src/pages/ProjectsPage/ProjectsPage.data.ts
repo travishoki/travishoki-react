@@ -58,19 +58,6 @@ export const FILTER_LIST: TechKey[] = [
 	WORDPRESS,
 ];
 
-const COMPANY_TITLE_OVERRIDES: Record<string, string> = {
-	barrier: 'Barrier Pest Control',
-	chatbooks: 'Chatbooks.com',
-	lavavolt: 'LavaVolt',
-	'lindsey-hoki-photography': 'LindseyHoki.com',
-	overstock: 'Overstock.com',
-	rgdjanitorial: 'RGDJanitorial',
-	roomchoice: 'Room Choice',
-	'saints-and-sinners': 'Saints and Sinners Half Marathon and Team Relay',
-	wedding: 'Wedding Website',
-	wininsights: 'WinInsights',
-};
-
 const slugify = (value: string) =>
 	value
 		.toLowerCase()
@@ -78,19 +65,12 @@ const slugify = (value: string) =>
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/(^-|-$)/g, '');
 
-const getProjectTitle = (company: string) =>
-	COMPANY_TITLE_OVERRIDES[company] ??
-	company
-		.split('-')
-		.map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
-		.join(' ');
-
-const getItemKey = (company: string, subtitle: string) =>
-	subtitle ? `${slugify(company)}-${slugify(subtitle)}` : slugify(company);
+const getItemKey = (companySlug: string, subtitle: string) =>
+	subtitle ? `${companySlug}-${slugify(subtitle)}` : companySlug;
 
 const PROJECTS: ProjectInput[] = [
 	{
-		company: 'hoki-skateboards',
+		company: 'Hoki Skateboards',
 		contributions: [
 			'React Native development',
 			'UI/UX Design',
@@ -113,7 +93,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 	{
-		company: 'chatbooks',
+		company: 'Chatbooks.com',
 		contributions: [
 			'Tie into existing APIs to create a new book.',
 			'Create reusable UI components',
@@ -126,7 +106,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
-		company: 'chatbooks',
+		company: 'Chatbooks.com',
 		contributions: [
 			'Create Branch links for redirecting to IOS or android apps.',
 			'Create screen for selecting the data source as well as a screen platform specific pages info.',
@@ -137,7 +117,7 @@ const PROJECTS: ProjectInput[] = [
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
 	},
 	{
-		company: 'chatbooks',
+		company: 'Chatbooks.com',
 		contributions: ['Tie into existing APIs to allow for layflat.'],
 		desc: 'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		learned: '',
@@ -147,7 +127,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
-		company: 'chatbooks',
+		company: 'Chatbooks.com',
 		contributions: [
 			'Server-side rendering for SEO value',
 			'Work closely with designers and marketing',
@@ -159,7 +139,7 @@ const PROJECTS: ProjectInput[] = [
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
 		],
@@ -170,7 +150,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
 		],
@@ -190,7 +170,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
 		],
@@ -201,7 +181,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.overstock.com/94864/static.html',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: ['Coordinate deployments with multiple departments.'],
 		desc: 'Reward users for leaving a qualifying review.',
 		learned: '',
@@ -210,7 +190,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.overstock.com/rewards-for-reviews',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			'I implemented an AB test that resulted in lift during a 2 week period.',
 		],
@@ -223,7 +203,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			'Componentize the Add To Cart functionality into a react module.',
 		],
@@ -235,7 +215,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: ['Coordinate deployments with multiple departments.'],
 		desc: 'Allowing a user to leave rating only reviews.',
 		learned:
@@ -246,7 +226,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: [
 			"I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
@@ -259,7 +239,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'overstock',
+		company: 'Overstock.com',
 		contributions: ['Took the basic wordpress plugin and rearchitected it.'],
 		desc: 'Embeddable affiliate links',
 		learned: '',
@@ -269,7 +249,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
-		company: 'lindsey-hoki-photography',
+		company: 'LindseyHoki.com',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		desc: "Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
@@ -279,9 +259,9 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.lindseyhoki.com/',
 	},
 	{
-		company: 'hoki-skateboards',
+		company: 'Hoki Skateboards',
 		contributions: [
-			'Wordpress customization',
+			'Custom Wordpress theme',
 			'Design and branding',
 			'Woocommerce integration',
 		],
@@ -293,7 +273,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.hokiskateboards.com/',
 	},
 	{
-		company: 'truly-lindsey-photography',
+		company: 'Truly Lindsey Photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		desc: "Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
@@ -302,7 +282,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.trulylindseyphotography.com/',
 	},
 	{
-		company: 'roomchoice',
+		company: 'Room Choice',
 		contributions: [
 			'Full Stack Development',
 			'Django and python',
@@ -310,7 +290,7 @@ const PROJECTS: ProjectInput[] = [
 		],
 		desc: 'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
 		learned:
-			'At Roomchoice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
+			'At Room Choice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
 		live: true,
 		subtitle: '',
 		techs: [
@@ -325,7 +305,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.roomchoice.com/',
 	},
 	{
-		company: 'rooke-capital-management',
+		company: 'Rooke Capital Management',
 		contributions: [
 			'Dove into their custom wordpress theme and build out new pages',
 			'Optimize page for all browsers including IE 6',
@@ -338,7 +318,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.rookecapital.com/',
 	},
 	{
-		company: 'rgdjanitorial',
+		company: 'RGDJanitorial',
 		contributions: [
 			'Wordpress theme customization.',
 			'WP Advanced Custom Fields.',
@@ -352,7 +332,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.rgdjanitorial.com/',
 	},
 	{
-		company: 'wedding',
+		company: 'Wedding Website',
 		contributions: ['Site design and development'],
 		desc: 'This is the wedding website that I made for my wedding.',
 		learned:
@@ -363,7 +343,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.wedding.hokihappenings.com/',
 	},
 	{
-		company: 'eric-aroca',
+		company: 'Eric Aroca',
 		contributions: [
 			'Set him up with a hosting plan.',
 			'Built a custom Wordpress theme.',
@@ -378,7 +358,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.ericaroca.com/',
 	},
 	{
-		company: 'saints-and-sinners',
+		company: 'Saints and Sinners Half Marathon and Team Relay',
 		contributions: [
 			'Creation of registration form, authorize.net integration',
 			'customization of wordpress theme.',
@@ -391,7 +371,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.saintsandsinnershalf.com/',
 	},
 	{
-		company: 'new-life-recovery',
+		company: 'New Life Recovery',
 		contributions: ['Bring the design image to life in the browser.'],
 		desc: 'Build out the HTML and CSS for a new landing page.',
 		learned: '',
@@ -400,7 +380,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.newlife-recovery.org/',
 	},
 	{
-		company: 'creative-media-education',
+		company: 'Creative Media Education',
 		contributions: [
 			'Stripe Integration',
 			'Front-end and Back-end',
@@ -413,7 +393,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.cmeducation.org/',
 	},
 	{
-		company: 'lavavolt',
+		company: 'LavaVolt',
 		contributions: [
 			'All of the back-end',
 			'everything from user accounts, to film uploading, to querying from the film library.',
@@ -425,7 +405,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.lavavolt.com',
 	},
 	{
-		company: 'enspark',
+		company: 'Enspark',
 		contributions: [
 			'Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.',
 		],
@@ -436,7 +416,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.lms.enspark.com',
 	},
 	{
-		company: 'first-mile',
+		company: 'First Mile',
 		contributions: [
 			'All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.',
 		],
@@ -448,7 +428,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.enspark.net/internationalfulfillment/',
 	},
 	{
-		company: 'the-putting-tour',
+		company: 'The Putting Tour',
 		contributions: [
 			'Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.',
 		],
@@ -459,7 +439,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.theputtingtour.com',
 	},
 	{
-		company: 'wininsights',
+		company: 'WinInsights',
 		contributions: [
 			'Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.',
 		],
@@ -470,7 +450,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.wininsights.com',
 	},
 	{
-		company: 'barrier',
+		company: 'Barrier Pest Control',
 		contributions: [
 			'Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. ',
 		],
@@ -482,7 +462,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.barrierpc.com',
 	},
 	{
-		company: 'enspark',
+		company: 'Enspark',
 		contributions: [
 			'Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.',
 		],
@@ -494,7 +474,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.enspark.com',
 	},
 	{
-		company: 'utah-casa',
+		company: 'Utah Casa',
 		contributions: [
 			'Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.',
 		],
@@ -506,7 +486,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.utahcasa.org/',
 	},
 	{
-		company: 'paradigm-life',
+		company: 'Paradigm Life',
 		contributions: [
 			'Helped with the wordpress theme and structure architecture.',
 		],
@@ -518,7 +498,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.paradigmlife.net/',
 	},
 	{
-		company: 'debt-free-planning',
+		company: 'Debt Free Planning',
 		contributions: [
 			'Front-end construction. Creating a email form for user information requests.',
 		],
@@ -529,7 +509,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.debt-free-planning.com',
 	},
 	{
-		company: 'southam-consulting',
+		company: 'Southam Consulting',
 		contributions: [
 			'Creating a email form for user information requests. Other front-end fixes.',
 		],
@@ -541,14 +521,19 @@ const PROJECTS: ProjectInput[] = [
 	},
 ];
 
-export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => ({
-	...project,
-	itemKey: getItemKey(project.company, project.subtitle),
-	title: getProjectTitle(project.company),
-}));
+export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => {
+	const companySlug = slugify(project.company);
+
+	return {
+		...project,
+		companySlug,
+		itemKey: getItemKey(companySlug, project.subtitle),
+	};
+});
 
 export type ProjectType = {
 	company: string;
+	companySlug: string;
 	contributions: string[];
 	date?: string;
 	desc: string;
@@ -557,8 +542,7 @@ export type ProjectType = {
 	live?: boolean;
 	subtitle: string;
 	techs: TechKey[];
-	title: string;
 	url?: string;
 };
 
-type ProjectInput = Omit<ProjectType, 'itemKey' | 'title'>;
+type ProjectInput = Omit<ProjectType, 'companySlug' | 'itemKey'>;

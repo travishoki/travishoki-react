@@ -27,7 +27,7 @@ export const filterProjects = (
 	if (searchTerm !== '') {
 		newProjects = projects.filter((item) => {
 			const a: (keyof ProjectType)[] = [
-				'title',
+				'company',
 				'subtitle',
 				'desc',
 				'contributions',

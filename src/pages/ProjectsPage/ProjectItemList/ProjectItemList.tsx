@@ -8,6 +8,7 @@ const images = require.context('../../../images/websites', true);
 
 export const ProjectItemList = ({
 	company,
+	companySlug,
 	contributions,
 	date,
 	desc,
@@ -16,12 +17,11 @@ export const ProjectItemList = ({
 	live = false,
 	subtitle,
 	techs,
-	title,
 	url,
 }: ProjectItemListProps) => (
 	<div className="list-item">
 		<div className="project-heading">
-			<h2>{title}</h2>
+			<h2>{company}</h2>
 			<h3>{subtitle}</h3>
 		</div>
 
@@ -30,7 +30,7 @@ export const ProjectItemList = ({
 				<img className="project-img" src={images(`./${itemKey}/lg.jpg`)} />
 			</div>
 			<ProjectInfoSection
-				company={company}
+				companySlug={companySlug}
 				contributions={contributions}
 				date={date}
 				desc={desc}

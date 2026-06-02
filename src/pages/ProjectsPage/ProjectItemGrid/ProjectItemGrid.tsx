@@ -8,7 +8,7 @@ const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);
 
 export const ProjectItemGrid = ({
-	company,
+	companySlug,
 	itemKey,
 	projectLink,
 }: ProjectItemGridProps) => (
@@ -17,7 +17,7 @@ export const ProjectItemGrid = ({
 			<Link to={`${projectLink}/${itemKey}`}>
 				<div className="popup-inner">
 					<div className="popup-cont">
-						<img src={logos(`./${company}.jpg`)} />
+						<img src={logos(`./${companySlug}.jpg`)} />
 						<p className="project-link">View</p>
 					</div>
 					<div className="popup-overlay" />
@@ -31,4 +31,4 @@ export const ProjectItemGrid = ({
 
 type ProjectItemGridProps = {
 	projectLink: string;
-} & Pick<ProjectType, 'company' | 'itemKey'>;
+} & Pick<ProjectType, 'companySlug' | 'itemKey'>;

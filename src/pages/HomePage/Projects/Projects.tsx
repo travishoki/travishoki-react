@@ -19,7 +19,7 @@ export const Projects = () => (
 						<Link to={`/project/${project.itemKey}`}>
 							<div className="project-header">
 								<div className="project-header-inner">
-									<h3>{project.title}</h3>
+									<h3>{project.company}</h3>
 									<h4>{project.subtitle}</h4>
 								</div>
 							</div>

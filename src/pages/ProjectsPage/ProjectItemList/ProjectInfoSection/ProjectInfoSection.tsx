@@ -9,11 +9,11 @@ const logos = require.context('../../../../images/clients', true);
 
 type ProjectInfoSectionProps = Pick<
 	ProjectType,
-	'company' | 'contributions' | 'date' | 'desc' | 'learned' | 'techs'
+	'companySlug' | 'contributions' | 'date' | 'desc' | 'learned' | 'techs'
 >;
 
 export const ProjectInfoSection = ({
-	company,
+	companySlug,
 	contributions,
 	date,
 	desc,
@@ -21,7 +21,7 @@ export const ProjectInfoSection = ({
 	techs,
 }: ProjectInfoSectionProps) => (
 	<div className="col-sm-6">
-		<img className="logo center" src={logos(`./${company}.jpg`)} />
+		<img className="logo center" src={logos(`./${companySlug}.jpg`)} />
 
 		{date && <p className="project-date">{date}</p>}
 
