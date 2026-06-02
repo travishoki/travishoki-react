@@ -8,7 +8,7 @@ import './TechTiles.scss';
 export const TechTiles = () => (
 	<section className="white tech-tiles">
 		<TechListSwitcher
-			header="Tech I have expereice with"
+			header="Tech I have Experience with"
 			list={DISPLAYED_LIST}
 		/>
 	</section>
