@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechFilterType, TechKeys } from '~const/Tech.const';
+import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { SearchForm } from './SearchForm/SearchForm';
 import { ViewControl } from './ViewControl/ViewControl';
@@ -83,7 +83,7 @@ export const Finder = ({
 
 type FinderProps = {
 	filter: TechFilterType;
-	filterList: (keyof TechKeys)[];
+	filterList: TechKey[];
 	filterTerm: TechFilterType;
 	grid: boolean;
 	onClearFilter: () => void;

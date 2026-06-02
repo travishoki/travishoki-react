@@ -1,5 +1,5 @@
 import React from 'react';
-import { TECH, TechKeys } from '~const/Tech.const';
+import { TECH, TechKey } from '~const/Tech.const';
 
 import './TechIcon.scss';
 
@@ -10,5 +10,5 @@ export const TechIcon = ({ name }: TechIconProps) => (
 );
 
 type TechIconProps = {
-	name: keyof TechKeys;
+	name: TechKey;
 };

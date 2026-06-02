@@ -7,7 +7,7 @@ import {
 	JAVASCRIPT,
 	PHP,
 	REACT_JS,
-	TechKeys,
+	TechKey,
 	WORDPRESS,
 } from '~const/Tech.const';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
@@ -15,7 +15,7 @@ import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.
 import { PassionLabel } from '../PassionLabel';
 import { Title } from '../Title';
 
-const websiteTechList: (keyof TechKeys)[] = [
+const websiteTechList: TechKey[] = [
 	CSS,
 	HTML,
 	JAVASCRIPT,

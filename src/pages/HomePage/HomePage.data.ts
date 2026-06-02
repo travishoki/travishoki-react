@@ -17,7 +17,7 @@ import {
 	REDUX,
 	SCSS,
 	SQL,
-	TechKeys,
+	TechKey,
 	TYPESCRIPT,
 	WEBPACK,
 	WORDPRESS,
@@ -25,7 +25,7 @@ import {
 } from '~const/Tech.const';
 
 // Ordered for display by what I want to advertise first
-export const DISPLAYED_LIST: (keyof TechKeys)[] = [
+export const DISPLAYED_LIST: TechKey[] = [
 	CLAUDE_CODE,
 	REACT_JS,
 	REACT_NATIVE,

@@ -50,65 +50,39 @@ export const TYPESCRIPT = 'TYPESCRIPT';
 export const WEBPACK = 'WEBPACK';
 export const WORDPRESS = 'WORDPRESS';
 
-export type TechKeys = {
-	ACTION_SCRIPT: 'ACTION_SCRIPT';
-	AMP: 'AMP';
-	ANGULAR_JS: 'ANGULAR_JS';
-	CLAUDE_CODE: 'CLAUDE_CODE';
-	COFFEE_SCRIPT: 'COFFEE_SCRIPT';
-	CSS: 'CSS';
-	DJANGO: 'DJANGO';
-	FIREBASE: 'FIREBASE';
-	GRUNT: 'GRUNT';
-	HANDLEBARS_JS: 'HANDLEBARS_JS';
-	HTML: 'HTML';
-	JAVASCRIPT: 'JAVASCRIPT';
-	JQUERY: 'JQUERY';
-	LESS_CSS: 'LESS_CSS';
-	NODE_JS: 'NODE_JS';
-	PHP: 'PHP';
-	PYTHON: 'PYTHON';
-	REACT_JS: 'REACT_JS';
-	REACT_NATIVE: 'REACT_NATIVE';
-	REDUX: 'REDUX';
-	SCSS: 'SCSS';
-	SQL: 'SQL';
-	TYPESCRIPT: 'TYPESCRIPT';
-	WEBPACK: 'WEBPACK';
-	WORDPRESS: 'WORDPRESS';
-};
-
-export type TechFilterType = keyof TechKeys | null | 'all' | 'null';
-
 export type TechInfo = {
 	image: string;
 	label: string;
 };
 
-export const TECH: Record<keyof TechKeys, TechInfo> = {
-	ACTION_SCRIPT: { image: ImgActionScript, label: 'Action Script' },
-	AMP: { image: ImgAmp, label: 'AMP' },
-	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS' },
-	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code' },
-	COFFEE_SCRIPT: { image: ImgCoffeeScript, label: 'Coffee Script' },
-	CSS: { image: ImgCss, label: 'CSS' },
-	DJANGO: { image: ImgDjango, label: 'Django' },
-	FIREBASE: { image: ImgFirebase, label: 'Firebase' },
-	GRUNT: { image: ImgGrunt, label: 'Grunt' },
-	HANDLEBARS_JS: { image: ImgHandlebarsJs, label: 'Handlebars JS' },
-	HTML: { image: ImgHtml, label: 'HTML' },
-	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript' },
-	JQUERY: { image: ImgJquery, label: 'jQuery' },
-	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS' },
-	NODE_JS: { image: ImgNodeJs, label: 'Node JS' },
-	PHP: { image: ImgPhp, label: 'PHP' },
-	PYTHON: { image: ImgPython, label: 'Python' },
-	REACT_JS: { image: ImgReactJs, label: 'React JS' },
-	REACT_NATIVE: { image: ImgReactNative, label: 'React Native' },
-	REDUX: { image: ImgRedux, label: 'Redux' },
-	SCSS: { image: ImgScss, label: 'SCSS' },
-	SQL: { image: ImgSql, label: 'SQL' },
-	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript' },
-	WEBPACK: { image: ImgWebpack, label: 'Webpack' },
-	WORDPRESS: { image: ImgWordpress, label: 'Wordpress' },
-};
+export const TECH = {
+	[ACTION_SCRIPT]: { image: ImgActionScript, label: 'Action Script' },
+	[AMP]: { image: ImgAmp, label: 'AMP' },
+	[ANGULAR_JS]: { image: ImgAngularJs, label: 'Angular JS' },
+	[CLAUDE_CODE]: { image: ImgClaudeCode, label: 'Claude Code' },
+	[COFFEE_SCRIPT]: { image: ImgCoffeeScript, label: 'Coffee Script' },
+	[CSS]: { image: ImgCss, label: 'CSS' },
+	[DJANGO]: { image: ImgDjango, label: 'Django' },
+	[FIREBASE]: { image: ImgFirebase, label: 'Firebase' },
+	[GRUNT]: { image: ImgGrunt, label: 'Grunt' },
+	[HANDLEBARS_JS]: { image: ImgHandlebarsJs, label: 'Handlebars JS' },
+	[HTML]: { image: ImgHtml, label: 'HTML' },
+	[JAVASCRIPT]: { image: ImgJavascript, label: 'Javascript' },
+	[JQUERY]: { image: ImgJquery, label: 'jQuery' },
+	[LESS_CSS]: { image: ImgLessCss, label: 'LESS CSS' },
+	[NODE_JS]: { image: ImgNodeJs, label: 'Node JS' },
+	[PHP]: { image: ImgPhp, label: 'PHP' },
+	[PYTHON]: { image: ImgPython, label: 'Python' },
+	[REACT_JS]: { image: ImgReactJs, label: 'React JS' },
+	[REACT_NATIVE]: { image: ImgReactNative, label: 'React Native' },
+	[REDUX]: { image: ImgRedux, label: 'Redux' },
+	[SCSS]: { image: ImgScss, label: 'SCSS' },
+	[SQL]: { image: ImgSql, label: 'SQL' },
+	[TYPESCRIPT]: { image: ImgTypescript, label: 'Typescript' },
+	[WEBPACK]: { image: ImgWebpack, label: 'Webpack' },
+	[WORDPRESS]: { image: ImgWordpress, label: 'Wordpress' },
+} satisfies Record<string, TechInfo>;
+
+export type TechKey = keyof typeof TECH;
+
+export type TechFilterType = TechKey | null | 'all' | 'null';

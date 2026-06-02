@@ -4,12 +4,12 @@ import {
 	ListSwitcher,
 	ListSwitcherItemData,
 } from '~components/ListSwitcher/ListSwitcher';
-import { TECH, TechKeys } from '~const/Tech.const';
+import { TECH, TechKey } from '~const/Tech.const';
 
 type TechListProps = {
 	header?: string;
 	initialExpanded?: boolean;
-	list: (keyof TechKeys)[];
+	list: TechKey[];
 };
 
 export const TechListSwitcher = ({

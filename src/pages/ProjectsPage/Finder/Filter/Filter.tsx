@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechFilterType, TechKeys } from '~const/Tech.const';
+import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { CurrentFilter } from './CurrentFilter';
 import { FilterClean } from './FilterClean';
@@ -52,7 +52,7 @@ export const Filter = ({
 
 type FilterProps = {
 	filter: TechFilterType;
-	filterList: (keyof TechKeys)[];
+	filterList: TechKey[];
 	filterTerm: TechFilterType;
 	isFilterOpen?: boolean;
 	onChangeFilter: React.ChangeEventHandler<HTMLInputElement>;

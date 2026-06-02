@@ -19,13 +19,13 @@ import {
 	REDUX,
 	SCSS,
 	SQL,
-	TechKeys,
+	TechKey,
 	TYPESCRIPT,
 	WEBPACK,
 	WORDPRESS,
 } from '../../const/Tech.const';
 
-export const FILTER_LIST: (keyof TechKeys)[] = [
+export const FILTER_LIST: TechKey[] = [
 	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
@@ -582,7 +582,7 @@ export type ProjectType = {
 	learned: string;
 	live?: boolean;
 	subtitle: string;
-	techs: (keyof TechKeys)[];
+	techs: TechKey[];
 	title: string;
 	url?: string;
 };

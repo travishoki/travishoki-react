@@ -14,7 +14,7 @@ import {
 	REACT_JS,
 	REDUX,
 	SQL,
-	TechKeys,
+	TechKey,
 	TYPESCRIPT,
 } from '~const/Tech.const';
 import ImgAcademyOfBallet from '~images/experience/academy-of-ballet.png';
@@ -193,6 +193,6 @@ export type ResumeDataType = {
 	img: string;
 	position: string;
 	tasks: string[];
-	techs: (keyof TechKeys)[];
+	techs: TechKey[];
 	title: string;
 };

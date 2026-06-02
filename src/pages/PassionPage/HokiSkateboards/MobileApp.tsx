@@ -8,7 +8,7 @@ import {
 	JAVASCRIPT,
 	REACT_JS,
 	REACT_NATIVE,
-	TechKeys,
+	TechKey,
 } from '~const/Tech.const';
 
 import { PassionLabel } from './PassionLabel';
@@ -16,7 +16,7 @@ import { Title } from './Title';
 import './MobileApp.scss';
 import { AppBadges } from './MobileApp/AppBadges';
 
-const techs: (keyof TechKeys)[] = [
+const techs: TechKey[] = [
 	CSS,
 	HTML,
 	JAVASCRIPT,

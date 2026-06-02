@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FilterItem } from './FilterItem';
-import { TechFilterType, TechKeys } from '~const/Tech.const';
+import { TechFilterType, TechKey } from '~const/Tech.const';
 
 export const FilterItems = ({
 	filter,
@@ -43,7 +43,7 @@ export const FilterItems = ({
 
 type FilterItemsProps = {
 	filter: TechFilterType;
-	filterList: (keyof TechKeys)[];
+	filterList: TechKey[];
 	filterTerm: string | null;
 	onClearAndCloseFilter: () => void;
 	onSelectFilter: (filter: TechFilterType) => void;
