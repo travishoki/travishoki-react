@@ -49,13 +49,10 @@ ul.list-switcher-horizontal {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 10px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-
-	li {
-		margin-right: 10px;
-	}
 }
 
 ul.list-switcher-vertical {
