@@ -44,8 +44,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSalesforce,
 		position: 'Senior Member of the Technical Staff',
 		tasks: [
-			'Brought the code up to Salesforce standard by adding a large amount of unit tests.',
-			'Helped to scale the Spiff software from the user capacity of a small business to a large enterprise software company.',
+			'Bring the codebase up to Salesforce standards by adding extensive unit test coverage',
+			'Scale the Spiff software from small-business to enterprise-level user capacity',
 		],
 		techs: [CLAUDE_CODE, REACT_JS, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Salesforce',
@@ -53,7 +53,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	{
 		affiliatedCompany: {
 			img: ImgSalesforce,
-			title: 'Spiff Acquired by Salesforce (March 2024)',
+			title: 'Spiff acquired by Salesforce (March 2024)',
 		},
 		dateEnd: 'Present',
 		dateStart: 'Aug. 2021',
@@ -91,9 +91,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
-			'Create and maintain web features and projects for the Books and Cards teams',
+			'Created and maintained web features and projects for the Books and Cards teams',
 			'Actively converted Angular JS to React JS while keeping product code stable',
-			'Node JS Server-side rendering for SEO and optimization',
+			'Implemented Node.js server-side rendering for SEO and optimization',
 		],
 		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 		title: 'Chatbooks',
@@ -108,8 +108,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgOvestock,
 		position: 'Front-end Developer',
 		tasks: [
-			'Enhancements to customer reviews functionality',
-			'Managed the Front-End for all User Generated Content include; reviews, product images, and Q&A',
+			'Enhanced customer reviews functionality',
+			'Managed the front-end for all user-generated content, including reviews, product images, and Q&A',
 			'Managed pixels for retargeting and third-party integrations',
 			'Pioneered the affiliate links program',
 		],
@@ -122,10 +122,10 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
-			'In-house development on student housing software',
-			'Query user data via Python and Django',
-			'Manage and enhance front-end via AngularJs, CoffeeScript, and Classy',
-			'Found ways to speed up and enhance the user experience of the software',
+			'Developed student-housing software in-house',
+			'Queried user data via Python and Django',
+			'Managed and enhanced the front-end via AngularJS, CoffeeScript, and Classy',
+			'Improved software speed and user experience',
 		],
 		techs: [ANGULAR_JS, PYTHON, DJANGO, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
 		title: 'Room Choice',
@@ -136,10 +136,10 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgEnspark,
 		position: 'Custom Web Developer',
 		tasks: [
-			'Full-stack development via PHP and JavaScript',
-			'LMS reconstruction and user account tracking',
-			'Front-end development and WordPress maintenance',
-			'Custom banner and eLearning course development in Adobe Flash AS3',
+			'Developed full-stack features via PHP and JavaScript',
+			'Rebuilt the LMS and implemented user-account tracking',
+			'Built front-end features and maintained WordPress sites',
+			'Developed custom banners and eLearning courses in Adobe Flash AS3',
 		],
 		techs: [
 			JAVASCRIPT,
@@ -169,7 +169,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 	},
 	{
 		dateEnd: 'Jan. 2009',
-		dateStart: 'May 2009',
+		dateStart: 'May 2008',
 		img: ImgAcademyOfBallet,
 		position: 'Breakdance Instructor',
 		tasks: [
@@ -186,10 +186,10 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgWendys,
 		position: 'Crew Member',
 		tasks: [
-			'Register operation and order fulfillment',
-			'Workstation sanitation and stocking',
+			'Operated registers and fulfilled customer orders',
+			'Sanitized and stocked workstations',
 			'Trained new employees in various positions',
-			'Maintain service and courtesy standards during high-pressure situations',
+			'Maintained service and courtesy standards during high-pressure situations',
 		],
 		techs: [],
 		title: "Wendy's",
