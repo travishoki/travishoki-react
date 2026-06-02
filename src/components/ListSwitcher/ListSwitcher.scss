@@ -95,8 +95,14 @@
 			margin-right: 10px;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		p {
+			font-size: 14px;
 			line-height: $iconW;
+			line-height: 18px;
 			margin: 0;
 		}
 	}

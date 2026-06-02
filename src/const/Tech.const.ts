@@ -15,6 +15,7 @@ import ImgJquery from '~images/icons/tech-icons/jquery.jpg';
 import ImgLessCss from '~images/icons/tech-icons/less-css.jpg';
 import ImgNodeJs from '~images/icons/tech-icons/node-js.jpg';
 import ImgPhp from '~images/icons/tech-icons/php.jpg';
+import ImgPhpMyAdmin from '~images/icons/tech-icons/php-my-admin.jpg';
 import ImgPython from '~images/icons/tech-icons/python.jpg';
 import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
 import ImgReactNative from '~images/icons/tech-icons/react-native.jpg';
@@ -41,6 +42,7 @@ export const JQUERY = 'JQUERY';
 export const LESS_CSS = 'LESS_CSS';
 export const NODE_JS = 'NODE_JS';
 export const PHP = 'PHP';
+export const PHP_MY_ADMIN = 'PHP_MY_ADMIN';
 export const PYTHON = 'PYTHON';
 export const REACT_JS = 'REACT_JS';
 export const REACT_NATIVE = 'REACT_NATIVE';
@@ -81,6 +83,7 @@ export const TECH = {
 	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: 'frontend' },
 	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: 'backend' },
 	PHP: { image: ImgPhp, label: 'PHP', type: 'backend' },
+	PHP_MY_ADMIN: { image: ImgPhpMyAdmin, label: 'phpMyAdmin', type: 'backend' },
 	PYTHON: { image: ImgPython, label: 'Python', type: 'backend' },
 	REACT_JS: { image: ImgReactJs, label: 'React JS', type: 'frontend' },
 	REACT_NATIVE: {

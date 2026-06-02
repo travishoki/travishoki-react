@@ -22,33 +22,41 @@ import {
 	WEBPACK,
 	WORDPRESS,
 	CLAUDE_CODE,
+	PHP_MY_ADMIN,
 } from '~const/Tech.const';
 
 // Ordered for display by what I want to advertise first
 export const DISPLAYED_LIST: TechKey[] = [
-	CLAUDE_CODE,
+	// Frontend
 	REACT_JS,
 	REACT_NATIVE,
 	REDUX,
 	TYPESCRIPT,
 	JAVASCRIPT,
-	NODE_JS,
 	CSS,
 	HTML,
 	LESS_CSS,
 	SCSS,
 
+	// Backend
+	NODE_JS,
 	DJANGO,
-	GRUNT,
 	HANDLEBARS_JS,
 	PHP,
+	PHP_MY_ADMIN,
 	PYTHON,
 	SQL,
-	WEBPACK,
-	WORDPRESS,
 	FIREBASE,
 
-	// Legacy Tech & Frameworks
-	ACTION_SCRIPT,
+	// Content Management System
+	WORDPRESS,
+
+	// Tools
+	CLAUDE_CODE,
+	WEBPACK,
+	GRUNT,
+
+	// Legacy Tech
 	JQUERY,
+	ACTION_SCRIPT,
 ];
