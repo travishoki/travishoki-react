@@ -22,6 +22,7 @@ export const TextWithReadMore = ({ paragraphs }: TextWithReadMoreProps) => {
 
 			{hasMore && (
 				<p className="pointer read-more" onClick={onToggle}>
+					<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
 					{expanded ? 'Read Less' : 'Read More'}
 				</p>
 			)}
