@@ -35,7 +35,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
 		desc: [
-			`My name is Travis Hoki. I'm from Orem. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
+			`My name is Travis Hoki. I'm from Orem, UT. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted. - Travis Hoki`,
 		],
 		imgLarge: ImgProfilePic,
 		imgLargeDimensions: [300, 300],

@@ -9,7 +9,7 @@ describe('groupTechByType', () => {
 		const items: ListSwitcherItemData[] = [
 			{ image: 'react.jpg', label: 'React', type: 'frontend' },
 			{ image: 'jquery.jpg', label: 'jQuery', type: 'legacy' },
-			{ image: 'node.jpg', label: 'Node JS', type: 'backend' },
+			{ image: 'node.jpg', label: 'Node.js', type: 'backend' },
 			{ image: 'ts.jpg', label: 'Typescript', type: 'frontend' },
 			{ image: 'claude.jpg', label: 'Claude Code', type: 'tool' },
 			{ image: 'php.jpg', label: 'PHP', type: 'backend' },
@@ -19,7 +19,7 @@ describe('groupTechByType', () => {
 
 		expect(result).toEqual({
 			backend: [
-				{ image: 'node.jpg', label: 'Node JS', type: 'backend' },
+				{ image: 'node.jpg', label: 'Node.js', type: 'backend' },
 				{ image: 'php.jpg', label: 'PHP', type: 'backend' },
 			],
 			cms: [],
