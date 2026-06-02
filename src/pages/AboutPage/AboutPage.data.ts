@@ -45,7 +45,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			"In 2025, I started volunteering with Cub Scouts. I'm happy the scouting program that I loved as a kid, is still around for my sons. Each of us parents are active in the pack. I'm the Bear's den leader. I've enjoyed working with the kids and other leaders.",
+			"In 2025, I started volunteering with Cub Scouts. I'm happy the scouting program that I loved as a kid is still around for my sons. Each of us parents are active in the pack. I'm the Bear's den leader. I've enjoyed working with the kids and other leaders.",
 		],
 		imgLarge: ImgCubScouts,
 		imgLargeDimensions: [1518, 2024],
@@ -106,7 +106,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		desc: [
 			"I learned how to play the guitar to propose to my wife. I knew how I wanted to propose but didn't know when. I secretly took guitar and vocal lessons for 1.5 years before the actual proposal.",
 			'In 2015, at The Festival of Trees they gave me the stage.',
-			"Now days I still play the guitar just for fun and as a way to relax and destress. A few times I've accopanied family sing alongs around the camp fire.",
+			"Nowadays I still play the guitar just for fun and as a way to relax and destress. A few times I've accompanied family sing alongs around the camp fire.",
 		],
 		imgLarge: ImgGuitar,
 		imgLargeDimensions: [2048, 1366],
@@ -136,7 +136,8 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'I loved the scouting program and so many of the lessons it taught me.',
+			'I loved the scouting program and so many of the lessons it taught me about leadership, service, and seeing a project through from start to finish.',
+			'For my Eagle service project, I organized painting house addresses on neighborhood curbs, making homes easier for emergency responders to find.',
 		],
 		imgLarge: ImgEagleScout,
 		imgLargeDimensions: [1688, 2000],
