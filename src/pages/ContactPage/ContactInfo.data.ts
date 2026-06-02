@@ -5,31 +5,31 @@ export type ContactInfoLine = {
 
 export type ContactInfoItemData = {
 	icon: string;
+	id: string;
 	lines: ContactInfoLine[];
-	title: string;
 };
 
 export const CONTACT_INFO: ContactInfoItemData[] = [
 	{
 		icon: 'fa-phone',
+		id: 'phone',
 		lines: [{ href: 'tel:+18016912373', text: '801-691-2373' }],
-		title: 'Phone Number',
 	},
 	{
 		icon: 'fa-envelope',
+		id: 'email',
 		lines: [
 			{ href: 'mailto:travis.hoki@gmail.com', text: 'travis.hoki@gmail.com' },
 		],
-		title: 'Email',
 	},
 	{
 		icon: 'fa-map-marker',
+		id: 'location',
 		lines: [{ text: 'Pleasant Grove, UT' }, { text: 'United States' }],
-		title: 'Location',
 	},
 	{
 		icon: 'fa-clock-o',
+		id: 'availability',
 		lines: [{ text: 'Open to remote work' }, { text: 'Available worldwide' }],
-		title: 'Availability',
 	},
 ];
