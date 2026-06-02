@@ -3,6 +3,7 @@ import React from 'react';
 import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
 
 import { ProjectType } from '../../ProjectsPage.data';
+import './ProjectInfoSection.scss';
 
 const logos = require.context('../../../../images/clients', true);
 

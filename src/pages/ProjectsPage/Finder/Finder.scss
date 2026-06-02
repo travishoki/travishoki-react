@@ -1,0 +1,54 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+#container.projects {
+	.find-section {
+		margin: 20px auto;
+		max-width: 400px;
+
+		.filter-item {
+			overflow: hidden;
+		}
+
+		input {
+			@include border-radius(0);
+			@include box-shadow(none);
+			border-bottom: solid 1px $gray-three;
+		}
+
+		form {
+			#input-holder {
+				height: 60px;
+				position: relative;
+
+				&.hasSearchTerm {
+					padding-right: 30px;
+				}
+
+				i {
+					cursor: pointer;
+					font-size: 26px;
+					line-height: 60px;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+
+	p.results-count,
+	p.view-controls {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	p.results-count {
+		float: left;
+	}
+
+	p.view-controls {
+		cursor: pointer;
+		text-align: right;
+	}
+}

@@ -23,6 +23,36 @@
 	}
 }
 
+.sub-line {
+	margin-bottom: 10px;
+	overflow: hidden;
+
+	@include tablet-up {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h4 {
+		font-size: 18px;
+		margin: 0;
+		text-align: left;
+	}
+
+	.date {
+		margin: 0;
+
+		@include phone-down {
+			color: $gray-one;
+			font-size: 14px;
+		}
+
+		@include tablet-up {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
 section.experience {
 	.affiliated-company {
 		align-items: center;

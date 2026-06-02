@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './NoResults.scss';
+
 export const NoResults = ({
 	filter,
 	isVisible = false,

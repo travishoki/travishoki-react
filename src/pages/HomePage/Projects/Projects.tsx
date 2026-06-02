@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { orderTopThreeInPodium } from './Projects.utils';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
+import './Projects.scss';
 
 const images = require.context('../../../images/websites', true);
 const currentProjects = orderTopThreeInPodium(PROJECTS_DATA.slice(0, 3));

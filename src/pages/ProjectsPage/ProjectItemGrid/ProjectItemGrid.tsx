@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { ProjectType } from '../ProjectsPage.data';
+import './ProjectItemGrid.scss';
 
 const images = require.context('../../../images/websites', true);
 const logos = require.context('../../../images/clients', true);

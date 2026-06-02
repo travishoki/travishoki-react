@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ProjectType } from '../ProjectsPage.data';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
+import './ProjectItemList.scss';
 
 const images = require.context('../../../images/websites', true);
 

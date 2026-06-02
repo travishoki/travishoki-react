@@ -6,6 +6,7 @@ import { SearchForm } from './SearchForm/SearchForm';
 import { ViewControl } from './ViewControl/ViewControl';
 import { Filter } from './Filter/Filter';
 import { useFinderHandlers } from './hooks/useFinderHandlers';
+import './Finder.scss';
 
 export const Finder = ({
 	filter,
