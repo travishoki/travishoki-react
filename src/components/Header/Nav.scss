@@ -26,6 +26,8 @@
 	padding: 0;
 
 	@include phone-down {
+		overflow: hidden;
+
 		li:last-child {
 			margin-bottom: 15px;
 		}
