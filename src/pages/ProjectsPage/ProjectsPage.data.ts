@@ -25,6 +25,7 @@ import {
 	SQL,
 	TechKey,
 	WEBPACK,
+	WOO_COMMERCE,
 	WORDPRESS,
 } from '../../const/Tech.const';
 
@@ -57,7 +58,37 @@ export const FILTER_LIST: TechKey[] = [
 	WORDPRESS,
 ];
 
-export const PROJECTS_DATA: ProjectType[] = [
+const COMPANY_TITLE_OVERRIDES: Record<string, string> = {
+	barrier: 'Barrier Pest Control',
+	chatbooks: 'Chatbooks.com',
+	lavavolt: 'LavaVolt',
+	'lindsey-hoki-photography': 'LindseyHoki.com',
+	overstock: 'Overstock.com',
+	rgdjanitorial: 'RGDJanitorial',
+	roomchoice: 'Room Choice',
+	'saints-and-sinners': 'Saints and Sinners Half Marathon and Team Relay',
+	wedding: 'Wedding Website',
+	wininsights: 'WinInsights',
+};
+
+const slugify = (value: string) =>
+	value
+		.toLowerCase()
+		.trim()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/(^-|-$)/g, '');
+
+const getProjectTitle = (company: string) =>
+	COMPANY_TITLE_OVERRIDES[company] ??
+	company
+		.split('-')
+		.map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
+		.join(' ');
+
+const getItemKey = (company: string, subtitle: string) =>
+	subtitle ? `${slugify(company)}-${slugify(subtitle)}` : slugify(company);
+
+const PROJECTS: ProjectInput[] = [
 	{
 		company: 'hoki-skateboards',
 		contributions: [
@@ -67,9 +98,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 		],
 		date: '2024',
 		desc: 'Teaching myself React Native as a passion project',
-		itemKey: 'hoki-skateboards-react-native',
 		learned: '',
-		live: false,
 		subtitle: 'React Native Game',
 		techs: [
 			REACT_JS,
@@ -81,7 +110,6 @@ export const PROJECTS_DATA: ProjectType[] = [
 			FIREBASE,
 			CLAUDE_CODE,
 		],
-		title: 'Hoki Skateboards',
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 	{
@@ -91,12 +119,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Create reusable UI components',
 		],
 		desc: 'Revamp existing create book page with new UI written in ReactJs',
-		itemKey: 'chatbooks-create-page',
 		learned: '',
 		live: true,
 		subtitle: 'Book Creation',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
-		title: 'Chatbooks.com',
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
@@ -106,23 +132,18 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Create screen for selecting the data source as well as a screen platform specific pages info.',
 		],
 		desc: "Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
-		itemKey: 'chatbooks-quick-flow-sources',
 		learned: '',
-		live: false,
 		subtitle: 'Cards Quick Flow Sources',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
-		title: 'Chatbooks.com',
 	},
 	{
 		company: 'chatbooks',
 		contributions: ['Tie into existing APIs to allow for layflat.'],
 		desc: 'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
-		itemKey: 'chatbooks-layflat',
 		learned: '',
 		live: true,
 		subtitle: 'Premium Layflat',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
-		title: 'Chatbooks.com',
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
@@ -133,12 +154,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Integrating with new APIs',
 		],
 		desc: 'Creating cards taxonomy pages with categories and search filters.',
-		itemKey: 'chatbooks-cards-taxonomy',
 		learned: '',
-		live: false,
 		subtitle: 'Cards Taxonomy Pages',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
-		title: 'Chatbooks.com',
 	},
 	{
 		company: 'overstock',
@@ -146,12 +164,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
 		],
 		desc: 'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
-		itemKey: 'overstock-amp-featured-product',
 		learned: '',
-		live: false,
 		subtitle: 'AMP Featured Product',
 		techs: [HTML, JAVASCRIPT, AMP, WEBPACK, LESS_CSS],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -160,9 +175,7 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
 		],
 		desc: 'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
-		itemKey: 'overstock-admin-portal',
 		learned: 'I got a deeper understanding of the Redux flow.',
-		live: false,
 		subtitle: 'Admin Portal',
 		techs: [
 			REACT_JS,
@@ -174,7 +187,6 @@ export const PROJECTS_DATA: ProjectType[] = [
 			JAVASCRIPT,
 			WEBPACK,
 		],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -183,24 +195,18 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
 		],
 		desc: 'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
-		itemKey: 'overstock-hackathon-2017',
 		learned: '',
-		live: true,
 		subtitle: 'Hackathon 2017',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, REACT_JS, REDUX, JQUERY, WEBPACK],
-		title: 'Overstock.com',
 		url: 'https://www.overstock.com/94864/static.html',
 	},
 	{
 		company: 'overstock',
 		contributions: ['Coordinate deployments with multiple departments.'],
 		desc: 'Reward users for leaving a qualifying review.',
-		itemKey: 'overstock-rewards-for-reviews',
 		learned: '',
-		live: true,
 		subtitle: 'Rewards for Reviews',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
-		title: 'Overstock.com',
 		url: 'https://www.overstock.com/rewards-for-reviews',
 	},
 	{
@@ -209,13 +215,11 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'I implemented an AB test that resulted in lift during a 2 week period.',
 		],
 		desc: 'Site that resizes down to mobile devices',
-		itemKey: 'overstock-responsive-sarp',
 		learned:
 			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
 		live: true,
 		subtitle: 'Responsive See All Reviews Page',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -224,25 +228,21 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Componentize the Add To Cart functionality into a react module.',
 		],
 		desc: 'On mobile devices, an add to cart popup.',
-		itemKey: 'overstock-sarp-mobile-atc',
 		learned: 'This was my first production level ReactJs work.',
 		live: true,
 		subtitle: 'See All Reviews Page Mobile Add To Cart',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, REACT_JS],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
 		company: 'overstock',
 		contributions: ['Coordinate deployments with multiple departments.'],
 		desc: 'Allowing a user to leave rating only reviews.',
-		itemKey: 'overstock-reviews-breakout',
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
 		live: true,
 		subtitle: 'Reviews Breakout',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, HANDLEBARS_JS, JQUERY],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -251,37 +251,31 @@ export const PROJECTS_DATA: ProjectType[] = [
 			"I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
 		desc: 'Rating reviews stars',
-		itemKey: 'overstock-rating-review-stars',
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
 		live: true,
 		subtitle: 'Star Ratings Color',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, HANDLEBARS_JS, JQUERY],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
 		company: 'overstock',
 		contributions: ['Took the basic wordpress plugin and rearchitected it.'],
 		desc: 'Embeddable affiliate links',
-		itemKey: 'overstock-affiliate-links',
 		learned: '',
 		live: true,
 		subtitle: 'Affiliate Links',
 		techs: [JAVASCRIPT, JQUERY, PHP, HTML, LESS_CSS, GRUNT],
-		title: 'Overstock.com',
 		url: 'http://www.overstock.com/',
 	},
 	{
 		company: 'lindsey-hoki-photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		desc: "Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
-		itemKey: 'lindsey-hoki-photography',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [WORDPRESS, HTML, CSS],
-		title: 'LindseyHoki.com',
 		url: 'http://www.lindseyhoki.com/',
 	},
 	{
@@ -292,24 +286,19 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Woocommerce integration',
 		],
 		desc: 'Passion project skateboard company I am building and branding.',
-		itemKey: 'hoki-skateboards',
 		learned: '',
 		live: true,
 		subtitle: '',
-		techs: [WORDPRESS, PHP, JQUERY, HTML, CSS, REACT_JS],
-		title: 'Hoki Skateboards',
+		techs: [WORDPRESS, WOO_COMMERCE, PHP, JQUERY, HTML, CSS, REACT_JS],
 		url: 'http://www.hokiskateboards.com/',
 	},
 	{
 		company: 'truly-lindsey-photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		desc: "Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
-		itemKey: 'truly-lindsey-photography',
 		learned: '',
-		live: false,
 		subtitle: '',
 		techs: [WORDPRESS, HTML, CSS],
-		title: 'Truly Lindsey Photography',
 		url: 'http://www.trulylindseyphotography.com/',
 	},
 	{
@@ -320,7 +309,6 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Restful API calls.',
 		],
 		desc: 'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
-		itemKey: 'roomchoice',
 		learned:
 			'At Roomchoice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
 		live: true,
@@ -334,7 +322,6 @@ export const PROJECTS_DATA: ProjectType[] = [
 			HTML,
 			LESS_CSS,
 		],
-		title: 'Room Choice',
 		url: 'http://www.roomchoice.com/',
 	},
 	{
@@ -345,12 +332,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Connected the page to a custom contact form',
 		],
 		desc: 'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
-		itemKey: 'rooke-capital-management',
 		learned: '',
-		live: false,
 		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'Rooke Capital Management',
 		url: 'http://www.rookecapital.com/',
 	},
 	{
@@ -361,25 +345,21 @@ export const PROJECTS_DATA: ProjectType[] = [
 			"Custom design with ther owner's feedback.",
 		],
 		desc: 'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
-		itemKey: 'rgdjanitorial',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, HTML, CSS],
-		title: 'RGDJanitorial',
 		url: 'http://www.rgdjanitorial.com/',
 	},
 	{
 		company: 'wedding',
 		contributions: ['Site design and development'],
 		desc: 'This is the wedding website that I made for my wedding.',
-		itemKey: 'wedding',
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
 		live: true,
 		subtitle: '',
 		techs: [ANGULAR_JS, JAVASCRIPT, HTML, SCSS],
-		title: 'Wedding Website',
 		url: 'http://www.wedding.hokihappenings.com/',
 	},
 	{
@@ -391,13 +371,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Embedded testamonials from his clients.',
 		],
 		desc: 'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
-		itemKey: 'eric-aroca',
 		learned:
 			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collabrative effort to get his site put together.',
-		live: false,
 		subtitle: 'Motivational Speaker',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'Eric Aroca',
 		url: 'http://www.ericaroca.com/',
 	},
 	{
@@ -407,24 +384,19 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'customization of wordpress theme.',
 		],
 		desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
-		itemKey: 'saints-and-sinners',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
-		title: 'Saints and Sinners Half Marathon and Team Relay',
 		url: 'http://www.saintsandsinnershalf.com/',
 	},
 	{
 		company: 'new-life-recovery',
 		contributions: ['Bring the design image to life in the browser.'],
 		desc: 'Build out the HTML and CSS for a new landing page.',
-		itemKey: 'new-life-recovery',
 		learned: '',
-		live: false,
 		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'New Life Recovery',
 		url: 'http://www.newlife-recovery.org/',
 	},
 	{
@@ -435,12 +407,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'integrating courses the custom LMS.',
 		],
 		desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
-		itemKey: 'creative-media-education',
 		learned: '',
-		live: false,
 		subtitle: '',
 		techs: [ANGULAR_JS, PHP, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'Creative Media Education',
 		url: 'http://www.cmeducation.org/',
 	},
 	{
@@ -450,12 +419,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'everything from user accounts, to film uploading, to querying from the film library.',
 		],
 		desc: 'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
-		itemKey: 'lavavolt',
 		learned: '',
-		live: true,
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'LavaVolt',
 		url: 'http://www.lavavolt.com',
 	},
 	{
@@ -464,12 +430,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.',
 		],
 		desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
-		itemKey: 'enspark-lms',
 		learned: 'This is one of my first full-stack projects.',
-		live: true,
-		subtitle: '',
+		subtitle: 'LMS',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'Enspark LMS',
 		url: 'http://www.lms.enspark.com',
 	},
 	{
@@ -478,12 +441,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.',
 		],
 		desc: 'We provide discounted integrated solutions to ship your products or your customers products for less money.',
-		itemKey: 'first-mile',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [PHP, ANGULAR_JS, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'First Mile',
 		url: 'http://www.enspark.net/internationalfulfillment/',
 	},
 	{
@@ -492,12 +453,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.',
 		],
 		desc: 'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
-		itemKey: 'the-putting-tour',
 		learned: '',
-		live: true,
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'The Putting Tour',
 		url: 'http://www.theputtingtour.com',
 	},
 	{
@@ -506,12 +464,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.',
 		],
 		desc: 'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
-		itemKey: 'wininsights',
 		learned: '',
-		live: true,
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
-		title: 'WinInsights',
 		url: 'http://www.wininsights.com',
 	},
 	{
@@ -520,12 +475,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. ',
 		],
 		desc: 'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
-		itemKey: 'barrier',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [JAVASCRIPT, JQUERY, HTML, CSS, SQL],
-		title: 'Barrier Pest Control',
 		url: 'http://www.barrierpc.com',
 	},
 	{
@@ -534,12 +487,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.',
 		],
 		desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
-		itemKey: 'enspark',
 		learned: '',
 		live: true,
-		subtitle: '',
+		subtitle: 'Website',
 		techs: [JAVASCRIPT, JQUERY, HTML, CSS, PHP, SQL],
-		title: 'Enspark',
 		url: 'http://www.enspark.com',
 	},
 	{
@@ -548,12 +499,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.',
 		],
 		desc: 'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
-		itemKey: 'utah-casa',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [PHP, HTML, CSS],
-		title: 'Utah Casa',
 		url: 'http://www.utahcasa.org/',
 	},
 	{
@@ -562,12 +511,10 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Helped with the wordpress theme and structure architecture.',
 		],
 		desc: 'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
-		itemKey: 'paradigm-life',
 		learned: '',
 		live: true,
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
-		title: 'Paradigm Life',
 		url: 'http://www.paradigmlife.net/',
 	},
 	{
@@ -576,12 +523,9 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Front-end construction. Creating a email form for user information requests.',
 		],
 		desc: 'Get a Free Online Report and recommended solution to your debt problem.',
-		itemKey: 'debt-free-planning',
 		learned: '',
-		live: false,
 		subtitle: '',
 		techs: [PHP, LESS_CSS, HTML, JAVASCRIPT],
-		title: 'Debt Free Planning',
 		url: 'http://www.debt-free-planning.com',
 	},
 	{
@@ -590,15 +534,18 @@ export const PROJECTS_DATA: ProjectType[] = [
 			'Creating a email form for user information requests. Other front-end fixes.',
 		],
 		desc: 'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
-		itemKey: 'southam-consulting',
 		learned: '',
-		live: true,
 		subtitle: '',
 		techs: [PHP, CSS, HTML, JAVASCRIPT],
-		title: 'Southam Consulting',
 		url: 'http://www.southamconsulting.net',
 	},
 ];
+
+export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => ({
+	...project,
+	itemKey: getItemKey(project.company, project.subtitle),
+	title: getProjectTitle(project.company),
+}));
 
 export type ProjectType = {
 	company: string;
@@ -613,3 +560,5 @@ export type ProjectType = {
 	title: string;
 	url?: string;
 };
+
+type ProjectInput = Omit<ProjectType, 'itemKey' | 'title'>;

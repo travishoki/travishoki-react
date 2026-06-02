@@ -27,6 +27,7 @@ describe('groupTechByType', () => {
 				{ image: 'react.jpg', label: 'React', type: 'frontend' },
 				{ image: 'ts.jpg', label: 'Typescript', type: 'frontend' },
 			],
+			integrations: [],
 			legacy: [{ image: 'jquery.jpg', label: 'jQuery', type: 'legacy' }],
 			tool: [{ image: 'claude.jpg', label: 'Claude Code', type: 'tool' }],
 		});
@@ -39,6 +40,7 @@ describe('groupTechByType', () => {
 			backend: [],
 			cms: [],
 			frontend: [],
+			integrations: [],
 			legacy: [],
 			tool: [],
 		});
@@ -56,6 +58,7 @@ describe('groupTechByType', () => {
 		expect(result.backend).toEqual([]);
 		expect(result.cms).toEqual([]);
 		expect(result.tool).toEqual([]);
+		expect(result.integrations).toEqual([]);
 		expect(result.legacy).toEqual([]);
 	});
 });

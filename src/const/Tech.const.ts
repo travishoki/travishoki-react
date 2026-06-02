@@ -26,6 +26,7 @@ import ImgScss from '~images/icons/tech-icons/sass.jpg';
 import ImgSql from '~images/icons/tech-icons/sql.jpg';
 import ImgTypescript from '~images/icons/tech-icons/typescript.jpg';
 import ImgWebpack from '~images/icons/tech-icons/webpack.jpg';
+import ImgWooCommerce from '~images/icons/tech-icons/woo-commerce.jpg';
 import ImgWordpress from '~images/icons/tech-icons/wordpress.jpg';
 
 export const ACTION_SCRIPT = 'ACTION_SCRIPT';
@@ -55,6 +56,7 @@ export const SCSS = 'SCSS';
 export const SQL = 'SQL';
 export const TYPESCRIPT = 'TYPESCRIPT';
 export const WEBPACK = 'WEBPACK';
+export const WOO_COMMERCE = 'WOO_COMMERCE';
 export const WORDPRESS = 'WORDPRESS';
 
 export type TechInfo = {
@@ -103,6 +105,11 @@ export const TECH = {
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
 	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
+	WOO_COMMERCE: {
+		image: ImgWooCommerce,
+		label: 'Woo Commerce',
+		type: 'integrations',
+	},
 	ACTION_SCRIPT: {
 		image: ImgActionScript,
 		label: 'Action Script',

@@ -8,5 +8,12 @@ export const groupTechByType = (items: ListSwitcherItemData[]) =>
 
 			return acc;
 		},
-		{ backend: [], cms: [], frontend: [], legacy: [], tool: [] },
+		{
+			backend: [],
+			cms: [],
+			frontend: [],
+			integrations: [],
+			legacy: [],
+			tool: [],
+		},
 	);

@@ -9,7 +9,13 @@ import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
 import { groupTechByType } from './ListSwitcher.utils';
 import './ListSwitcher.scss';
 
-export type TechType = 'frontend' | 'backend' | 'cms' | 'tool' | 'legacy';
+export type TechType =
+	| 'frontend'
+	| 'backend'
+	| 'cms'
+	| 'tool'
+	| 'integrations'
+	| 'legacy';
 
 export type ListSwitcherItemData = {
 	image: string;
@@ -31,6 +37,7 @@ const TYPE_SECTIONS: { label: string; type: TechType }[] = [
 	{ label: 'Backend', type: 'backend' },
 	{ label: 'Content Management System', type: 'cms' },
 	{ label: 'Tools', type: 'tool' },
+	{ label: 'Integrations', type: 'integrations' },
 	{ label: 'Legacy Tech', type: 'legacy' },
 ];
 
