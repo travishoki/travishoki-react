@@ -1,18 +1,12 @@
-import { ListSwitcherItemData } from './ListSwitcher';
+import { ListSwitcherItemData, TechType } from './ListSwitcher';
 
-export const splitByLegacy = (items: ListSwitcherItemData[]) =>
-	items.reduce<{
-		currentTech: ListSwitcherItemData[];
-		legacyTech: ListSwitcherItemData[];
-	}>(
+export const groupTechByType = (items: ListSwitcherItemData[]) =>
+	items.reduce<Record<TechType, ListSwitcherItemData[]>>(
 		(acc, item) => {
-			if (item.legacy) {
-				acc.legacyTech.push(item);
-			} else {
-				acc.currentTech.push(item);
-			}
+			const type = item.type ?? 'frontend';
+			acc[type].push(item);
 
 			return acc;
 		},
-		{ currentTech: [], legacyTech: [] },
+		{ backend: [], frontend: [], legacy: [], tool: [] },
 	);

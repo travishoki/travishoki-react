@@ -1,3 +1,4 @@
+import { TechType } from '~components/ListSwitcher/ListSwitcher';
 import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
 import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
 import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
@@ -53,40 +54,52 @@ export const WORDPRESS = 'WORDPRESS';
 export type TechInfo = {
 	image: string;
 	label: string;
-	legacy?: boolean;
+	type: TechType;
 };
 
 /* eslint-disable sort-keys */
 export const TECH = {
-	AMP: { image: ImgAmp, label: 'AMP' },
-	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS' },
-	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code' },
-	COFFEE_SCRIPT: { image: ImgCoffeeScript, label: 'Coffee Script' },
-	CSS: { image: ImgCss, label: 'CSS' },
-	DJANGO: { image: ImgDjango, label: 'Django' },
-	FIREBASE: { image: ImgFirebase, label: 'Firebase' },
-	GRUNT: { image: ImgGrunt, label: 'Grunt' },
-	HANDLEBARS_JS: { image: ImgHandlebarsJs, label: 'Handlebars JS' },
-	HTML: { image: ImgHtml, label: 'HTML' },
-	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript' },
-	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS' },
-	NODE_JS: { image: ImgNodeJs, label: 'Node JS' },
-	PHP: { image: ImgPhp, label: 'PHP' },
-	PYTHON: { image: ImgPython, label: 'Python' },
-	REACT_JS: { image: ImgReactJs, label: 'React JS' },
-	REACT_NATIVE: { image: ImgReactNative, label: 'React Native' },
-	REDUX: { image: ImgRedux, label: 'Redux' },
-	SCSS: { image: ImgScss, label: 'SCSS' },
-	SQL: { image: ImgSql, label: 'SQL' },
-	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript' },
-	WEBPACK: { image: ImgWebpack, label: 'Webpack' },
-	WORDPRESS: { image: ImgWordpress, label: 'Wordpress' },
+	AMP: { image: ImgAmp, label: 'AMP', type: 'frontend' },
+	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS', type: 'frontend' },
+	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: 'tool' },
+	COFFEE_SCRIPT: {
+		image: ImgCoffeeScript,
+		label: 'Coffee Script',
+		type: 'frontend',
+	},
+	CSS: { image: ImgCss, label: 'CSS', type: 'frontend' },
+	DJANGO: { image: ImgDjango, label: 'Django', type: 'backend' },
+	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: 'backend' },
+	GRUNT: { image: ImgGrunt, label: 'Grunt', type: 'tool' },
+	HANDLEBARS_JS: {
+		image: ImgHandlebarsJs,
+		label: 'Handlebars JS',
+		type: 'frontend',
+	},
+	HTML: { image: ImgHtml, label: 'HTML', type: 'frontend' },
+	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript', type: 'frontend' },
+	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: 'frontend' },
+	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: 'backend' },
+	PHP: { image: ImgPhp, label: 'PHP', type: 'backend' },
+	PYTHON: { image: ImgPython, label: 'Python', type: 'backend' },
+	REACT_JS: { image: ImgReactJs, label: 'React JS', type: 'frontend' },
+	REACT_NATIVE: {
+		image: ImgReactNative,
+		label: 'React Native',
+		type: 'frontend',
+	},
+	REDUX: { image: ImgRedux, label: 'Redux', type: 'frontend' },
+	SCSS: { image: ImgScss, label: 'SCSS', type: 'frontend' },
+	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
+	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
+	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
+	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'backend' },
 	ACTION_SCRIPT: {
 		image: ImgActionScript,
 		label: 'Action Script',
-		legacy: true,
+		type: 'legacy',
 	},
-	JQUERY: { image: ImgJquery, label: 'jQuery', legacy: true },
+	JQUERY: { image: ImgJquery, label: 'jQuery', type: 'legacy' },
 } satisfies Record<string, TechInfo>;
 /* eslint-enable */
 

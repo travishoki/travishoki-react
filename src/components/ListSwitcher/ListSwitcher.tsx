@@ -6,14 +6,16 @@ import { ListSectionLabel } from './ListSectionLabel/ListSectionLabel';
 import { ListSwitcherButton } from './ListSwitcherButton/ListSwitcherButton';
 import { ListSwitcherHeader } from './ListSwitcherHeader/ListSwitcherHeader';
 import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
-import { splitByLegacy } from './ListSwitcher.utils';
+import { groupTechByType } from './ListSwitcher.utils';
 import './ListSwitcher.scss';
+
+export type TechType = 'frontend' | 'backend' | 'tool' | 'legacy';
 
 export type ListSwitcherItemData = {
 	image: string;
 	label: string;
-	legacy?: boolean;
 	to?: string;
+	type?: TechType;
 };
 
 type ListSwitcherProps = {
@@ -22,6 +24,13 @@ type ListSwitcherProps = {
 	initialExpanded?: boolean;
 	items: ListSwitcherItemData[];
 };
+
+const TYPE_SECTIONS: { label: string; type: TechType }[] = [
+	{ label: 'Frontend', type: 'frontend' },
+	{ label: 'Backend', type: 'backend' },
+	{ label: 'Tools', type: 'tool' },
+	{ label: 'Legacy Tech & Frameworks', type: 'legacy' },
+];
 
 export const ListSwitcher = ({
 	circle = false,
@@ -35,7 +44,7 @@ export const ListSwitcher = ({
 
 	const iconClass = classnames('list-switcher-icon', { circle });
 
-	const { currentTech, legacyTech } = splitByLegacy(items);
+	const groupedTech = groupTechByType(items);
 
 	return (
 		<div className="list-switcher">
@@ -47,21 +56,22 @@ export const ListSwitcher = ({
 					}
 				>
 					{expanded ? (
-						<>
-							<ListSwitcherList
-								expanded={expanded}
-								iconClass={iconClass}
-								items={currentTech}
-							/>
-							{legacyTech.length > 0 && (
-								<ListSectionLabel label="Legacy Tech & Frameworks" />
-							)}
-							<ListSwitcherList
-								expanded={expanded}
-								iconClass={iconClass}
-								items={legacyTech}
-							/>
-						</>
+						TYPE_SECTIONS.map(({ label, type }) => {
+							const group = groupedTech[type];
+
+							if (group.length === 0) return null;
+
+							return (
+								<React.Fragment key={type}>
+									<ListSectionLabel label={label} />
+									<ListSwitcherList
+										expanded={expanded}
+										iconClass={iconClass}
+										items={group}
+									/>
+								</React.Fragment>
+							);
+						})
 					) : (
 						<ListSwitcherList
 							expanded={expanded}

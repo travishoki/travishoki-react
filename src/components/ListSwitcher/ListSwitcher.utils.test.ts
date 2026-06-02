@@ -2,45 +2,57 @@
 import expect from 'expect';
 
 import { ListSwitcherItemData } from './ListSwitcher';
-import { splitByLegacy } from './ListSwitcher.utils';
+import { groupTechByType } from './ListSwitcher.utils';
 
-describe('splitByLegacy', () => {
-	it('Should split items into current and legacy tech', () => {
+describe('groupTechByType', () => {
+	it('Should group items by their type', () => {
 		const items: ListSwitcherItemData[] = [
-			{ image: 'react.jpg', label: 'React' },
-			{ image: 'jquery.jpg', label: 'jQuery', legacy: true },
-			{ image: 'ts.jpg', label: 'Typescript' },
-			{ image: 'as.jpg', label: 'Action Script', legacy: true },
+			{ image: 'react.jpg', label: 'React', type: 'frontend' },
+			{ image: 'jquery.jpg', label: 'jQuery', type: 'legacy' },
+			{ image: 'node.jpg', label: 'Node JS', type: 'backend' },
+			{ image: 'ts.jpg', label: 'Typescript', type: 'frontend' },
+			{ image: 'claude.jpg', label: 'Claude Code', type: 'tool' },
+			{ image: 'php.jpg', label: 'PHP', type: 'backend' },
 		];
 
-		const result = splitByLegacy(items);
+		const result = groupTechByType(items);
 
 		expect(result).toEqual({
-			currentTech: [
-				{ image: 'react.jpg', label: 'React' },
-				{ image: 'ts.jpg', label: 'Typescript' },
+			backend: [
+				{ image: 'node.jpg', label: 'Node JS', type: 'backend' },
+				{ image: 'php.jpg', label: 'PHP', type: 'backend' },
 			],
-			legacyTech: [
-				{ image: 'jquery.jpg', label: 'jQuery', legacy: true },
-				{ image: 'as.jpg', label: 'Action Script', legacy: true },
+			frontend: [
+				{ image: 'react.jpg', label: 'React', type: 'frontend' },
+				{ image: 'ts.jpg', label: 'Typescript', type: 'frontend' },
 			],
+			legacy: [{ image: 'jquery.jpg', label: 'jQuery', type: 'legacy' }],
+			tool: [{ image: 'claude.jpg', label: 'Claude Code', type: 'tool' }],
 		});
 	});
 
-	it('Should return empty arrays when there are no items', () => {
-		const result = splitByLegacy([]);
+	it('Should return empty arrays for every type when there are no items', () => {
+		const result = groupTechByType([]);
 
-		expect(result).toEqual({ currentTech: [], legacyTech: [] });
+		expect(result).toEqual({
+			backend: [],
+			frontend: [],
+			legacy: [],
+			tool: [],
+		});
 	});
 
-	it('Should put all items in currentTech when none are legacy', () => {
+	it('Should default items without a type to frontend', () => {
 		const items: ListSwitcherItemData[] = [
-			{ image: 'react.jpg', label: 'React' },
-			{ image: 'ts.jpg', label: 'Typescript' },
+			{ image: 'css.jpg', label: 'CSS' },
+			{ image: 'html.jpg', label: 'HTML' },
 		];
 
-		const result = splitByLegacy(items);
+		const result = groupTechByType(items);
 
-		expect(result).toEqual({ currentTech: items, legacyTech: [] });
+		expect(result.frontend).toEqual(items);
+		expect(result.backend).toEqual([]);
+		expect(result.tool).toEqual([]);
+		expect(result.legacy).toEqual([]);
 	});
 });

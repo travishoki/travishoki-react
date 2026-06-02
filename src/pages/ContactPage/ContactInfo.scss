@@ -1,36 +1,86 @@
 @import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
 
 #container.contact {
 	.contact-content {
 		padding-top: 30px;
 	}
 
-	.contact-info {
-		margin-bottom: 40px;
-
-		p {
-			margin: 0;
-		}
-
-		.block {
-			margin-bottom: 10px;
-		}
-	}
-
 	.content-image {
 		padding-bottom: 20px;
 	}
 
-	.linked-link {
-		text-decoration: none;
+	.contact-info {
+		box-shadow: 0 2px 10px rgba($black, 0.08);
+		margin-bottom: 40px;
 
-		.fa {
-			margin-left: 5px;
+		.contact-info-header {
+			background: $primary;
+			padding: 15px;
+
+			h2 {
+				color: $white;
+				font-weight: bold;
+				margin: 0;
+				text-align: center;
+			}
 		}
-	}
 
-	.linkedin-profile-image {
-		border-radius: 100%;
-		margin-right: 5px;
+		.contact-info-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			@include phone-down {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.contact-info-item {
+			padding: 30px 20px;
+			text-align: center;
+
+			&:nth-child(odd) {
+				border-right: solid 1px $gray-one;
+
+				@include phone-down {
+					border-right: none;
+				}
+			}
+
+			&:nth-child(-n + 2) {
+				border-bottom: solid 1px $gray-one;
+			}
+
+			@include phone-down {
+				&:not(:last-child) {
+					border-bottom: solid 1px $gray-one;
+				}
+			}
+
+			.contact-info-icon {
+				color: $primary;
+				font-size: 28px;
+				margin-bottom: 10px;
+			}
+
+			h3 {
+				color: $primary;
+				font-weight: bold;
+				margin: 0 0 10px;
+			}
+
+			p {
+				margin: 0;
+
+				a {
+					color: inherit;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
 }
