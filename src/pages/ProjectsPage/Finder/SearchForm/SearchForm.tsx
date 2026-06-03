@@ -10,7 +10,7 @@ export const SearchForm = ({
 	<form>
 		<div
 			className={classnames({
-				hasSearchTerm: searchTerm,
+				'has-search-term': searchTerm,
 			})}
 			id="input-holder"
 		>
