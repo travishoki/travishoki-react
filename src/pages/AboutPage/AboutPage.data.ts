@@ -17,6 +17,8 @@ import ImgSkateboard from '~images/about/skateboarding.jpg';
 import ImgSkateboardSmall from '~images/about/skateboarding-small.jpg';
 import ImgStandupComedy from '~images/about/standup-comedy.jpg';
 import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
+import ImgTaeKwonDo from '~images/about/taekwondo.jpg';
+import ImgTaeKwonDoSmall from '~images/about/taekwondo-small.jpg';
 import ImgWedding from '~images/about/wedding.jpg';
 import ImgWeddingSmall from '~images/about/wedding-small.jpg';
 
@@ -35,7 +37,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
 		desc: [
-			`My name is Travis Hoki. I'm from Orem, UT. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
+			`My name is Travis Hoki. I'm from Pleasant Grove, UT. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		],
 		hasSignature: true,
 		imgLarge: ImgProfilePic,
@@ -143,6 +145,16 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLargeDimensions: [1688, 2000],
 		imgSmall: ImgEagleScoutSmall,
 		title: 'Eagle Scout',
+	},
+	{
+		desc: [
+			'TaeKwonDo was such a valuable part of my childhood, teaching me discipline, perseverance, and respect. Stepping onto the mat each week taught me how to push through physical and mental challenges, build unwavering focus, and carry myself with confidence both on and off the mat. I believe that those early lessons shaped who I am today.',
+			"It brings me so much joy to see my own kids tie their belts and step onto the mat and train at the same studio a couple decades later. Watching them embrace the same traditions, face their own challenges, and learn those same invaluable life lessons that I did as a kid. I'm so grateful we get to share this powerful legacy as a family.",
+		],
+		imgLarge: ImgTaeKwonDo,
+		imgLargeDimensions: [563, 750],
+		imgSmall: ImgTaeKwonDoSmall,
+		title: 'TaeKwonDo',
 	},
 ];
 
