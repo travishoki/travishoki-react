@@ -23,7 +23,14 @@ export const ProjectInfoSection = ({
 	<div className="col-sm-6">
 		<img className="logo center" src={logos(`./${companySlug}.jpg`)} />
 
-		{date && <p className="project-date">{date}</p>}
+		{date && (
+			<>
+				<p className="label">Date Range:</p>
+				<div className="answer-section">
+					<p>{date}</p>
+				</div>
+			</>
+		)}
 
 		{desc && (
 			<>
