@@ -6,7 +6,7 @@ import { SalesforceIcon } from './SalesforceIcon';
 import './SalesforceTrailhead.scss';
 
 export const SalesforceTrailhead = () => (
-	<section className="gray ">
+	<section>
 		<div className="boxed trailhead">
 			<img className="trailhead-image" src={imgRanger} />
 			<div className="earned">
