@@ -3,6 +3,7 @@ import React from 'react';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { AboutType } from './AboutPage.data';
+import { Signature } from './Signature/Signature';
 import './AboutItem.scss';
 
 const defaultImageSize = [200, 200];
@@ -25,7 +26,7 @@ export const AboutItem = (item: AboutType) => (
 
 			<TextWithReadMore paragraphs={item.desc} />
 
-			{item.hasSignature && <p className="signature">- Travis Hoki</p>}
+			{item.hasSignature && <Signature />}
 		</div>
 	</li>
 );
