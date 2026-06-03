@@ -40,8 +40,8 @@ export const ChildrensBookColumn = () => (
 		</a>
 
 		<PassionLabel>Description:</PassionLabel>
-		<p>Illustrated kid&apos;s book about skateboarding.</p>
-		<p>
+		<p className="indent">Illustrated kid&apos;s book about skateboarding.</p>
+		<p className="indent">
 			Self authored, illustrated, and published. Successfully Kickstarter
 			backed.
 		</p>

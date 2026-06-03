@@ -36,7 +36,7 @@ export const MobileApp = () => (
 			width="200"
 		/>
 		<PassionLabel>Description:</PassionLabel>
-		<p>Kid&apos;s skateboarding game</p>
+		<p className="indent">Kid&apos;s skateboarding game</p>
 
 		<TechListSwitcher list={techs} />
 

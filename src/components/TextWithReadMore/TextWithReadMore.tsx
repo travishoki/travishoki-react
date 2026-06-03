@@ -17,7 +17,9 @@ export const TextWithReadMore = ({ paragraphs }: TextWithReadMoreProps) => {
 	return (
 		<>
 			{visibleParagraphs.map((paragraph, index) => (
-				<p key={index}>{paragraph}</p>
+				<p key={index} className="indent">
+					{paragraph}
+				</p>
 			))}
 
 			{hasMore && (

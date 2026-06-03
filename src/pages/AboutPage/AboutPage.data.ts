@@ -134,7 +134,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBallroom,
 		imgLargeDimensions: [453, 604],
 		imgSmall: ImgBallroomSmall,
-		title: 'Ballroom',
+		title: 'Ballroom Dance',
 	},
 	{
 		desc: [

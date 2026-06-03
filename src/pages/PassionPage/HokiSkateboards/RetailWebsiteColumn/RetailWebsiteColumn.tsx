@@ -42,8 +42,10 @@ export const RetailWebsiteColumn = () => (
 		</a>
 
 		<PassionLabel>Description:</PassionLabel>
-		<p>Hoki Skateboards is a small family-owned online skateboard company.</p>
-		<p>
+		<p className="indent">
+			Hoki Skateboards is a small family-owned online skateboard company.
+		</p>
+		<p className="indent">
 			Built in Wordpress with a custom Wordpress Plugin, using Woocommerce, PHP
 			and React.
 		</p>

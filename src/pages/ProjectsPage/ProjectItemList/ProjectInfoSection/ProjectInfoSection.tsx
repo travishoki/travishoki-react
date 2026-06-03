@@ -36,7 +36,7 @@ export const ProjectInfoSection = ({
 			<>
 				<p className="label">Description:</p>
 				<div className="answer-section">
-					<p>{desc}</p>
+					<p className="indent">{desc}</p>
 				</div>
 			</>
 		)}
