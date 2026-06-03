@@ -6,9 +6,8 @@ import { AboutItem } from './AboutItem';
 export const AboutPage = () => {
 	return (
 		<div className="about" id="container">
+			<h1 className="bottom-border">About Me</h1>
 			<div className="boxed boxed-lg">
-				<h1 className="bottom-border">About Me</h1>
-
 				<ul className="staggered">
 					{ABOUT_PAGE_DATA.map((item, index) => (
 						<AboutItem key={index} {...item} />
