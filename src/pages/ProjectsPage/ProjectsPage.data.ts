@@ -121,7 +121,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Chatbooks.com',
-		contributions: ['Tie into existing APIs to allow for layflat.'],
+		contributions: 'Tie into existing APIs to allow for layflat.',
 		desc: 'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		learned: '',
 		live: true,
@@ -185,7 +185,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Overstock.com',
-		contributions: ['Coordinate deployments with multiple departments.'],
+		contributions: 'Coordinate deployments with multiple departments.',
 		desc: 'Reward users for leaving a qualifying review.',
 		learned: '',
 		subtitle: 'Rewards for Reviews',
@@ -219,7 +219,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Overstock.com',
-		contributions: ['Coordinate deployments with multiple departments.'],
+		contributions: 'Coordinate deployments with multiple departments.',
 		desc: 'Allowing a user to leave rating only reviews.',
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
@@ -243,7 +243,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Overstock.com',
-		contributions: ['Took the basic wordpress plugin and rearchitected it.'],
+		contributions: 'Took the basic wordpress plugin and rearchitected it.',
 		desc: 'Embeddable affiliate links',
 		learned: '',
 		live: true,
@@ -336,7 +336,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Wedding Website',
-		contributions: ['Site design and development'],
+		contributions: 'Site design and development',
 		desc: 'This is the wedding website that I made for my wedding.',
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
@@ -375,7 +375,7 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'New Life Recovery',
-		contributions: ['Bring the design image to life in the browser.'],
+		contributions: 'Bring the design image to life in the browser.',
 		desc: 'Build out the HTML and CSS for a new landing page.',
 		learned: '',
 		subtitle: '',
@@ -537,7 +537,7 @@ export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => {
 export type ProjectType = {
 	company: string;
 	companySlug: string;
-	contributions: string[];
+	contributions: string | string[];
 	date?: string;
 	desc: string;
 	itemKey: string;

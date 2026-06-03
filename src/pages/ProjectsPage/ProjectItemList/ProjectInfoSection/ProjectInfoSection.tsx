@@ -45,11 +45,15 @@ export const ProjectInfoSection = ({
 			<>
 				<p className="label">Contributions:</p>
 				<div className="answer-section">
-					<ul className="disc answer-section-list">
-						{contributions.map((contribution, index) => (
-							<li key={index}>{contribution}</li>
-						))}
-					</ul>
+					{Array.isArray(contributions) ? (
+						<ul className="disc answer-section-list">
+							{contributions.map((contribution, index) => (
+								<li key={index}>{contribution}</li>
+							))}
+						</ul>
+					) : (
+						<p>{contributions}</p>
+					)}
 				</div>
 			</>
 		)}
