@@ -5,6 +5,7 @@ import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
 import ImgClaudeCode from '~images/icons/tech-icons/claude-code.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
 import ImgCss from '~images/icons/tech-icons/css.jpg';
+import ImgCursor from '~images/icons/software-icons/cursor.png';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
 import ImgExpress from '~images/icons/tech-icons/express.jpg';
 import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
@@ -35,6 +36,7 @@ export const ANGULAR_JS = 'ANGULAR_JS';
 export const CLAUDE_CODE = 'CLAUDE_CODE';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
+export const CURSOR = 'CURSOR';
 export const DJANGO = 'DJANGO';
 export const EXPRESS = 'EXPRESS';
 export const FIREBASE = 'FIREBASE';
@@ -76,6 +78,7 @@ export const TECH = {
 		type: 'frontend',
 	},
 	CSS: { image: ImgCss, label: 'CSS', type: 'frontend' },
+	CURSOR: { image: ImgCursor, label: 'Cursor', type: 'tool' },
 	DJANGO: { image: ImgDjango, label: 'Django', type: 'backend' },
 	EXPRESS: { image: ImgExpress, label: 'Express', type: 'backend' },
 	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: 'backend' },

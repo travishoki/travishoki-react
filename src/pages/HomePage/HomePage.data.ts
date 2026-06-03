@@ -25,6 +25,7 @@ import {
 	WORDPRESS,
 	CLAUDE_CODE,
 	PHP_MY_ADMIN,
+	CURSOR,
 } from '~const/Tech.const';
 
 // Ordered for display by what I want to advertise first
@@ -57,6 +58,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 
 	// Tools
 	CLAUDE_CODE,
+	CURSOR,
 	WEBPACK,
 	GRUNT,
 
