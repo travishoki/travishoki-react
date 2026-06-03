@@ -7,7 +7,7 @@ import './ContactPage.scss';
 
 export const ContactPage = () => (
 	<div className="contact" id="container">
-		<h1 className="bottom-border">Contact Me</h1>
+		<h1>Contact Me</h1>
 		<div className="boxed boxed-lg">
 			<div className="contact-content">
 				<div className="row">

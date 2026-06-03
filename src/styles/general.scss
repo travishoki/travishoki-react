@@ -136,14 +136,11 @@ section {
 }
 
 h1 {
+	background: $gray-two;
 	font-weight: bold;
 	margin: 0;
 	padding: 30px 0 20px 0;
 	text-align: center;
-
-	&.bottom-border {
-		border-bottom: solid 3px $gray-four;
-	}
 }
 
 .round {

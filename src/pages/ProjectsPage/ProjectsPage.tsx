@@ -28,7 +28,7 @@ export const ProjectsPage = () => {
 
 	return (
 		<div className="projects" id="container">
-			<h1 className="bottom-border">Projects</h1>
+			<h1>Projects</h1>
 			<div
 				className={classnames('projects-container', {
 					grid,
