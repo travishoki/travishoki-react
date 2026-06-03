@@ -7,7 +7,7 @@ export const AboutPage = () => {
 	return (
 		<div className="about" id="container">
 			<div className="boxed boxed-lg">
-				<h1>About Me</h1>
+				<h1 className="bottom-border">About Me</h1>
 
 				<ul className="staggered">
 					{ABOUT_PAGE_DATA.map((item, index) => (

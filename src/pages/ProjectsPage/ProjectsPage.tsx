@@ -34,7 +34,7 @@ export const ProjectsPage = () => {
 					list: !grid,
 				})}
 			>
-				<h1>Projects</h1>
+				<h1 className="bottom-border">Projects</h1>
 
 				<Finder
 					filter={filter}

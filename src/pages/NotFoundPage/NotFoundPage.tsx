@@ -5,7 +5,7 @@ import './NotFoundPage.scss';
 
 export const NotFoundPage = () => (
 	<div className="not-found" id="container">
-		<h1>Page Not Found</h1>
+		<h1 className="bottom-border">Page Not Found</h1>
 
 		<div className="row link-buckets">
 			<div className="col-sm-4">
