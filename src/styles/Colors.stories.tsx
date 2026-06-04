@@ -12,7 +12,7 @@ type ColorGroup = {
 	label: string;
 };
 
-const COLOR_GROUPS: ColorGroup[] = [
+const GRAY_GROUPS: ColorGroup[] = [
 	{
 		colors: [
 			{ hex: '#ffffff', name: 'White', variable: '$white' },
@@ -30,6 +30,9 @@ const COLOR_GROUPS: ColorGroup[] = [
 		],
 		label: 'Grays',
 	},
+];
+
+const COLOR_GROUPS: ColorGroup[] = [
 	{
 		colors: [
 			{ hex: '#39b54c', name: 'Green One', variable: '$green-one' },
@@ -64,9 +67,15 @@ const COLOR_GROUPS: ColorGroup[] = [
 	},
 ];
 
-const ColorPalette = () => (
-	<div style={{ fontFamily: 'sans-serif', maxWidth: '900px', padding: '2rem' }}>
-		{COLOR_GROUPS.map((group) => (
+const PAGE_STYLE: React.CSSProperties = {
+	fontFamily: 'sans-serif',
+	maxWidth: '900px',
+	padding: '2rem',
+};
+
+const ColorPalette = ({ groups }: { groups: ColorGroup[] }) => (
+	<div style={PAGE_STYLE}>
+		{groups.map((group) => (
 			<section key={group.label} style={{ marginBottom: '2.5rem' }}>
 				<h2
 					style={{
@@ -133,15 +142,19 @@ const ColorPalette = () => (
 );
 
 const meta = {
-	component: ColorPalette,
 	parameters: {
 		layout: 'fullscreen',
 	},
 	tags: ['ai-generated'],
 	title: 'Design System/Colors',
-} satisfies Meta<typeof ColorPalette>;
+} satisfies Meta;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj;
 
-export const AllColors: Story = {};
+export const Grays: Story = {
+	render: () => <ColorPalette groups={GRAY_GROUPS} />,
+};
+export const Colors: Story = {
+	render: () => <ColorPalette groups={COLOR_GROUPS} />,
+};
