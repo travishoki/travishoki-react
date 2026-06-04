@@ -12,7 +12,7 @@ type SoftwareListProps = {
 	list: SoftwareKey[];
 };
 
-export const SoftwareListSwitcher = ({
+export const SoftwareCatalogue = ({
 	header = 'Software',
 	itemClassName,
 	list,

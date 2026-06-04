@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SoftwareListSwitcher } from '~components/SoftwareListSwitcher/SoftwareListSwitcher';
+import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import { SoftwareKey } from '~const/Software.const';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
@@ -39,6 +39,6 @@ export const ChildrensBookColumn = () => (
 			backed.
 		</p>
 
-		<SoftwareListSwitcher list={appSoftwareList} />
+		<SoftwareCatalogue list={appSoftwareList} />
 	</div>
 );
