@@ -17,7 +17,7 @@ export const AboutVideo = ({ item }: AboutVideoProps) => {
 			<div className="d-flex justify-content-center">
 				<VideoButton
 					onClick={() => setOpen(true)}
-					size={DEFAULT_IMAGE_SIZE[0]}
+					size={DEFAULT_IMAGE_SIZE}
 					src={item.imgSmall}
 				/>
 			</div>

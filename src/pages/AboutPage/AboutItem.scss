@@ -3,11 +3,6 @@
 
 .about-item {
 	&.staggered-item {
-		.image {
-			height: 250px;
-			width: 250px;
-		}
-
 		.image-container {
 			@include tablet-up {
 				flex: 1 0 250px;
