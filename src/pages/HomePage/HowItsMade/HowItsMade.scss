@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+
+.how-its-made {
+	padding: 40px 20px;
+	text-align: center;
+
+	h2 {
+		color: $white;
+		margin-bottom: 30px;
+	}
+}
+
+.how-its-made-link {
+	align-items: center;
+	color: $primary;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-decoration: none;
+
+	i {
+		font-size: 40px;
+	}
+}
