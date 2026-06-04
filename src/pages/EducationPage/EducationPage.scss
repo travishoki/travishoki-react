@@ -18,10 +18,6 @@ section.education {
 	}
 }
 
-.text-block {
-	margin-bottom: 20px;
-}
-
 img.school {
 	@include phone-down {
 		max-width: 200px;

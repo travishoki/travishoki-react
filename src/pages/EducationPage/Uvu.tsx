@@ -13,13 +13,13 @@ export const Uvu = () => (
 				<Pannel>
 					<h2>Utah Valley University</h2>
 					<img className="center" src={imgUvu} />
-					<div className="text-block">
+					<div className="mb-3">
 						<p>Digital Media Major</p>
 						<p className="degree">Bachelor of Science</p>
 						<p>Internet Technology Emphasis</p>
 						<p>Aug 2009 - Apr 2014</p>
 					</div>
-					<div className="text-block">
+					<div className="mb-3">
 						<p className="degree">Associate in Applied Science</p>
 						<p>Digital Communication Technology</p>
 					</div>
