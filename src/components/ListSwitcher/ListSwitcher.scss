@@ -1,18 +1,14 @@
 @import '../../styles/variables.scss';
 
 .list-switcher {
-	margin-bottom: 20px;
-
 	.list-switcher-content {
 		border: solid 1px $primary;
 		border-top: none;
-		padding: 10px;
 	}
 
 	.list-switcher-header {
 		background: $primary;
 		border: solid 1px $primary;
-		padding: 4px 10px;
 
 		p {
 			color: $white;
@@ -67,8 +63,6 @@
 	color: $white;
 	font-size: 14px;
 	font-weight: bold;
-	margin: 10px 0;
-	padding: 4px 10px;
 }
 
 .list-switcher-vertical ul {

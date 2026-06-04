@@ -25,7 +25,7 @@ const websiteTechList: TechKey[] = [
 ];
 
 export const RetailWebsiteColumn = () => (
-	<div className="hoki-skateboards-inner-content-col col-sm-6">
+	<div className="hoki-skateboards-inner-content-col col-sm-6 pt-3">
 		<a
 			href="https://hokiskateboards.com"
 			rel="noreferrer"

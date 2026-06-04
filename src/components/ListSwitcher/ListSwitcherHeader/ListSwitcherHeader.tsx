@@ -5,7 +5,7 @@ type ListSwitcherHeaderProps = {
 };
 
 export const ListSwitcherHeader = ({ header }: ListSwitcherHeaderProps) => (
-	<div className="list-switcher-header">
+	<div className="list-switcher-header py-1 px-2">
 		<p>{header}</p>
 	</div>
 );

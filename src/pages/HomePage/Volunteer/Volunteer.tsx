@@ -5,9 +5,14 @@ import './Volunteer.scss';
 
 export const Volunteer = () => (
 	<section className="center primary volunteer-component">
-		<h2>Scouting America</h2>
+		<h2 className="mb-2">Scouting America</h2>
 
-		<img className="center" height="200" src={imgScoutingAmerica} width="177" />
+		<img
+			className="center mb-2"
+			height="200"
+			src={imgScoutingAmerica}
+			width="177"
+		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>
 		<div className="row justify-content-center">
 			<div className="col-auto">

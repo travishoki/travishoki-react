@@ -6,7 +6,7 @@ import './ContactInfo.scss';
 
 export const ContactInfo = () => (
 	<Fragment>
-		<div className="contact-info-header">
+		<div className="contact-info-header mb-3">
 			<h2>Get In Touch With Me</h2>
 			<p>Travis Hoki</p>
 		</div>

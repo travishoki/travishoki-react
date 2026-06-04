@@ -1,8 +1,6 @@
 @import '../../../styles/variables.scss';
 
 .hoki-skateboards-inner-content {
-	margin-bottom: 20px;
-
 	p.button-link {
 		background-color: $blue-three;
 		border-radius: 8px;
@@ -17,7 +15,6 @@
 
 	.hoki-skateboards-inner-content-col {
 		border-top: solid 3px $gray-four;
-		padding-top: 20px;
 	}
 
 	a {

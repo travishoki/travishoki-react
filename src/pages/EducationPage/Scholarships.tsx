@@ -5,7 +5,7 @@ import imgGearUp from '~images/education/gear-up.jpg';
 import './Scholarships.scss';
 
 export const Scholarships = () => (
-	<div className="scholarships">
+	<div className="scholarships mb-2">
 		<img src={imgGearUp} />{' '}
 		<p className="scholarship-description">
 			Recepient of the{' '}

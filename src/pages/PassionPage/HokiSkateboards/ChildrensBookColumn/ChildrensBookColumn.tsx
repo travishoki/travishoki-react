@@ -16,7 +16,7 @@ const appSoftwareList: SoftwareKey[] = [
 ];
 
 export const ChildrensBookColumn = () => (
-	<div className="hoki-skateboards-inner-content-col col-sm-6">
+	<div className="hoki-skateboards-inner-content-col col-sm-6 pt-3">
 		<a
 			href="https://www.amazon.com/gp/product/173400830X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173400830X&linkCode=as2&tag=hokiskatebo0f-20&linkId=d66288b7c17823a393fe530309328062"
 			rel="noreferrer"

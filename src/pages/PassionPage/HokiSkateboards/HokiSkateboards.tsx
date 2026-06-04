@@ -11,7 +11,7 @@ import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import './HokiSkateboards.scss';
 
 export const HokiSkateboards = () => (
-	<section className="hoki-skateboards">
+	<section className="hoki-skateboards p-3">
 		<div className="boxed">
 			<Logo />
 			<ImageMaximizable

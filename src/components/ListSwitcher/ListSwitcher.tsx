@@ -63,9 +63,9 @@ export const ListSwitcher = ({
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div className="list-switcher">
+		<div className="list-switcher mb-3">
 			<ListSwitcherHeader header={header} />
-			<div className="list-switcher-content">
+			<div className="list-switcher-content p-2">
 				<div
 					className={
 						expanded ? 'list-switcher-vertical' : 'list-switcher-horizontal'
