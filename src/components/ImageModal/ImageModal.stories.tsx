@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { expect, userEvent, within } from 'storybook/test';
+import { expect, userEvent } from 'storybook/test';
 
 import ballroomSmall from '~images/about/ballroom-small.jpg';
 import ballroomLarge from '~images/about/ballroom.jpg';
@@ -26,8 +26,7 @@ export const ClickToOpen: Story = {
 		srcLarge: ballroomLarge,
 	},
 	play: async ({ canvasElement }) => {
-		const canvas = within(canvasElement);
-		const overlay = canvas.getByRole('button', { hidden: true });
+		const overlay = canvasElement.querySelector('.zoom-overlay') as HTMLElement;
 		await userEvent.click(overlay);
 		const modal =
 			canvasElement.ownerDocument.body.querySelector('.image-modal');

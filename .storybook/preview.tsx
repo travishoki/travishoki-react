@@ -1,11 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react-vite';
 import { MemoryRouter } from 'react-router-dom';
-import { initialize, mswLoader } from 'msw-storybook-addon';
 import '../src/styles/styles.scss';
-import { mswHandlers } from './msw-handlers';
-
-initialize({ onUnhandledRequest: 'bypass' });
 
 const preview: Preview = {
   decorators: [
@@ -15,7 +11,6 @@ const preview: Preview = {
       </MemoryRouter>
     ),
   ],
-  loaders: [mswLoader],
   parameters: {
     controls: {
       matchers: {
@@ -23,7 +18,6 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    msw: { handlers: mswHandlers },
     options: {
       storySort: {
         order: ['Design System', 'Components'],

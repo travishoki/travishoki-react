@@ -16,11 +16,10 @@ const config: StorybookConfig = {
     "@storybook/addon-vitest"
   ],
   "framework": "@storybook/react-vite",
-  "staticDirs": [
-    "../public"
-  ],
+  "staticDirs": ["./public"],
   viteFinal: (config) =>
     mergeConfig(config, {
+      publicDir: false,
       resolve: {
         alias: {
           '~actions': path.resolve(root, 'src/redux/actions'),
