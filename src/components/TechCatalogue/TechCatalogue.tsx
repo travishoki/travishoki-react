@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import classnames from 'classnames';
 
-import { ListSectionGroup } from './ListSectionGroup/ListSectionGroup';
-import { ListSwitcherButton } from './ListSwitcherButton/ListSwitcherButton';
-import { ListSwitcherHeader } from './ListSwitcherHeader/ListSwitcherHeader';
-import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
-import { groupTechByType } from './ListSwitcher.utils';
-import './ListSwitcher.scss';
+import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
+import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
+import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
+import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
+import { groupTechByType } from './TechCatalogue.utils';
+import './TechCatalogue.scss';
 
 export type TechType =
 	| 'frontend'
@@ -20,19 +20,19 @@ export type TechType =
 	| 'illustration'
 	| 'video';
 
-export type ListSwitcherItemData = {
+export type TechCatalogueItemData = {
 	image: string;
 	label: string;
 	to?: string;
 	type?: TechType;
 };
 
-type ListSwitcherProps = {
+type TechCatalogueProps = {
 	circle?: boolean;
 	header: string;
 	initialExpanded?: boolean;
 	itemClassName?: string;
-	items: ListSwitcherItemData[];
+	items: TechCatalogueItemData[];
 };
 
 const TYPE_SECTIONS: { label: string; type: TechType }[] = [
@@ -47,28 +47,28 @@ const TYPE_SECTIONS: { label: string; type: TechType }[] = [
 	{ label: 'Video', type: 'video' },
 ];
 
-export const ListSwitcher = ({
+export const TechCatalogue = ({
 	circle = false,
 	header,
 	initialExpanded = false,
 	itemClassName,
 	items,
-}: ListSwitcherProps) => {
+}: TechCatalogueProps) => {
 	const [expanded, setExpanded] = useState(initialExpanded);
 
 	if (items.length === 0) return null;
 
-	const iconClass = classnames('list-switcher-icon', { circle });
+	const iconClass = classnames('tech-catalogue-icon', { circle });
 
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div className="list-switcher mb-3">
-			<ListSwitcherHeader header={header} />
-			<div className="list-switcher-content p-2">
+		<div className="tech-catalogue mb-3">
+			<TechCatalogueHeader header={header} />
+			<div className="tech-catalogue-content p-2">
 				<div
 					className={
-						expanded ? 'list-switcher-vertical' : 'list-switcher-horizontal'
+						expanded ? 'tech-catalogue-vertical' : 'tech-catalogue-horizontal'
 					}
 				>
 					{expanded ? (
@@ -78,7 +78,7 @@ export const ListSwitcher = ({
 							if (group.length === 0) return null;
 
 							return (
-								<ListSectionGroup
+								<TechCatalogueSectionGroup
 									key={type}
 									iconClass={iconClass}
 									itemClassName={itemClassName}
@@ -88,7 +88,7 @@ export const ListSwitcher = ({
 							);
 						})
 					) : (
-						<ListSwitcherList
+						<TechCatalogueList
 							expanded={expanded}
 							iconClass={iconClass}
 							items={items}
@@ -96,7 +96,7 @@ export const ListSwitcher = ({
 					)}
 				</div>
 			</div>
-			<ListSwitcherButton
+			<TechCatalogueButton
 				expanded={expanded}
 				onClick={() => setExpanded(!expanded)}
 			/>

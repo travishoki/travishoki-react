@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 import { DISPLAYED_LIST } from '../HomePage.data';
 import './TechTiles.scss';
 
 export const TechTiles = () => (
 	<section className="tech-tiles">
-		<TechListSwitcher
+		<TechListCatalogue
 			header="Proficient Tech"
 			itemClassName="col-6 col-md-4"
 			list={DISPLAYED_LIST}

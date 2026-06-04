@@ -1,9 +1,9 @@
 import React from 'react';
 
 import {
-	ListSwitcher,
-	ListSwitcherItemData,
-} from '~components/ListSwitcher/ListSwitcher';
+	TechCatalogue,
+	TechCatalogueItemData,
+} from '~components/TechCatalogue/TechCatalogue';
 import { TECH, TechKey } from '~const/Tech.const';
 
 type TechListProps = {
@@ -13,19 +13,19 @@ type TechListProps = {
 	list: TechKey[];
 };
 
-export const TechListSwitcher = ({
+export const TechListCatalogue = ({
 	header = 'Tech Stack',
 	initialExpanded = false,
 	itemClassName,
 	list,
 }: TechListProps) => {
-	const items: ListSwitcherItemData[] = list.map((tech) => ({
+	const items: TechCatalogueItemData[] = list.map((tech) => ({
 		...TECH[tech],
 		to: `/projects/${tech}`,
 	}));
 
 	return (
-		<ListSwitcher
+		<TechCatalogue
 			circle
 			header={header}
 			initialExpanded={initialExpanded}

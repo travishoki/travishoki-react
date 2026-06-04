@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 import { ProjectType } from '../../ProjectsPage.data';
 import './ProjectInfoSection.scss';
@@ -68,7 +68,7 @@ export const ProjectInfoSection = ({
 		)}
 
 		{techs && techs.length > 0 && (
-			<TechListSwitcher initialExpanded list={techs} />
+			<TechListCatalogue initialExpanded list={techs} />
 		)}
 	</div>
 );

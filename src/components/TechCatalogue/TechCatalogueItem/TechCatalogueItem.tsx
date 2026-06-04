@@ -2,22 +2,22 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ListSwitcherItemData } from '../ListSwitcher';
+import { TechCatalogueItemData } from '../TechCatalogue';
 
-type ListSwitcherItemProps = ListSwitcherItemData & {
+type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;
 	iconClass: string;
 	itemClassName?: string;
 };
 
-export const ListSwitcherItem = ({
+export const TechCatalogueItem = ({
 	expanded,
 	iconClass,
 	image,
 	itemClassName,
 	label,
 	to,
-}: ListSwitcherItemProps) => (
+}: TechCatalogueItemProps) => (
 	<li className={itemClassName}>
 		{to ? (
 			<Link title={label} to={to}>
@@ -25,7 +25,7 @@ export const ListSwitcherItem = ({
 				{expanded && <p>{label}</p>}
 			</Link>
 		) : (
-			<div className="list-switcher-item">
+			<div className="tech-catalogue-item">
 				<img alt={label} className={iconClass} src={image} />
 				{expanded && <p>{label}</p>}
 			</div>

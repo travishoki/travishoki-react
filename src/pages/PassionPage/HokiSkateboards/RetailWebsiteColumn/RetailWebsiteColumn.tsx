@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import {
 	CSS,
 	HTML,
@@ -50,6 +50,6 @@ export const RetailWebsiteColumn = () => (
 			and React.
 		</p>
 
-		<TechListSwitcher list={websiteTechList} />
+		<TechListCatalogue list={websiteTechList} />
 	</div>
 );

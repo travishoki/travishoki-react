@@ -1,9 +1,9 @@
 import React from 'react';
 
 import {
-	ListSwitcher,
-	ListSwitcherItemData,
-} from '~components/ListSwitcher/ListSwitcher';
+	TechCatalogue,
+	TechCatalogueItemData,
+} from '~components/TechCatalogue/TechCatalogue';
 import { SOFTWARE, SoftwareKey } from '~const/Software.const';
 
 type SoftwareListProps = {
@@ -17,13 +17,17 @@ export const SoftwareListSwitcher = ({
 	itemClassName,
 	list,
 }: SoftwareListProps) => {
-	const items: ListSwitcherItemData[] = list.map((software) => ({
+	const items: TechCatalogueItemData[] = list.map((software) => ({
 		image: SOFTWARE[software].image,
 		label: SOFTWARE[software].label,
 		type: SOFTWARE[software].type,
 	}));
 
 	return (
-		<ListSwitcher header={header} itemClassName={itemClassName} items={items} />
+		<TechCatalogue
+			header={header}
+			itemClassName={itemClassName}
+			items={items}
+		/>
 	);
 };

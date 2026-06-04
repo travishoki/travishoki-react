@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 
-import { ListSwitcherItemData } from '../ListSwitcher';
-import { ListSwitcherList } from '../ListSwitcherList/ListSwitcherList';
+import { TechCatalogueItemData } from '../TechCatalogue';
+import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
-type ListSectionGroupProps = {
+type TechCatalogueSectionGroupProps = {
 	iconClass: string;
 	itemClassName?: string;
-	items: ListSwitcherItemData[];
+	items: TechCatalogueItemData[];
 	label: string;
 };
 
-export const ListSectionGroup = ({
+export const TechCatalogueSectionGroup = ({
 	iconClass,
 	itemClassName,
 	items,
 	label,
-}: ListSectionGroupProps) => {
+}: TechCatalogueSectionGroupProps) => {
 	const [open, setOpen] = useState(true);
 
 	return (
-		<div className="list-section-group">
+		<div className="tech-catalogue-section-group">
 			<button
-				className="list-switcher-legacy-label my-2 py-1 px-2"
+				className="tech-catalogue-section-label my-2 py-1 px-2"
 				onClick={() => setOpen(!open)}
 			>
 				{label}
@@ -29,7 +29,7 @@ export const ListSectionGroup = ({
 			</button>
 
 			{open && (
-				<ListSwitcherList
+				<TechCatalogueList
 					expanded
 					iconClass={iconClass}
 					itemClassName={itemClassName}

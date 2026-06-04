@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import {
 	CSS,
 	FIREBASE,
@@ -38,7 +38,7 @@ export const MobileApp = () => (
 		<PassionLabel>Description:</PassionLabel>
 		<p className="indent">Kid&apos;s skateboarding game</p>
 
-		<TechListSwitcher list={techs} />
+		<TechListCatalogue list={techs} />
 
 		<h3>Download My App!</h3>
 

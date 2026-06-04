@@ -2,28 +2,28 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-import { ListSwitcherItem } from '../ListSwitcherItem/ListSwitcherItem';
-import { ListSwitcherItemData } from '../ListSwitcher';
+import { TechCatalogueItem } from '../TechCatalogueItem/TechCatalogueItem';
+import { TechCatalogueItemData } from '../TechCatalogue';
 
-type ListSwitcherListProps = {
+type TechCatalogueListProps = {
 	expanded: boolean;
 	iconClass: string;
 	itemClassName?: string;
-	items: ListSwitcherItemData[];
+	items: TechCatalogueItemData[];
 };
 
-export const ListSwitcherList = ({
+export const TechCatalogueList = ({
 	expanded,
 	iconClass,
 	itemClassName,
 	items,
-}: ListSwitcherListProps) => {
+}: TechCatalogueListProps) => {
 	if (items.length === 0) return null;
 
 	return (
 		<ul className={classnames({ row: itemClassName })}>
 			{items.map((item, index) => (
-				<ListSwitcherItem
+				<TechCatalogueItem
 					key={index}
 					expanded={expanded}
 					iconClass={iconClass}

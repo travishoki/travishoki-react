@@ -1,6 +1,6 @@
-import { ListSwitcherItemData, TechType } from './ListSwitcher';
+import { TechCatalogueItemData, TechType } from './TechCatalogue';
 
-export const EMPTY_GROUP_BY_TYPE: Record<TechType, ListSwitcherItemData[]> = {
+export const EMPTY_GROUP_BY_TYPE: Record<TechType, TechCatalogueItemData[]> = {
 	backend: [],
 	cms: [],
 	design: [],
@@ -12,8 +12,8 @@ export const EMPTY_GROUP_BY_TYPE: Record<TechType, ListSwitcherItemData[]> = {
 	video: [],
 };
 
-export const groupTechByType = (items: ListSwitcherItemData[]) =>
-	items.reduce<Record<TechType, ListSwitcherItemData[]>>(
+export const groupTechByType = (items: TechCatalogueItemData[]) =>
+	items.reduce<Record<TechType, TechCatalogueItemData[]>>(
 		(acc, item) => {
 			const type = item.type ?? 'frontend';
 			acc[type].push(item);
@@ -22,5 +22,5 @@ export const groupTechByType = (items: ListSwitcherItemData[]) =>
 		},
 		Object.fromEntries(
 			Object.entries(EMPTY_GROUP_BY_TYPE).map(([key, val]) => [key, [...val]]),
-		) as Record<TechType, ListSwitcherItemData[]>,
+		) as Record<TechType, TechCatalogueItemData[]>,
 	);

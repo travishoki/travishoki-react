@@ -4,7 +4,7 @@ import { BulletedList } from '~components/bulletedList/BulletedList';
 
 import { ResumeDataType } from './ResumePage.data';
 import './ExperienceItem.scss';
-import { TechListSwitcher } from '~components/TechListSwitcher/TechListSwitcher';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 export const ExperienceItem = ({
 	affiliatedCompany,
@@ -39,7 +39,7 @@ export const ExperienceItem = ({
 				</div>
 			)}
 
-			<TechListSwitcher list={techs} />
+			<TechListCatalogue list={techs} />
 		</div>
 	</li>
 );

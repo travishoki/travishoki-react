@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect } from 'storybook/test';
 
-import { TechListSwitcher } from './TechListSwitcher';
+import { TechListCatalogue } from './TechListCatalogue';
 
-const meta: Meta<typeof TechListSwitcher> = {
-	component: TechListSwitcher,
+const meta: Meta<typeof TechListCatalogue> = {
+	component: TechListCatalogue,
 	tags: ['ai-generated'],
 };
 
 export default meta;
-type Story = StoryObj<typeof TechListSwitcher>;
+type Story = StoryObj<typeof TechListCatalogue>;
 
 export const Few: Story = {
 	args: {

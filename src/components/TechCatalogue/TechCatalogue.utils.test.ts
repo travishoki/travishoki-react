@@ -1,12 +1,12 @@
 /* global describe, it */
 import expect from 'expect';
 
-import { ListSwitcherItemData } from './ListSwitcher';
-import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './ListSwitcher.utils';
+import { TechCatalogueItemData } from './TechCatalogue';
+import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './TechCatalogue.utils';
 
 describe('groupTechByType', () => {
 	it('Should group items by their type', () => {
-		const items: ListSwitcherItemData[] = [
+		const items: TechCatalogueItemData[] = [
 			{ image: 'react.jpg', label: 'React', type: 'frontend' },
 			{ image: 'jquery.jpg', label: 'jQuery', type: 'legacy' },
 			{ image: 'node.jpg', label: 'Node.js', type: 'backend' },
@@ -43,7 +43,7 @@ describe('groupTechByType', () => {
 	});
 
 	it('Should default items without a type to frontend', () => {
-		const items: ListSwitcherItemData[] = [
+		const items: TechCatalogueItemData[] = [
 			{
 				image: 'ts.jpg',
 				label: 'Typescript',
