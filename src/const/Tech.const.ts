@@ -67,8 +67,12 @@ export type TechInfo = {
 	type: TechType;
 };
 
-/* eslint-disable sort-keys */
 export const TECH = {
+	ACTION_SCRIPT: {
+		image: ImgActionScript,
+		label: 'Action Script',
+		type: 'legacy',
+	},
 	AMP: { image: ImgAmp, label: 'AMP', type: 'frontend' },
 	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS', type: 'frontend' },
 	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: 'tool' },
@@ -91,6 +95,7 @@ export const TECH = {
 	HTML: { image: ImgHtml, label: 'HTML', type: 'frontend' },
 	JAVASCRIPT: { image: ImgJavascript, label: 'Javascript', type: 'frontend' },
 	JEST: { image: ImgJest, label: 'Jest', type: 'frontend' },
+	JQUERY: { image: ImgJquery, label: 'jQuery', type: 'legacy' },
 	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: 'frontend' },
 	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: 'backend' },
 	PHP: { image: ImgPhp, label: 'PHP', type: 'backend' },
@@ -107,20 +112,13 @@ export const TECH = {
 	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
-	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
 	WOO_COMMERCE: {
 		image: ImgWooCommerce,
 		label: 'Woo Commerce',
 		type: 'integrations',
 	},
-	ACTION_SCRIPT: {
-		image: ImgActionScript,
-		label: 'Action Script',
-		type: 'legacy',
-	},
-	JQUERY: { image: ImgJquery, label: 'jQuery', type: 'legacy' },
+	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
 } satisfies Record<string, TechInfo>;
-/* eslint-enable */
 
 export type TechKey = keyof typeof TECH;
 

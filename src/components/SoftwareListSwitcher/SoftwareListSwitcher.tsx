@@ -4,15 +4,11 @@ import {
 	ListSwitcher,
 	ListSwitcherItemData,
 } from '~components/ListSwitcher/ListSwitcher';
-import {
-	SOFTWARE_IMAGES,
-	SOFTWARE_STRINGS,
-	SoftwareKeys,
-} from '~const/Software.const';
+import { SOFTWARE, SoftwareKey } from '~const/Software.const';
 
 type SoftwareListProps = {
 	header?: string;
-	list: (keyof SoftwareKeys)[];
+	list: SoftwareKey[];
 };
 
 export const SoftwareListSwitcher = ({
@@ -20,8 +16,8 @@ export const SoftwareListSwitcher = ({
 	list,
 }: SoftwareListProps) => {
 	const items: ListSwitcherItemData[] = list.map((software) => ({
-		image: SOFTWARE_IMAGES[software],
-		label: SOFTWARE_STRINGS[software],
+		image: SOFTWARE[software].image,
+		label: SOFTWARE[software].label,
 	}));
 
 	return <ListSwitcher header={header} items={items} />;

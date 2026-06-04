@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { SOFTWARE_IMAGES, SOFTWARE_STRINGS } from '~const/Software.const';
+import { SOFTWARE } from '~const/Software.const';
 import { TECH } from '~const/Tech.const';
 import { SvgIconFacebook } from '~svg/SvgIconFacebook';
 import { SvgIconInstagram } from '~svg/SvgIconInstagram';
@@ -70,13 +70,11 @@ const TechIconsPage = () => (
 const SoftwareIconsPage = () => (
 	<div style={PAGE_STYLE}>
 		<div style={GRID_STYLE}>
-			{(
-				Object.keys(SOFTWARE_IMAGES) as Array<keyof typeof SOFTWARE_IMAGES>
-			).map((key) => (
+			{(Object.keys(SOFTWARE) as Array<keyof typeof SOFTWARE>).map((key) => (
 				<ImgTile
 					key={key}
-					label={SOFTWARE_STRINGS[key]}
-					src={SOFTWARE_IMAGES[key]}
+					label={SOFTWARE[key].label}
+					src={SOFTWARE[key].image}
 				/>
 			))}
 		</div>

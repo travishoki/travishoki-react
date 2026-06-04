@@ -4,32 +4,28 @@ import ImgPhotoshop from '~images/icons/software-icons/adobe-photoshop.png';
 import ImgPremierPro from '~images/icons/software-icons/adobe-premier-pro.png';
 import ImgProcreate from '~images/icons/software-icons/procreate.png';
 
-export const ILLUSTRATOR = 'ILLUSTRATOR';
-export const INDESIGN = 'INDESIGN';
-export const PHOTOSHOP = 'PHOTOSHOP';
-export const PREMIER_PRO = 'PREMIER_PRO';
-export const PROCREATE = 'PROCREATE';
+export type SoftwareType = 'design' | 'illustration' | 'video';
 
-export type SoftwareKeys = {
-	ILLUSTRATOR: 'ILLUSTRATOR';
-	INDESIGN: 'INDESIGN';
-	PHOTOSHOP: 'PHOTOSHOP';
-	PREMIER_PRO: 'PREMIER_PRO';
-	PROCREATE: 'PROCREATE';
+export type SoftwareInfo = {
+	image: string;
+	label: string;
+	type: SoftwareType;
 };
 
-export const SOFTWARE_IMAGES = {
-	ILLUSTRATOR: ImgIllustrator,
-	INDESIGN: ImgIndesign,
-	PHOTOSHOP: ImgPhotoshop,
-	PREMIER_PRO: ImgPremierPro,
-	PROCREATE: ImgProcreate,
-};
+export const SOFTWARE = {
+	ILLUSTRATOR: {
+		image: ImgIllustrator,
+		label: 'Adobe Illustrator',
+		type: 'illustration',
+	},
+	INDESIGN: { image: ImgIndesign, label: 'Adobe InDesign', type: 'design' },
+	PHOTOSHOP: { image: ImgPhotoshop, label: 'Adobe Photoshop', type: 'design' },
+	PREMIER_PRO: {
+		image: ImgPremierPro,
+		label: 'Adobe Premier Pro',
+		type: 'video',
+	},
+	PROCREATE: { image: ImgProcreate, label: 'Procreate', type: 'illustration' },
+} satisfies Record<string, SoftwareInfo>;
 
-export const SOFTWARE_STRINGS: Record<keyof SoftwareKeys, string> = {
-	ILLUSTRATOR: 'Adobe Illustrator',
-	INDESIGN: 'Adobe InDesign',
-	PHOTOSHOP: 'Adobe Photoshop',
-	PREMIER_PRO: 'Adobe Premier Pro',
-	PROCREATE: 'Procreate',
-};
+export type SoftwareKey = keyof typeof SOFTWARE;

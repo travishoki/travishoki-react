@@ -1,25 +1,18 @@
 import React from 'react';
 
 import { SoftwareListSwitcher } from '~components/SoftwareListSwitcher/SoftwareListSwitcher';
-import {
-	ILLUSTRATOR,
-	INDESIGN,
-	PHOTOSHOP,
-	PREMIER_PRO,
-	PROCREATE,
-	SoftwareKeys,
-} from '~const/Software.const';
+import { SoftwareKey } from '~const/Software.const';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
 import { PassionLabel } from '../PassionLabel';
 import { Title } from '../Title';
 
-const appSoftwareList: (keyof SoftwareKeys)[] = [
-	ILLUSTRATOR,
-	INDESIGN,
-	PHOTOSHOP,
-	PREMIER_PRO,
-	PROCREATE,
+const appSoftwareList: SoftwareKey[] = [
+	'ILLUSTRATOR',
+	'INDESIGN',
+	'PHOTOSHOP',
+	'PREMIER_PRO',
+	'PROCREATE',
 ];
 
 export const ChildrensBookColumn = () => (
