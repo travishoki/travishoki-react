@@ -94,6 +94,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgSkateboardSmall,
 		title: 'Skateboarding',
+		video: '/skate-clip.MP4',
 	},
 	{
 		desc: [
@@ -166,4 +167,5 @@ export type AboutType = {
 	imgLargeDimensions: number[];
 	imgSmall: string;
 	title: string;
+	video?: string;
 };

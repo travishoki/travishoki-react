@@ -1,25 +1,16 @@
 import React from 'react';
 
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { AboutType } from './AboutPage.data';
+import { AboutImage } from './AboutImage';
+import { AboutVideo } from './AboutVideo';
 import { Signature } from './Signature/Signature';
 import './AboutItem.scss';
-
-const defaultImageSize = [200, 200];
 
 export const AboutItem = (item: AboutType) => (
 	<li className="staggered-item about-item">
 		<div className="image-container">
-			<ImageMaximizable
-				alt={item.alt ?? item.title}
-				className="about-item-image"
-				dimensions={defaultImageSize}
-				imageClassName="image"
-				src={item.imgSmall}
-				srcLarge={item.imgLarge ?? item.imgSmall}
-				srcLargeDimensions={item.imgLargeDimensions ?? defaultImageSize}
-			/>
+			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
 		</div>
 		<div className="info-box">
 			<h2>{item.title}</h2>
