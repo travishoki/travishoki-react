@@ -14,11 +14,13 @@ export const AboutVideo = ({ item }: AboutVideoProps) => {
 
 	return (
 		<>
-			<VideoButton
-				onClick={() => setOpen(true)}
-				size={DEFAULT_IMAGE_SIZE[0]}
-				src={item.imgSmall}
-			/>
+			<div className="d-flex justify-content-center">
+				<VideoButton
+					onClick={() => setOpen(true)}
+					size={DEFAULT_IMAGE_SIZE[0]}
+					src={item.imgSmall}
+				/>
+			</div>
 
 			{open && <VideoModal onClose={() => setOpen(false)} src={item.video!} />}
 		</>
