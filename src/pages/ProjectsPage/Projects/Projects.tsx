@@ -18,7 +18,7 @@ export const Projects = ({
 	return (
 		<ul className={`projects ${resultsCountClass}`}>
 			{projects.map((project, index) => (
-				<li key={index} className="project">
+				<li key={index}>
 					{grid ? (
 						<ProjectItemGrid projectLink={projectLink} {...project} />
 					) : (

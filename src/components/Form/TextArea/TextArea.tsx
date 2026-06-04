@@ -17,7 +17,7 @@ export const TextArea = ({
 	>
 		<label htmlFor={name}>{label}</label>
 
-		<div className="field">
+		<div>
 			<textarea
 				className="form-control"
 				name={name}

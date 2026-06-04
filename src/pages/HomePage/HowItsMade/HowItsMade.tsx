@@ -6,7 +6,7 @@ export const HowItsMade = () => (
 	<section className="how-its-made">
 		<h2>How this site was Made</h2>
 
-		<div className="row how-its-made-grid">
+		<div className="row">
 			<div className="offset-3 col-sm-3">
 				<p>Source Code</p>
 				<a

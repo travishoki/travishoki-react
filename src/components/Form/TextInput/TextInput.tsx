@@ -17,7 +17,7 @@ export const TextInput = ({
 	>
 		<label htmlFor={name}>{label}</label>
 
-		<div className="field">
+		<div>
 			<input
 				className="form-control"
 				name={name}
