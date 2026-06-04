@@ -107,8 +107,8 @@ const meta = {
 export default meta;
 type Story = StoryObj;
 
-export const AllTechIcons: Story = { render: () => <TechIconsPage /> };
-export const AllSoftwareIcons: Story = {
+export const TechIcons: Story = { render: () => <TechIconsPage /> };
+export const SoftwareIcons: Story = {
 	render: () => <SoftwareIconsPage />,
 };
-export const AllSvgIcons: Story = { render: () => <SvgIconsPage /> };
+export const SvgIcons: Story = { render: () => <SvgIconsPage /> };
