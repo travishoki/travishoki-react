@@ -8,7 +8,7 @@ export const HowItsMade = () => (
 
 		<div className="row how-its-made-grid">
 			<div className="offset-3 col-sm-3">
-				<h3>Source Code</h3>
+				<p>Source Code</p>
 				<a
 					className="how-its-made-link"
 					href="https://github.com/travishoki/travishoki-react"
@@ -20,7 +20,7 @@ export const HowItsMade = () => (
 				</a>
 			</div>
 			<div className="col-sm-3">
-				<h3>Component Library</h3>
+				<p>Component Library</p>
 				<a
 					className="how-its-made-link"
 					href="https://travishoki.com/storybook-static"
