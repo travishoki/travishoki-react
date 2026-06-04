@@ -6,11 +6,7 @@ import './LinkedInLink.scss';
 
 export const LinkedInLink = () => (
 	<>
-		<p className="preference-text">
-			I prefer being contacted by email,
-			<br />
-			but also connect with me on LinkedIn.
-		</p>
+		<p className="preference-text">Connect with me on LinkedIn</p>
 
 		<a
 			className="linked-link"
