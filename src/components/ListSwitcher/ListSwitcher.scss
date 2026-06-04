@@ -59,10 +59,16 @@
 }
 
 .list-switcher-legacy-label {
+	align-items: center;
 	background: $blue-three;
+	border: none;
 	color: $white;
+	cursor: pointer;
+	display: flex;
 	font-size: 14px;
 	font-weight: bold;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .list-switcher-vertical ul {

@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 
 import classnames from 'classnames';
 
-import { ListSectionLabel } from './ListSectionLabel/ListSectionLabel';
+import { ListSectionGroup } from './ListSectionGroup/ListSectionGroup';
 import { ListSwitcherButton } from './ListSwitcherButton/ListSwitcherButton';
 import { ListSwitcherHeader } from './ListSwitcherHeader/ListSwitcherHeader';
 import { ListSwitcherList } from './ListSwitcherList/ListSwitcherList';
@@ -78,15 +78,13 @@ export const ListSwitcher = ({
 							if (group.length === 0) return null;
 
 							return (
-								<Fragment key={type}>
-									<ListSectionLabel label={label} />
-									<ListSwitcherList
-										expanded={expanded}
-										iconClass={iconClass}
-										itemClassName={itemClassName}
-										items={group}
-									/>
-								</Fragment>
+								<ListSectionGroup
+									key={type}
+									iconClass={iconClass}
+									itemClassName={itemClassName}
+									items={group}
+									label={label}
+								/>
 							);
 						})
 					) : (
