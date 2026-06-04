@@ -15,7 +15,10 @@ export type TechType =
 	| 'cms'
 	| 'tool'
 	| 'integrations'
-	| 'legacy';
+	| 'legacy'
+	| 'design'
+	| 'illustration'
+	| 'video';
 
 export type ListSwitcherItemData = {
 	image: string;
@@ -39,6 +42,9 @@ const TYPE_SECTIONS: { label: string; type: TechType }[] = [
 	{ label: 'Tools', type: 'tool' },
 	{ label: 'Integrations', type: 'integrations' },
 	{ label: 'Legacy Tech', type: 'legacy' },
+	{ label: 'Design', type: 'design' },
+	{ label: 'Illustration', type: 'illustration' },
+	{ label: 'Video', type: 'video' },
 ];
 
 export const ListSwitcher = ({

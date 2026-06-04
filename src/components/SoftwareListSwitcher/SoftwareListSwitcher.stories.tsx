@@ -23,6 +23,7 @@ export const Few: Story = {
 
 export const All: Story = {
 	args: {
+		itemClassName: 'col-sm-4',
 		list: ['ILLUSTRATOR', 'INDESIGN', 'PHOTOSHOP', 'PREMIER_PRO', 'PROCREATE'],
 	},
 	play: async ({ canvas }) => {

@@ -11,9 +11,12 @@ export const groupTechByType = (items: ListSwitcherItemData[]) =>
 		{
 			backend: [],
 			cms: [],
+			design: [],
 			frontend: [],
+			illustration: [],
 			integrations: [],
 			legacy: [],
 			tool: [],
+			video: [],
 		},
 	);
