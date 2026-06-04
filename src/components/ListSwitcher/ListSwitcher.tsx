@@ -26,7 +26,7 @@ export type ListSwitcherItemData = {
 
 type ListSwitcherProps = {
 	circle?: boolean;
-	header?: string;
+	header: string;
 	initialExpanded?: boolean;
 	itemClassName?: string;
 	items: ListSwitcherItemData[];
@@ -58,7 +58,7 @@ export const ListSwitcher = ({
 
 	return (
 		<div className="list-switcher">
-			{header && <ListSwitcherHeader header={header} />}
+			<ListSwitcherHeader header={header} />
 			<div className="list-switcher-content">
 				<div
 					className={

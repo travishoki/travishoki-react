@@ -11,9 +11,19 @@ const meta: Meta<typeof SoftwareListSwitcher> = {
 export default meta;
 type Story = StoryObj<typeof SoftwareListSwitcher>;
 
-export const Default: Story = {
+export const Few: Story = {
 	args: {
-		list: ['PHOTOSHOP', 'ILLUSTRATOR'],
+		list: ['ILLUSTRATOR', 'PHOTOSHOP'],
+	},
+	play: async ({ canvas }) => {
+		const list = canvas.getByRole('list');
+		await expect(list).toBeInTheDocument();
+	},
+};
+
+export const All: Story = {
+	args: {
+		list: ['ILLUSTRATOR', 'INDESIGN', 'PHOTOSHOP', 'PREMIER_PRO', 'PROCREATE'],
 	},
 	play: async ({ canvas }) => {
 		const list = canvas.getByRole('list');
