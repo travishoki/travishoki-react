@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect } from 'storybook/test';
 
+import { TECH } from '~const/Tech.const';
 import { ListSwitcherList } from './ListSwitcherList';
 
 const meta: Meta<typeof ListSwitcherList> = {
@@ -12,8 +13,8 @@ export default meta;
 type Story = StoryObj<typeof ListSwitcherList>;
 
 const sampleItems = [
-	{ image: 'https://via.placeholder.com/40', label: 'React' },
-	{ image: 'https://via.placeholder.com/40', label: 'TypeScript' },
+	{ image: TECH.REACT_JS.image, label: TECH.REACT_JS.label },
+	{ image: TECH.TYPESCRIPT.image, label: TECH.TYPESCRIPT.label },
 ];
 
 export const Default: Story = {

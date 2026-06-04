@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect } from 'storybook/test';
 
+import ImgSample from '~images/about/ballroom-small.jpg';
 import { ImageMaximizable } from './ImageMaximizable';
 
 const meta: Meta<typeof ImageMaximizable> = {
@@ -13,9 +14,9 @@ type Story = StoryObj<typeof ImageMaximizable>;
 
 export const Default: Story = {
 	args: {
-		alt: 'Sample image',
+		alt: 'Ballroom',
 		dimensions: [300, 200],
-		src: 'https://via.placeholder.com/300x200',
+		src: ImgSample,
 	},
 	play: async ({ canvas }) => {
 		const img = canvas.getByRole('img', { name: /sample image/i });

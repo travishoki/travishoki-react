@@ -24,6 +24,11 @@ const preview: Preview = {
       },
     },
     msw: { handlers: mswHandlers },
+    options: {
+      storySort: {
+        order: ['Design System', 'Components'],
+      },
+    },
   },
 };
 

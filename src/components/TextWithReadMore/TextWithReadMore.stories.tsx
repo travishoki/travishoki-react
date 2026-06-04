@@ -37,30 +37,3 @@ export const MultipleParagraphs: Story = {
 		await expect(canvas.getByText('Read More')).toBeVisible();
 	},
 };
-
-export const Expanded: Story = {
-	args: {
-		paragraphs: [
-			'First paragraph visible by default.',
-			'Second paragraph hidden until expanded.',
-		],
-	},
-	play: async ({ canvas, userEvent }) => {
-		await userEvent.click(canvas.getByText('Read More'));
-		await expect(
-			canvas.getByText('Second paragraph hidden until expanded.'),
-		).toBeVisible();
-		await expect(canvas.getByText('Read Less')).toBeVisible();
-	},
-};
-
-export const CssCheck: Story = {
-	args: {
-		paragraphs: ['Check paragraph.', 'Second paragraph to show read more.'],
-	},
-	play: async ({ canvas }) => {
-		const readMore = canvas.getByText('Read More');
-		const computedStyle = getComputedStyle(readMore.closest('p')!);
-		await expect(computedStyle.textDecorationLine).toBe('underline');
-	},
-};

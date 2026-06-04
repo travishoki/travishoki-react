@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect } from 'storybook/test';
 
+import { TECH } from '~const/Tech.const';
 import { ListSwitcher } from './ListSwitcher';
 
 const meta: Meta<typeof ListSwitcher> = {
@@ -13,13 +14,13 @@ type Story = StoryObj<typeof ListSwitcher>;
 
 const sampleItems = [
 	{
-		image: 'https://via.placeholder.com/40',
-		label: 'React',
+		image: TECH.REACT_JS.image,
+		label: TECH.REACT_JS.label,
 		type: 'frontend' as const,
 	},
 	{
-		image: 'https://via.placeholder.com/40',
-		label: 'Node.js',
+		image: TECH.NODE_JS.image,
+		label: TECH.NODE_JS.label,
 		type: 'backend' as const,
 	},
 ];

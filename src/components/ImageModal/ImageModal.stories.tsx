@@ -1,39 +1,61 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { expect } from 'storybook/test';
-import { ImageModal } from './ImageModal';
+import { expect, within } from 'storybook/test';
+
+import ImgLandscape from '~images/about/ballroom.jpg';
+import ImgPortrait from '~images/about/childrens-book.jpg';
+import { ImageMaximizable } from './ImageMaximizable';
 
 const meta = {
-	component: ImageModal,
+	component: ImageMaximizable,
 	tags: ['ai-generated'],
-} satisfies Meta<typeof ImageModal>;
+} satisfies Meta<typeof ImageMaximizable>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		dimensions: [800, 600],
-		onClose: () => {},
-		src: 'https://via.placeholder.com/800x600',
+		alt: 'Ballroom',
+		dimensions: [400, 300],
+		src: ImgLandscape,
 	},
-	play: async ({ canvas }) => {
-		const img = canvas.getByRole('img');
+	play: async ({ canvasElement }) => {
+		const canvas = within(canvasElement);
+		const img = canvas.getByRole('img', { name: /ballroom/i });
 		await expect(img).toBeVisible();
+	},
+};
+
+export const ClickToOpen: Story = {
+	args: {
+		alt: 'Ballroom',
+		dimensions: [400, 300],
+		src: ImgLandscape,
+	},
+	play: async ({ canvasElement, userEvent: ue }) => {
+		const overlay = canvasElement.querySelector('.zoom-overlay') as HTMLElement;
+		await ue.click(overlay);
+		const modal = within(canvasElement.ownerDocument.body);
+		await expect(
+			await modal.findByRole('img', { name: /ballroom/i }),
+		).toBeVisible();
 	},
 };
 
 export const Portrait: Story = {
 	args: {
-		dimensions: [400, 800],
-		onClose: () => {},
-		src: 'https://via.placeholder.com/400x800',
+		alt: "Children's Book",
+		dimensions: [300, 400],
+		src: ImgPortrait,
 	},
 };
 
-export const Landscape: Story = {
+export const WithLargeSource: Story = {
 	args: {
-		dimensions: [1200, 400],
-		onClose: () => {},
-		src: 'https://via.placeholder.com/1200x400',
+		alt: 'Ballroom',
+		dimensions: [400, 300],
+		src: ImgLandscape,
+		srcLarge: ImgLandscape,
+		srcLargeDimensions: [1200, 900],
 	},
 };

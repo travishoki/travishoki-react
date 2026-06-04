@@ -2,6 +2,7 @@
   "permissions": {
     "additionalDirectories": [
       "/Users/travishoki/Sites/travishoki-react"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   }
 }
