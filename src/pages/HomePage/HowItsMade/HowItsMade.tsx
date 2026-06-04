@@ -16,7 +16,6 @@ export const HowItsMade = () => (
 					target="_blank"
 				>
 					<i className="fa fa-github" />
-					<span>github.com/travishoki</span>
 				</a>
 			</div>
 			<div className="col-sm-3">
@@ -28,7 +27,6 @@ export const HowItsMade = () => (
 					target="_blank"
 				>
 					<i className="fa fa-book" />
-					<span>Storybook</span>
 				</a>
 			</div>
 		</div>
