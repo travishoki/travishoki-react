@@ -2,7 +2,10 @@
 	"compilerOptions": {
 		"allowJs": true,
 		"jsx": "react",
+		"module": "esnext",
+		"moduleResolution": "bundler",
 		"noEmit": true,
+		"skipLibCheck": true,
 		"strict": true,
 		"baseUrl": ".",
 		"esModuleInterop": true,
