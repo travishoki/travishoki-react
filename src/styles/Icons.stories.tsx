@@ -11,7 +11,7 @@ import { SvgIconYoutube } from '~svg/SvgIconYoutube';
 const GRID_STYLE: React.CSSProperties = {
 	display: 'grid',
 	gap: '0.5rem',
-	gridTemplateColumns: 'repeat(auto-fill, 80px)',
+	gridTemplateColumns: 'repeat(auto-fill, 90px)',
 };
 
 const TILE_STYLE: React.CSSProperties = {
@@ -22,7 +22,7 @@ const TILE_STYLE: React.CSSProperties = {
 };
 
 const LABEL_STYLE: React.CSSProperties = {
-	color: '#333',
+	color: '#fff',
 	fontSize: '0.7rem',
 	lineHeight: 1.3,
 	textAlign: 'center',
