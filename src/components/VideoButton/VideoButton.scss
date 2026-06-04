@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+$border-color: $blue-two;
+$border-width: 5px;
+
+.video-button {
+	background: none;
+	border: $border-width solid $border-color;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	transition: border-color 0.2s ease;
+
+	&:hover {
+		border-color: $blue-four;
+	}
+
+	&:hover .video-button-icon {
+		background: $blue-four;
+		border-color: $blue-four;
+	}
+}
+
+.video-button-image {
+	border-radius: 50%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+.video-button-icon {
+	align-items: center;
+	background: $blue-three;
+	border: $border-width solid $border-color;
+	border-radius: 50%;
+	bottom: 0;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	transition:
+		background 0.2s ease,
+		border-color 0.2s ease;
+}
