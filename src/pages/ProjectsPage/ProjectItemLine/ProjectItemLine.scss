@@ -4,37 +4,12 @@
 #container.projects {
 	.line-item {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		padding: 4px;
 		position: relative;
 
 		&:hover > .popup {
 			display: block;
-		}
-
-		.product-blurb {
-			padding: 10px;
-		}
-
-		p.company {
-			font-size: 20px;
-			font-weight: bold;
-			margin: 0;
-		}
-
-		p.subtitle {
-			font-size: 14px;
-			font-weight: bold;
-		}
-
-		p.description {
-			font-size: 14px;
-
-			&.truncate {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-			}
 		}
 	}
 }

@@ -9,19 +9,19 @@ type ProductImageWithPopupProps = {
 	projectLink: string;
 };
 
-const images = require.context('../../../../images/websites', true);
+const images = require.context('../../../images/websites', true);
 
 export const ProductImageWithPopup = ({
 	companySlug,
 	itemKey,
 	projectLink,
 }: ProductImageWithPopupProps) => (
-	<>
+	<div className="project-image-with-popup">
 		<ProjectImageOverlay
 			companySlug={companySlug}
 			itemKey={itemKey}
 			projectLink={projectLink}
 		/>
 		<img className="project-img" src={images(`./${itemKey}/sm.jpg`)} />
-	</>
+	</div>
 );

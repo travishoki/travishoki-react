@@ -10,7 +10,7 @@ type ProjectImageOverlayProps = {
 	projectLink: string;
 };
 
-const logos = require.context('../../../../../images/clients', true);
+const logos = require.context('../../../../images/clients', true);
 
 export const ProjectImageOverlay = ({
 	companySlug,

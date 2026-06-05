@@ -1,0 +1,15 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.project-image-with-popup {
+	display: relative;
+
+	&:hover > .popup {
+		display: block;
+	}
+
+	img.project-img {
+		display: block;
+		margin: 0 auto;
+	}
+}

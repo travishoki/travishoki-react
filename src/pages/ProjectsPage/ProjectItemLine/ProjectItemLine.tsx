@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { getFirstParagraph } from '~helpers/arrays';
 import { ProjectType } from '../ProjectsPage.data';
-import { ProductImageWithPopup } from './ProductImageWithPopup/ProductImageWithPopup';
+import { ProductImageWithPopup } from '../ProductImageWithPopup/ProductImageWithPopup';
+import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
 import './ProjectItemLine.scss';
 
 export const ProjectItemLine = ({
@@ -13,8 +13,6 @@ export const ProjectItemLine = ({
 	projectLink,
 	subtitle,
 }: ProjectItemLineProps) => {
-	const desc = getFirstParagraph(description);
-
 	return (
 		<div className="line-item">
 			<ProductImageWithPopup
@@ -22,11 +20,11 @@ export const ProjectItemLine = ({
 				itemKey={itemKey}
 				projectLink={projectLink}
 			/>
-			<div className="product-blurb">
-				<p className="company">{company}</p>
-				<p className="subtitle">{subtitle}</p>
-				<p className="description truncate">{desc}</p>
-			</div>
+			<ProjectBlurb
+				company={company}
+				description={description}
+				subtitle={subtitle}
+			/>
 		</div>
 	);
 };
