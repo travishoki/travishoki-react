@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import {
+	handleWebsiteImageError,
+	websiteImageSrc,
+} from '~helpers/websiteImages';
+
 import { orderTopThreeInPodium } from './Projects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 import './Projects.scss';
 
-const images = require.context('../../../images/websites', true);
 const currentProjects = orderTopThreeInPodium(PROJECTS_DATA.slice(0, 3));
 
 export const Projects = () => (
@@ -25,7 +29,8 @@ export const Projects = () => (
 							</div>
 							<img
 								className="project-img"
-								src={images(`./${project.itemKey}/sm.jpg`)}
+								onError={handleWebsiteImageError('sm')}
+								src={websiteImageSrc(project.itemKey, 'sm')}
 							/>
 						</Link>
 					</li>

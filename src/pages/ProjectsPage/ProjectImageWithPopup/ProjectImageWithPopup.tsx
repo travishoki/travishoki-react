@@ -1,5 +1,10 @@
 import React from 'react';
 
+import {
+	handleWebsiteImageError,
+	websiteImageSrc,
+} from '~helpers/websiteImages';
+
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 import './ProjectImageWithPopup.scss';
 
@@ -8,8 +13,6 @@ type ProjectImageWithPopupProps = {
 	itemKey: string;
 	projectLink: string;
 };
-
-const images = require.context('../../../images/websites', true);
 
 export const ProjectImageWithPopup = ({
 	companySlug,
@@ -22,6 +25,10 @@ export const ProjectImageWithPopup = ({
 			itemKey={itemKey}
 			projectLink={projectLink}
 		/>
-		<img className="project-img" src={images(`./${itemKey}/sm.jpg`)} />
+		<img
+			className="project-img"
+			onError={handleWebsiteImageError('sm')}
+			src={websiteImageSrc(itemKey, 'sm')}
+		/>
 	</div>
 );
