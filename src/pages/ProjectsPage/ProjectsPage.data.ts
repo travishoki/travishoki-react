@@ -34,7 +34,10 @@ import { ProjectType } from './ProjectsPage.types';
 const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Food Cards',
-		contributions: ['Connect to Firebase', 'Design the website'],
+		contributions: [
+			'Connect to Firebase for inventorying food',
+			'Design the website and collected food images',
+		],
 		description: [
 			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed.",
 			"It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like.",
