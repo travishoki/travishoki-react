@@ -64,6 +64,28 @@ import { getItemKey, slugify } from '~helpers/projects';
 
 const PROJECTS: ProjectInput[] = [
 	{
+		company: 'Food Cards',
+		contributions: ['Connect to Firebase', 'Design the website'],
+		description: [
+			'My son has Avoidant/Restrictive Food Intake Disorder (ARFID).',
+			"It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like.",
+			"It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
+			'This is a website that catalogues his "Safe Foods", foods that he will reliably eat. That makes it easier for him to visually see a menu of the foods he likes, making the decision process',
+		],
+		learned: '',
+		techs: [
+			REACT_JS,
+			JAVASCRIPT,
+			JEST,
+			CSS,
+			HTML,
+			FIREBASE,
+			CLAUDE_CODE,
+			CURSOR,
+		],
+		url: 'https://food-cards.travishoki.com/',
+	},
+	{
 		company: 'Hoki Skateboards',
 		contributions: [
 			'React Native development',
