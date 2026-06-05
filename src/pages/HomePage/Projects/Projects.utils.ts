@@ -1,4 +1,4 @@
-import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.data';
+import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 export const orderTopThreeInPodium = (list: ProjectType[]) => {
 	if (list.length < 3) return list;

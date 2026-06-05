@@ -1,5 +1,4 @@
 import {
-	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
 	CLAUDE_CODE,
@@ -30,37 +29,8 @@ import {
 	WORDPRESS,
 } from '../../const/Tech.const';
 
-export const FILTER_LIST: TechKey[] = [
-	ACTION_SCRIPT,
-	AMP,
-	ANGULAR_JS,
-	CLAUDE_CODE,
-	COFFEE_SCRIPT,
-	CSS,
-	CURSOR,
-	DJANGO,
-	EXPRESS,
-	FIREBASE,
-	GRUNT,
-	HANDLEBARS_JS,
-	HTML,
-	JAVASCRIPT,
-	JEST,
-	JQUERY,
-	LESS_CSS,
-	NODE_JS,
-	PHP,
-	PYTHON,
-	REACT_JS,
-	REACT_NATIVE,
-	REDUX,
-	SCSS,
-	SQL,
-	WEBPACK,
-	WORDPRESS,
-];
-
 import { getItemKey, slugify } from '~helpers/projects';
+import { ProjectType } from './ProjectsPage.types';
 
 const PROJECTS: ProjectInput[] = [
 	{
@@ -564,19 +534,5 @@ export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => {
 		itemKey: getItemKey(companySlug, project.subtitle),
 	};
 });
-
-export type ProjectType = {
-	company: string;
-	companySlug: string;
-	contributions: string | string[];
-	date?: string;
-	description: string | string[];
-	itemKey: string;
-	learned: string;
-	live?: boolean;
-	subtitle?: string;
-	techs: TechKey[];
-	url?: string;
-};
 
 type ProjectInput = Omit<ProjectType, 'companySlug' | 'itemKey'>;

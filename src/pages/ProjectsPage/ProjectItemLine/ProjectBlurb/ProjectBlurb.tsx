@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ProjectBlurb.scss';
 import { getFirstParagraph } from '~helpers/arrays';
-import { ProjectType } from '../../ProjectsPage.data';
+import { ProjectType } from '../../ProjectsPage.types';
 
 export const ProjectBlurb = ({
 	company,

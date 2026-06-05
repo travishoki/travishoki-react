@@ -8,7 +8,7 @@ export const slugify = (value: string) =>
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/(^-|-$)/g, '');
 
-export const getItemKey = (companySlug: string, subtitle: string) =>
+export const getItemKey = (companySlug: string, subtitle?: string) =>
 	subtitle ? `${companySlug}-${slugify(subtitle)}` : companySlug;
 
 export const getLabelByKey = (key: string): string =>

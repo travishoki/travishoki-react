@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
-import { ProjectType } from '../../../ProjectsPage/ProjectsPage.data';
+import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectInfoSection.scss';
 
 const logos = require.context('../../../../images/clients', true);

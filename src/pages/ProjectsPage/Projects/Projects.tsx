@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getResultsCountClass } from './Projects.helpers';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
-import { ProjectType } from '../ProjectsPage.data';
+import { ProjectType } from '../ProjectsPage.types';
 import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
 import './Projects.scss';
 

@@ -1,0 +1,15 @@
+import { TechKey } from '~const/Tech.const';
+
+export type ProjectType = {
+	company: string;
+	companySlug: string;
+	contributions: string | string[];
+	date?: string;
+	description: string | string[];
+	itemKey: string;
+	learned: string;
+	live?: boolean;
+	subtitle?: string;
+	techs: TechKey[];
+	url?: string;
+};

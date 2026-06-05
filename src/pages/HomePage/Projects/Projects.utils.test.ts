@@ -2,7 +2,7 @@
 import expect from 'expect';
 
 import { orderTopThreeInPodium } from './Projects.utils';
-import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.data';
+import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 describe('orderTopThreeInPodium', () => {
 	it('Should return top three in podium order', () => {

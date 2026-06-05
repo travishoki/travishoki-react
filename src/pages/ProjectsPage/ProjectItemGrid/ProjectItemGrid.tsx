@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectType } from '../ProjectsPage.data';
+import { ProjectType } from '../ProjectsPage.types';
 import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 import './ProjectItemGrid.scss';
 
