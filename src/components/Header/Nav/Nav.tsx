@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import classnames from 'classnames';
 
 import './Nav.scss';
-import { NavItem } from '../NavItem/NavItem';
+import { NavItem } from './NavItem/NavItem';
 
 export const Nav = () => {
 	const location = useLocation();

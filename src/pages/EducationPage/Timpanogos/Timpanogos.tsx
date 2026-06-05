@@ -6,7 +6,7 @@ import { Pannels } from '~components/Pannels/Pannels';
 import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
 import imgTimpanogos from '~images/education/timpanogos.png';
 
-import { Scholarships } from '../Scholarships/Scholarships';
+import { Scholarships } from './Scholarships/Scholarships';
 import './Timpanogos.scss';
 
 export const Timpanogos = () => (

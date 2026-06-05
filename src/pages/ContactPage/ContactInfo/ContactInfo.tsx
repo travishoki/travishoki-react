@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
-import { ContactInfoGrid } from '../ContactInfoGrid/ContactInfoGrid';
-import { LinkedInLink } from '../LinkedInLink/LinkedInLink';
+import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
+import { LinkedInLink } from './LinkedInLink/LinkedInLink';
 import './ContactInfo.scss';
 
 export const ContactInfo = () => (

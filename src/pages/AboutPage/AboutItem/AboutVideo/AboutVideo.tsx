@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import { VideoButton } from '~components/VideoButton/VideoButton';
 import { VideoModal } from '~components/VideoModal/VideoModal';
-import { AboutType } from '../AboutPage.data';
-import { DEFAULT_IMAGE_SIZE } from '../AboutPage.const';
+import { AboutType } from '../../AboutPage.data';
+import { DEFAULT_IMAGE_SIZE } from '../../AboutPage.const';
 
 type AboutVideoProps = {
 	item: AboutType;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BulletedList } from '~components/bulletedList/BulletedList';
+import { BulletedList } from '~components/BulletedList/BulletedList';
 
 import { ResumeDataType } from '../ResumePage.data';
 import './ExperienceItem.scss';

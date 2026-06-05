@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListSection } from '~components/ListSection/ListSection';
+import { ListSection } from './ListSection/ListSection';
 
 import { getExperienceYears } from '../HomePage.helpers';
 import { SKILLS_LIST } from './Skills.const';

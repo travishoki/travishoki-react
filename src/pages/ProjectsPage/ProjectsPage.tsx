@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import { FILTER_LIST } from './ProjectsPage.data';
 import { Finder } from './Finder/Finder';
-import { ViewControl } from './Finder/ViewControl/ViewControl';
+import { ViewControl } from './ViewControl/ViewControl';
 import { Projects } from './Projects/Projects';
 import { NoResults } from './NoResults/NoResults';
 import { useProjectFiltering } from './hooks/useProjectFiltering';

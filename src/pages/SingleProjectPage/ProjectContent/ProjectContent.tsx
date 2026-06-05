@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectType } from '../ProjectsPage.data';
+import { ProjectType } from '../../ProjectsPage/ProjectsPage.data';
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { ProjectLink } from '../../ProjectLink/ProjectLink';
+import { ProjectLink } from './ProjectLink/ProjectLink';
 import './ProjectPopup.scss';
 
 type ProjectPopupProps = {
@@ -10,7 +10,7 @@ type ProjectPopupProps = {
 	projectLink: string;
 };
 
-const logos = require.context('../../../../images/clients', true);
+const logos = require.context('../../../../../images/clients', true);
 
 export const ProjectPopup = ({
 	companySlug,

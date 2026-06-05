@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectPopup } from '../../ProjectItemGrid/ProjectPopup/ProjectPopup';
+import { ProjectPopup } from './ProjectPopup/ProjectPopup';
 import './ProductImageWithPopup.scss';
 
 type ProductImageWithPopupProps = {

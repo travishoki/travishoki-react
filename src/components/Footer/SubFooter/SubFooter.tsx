@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { BluehostAffiliate } from '../BluehostAffiliate/BluehostAffiliate';
+import { BluehostAffiliate } from './BluehostAffiliate/BluehostAffiliate';
 import { SocialIcons } from '../../SocialIcons/SocialIcons';
 
 import './SubFooter.scss';

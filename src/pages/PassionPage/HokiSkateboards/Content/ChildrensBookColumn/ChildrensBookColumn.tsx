@@ -4,8 +4,8 @@ import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalog
 import { SoftwareKey } from '~const/Software.const';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
 
-import { PassionLabel } from '../PassionLabel/PassionLabel';
-import { Title } from '../Title/Title';
+import { PassionLabel } from '../../PassionLabel/PassionLabel';
+import { Title } from '../../Title/Title';
 
 const appSoftwareList: SoftwareKey[] = [
 	'ILLUSTRATOR',
