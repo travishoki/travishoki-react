@@ -14,7 +14,7 @@ export const Banner = () => (
 			<p className="job-title">Web Developer</p>
 			<SocialIcons />
 			<Link className="btn btn-primary btn-lg" to="/contact">
-				Contact Me
+				Contact
 			</Link>
 		</div>
 	</div>

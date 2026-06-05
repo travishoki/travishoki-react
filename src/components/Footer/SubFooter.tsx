@@ -11,7 +11,7 @@ export const SubFooter = () => (
 		<div className="contact-info m-2">
 			<SocialIcons />
 			<NavLink className="active contact-link ms-3" to="/contact">
-				Contact Me
+				Contact
 			</NavLink>
 		</div>
 		<BluehostAffiliate />
