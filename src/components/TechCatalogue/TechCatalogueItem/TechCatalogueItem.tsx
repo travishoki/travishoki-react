@@ -16,7 +16,7 @@ export const TechCatalogueItem = ({
 	label,
 }: TechCatalogueItemProps) => (
 	<li className={itemClassName}>
-		<div className="tech-catalogue-item">
+		<div className="tech-catalogue-item" data-tooltip={label}>
 			<img alt={label} className={iconClass} src={image} />
 			{expanded && <p>{label}</p>}
 		</div>
