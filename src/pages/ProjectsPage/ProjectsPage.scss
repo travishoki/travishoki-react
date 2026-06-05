@@ -2,20 +2,14 @@
 
 #container.projects {
 	.projects-container {
+		max-width: 800px;
+
 		@include phone-down {
 			margin: 0 10px;
 		}
 
 		@include tablet-up {
 			margin: 0 auto;
-		}
-
-		&.grid {
-			max-width: 800px;
-		}
-
-		&.list {
-			max-width: 600px;
 		}
 	}
 }
