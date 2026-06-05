@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
+import { makeArray } from '~helpers/arrays';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectInfoSection.scss';
@@ -22,10 +23,6 @@ export const ProjectInfoSection = ({
 	learned,
 	techs,
 }: ProjectInfoSectionProps) => {
-	const descriptionArray = Array.isArray(description)
-		? description
-		: [description];
-
 	return (
 		<div className="col-sm-6">
 			<img className="logo center" src={logos(`./${companySlug}.jpg`)} />
@@ -43,7 +40,10 @@ export const ProjectInfoSection = ({
 				<>
 					<p className="label">Description:</p>
 					<div className="answer-section">
-						<TextWithReadMore initiallyExpanded paragraphs={descriptionArray} />
+						<TextWithReadMore
+							initiallyExpanded
+							paragraphs={makeArray(description)}
+						/>
 					</div>
 				</>
 			)}
@@ -54,7 +54,10 @@ export const ProjectInfoSection = ({
 				<>
 					<p className="label">What I Learned:</p>
 					<div className="answer-section">
-						<p className="indent">{learned}</p>
+						<TextWithReadMore
+							initiallyExpanded
+							paragraphs={makeArray(learned)}
+						/>
 					</div>
 				</>
 			)}

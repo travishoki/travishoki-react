@@ -7,7 +7,7 @@ export type ProjectType = {
 	date?: string;
 	description: string | string[];
 	itemKey: string;
-	learned: string;
+	learned: string | string[];
 	live?: boolean;
 	subtitle?: string;
 	techs: TechKey[];
