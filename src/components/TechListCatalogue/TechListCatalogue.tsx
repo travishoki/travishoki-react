@@ -1,9 +1,7 @@
 import React from 'react';
 
-import {
-	TechCatalogue,
-	TechCatalogueItemData,
-} from '~components/TechCatalogue/TechCatalogue';
+import { TechCatalogue } from '~components/TechCatalogue/TechCatalogue';
+import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
 import { TECH, TechKey } from '~const/Tech.const';
 
 type TechListProps = {

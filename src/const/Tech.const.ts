@@ -1,4 +1,4 @@
-import { TechType } from '~components/TechCatalogue/TechCatalogue';
+import { TechType } from '~components/TechCatalogue/TechCatalogue.types';
 import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
 import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
 import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';

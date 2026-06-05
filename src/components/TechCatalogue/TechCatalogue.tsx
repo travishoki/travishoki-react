@@ -6,46 +6,18 @@ import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatal
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
 import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
+import { TYPE_SECTIONS } from './TechCatalogue.const';
+import { TechCatalogueItemData } from './TechCatalogue.types';
 import { groupTechByType } from './TechCatalogue.utils';
 import './TechCatalogue.scss';
 
-export type TechType =
-	| 'frontend'
-	| 'backend'
-	| 'cms'
-	| 'tool'
-	| 'integrations'
-	| 'legacy'
-	| 'design'
-	| 'illustration'
-	| 'video';
-
-export type TechCatalogueItemData = {
-	image: string;
-	label: string;
-	to?: string;
-	type?: TechType;
-};
-
-type TechCatalogueProps = {
+export type TechCatalogueProps = {
 	circle?: boolean;
 	header: string;
 	initialExpanded?: boolean;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
 };
-
-const TYPE_SECTIONS: { label: string; type: TechType }[] = [
-	{ label: 'Frontend', type: 'frontend' },
-	{ label: 'Backend', type: 'backend' },
-	{ label: 'Content Management System', type: 'cms' },
-	{ label: 'Tools', type: 'tool' },
-	{ label: 'Integrations', type: 'integrations' },
-	{ label: 'Legacy Tech', type: 'legacy' },
-	{ label: 'Design', type: 'design' },
-	{ label: 'Illustration', type: 'illustration' },
-	{ label: 'Video', type: 'video' },
-];
 
 export const TechCatalogue = ({
 	circle = false,
