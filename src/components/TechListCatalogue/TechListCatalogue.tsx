@@ -19,7 +19,6 @@ export const TechListCatalogue = ({
 }: TechListProps) => {
 	const items: TechCatalogueItemData[] = list.map((tech) => ({
 		...TECH[tech],
-		to: `/projects/${tech}`,
 	}));
 
 	return (

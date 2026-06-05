@@ -12,6 +12,5 @@ export type TechType =
 export type TechCatalogueItemData = {
 	image: string;
 	label: string;
-	to?: string;
 	type?: TechType;
 };

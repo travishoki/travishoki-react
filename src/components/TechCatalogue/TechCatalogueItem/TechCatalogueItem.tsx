@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import { TechCatalogueItemData } from '../TechCatalogue.types';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
@@ -16,19 +14,11 @@ export const TechCatalogueItem = ({
 	image,
 	itemClassName,
 	label,
-	to,
 }: TechCatalogueItemProps) => (
 	<li className={itemClassName}>
-		{to ? (
-			<Link title={label} to={to}>
-				<img alt={label} className={iconClass} src={image} />
-				{expanded && <p>{label}</p>}
-			</Link>
-		) : (
-			<div className="tech-catalogue-item">
-				<img alt={label} className={iconClass} src={image} />
-				{expanded && <p>{label}</p>}
-			</div>
-		)}
+		<div className="tech-catalogue-item">
+			<img alt={label} className={iconClass} src={image} />
+			{expanded && <p>{label}</p>}
+		</div>
 	</li>
 );
