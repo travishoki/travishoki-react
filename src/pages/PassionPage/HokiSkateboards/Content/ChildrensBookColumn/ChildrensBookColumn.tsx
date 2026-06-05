@@ -26,7 +26,7 @@ export const ChildrensBookColumn = () => (
 			<Title title="Children's Book" />
 			<img
 				alt="You Should Always Skateboard"
-				className="center product-image"
+				className="center project-image"
 				src={ImgYouShouldAlwaysSkateboard}
 			/>
 			<p className="button-link">View on Amazon</p>

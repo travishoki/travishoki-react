@@ -11,7 +11,7 @@ export const ProjectBlurb = ({
 	const desc = getFirstParagraph(description);
 
 	return (
-		<div className="product-blurb">
+		<div className="project-blurb">
 			<p className="company">{company}</p>
 			<p className="subtitle">{subtitle}</p>
 			<p className="description truncate">{desc}</p>

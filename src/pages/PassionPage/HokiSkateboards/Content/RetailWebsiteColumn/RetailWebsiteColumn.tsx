@@ -35,7 +35,7 @@ export const RetailWebsiteColumn = () => (
 			<Title title="Retail Website" />
 			<img
 				alt="Hoki Skateboards"
-				className="center product-image"
+				className="center project-image"
 				src={ImgHokiSkateboardsWebsite}
 			/>
 			<p className="button-link">Go to Site</p>

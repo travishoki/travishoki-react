@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ProjectType } from '../ProjectsPage.data';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
-import { ProjectImageWithPopup } from '../ProductImageWithPopup/ProjectImageWithPopup';
+import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 import './ProjectItemLine.scss';
 
 export const ProjectItemLine = ({
