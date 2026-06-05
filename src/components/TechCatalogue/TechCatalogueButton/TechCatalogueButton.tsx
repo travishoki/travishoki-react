@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './TechCatalogueButton.scss';
+
 type TechCatalogueButtonProps = {
 	expanded: boolean;
 	onClick: () => void;
@@ -10,6 +12,7 @@ export const TechCatalogueButton = ({
 	onClick,
 }: TechCatalogueButtonProps) => (
 	<button className="btn btn-primary tech-catalogue-button" onClick={onClick}>
-		<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
+		<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />{' '}
+		{expanded ? 'Close' : 'Open'}
 	</button>
 );
