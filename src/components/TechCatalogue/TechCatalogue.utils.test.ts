@@ -1,7 +1,7 @@
 /* global describe, it */
 import expect from 'expect';
 
-import { TechCatalogueItemData } from './TechCatalogue';
+import { TechCatalogueItemData } from './TechCatalogue.types';
 import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './TechCatalogue.utils';
 
 describe('groupTechByType', () => {

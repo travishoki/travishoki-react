@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { TechCatalogueItemData } from '../TechCatalogue';
+import { TechCatalogueItemData } from '../TechCatalogue.types';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
 type TechCatalogueSectionGroupProps = {

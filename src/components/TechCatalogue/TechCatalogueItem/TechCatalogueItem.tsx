@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { TechCatalogueItemData } from '../TechCatalogue';
+import { TechCatalogueItemData } from '../TechCatalogue.types';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;

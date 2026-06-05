@@ -1,4 +1,4 @@
-import { TechCatalogueItemData, TechType } from './TechCatalogue';
+import { TechCatalogueItemData, TechType } from './TechCatalogue.types';
 
 export const EMPTY_GROUP_BY_TYPE: Record<TechType, TechCatalogueItemData[]> = {
 	backend: [],

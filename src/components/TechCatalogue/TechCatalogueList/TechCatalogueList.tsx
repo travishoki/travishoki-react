@@ -3,7 +3,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { TechCatalogueItem } from '../TechCatalogueItem/TechCatalogueItem';
-import { TechCatalogueItemData } from '../TechCatalogue';
+import { TechCatalogueItemData } from '../TechCatalogue.types';
 
 type TechCatalogueListProps = {
 	expanded: boolean;
