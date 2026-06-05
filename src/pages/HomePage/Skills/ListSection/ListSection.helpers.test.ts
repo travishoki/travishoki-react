@@ -1,7 +1,7 @@
 /* global describe, it */
 import expect from 'expect';
 
-import { splitListInHalf } from './ListSection.utils';
+import { splitListInHalf } from './ListSection.helpers';
 
 describe('splitListInHalf', () => {
 	it('Should return a list split in two', () => {

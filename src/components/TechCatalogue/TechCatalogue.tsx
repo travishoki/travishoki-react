@@ -8,7 +8,7 @@ import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TYPE_SECTIONS } from './TechCatalogue.const';
 import { TechCatalogueItemData } from './TechCatalogue.types';
-import { groupTechByType } from './TechCatalogue.utils';
+import { groupTechByType } from './TechCatalogue.helpers';
 import './TechCatalogue.scss';
 
 export type TechCatalogueProps = {

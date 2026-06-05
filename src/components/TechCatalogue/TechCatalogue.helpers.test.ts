@@ -2,7 +2,7 @@
 import expect from 'expect';
 
 import { TechCatalogueItemData } from './TechCatalogue.types';
-import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './TechCatalogue.utils';
+import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './TechCatalogue.helpers';
 
 describe('groupTechByType', () => {
 	it('Should group items by their type', () => {

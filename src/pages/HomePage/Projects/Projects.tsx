@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { orderTopThreeInPodium } from './Projects.utils';
+import { orderTopThreeInPodium } from './Projects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 import './Projects.scss';
 

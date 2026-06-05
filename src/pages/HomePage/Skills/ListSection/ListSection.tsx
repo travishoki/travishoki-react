@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { splitListInHalf } from './ListSection.utils';
+import { splitListInHalf } from './ListSection.helpers';
 
 import './ListSection.scss';
 
