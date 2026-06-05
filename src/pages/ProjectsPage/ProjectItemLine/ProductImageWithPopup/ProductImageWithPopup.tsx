@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectPopup } from './ProjectPopup/ProjectPopup';
+import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 import './ProductImageWithPopup.scss';
 
 type ProductImageWithPopupProps = {
@@ -17,7 +17,7 @@ export const ProductImageWithPopup = ({
 	projectLink,
 }: ProductImageWithPopupProps) => (
 	<>
-		<ProjectPopup
+		<ProjectImageOverlay
 			companySlug={companySlug}
 			itemKey={itemKey}
 			projectLink={projectLink}

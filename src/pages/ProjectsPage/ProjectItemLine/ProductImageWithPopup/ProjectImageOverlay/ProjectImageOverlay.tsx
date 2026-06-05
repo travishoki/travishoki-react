@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { ProjectLink } from './ProjectLink/ProjectLink';
-import './ProjectPopup.scss';
+import './ProjectImageOverlay.scss';
 
-type ProjectPopupProps = {
+type ProjectImageOverlayProps = {
 	companySlug: string;
 	itemKey: string;
 	projectLink: string;
@@ -12,11 +12,11 @@ type ProjectPopupProps = {
 
 const logos = require.context('../../../../../images/clients', true);
 
-export const ProjectPopup = ({
+export const ProjectImageOverlay = ({
 	companySlug,
 	itemKey,
 	projectLink,
-}: ProjectPopupProps) => (
+}: ProjectImageOverlayProps) => (
 	<div className="popup">
 		<Link to={`${projectLink}/${itemKey}`}>
 			<div className="popup-inner">
