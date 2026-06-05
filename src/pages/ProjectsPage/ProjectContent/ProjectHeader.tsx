@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ProjectHeader.scss';
+
 type ProjectHeaderProps = {
 	company: string;
 	subtitle: string;
