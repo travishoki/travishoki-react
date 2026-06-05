@@ -4,5 +4,19 @@
       "/Users/travishoki/Sites/travishoki-react"
     ],
     "defaultMode": "acceptEdits"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/travishoki/Sites/travishoki-react && export NVM_DIR=\"$HOME/.nvm\" && . \"$NVM_DIR/nvm.sh\" && nvm use 22 --silent && jq -r '.tool_input.file_path // empty' | { read -r f; [ -n \"$f\" ] && node_modules/.bin/prettier --write \"$f\"; } 2>/dev/null || true",
+            "statusMessage": "Running Prettier..."
+          }
+        ]
+      }
+    ]
   }
 }
