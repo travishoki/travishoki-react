@@ -3,7 +3,6 @@ import React from 'react';
 import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { SearchForm } from './SearchForm/SearchForm';
-import { ViewControl } from './ViewControl/ViewControl';
 import { Filter } from './Filter/Filter';
 import { useFinderHandlers } from './hooks/useFinderHandlers';
 import './Finder.scss';
@@ -12,14 +11,12 @@ export const Finder = ({
 	filter,
 	filterList,
 	filterTerm,
-	grid,
 	onClearFilter,
 	onClearSearchTerm,
 	projectsLength,
 	searchTerm,
 	setFilter,
 	setFilterTerm,
-	setGrid,
 	setSearchTerm,
 }: FinderProps) => {
 	const {
@@ -37,10 +34,6 @@ export const Finder = ({
 		setFilterTerm,
 		setSearchTerm,
 	});
-
-	const toggleView = () => {
-		setGrid(!grid);
-	};
 
 	const showResultsCount = (filter || searchTerm) && projectsLength > 0;
 
@@ -72,12 +65,6 @@ export const Finder = ({
 			{showResultsCount && (
 				<p className="results-count">Results: {projectsLength}</p>
 			)}
-
-			<ViewControl
-				grid={grid}
-				isVisible={projectsLength > 0}
-				toggleView={toggleView}
-			/>
 		</div>
 	);
 };
@@ -86,13 +73,11 @@ type FinderProps = {
 	filter: TechFilterType;
 	filterList: TechKey[];
 	filterTerm: TechFilterType;
-	grid: boolean;
 	onClearFilter: () => void;
 	onClearSearchTerm: () => void;
 	projectsLength: number;
 	searchTerm: string;
 	setFilter: (filter: TechFilterType) => void;
 	setFilterTerm: (filterTerm: TechFilterType) => void;
-	setGrid: (grid: boolean) => void;
 	setSearchTerm: (searchTerm: string) => void;
 };

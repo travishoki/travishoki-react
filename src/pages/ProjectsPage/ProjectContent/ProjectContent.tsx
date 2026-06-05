@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { ProjectInfoSection } from '../ProjectContent/ProjectInfoSection/ProjectInfoSection';
 import { ProjectType } from '../ProjectsPage.data';
-import './ProjectItemList.scss';
+import { ProjectHeader } from './ProjectHeader';
+import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
+import { ViewLiveSite } from './ViewLiveSite';
+import './ProjectContent.scss';
 
 const images = require.context('../../../images/websites', true);
 
-export const ProjectItemList = ({
+export const ProjectContent = ({
 	company,
 	companySlug,
 	contributions,
@@ -18,12 +20,9 @@ export const ProjectItemList = ({
 	subtitle,
 	techs,
 	url,
-}: ProjectItemListProps) => (
-	<div className="list-item">
-		<div className="project-heading mb-3">
-			<h2>{company}</h2>
-			<h3>{subtitle}</h3>
-		</div>
+}: ProjectContentProps) => (
+	<div className="project-content">
+		<ProjectHeader company={company} subtitle={subtitle} />
 
 		<div className="row">
 			<div className="col-sm-6">
@@ -39,17 +38,8 @@ export const ProjectItemList = ({
 			/>
 		</div>
 
-		{live && (
-			<a
-				className="btn btn-primary btn-lg"
-				href={url}
-				rel="noreferrer"
-				target="_blank"
-			>
-				View Live Site
-			</a>
-		)}
+		{live && <ViewLiveSite url={url} />}
 	</div>
 );
 
-type ProjectItemListProps = ProjectType;
+type ProjectContentProps = ProjectType;

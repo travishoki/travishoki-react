@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { getResultsCountClass } from './Projects.helpers';
-import { ProjectItemList } from '../ProjectItemList/ProjectItemList';
+import { ProjectContent } from '../ProjectContent/ProjectContent';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectType } from '../ProjectsPage.data';
 import './Projects.scss';
@@ -22,7 +22,7 @@ export const Projects = ({
 					{grid ? (
 						<ProjectItemGrid projectLink={projectLink} {...project} />
 					) : (
-						<ProjectItemList {...project} />
+						<ProjectContent {...project} />
 					)}
 				</li>
 			))}

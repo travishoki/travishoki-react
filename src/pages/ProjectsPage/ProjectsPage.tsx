@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 import { FILTER_LIST } from './ProjectsPage.data';
 import { Finder } from './Finder/Finder';
+import { ViewControl } from './Finder/ViewControl/ViewControl';
 import { Projects } from './Projects/Projects';
 import { NoResults } from './NoResults/NoResults';
 import { useProjectFiltering } from './hooks/useProjectFiltering';
@@ -39,16 +40,21 @@ export const ProjectsPage = () => {
 					filter={filter}
 					filterList={FILTER_LIST}
 					filterTerm={filterTerm}
-					grid={grid}
 					onClearFilter={onClearFilter}
 					onClearSearchTerm={onClearSearchTerm}
 					projectsLength={projects.length}
 					searchTerm={searchTerm}
 					setFilter={setFilter}
 					setFilterTerm={setFilterTerm}
-					setGrid={setGrid}
 					setSearchTerm={setSearchTerm}
 				/>
+
+				<ViewControl
+					grid={grid}
+					isVisible={projects.length > 0}
+					toggleView={() => setGrid(!grid)}
+				/>
+
 				<Projects grid={grid} projectLink={projectLink} projects={projects} />
 
 				<NoResults
