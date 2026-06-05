@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ProjectType } from '../ProjectsPage.data';
-import { ProductImageWithPopup } from '../ProductImageWithPopup/ProductImageWithPopup';
+import { ProjectImageWithPopup } from '../ProductImageWithPopup/ProjectImageWithPopup';
 import './ProjectItemGrid.scss';
 
 export const ProjectItemGrid = ({
@@ -10,7 +10,7 @@ export const ProjectItemGrid = ({
 	projectLink,
 }: ProjectItemGridProps) => (
 	<div className="grid-item">
-		<ProductImageWithPopup
+		<ProjectImageWithPopup
 			companySlug={companySlug}
 			itemKey={itemKey}
 			projectLink={projectLink}

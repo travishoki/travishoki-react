@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
-import './ProductImageWithPopup.scss';
+import './ProjectImageWithPopup.scss';
 
-type ProductImageWithPopupProps = {
+type ProjectImageWithPopupProps = {
 	companySlug: string;
 	itemKey: string;
 	projectLink: string;
@@ -11,11 +11,11 @@ type ProductImageWithPopupProps = {
 
 const images = require.context('../../../images/websites', true);
 
-export const ProductImageWithPopup = ({
+export const ProjectImageWithPopup = ({
 	companySlug,
 	itemKey,
 	projectLink,
-}: ProductImageWithPopupProps) => (
+}: ProjectImageWithPopupProps) => (
 	<div className="project-image-with-popup">
 		<ProjectImageOverlay
 			companySlug={companySlug}

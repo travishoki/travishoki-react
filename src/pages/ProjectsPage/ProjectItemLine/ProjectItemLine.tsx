@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { ProjectType } from '../ProjectsPage.data';
-import { ProductImageWithPopup } from '../ProductImageWithPopup/ProductImageWithPopup';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
+import { ProjectImageWithPopup } from '../ProductImageWithPopup/ProjectImageWithPopup';
 import './ProjectItemLine.scss';
 
 export const ProjectItemLine = ({
@@ -15,7 +15,7 @@ export const ProjectItemLine = ({
 }: ProjectItemLineProps) => {
 	return (
 		<div className="line-item">
-			<ProductImageWithPopup
+			<ProjectImageWithPopup
 				companySlug={companySlug}
 				itemKey={itemKey}
 				projectLink={projectLink}
