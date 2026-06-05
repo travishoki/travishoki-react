@@ -37,7 +37,7 @@ export const TechCatalogue = ({
 	return (
 		<div className="tech-catalogue mb-3">
 			<TechCatalogueHeader header={header} />
-			<div className="tech-catalogue-content p-2">
+			<div className="tech-catalogue-content">
 				<div
 					className={
 						expanded ? 'tech-catalogue-vertical' : 'tech-catalogue-horizontal'

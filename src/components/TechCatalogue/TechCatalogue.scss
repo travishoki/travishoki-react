@@ -1,9 +1,12 @@
 @import '../../styles/variables.scss';
 
+$gap: 15px;
+
 .tech-catalogue {
 	.tech-catalogue-content {
 		border: solid 1px $primary;
 		border-top: none;
+		padding: $gap;
 	}
 }
 
@@ -47,39 +50,45 @@
 	width: 100%;
 }
 
-.tech-catalogue-vertical ul {
-	$iconW: 40px;
-	display: block;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.tech-catalogue-vertical {
+	.tech-catalogue-section-group:not(:last-child) {
+		margin-bottom: $gap;
+	}
 
-	li {
-		margin-bottom: 10px;
+	ul {
+		$iconW: 40px;
+		display: block;
+		list-style: none;
+		margin: 10px 0 0 0;
+		padding: 0;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
+		li {
+			margin-bottom: 10px;
 
-		a,
-		.tech-catalogue-item {
-			align-items: center;
-			display: flex;
-		}
+			&:last-child {
+				margin-bottom: 0;
+			}
 
-		.tech-catalogue-icon {
-			margin-right: 10px;
-		}
+			a,
+			.tech-catalogue-item {
+				align-items: center;
+				display: flex;
+			}
 
-		a {
-			text-decoration: none;
-		}
+			.tech-catalogue-icon {
+				margin-right: 10px;
+			}
 
-		p {
-			font-size: 14px;
-			line-height: $iconW;
-			line-height: 18px;
-			margin: 0;
+			a {
+				text-decoration: none;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: $iconW;
+				line-height: 18px;
+				margin: 0;
+			}
 		}
 	}
 }
