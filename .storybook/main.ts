@@ -25,6 +25,7 @@ const config: StorybookConfig = {
           '~actions': path.resolve(root, 'src/redux/actions'),
           '~components': path.resolve(root, 'src/components'),
           '~const': path.resolve(root, 'src/const'),
+          '~helpers': path.resolve(root, 'src/helpers'),
           '~images': path.resolve(root, 'src/images'),
           '~reducers': path.resolve(root, 'src/redux/reducers'),
           '~svg': path.resolve(root, 'src/svg'),

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { getLabelByKey } from '~helpers/getLabelByKey';
 import './NoResults.scss';
 
 export const NoResults = ({
@@ -11,6 +12,8 @@ export const NoResults = ({
 }: NoResultsProps) => {
 	if (!isVisible) return null;
 
+	const filterLabel = filter ? getLabelByKey(filter) : null;
+
 	return (
 		<div className="no-results">
 			<h2>No results</h2>
@@ -18,7 +21,7 @@ export const NoResults = ({
 
 			{filter && (
 				<p onClick={onClearFilter}>
-					Filter: {filter} <i className="fa fa-close" />
+					Filter: {filterLabel} <i className="fa fa-close" />
 				</p>
 			)}
 
