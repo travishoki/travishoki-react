@@ -4,6 +4,7 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectInfoSection.scss';
+import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 
 const logos = require.context('../../../../images/clients', true);
 
@@ -41,11 +42,7 @@ export const ProjectInfoSection = ({
 				<>
 					<p className="label">Description:</p>
 					<div className="answer-section">
-						{descriptionArray.map((paragraph, index) => (
-							<p key={index} className="indent">
-								{paragraph}
-							</p>
-						))}
+						<TextWithReadMore initiallyExpanded paragraphs={descriptionArray} />
 					</div>
 				</>
 			)}

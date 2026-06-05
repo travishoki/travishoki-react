@@ -3,11 +3,15 @@ import React, { useState } from 'react';
 import './TextWithReadMore.scss';
 
 type TextWithReadMoreProps = {
+	initiallyExpanded?: boolean;
 	paragraphs: string[];
 };
 
-export const TextWithReadMore = ({ paragraphs }: TextWithReadMoreProps) => {
-	const [expanded, setExpanded] = useState(false);
+export const TextWithReadMore = ({
+	initiallyExpanded = false,
+	paragraphs,
+}: TextWithReadMoreProps) => {
+	const [expanded, setExpanded] = useState(initiallyExpanded);
 
 	const hasMore = paragraphs.length > 1;
 	const onToggle = () => setExpanded(!expanded);
