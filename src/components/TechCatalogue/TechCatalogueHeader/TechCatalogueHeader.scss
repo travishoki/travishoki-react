@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.tech-catalogue-header {
+	background: $primary;
+	border: solid 1px $primary;
+
+	p {
+		color: $white;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
+		text-align: left;
+	}
+}

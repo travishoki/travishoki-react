@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './TechCatalogueItem.scss';
+
 import { TechCatalogueItemData } from '../TechCatalogue.types';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
