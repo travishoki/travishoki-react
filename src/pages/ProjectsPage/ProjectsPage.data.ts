@@ -70,7 +70,12 @@ const PROJECTS: ProjectInput[] = [
 			'UI/UX Design',
 			'Character illustrations',
 		],
-		desc: '',
+		description: [
+			"Hoki Skateboards is my passion project. I'm teaching myself React Native through this project.",
+			"My first 2 years of college was in the Gaming and Animation program, this projects has been super fun being able to flex and build upon those skills. I illustrated all of the graphics myself. This is the perfect application to advertise both the products that I sell, and the kid's book that I created.",
+			"I've really enjoyed learning Firebase. The document database is just what I needed for this project.",
+			"It's so exciting to see this app come together! I'm really proud of it!",
+		],
 		learned: '',
 		subtitle: 'React Native Game',
 		techs: [
@@ -92,7 +97,8 @@ const PROJECTS: ProjectInput[] = [
 			'Tie into existing APIs to create a new book.',
 			'Create reusable UI components',
 		],
-		desc: 'Revamp existing create book page with new UI written in ReactJs',
+		description:
+			'Revamp existing create book page with new UI written in ReactJs',
 		learned: '',
 		live: true,
 		subtitle: 'Book Creation',
@@ -105,7 +111,8 @@ const PROJECTS: ProjectInput[] = [
 			'Create Branch links for redirecting to IOS or android apps.',
 			'Create screen for selecting the data source as well as a screen platform specific pages info.',
 		],
-		desc: "Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
+		description:
+			"Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
 		learned: '',
 		subtitle: 'Cards Quick Flow Sources',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
@@ -113,7 +120,8 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Chatbooks.com',
 		contributions: 'Tie into existing APIs to allow for layflat.',
-		desc: 'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
+		description:
+			'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		learned: '',
 		live: true,
 		subtitle: 'Premium Layflat',
@@ -127,7 +135,8 @@ const PROJECTS: ProjectInput[] = [
 			'Work closely with designers and marketing',
 			'Integrating with new APIs',
 		],
-		desc: 'Creating cards taxonomy pages with categories and search filters.',
+		description:
+			'Creating cards taxonomy pages with categories and search filters.',
 		learned: '',
 		subtitle: 'Cards Taxonomy Pages',
 		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
@@ -137,7 +146,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
 		],
-		desc: 'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
+		description:
+			'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
 		learned: '',
 		subtitle: 'AMP Featured Product',
 		techs: [HTML, JAVASCRIPT, AMP, WEBPACK, LESS_CSS],
@@ -148,7 +158,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
 		],
-		desc: 'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
+		description:
+			'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
 		learned: 'I got a deeper understanding of the Redux flow.',
 		subtitle: 'Admin Portal',
 		techs: [
@@ -168,7 +179,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
 		],
-		desc: 'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
+		description:
+			'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
 		learned: '',
 		subtitle: 'Hackathon 2017',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, REACT_JS, REDUX, JQUERY, WEBPACK],
@@ -177,7 +189,7 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Overstock.com',
 		contributions: 'Coordinate deployments with multiple departments.',
-		desc: 'Reward users for leaving a qualifying review.',
+		description: 'Reward users for leaving a qualifying review.',
 		learned: '',
 		subtitle: 'Rewards for Reviews',
 		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
@@ -188,7 +200,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'I implemented an AB test that resulted in lift during a 2 week period.',
 		],
-		desc: 'Site that resizes down to mobile devices',
+		description: 'Site that resizes down to mobile devices',
 		learned:
 			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
 		live: true,
@@ -201,7 +213,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Componentize the Add To Cart functionality into a react module.',
 		],
-		desc: 'On mobile devices, an add to cart popup.',
+		description: 'On mobile devices, an add to cart popup.',
 		learned: 'This was my first production level ReactJs work.',
 		live: true,
 		subtitle: 'See All Reviews Page Mobile Add To Cart',
@@ -211,7 +223,7 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Overstock.com',
 		contributions: 'Coordinate deployments with multiple departments.',
-		desc: 'Allowing a user to leave rating only reviews.',
+		description: 'Allowing a user to leave rating only reviews.',
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
 		live: true,
@@ -224,7 +236,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			"I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense. This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
-		desc: 'Rating reviews stars',
+		description: 'Rating reviews stars',
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
 		live: true,
@@ -235,7 +247,7 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Overstock.com',
 		contributions: 'Took the basic wordpress plugin and rearchitected it.',
-		desc: 'Embeddable affiliate links',
+		description: 'Embeddable affiliate links',
 		learned: '',
 		live: true,
 		subtitle: 'Affiliate Links',
@@ -245,7 +257,8 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'LindseyHoki.com',
 		contributions: ['Wordpress customization', 'Design and branding'],
-		desc: "Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
+		description:
+			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -259,7 +272,8 @@ const PROJECTS: ProjectInput[] = [
 			'Design and branding',
 			'Woocommerce integration',
 		],
-		desc: 'Passion project skateboard company I am building and branding.',
+		description:
+			'Passion project skateboard company I am building and branding.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -269,7 +283,8 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Truly Lindsey Photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
-		desc: "Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
+		description:
+			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
 		subtitle: '',
 		techs: [WORDPRESS, HTML, CSS],
@@ -282,7 +297,8 @@ const PROJECTS: ProjectInput[] = [
 			'Django and python',
 			'Restful API calls.',
 		],
-		desc: 'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
+		description:
+			'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
 		learned:
 			'At Room Choice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
 		live: true,
@@ -305,7 +321,8 @@ const PROJECTS: ProjectInput[] = [
 			'Optimize page for all browsers including IE 6',
 			'Connected the page to a custom contact form',
 		],
-		desc: 'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
+		description:
+			'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -318,7 +335,8 @@ const PROJECTS: ProjectInput[] = [
 			'WP Advanced Custom Fields.',
 			"Custom design with ther owner's feedback.",
 		],
-		desc: 'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
+		description:
+			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -328,7 +346,7 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Wedding Website',
 		contributions: 'Site design and development',
-		desc: 'This is the wedding website that I made for my wedding.',
+		description: 'This is the wedding website that I made for my wedding.',
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
 		live: true,
@@ -344,7 +362,8 @@ const PROJECTS: ProjectInput[] = [
 			'Created a logo and branding',
 			'Embedded testamonials from his clients.',
 		],
-		desc: 'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
+		description:
+			'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
 		learned:
 			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collabrative effort to get his site put together.',
 		subtitle: 'Motivational Speaker',
@@ -357,7 +376,8 @@ const PROJECTS: ProjectInput[] = [
 			'Creation of registration form, authorize.net integration',
 			'customization of wordpress theme.',
 		],
-		desc: 'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
+		description:
+			'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -367,7 +387,7 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'New Life Recovery',
 		contributions: 'Bring the design image to life in the browser.',
-		desc: 'Build out the HTML and CSS for a new landing page.',
+		description: 'Build out the HTML and CSS for a new landing page.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -380,7 +400,8 @@ const PROJECTS: ProjectInput[] = [
 			'Front-end and Back-end',
 			'integrating courses the custom LMS.',
 		],
-		desc: 'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
+		description:
+			'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
 		learned: '',
 		subtitle: '',
 		techs: [ANGULAR_JS, PHP, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -392,7 +413,8 @@ const PROJECTS: ProjectInput[] = [
 			'All of the back-end',
 			'everything from user accounts, to film uploading, to querying from the film library.',
 		],
-		desc: 'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
+		description:
+			'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -403,7 +425,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.',
 		],
-		desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
+		description:
+			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		learned: 'This is one of my first full-stack projects.',
 		subtitle: 'LMS',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -414,7 +437,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.',
 		],
-		desc: 'We provide discounted integrated solutions to ship your products or your customers products for less money.',
+		description:
+			'We provide discounted integrated solutions to ship your products or your customers products for less money.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -426,7 +450,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.',
 		],
-		desc: 'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
+		description:
+			'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -437,7 +462,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.',
 		],
-		desc: 'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
+		description:
+			'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
@@ -448,7 +474,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. ',
 		],
-		desc: 'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
+		description:
+			'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -460,7 +487,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.',
 		],
-		desc: 'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
+		description:
+			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		learned: '',
 		live: true,
 		subtitle: 'Website',
@@ -472,7 +500,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.',
 		],
-		desc: 'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
+		description:
+			'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -484,7 +513,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Helped with the wordpress theme and structure architecture.',
 		],
-		desc: 'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
+		description:
+			'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
 		learned: '',
 		live: true,
 		subtitle: '',
@@ -496,7 +526,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Front-end construction. Creating a email form for user information requests.',
 		],
-		desc: 'Get a Free Online Report and recommended solution to your debt problem.',
+		description:
+			'Get a Free Online Report and recommended solution to your debt problem.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, LESS_CSS, HTML, JAVASCRIPT],
@@ -507,7 +538,8 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Creating a email form for user information requests. Other front-end fixes.',
 		],
-		desc: 'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
+		description:
+			'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
 		learned: '',
 		subtitle: '',
 		techs: [PHP, CSS, HTML, JAVASCRIPT],
@@ -530,7 +562,7 @@ export type ProjectType = {
 	companySlug: string;
 	contributions: string | string[];
 	date?: string;
-	desc: string;
+	description: string | string[];
 	itemKey: string;
 	learned: string;
 	live?: boolean;

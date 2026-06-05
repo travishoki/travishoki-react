@@ -9,14 +9,14 @@ const logos = require.context('../../../../images/clients', true);
 
 type ProjectInfoSectionProps = Pick<
 	ProjectType,
-	'companySlug' | 'contributions' | 'date' | 'desc' | 'learned' | 'techs'
+	'companySlug' | 'contributions' | 'date' | 'description' | 'learned' | 'techs'
 >;
 
 export const ProjectInfoSection = ({
 	companySlug,
 	contributions,
 	date,
-	desc,
+	description,
 	learned,
 	techs,
 }: ProjectInfoSectionProps) => (
@@ -32,11 +32,17 @@ export const ProjectInfoSection = ({
 			</>
 		)}
 
-		{desc && (
+		{description && (
 			<>
 				<p className="label">Description:</p>
 				<div className="answer-section">
-					<p className="indent">{desc}</p>
+					{(Array.isArray(description) ? description : [description]).map(
+						(paragraph, index) => (
+							<p key={index} className="indent">
+								{paragraph}
+							</p>
+						),
+					)}
 				</div>
 			</>
 		)}

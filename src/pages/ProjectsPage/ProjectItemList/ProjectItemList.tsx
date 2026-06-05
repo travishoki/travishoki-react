@@ -11,7 +11,7 @@ export const ProjectItemList = ({
 	companySlug,
 	contributions,
 	date,
-	desc,
+	description,
 	itemKey,
 	learned,
 	live = false,
@@ -33,7 +33,7 @@ export const ProjectItemList = ({
 				companySlug={companySlug}
 				contributions={contributions}
 				date={date}
-				desc={desc}
+				description={description}
 				learned={learned}
 				techs={techs}
 			/>

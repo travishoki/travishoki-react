@@ -29,7 +29,7 @@ export const filterProjects = (
 			const a: (keyof ProjectType)[] = [
 				'company',
 				'subtitle',
-				'desc',
+				'description',
 				'contributions',
 			];
 

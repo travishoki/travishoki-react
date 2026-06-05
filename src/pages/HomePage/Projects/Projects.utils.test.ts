@@ -31,7 +31,7 @@ const mockProjectType = (override: Partial<ProjectType>): ProjectType => ({
 	company: '',
 	companySlug: '',
 	contributions: [],
-	desc: '',
+	description: '',
 	itemKey: '',
 	learned: '',
 	live: true,
