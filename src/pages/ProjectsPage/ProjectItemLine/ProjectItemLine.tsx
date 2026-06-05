@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { firstItem } from '~helpers/arrays';
+import { getFirstParagraph } from '~helpers/arrays';
 import { ProjectType } from '../ProjectsPage.data';
 import { ProductImageWithPopup } from './ProductImageWithPopup/ProductImageWithPopup';
 import './ProjectItemLine.scss';
@@ -13,7 +13,7 @@ export const ProjectItemLine = ({
 	projectLink,
 	subtitle,
 }: ProjectItemLineProps) => {
-	const desc = firstItem(description);
+	const desc = getFirstParagraph(description);
 
 	return (
 		<div className="line-item">
