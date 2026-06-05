@@ -22,7 +22,7 @@ export const Timpanogos = () => (
 					<p className="label">Activities and Societies:</p>
 					<p className="activities">
 						Timpanogos Ballroom Team, UVU Breakdance Club, BYU Breakdance Club,
-						Timpanogos Hip-hop Club, Orem High Breakdance Club, Provo High
+						Timpanogos Hip-Hop Club, Orem High Breakdance Club, Provo High
 						Breakdance Club
 					</p>
 				</Pannel>

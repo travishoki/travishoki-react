@@ -79,7 +79,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "scream"! I love my family, even if we are all a little "Hoki"!',
+			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "screamy"! I love my family, even if we are all a little "Hoki"!',
 		],
 		imgLarge: ImgFamily,
 		imgLargeDimensions: [1463, 2048],
