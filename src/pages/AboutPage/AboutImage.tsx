@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import './AboutImage.scss';
 import { AboutType } from './AboutPage.data';
 import { DEFAULT_IMAGE_DIMENSIONS } from './AboutPage.const';
 
