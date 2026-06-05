@@ -1,0 +1,16 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/responsive.scss';
+@import '../../../../styles/variables.scss';
+
+#container.projects {
+	.project-content {
+		img {
+			&.project-img {
+				@include phone-down {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

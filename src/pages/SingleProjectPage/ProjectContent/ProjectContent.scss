@@ -15,13 +15,6 @@
 		}
 
 		img {
-			&.project-img {
-				@include phone-down {
-					display: block;
-					margin: 0 auto;
-				}
-			}
-
 			&.logo {
 				@include border-radius(50%);
 				height: 80px;

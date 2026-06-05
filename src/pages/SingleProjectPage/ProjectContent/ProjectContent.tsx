@@ -4,9 +4,8 @@ import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
+import { ProjectImage } from './ProjectImage/ProjectImage';
 import './ProjectContent.scss';
-
-const images = require.context('../../../images/websites', true);
 
 export const ProjectContent = ({
 	company,
@@ -26,7 +25,7 @@ export const ProjectContent = ({
 
 		<div className="row">
 			<div className="col-sm-6">
-				<img className="project-img" src={images(`./${itemKey}/lg.jpg`)} />
+				<ProjectImage itemKey={itemKey} />
 			</div>
 			<ProjectInfoSection
 				companySlug={companySlug}
