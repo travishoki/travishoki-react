@@ -2,7 +2,6 @@
 @import '../../../styles/variables.scss';
 
 .project-image-with-popup {
-	border: solid 1px red;
 	position: relative;
 
 	&:hover > .popup {
@@ -11,6 +10,5 @@
 
 	img.project-img {
 		display: block;
-		margin: 0 auto;
 	}
 }

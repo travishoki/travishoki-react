@@ -12,8 +12,10 @@ export const ProjectBlurb = ({
 
 	return (
 		<div className="project-blurb">
-			<p className="company">{company}</p>
-			<p className="subtitle">{subtitle}</p>
+			<div className="mb-2">
+				<p className="company">{company}</p>
+				{subtitle && <p className="subtitle">{subtitle}</p>}
+			</div>
 			<p className="description truncate">{desc}</p>
 		</div>
 	);

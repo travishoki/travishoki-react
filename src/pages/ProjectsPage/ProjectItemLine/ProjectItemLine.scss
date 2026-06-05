@@ -2,14 +2,24 @@
 @import '../../../styles/variables.scss';
 
 #container.projects {
-	.line-item {
+	.project-item-line {
 		display: flex;
 		flex-direction: row;
+		margin-bottom: 20px;
 		padding: 4px;
 		position: relative;
 
 		&:hover > .popup {
 			display: block;
+		}
+
+		.project-image-with-popup {
+			flex: 0 0 250px;
+		}
+
+		.project-img {
+			height: 250px;
+			width: 250px;
 		}
 	}
 }

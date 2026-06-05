@@ -14,7 +14,7 @@ export const ProjectItemLine = ({
 	subtitle,
 }: ProjectItemLineProps) => {
 	return (
-		<div className="line-item">
+		<div className="project-item-line">
 			<ProjectImageWithPopup
 				companySlug={companySlug}
 				itemKey={itemKey}
