@@ -2,18 +2,22 @@
 @import '../../../styles/variables.scss';
 
 #container.projects {
-	.grid-item {
-		float: left;
+	.line-item {
+		display: flex;
+		flex-direction: column;
 		padding: 4px;
 		position: relative;
 
-		img.project-img {
-			display: block;
-			margin: 0 auto;
+		.project-img {
+			width: 250px;
 		}
 
 		&:hover > .popup {
 			display: block;
+		}
+
+		.product-blurb {
+			padding: 10px;
 		}
 	}
 }

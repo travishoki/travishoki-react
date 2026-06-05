@@ -1,11 +1,8 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
 import { ProjectType } from '../ProjectsPage.data';
+import { ProductImageWithPopup } from '../ProjectItemLine/ProductImageWithPopup';
 import './ProjectItemGrid.scss';
-
-const images = require.context('../../../images/websites', true);
-const logos = require.context('../../../images/clients', true);
 
 export const ProjectItemGrid = ({
 	companySlug,
@@ -13,19 +10,11 @@ export const ProjectItemGrid = ({
 	projectLink,
 }: ProjectItemGridProps) => (
 	<div className="grid-item">
-		<div className="popup">
-			<Link to={`${projectLink}/${itemKey}`}>
-				<div className="popup-inner">
-					<div className="popup-cont">
-						<img src={logos(`./${companySlug}.jpg`)} />
-						<p className="project-link">View</p>
-					</div>
-					<div className="popup-overlay" />
-				</div>
-			</Link>
-		</div>
-
-		<img className="project-img" src={images(`./${itemKey}/sm.jpg`)} />
+		<ProductImageWithPopup
+			companySlug={companySlug}
+			itemKey={itemKey}
+			projectLink={projectLink}
+		/>{' '}
 	</div>
 );
 
