@@ -23,7 +23,6 @@ import {
 	REDUX,
 	SCSS,
 	SQL,
-	TechKey,
 	WEBPACK,
 	WOO_COMMERCE,
 	WORDPRESS,
@@ -41,6 +40,7 @@ const PROJECTS: ProjectInput[] = [
 			"It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like.",
 			"It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
 			'This is a website that catalogues his "Safe Foods", foods that he will reliably eat. That makes it easier for him to visually see a menu of the foods he likes, making the decision process',
+			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
 		learned: '',
 		techs: [
