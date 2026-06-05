@@ -283,7 +283,7 @@ const PROJECTS: ProjectInput[] = [
 			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
 		live: true,
-		subtitle: '',
+		subtitle: 'Photography Website',
 		techs: [WORDPRESS, HTML, CSS],
 		url: 'http://www.lindseyhoki.com/',
 	},
@@ -298,7 +298,6 @@ const PROJECTS: ProjectInput[] = [
 			'Passion project skateboard company I am building and branding.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [WORDPRESS, WOO_COMMERCE, PHP, JQUERY, HTML, CSS, REACT_JS],
 		url: 'http://www.hokiskateboards.com/',
 	},
@@ -308,7 +307,7 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
-		subtitle: '',
+		subtitle: 'Photography Website',
 		techs: [WORDPRESS, HTML, CSS],
 		url: 'http://www.trulylindseyphotography.com/',
 	},
@@ -324,7 +323,7 @@ const PROJECTS: ProjectInput[] = [
 		learned:
 			'At Room Choice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
 		live: true,
-		subtitle: '',
+		subtitle: 'Student Housing Software',
 		techs: [
 			PYTHON,
 			DJANGO,
@@ -346,7 +345,7 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
 		learned: '',
-		subtitle: '',
+		subtitle: 'Financial Planning',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.rookecapital.com/',
 	},
@@ -361,7 +360,7 @@ const PROJECTS: ProjectInput[] = [
 			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
 		learned: '',
 		live: true,
-		subtitle: '',
+		subtitle: 'Janitorial Services',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, HTML, CSS],
 		url: 'http://www.rgdjanitorial.com/',
 	},
@@ -372,7 +371,6 @@ const PROJECTS: ProjectInput[] = [
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
 		live: true,
-		subtitle: '',
 		techs: [ANGULAR_JS, JAVASCRIPT, HTML, SCSS],
 		url: 'http://www.wedding.hokihappenings.com/',
 	},
@@ -402,7 +400,6 @@ const PROJECTS: ProjectInput[] = [
 			'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
 		url: 'http://www.saintsandsinnershalf.com/',
 	},
@@ -411,7 +408,6 @@ const PROJECTS: ProjectInput[] = [
 		contributions: 'Bring the design image to life in the browser.',
 		description: 'Build out the HTML and CSS for a new landing page.',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.newlife-recovery.org/',
 	},
@@ -425,7 +421,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
 		learned: '',
-		subtitle: '',
 		techs: [ANGULAR_JS, PHP, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.cmeducation.org/',
 	},
@@ -438,7 +433,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.lavavolt.com',
 	},
@@ -463,7 +457,6 @@ const PROJECTS: ProjectInput[] = [
 			'We provide discounted integrated solutions to ship your products or your customers products for less money.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [PHP, ANGULAR_JS, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.enspark.net/internationalfulfillment/',
 	},
@@ -475,7 +468,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.theputtingtour.com',
 	},
@@ -487,7 +479,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.wininsights.com',
 	},
@@ -500,7 +491,6 @@ const PROJECTS: ProjectInput[] = [
 			'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [JAVASCRIPT, JQUERY, HTML, CSS, SQL],
 		url: 'http://www.barrierpc.com',
 	},
@@ -526,7 +516,6 @@ const PROJECTS: ProjectInput[] = [
 			'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [PHP, HTML, CSS],
 		url: 'http://www.utahcasa.org/',
 	},
@@ -539,7 +528,6 @@ const PROJECTS: ProjectInput[] = [
 			'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
 		learned: '',
 		live: true,
-		subtitle: '',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
 		url: 'http://www.paradigmlife.net/',
 	},
@@ -551,7 +539,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Get a Free Online Report and recommended solution to your debt problem.',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, LESS_CSS, HTML, JAVASCRIPT],
 		url: 'http://www.debt-free-planning.com',
 	},
@@ -563,7 +550,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
 		learned: '',
-		subtitle: '',
 		techs: [PHP, CSS, HTML, JAVASCRIPT],
 		url: 'http://www.southamconsulting.net',
 	},
@@ -588,7 +574,7 @@ export type ProjectType = {
 	itemKey: string;
 	learned: string;
 	live?: boolean;
-	subtitle: string;
+	subtitle?: string;
 	techs: TechKey[];
 	url?: string;
 };

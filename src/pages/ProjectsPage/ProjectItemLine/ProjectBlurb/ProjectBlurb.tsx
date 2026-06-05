@@ -2,6 +2,7 @@ import React from 'react';
 
 import './ProjectBlurb.scss';
 import { getFirstParagraph } from '~helpers/arrays';
+import { ProjectType } from '../../ProjectsPage.data';
 
 export const ProjectBlurb = ({
 	company,
@@ -21,8 +22,7 @@ export const ProjectBlurb = ({
 	);
 };
 
-type ProjectBlurbProps = {
-	company: string;
-	description: string | string[];
-	subtitle: string;
-};
+type ProjectBlurbProps = Pick<
+	ProjectType,
+	'company' | 'description' | 'subtitle'
+>;
