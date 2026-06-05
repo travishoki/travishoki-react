@@ -253,7 +253,6 @@ const PROJECTS: ProjectInput[] = [
 			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
 		live: true,
-		subtitle: 'Photography Website',
 		techs: [WORDPRESS, HTML, CSS],
 		url: 'http://www.lindseyhoki.com/',
 	},
@@ -277,7 +276,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		learned: '',
-		subtitle: 'Photography Website',
 		techs: [WORDPRESS, HTML, CSS],
 		url: 'http://www.trulylindseyphotography.com/',
 	},
@@ -330,7 +328,6 @@ const PROJECTS: ProjectInput[] = [
 			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
 		learned: '',
 		live: true,
-		subtitle: 'Janitorial Services',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, HTML, CSS],
 		url: 'http://www.rgdjanitorial.com/',
 	},

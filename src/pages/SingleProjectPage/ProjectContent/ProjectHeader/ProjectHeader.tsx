@@ -4,7 +4,7 @@ import './ProjectHeader.scss';
 
 type ProjectHeaderProps = {
 	company: string;
-	subtitle: string;
+	subtitle?: string;
 };
 
 export const ProjectHeader = ({ company, subtitle }: ProjectHeaderProps) => (
