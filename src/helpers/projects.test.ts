@@ -12,8 +12,12 @@ describe('slugify', () => {
 		expect(slugify('hoki skateboards')).toBe('hoki-skateboards');
 	});
 
-	it('replaces special characters with hyphens', () => {
-		expect(slugify('Travis & Lindsey!')).toBe('travis-lindsey');
+	it('replaces & with "and"', () => {
+		expect(slugify('Travis & Lindsey')).toBe('travis-and-lindsey');
+	});
+
+	it('replaces other special characters with hyphens', () => {
+		expect(slugify('Hello!')).toBe('hello');
 	});
 
 	it('trims leading and trailing hyphens', () => {
@@ -36,7 +40,7 @@ describe('getItemKey', () => {
 		);
 	});
 
-	it('handles subtitle with special characters', () => {
-		expect(getItemKey('acme', 'React & Node')).toBe('acme-react-node');
+	it('handles subtitle with & converting to "and"', () => {
+		expect(getItemKey('acme', 'React & Node')).toBe('acme-react-and-node');
 	});
 });
