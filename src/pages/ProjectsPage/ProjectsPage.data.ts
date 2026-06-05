@@ -60,7 +60,7 @@ export const FILTER_LIST: TechKey[] = [
 	WORDPRESS,
 ];
 
-import { getItemKey } from '~helpers/projects';
+import { getItemKey, slugify } from '~helpers/projects';
 
 const PROJECTS: ProjectInput[] = [
 	{
