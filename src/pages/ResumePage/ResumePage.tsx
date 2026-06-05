@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Education } from '~components/Education/Education';
 
-import { DownloadSection } from './DownloadSection';
-import { Experience } from './Experience';
+import { DownloadSection } from './DownloadSection/DownloadSection';
+import { Experience } from './Experience/Experience';
 import { Skills } from '../HomePage/Skills/Skills';
 import { TechTiles } from '../HomePage/TechTiles/TechTiles';
 import './ResumePage.scss';

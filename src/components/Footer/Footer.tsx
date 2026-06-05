@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { BackToTop } from './BackToTop';
-import { SubFooter } from './SubFooter';
+import { BackToTop } from './BackToTop/BackToTop';
+import { SubFooter } from './SubFooter/SubFooter';
 
 import './Footer.scss';
 

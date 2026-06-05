@@ -1,0 +1,12 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/responsive.scss';
+
+.about-item {
+	&.staggered-item {
+		.image-container {
+			@include tablet-up {
+				flex: 1 0 250px;
+			}
+		}
+	}
+}

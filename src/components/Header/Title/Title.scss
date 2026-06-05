@@ -1,0 +1,13 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/responsive.scss';
+@import '../../../styles/variables.scss';
+
+.nav-title {
+	color: $white;
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 60px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}

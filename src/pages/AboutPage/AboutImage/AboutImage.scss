@@ -1,0 +1,9 @@
+@import '../../../styles/mixins.scss';
+
+.about-item-image {
+	@include border-radius(50%);
+	height: 250px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 250px;
+}

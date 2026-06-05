@@ -2,10 +2,10 @@ import React from 'react';
 
 import ImgHokiSkateboardsSmall from '~images/passion/hoki-skateboards-small.jpg';
 import ImgHokiSkateboards from '~images/passion/hoki-skateboards.jpg';
-import { MobileApp } from './MobileApp';
-import { Content } from './Content';
-import { Logo } from './Logo';
-import { SocialMedia } from './SocialMedia';
+import { MobileApp } from './MobileApp/MobileApp';
+import { Content } from './Content/Content';
+import { Logo } from './Logo/Logo';
+import { SocialMedia } from './SocialMedia/SocialMedia';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import './HokiSkateboards.scss';

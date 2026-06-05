@@ -12,8 +12,8 @@ import {
 } from '~const/Tech.const';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
 
-import { PassionLabel } from '../PassionLabel';
-import { Title } from '../Title';
+import { PassionLabel } from '../PassionLabel/PassionLabel';
+import { Title } from '../Title/Title';
 
 const websiteTechList: TechKey[] = [
 	CSS,

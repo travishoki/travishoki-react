@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.contact-info-header {
+	h2 {
+		color: $white;
+		font-weight: bold;
+		margin: 0;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+}

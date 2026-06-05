@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+
+.back-to-top {
+	align-items: center;
+	background: $primary;
+	border: none;
+	border-radius: 50%;
+	bottom: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+	color: $white;
+	cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	height: 44px;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	right: 15px;
+	transition: opacity 0.3s ease;
+	width: 44px;
+	z-index: 999;
+
+	i {
+		font-size: 20px;
+		left: 12px;
+		position: absolute;
+		top: 10px;
+	}
+
+	&--visible {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	&:hover {
+		background: $blue-four;
+	}
+}

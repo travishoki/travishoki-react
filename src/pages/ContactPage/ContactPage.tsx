@@ -2,7 +2,7 @@ import React from 'react';
 
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
-import { ContactInfo } from './ContactInfo';
+import { ContactInfo } from './ContactInfo/ContactInfo';
 export const ContactPage = () => (
 	<div className="contact" id="container">
 		<h1>Contact Me</h1>

@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { ProjectType } from '../ProjectsPage.data';
-import { ProjectHeader } from './ProjectHeader';
+import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
-import { ViewLiveSite } from './ViewLiveSite';
+import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import './ProjectContent.scss';
 
 const images = require.context('../../../images/websites', true);

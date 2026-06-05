@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Nav } from './Nav';
-import { Title } from './Title';
+import { Nav } from './Nav/Nav';
+import { Title } from './Title/Title';
 
 import './Header.scss';
 

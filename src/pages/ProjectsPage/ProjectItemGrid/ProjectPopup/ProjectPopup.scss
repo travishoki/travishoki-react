@@ -1,0 +1,51 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.popup {
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	.popup-inner {
+		height: 100%;
+		position: relative;
+		width: 100%;
+
+		.popup-cont {
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			z-index: 1;
+
+			img {
+				@include border-radius(50%);
+				display: block;
+				height: 80px;
+				margin: 0 auto;
+				width: 80px;
+			}
+
+			a {
+				display: block;
+				margin: 10px auto 0;
+				width: 60px;
+			}
+		}
+
+		.popup-overlay {
+			@include opacity(0.8);
+			background: $gray-three;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}

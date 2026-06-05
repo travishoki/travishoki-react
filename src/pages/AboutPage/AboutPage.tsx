@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ABOUT_PAGE_DATA } from './AboutPage.data';
-import { AboutItem } from './AboutItem';
+import { AboutItem } from './AboutItem/AboutItem';
 
 export const AboutPage = () => {
 	return (
