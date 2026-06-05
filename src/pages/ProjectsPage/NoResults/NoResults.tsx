@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getLabelByKey } from '~helpers/getLabelByKey';
+import { getLabelByKey } from '~helpers/projects';
 import './NoResults.scss';
 
 export const NoResults = ({

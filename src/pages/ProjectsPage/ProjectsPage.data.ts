@@ -60,15 +60,7 @@ export const FILTER_LIST: TechKey[] = [
 	WORDPRESS,
 ];
 
-const slugify = (value: string) =>
-	value
-		.toLowerCase()
-		.trim()
-		.replace(/[^a-z0-9]+/g, '-')
-		.replace(/(^-|-$)/g, '');
-
-const getItemKey = (companySlug: string, subtitle: string) =>
-	subtitle ? `${companySlug}-${slugify(subtitle)}` : companySlug;
+import { getItemKey } from '~helpers/projects';
 
 const PROJECTS: ProjectInput[] = [
 	{
@@ -78,8 +70,7 @@ const PROJECTS: ProjectInput[] = [
 			'UI/UX Design',
 			'Character illustrations',
 		],
-		date: '2024',
-		desc: 'Teaching myself React Native as a passion project',
+		desc: '',
 		learned: '',
 		subtitle: 'React Native Game',
 		techs: [
