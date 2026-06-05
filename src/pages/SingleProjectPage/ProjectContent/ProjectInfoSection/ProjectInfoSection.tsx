@@ -5,6 +5,7 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectInfoSection.scss';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
+import { Contributions } from './Contributions/Contributions';
 
 const logos = require.context('../../../../images/clients', true);
 
@@ -47,28 +48,13 @@ export const ProjectInfoSection = ({
 				</>
 			)}
 
-			{contributions && contributions.length > 0 && (
-				<>
-					<p className="label">Contributions:</p>
-					<div className="answer-section">
-						{Array.isArray(contributions) ? (
-							<ul className="disc answer-section-list">
-								{contributions.map((contribution, index) => (
-									<li key={index}>{contribution}</li>
-								))}
-							</ul>
-						) : (
-							<p>{contributions}</p>
-						)}
-					</div>
-				</>
-			)}
+			<Contributions contributions={contributions} />
 
 			{learned && (
 				<>
 					<p className="label">What I Learned:</p>
 					<div className="answer-section">
-						<p>{learned}</p>
+						<p className="indent">{learned}</p>
 					</div>
 				</>
 			)}
