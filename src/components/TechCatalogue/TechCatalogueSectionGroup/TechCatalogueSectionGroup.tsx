@@ -21,7 +21,7 @@ export const TechCatalogueSectionGroup = ({
 	return (
 		<div className="tech-catalogue-section-group">
 			<button
-				className="tech-catalogue-section-label my-2 py-1 px-2"
+				className="tech-catalogue-section-label mb-2 p-2"
 				onClick={() => setOpen(!open)}
 			>
 				{label}
