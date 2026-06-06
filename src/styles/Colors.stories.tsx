@@ -16,8 +16,8 @@ const GRAY_GROUPS: ColorGroup[] = [
 	{
 		colors: [
 			{ hex: '#ffffff', name: 'White', variable: '$white' },
-			{ hex: '#eeeeee', name: 'Gray One', variable: '$gray-one' },
-			{ hex: '#444444', name: 'Gray Two', variable: '$gray-two' },
+			{ hex: '#bbbbbb', name: 'Gray One', variable: '$gray-one' },
+			{ hex: '#777777', name: 'Gray Two', variable: '$gray-two' },
 			{ hex: '#333333', name: 'Gray Three', variable: '$gray-three' },
 			{ hex: '#222222', name: 'Gray Four', variable: '$gray-four' },
 			{ hex: '#111111', name: 'Gray Five', variable: '$gray-five' },
