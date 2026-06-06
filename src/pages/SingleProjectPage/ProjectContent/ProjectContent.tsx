@@ -30,7 +30,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 
 			<div className="row">
 				<div className="col-sm-5">
-					{gallery ? (
+					{gallery && gallery.length > 1 ? (
 						<ProjectImageCarousel gallery={gallery} />
 					) : (
 						<ProjectImage itemKey={itemKey} />
