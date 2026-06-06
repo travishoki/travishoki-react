@@ -1,5 +1,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/variables.scss';
+@import '../../../styles/responsive.scss';
 
 #container.projects {
 	.project-item-line {
@@ -14,7 +15,13 @@
 		}
 
 		.project-image-with-popup {
-			flex: 0 0 250px;
+			@include phone-down {
+				flex: 0 0 150px;
+			}
+
+			@include tablet-up {
+				flex: 0 0 250px;
+			}
 		}
 	}
 }
