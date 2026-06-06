@@ -19,13 +19,13 @@ export const ProjectImageCarousel = ({
 			<img
 				className="project-img mb-3"
 				onError={handleWebsiteImageError('gallery')}
-				src={websiteGalleryImageSrc(gallery[page])}
+				src={websiteGalleryImageSrc(gallery[page].filename)}
 			/>
 
 			<ul>
-				{gallery.map((fileName, index) => (
+				{gallery.map(({ filename }, index) => (
 					<li
-						key={fileName}
+						key={filename}
 						className={classNames({ active: page === index })}
 						onClick={() => {
 							setPage(index);
