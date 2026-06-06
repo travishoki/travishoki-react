@@ -24,7 +24,7 @@ export const ProjectInfoSection = ({
 	techs,
 }: ProjectInfoSectionProps) => {
 	return (
-		<div className="col-sm-6">
+		<>
 			<img className="logo center" src={logos(`./${companySlug}.jpg`)} />
 
 			{date && (
@@ -65,6 +65,6 @@ export const ProjectInfoSection = ({
 			{techs && techs.length > 0 && (
 				<TechListCatalogue initialExpanded list={techs} />
 			)}
-		</div>
+		</>
 	);
 };

@@ -26,21 +26,23 @@ export const ProjectContent = ({
 		<ProjectHeader company={company} subtitle={subtitle} />
 
 		<div className="row">
-			<div className="col-sm-6">
+			<div className="col-sm-5">
 				{gallery ? (
 					<ProjectImageCarousel gallery={gallery} />
 				) : (
 					<ProjectImage itemKey={itemKey} />
 				)}
 			</div>
-			<ProjectInfoSection
-				companySlug={companySlug}
-				contributions={contributions}
-				date={date}
-				description={description}
-				learned={learned}
-				techs={techs}
-			/>
+			<div className="col-sm-7">
+				<ProjectInfoSection
+					companySlug={companySlug}
+					contributions={contributions}
+					date={date}
+					description={description}
+					learned={learned}
+					techs={techs}
+				/>
+			</div>
 		</div>
 
 		{live && <ViewLiveSite url={url} />}
