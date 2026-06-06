@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 
 import {
 	handleWebsiteImageError,
@@ -6,14 +7,16 @@ import {
 } from '~helpers/websiteImages';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
-import './ProjectGallery.scss';
-import classNames from 'classnames';
+import './ProjectImageCarousel.scss';
 
-export const ProjectGallery = ({ itemKey, quantity }: ProjectGalleryProps) => {
+export const ProjectImageCarousel = ({
+	itemKey,
+	quantity,
+}: ProjectImageCarouselProps) => {
 	const [page, setPage] = useState(1);
 
 	return (
-		<div className="project-gallery">
+		<div className="project-image-carousel">
 			<img
 				className="project-img mb-3"
 				onError={handleWebsiteImageError('lg')}
@@ -35,7 +38,7 @@ export const ProjectGallery = ({ itemKey, quantity }: ProjectGalleryProps) => {
 	);
 };
 
-type ProjectGalleryProps = {
+type ProjectImageCarouselProps = {
 	itemKey: ProjectType['itemKey'];
 	quantity: number;
 };

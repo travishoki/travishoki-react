@@ -5,7 +5,7 @@ import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectImage } from './ProjectImage/ProjectImage';
-import { ProjectGallery } from './ProjectGallery/ProjectGallery';
+import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
 import './ProjectContent.scss';
 
 export const ProjectContent = ({
@@ -14,7 +14,7 @@ export const ProjectContent = ({
 	contributions,
 	date,
 	description,
-	imageGalleryQuantity,
+	imageQuantity,
 	itemKey,
 	learned,
 	live = false,
@@ -27,8 +27,8 @@ export const ProjectContent = ({
 
 		<div className="row">
 			<div className="col-sm-6">
-				{imageGalleryQuantity ? (
-					<ProjectGallery itemKey={itemKey} quantity={imageGalleryQuantity} />
+				{imageQuantity ? (
+					<ProjectImageCarousel itemKey={itemKey} quantity={imageQuantity} />
 				) : (
 					<ProjectImage itemKey={itemKey} />
 				)}
