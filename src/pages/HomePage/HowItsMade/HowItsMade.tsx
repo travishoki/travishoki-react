@@ -4,7 +4,7 @@ import './HowItsMade.scss';
 
 export const HowItsMade = () => (
 	<section className="how-its-made">
-		<h2>How this site was Made</h2>
+		<h2>How This Site Was Made</h2>
 
 		<div className="how-its-made-content">
 			<div>
