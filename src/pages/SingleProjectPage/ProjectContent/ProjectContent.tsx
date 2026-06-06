@@ -8,45 +8,51 @@ import { ProjectImage } from './ProjectImage/ProjectImage';
 import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
 import './ProjectContent.scss';
 
-export const ProjectContent = ({
-	company,
-	companySlug,
-	contributions,
-	date,
-	description,
-	gallery,
-	itemKey,
-	learned,
-	live = false,
-	subtitle,
-	techs,
-	url,
-}: ProjectContentProps) => (
-	<div className="project-content">
-		<ProjectHeader company={company} subtitle={subtitle} />
+export const ProjectContent = ({ project }: ProjectContentProps) => {
+	const {
+		company,
+		companySlug,
+		contributions,
+		date,
+		description,
+		gallery,
+		itemKey,
+		learned,
+		live = false,
+		subtitle,
+		techs,
+		url,
+	} = project;
 
-		<div className="row">
-			<div className="col-sm-5">
-				{gallery ? (
-					<ProjectImageCarousel gallery={gallery} />
-				) : (
-					<ProjectImage itemKey={itemKey} />
-				)}
+	return (
+		<div className="project-content">
+			<ProjectHeader company={company} subtitle={subtitle} />
+
+			<div className="row">
+				<div className="col-sm-5">
+					{gallery ? (
+						<ProjectImageCarousel gallery={gallery} />
+					) : (
+						<ProjectImage itemKey={itemKey} />
+					)}
+				</div>
+				<div className="col-sm-7">
+					<ProjectInfoSection
+						companySlug={companySlug}
+						contributions={contributions}
+						date={date}
+						description={description}
+						learned={learned}
+						techs={techs}
+					/>
+				</div>
 			</div>
-			<div className="col-sm-7">
-				<ProjectInfoSection
-					companySlug={companySlug}
-					contributions={contributions}
-					date={date}
-					description={description}
-					learned={learned}
-					techs={techs}
-				/>
-			</div>
+
+			{live && <ViewLiveSite url={url} />}
 		</div>
+	);
+};
 
-		{live && <ViewLiveSite url={url} />}
-	</div>
-);
-
-type ProjectContentProps = ProjectType;
+type ProjectContentProps = {
+	project: ProjectType;
+};

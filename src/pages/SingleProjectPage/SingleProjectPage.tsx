@@ -18,7 +18,7 @@ export const SingleProjectPage = () => {
 		<div className="projects" id="container">
 			<div className="projects-container grid">
 				<BackButton />
-				<ProjectContent {...singleProject} />
+				<ProjectContent project={singleProject} />
 			</div>
 		</div>
 	);
