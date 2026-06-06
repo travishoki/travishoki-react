@@ -1,24 +1,44 @@
 @import '../../../styles/variables.scss';
 
 .how-its-made {
-	padding: 40px 20px;
-	text-align: center;
-
 	h2 {
 		color: $white;
 		margin-bottom: 20px;
 	}
-}
 
-.how-its-made-link {
-	align-items: center;
-	color: $primary;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	text-decoration: none;
+	p {
+		margin: 0;
+		text-align: center;
 
-	i {
-		font-size: 40px;
+		&.how-its-made-link-label {
+			color: $blue-one;
+			font-size: 16px;
+		}
+
+		&.how-its-made-link-description {
+			color: $gray-one;
+			font-size: 12px;
+		}
+	}
+
+	.how-its-made-content {
+		align-items: center;
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	.how-its-made-link {
+		align-items: center;
+		color: $white;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		text-decoration: none;
+
+		i {
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
 	}
 }
