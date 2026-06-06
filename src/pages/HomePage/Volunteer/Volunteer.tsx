@@ -5,7 +5,8 @@ import './Volunteer.scss';
 
 export const Volunteer = () => (
 	<section className="center primary volunteer-component">
-		<h2 className="mb-2">Scouting America</h2>
+		<h2 className="mb-0">Volunteer Work</h2>
+		<p className="mb-2 volunteer-component-subtitle">Scouting America</p>
 
 		<img
 			className="center mb-2"
