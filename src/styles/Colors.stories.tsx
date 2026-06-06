@@ -68,14 +68,15 @@ const PAGE_STYLE: React.CSSProperties = {
 };
 
 const ColorSection = ({ group }: { group: ColorGroup }) => (
-	<section style={{ marginBottom: '2.5rem' }}>
+	<section style={{ marginBottom: '2.5rem', width: 'fit-content' }}>
 		<h2
 			style={{
-				color: '#555',
+				color: '#000000',
 				fontSize: '1rem',
 				fontWeight: 600,
 				letterSpacing: '0.05em',
 				marginBottom: '0.75rem',
+				textAlign: 'center',
 				textTransform: 'uppercase',
 			}}
 		>
