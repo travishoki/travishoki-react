@@ -6,7 +6,7 @@ export type ProjectType = {
 	contributions: string | string[];
 	date?: string;
 	description: string | string[];
-	imageQuantity?: number;
+	gallery?: string[];
 	itemKey: string;
 	learned: string | string[];
 	live?: boolean;

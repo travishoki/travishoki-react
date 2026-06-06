@@ -3,33 +3,32 @@ import classNames from 'classnames';
 
 import {
 	handleWebsiteImageError,
-	websiteImageGalleryItemSrc,
+	websiteGalleryImageSrc,
 } from '~helpers/websiteImages';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectImageCarousel.scss';
 
 export const ProjectImageCarousel = ({
-	itemKey,
-	quantity,
+	gallery,
 }: ProjectImageCarouselProps) => {
-	const [page, setPage] = useState(1);
+	const [page, setPage] = useState(0);
 
 	return (
 		<div className="project-image-carousel">
 			<img
 				className="project-img mb-3"
 				onError={handleWebsiteImageError('gallery')}
-				src={websiteImageGalleryItemSrc(itemKey, 'gallery', page)}
+				src={websiteGalleryImageSrc(gallery[page])}
 			/>
 
 			<ul>
-				{Array.from({ length: quantity }, (_, index) => (
+				{gallery.map((fileName, index) => (
 					<li
-						key={index}
-						className={classNames({ active: page === index + 1 })}
+						key={fileName}
+						className={classNames({ active: page === index })}
 						onClick={() => {
-							setPage(index + 1);
+							setPage(index);
 						}}
 					/>
 				))}
@@ -39,6 +38,5 @@ export const ProjectImageCarousel = ({
 };
 
 type ProjectImageCarouselProps = {
-	itemKey: ProjectType['itemKey'];
-	quantity: number;
+	gallery: NonNullable<ProjectType['gallery']>;
 };

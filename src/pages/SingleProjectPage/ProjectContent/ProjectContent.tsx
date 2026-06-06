@@ -14,7 +14,7 @@ export const ProjectContent = ({
 	contributions,
 	date,
 	description,
-	imageQuantity,
+	gallery,
 	itemKey,
 	learned,
 	live = false,
@@ -27,8 +27,8 @@ export const ProjectContent = ({
 
 		<div className="row">
 			<div className="col-sm-6">
-				{imageQuantity ? (
-					<ProjectImageCarousel itemKey={itemKey} quantity={imageQuantity} />
+				{gallery ? (
+					<ProjectImageCarousel gallery={gallery} />
 				) : (
 					<ProjectImage itemKey={itemKey} />
 				)}

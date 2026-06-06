@@ -98,7 +98,7 @@ const PROJECTS: ProjectInput[] = [
 			"Website for a family friends's salon on wheels. ",
 			'Tiff would drive her bus to workplaces, park out front, and give hair cuts to employees during their work day.',
 		],
-		imageQuantity: 2,
+		gallery: ['blue-monday-salon-1.jpg', 'blue-monday-salon-2.jpg'],
 		learned: '',
 		techs: [PHP, HTML, CSS, WORDPRESS],
 	},
@@ -252,7 +252,10 @@ const PROJECTS: ProjectInput[] = [
 			'I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense!',
 			"This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
-		imageQuantity: 2,
+		gallery: [
+			'overstock-com-star-ratings-color-1.jpg',
+			'overstock-com-star-ratings-color-2.jpg',
+		],
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
 		live: true,
