@@ -2,10 +2,10 @@ import React from 'react';
 
 import { RecentProjectsList } from './RecentProjectsList';
 import { ViewAllButton } from './ViewAllButton';
-import './Projects.scss';
+import './RecentProjects.scss';
 
-export const Projects = () => (
-	<section className="projects">
+export const RecentProjects = () => (
+	<section className="recent-projects">
 		<h2>Recent Projects</h2>
 
 		<div className="boxed boxed-lg">

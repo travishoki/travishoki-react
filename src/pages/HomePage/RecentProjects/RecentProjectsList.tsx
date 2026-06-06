@@ -6,7 +6,7 @@ import {
 	websiteImageSrc,
 } from '~helpers/websiteImages';
 
-import { orderTopThreeInPodium } from './Projects.helpers';
+import { orderTopThreeInPodium } from './RecentProjects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 import './RecentProjectsList.scss';
 
