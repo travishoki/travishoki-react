@@ -8,13 +8,15 @@ import {
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import './ProjectImage.scss';
 
-export const ProjectImage = ({ itemKey }: ProjectImageProps) => (
-	<img
-		className="project-img"
-		onError={handleWebsiteImageError('lg')}
-		src={websiteImageSrc(itemKey, 'lg')}
-	/>
-);
+export const ProjectImage = ({ itemKey }: ProjectImageProps) => {
+	return (
+		<img
+			className="project-img"
+			onError={handleWebsiteImageError('lg')}
+			src={websiteImageSrc(itemKey, 'lg')}
+		/>
+	);
+};
 
 type ProjectImageProps = {
 	itemKey: ProjectType['itemKey'];
