@@ -90,11 +90,15 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Blue Monday Salon',
 		contributions: [
-			'Logo design',
+			'Logo and website design, top to bottom',
 			'Custom Wordpress theme',
 			'Integrating a Google Calendar into the site',
 		],
-		description: "Website for a family friends's salon on wheels. ",
+		description: [
+			"Website for a family friends's salon on wheels. ",
+			'Tiff would drive her bus to workplaces, park out front, and give hair cuts to employees during their work day.',
+		],
+		imageQuantity: 2,
 		learned: '',
 		techs: [PHP, HTML, CSS, WORDPRESS],
 	},
