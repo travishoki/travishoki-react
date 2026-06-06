@@ -88,6 +88,17 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 	{
+		company: 'Blue Monday Salon',
+		contributions: [
+			'Logo design',
+			'Custom Wordpress theme',
+			'Integrating a Google Calendar into the site',
+		],
+		description: "Website for a family friends's salon on wheels. ",
+		learned: '',
+		techs: [PHP, HTML, CSS, WORDPRESS],
+	},
+	{
 		company: 'Chatbooks.com',
 		contributions: [
 			'Tie into existing APIs to create a new book.',
