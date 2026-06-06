@@ -11,8 +11,8 @@ export const ProjectImage = ({ itemKey }: ProjectImageProps) => {
 	return (
 		<img
 			className="project-img"
-			onError={handleWebsiteImageError('lg')}
-			src={websiteImageSrc(itemKey, 'lg')}
+			onError={handleWebsiteImageError('gallery')}
+			src={websiteImageSrc(itemKey, 'gallery')}
 		/>
 	);
 };

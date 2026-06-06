@@ -1,24 +1,26 @@
 import React from 'react';
 
-type ImageSize = 'lg' | 'sm';
+type ImageDirectory = 'gallery' | 'thumbnail';
 
-export const websiteImageSrc = (itemKey: string, size: ImageSize) =>
-	`${process.env.PUBLIC_URL}/images/websites/${itemKey}-${size}.jpg`;
+export const websiteImageSrc = (itemKey: string, directory: ImageDirectory) =>
+	`${process.env.PUBLIC_URL}/images/websites/${directory}/${itemKey}.jpg`;
 
 export const websiteImageGalleryItemSrc = (
 	itemKey: string,
-	size: ImageSize,
+	directory: ImageDirectory,
 	num: number,
-) => `${process.env.PUBLIC_URL}/images/websites/${itemKey}-${size}-${num}.jpg`;
+) =>
+	`${process.env.PUBLIC_URL}/images/websites/${directory}/${itemKey}-${num}.jpg`;
 
-const fallbackSrc = (size: ImageSize) =>
-	`${process.env.PUBLIC_URL}/images/websites/missing-images-${size}.jpg`;
+const fallbackSrc = (directory: ImageDirectory) =>
+	`${process.env.PUBLIC_URL}/images/websites/${directory}/missing-images.jpg`;
 
-export const handleWebsiteImageError =
-	(size: ImageSize) => (event: React.SyntheticEvent<HTMLImageElement>) => {
+export const handleWebsiteImageError = (directory: ImageDirectory) => {
+	return (event: React.SyntheticEvent<HTMLImageElement>) => {
 		const img = event.currentTarget;
 
 		// Stop listening so a missing fallback can't retrigger this handler.
 		img.onerror = null;
-		img.src = fallbackSrc(size);
+		img.src = fallbackSrc(directory);
 	};
+};

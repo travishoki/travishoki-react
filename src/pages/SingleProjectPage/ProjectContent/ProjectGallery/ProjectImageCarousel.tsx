@@ -19,8 +19,8 @@ export const ProjectImageCarousel = ({
 		<div className="project-image-carousel">
 			<img
 				className="project-img mb-3"
-				onError={handleWebsiteImageError('lg')}
-				src={websiteImageGalleryItemSrc(itemKey, 'lg', page)}
+				onError={handleWebsiteImageError('gallery')}
+				src={websiteImageGalleryItemSrc(itemKey, 'gallery', page)}
 			/>
 
 			<ul>
