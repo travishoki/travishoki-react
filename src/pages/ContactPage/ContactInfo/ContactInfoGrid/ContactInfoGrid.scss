@@ -10,11 +10,11 @@
 	text-align: center;
 
 	&:nth-child(odd) {
-		border-right: solid 3px $gray-four;
+		border-right: solid 3px $gray-five;
 	}
 
 	&:nth-child(-n + 2) {
-		border-bottom: solid 3px $gray-four;
+		border-bottom: solid 3px $gray-five;
 	}
 
 	i.contact-info-icon {
