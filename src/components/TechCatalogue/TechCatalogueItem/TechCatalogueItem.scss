@@ -2,6 +2,7 @@
 
 .tech-catalogue-item {
 	position: relative;
+	width: fit-content;
 
 	&[data-tooltip]:hover::after {
 		background: rgba(0, 0, 0, 0.8);
