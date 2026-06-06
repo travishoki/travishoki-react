@@ -9,7 +9,7 @@ export const ContactInfoGrid = () => (
 			<p>
 				<a href="mailto:travis.hoki@gmail.com">travis.hoki@gmail.com</a>
 			</p>
-			<p>(Preferred)</p>
+			<p className="preferred">(Preferred)</p>
 		</div>
 
 		<div className="contact-info-item py-3 px-2">
