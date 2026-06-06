@@ -7,7 +7,7 @@ export const HowItsMade = () => (
 		<h2>How this site was Made</h2>
 
 		<div className="row">
-			<div className="offset-3 col-sm-3">
+			<div className="offset-sm-3 col-sm-3">
 				<p>Source Code</p>
 				<a
 					className="how-its-made-link"
