@@ -2,14 +2,8 @@
 
 #container.projects {
 	.projects-container {
+		margin: 0 auto;
 		max-width: 800px;
-
-		@include phone-down {
-			margin: 0 10px;
-		}
-
-		@include tablet-up {
-			margin: 0 auto;
-		}
+		padding: 0 10px;
 	}
 }

@@ -6,9 +6,16 @@
 	.project-item-line {
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 20px;
 		padding: 4px;
 		position: relative;
+
+		@include phone-down {
+			margin-bottom: 15px;
+		}
+
+		@include tablet-up {
+			margin-bottom: 20px;
+		}
 
 		&:hover > .popup {
 			display: block;
