@@ -71,7 +71,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 	<section style={{ marginBottom: '2.5rem', width: 'fit-content' }}>
 		<h2
 			style={{
-				color: '#000000',
+				color: '#ffffff',
 				fontSize: '1rem',
 				fontWeight: 600,
 				letterSpacing: '0.05em',
