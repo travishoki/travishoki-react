@@ -23,7 +23,7 @@
 
 		.project-image-with-popup {
 			@include phone-down {
-				flex: 0 0 150px;
+				flex: 0 0 33%;
 			}
 
 			@include tablet-up {
