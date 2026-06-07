@@ -158,6 +158,36 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Overstock.com',
+		contributions: ['Validate and format the image before uploading to AWS.'],
+		description: [
+			"As part of the User Generate Content (UGC) Team, we owned the product reviews. One of the projects that I was the most proud of was customer review images. This was a big value add for Overstock and the customer's trust.",
+			'I work with my team to support user being able to submit images along with their reviews.',
+			'We had to A/B test to make sure we had a positive impact on revenue.',
+		],
+		gallery: [
+			{
+				filename: 'overstock-com-customer-review-images-1.jpg',
+			},
+			{
+				filename: 'overstock-com-customer-review-images-2.jpg',
+			},
+			{
+				filename: 'overstock-com-customer-review-images-3.jpg',
+			},
+			{
+				filename: 'overstock-com-customer-review-images-4.jpg',
+			},
+			{
+				filename: 'overstock-com-customer-review-images-5.jpg',
+			},
+		],
+		learned: '',
+		subtitle: 'Customer Review Images',
+		techs: [REACT_JS, HTML, JAVASCRIPT, WEBPACK, LESS_CSS],
+		url: 'http://www.overstock.com/',
+	},
+	{
+		company: 'Overstock.com',
 		contributions: [
 			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
 		],
