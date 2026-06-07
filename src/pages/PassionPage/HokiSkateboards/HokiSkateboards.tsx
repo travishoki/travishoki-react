@@ -22,6 +22,11 @@ export const HokiSkateboards = () => (
 				srcLarge={ImgHokiSkateboards}
 				srcLargeDimensions={[1541, 1030]}
 			/>
+			<p className="passion-project-description">
+				Hoki Skateboards is my passion project. Through the years I have enjoyed
+				building to my little company. I&apos;ve made and sold skateboards,
+				wrote a children&apos;s book, build an app, and met so many cool people
+			</p>
 			<SocialMedia />
 			<Content />
 			<MobileApp />
