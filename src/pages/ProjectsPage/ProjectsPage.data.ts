@@ -95,7 +95,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: ['Recursively build out components representing each team.'],
 		description: ["Create a hierarchical org chart for a company's team."],
 		learned: '',
-		subtitle: 'Hierarchy',
+		subtitle: 'Team Hierarchy',
 		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
 	},
 	{
