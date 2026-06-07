@@ -1,0 +1,11 @@
+.mobile-app-image-gallery {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	.mobile-app-image-gallery-image {
+		border-radius: 12px;
+		max-height: 500px;
+		width: auto;
+	}
+}
