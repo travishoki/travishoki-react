@@ -22,7 +22,9 @@ export const ProjectImageCarousel = ({
 				src={websiteGalleryImageSrc(gallery[page].filename)}
 			/>
 
-			<p className="project-image-caption">{gallery[page].caption}</p>
+			{gallery[page].caption && (
+				<p className="project-image-caption">{gallery[page].caption}</p>
+			)}
 
 			<CarouselDots
 				activeIndex={page}

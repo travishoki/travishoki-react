@@ -1,4 +1,5 @@
 import {
+	ACTION_SCRIPT,
 	AMP,
 	ANGULAR_JS,
 	CLAUDE_CODE,
@@ -62,8 +63,29 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Spiff',
-		contributions: '',
-		description: 'Internationalization',
+		contributions: [
+			'Manually updated a lot of strings to use the translations.',
+		],
+		description: [
+			'Develop infrastructure for string translations, enhancing global accessibility',
+			'Internationalization is a big value add to Spiff/Salesforce.',
+		],
+		gallery: [
+			{ filename: 'spiff-translations-english.jpg' },
+			{ filename: 'spiff-translations-japanese.jpg' },
+			{ filename: 'spiff-translations-spanish.jpg' },
+			{
+				caption:
+					"In dev mode there's an option to switch to X's. A quick and easy way for use to make sure strings are translated.",
+				filename: 'spiff-translations-xxx.jpg',
+			},
+			{ filename: 'spiff-translations-table-english.jpg' },
+			{
+				caption:
+					"In dev mode there's an option to switch to X's. A quick and easy way for use to make sure strings are translated.",
+				filename: 'spiff-translations-table-xxx.jpg',
+			},
+		],
 		learned: '',
 		subtitle: 'Translations',
 		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
@@ -497,7 +519,7 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		learned: 'This is one of my first full-stack projects.',
-		subtitle: 'LMS',
+		subtitle: 'Learning Management System',
 		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.lms.enspark.com',
 	},
@@ -556,7 +578,7 @@ const PROJECTS: ProjectInput[] = [
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		learned: '',
 		live: true,
-		subtitle: 'Website',
+		subtitle: 'Marketing Website',
 		techs: [JAVASCRIPT, JQUERY, HTML, CSS, PHP, SQL],
 		url: 'http://www.enspark.com',
 	},
@@ -640,6 +662,23 @@ const PROJECTS: ProjectInput[] = [
 		learned: '',
 		techs: [PHP, CSS, HTML, JAVASCRIPT],
 		url: 'http://www.southamconsulting.net',
+	},
+	{
+		company: 'Enspark',
+		contributions: 'I was on a team building out HR courses in Action Script.',
+		description: [
+			'Enspark is a Learning Management System (LMS) that provides HR courses',
+			'The courses were interactive and built in Flash. Flash pretty quickly died after I started working at Enspark. I miss flash. It was fun. RIP.',
+		],
+		gallery: [
+			{ filename: 'enspark-art-of-negotiation.jpg' },
+			{ filename: 'enspark-conflict-resolution.jpg' },
+			{ filename: 'enspark-email-etiquette.jpg' },
+		],
+		learned:
+			"This was my first tech job. I had a lot of fun learning and growing. I'm thankful for those at Enspark that gave me a change and got my career started.",
+		subtitle: 'eLearning Courses',
+		techs: [ACTION_SCRIPT],
 	},
 ];
 
