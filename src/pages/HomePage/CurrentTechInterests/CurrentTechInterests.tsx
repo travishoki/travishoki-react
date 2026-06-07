@@ -33,7 +33,7 @@ export const CurrentTechInterests = () => {
 
 			<CarouselDots
 				activeIndex={activeIndex}
-				labels={CURRENT_TECH_INTERESTS.map((item) => item.title)}
+				count={CURRENT_TECH_INTERESTS.length}
 				onSelect={scrollToIndex}
 			/>
 		</section>

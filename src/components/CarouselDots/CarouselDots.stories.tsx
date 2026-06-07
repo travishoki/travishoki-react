@@ -4,12 +4,6 @@ import { expect, userEvent } from 'storybook/test';
 
 import { CarouselDots } from './CarouselDots';
 
-const labels = [
-	'AI-Assisted Development with Claude',
-	'React Native',
-	'Firebase',
-];
-
 const meta: Meta<typeof CarouselDots> = {
 	component: CarouselDots,
 	decorators: [
@@ -39,7 +33,7 @@ export const Interactive: Story = {
 		return (
 			<CarouselDots
 				activeIndex={activeIndex}
-				labels={labels}
+				count={3}
 				onSelect={setActiveIndex}
 			/>
 		);

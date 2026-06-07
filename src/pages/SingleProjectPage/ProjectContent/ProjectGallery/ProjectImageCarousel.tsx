@@ -24,7 +24,7 @@ export const ProjectImageCarousel = ({
 
 			<CarouselDots
 				activeIndex={page}
-				labels={gallery.map(({ filename }) => filename)}
+				count={gallery.length}
 				onSelect={setPage}
 			/>
 		</div>

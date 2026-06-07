@@ -5,20 +5,20 @@ import './CarouselDots.scss';
 
 type CarouselDotsProps = {
 	activeIndex: number;
-	labels: string[];
+	count: number;
 	onSelect: (index: number) => void;
 };
 
 export const CarouselDots = ({
 	activeIndex,
-	labels,
+	count,
 	onSelect,
 }: CarouselDotsProps) => (
 	<ul className="carousel-dots">
-		{labels.map((label, index) => (
-			<li key={label}>
+		{Array.from({ length: count }, (_, index) => (
+			<li key={index}>
 				<button
-					aria-label={`Show ${label}`}
+					aria-label={`Show slide ${index + 1}`}
 					className={classNames('carousel-dot', {
 						active: activeIndex === index,
 					})}
