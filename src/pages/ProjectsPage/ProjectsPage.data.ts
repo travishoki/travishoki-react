@@ -91,6 +91,14 @@ const PROJECTS: ProjectInput[] = [
 		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
 	},
 	{
+		company: 'Spiff',
+		contributions: ['Recursively build out components representing each team.'],
+		description: ["Create a hierarchical org chart for a company's team."],
+		learned: '',
+		subtitle: 'Hierarchy',
+		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
+	},
+	{
 		company: 'Hoki Skateboards',
 		contributions: [
 			'React Native development',
