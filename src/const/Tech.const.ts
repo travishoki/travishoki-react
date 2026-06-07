@@ -25,6 +25,7 @@ import ImgReactNative from '~images/icons/tech-icons/react-native.jpg';
 import ImgRedux from '~images/icons/tech-icons/redux.jpg';
 import ImgScss from '~images/icons/tech-icons/sass.jpg';
 import ImgSql from '~images/icons/tech-icons/sql.jpg';
+import ImgStripe from '~images/icons/tech-icons/stripe.jpg';
 import ImgTypescript from '~images/icons/tech-icons/typescript.jpg';
 import ImgWebpack from '~images/icons/tech-icons/webpack.jpg';
 import ImgWooCommerce from '~images/icons/tech-icons/woo-commerce.jpg';
@@ -56,6 +57,7 @@ export const REACT_NATIVE = 'REACT_NATIVE';
 export const REDUX = 'REDUX';
 export const SCSS = 'SCSS';
 export const SQL = 'SQL';
+export const STRIPE = 'STRIPE';
 export const TYPESCRIPT = 'TYPESCRIPT';
 export const WEBPACK = 'WEBPACK';
 export const WOO_COMMERCE = 'WOO_COMMERCE';
@@ -110,6 +112,7 @@ export const TECH = {
 	REDUX: { image: ImgRedux, label: 'Redux', type: 'frontend' },
 	SCSS: { image: ImgScss, label: 'SCSS', type: 'frontend' },
 	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
+	STRIPE: { image: ImgSql, label: 'Stripe', type: 'integrations' },
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
 	WOO_COMMERCE: {

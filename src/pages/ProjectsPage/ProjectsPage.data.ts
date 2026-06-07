@@ -23,6 +23,7 @@ import {
 	REDUX,
 	SCSS,
 	SQL,
+	STRIPE,
 	WEBPACK,
 	WOO_COMMERCE,
 	WORDPRESS,
@@ -297,7 +298,7 @@ const PROJECTS: ProjectInput[] = [
 			'Passion project skateboard company I am building and branding.',
 		learned: '',
 		live: true,
-		techs: [WORDPRESS, WOO_COMMERCE, PHP, JQUERY, HTML, CSS, REACT_JS],
+		techs: [WORDPRESS, WOO_COMMERCE, STRIPE, PHP, JQUERY, HTML, CSS, REACT_JS],
 		url: 'http://www.hokiskateboards.com/',
 	},
 	{

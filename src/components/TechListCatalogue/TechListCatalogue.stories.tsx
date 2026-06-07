@@ -60,6 +60,7 @@ export const All: Story = {
 			'REDUX',
 			'SCSS',
 			'SQL',
+			'STRIPE',
 			'TYPESCRIPT',
 			'WEBPACK',
 			'WOO_COMMERCE',
