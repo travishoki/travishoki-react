@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
-import { DISPLAYED_LIST } from '../HomePage.data';
+import { DISPLAYED_LIST } from './TechTiles.data';
 import './TechTiles.scss';
 
 export const TechTiles = () => (
