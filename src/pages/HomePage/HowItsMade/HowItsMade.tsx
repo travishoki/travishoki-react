@@ -15,9 +15,9 @@ export const HowItsMade = () => (
 					target="_blank"
 				>
 					<i className="fa fa-github" />
+					<p className="how-its-made-link-label">Github</p>
+					<p className="how-its-made-link-description">Source Code</p>
 				</a>
-				<p className="how-its-made-link-label">Github</p>
-				<p className="how-its-made-link-description">Source Code</p>
 			</div>
 			<div>
 				<a
@@ -27,9 +27,9 @@ export const HowItsMade = () => (
 					target="_blank"
 				>
 					<i className="fa fa-book" />
+					<p className="how-its-made-link-label">Storybook</p>
+					<p className="how-its-made-link-description">Component Library</p>
 				</a>
-				<p className="how-its-made-link-label">Storybook</p>
-				<p className="how-its-made-link-description">Component Library</p>
 			</div>
 		</div>
 	</section>
