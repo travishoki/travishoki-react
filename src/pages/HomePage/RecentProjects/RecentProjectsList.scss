@@ -17,6 +17,12 @@
 
 		li {
 			@include phone-down {
+				// Disable navigation on mobile.
+				a {
+					cursor: default;
+					pointer-events: none;
+				}
+
 				&:first-child {
 					float: left;
 				}
