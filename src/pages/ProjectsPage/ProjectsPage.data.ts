@@ -61,6 +61,14 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://food-cards.travishoki.com/',
 	},
 	{
+		company: 'Spiff',
+		contributions: '',
+		description: 'Internationalization',
+		learned: '',
+		subtitle: 'Translations',
+		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
+	},
+	{
 		company: 'Hoki Skateboards',
 		contributions: [
 			'React Native development',
