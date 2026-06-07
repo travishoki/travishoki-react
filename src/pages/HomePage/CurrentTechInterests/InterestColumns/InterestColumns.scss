@@ -1,0 +1,24 @@
+@import '../../../../styles/responsive.scss';
+
+.interest-columns {
+	margin: 0 auto;
+	max-width: 900px;
+
+	// On mobile, show one column at a time as a swipeable carousel.
+	@include phone-down {
+		flex-wrap: nowrap;
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		.interest-item {
+			flex: 0 0 100%;
+			scroll-snap-align: center;
+		}
+	}
+}

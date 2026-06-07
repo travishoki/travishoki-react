@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.carousel-dots {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	list-style: none;
+	margin: 20px 0 0;
+	padding: 0;
+
+	.carousel-dot {
+		background: rgba($white, 0.4);
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 20px;
+		padding: 0;
+		width: 20px;
+
+		&.active {
+			background: $white;
+		}
+	}
+}

@@ -1,20 +1,41 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+
+import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 
 import { CURRENT_TECH_INTERESTS } from './CurrentTechInterests.data';
-import { InterestItem } from './InterestItem/InterestItem';
+import { CurrentTechInterestsHeader } from './CurrentTechInterestsHeader/CurrentTechInterestsHeader';
+import { InterestColumns } from './InterestColumns/InterestColumns';
 import './CurrentTechInterests.scss';
 
-export const CurrentTechInterests = () => (
-	<section className="blue center current-tech-interests-component">
-		<div className="current-tech-interests-component-header mb-3">
-			<h2>Current Tech Interests</h2>
-			<p>Things that I&apos;m interested in learning more about</p>
-		</div>
+export const CurrentTechInterests = () => {
+	const trackRef = useRef<HTMLDivElement>(null);
+	const [activeIndex, setActiveIndex] = useState(0);
 
-		<div className="row g-4 interest-columns">
-			{CURRENT_TECH_INTERESTS.map((item, index) => (
-				<InterestItem key={index} {...item} />
-			))}
-		</div>
-	</section>
-);
+	const handleScroll = () => {
+		const track = trackRef.current;
+		if (!track) return;
+
+		setActiveIndex(Math.round(track.scrollLeft / track.clientWidth));
+	};
+
+	const scrollToIndex = (index: number) => {
+		const track = trackRef.current;
+		if (!track) return;
+
+		track.scrollTo({ behavior: 'smooth', left: index * track.clientWidth });
+	};
+
+	return (
+		<section className="blue center current-tech-interests-component">
+			<CurrentTechInterestsHeader />
+
+			<InterestColumns onScroll={handleScroll} ref={trackRef} />
+
+			<CarouselDots
+				activeIndex={activeIndex}
+				labels={CURRENT_TECH_INTERESTS.map((item) => item.title)}
+				onSelect={scrollToIndex}
+			/>
+		</section>
+	);
+};

@@ -1,21 +1,19 @@
 @import '../../../styles/variables.scss';
+@import '../../../styles/responsive.scss';
 
 section.current-tech-interests-component {
-	.current-tech-interests-component-header {
-		h2 {
-			margin: 0;
-		}
-	}
-
 	.interest-image {
 		border-radius: 8px;
-		max-width: 500px;
+		max-width: 350px;
 		width: 100%;
 	}
 
-	.interest-columns {
-		margin: 0 auto;
-		max-width: 900px;
+	// Indicators (styled in CarouselDots.scss) only appear with the
+	// mobile carousel; the desktop grid shows all columns at once.
+	.carousel-dots {
+		@include tablet-up {
+			display: none;
+		}
 	}
 
 	.interest-item {
@@ -36,5 +34,11 @@ section.current-tech-interests-component {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	// The global read-more color ($blue-one) is invisible on this blue
+	// section background, so surface it in white instead.
+	.read-more {
+		color: $white;
 	}
 }

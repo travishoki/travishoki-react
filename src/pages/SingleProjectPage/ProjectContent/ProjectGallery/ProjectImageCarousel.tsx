@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import classNames from 'classnames';
 
+import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import {
 	handleWebsiteImageError,
 	websiteGalleryImageSrc,
@@ -22,17 +22,11 @@ export const ProjectImageCarousel = ({
 				src={websiteGalleryImageSrc(gallery[page].filename)}
 			/>
 
-			<ul>
-				{gallery.map(({ filename }, index) => (
-					<li
-						key={filename}
-						className={classNames({ active: page === index })}
-						onClick={() => {
-							setPage(index);
-						}}
-					/>
-				))}
-			</ul>
+			<CarouselDots
+				activeIndex={page}
+				labels={gallery.map(({ filename }) => filename)}
+				onSelect={setPage}
+			/>
 		</div>
 	);
 };
