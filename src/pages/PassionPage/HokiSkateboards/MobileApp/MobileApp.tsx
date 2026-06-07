@@ -47,6 +47,10 @@ export const MobileApp = () => (
 			and MatterJs.
 		</p>
 
+		<p>
+			Currently in the Apple Store, will be back in the Google Play store soon.
+		</p>
+
 		<AppBadges />
 
 		<p className="copyright">
