@@ -1,5 +1,7 @@
 import {
 	ACTION_SCRIPT,
+	ANGULAR_JS,
+	COFFEE_SCRIPT,
 	CSS,
 	DJANGO,
 	GRUNT,
@@ -33,6 +35,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 	// Frontend
 	REACT_JS,
 	REACT_NATIVE,
+	ANGULAR_JS,
 	REDUX,
 	TYPESCRIPT,
 	JAVASCRIPT,
@@ -41,6 +44,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 	HTML,
 	LESS_CSS,
 	SCSS,
+	COFFEE_SCRIPT,
 
 	// Backend
 	NODE_JS,
