@@ -505,6 +505,36 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.enspark.com',
 	},
 	{
+		company: 'Beit Lehi',
+		contributions: [
+			'Our team met with the owners of the Beit Lehi foundation to collaborate on features and designs for the website.',
+			'We built a flowchart and planned out each of the pages',
+			'We created user personas and thought through the user experience',
+			'Helped to make the custom Wordpress theme',
+		],
+		description:
+			'This is my capstone (Senior) project. I worked with a team of other students to put this site together.',
+		gallery: [
+			{
+				filename: 'beit-lehi-1.jpg',
+			},
+			{
+				filename: 'beit-lehi-2.jpg',
+			},
+			{
+				filename: 'beit-lehi-mobile-1.jpg',
+			},
+			{
+				filename: 'beit-lehi-mobile-2.jpg',
+			},
+			{
+				filename: 'beit-lehi-mobile-3.jpg',
+			},
+		],
+		learned: '',
+		techs: [HTML, CSS, JAVASCRIPT, WORDPRESS],
+	},
+	{
 		company: 'Utah Casa',
 		contributions: [
 			'Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.',
