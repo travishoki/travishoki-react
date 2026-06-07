@@ -17,10 +17,12 @@ export const ProjectImageCarousel = ({
 	return (
 		<div className="project-image-carousel">
 			<img
-				className="project-img mb-3"
+				className="project-img"
 				onError={handleWebsiteImageError('gallery')}
 				src={websiteGalleryImageSrc(gallery[page].filename)}
 			/>
+
+			<p className="project-image-caption">{gallery[page].caption}</p>
 
 			<CarouselDots
 				activeIndex={page}

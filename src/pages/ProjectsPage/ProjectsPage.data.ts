@@ -100,8 +100,14 @@ const PROJECTS: ProjectInput[] = [
 			'Tiff would drive her bus to workplaces, park out front, and give hair cuts to employees during their work day.',
 		],
 		gallery: [
-			{ filename: 'blue-monday-salon-1.jpg' },
-			{ filename: 'blue-monday-salon-2.jpg' },
+			{
+				caption: 'Custom WordPress homepage design',
+				filename: 'blue-monday-salon-1.jpg',
+			},
+			{
+				caption: 'Logo Design',
+				filename: 'blue-monday-salon-2.jpg',
+			},
 		],
 		learned: '',
 		techs: [PHP, HTML, CSS, WORDPRESS],
@@ -166,18 +172,23 @@ const PROJECTS: ProjectInput[] = [
 		],
 		gallery: [
 			{
+				caption: 'Customer review images on the product page',
 				filename: 'overstock-com-customer-review-images-1.jpg',
 			},
 			{
+				caption: 'Customer review images on the product page',
 				filename: 'overstock-com-customer-review-images-2.jpg',
 			},
 			{
+				caption: 'Customer images withing the review section',
 				filename: 'overstock-com-customer-review-images-3.jpg',
 			},
 			{
+				caption: 'Review with customer review images',
 				filename: 'overstock-com-customer-review-images-4.jpg',
 			},
 			{
+				caption: 'Modal with a gallery of customer review images',
 				filename: 'overstock-com-customer-review-images-5.jpg',
 			},
 		],
@@ -287,8 +298,14 @@ const PROJECTS: ProjectInput[] = [
 			"This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
 		],
 		gallery: [
-			{ filename: 'overstock-com-star-ratings-color-1.jpg' },
-			{ filename: 'overstock-com-star-ratings-color-2.jpg' },
+			{
+				caption: 'Updated gold star ratings',
+				filename: 'overstock-com-star-ratings-color-1.jpg',
+			},
+			{
+				caption: 'Original red star ratings',
+				filename: 'overstock-com-star-ratings-color-2.jpg',
+			},
 		],
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
@@ -547,18 +564,23 @@ const PROJECTS: ProjectInput[] = [
 			'This is my capstone (Senior) project. I worked with a team of other students to put this site together.',
 		gallery: [
 			{
+				caption: 'Desktop homepage',
 				filename: 'beit-lehi-1.jpg',
 			},
 			{
+				caption: 'Desktop homepage',
 				filename: 'beit-lehi-2.jpg',
 			},
 			{
+				caption: 'Mobile homepage',
 				filename: 'beit-lehi-mobile-1.jpg',
 			},
 			{
+				caption: 'Mobile homepage',
 				filename: 'beit-lehi-mobile-2.jpg',
 			},
 			{
+				caption: 'Mobile homepage',
 				filename: 'beit-lehi-mobile-3.jpg',
 			},
 		],
