@@ -5,6 +5,9 @@ import './CurrentTechInterestsHeader.scss';
 export const CurrentTechInterestsHeader = () => (
 	<div className="current-tech-interests-component-header mb-3">
 		<h2>Current Tech Interests</h2>
-		<p>Things that I&apos;m interested in learning more about</p>
+		<p>
+			I&apos;m highly motivated to deepen my knowledge and refine my skills in
+			these key areas:
+		</p>
 	</div>
 );
