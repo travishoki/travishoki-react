@@ -15,8 +15,8 @@ export const Volunteer = () => (
 			width="177"
 		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>
-		<div className="row justify-content-center">
-			<div className="col-auto">
+		<div className="row leader-positions">
+			<div className="col-auto leader-position">
 				<p>Bear&apos;s Assistant Den Leader</p>
 				<p>Since Spring of 2025</p>
 			</div>
