@@ -532,7 +532,7 @@ const PROJECTS: ProjectInput[] = [
 			},
 		],
 		learned: '',
-		techs: [HTML, CSS, JAVASCRIPT, WORDPRESS],
+		techs: [HTML, CSS, PHP, JAVASCRIPT, WORDPRESS],
 	},
 	{
 		company: 'Utah Casa',
