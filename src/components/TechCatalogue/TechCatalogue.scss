@@ -37,19 +37,6 @@ $gap: 15px;
 	gap: 0;
 }
 
-.tech-catalogue-header {
-	align-items: center;
-	background: $blue-three;
-	border: none;
-	color: $white;
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: bold;
-	justify-content: space-between;
-	width: 100%;
-}
-
 .tech-catalogue-vertical {
 	.tech-catalogue-section-group:not(:last-child) {
 		margin-bottom: $gap;

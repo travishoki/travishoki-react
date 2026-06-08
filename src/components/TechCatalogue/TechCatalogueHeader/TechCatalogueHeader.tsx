@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './TechCatalogueHeader.scss';
+
 type TechCatalogueHeaderProps = {
 	label: string;
 	onToggle: () => void;
