@@ -1,0 +1,14 @@
+@import '../../../../../styles/responsive.scss';
+
+.list-column {
+	@include phone-down {
+		display: block;
+		margin: 0 auto;
+		max-width: 340px;
+	}
+
+	li {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+}

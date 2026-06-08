@@ -1,0 +1,20 @@
+@import '../../../../../styles/responsive.scss';
+@import '../../../../../styles/variables.scss';
+
+.read-more-button {
+	background: none;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto 0;
+	text-decoration: underline;
+
+	@include tablet-up {
+		display: none;
+	}
+
+	i {
+		margin-right: 6px;
+	}
+}
