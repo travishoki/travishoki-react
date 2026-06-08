@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
-import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
+import { TechCatalogueSectionLabel } from './TechCatalogueSectionLabel/TechCatalogueSectionLabel';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TYPE_SECTIONS } from './TechCatalogue.const';
 import { TechCatalogueItemData } from './TechCatalogue.types';
@@ -36,7 +36,11 @@ export const TechCatalogue = ({
 
 	return (
 		<div className="tech-catalogue mb-3">
-			<TechCatalogueHeader header={header} />
+			<TechCatalogueSectionLabel
+				label={header}
+				onToggle={() => setExpanded(!expanded)}
+				open={expanded}
+			/>
 			<div className="tech-catalogue-content">
 				<div
 					className={

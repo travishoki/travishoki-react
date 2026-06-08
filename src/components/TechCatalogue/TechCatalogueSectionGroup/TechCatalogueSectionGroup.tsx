@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { TechCatalogueItemData } from '../TechCatalogue.types';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
+import { TechCatalogueSectionLabel } from '../TechCatalogueSectionLabel/TechCatalogueSectionLabel';
 
 type TechCatalogueSectionGroupProps = {
 	iconClass: string;
@@ -20,13 +21,11 @@ export const TechCatalogueSectionGroup = ({
 
 	return (
 		<div className="tech-catalogue-section-group">
-			<button
-				className="tech-catalogue-section-label px-3 py-2"
-				onClick={() => setOpen(!open)}
-			>
-				{label}
-				<i className={`fa fa-${open ? 'minus' : 'plus'}`} />
-			</button>
+			<TechCatalogueSectionLabel
+				label={label}
+				onToggle={() => setOpen(!open)}
+				open={open}
+			/>
 
 			{open && (
 				<TechCatalogueList
