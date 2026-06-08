@@ -15,4 +15,34 @@ section.list-section {
 			margin-bottom: 15px;
 		}
 	}
+
+	// On mobile the second list is hidden behind the Read More toggle;
+	// on tablet and up both columns always show.
+	.list-section-secondary {
+		@include phone-down {
+			display: none;
+
+			&.expanded {
+				display: block;
+			}
+		}
+	}
+
+	.list-section-read-more {
+		background: none;
+		border: none;
+		color: $white;
+		cursor: pointer;
+		display: block;
+		margin: 10px auto 0;
+		text-decoration: underline;
+
+		@include tablet-up {
+			display: none;
+		}
+
+		i {
+			margin-right: 6px;
+		}
+	}
 }
