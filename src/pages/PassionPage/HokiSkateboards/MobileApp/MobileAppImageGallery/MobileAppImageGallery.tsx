@@ -6,7 +6,7 @@ import { APP_GALLERY_IMAGES } from './MobileAppImageGallery.data';
 import './MobileAppImageGallery.scss';
 
 const imageSrc = (filename: string) =>
-	`${process.env.PUBLIC_URL}/images/app-screens/${filename}`;
+	`${process.env.PUBLIC_URL}/images/websites/gallery/${filename}`;
 
 export const MobileAppImageGallery = () => {
 	const [page, setPage] = useState(0);

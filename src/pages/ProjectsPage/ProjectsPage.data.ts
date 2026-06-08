@@ -111,6 +111,17 @@ const PROJECTS: ProjectInput[] = [
 			"I've really enjoyed learning Firebase. The document database is just what I needed for this project.",
 			"It's so exciting to see this app come together! I'm really proud of it!",
 		],
+		gallery: [
+			{ filename: 'hoki-skateboards-1-home.jpg' },
+			{ filename: 'hoki-skateboards-2-levels.jpg' },
+			{ filename: 'hoki-skateboards-3-game.jpg' },
+			{ filename: 'hoki-skateboards-4-game.jpg' },
+			{ filename: 'hoki-skateboards-5-coloring.jpg' },
+			{ filename: 'hoki-skateboards-6-book.jpg' },
+			{ filename: 'hoki-skateboards-7-shop.jpg' },
+			{ filename: 'hoki-skateboards-8-build-a-board.jpg' },
+			{ filename: 'hoki-skateboards-9-login.jpg' },
+		],
 		learned: '',
 		subtitle: 'React Native Game',
 		techs: [
