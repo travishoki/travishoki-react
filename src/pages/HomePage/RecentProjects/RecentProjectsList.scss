@@ -4,15 +4,18 @@
 
 #container.home section.recent-projects {
 	ul {
+		// flow-root contains the floated items without clipping the center
+		// podium item's drop shadow (which overflow: hidden would cut off).
+		display: flow-root;
 		list-style: none;
 		margin: 0;
-		overflow: hidden;
 		padding: 0;
 		position: relative;
 
 		@include phone-down {
 			margin: 0 auto;
 			max-width: 300px;
+			padding-bottom: 20px;
 		}
 
 		li {
