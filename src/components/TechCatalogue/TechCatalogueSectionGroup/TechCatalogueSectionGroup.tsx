@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { TechCatalogueItemData } from '../TechCatalogue.types';
+import { TechCatalogueHeader } from '../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
-import { TechCatalogueSectionLabel } from '../TechCatalogueSectionLabel/TechCatalogueSectionLabel';
 
 type TechCatalogueSectionGroupProps = {
 	iconClass: string;
@@ -21,7 +21,7 @@ export const TechCatalogueSectionGroup = ({
 
 	return (
 		<div className="tech-catalogue-section-group">
-			<TechCatalogueSectionLabel
+			<TechCatalogueHeader
 				label={label}
 				onToggle={() => setOpen(!open)}
 				open={open}
