@@ -3,6 +3,10 @@
 	display: flex;
 	flex-direction: column;
 
+	.project-img {
+		cursor: pointer;
+	}
+
 	.project-image-caption {
 		font-size: 12px;
 		margin: 12px 0 0;

@@ -25,3 +25,26 @@ export const useCloseOnEscape = (onClose: () => void) => {
 		};
 	}, [onClose]);
 };
+
+export const useArrowKeyNavigation = (
+	onPrev?: () => void,
+	onNext?: () => void,
+) => {
+	useEffect(() => {
+		const handleKeyDown = (event: KeyboardEvent) => {
+			if (event.key === 'ArrowLeft') {
+				onPrev?.();
+			}
+
+			if (event.key === 'ArrowRight') {
+				onNext?.();
+			}
+		};
+
+		document.addEventListener('keydown', handleKeyDown);
+
+		return () => {
+			document.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [onNext, onPrev]);
+};

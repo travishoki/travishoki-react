@@ -1,38 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { getDimensions } from './ImageModal.helpers';
-import { useCloseOnEscape, useScrollLock } from './ImageModal.hooks';
+import {
+	useArrowKeyNavigation,
+	useCloseOnEscape,
+	useScrollLock,
+} from './ImageModal.hooks';
+import { CloseButton } from './CloseButton';
+import { ModalArrow } from './ModalArrow';
 import './ImageModal.scss';
 
-export const ImageModal = ({ dimensions, onClose, src }: ImageModalProps) => {
+export const ImageModal = ({
+	dimensions,
+	onClose,
+	onNext,
+	onPrev,
+	src,
+}: ImageModalProps) => {
 	useScrollLock();
 	useCloseOnEscape(onClose);
+	useArrowKeyNavigation(onPrev, onNext);
 
-	const originalWidth = dimensions[0];
-	const originalHeight = dimensions[1];
-	const screenWidth = window.innerWidth;
-	const screenHeight = window.innerHeight;
+	const [naturalDimensions, setNaturalDimensions] = useState(dimensions);
 
 	const [width, height] = getDimensions(
-		originalWidth,
-		originalHeight,
-		screenWidth,
-		screenHeight,
+		naturalDimensions[0],
+		naturalDimensions[1],
+		window.innerWidth,
+		window.innerHeight,
 	);
 
 	return (
 		<div className="image-modal" onClick={onClose}>
 			<div className="image-modal-inner">
+				{onPrev && <ModalArrow direction="prev" onClick={onPrev} />}
+
 				<img
+					onLoad={(event) =>
+						setNaturalDimensions([
+							event.currentTarget.naturalWidth,
+							event.currentTarget.naturalHeight,
+						])
+					}
 					src={src}
 					style={{
 						height,
 						width,
 					}}
 				/>
-				<button className="close-icon">
-					<i className="fa fa-close" />
-				</button>
+
+				{onNext && <ModalArrow direction="next" onClick={onNext} />}
+
+				<CloseButton onClick={onClose} />
 			</div>
 		</div>
 	);
@@ -41,5 +60,7 @@ export const ImageModal = ({ dimensions, onClose, src }: ImageModalProps) => {
 type ImageModalProps = {
 	dimensions: number[];
 	onClose: () => void;
+	onNext?: () => void;
+	onPrev?: () => void;
 	src: string;
 };

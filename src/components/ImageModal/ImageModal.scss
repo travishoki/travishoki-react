@@ -1,7 +1,3 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/responsive.scss';
-
 .image-modal {
 	align-items: center;
 	background: rgba(0, 0, 0, 0.9);
@@ -14,25 +10,6 @@
 	top: 0;
 	width: 100%;
 	z-index: 100;
-
-	$buttonSize: 50px;
-	.close-icon {
-		@include border-radius(50%);
-		background: black;
-		border: none;
-		cursor: pointer;
-		height: $buttonSize;
-		position: fixed;
-		right: 20px;
-		text-align: center;
-		top: 15px;
-		width: $buttonSize;
-
-		i {
-			color: $white;
-			font-size: 40px;
-		}
-	}
 
 	.image-modal-inner {
 		position: relative;

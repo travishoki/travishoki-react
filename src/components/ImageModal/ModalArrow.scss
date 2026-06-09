@@ -1,0 +1,31 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.modal-arrow {
+	$size: 50px;
+	@include border-radius(50%);
+	align-items: center;
+	background: black;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	height: $size;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	width: $size;
+
+	i {
+		color: $white;
+		font-size: 30px;
+	}
+
+	&.modal-arrow-prev {
+		left: 20px;
+	}
+
+	&.modal-arrow-next {
+		right: 20px;
+	}
+}

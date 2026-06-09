@@ -1,0 +1,21 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.close-icon {
+	$size: 50px;
+	@include border-radius(50%);
+	background: black;
+	border: none;
+	cursor: pointer;
+	height: $size;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	top: 15px;
+	width: $size;
+
+	i {
+		color: $white;
+		font-size: 40px;
+	}
+}
