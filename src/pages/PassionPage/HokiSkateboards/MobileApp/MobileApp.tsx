@@ -15,6 +15,7 @@ import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { MobileAppImageGallery } from './MobileAppImageGallery/MobileAppImageGallery';
+import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import './MobileApp.scss';
 
 const techs: TechKey[] = [
@@ -47,6 +48,8 @@ export const MobileApp = () => (
 				<MobileAppImageGallery />
 			</div>
 		</div>
+
+		<MobileAppVideo />
 
 		<DownloadAppSection />
 	</div>
