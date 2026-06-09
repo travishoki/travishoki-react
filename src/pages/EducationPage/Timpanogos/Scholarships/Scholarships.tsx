@@ -8,7 +8,7 @@ export const Scholarships = () => (
 	<div className="scholarships mb-2">
 		<img src={imgGearUp} />{' '}
 		<p className="scholarship-description">
-			Recepient of the{' '}
+			Recipient of the{' '}
 			<a
 				href="https://www.uvu.edu/gear-up/index.html"
 				rel="noreferrer"

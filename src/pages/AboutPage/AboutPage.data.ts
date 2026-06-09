@@ -109,7 +109,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		desc: [
 			"I learned how to play the guitar to propose to my wife. I knew how I wanted to propose but didn't know when. I secretly took guitar and vocal lessons for 1.5 years before the actual proposal.",
 			'In 2015, at The Festival of Trees they gave me the stage.',
-			"Nowadays I still play the guitar just for fun and as a way to relax and destress. A few times I've accompanied family sing alongs around the camp fire.",
+			"Nowadays I still play the guitar just for fun and as a way to relax and de-stress. A few times I've accompanied family sing-alongs around the camp fire.",
 		],
 		imgLarge: ImgGuitar,
 		imgLargeDimensions: [2048, 1366],

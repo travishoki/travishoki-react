@@ -65,14 +65,14 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Spiff',
 		contributions: [
-			"Researched and tested different wysiwyg's for our usecase.",
+			"Researched and tested different wysiwyg's for our use case.",
 			'I implementing and customized an integration with a wysiwyg.',
 			'Build out the merge field functionality to swap out handlebar syntax with dynamic values from the users profile.',
-			'The PDF was created serverside, I was able to dig into the Ruby code enough to modify the pdf output.',
+			'The PDF was created server-side, I was able to dig into the Ruby code enough to modify the pdf output.',
 		],
 		description: [
 			'The user needed to be able to formulate their own documents. We created a homegrown solution.',
-			'In order to embed dynamic text, we used "merge fields" as placeholders using handlebars notation, i.e. {placehoder}.',
+			'In order to embed dynamic text, we used "merge fields" as placeholders using handlebars notation, i.e. {placeholder}.',
 		],
 		gallery: [
 			{
@@ -182,7 +182,7 @@ const PROJECTS: ProjectInput[] = [
 			'Integrating a Google Calendar into the site',
 		],
 		description: [
-			"Website for a family friends's salon on wheels. ",
+			"Website for a family friend's salon on wheels. ",
 			'Tiff would drive her bus to workplaces, park out front, and give hair cuts to employees during their work day.',
 		],
 		gallery: [
@@ -266,7 +266,7 @@ const PROJECTS: ProjectInput[] = [
 				filename: 'overstock-com-customer-review-images-2.jpg',
 			},
 			{
-				caption: 'Customer images withing the review section',
+				caption: 'Customer images within the review section',
 				filename: 'overstock-com-customer-review-images-3.jpg',
 			},
 			{
@@ -486,7 +486,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Wordpress theme customization.',
 			'WP Advanced Custom Fields.',
-			"Custom design with ther owner's feedback.",
+			"Custom design with the owner's feedback.",
 		],
 		description:
 			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
@@ -511,12 +511,12 @@ const PROJECTS: ProjectInput[] = [
 			'Set him up with a hosting plan.',
 			'Built a custom Wordpress theme.',
 			'Created a logo and branding',
-			'Embedded testamonials from his clients.',
+			'Embedded testimonials from his clients.',
 		],
 		description:
 			'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
 		learned:
-			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collabrative effort to get his site put together.',
+			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collaborative effort to get his site put together.',
 		subtitle: 'Motivational Speaker',
 		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
 		url: 'http://www.ericaroca.com/',
