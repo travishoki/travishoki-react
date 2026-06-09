@@ -10,11 +10,11 @@ export const useScrollLock = () => {
 	}, []);
 };
 
-export const useCloseOnEscape = (onClose: () => void) => {
+const useKeyDown = (key: string, onPress: () => void) => {
 	useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent) => {
-			if (event.key === 'Escape') {
-				onClose();
+			if (event.key === key) {
+				onPress();
 			}
 		};
 
@@ -23,28 +23,17 @@ export const useCloseOnEscape = (onClose: () => void) => {
 		return () => {
 			document.removeEventListener('keydown', handleKeyDown);
 		};
-	}, [onClose]);
+	}, [key, onPress]);
 };
 
-export const useArrowKeyNavigation = (
-	onPrev?: () => void,
-	onNext?: () => void,
-) => {
-	useEffect(() => {
-		const handleKeyDown = (event: KeyboardEvent) => {
-			if (event.key === 'ArrowLeft') {
-				onPrev?.();
-			}
+export const useCloseOnEscape = (onClose: () => void) => {
+	useKeyDown('Escape', onClose);
+};
 
-			if (event.key === 'ArrowRight') {
-				onNext?.();
-			}
-		};
+export const useLeftArrowKey = (onPress: () => void) => {
+	useKeyDown('ArrowLeft', onPress);
+};
 
-		document.addEventListener('keydown', handleKeyDown);
-
-		return () => {
-			document.removeEventListener('keydown', handleKeyDown);
-		};
-	}, [onNext, onPrev]);
+export const useRightArrowKey = (onPress: () => void) => {
+	useKeyDown('ArrowRight', onPress);
 };

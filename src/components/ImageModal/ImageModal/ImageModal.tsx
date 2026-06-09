@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 
 import { getDimensions } from '../ImageModal.helpers';
-import {
-	useArrowKeyNavigation,
-	useCloseOnEscape,
-	useScrollLock,
-} from '../ImageModal.hooks';
+import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
 import { CloseButton } from '../CloseButton/CloseButton';
-import { ModalArrow } from '../ModalArrow/ModalArrow';
+import { LeftModalArrow } from '../LeftModalArrow/LeftModalArrow';
+import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
 import './ImageModal.scss';
 
 export const ImageModal = ({
@@ -19,7 +16,6 @@ export const ImageModal = ({
 }: ImageModalProps) => {
 	useScrollLock();
 	useCloseOnEscape(onClose);
-	useArrowKeyNavigation(onPrev, onNext);
 
 	const [naturalDimensions, setNaturalDimensions] = useState(dimensions);
 
@@ -33,7 +29,7 @@ export const ImageModal = ({
 	return (
 		<div className="image-modal" onClick={onClose}>
 			<div className="image-modal-inner">
-				{onPrev && <ModalArrow direction="prev" onClick={onPrev} />}
+				{onPrev && <LeftModalArrow onClick={onPrev} />}
 
 				<img
 					onLoad={(event) =>
@@ -49,7 +45,7 @@ export const ImageModal = ({
 					}}
 				/>
 
-				{onNext && <ModalArrow direction="next" onClick={onNext} />}
+				{onNext && <RightModalArrow onClick={onNext} />}
 
 				<CloseButton onClick={onClose} />
 			</div>
