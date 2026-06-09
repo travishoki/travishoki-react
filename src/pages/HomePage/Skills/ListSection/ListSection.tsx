@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import classNames from 'classnames';
 
+import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
+
 import { ListColumn } from './ListColumn/ListColumn';
-import { ReadMoreButton } from './ReadMoreButton/ReadMoreButton';
 import { splitListInHalf } from './ListSection.helpers';
 
 import './ListSection.scss';

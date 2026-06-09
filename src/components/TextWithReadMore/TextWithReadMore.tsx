@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './TextWithReadMore.scss';
+import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 type TextWithReadMoreProps = {
 	initiallyExpanded?: boolean;
@@ -14,7 +14,6 @@ export const TextWithReadMore = ({
 	const [expanded, setExpanded] = useState(initiallyExpanded);
 
 	const hasMore = paragraphs.length > 1;
-	const onToggle = () => setExpanded(!expanded);
 
 	const visibleParagraphs = expanded ? paragraphs : paragraphs.slice(0, 1);
 
@@ -27,10 +26,10 @@ export const TextWithReadMore = ({
 			))}
 
 			{hasMore && (
-				<p className="pointer read-more" onClick={onToggle}>
-					<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
-					{expanded ? 'Read Less' : 'Read More'}
-				</p>
+				<ReadMoreButton
+					expanded={expanded}
+					onToggle={() => setExpanded(!expanded)}
+				/>
 			)}
 		</>
 	);

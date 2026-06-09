@@ -1,5 +1,5 @@
-@import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
+@import '../../../styles/variables.scss';
 
 section.current-tech-interests-component {
 	.interest-image {
@@ -36,9 +36,8 @@ section.current-tech-interests-component {
 		}
 	}
 
-	// The global read-more color ($blue-one) is invisible on this blue
-	// section background, so surface it in white instead.
-	.read-more {
+	// blue-one (the default link color) is invisible on this blue section.
+	.read-more-button {
 		color: $white;
 	}
 }

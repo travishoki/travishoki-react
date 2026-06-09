@@ -1,8 +1,12 @@
 @import '../../styles/variables.scss';
 
-.read-more {
+.read-more-button {
+	background: none;
+	border: none;
 	color: $blue-one;
+	cursor: pointer;
 	font-size: 14px;
+	padding: 0;
 	text-decoration: underline;
 
 	i {
