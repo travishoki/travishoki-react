@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { getDimensions } from './ImageModal.helpers';
-import { useScrollLock } from './ImageModal.hooks';
+import { useCloseOnEscape, useScrollLock } from './ImageModal.hooks';
 import './ImageModal.scss';
 
 export const ImageModal = ({ dimensions, onClose, src }: ImageModalProps) => {
 	useScrollLock();
+	useCloseOnEscape(onClose);
 
 	const originalWidth = dimensions[0];
 	const originalHeight = dimensions[1];
