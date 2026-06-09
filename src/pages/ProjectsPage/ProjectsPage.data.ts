@@ -25,6 +25,7 @@ import {
 	SCSS,
 	SQL,
 	STRIPE,
+	TYPESCRIPT,
 	WEBPACK,
 	WOO_COMMERCE,
 	WORDPRESS,
@@ -64,6 +65,41 @@ const PROJECTS: ProjectInput[] = [
 	{
 		company: 'Spiff',
 		contributions: [
+			"Researched and tested different wysiwyg's for our usecase.",
+			'I implementing and customized an integration with a wysiwyg.',
+			'Build out the merge field functionality to swap out handlebar syntax with dynamic values from the users profile.',
+			'The PDF was created serverside, I was able to dig into the Ruby code enough to modify the pdf output.',
+		],
+		description: [
+			'The user needed to be able to formulate their own documents. We created a homegrown solution.',
+			'In order to embed dynamic text, we used "merge fields" as placeholders using handlebars notation, i.e. {placehoder}.',
+		],
+		gallery: [
+			{
+				caption: 'Document composer with merge fields',
+				filename: 'spiff-documents-1.jpg',
+			},
+			{
+				caption: 'Document preview before the pdf download',
+				filename: 'spiff-documents-2.jpg',
+			},
+		],
+		learned: '',
+		subtitle: 'Documents',
+		techs: [
+			CLAUDE_CODE,
+			REACT_JS,
+			JAVASCRIPT,
+			TYPESCRIPT,
+			JEST,
+			CSS,
+			HTML,
+			CURSOR,
+		],
+	},
+	{
+		company: 'Spiff',
+		contributions: [
 			'Manually updated a lot of strings to use the translations.',
 		],
 		description: [
@@ -88,7 +124,7 @@ const PROJECTS: ProjectInput[] = [
 		],
 		learned: '',
 		subtitle: 'Translations',
-		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
+		techs: [REACT_JS, TYPESCRIPT, JAVASCRIPT, JEST, HTML],
 	},
 	{
 		company: 'Spiff',
@@ -96,7 +132,7 @@ const PROJECTS: ProjectInput[] = [
 		description: ["Create a hierarchical org chart for a company's team."],
 		learned: '',
 		subtitle: 'Team Hierarchy',
-		techs: [REACT_JS, JAVASCRIPT, JEST, HTML],
+		techs: [REACT_JS, TYPESCRIPT, JAVASCRIPT, JEST, HTML],
 	},
 	{
 		company: 'Hoki Skateboards',
@@ -127,6 +163,7 @@ const PROJECTS: ProjectInput[] = [
 		techs: [
 			REACT_JS,
 			REACT_NATIVE,
+			TYPESCRIPT,
 			JAVASCRIPT,
 			JEST,
 			CSS,
