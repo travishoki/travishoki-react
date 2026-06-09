@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
+import { ImageWithModal } from '~components/ImageModal/ImageWithModal';
 import {
 	handleWebsiteImageError,
 	websiteGalleryImageSrc,
@@ -16,7 +17,8 @@ export const ProjectImageCarousel = ({
 
 	return (
 		<div className="project-image-carousel">
-			<img
+			<ImageWithModal
+				alt={gallery[page].caption}
 				className="project-img"
 				onError={handleWebsiteImageError('gallery')}
 				src={websiteGalleryImageSrc(gallery[page].filename)}
