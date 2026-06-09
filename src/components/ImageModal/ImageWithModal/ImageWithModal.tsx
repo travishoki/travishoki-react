@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 
-import { ImageModal } from './ImageModal';
-import { useImageModal } from './useImageModal';
+import { ImageModal } from '../ImageModal/ImageModal';
+import { useImageModal } from '../useImageModal';
 import './ImageWithModal.scss';
 
 type ImageWithModalProps = {

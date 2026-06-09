@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageWithModal } from '~components/ImageModal/ImageWithModal';
+import { ImageWithModal } from '~components/ImageModal/ImageWithModal/ImageWithModal';
 import {
 	handleWebsiteImageError,
 	websiteImageSrc,

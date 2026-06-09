@@ -7,7 +7,7 @@ import { Content } from './Content/Content';
 import { Logo } from './Logo/Logo';
 import { SocialMedia } from './SocialMedia/SocialMedia';
 
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import './HokiSkateboards.scss';
 
 export const HokiSkateboards = () => (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageModal } from '~components/ImageModal/ImageModal';
+import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
 
 import './ImageMaximizable.scss';

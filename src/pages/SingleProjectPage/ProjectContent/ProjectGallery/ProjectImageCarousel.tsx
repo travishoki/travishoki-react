@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
-import { ImageModal } from '~components/ImageModal/ImageModal';
+import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import {
 	handleWebsiteImageError,
 	websiteGalleryImageSrc,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Pannel } from '~components/Pannels/Pannel/Pannel';
 import { Pannels } from '~components/Pannels/Pannels';
 import imgUvuGraduation from '~images/education/uvu-graduation.jpg';

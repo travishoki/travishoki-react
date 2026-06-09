@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import imgDiplomaSmall from '~images/education/travis-hoki-diploma-small.jpg';
 import imgDiploma from '~images/education/travis-hoki-diploma.jpg';
 import './Diploma.scss';

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-import { getDimensions } from './ImageModal.helpers';
+import { getDimensions } from '../ImageModal.helpers';
 import {
 	useArrowKeyNavigation,
 	useCloseOnEscape,
 	useScrollLock,
-} from './ImageModal.hooks';
-import { CloseButton } from './CloseButton';
-import { ModalArrow } from './ModalArrow';
+} from '../ImageModal.hooks';
+import { CloseButton } from '../CloseButton/CloseButton';
+import { ModalArrow } from '../ModalArrow/ModalArrow';
 import './ImageModal.scss';
 
 export const ImageModal = ({
