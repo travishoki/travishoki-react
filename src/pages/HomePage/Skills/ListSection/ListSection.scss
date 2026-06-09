@@ -1,28 +1,11 @@
-@import '../../../../styles/responsive.scss';
 @import '../../../../styles/variables.scss';
 
 section.list-section {
-	// On mobile the second list is hidden behind the Read More toggle;
-	// on tablet and up both columns always show.
-	.list-section-secondary {
-		@include phone-down {
-			display: none;
-
-			&.expanded {
-				display: block;
-			}
-		}
-	}
-
-	// The toggle is centered and only relevant on mobile here. blue-one (the
-	// default link color) is low-contrast on this blue section, so use white.
+	// The toggle only renders on mobile; blue-one (the default link color) is
+	// low-contrast on this blue section, so use white.
 	.read-more-button {
 		color: $white;
 		display: block;
 		margin: 10px auto 0;
-
-		@include tablet-up {
-			display: none;
-		}
 	}
 }

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
+import { useIsMobile } from '~helpers/useIsMobile';
 
 import { CURRENT_TECH_INTERESTS } from './CurrentTechInterests.data';
 import { CurrentTechInterestsHeader } from './CurrentTechInterestsHeader/CurrentTechInterestsHeader';
@@ -10,6 +11,7 @@ import './CurrentTechInterests.scss';
 export const CurrentTechInterests = () => {
 	const trackRef = useRef<HTMLDivElement>(null);
 	const [activeIndex, setActiveIndex] = useState(0);
+	const isMobile = useIsMobile();
 
 	const handleScroll = () => {
 		const track = trackRef.current;
@@ -31,11 +33,13 @@ export const CurrentTechInterests = () => {
 
 			<InterestColumns onScroll={handleScroll} ref={trackRef} />
 
-			<CarouselDots
-				activeIndex={activeIndex}
-				count={CURRENT_TECH_INTERESTS.length}
-				onSelect={scrollToIndex}
-			/>
+			{isMobile && (
+				<CarouselDots
+					activeIndex={activeIndex}
+					count={CURRENT_TECH_INTERESTS.length}
+					onSelect={scrollToIndex}
+				/>
+			)}
 		</section>
 	);
 };

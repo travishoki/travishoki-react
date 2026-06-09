@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import classNames from 'classnames';
 
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
+import { useIsMobile } from '~helpers/useIsMobile';
 
 import { ListColumn } from './ListColumn/ListColumn';
 import { splitListInHalf } from './ListSection.helpers';
@@ -11,6 +11,7 @@ import './ListSection.scss';
 export const ListSection = ({ list, title }: ListSectionProps) => {
 	const [LIST_A, LIST_B] = useMemo(() => splitListInHalf(list), [list]);
 	const [expanded, setExpanded] = useState(false);
+	const isMobile = useIsMobile();
 
 	return (
 		<section className="primary list-section">
@@ -21,19 +22,19 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 					<div className="col-md-6">
 						<ListColumn items={LIST_A} />
 					</div>
-					<div
-						className={classNames('col-md-6 list-section-secondary', {
-							expanded,
-						})}
-					>
-						<ListColumn items={LIST_B} />
-					</div>
+					{(!isMobile || expanded) && (
+						<div className="col-md-6">
+							<ListColumn items={LIST_B} />
+						</div>
+					)}
 				</div>
 
-				<ReadMoreButton
-					expanded={expanded}
-					onToggle={() => setExpanded(!expanded)}
-				/>
+				{isMobile && (
+					<ReadMoreButton
+						expanded={expanded}
+						onToggle={() => setExpanded(!expanded)}
+					/>
+				)}
 			</div>
 		</section>
 	);
