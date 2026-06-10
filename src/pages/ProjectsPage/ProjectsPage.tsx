@@ -55,7 +55,9 @@ export const ProjectsPage = () => {
 					toggleView={() => setGrid(!grid)}
 				/>
 
-				<Projects grid={grid} projectLink={projectLink} projects={projects} />
+				{projects.length === 0 && (
+					<Projects grid={grid} projectLink={projectLink} projects={projects} />
+				)}
 
 				{projects.length === 0 && (
 					<NoResults

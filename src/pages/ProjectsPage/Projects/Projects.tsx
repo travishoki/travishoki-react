@@ -11,8 +11,6 @@ export const Projects = ({
 	projectLink,
 	projects = [],
 }: ProjectsProps) => {
-	if (projects.length === 0) return null;
-
 	if (grid) {
 		const resultsCountClass = getResultsCountClass(projects.length);
 
