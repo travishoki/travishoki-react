@@ -3,12 +3,14 @@ import React, { Fragment } from 'react';
 import { ExperienceItem } from '../ExperienceItem/ExperienceItem';
 import { RESUME_DATA } from '../ResumePage.data';
 import { TechDivider } from '../TechDivider/TechDivider';
+import { CareerOverview } from './CareerOverview/CareerOverview';
 
 export const Experience = () => (
 	<section className="experience">
 		<div className="boxed boxed-lg">
-			<h2>Experience</h2>
+			<CareerOverview />
 
+			<h2>Experience</h2>
 			<ul className="staggered">
 				{RESUME_DATA.map((job, index) => {
 					const showTechDivider = index === RESUME_DATA.length - 3;
