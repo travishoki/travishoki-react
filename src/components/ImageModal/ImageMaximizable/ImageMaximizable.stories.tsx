@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { expect, userEvent } from 'storybook/test';
 
 import ballroomSmall from '~images/about/ballroom-small.jpg';
