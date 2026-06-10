@@ -26,11 +26,8 @@ export const ExperienceItem = ({
 		<div className="info-box">
 			<h3 className="m-0">{title}</h3>
 			<SubLine dateEnd={dateEnd} dateStart={dateStart} position={position} />
-
 			<BulletedList list={tasks} />
-
 			<AffiliatedCompany affiliatedCompany={affiliatedCompany} />
-
 			<TechListCatalogue list={techs} />
 		</div>
 	</li>

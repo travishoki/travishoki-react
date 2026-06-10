@@ -13,11 +13,9 @@ export const ResumePage = () => (
 		<h1>Resume</h1>
 
 		<DownloadSection />
-
 		<Experience />
 		<TechTiles />
 		<Skills />
-
 		<Education />
 	</div>
 );
