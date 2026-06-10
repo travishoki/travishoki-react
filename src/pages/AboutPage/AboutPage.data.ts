@@ -86,15 +86,6 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			`My Australian son. Koda is our Australian Shepherd doggy. My oldest son called him “Diggy “. We adopted him from the Puppy Barn ${KODA_AGE} years ago. He is an important part of our family.`,
-		],
-		imgLarge: ImgKoda,
-		imgLargeDimensions: [1536, 2048],
-		imgSmall: ImgKodaSmall,
-		title: 'Doggo',
-	},
-	{
-		desc: [
 			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "screamy"! I love my family, even if we are all a little "Hoki"!',
 		],
 		imgLarge: ImgFamily,
@@ -104,7 +95,16 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			'Skating is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard?',
+			`My Australian son. Koda is our Australian Shepherd doggy. My oldest son called him “Diggy “. We adopted him from the Puppy Barn ${KODA_AGE} years ago. He is an important part of our family.`,
+		],
+		imgLarge: ImgKoda,
+		imgLargeDimensions: [1536, 2048],
+		imgSmall: ImgKodaSmall,
+		title: 'Doggo',
+	},
+	{
+		desc: [
+			'Skatingboarding is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard?',
 		],
 		imgLarge: ImgSkateboard,
 		imgLargeDimensions: [2048, 1367],
