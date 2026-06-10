@@ -48,19 +48,19 @@ const REDS: ColorGroup = {
 
 const BLUES: ColorGroup = {
 	colors: [
-		{ hex: '#7c8fce', name: 'Blue One', variable: '$blue-one' },
-		{ hex: '#5a6fb4', name: 'Blue Two', variable: '$blue-two' },
+		{ hex: COLORS.BLUE_1, name: 'Blue One', variable: '$blue-one' },
+		{ hex: COLORS.BLUE_2, name: 'Blue Two', variable: '$blue-two' },
 		{
-			hex: '#415082',
+			hex: COLORS.BLUE_3,
 			name: 'Blue Three / Primary',
 			variable: '$blue-three / $primary',
 		},
 		{
-			hex: '#27314f',
+			hex: COLORS.BLUE_4,
 			name: 'Blue Four / Secondary',
 			variable: '$blue-four / $secondary',
 		},
-		{ hex: '#1b2136', name: 'Blue Five', variable: '$blue-five' },
+		{ hex: COLORS.BLUE_5, name: 'Blue Five', variable: '$blue-five' },
 	],
 	label: 'Blues',
 };
@@ -104,7 +104,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 					/>
 					<div
 						style={{
-							background: '#fff',
+							background: COLORS.WHITE,
 							minHeight: '100px',
 							padding: '0.5rem 0.75rem',
 						}}
