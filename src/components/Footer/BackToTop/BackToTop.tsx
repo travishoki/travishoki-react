@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 import './BackToTop.scss';
 
+const SCROLL_DISTANCE = 200;
+
 export const BackToTop = () => {
 	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
-		const onScroll = () => setVisible(window.scrollY > 200);
+		const onScroll = () => setVisible(window.scrollY > SCROLL_DISTANCE);
 
 		window.addEventListener('scroll', onScroll);
 

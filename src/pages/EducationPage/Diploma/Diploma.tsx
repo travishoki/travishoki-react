@@ -6,15 +6,21 @@ import imgDiploma from '~images/education/travis-hoki-diploma.jpg';
 
 import './Diploma.scss';
 
+const SMALL_WIDTH = 600;
+const SMALL_HEIGHT = 400;
+
+const LARGE_WIDTH = 2178;
+const LARGE_HEIGHT = 1684;
+
 export const Diploma = () => (
 	<section className="gray">
 		<div className="diploma-container">
 			<ImageMaximizable
 				alt="UVU Diploma"
-				dimensions={[600, 464]}
+				dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 				src={imgDiplomaSmall}
 				srcLarge={imgDiploma}
-				srcLargeDimensions={[2178, 1684]}
+				srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 			/>
 		</div>
 	</section>

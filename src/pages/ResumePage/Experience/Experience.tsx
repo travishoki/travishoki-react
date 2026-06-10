@@ -5,6 +5,8 @@ import { RESUME_DATA } from '../ResumePage.data';
 import { TechDivider } from '../TechDivider/TechDivider';
 import { CareerOverview } from './CareerOverview/CareerOverview';
 
+const DIVIDER_POS = 3;
+
 export const Experience = () => (
 	<section className="experience">
 		<div className="boxed boxed-lg">
@@ -13,7 +15,7 @@ export const Experience = () => (
 			<h2>Experience</h2>
 			<ul className="staggered">
 				{RESUME_DATA.map((job, index) => {
-					const showTechDivider = index === RESUME_DATA.length - 3;
+					const showTechDivider = index === RESUME_DATA.length - DIVIDER_POS;
 
 					return (
 						<Fragment key={index}>

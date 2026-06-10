@@ -11,6 +11,12 @@ import { SocialMedia } from './SocialMedia/SocialMedia';
 
 import './HokiSkateboards.scss';
 
+const SMALL_WIDTH = 600;
+const SMALL_HEIGHT = 400;
+
+const LARGE_WIDTH = 1541;
+const LARGE_HEIGHT = 1030;
+
 export const HokiSkateboards = () => (
 	<section className="hoki-skateboards p-3">
 		<div className="boxed">
@@ -18,10 +24,10 @@ export const HokiSkateboards = () => (
 			<ImageMaximizable
 				alt="Hoki Skateboards"
 				className="main-image"
-				dimensions={[600, 400]}
+				dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 				src={ImgHokiSkateboardsSmall}
 				srcLarge={ImgHokiSkateboards}
-				srcLargeDimensions={[1541, 1030]}
+				srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 			/>
 			<p className="passion-project-description">
 				Hoki Skateboards is my passion project. Through the years I have enjoyed

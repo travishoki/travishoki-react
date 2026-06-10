@@ -8,8 +8,11 @@ type VideoButtonProps = {
 	src: string;
 };
 
+const DIVIDER = 3;
+
 export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
-	const iconSize = size / 3;
+	const iconSize = size / DIVIDER;
+	const fontSize = iconSize / DIVIDER;
 
 	return (
 		<button
@@ -20,7 +23,7 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 			<img alt="Video thumbnail" className="video-button-image" src={src} />
 			<span
 				className="video-button-icon"
-				style={{ fontSize: iconSize * 0.3, height: iconSize, width: iconSize }}
+				style={{ fontSize, height: iconSize, width: iconSize }}
 			>
 				<i className="fa fa-video-camera" />
 			</span>

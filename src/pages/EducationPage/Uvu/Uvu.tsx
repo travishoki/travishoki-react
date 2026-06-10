@@ -6,6 +6,12 @@ import { Panels } from '~components/Panels/Panels';
 import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 import imgUvu from '~images/education/uvu.png';
 
+const SMALL_WIDTH = 600;
+const SMALL_HEIGHT = 400;
+
+const LARGE_WIDTH = 1200;
+const LARGE_HEIGHT = 800;
+
 export const Uvu = () => (
 	<section className="white center education">
 		<div className="boxed">
@@ -27,10 +33,10 @@ export const Uvu = () => (
 				<Panel>
 					<ImageMaximizable
 						alt="University Graduation"
-						dimensions={[600, 400]}
+						dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 						imageClassName="picture"
 						src={imgUvuGraduation}
-						srcLargeDimensions={[1200, 800]}
+						srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 					/>
 					<p className="image-caption">(College graduation with my wife.)</p>
 				</Panel>

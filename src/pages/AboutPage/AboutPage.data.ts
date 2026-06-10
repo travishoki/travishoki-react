@@ -38,6 +38,7 @@ const YEARS_DATING = getYearsSince(DATING_YEAR);
 const KODA_DOB = '2017-06-07';
 const KODA_AGE = getYearsSince(KODA_DOB);
 
+/* eslint-disable no-magic-numbers */
 export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
@@ -174,6 +175,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		title: 'TaeKwonDo',
 	},
 ];
+/* eslint-enable no-magic-numbers */
 
 export type AboutType = {
 	alt?: string;

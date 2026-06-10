@@ -7,12 +7,14 @@ import {
 	websiteImageSrc,
 } from '~helpers/websiteImages';
 
-import { orderTopThreeInPodium } from './RecentProjects.helpers';
+import { orderTopThreeInPodium, PODIUM_COUNT } from './RecentProjects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 
 import './RecentProjectsList.scss';
 
-const currentProjects = orderTopThreeInPodium(PROJECTS_DATA.slice(0, 3));
+const currentProjects = orderTopThreeInPodium(
+	PROJECTS_DATA.slice(0, PODIUM_COUNT),
+);
 
 export const RecentProjectsList = () => (
 	<ul>

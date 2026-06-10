@@ -10,6 +10,9 @@ import { Scholarships } from './Scholarships/Scholarships';
 
 import './Timpanogos.scss';
 
+const IMG_WIDTH = 600;
+const IMG_HEIGHT = 400;
+
 export const Timpanogos = () => (
 	<section className="white center education">
 		<div className="boxed timpanogos">
@@ -30,7 +33,7 @@ export const Timpanogos = () => (
 				<Panel>
 					<ImageMaximizable
 						alt="High School Graduation"
-						dimensions={[600, 400]}
+						dimensions={[IMG_WIDTH, IMG_HEIGHT]}
 						imageClassName="picture"
 						src={imgTimpanogosGraduation}
 					/>
