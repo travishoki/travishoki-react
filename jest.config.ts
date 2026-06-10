@@ -25,7 +25,7 @@ module.exports = {
 	},
 	preset: 'ts-jest',
 	setupFilesAfterEnv: ['<rootDir>/testing/setupTests.js'],
-	testEnvironment: 'jsdom',
+	testEnvironment: 'node',
 	testPathIgnorePatterns: ['<rootDir>/functions'],
 	transform: {
 		'.(ts|tsx)': 'ts-jest',
