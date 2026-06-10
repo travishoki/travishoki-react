@@ -115,8 +115,15 @@
 						"group": "external",
 						"position": "after",
 					},
+					{
+						"pattern": "*.scss",
+						"patternOptions": { "matchBase": true },
+						"group": "index",
+						"position": "after",
+					},
 				],
 				"pathGroupsExcludedImportTypes": ["react"],
+				"warnOnUnassignedImports": true,
 			},
 		],
 
