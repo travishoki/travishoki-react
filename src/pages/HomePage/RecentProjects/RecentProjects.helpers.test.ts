@@ -1,8 +1,8 @@
 /* global describe, it */
 import expect from 'expect';
+import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 import { orderTopThreeInPodium } from './RecentProjects.helpers';
-import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 describe('orderTopThreeInPodium', () => {
 	it('Should return top three in podium order', () => {

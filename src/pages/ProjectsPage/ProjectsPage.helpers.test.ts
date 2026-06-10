@@ -2,6 +2,7 @@
 import expect from 'expect';
 
 import { JAVASCRIPT, REACT_JS } from '~const/Tech.const';
+
 import { createProjectsPageUrl, filterProjects } from './ProjectsPage.helpers';
 import { ProjectType } from './ProjectsPage.types';
 

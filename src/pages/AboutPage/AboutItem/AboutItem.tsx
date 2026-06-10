@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
+
 import { AboutType } from '../AboutPage.data';
 import { AboutImage } from './AboutImage/AboutImage';
 import { AboutVideo } from './AboutVideo/AboutVideo';

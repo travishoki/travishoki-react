@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
+
 import './AboutImage.scss';
-import { AboutType } from '../../AboutPage.data';
 import { DEFAULT_IMAGE_DIMENSIONS } from '../../AboutPage.const';
+import { AboutType } from '../../AboutPage.data';
 
 type AboutImageProps = {
 	item: AboutType;

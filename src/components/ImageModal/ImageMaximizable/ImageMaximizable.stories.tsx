@@ -1,10 +1,13 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { expect, userEvent } from 'storybook/test';
 
 import ballroomSmall from '~images/about/ballroom-small.jpg';
 import ballroomLarge from '~images/about/ballroom.jpg';
+
 import { ImageMaximizable } from './ImageMaximizable';
+
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta: Meta<typeof ImageMaximizable> = {
 	component: ImageMaximizable,

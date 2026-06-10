@@ -1,9 +1,10 @@
 import React from 'react';
 
-import type { Meta, StoryObj } from '@storybook/react-vite';
 import { expect } from 'storybook/test';
 
 import { TechListCatalogue } from './TechListCatalogue';
+
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta: Meta<typeof TechListCatalogue> = {
 	component: TechListCatalogue,

@@ -88,6 +88,38 @@
 		"react/react-in-jsx-scope": 1,
 		"react/self-closing-comp": 1,
 
+		// Imports
+		"import/order": [
+			"error",
+			{
+				"alphabetize": {
+					"order": "asc",
+				},
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					["parent", "sibling", "index"],
+					"object",
+					"type",
+				],
+				"newlines-between": "always",
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "builtin",
+						"position": "before",
+					},
+					{
+						"pattern": "~*/**",
+						"group": "external",
+						"position": "after",
+					},
+				],
+				"pathGroupsExcludedImportTypes": ["react"],
+			},
+		],
+
 		// Typescript
 		"@typescript-eslint/explicit-function-return-type": "off", // handled by Typescript
 		"@typescript-eslint/naming-convention": [
@@ -143,6 +175,7 @@
 					["~actions", "./src/redux/actions"],
 					["~components", "./src/components"],
 					["~const", "./src/const"],
+					["~helpers", "./src/helpers"],
 					["~images", "./src/images"],
 					["~reducers", "./src/redux/reducers"],
 					["~svg", "./src/svg"],

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { TECH, TechKey } from '~const/Tech.const';
 
 import './TechIcon.scss';

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
+import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
+import { ProjectImage } from './ProjectImage/ProjectImage';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
-import { ProjectImage } from './ProjectImage/ProjectImage';
-import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
+import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 import './ProjectContent.scss';
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {

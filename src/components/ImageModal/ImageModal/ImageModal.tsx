@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
+import { CloseButton } from '../CloseButton/CloseButton';
 import { getDimensions } from '../ImageModal.helpers';
 import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
-import { CloseButton } from '../CloseButton/CloseButton';
 import { LeftModalArrow } from '../LeftModalArrow/LeftModalArrow';
 import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
 import './ImageModal.scss';

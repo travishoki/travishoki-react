@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { BulletedList } from '~components/BulletedList/BulletedList';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 import { ResumeDataType } from '../ResumePage.data';
 import { SubLine } from './SubLine/SubLine';
-import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import './ExperienceItem.scss';
 
 export const ExperienceItem = ({

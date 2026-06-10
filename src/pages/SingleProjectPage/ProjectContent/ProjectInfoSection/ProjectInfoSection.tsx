@@ -1,12 +1,13 @@
 import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
+import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { makeArray } from '~helpers/arrays';
 
-import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
-import './ProjectInfoSection.scss';
-import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { Contributions } from './Contributions/Contributions';
+import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
+
+import './ProjectInfoSection.scss';
 
 const logos = require.context('../../../../images/clients', true);
 

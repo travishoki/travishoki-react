@@ -1,4 +1,5 @@
 import { TechFilterType } from '~const/Tech.const';
+
 import { ProjectType } from './ProjectsPage.types';
 
 const inArr = (item: string, arr: string[]) => {

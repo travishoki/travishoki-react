@@ -1,3 +1,6 @@
+import { getItemKey, slugify } from '~helpers/projects';
+
+import { ProjectType } from './ProjectsPage.types';
 import {
 	ACTION_SCRIPT,
 	AMP,
@@ -30,9 +33,6 @@ import {
 	WOO_COMMERCE,
 	WORDPRESS,
 } from '../../const/Tech.const';
-
-import { getItemKey, slugify } from '~helpers/projects';
-import { ProjectType } from './ProjectsPage.types';
 
 const PROJECTS: ProjectInput[] = [
 	{

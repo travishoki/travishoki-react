@@ -1,5 +1,4 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { SOFTWARE } from '~const/Software.const';
 import { TECH } from '~const/Tech.const';
@@ -7,6 +6,8 @@ import { SvgIconFacebook } from '~svg/SvgIconFacebook';
 import { SvgIconInstagram } from '~svg/SvgIconInstagram';
 import { SvgIconTikTok } from '~svg/SvgIconTikTok';
 import { SvgIconYoutube } from '~svg/SvgIconYoutube';
+
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const GRID_STYLE: React.CSSProperties = {
 	display: 'grid',

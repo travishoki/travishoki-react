@@ -1,7 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import ballroomSmall from '~images/about/ballroom-small.jpg';
+
 import { VideoButton } from './VideoButton';
+
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta: Meta<typeof VideoButton> = {
 	component: VideoButton,

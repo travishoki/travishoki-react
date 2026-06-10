@@ -1,9 +1,9 @@
 import React from 'react';
+
 import { useParams } from 'react-router-dom';
 
 import { ProjectContent } from './ProjectContent/ProjectContent';
 import { PROJECTS_DATA } from '../ProjectsPage/ProjectsPage.data';
-
 import { BackButton } from './BackButton/BackButton';
 
 export const SingleProjectPage = () => {

@@ -1,13 +1,14 @@
 import React from 'react';
 
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import ImgHokiSkateboardsSmall from '~images/passion/hoki-skateboards-small.jpg';
 import ImgHokiSkateboards from '~images/passion/hoki-skateboards.jpg';
-import { MobileApp } from './MobileApp/MobileApp';
+
 import { Content } from './Content/Content';
 import { Logo } from './Logo/Logo';
+import { MobileApp } from './MobileApp/MobileApp';
 import { SocialMedia } from './SocialMedia/SocialMedia';
 
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import './HokiSkateboards.scss';
 
 export const HokiSkateboards = () => (

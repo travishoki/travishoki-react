@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import classnames from 'classnames';
 
-import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
+import { TYPE_SECTIONS } from './TechCatalogue.const';
+import { groupTechByType } from './TechCatalogue.helpers';
+import { TechCatalogueItemData } from './TechCatalogue.types';
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
 import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
-import { TYPE_SECTIONS } from './TechCatalogue.const';
-import { TechCatalogueItemData } from './TechCatalogue.types';
-import { groupTechByType } from './TechCatalogue.helpers';
+import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 import './TechCatalogue.scss';
 
 export type TechCatalogueProps = {

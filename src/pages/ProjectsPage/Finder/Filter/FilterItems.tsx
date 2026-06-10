@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { FilterItem } from './FilterItem';
 import { TechFilterType, TechKey } from '~const/Tech.const';
+
+import { FilterItem } from './FilterItem';
 
 export const FilterItems = ({
 	filter,

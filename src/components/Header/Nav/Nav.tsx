@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import { useLocation } from 'react-router-dom';
 import classnames from 'classnames';
+import { useLocation } from 'react-router-dom';
 
 import './Nav.scss';
 import { NavItem } from './NavItem/NavItem';

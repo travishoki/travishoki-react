@@ -4,8 +4,8 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { CurrentFilter } from './CurrentFilter';
 import { FilterClean } from './FilterClean';
-import { FilterItems } from './FilterItems';
 import { FilterForm } from './FilterForm';
+import { FilterItems } from './FilterItems';
 
 import './Filter.scss';
 

@@ -1,10 +1,11 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
 
 import './ImageMaximizable.scss';
-import classNames from 'classnames';
 
 export const ImageMaximizable = ({
 	alt,
