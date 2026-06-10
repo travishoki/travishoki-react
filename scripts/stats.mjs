@@ -1,5 +1,5 @@
+import { logDeadCodeStats } from './dead-code.mjs';
 import { logLintWarningStats } from './lint.mjs';
-import * as helpers from './stats.helpers.mjs';
 
-helpers.logDeadCodeStats();
+logDeadCodeStats();
 logLintWarningStats();
