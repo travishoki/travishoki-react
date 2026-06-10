@@ -166,7 +166,7 @@
 	},
 	"overrides": [
 		{
-			"files": ["*stories.tsx"],
+			"files": ["*.stories.tsx", "*.test.*"],
 			"rules": {
 				"no-magic-numbers": ["off"],
 			},
