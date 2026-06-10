@@ -136,8 +136,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
-			'Built app features combining front-end logic, relational SQL databases, and backend API management.',
 			'Developed student-housing software in-house',
+			'Built app features combining front-end logic, relational SQL databases, and backend API management.',
 			'Built data queries and reporting with Python and Django',
 			'Managed and enhanced the front-end via AngularJS and CoffeeScript',
 			'Optimized application performance and user experience',
