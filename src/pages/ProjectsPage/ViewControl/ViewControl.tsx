@@ -1,12 +1,6 @@
 import React from 'react';
 
-export const ViewControl = ({
-	grid = false,
-	isVisible = false,
-	toggleView,
-}: ViewControlProps) => {
-	if (!isVisible) return null;
-
+export const ViewControl = ({ grid = false, toggleView }: ViewControlProps) => {
 	return (
 		<p className="view-controls" onClick={toggleView}>
 			View: <i className={`fa fa-${grid ? 'th-large' : 'th-list'}`} />
@@ -16,6 +10,5 @@ export const ViewControl = ({
 
 type ViewControlProps = {
 	grid: boolean;
-	isVisible: boolean;
 	toggleView: () => void;
 };

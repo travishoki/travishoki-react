@@ -49,11 +49,9 @@ export const ProjectsPage = () => {
 					setSearchTerm={setSearchTerm}
 				/>
 
-				<ViewControl
-					grid={grid}
-					isVisible={projects.length > 0}
-					toggleView={() => setGrid(!grid)}
-				/>
+				{projects.length > 0 && (
+					<ViewControl grid={grid} toggleView={() => setGrid(!grid)} />
+				)}
 
 				{projects.length === 0 && (
 					<Projects grid={grid} projectLink={projectLink} projects={projects} />
