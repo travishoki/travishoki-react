@@ -18,8 +18,8 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"stats": "node scripts/stats.mjs",
-		"deadcode-find": "ts-prune",
-		"deadcode-count": "ts-prune | wc -l"
+		"deadcode-find": "ts-prune -i '.stories.'",
+		"deadcode-count": "yarn deadcode-find | wc -l"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^6.5.0",
