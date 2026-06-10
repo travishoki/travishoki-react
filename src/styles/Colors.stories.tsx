@@ -95,7 +95,6 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 					<div
 						style={{
 							backgroundColor: color.hex,
-							border: color.hex === COLORS.WHITE ? '1px solid #ddd' : 'none',
 							height: '120px',
 						}}
 					/>
@@ -106,12 +105,18 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 							padding: '0.5rem 0.75rem',
 						}}
 					>
-						<div style={{ color: '#222', fontSize: '0.8rem', fontWeight: 600 }}>
+						<div
+							style={{
+								color: COLORS.GRAY_2,
+								fontSize: '0.8rem',
+								fontWeight: 600,
+							}}
+						>
 							{color.name}
 						</div>
 						<div
 							style={{
-								color: '#888',
+								color: COLORS.GRAY_2,
 								fontSize: '0.75rem',
 								marginTop: '2px',
 							}}
@@ -120,7 +125,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 						</div>
 						<div
 							style={{
-								color: '#aaa',
+								color: COLORS.GRAY_1,
 								fontFamily: 'monospace',
 								fontSize: '0.7rem',
 								marginTop: '2px',
