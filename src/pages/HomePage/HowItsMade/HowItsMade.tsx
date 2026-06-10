@@ -8,7 +8,6 @@ export const HowItsMade = () => {
 	return (
 		<section className="how-its-made">
 			<h2>How This Site Was Made</h2>
-
 			<HowItsMadeLinks />
 			<HowItsMadeList />
 		</section>

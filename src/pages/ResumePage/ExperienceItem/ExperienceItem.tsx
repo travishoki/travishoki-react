@@ -4,6 +4,7 @@ import { BulletedList } from '~components/BulletedList/BulletedList';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 import { ResumeDataType } from '../ResumePage.data';
+import { AffiliatedCompany } from './AffiliatedCompany/AffiliatedCompany';
 import { SubLine } from './SubLine/SubLine';
 import './ExperienceItem.scss';
 
@@ -28,12 +29,7 @@ export const ExperienceItem = ({
 
 			<BulletedList list={tasks} />
 
-			{affiliatedCompany && (
-				<div className="experience-affiliated-company">
-					<img className="round" src={affiliatedCompany.img} />
-					<p>{affiliatedCompany.title}</p>
-				</div>
-			)}
+			<AffiliatedCompany affiliatedCompany={affiliatedCompany} />
 
 			<TechListCatalogue list={techs} />
 		</div>
