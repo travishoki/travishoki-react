@@ -7,7 +7,7 @@ import { trimExecSync } from './strings.mjs';
 
 export const logDeadCodeStats = () => {
 	log(chalk.bold.underline('Find Dead Code '));
-	const output = trimExecSync('yarn find-deadcode');
+	const output = trimExecSync('yarn deadcode-find');
 	const isSuccessfull = output === '$ ts-prune';
 
 	if (isSuccessfull) {
