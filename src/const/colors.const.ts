@@ -14,24 +14,12 @@ export const RAINBOW_VIOLET = '#ee82ee';
 export const RAINBOW_ORANGE_2 = '#CC8500';
 export const RAINBOW_ORANGE_3 = '#806026';
 
-// Trophies
-export const GOLD = '#C9B037';
-export const SILVER = '#B4B4B4';
-export const BRONZE = '#AD8A56';
-
 // Blue
 export const BLUE_1 = '#7c8fce';
 export const BLUE_2 = '#5a6fb4';
 export const BLUE_3 = '#415082';
 export const BLUE_4 = '#27314f';
 export const BLUE_5 = '#1b2136';
-
-// Purple
-export const PURPLE_1 = '#b998be';
-export const PURPLE_2 = '#9d6ea4';
-export const PURPLE_3 = '#74317e';
-export const PURPLE_4 = '#512258';
-export const PURPLE_5 = '#35063d';
 
 // Red
 export const RED_1 = '#b48d96';
