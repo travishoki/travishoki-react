@@ -26,6 +26,7 @@
 		display: flex;
 		gap: 20px;
 		justify-content: center;
+		margin-bottom: 10px;
 	}
 
 	.how-its-made-link {
@@ -39,5 +40,16 @@
 			font-size: 40px;
 			margin-bottom: 10px;
 		}
+	}
+
+	ul {
+		display: block;
+		margin: 0 auto;
+		max-width: 400px;
+	}
+
+	.read-more-button {
+		display: block;
+		margin: 10px auto 0;
 	}
 }
