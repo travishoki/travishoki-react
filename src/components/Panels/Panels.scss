@@ -2,14 +2,14 @@
 @import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
-.pannels {
+.panels {
 	@include tablet-up {
 		display: flex;
 	}
 
 	flex-direction: row-reverse;
 
-	.pannel:first-child {
+	.panel:first-child {
 		@include phone-down {
 			margin-bottom: 20px;
 		}

@@ -27,7 +27,7 @@ import ImgBedBathAndBeyond from '~images/experience/bed-bath-and-beyond.png';
 import ImgChatbooks from '~images/experience/chatbooks.png';
 import ImgEnspark from '~images/experience/enspark.png';
 import ImgInsideSales from '~images/experience/inside-sales.png';
-import ImgOvestock from '~images/experience/overstock.png';
+import ImgOverstock from '~images/experience/overstock.png';
 import ImgRoomChoice from '~images/experience/roomchoice.png';
 import ImgSalesforce from '~images/experience/salesforce.png';
 import ImgSpiff from '~images/experience/spiff.png';
@@ -124,7 +124,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		},
 		dateEnd: 'Mar. 2019',
 		dateStart: 'Sept. 2015',
-		img: ImgOvestock,
+		img: ImgOverstock,
 		position: 'Front-end Developer',
 		tasks: [
 			'Developed high-performance e-commerce interfaces utilizing preprocessed CSS (Less/Sass) and media queries for responsive layouts.',

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
-import { Pannel } from '~components/Pannels/Pannel/Pannel';
-import { Pannels } from '~components/Pannels/Pannels';
+import { Panel } from '~components/Panels/Panel/Panel';
+import { Panels } from '~components/Panels/Panels';
 import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
 import imgTimpanogos from '~images/education/timpanogos.png';
 
@@ -12,8 +12,8 @@ import './Timpanogos.scss';
 export const Timpanogos = () => (
 	<section className="white center education">
 		<div className="boxed timpanogos">
-			<Pannels className="reverse">
-				<Pannel>
+			<Panels className="reverse">
+				<Panel>
 					<h2>Timpanogos High School</h2>
 					<img className="school" src={imgTimpanogos} />
 					<p className="degree">High School Diploma</p>
@@ -25,8 +25,8 @@ export const Timpanogos = () => (
 						Timpanogos Hip-Hop Club, Orem High Breakdance Club, Provo High
 						Breakdance Club
 					</p>
-				</Pannel>
-				<Pannel>
+				</Panel>
+				<Panel>
 					<ImageMaximizable
 						alt="High School Graduation"
 						dimensions={[600, 400]}
@@ -36,8 +36,8 @@ export const Timpanogos = () => (
 					<p className="image-caption">
 						(High School graduation with girlfriend at the time, eventual wife.)
 					</p>
-				</Pannel>
-			</Pannels>
+				</Panel>
+			</Panels>
 		</div>
 	</section>
 );

@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
-import { Pannel } from '~components/Pannels/Pannel/Pannel';
-import { Pannels } from '~components/Pannels/Pannels';
+import { Panel } from '~components/Panels/Panel/Panel';
+import { Panels } from '~components/Panels/Panels';
 import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 import imgUvu from '~images/education/uvu.png';
 
 export const Uvu = () => (
 	<section className="white center education">
 		<div className="boxed">
-			<Pannels>
-				<Pannel>
+			<Panels>
+				<Panel>
 					<h2>Utah Valley University</h2>
 					<img className="center" src={imgUvu} />
 					<div className="mb-3">
@@ -23,8 +23,8 @@ export const Uvu = () => (
 						<p className="degree">Associate in Applied Science</p>
 						<p>Digital Communication Technology</p>
 					</div>
-				</Pannel>
-				<Pannel>
+				</Panel>
+				<Panel>
 					<ImageMaximizable
 						alt="University Graduation"
 						dimensions={[600, 400]}
@@ -33,8 +33,8 @@ export const Uvu = () => (
 						srcLargeDimensions={[1200, 800]}
 					/>
 					<p className="image-caption">(College graduation with my wife.)</p>
-				</Pannel>
-			</Pannels>
+				</Panel>
+			</Panels>
 		</div>
 	</section>
 );
