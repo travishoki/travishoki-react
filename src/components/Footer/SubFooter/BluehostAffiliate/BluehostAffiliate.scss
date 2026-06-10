@@ -1,5 +1,7 @@
+@import '../../../../styles/variables.scss';
+
 .affiliates {
-	background: #1d73da;
+	background: $bluehost-blue;
 
 	@media (max-width: 499px) {
 		padding: 5px 0;
