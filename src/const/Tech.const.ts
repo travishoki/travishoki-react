@@ -112,7 +112,7 @@ export const TECH = {
 	REDUX: { image: ImgRedux, label: 'Redux', type: 'frontend' },
 	SCSS: { image: ImgScss, label: 'SCSS', type: 'frontend' },
 	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
-	STRIPE: { image: ImgSql, label: 'Stripe', type: 'integrations' },
+	STRIPE: { image: ImgStripe, label: 'Stripe', type: 'integrations' },
 	TYPESCRIPT: { image: ImgTypescript, label: 'Typescript', type: 'frontend' },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
 	WOO_COMMERCE: {
