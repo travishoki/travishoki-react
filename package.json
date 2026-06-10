@@ -78,6 +78,7 @@
 		"@vitejs/plugin-react": "^6.0.2",
 		"@vitest/browser": "^4.1.8",
 		"@vitest/browser-playwright": "^4.1.8",
+		"console-table-printer": "^2.16.1",
 		"craco-alias": "^3.0.1",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-alias": "^1.1.2",
