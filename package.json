@@ -17,6 +17,7 @@
 		"postinstall": "bash scripts/patch-schema-utils.sh",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
+		"stats": "node scripts/stats.mjs",
 		"deadcode": "ts-prune",
 		"deadcode-count": "ts-prune | wc -l"
 	},
