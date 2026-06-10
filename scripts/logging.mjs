@@ -1,3 +1,3 @@
 import { log } from 'console';
 
-export const spacer = () => log('');
+export const logSpacer = () => log('');

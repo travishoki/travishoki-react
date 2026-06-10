@@ -3,7 +3,7 @@ import { log } from 'console';
 
 import chalk from 'chalk';
 
-import { spacer } from './logging.mjs';
+import { logSpacer } from './logging.mjs';
 
 const matchCount = (string, subString) => {
 	return string.split(subString).length - 1;
@@ -18,6 +18,6 @@ export const logLintWarningStats = () => {
 		// log(`No Unused Var: ${noUnusedVarTotal}`);
 		log(`Total: ${total}`);
 
-		spacer();
+		logSpacer();
 	});
 };

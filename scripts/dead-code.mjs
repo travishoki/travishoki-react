@@ -2,7 +2,7 @@ import { log } from 'console';
 
 import chalk from 'chalk';
 
-import { spacer } from './logging.mjs';
+import { logSpacer } from './logging.mjs';
 import { trimExecSync } from './strings.mjs';
 
 export const logDeadCodeStats = () => {
@@ -17,5 +17,5 @@ export const logDeadCodeStats = () => {
 		log(output);
 	}
 
-	spacer();
+	logSpacer();
 };
