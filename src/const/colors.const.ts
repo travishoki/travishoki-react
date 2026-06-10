@@ -50,11 +50,11 @@ export const GREEN_4 = '#406834';
 export const GREEN_5 = '#284120';
 
 // Gray
-export const GRAY_1 = '#f7f7f7';
-export const GRAY_2 = '#dddddd';
-export const GRAY_3 = '#8c8c8c';
-export const GRAY_4 = '#505659';
-export const GRAY_5 = '#454a4d';
+export const GRAY_1 = '#BBBBBB';
+export const GRAY_2 = '#777777';
+export const GRAY_3 = '#555555';
+export const GRAY_4 = '#404040';
+export const GRAY_5 = '#373737';
 
 // GRIP TAPE
 export const GRIP_TAPE_1 = '#333333';

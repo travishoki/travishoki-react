@@ -1,5 +1,7 @@
 import React from 'react';
 
+import * as COLORS from '~const/colors.const';
+
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 type ColorSwatch = {
@@ -16,13 +18,13 @@ type ColorGroup = {
 const GRAY_GROUPS: ColorGroup[] = [
 	{
 		colors: [
-			{ hex: '#ffffff', name: 'White', variable: '$white' },
-			{ hex: '#bbbbbb', name: 'Gray One', variable: '$gray-one' },
-			{ hex: '#777777', name: 'Gray Two', variable: '$gray-two' },
-			{ hex: '#555555', name: 'Gray Three', variable: '$gray-three' },
-			{ hex: '#404040', name: 'Gray Four', variable: '$gray-four' },
-			{ hex: '#373737', name: 'Gray Five', variable: '$gray-five' },
-			{ hex: '#000000', name: 'Black', variable: '$black' },
+			{ hex: COLORS.WHITE, name: 'White', variable: '$white' },
+			{ hex: COLORS.GRAY_1, name: 'Gray One', variable: '$gray-one' },
+			{ hex: COLORS.GRAY_2, name: 'Gray Two', variable: '$gray-two' },
+			{ hex: COLORS.GRAY_3, name: 'Gray Three', variable: '$gray-three' },
+			{ hex: COLORS.GRAY_4, name: 'Gray Four', variable: '$gray-four' },
+			{ hex: COLORS.GRAY_5, name: 'Gray Five', variable: '$gray-five' },
+			{ hex: COLORS.BLACK, name: 'Black', variable: '$black' },
 		],
 		label: 'Grays',
 	},
@@ -72,7 +74,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 	<section style={{ marginBottom: '2.5rem', width: 'fit-content' }}>
 		<h2
 			style={{
-				color: '#ffffff',
+				color: COLORS.WHITE,
 				fontSize: '1rem',
 				fontWeight: 600,
 				letterSpacing: '0.05em',
@@ -96,7 +98,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 					<div
 						style={{
 							backgroundColor: color.hex,
-							border: color.hex === '#ffffff' ? '1px solid #ddd' : 'none',
+							border: color.hex === COLORS.WHITE ? '1px solid #ddd' : 'none',
 							height: '120px',
 						}}
 					/>
