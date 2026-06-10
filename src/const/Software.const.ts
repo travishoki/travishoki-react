@@ -12,7 +12,7 @@ type SoftwareInfo = {
 	type: SoftwareType;
 };
 
-export const SOFTWARE = {
+export const SOFTWARE: Record<string, SoftwareInfo> = {
 	ILLUSTRATOR: {
 		image: ImgIllustrator,
 		label: 'Adobe Illustrator',
@@ -26,6 +26,6 @@ export const SOFTWARE = {
 		type: 'video',
 	},
 	PROCREATE: { image: ImgProcreate, label: 'Procreate', type: 'illustration' },
-} satisfies Record<string, SoftwareInfo>;
+};
 
 export type SoftwareKey = keyof typeof SOFTWARE;

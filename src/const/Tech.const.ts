@@ -69,7 +69,7 @@ type TechInfo = {
 	type: TechType;
 };
 
-export const TECH = {
+export const TECH: Record<string, TechInfo> = {
 	ACTION_SCRIPT: {
 		image: ImgActionScript,
 		label: 'Action Script',
@@ -121,7 +121,7 @@ export const TECH = {
 		type: 'integrations',
 	},
 	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
-} satisfies Record<string, TechInfo>;
+};
 
 export type TechKey = keyof typeof TECH;
 
