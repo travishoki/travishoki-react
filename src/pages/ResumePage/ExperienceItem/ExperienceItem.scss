@@ -22,24 +22,22 @@
 	}
 }
 
-section.experience {
-	.affiliated-company {
-		align-items: center;
-		background-color: $gray-three;
-		display: flex;
-		margin-bottom: 10px;
-		padding: 10px;
+.experience-affiliated-company {
+	align-items: center;
+	background-color: $gray-three;
+	display: flex;
+	margin-bottom: 10px;
+	padding: 10px;
 
-		p {
-			font-size: 18px;
-			margin: 0;
-		}
+	p {
+		font-size: 18px;
+		margin: 0;
+	}
 
-		img {
-			background-color: $white;
-			height: 50px;
-			margin-right: 10px;
-			width: 50px;
-		}
+	img {
+		background-color: $white;
+		height: 50px;
+		margin-right: 10px;
+		width: 50px;
 	}
 }

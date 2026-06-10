@@ -29,7 +29,7 @@ export const ExperienceItem = ({
 			<BulletedList list={tasks} />
 
 			{affiliatedCompany && (
-				<div className="affiliated-company">
+				<div className="experience-affiliated-company">
 					<img className="round" src={affiliatedCompany.img} />
 					<p>{affiliatedCompany.title}</p>
 				</div>
