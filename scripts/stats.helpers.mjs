@@ -1,14 +1,13 @@
 import { exec, execSync } from 'child_process';
+import { log } from 'console';
 
 import chalk from 'chalk';
 
-const log = console.log;
+import { spacer } from './logging.mjs';
 
 const matchCount = (string, subString) => {
 	return string.split(subString).length - 1;
 };
-
-export const spacer = () => log('');
 
 const trimExecSync = (cmd) => {
 	return execSync(cmd).toString().trim();
