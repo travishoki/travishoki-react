@@ -5,18 +5,15 @@ import './NoResults.scss';
 
 export const NoResults = ({
 	filter,
-	isVisible = false,
 	onClearFilter,
 	onClearSearchTerm,
 	searchTerm,
 }: NoResultsProps) => {
-	if (!isVisible) return null;
-
 	const filterLabel = filter ? getLabelByKey(filter) : null;
 
 	return (
 		<div className="no-results">
-			<h2>No results</h2>
+			<h2>No Results</h2>
 			<p>Clear filter and search terms to find more results.</p>
 
 			{filter && (
@@ -36,7 +33,6 @@ export const NoResults = ({
 
 type NoResultsProps = {
 	filter: string | null;
-	isVisible: boolean;
 	onClearFilter: () => void;
 	onClearSearchTerm: () => void;
 	searchTerm: string;

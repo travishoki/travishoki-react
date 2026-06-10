@@ -57,13 +57,14 @@ export const ProjectsPage = () => {
 
 				<Projects grid={grid} projectLink={projectLink} projects={projects} />
 
-				<NoResults
-					filter={filter}
-					isVisible={projects.length === 0}
-					onClearFilter={onClearFilter}
-					onClearSearchTerm={onClearSearchTerm}
-					searchTerm={searchTerm}
-				/>
+				{projects.length === 0 && (
+					<NoResults
+						filter={filter}
+						onClearFilter={onClearFilter}
+						onClearSearchTerm={onClearSearchTerm}
+						searchTerm={searchTerm}
+					/>
+				)}
 			</div>
 		</div>
 	);
