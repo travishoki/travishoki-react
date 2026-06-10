@@ -120,7 +120,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	},
 	{
 		desc: [
-			"Breakdancing is my favorite form of exercise. Other developers don't seem to have the need to spin on the ground like I do, weird!",
+			"Breakdancing is one of my favorite form of exercise. Other developers don't seem to have the need to spin on the ground like I do, weird!",
 			'I started breakdancing in Jr High. I got really involved in the HipHop culture and scene. I went to as many breakdance clubs as I could and competed in breakdance battles.',
 			"In college, I joined the Green Man Group. They are UVU's Drum Line. We performed at UVU basketball games, a variety of UVU events, Grizzly Hockey games, the Olympic Oval, the Hope of America, and Jazz Basketball games.",
 		],
