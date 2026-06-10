@@ -3,8 +3,9 @@ import React from 'react';
 import { BulletedList } from '~components/BulletedList/BulletedList';
 
 import { ResumeDataType } from '../ResumePage.data';
-import './ExperienceItem.scss';
+import { SubLine } from './SubLine/SubLine';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
+import './ExperienceItem.scss';
 
 export const ExperienceItem = ({
 	affiliatedCompany,
@@ -22,13 +23,8 @@ export const ExperienceItem = ({
 		</div>
 
 		<div className="info-box">
-			<h3>{title}</h3>
-			<div className="sub-line">
-				<h4>{position}</h4>
-				<p className="date">
-					{dateStart} - {dateEnd}
-				</p>
-			</div>
+			<h3 className="m-0">{title}</h3>
+			<SubLine dateEnd={dateEnd} dateStart={dateStart} position={position} />
 
 			<BulletedList list={tasks} />
 
