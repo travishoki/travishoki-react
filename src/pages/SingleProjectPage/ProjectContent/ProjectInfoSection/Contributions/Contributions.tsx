@@ -4,6 +4,7 @@ import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
 import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../../../ProjectsPage/ProjectsPage.types';
+
 import './Contributions.scss';
 
 export const Contributions = ({ contributions }: ContributionsProps) => {

@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { ProjectLink } from './ProjectLink/ProjectLink';
+
 import './ProjectImageOverlay.scss';
 
 type ProjectImageOverlayProps = {

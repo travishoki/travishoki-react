@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 
-import './Panels.scss';
 import classNames from 'classnames';
+
+import './Panels.scss';
 
 export const Panels = ({ children, className }: PanelsProps) => (
 	<div className={classNames('panels', className)}>{children}</div>

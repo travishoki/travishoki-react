@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
 import { useIsMobile } from '~helpers/useIsMobile';
+
 import './HowItsMadeList.scss';
 
 const ITEMS = [

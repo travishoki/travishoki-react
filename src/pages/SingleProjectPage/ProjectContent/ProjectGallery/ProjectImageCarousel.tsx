@@ -8,6 +8,7 @@ import {
 } from '~helpers/websiteImages';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
+
 import './ProjectImageCarousel.scss';
 
 export const ProjectImageCarousel = ({

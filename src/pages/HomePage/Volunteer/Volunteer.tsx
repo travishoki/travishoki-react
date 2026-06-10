@@ -1,6 +1,7 @@
 import React from 'react';
 
 import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
+
 import './Volunteer.scss';
 
 export const Volunteer = () => (

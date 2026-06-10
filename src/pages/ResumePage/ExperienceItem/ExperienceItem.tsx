@@ -6,6 +6,7 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 import { ResumeDataType } from '../ResumePage.data';
 import { AffiliatedCompany } from './AffiliatedCompany/AffiliatedCompany';
 import { SubLine } from './SubLine/SubLine';
+
 import './ExperienceItem.scss';
 
 export const ExperienceItem = ({

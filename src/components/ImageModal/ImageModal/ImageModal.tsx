@@ -5,6 +5,7 @@ import { getDimensions } from '../ImageModal.helpers';
 import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
 import { LeftModalArrow } from '../LeftModalArrow/LeftModalArrow';
 import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
+
 import './ImageModal.scss';
 
 export const ImageModal = ({

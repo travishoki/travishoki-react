@@ -5,6 +5,7 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 import { Filter } from './Filter/Filter';
 import { SearchForm } from './SearchForm/SearchForm';
 import { useFinderHandlers } from './hooks/useFinderHandlers';
+
 import './Finder.scss';
 
 export const Finder = ({

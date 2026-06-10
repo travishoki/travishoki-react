@@ -7,6 +7,7 @@ import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg
 import imgTimpanogos from '~images/education/timpanogos.png';
 
 import { Scholarships } from './Scholarships/Scholarships';
+
 import './Timpanogos.scss';
 
 export const Timpanogos = () => (

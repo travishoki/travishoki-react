@@ -2,6 +2,7 @@ import React from 'react';
 
 import { SOCIAL_MEDIA_ITEMS } from './SocialMedia.data';
 import { SocialMediaLink } from './SocialMediaLink';
+
 import './SocialMedia.scss';
 
 export const SocialMedia = () => (

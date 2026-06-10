@@ -3,6 +3,7 @@ import React from 'react';
 import imgRanger from '~images/education/ranger.png';
 
 import { SalesforceIcon } from '../SalesforceIcon/SalesforceIcon';
+
 import './SalesforceTrailhead.scss';
 
 export const SalesforceTrailhead = () => (

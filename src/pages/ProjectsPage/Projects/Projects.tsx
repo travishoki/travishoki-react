@@ -4,6 +4,7 @@ import { getResultsCountClass } from './Projects.helpers';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
 import { ProjectType } from '../ProjectsPage.types';
+
 import './Projects.scss';
 
 export const Projects = ({

@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 
 import { CURRENT_TECH_INTERESTS } from '../CurrentTechInterests.data';
 import { InterestItem } from '../InterestItem/InterestItem';
+
 import './InterestColumns.scss';
 
 type InterestColumnsProps = {

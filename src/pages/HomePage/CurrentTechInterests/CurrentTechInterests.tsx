@@ -6,6 +6,7 @@ import { useIsMobile } from '~helpers/useIsMobile';
 import { CURRENT_TECH_INTERESTS } from './CurrentTechInterests.data';
 import { CurrentTechInterestsHeader } from './CurrentTechInterestsHeader/CurrentTechInterestsHeader';
 import { InterestColumns } from './InterestColumns/InterestColumns';
+
 import './CurrentTechInterests.scss';
 
 export const CurrentTechInterests = () => {

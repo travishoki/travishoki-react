@@ -6,6 +6,7 @@ import { DownloadSection } from './DownloadSection/DownloadSection';
 import { Experience } from './Experience/Experience';
 import { Skills } from '../HomePage/Skills/Skills';
 import { TechTiles } from '../HomePage/TechTiles/TechTiles';
+
 import './ResumePage.scss';
 
 export const ResumePage = () => (

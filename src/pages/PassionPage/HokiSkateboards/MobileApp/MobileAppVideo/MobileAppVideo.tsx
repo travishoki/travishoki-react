@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { VideoButton } from '~components/VideoButton/VideoButton';
 import { VideoModal } from '~components/VideoModal/VideoModal';
+
 import './MobileAppVideo.scss';
 
 const APP_ICON =

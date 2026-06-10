@@ -4,6 +4,7 @@ import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery.data';
+
 import './MobileAppImageGallery.scss';
 
 const imageSrc = (filename: string) =>

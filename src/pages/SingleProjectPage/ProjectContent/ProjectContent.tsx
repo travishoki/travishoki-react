@@ -6,6 +6,7 @@ import { ProjectImage } from './ProjectImage/ProjectImage';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
+
 import './ProjectContent.scss';
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {

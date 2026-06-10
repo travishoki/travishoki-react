@@ -9,6 +9,7 @@ import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
 import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
+
 import './TechCatalogue.scss';
 
 type TechCatalogueProps = {

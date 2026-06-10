@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 import { ProjectType } from '../ProjectsPage.types';
+
 import './ProjectItemGrid.scss';
 
 export const ProjectItemGrid = ({

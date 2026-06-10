@@ -8,6 +8,7 @@ import { Projects } from './Projects/Projects';
 import { FILTER_LIST } from './ProjectsPage.const';
 import { ViewControl } from './ViewControl/ViewControl';
 import { useProjectFiltering } from './hooks/useProjectFiltering';
+
 import './ProjectsPage.scss';
 
 const projectLink = '/project';

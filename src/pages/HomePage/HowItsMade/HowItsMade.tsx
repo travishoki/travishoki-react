@@ -2,6 +2,7 @@ import React from 'react';
 
 import { HowItsMadeLinks } from './HowItsMadeLinks/HowItsMadeLinks';
 import { HowItsMadeList } from './HowItsMadeList/HowItsMadeList';
+
 import './HowItsMade.scss';
 
 export const HowItsMade = () => {

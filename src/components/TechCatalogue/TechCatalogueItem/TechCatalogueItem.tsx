@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './TechCatalogueItem.scss';
-
 import { TechCatalogueItemData } from '../TechCatalogue.types';
+
+import './TechCatalogueItem.scss';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;

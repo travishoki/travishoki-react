@@ -3,6 +3,7 @@ import React from 'react';
 import { ProjectType } from '../ProjectsPage.types';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
 import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
+
 import './ProjectItemLine.scss';
 
 export const ProjectItemLine = ({

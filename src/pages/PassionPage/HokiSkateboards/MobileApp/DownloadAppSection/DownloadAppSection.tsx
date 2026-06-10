@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AppBadges } from '../AppBadges';
+
 import './DownloadAppSection.scss';
 
 export const DownloadAppSection = () => (

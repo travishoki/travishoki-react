@@ -6,6 +6,7 @@ import {
 } from '~helpers/websiteImages';
 
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
+
 import './ProjectImageWithPopup.scss';
 
 type ProjectImageWithPopupProps = {

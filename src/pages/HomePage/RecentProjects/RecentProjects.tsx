@@ -2,6 +2,7 @@ import React from 'react';
 
 import { RecentProjectsList } from './RecentProjectsList';
 import { ViewAllButton } from './ViewAllButton';
+
 import './RecentProjects.scss';
 
 export const RecentProjects = () => (
