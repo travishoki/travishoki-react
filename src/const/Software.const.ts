@@ -4,9 +4,9 @@ import ImgPhotoshop from '~images/icons/software-icons/adobe-photoshop.png';
 import ImgPremierPro from '~images/icons/software-icons/adobe-premier-pro.png';
 import ImgProcreate from '~images/icons/software-icons/procreate.png';
 
-export type SoftwareType = 'design' | 'illustration' | 'video';
+type SoftwareType = 'design' | 'illustration' | 'video';
 
-export type SoftwareInfo = {
+type SoftwareInfo = {
 	image: string;
 	label: string;
 	type: SoftwareType;

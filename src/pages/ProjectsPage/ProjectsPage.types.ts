@@ -1,6 +1,6 @@
 import { TechKey } from '~const/Tech.const';
 
-export type GalleryImage = {
+type GalleryImage = {
 	caption?: string;
 	filename: string;
 };

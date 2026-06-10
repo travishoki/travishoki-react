@@ -11,7 +11,7 @@ import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 import './TechCatalogue.scss';
 
-export type TechCatalogueProps = {
+type TechCatalogueProps = {
 	circle?: boolean;
 	header: string;
 	initialExpanded?: boolean;

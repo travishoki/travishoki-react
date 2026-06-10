@@ -63,7 +63,7 @@ export const WEBPACK = 'WEBPACK';
 export const WOO_COMMERCE = 'WOO_COMMERCE';
 export const WORDPRESS = 'WORDPRESS';
 
-export type TechInfo = {
+type TechInfo = {
 	image: string;
 	label: string;
 	type: TechType;
