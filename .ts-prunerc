@@ -1,0 +1,3 @@
+{
+	"ignore": "src/const/colors.const.ts|\\.stories\\.tsx"
+}
