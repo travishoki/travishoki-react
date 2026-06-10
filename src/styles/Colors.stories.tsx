@@ -95,6 +95,7 @@ const ColorSection = ({ group }: { group: ColorGroup }) => (
 					<div
 						style={{
 							backgroundColor: color.hex,
+							borderBottom: `solid 1px ${color.hex === COLORS.WHITE ? COLORS.GRAY_1 : color.hex}`,
 							height: '120px',
 						}}
 					/>
