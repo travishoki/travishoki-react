@@ -43,6 +43,7 @@
 				"caughtErrorsIgnorePattern": "^_",
 			},
 		],
+		"no-magic-numbers": ["error", { "ignore": [-1, 0, 1] }],
 		"no-var": 1,
 		"object-shorthand": [1, "properties"],
 		"prefer-const": 1,
