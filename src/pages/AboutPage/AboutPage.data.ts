@@ -26,8 +26,8 @@ import ImgWedding from '~images/about/wedding.jpg';
 
 import { getYearsSince } from './AboutPage.helpers';
 
-const BIRTH_YEAR = '1990-07-08';
-const AGE = getYearsSince(BIRTH_YEAR);
+const MY_BIRTH_YEAR = '1990-07-08';
+const MY_AGE = getYearsSince(MY_BIRTH_YEAR);
 
 const MARRIAGE_YEAR = '2015-06-06';
 const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
@@ -42,7 +42,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		alt: 'Travis Hoki',
 		desc: [
-			`My name is Travis Hoki. I'm from Pleasant Grove, UT. I'm ${AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
+			`My name is Travis Hoki. I'm from Pleasant Grove, UT. I'm ${MY_AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
 		],
 		hasSignature: true,
 		imgLarge: ImgProfilePic,
