@@ -31,17 +31,14 @@ const GRAY_GROUPS: ColorGroup[] = [
 ];
 
 const GREENS: ColorGroup = {
-	colors: [
-		{ hex: '#39b54c', name: 'Green One', variable: '$green-one' },
-		{ hex: '#1a733b', name: 'Green Two', variable: '$green-two' },
-	],
+	colors: [{ hex: COLORS.GREEN_1, name: 'Green One', variable: '$green-one' }],
 	label: 'Greens',
 };
 
 const REDS: ColorGroup = {
 	colors: [
-		{ hex: '#f2dede', name: 'Red One', variable: '$red-one' },
-		{ hex: '#a94442', name: 'Red Two', variable: '$red-two' },
+		{ hex: COLORS.RED_1, name: 'Red One', variable: '$red-one' },
+		{ hex: COLORS.RED_2, name: 'Red Two', variable: '$red-two' },
 	],
 	label: 'Reds',
 };
