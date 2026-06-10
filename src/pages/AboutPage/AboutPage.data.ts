@@ -12,6 +12,8 @@ import ImgBreakdanceSmall from '~images/about/green-man-group-small.jpg';
 import ImgBreakdance from '~images/about/green-man-group.jpg';
 import ImgGuitarSmall from '~images/about/guitar-small.jpg';
 import ImgGuitar from '~images/about/guitar.jpg';
+import ImgKodaSmall from '~images/about/koda-small.jpg';
+import ImgKoda from '~images/about/koda.jpg';
 import ImgSkateboardSmall from '~images/about/skateboarding-small.jpg';
 import ImgSkateboard from '~images/about/skateboarding.jpg';
 import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
@@ -32,6 +34,9 @@ const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
 const DATING_YEAR = '2008-04-15';
 const YEARS_DATING = getYearsSince(DATING_YEAR);
+
+const KODA_DOB = '2017-06-07';
+const KODA_AGE = getYearsSince(KODA_DOB);
 
 export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
@@ -78,6 +83,15 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLargeDimensions: [1440, 1440],
 		imgSmall: ImgStandupComedySmall,
 		title: 'Standup Comedy',
+	},
+	{
+		desc: [
+			`My Australian son. Koda is our Australian Shepherd doggy. My oldest son called him “Diggy “. We adopted him from the Puppy Barn ${KODA_AGE} years ago. He is an important part of our family.`,
+		],
+		imgLarge: ImgKoda,
+		imgLargeDimensions: [1536, 2048],
+		imgSmall: ImgKodaSmall,
+		title: 'Doggo',
 	},
 	{
 		desc: [
