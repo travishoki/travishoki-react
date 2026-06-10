@@ -24,8 +24,8 @@ module.exports = {
 		'^~svg/(.*)$': '<rootDir>/src/svg/$1',
 	},
 	preset: 'ts-jest',
-	setupFilesAfterEnv: ['<rootDir>/testing/setupTests.ts'],
-	testEnvironment: 'node',
+	setupFilesAfterEnv: ['<rootDir>/testing/setupTests.js'],
+	testEnvironment: 'jsdom',
 	testPathIgnorePatterns: ['<rootDir>/functions'],
 	transform: {
 		'.(ts|tsx)': 'ts-jest',
