@@ -1,4 +1,4 @@
-const BISECT = 2;
+import { BISECT } from '~const/numbers';
 
 export const splitListInHalf = (originalList: string[]) => {
 	const list = [...originalList];
