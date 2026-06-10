@@ -57,7 +57,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
 		desc: [
 			"I've always enjoyed reading books with my kids when putting them to bed. I have illustrated two children's books, and self published each of them. They are available on Amazon and other book platforms.",
-			'This is the video from my Kickstarter campaign when I launched my book. It took me 2 years learning how to illustrate, author, and publish the book. It was so fun seeing everything starting to come together.',
+			'This is the video from my Kickstarter campaign when I launched my book. I spent 2 years learning how to illustrate, author, and publish the book. It was so fun seeing everything starting to come together.',
 		],
 		imgLarge: ImgChildrensBook,
 		imgLargeDimensions: [960, 1200],
