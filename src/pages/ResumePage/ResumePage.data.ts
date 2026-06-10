@@ -45,6 +45,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgSalesforce,
 		position: 'Senior Member of the Technical Staff',
 		tasks: [
+			'Architected and deployed a highly scalable, enterprise-wide string translation infrastructure, expanding global platform accessibility.',
+			'Engineered custom automated tooling scripts to enforce repository cleanliness, systematically driving down technical debt.',
+			'Advanced corporate engineering quality standards by establishing strict ESLint rule sets, expanding automated Unit Testing, and driving TypeScript adoption.',
 			'Elevate the codebase to Salesforce standards through extensive unit-test coverage',
 			'Scale the Spiff software from small-business to enterprise-level user capacity',
 		],
@@ -87,6 +90,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgXant,
 		position: 'Senior Software Engineer',
 		tasks: [
+			'Authored and institutionalized comprehensive frontend architectural standards and documentation for the engineering organization.',
+			'Mentored mid-level and junior developers through strategic pair-programming sessions, accelerating velocity and feature shipping.',
+			'Upgraded legacy core technologies and modernized syntax paradigms to optimize runtime performance.',
 			'Created and documented standards and best practices for the Front End Team',
 			'Mentored engineers and led pair-programming sessions',
 			'Modernized front-end tooling and migrated legacy code syntax',
@@ -101,6 +107,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
+			'Engineered customer-facing components and core features for high-traffic Books and Cards product lines.',
+			'Executed a flawless, progressive migration from legacy AngularJS to ReactJS with zero downtime, preserving production stability.',
+			'Leveraged Node.js Server-Side Rendering (SSR) to accelerate page load times and elevate SEO organic search metrics.',
 			'Created and maintained web features and projects for the Books and Cards teams',
 			'Migrated the product from AngularJS to React with no downtime',
 			'Implemented Node.js server-side rendering, improving SEO and performance',
@@ -118,6 +127,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgOvestock,
 		position: 'Front-end Developer',
 		tasks: [
+			'Developed high-performance e-commerce interfaces utilizing preprocessed CSS (Less/Sass) and media queries for responsive layouts.',
 			'Enhanced customer-review functionality across product pages',
 			'Managed the front-end for all user-generated content, including reviews, product images, and Q&A',
 			'Integrated tracking pixels for retargeting and third-party platforms',
@@ -132,6 +142,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
+			'Built app features combining front-end logic, relational SQL databases, and backend API management.',
 			'Developed student-housing software in-house',
 			'Built data queries and reporting with Python and Django',
 			'Managed and enhanced the front-end via AngularJS, CoffeeScript, and Classy',
@@ -146,6 +157,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgEnspark,
 		position: 'Custom Web Developer',
 		tasks: [
+			'Crafted highly tailored, interactive web components utilizing vanilla JavaScript, HTML, and CSS.',
 			'Developed full-stack features via PHP and JavaScript',
 			'Rebuilt the LMS and implemented user-account tracking',
 			'Built front-end features and maintained WordPress sites',
