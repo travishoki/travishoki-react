@@ -1,0 +1,15 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/responsive.scss';
+
+// `.staggered-item` and `.image-container` are global utility classes (from
+// styles/components/staggeredList.scss), so they stay unhashed via :global().
+// Only `.aboutItem` is scoped to this module.
+.aboutItem {
+	&:global(.staggered-item) {
+		:global(.image-container) {
+			@include tablet-up {
+				flex: 1 0 250px;
+			}
+		}
+	}
+}

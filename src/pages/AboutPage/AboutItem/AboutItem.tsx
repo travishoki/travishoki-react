@@ -7,10 +7,10 @@ import { AboutImage } from './AboutImage/AboutImage';
 import { AboutVideo } from './AboutVideo/AboutVideo';
 import { Signature } from './Signature/Signature';
 
-import './AboutItem.scss';
+import styles from './AboutItem.module.scss';
 
 export const AboutItem = (item: AboutType) => (
-	<li className="staggered-item about-item">
+	<li className={`staggered-item ${styles.aboutItem}`}>
 		<div className="image-container">
 			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
 		</div>
