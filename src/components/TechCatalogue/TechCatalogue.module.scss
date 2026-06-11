@@ -60,3 +60,13 @@ $gap: 15px;
 		}
 	}
 }
+
+.tech-catalogue-icon {
+	$iconW: 40px;
+	height: $iconW;
+	width: $iconW;
+
+	.circle {
+		border-radius: 50%;
+	}
+}

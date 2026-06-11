@@ -32,7 +32,7 @@ export const TechCatalogue = ({
 
 	if (items.length === 0) return null;
 
-	const iconClass = classnames('tech-catalogue-icon', { circle });
+	const iconClass = classnames(styles['tech-catalogue-icon'], { circle });
 
 	const groupedTech = groupTechByType(items);
 

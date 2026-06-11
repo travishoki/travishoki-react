@@ -10,6 +10,7 @@ import {
 import { orderTopThreeInPodium, PODIUM_COUNT } from './RecentProjects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
 
+import styles from './RecentProjectsList.module.scss';
 import './RecentProjectsList.scss';
 
 const currentProjects = orderTopThreeInPodium(
@@ -21,8 +22,8 @@ export const RecentProjectsList = () => (
 		{currentProjects.map((project, index) => (
 			<li key={index}>
 				<Link to={`/project/${project.itemKey}`}>
-					<div className="project-header">
-						<div className="project-header-inner">
+					<div className={styles['project-header']}>
+						<div className={styles['project-header-inner']}>
 							<h3>{project.company}</h3>
 							<h4>{project.subtitle}</h4>
 						</div>

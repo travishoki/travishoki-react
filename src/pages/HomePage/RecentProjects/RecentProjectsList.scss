@@ -55,37 +55,6 @@
 				width: 33.33333333%;
 			}
 
-			.project-header {
-				height: 50px;
-				margin-bottom: 10px;
-				position: relative;
-
-				@include phone-down {
-					display: none;
-				}
-
-				.project-header-inner {
-					bottom: 0;
-					position: absolute;
-					width: 100%;
-
-					h3,
-					h4 {
-						margin: 0;
-						text-align: center;
-					}
-
-					h3 {
-						font-size: 22px;
-					}
-
-					h4 {
-						color: $gray-one;
-						font-size: 14px;
-					}
-				}
-			}
-
 			img {
 				display: block;
 				margin: 0 auto;
