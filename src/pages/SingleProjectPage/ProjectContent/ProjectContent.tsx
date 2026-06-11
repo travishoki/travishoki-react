@@ -7,7 +7,7 @@ import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
-import './ProjectContent.scss';
+import styles from './ProjectContent.module.scss';
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {
 	const {
@@ -26,7 +26,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 	} = project;
 
 	return (
-		<div className="project-content">
+		<div className={styles.projectContent}>
 			<ProjectHeader company={company} subtitle={subtitle} />
 
 			<div className="row">
