@@ -1,9 +1,11 @@
 import React from 'react';
 
-import './SocialIcons.scss';
+import classNames from 'classnames';
 
-export const SocialIcons = () => (
-	<ul className="social-icons">
+import styles from './SocialIcons.module.scss';
+
+export const SocialIcons = ({ className }: SocialIconsProps) => (
+	<ul className={classNames(styles.socialIcons, className)}>
 		<li>
 			<a
 				href="https://github.com/travishoki/"
@@ -26,3 +28,7 @@ export const SocialIcons = () => (
 		</li>
 	</ul>
 );
+
+type SocialIconsProps = {
+	className?: string;
+};

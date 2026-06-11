@@ -20,6 +20,7 @@ export const HowItsMadeList = () => {
 
 	return (
 		<ReadMoreList
+			buttonClassName="how-its-made-read-more"
 			collapsedCount={isMobile ? COLLAPSED_COUNT : ITEMS.length}
 			items={ITEMS}
 			listClassName="how-its-made-list"

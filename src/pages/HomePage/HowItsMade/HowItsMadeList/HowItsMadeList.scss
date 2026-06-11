@@ -21,9 +21,11 @@ section.how-its-made {
 			}
 		}
 	}
+}
 
-	.read-more-button {
-		display: block;
-		margin: 10px auto 0;
-	}
+// Passed to ReadMoreList's buttonClassName prop (ReadMoreButton's base class is
+// now a CSS module).
+.how-its-made-read-more {
+	display: block;
+	margin: 10px auto 0;
 }

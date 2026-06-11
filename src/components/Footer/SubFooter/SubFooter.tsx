@@ -10,7 +10,7 @@ import './SubFooter.scss';
 export const SubFooter = () => (
 	<div id="subfooter">
 		<div className="contact-info m-2">
-			<SocialIcons />
+			<SocialIcons className="subfooter-social" />
 			<NavLink className="active contact-link ms-3" to="/contact">
 				Contact
 			</NavLink>

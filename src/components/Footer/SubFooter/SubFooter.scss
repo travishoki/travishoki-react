@@ -10,7 +10,8 @@
 		}
 	}
 
-	.social-icons {
+	// Layout override passed to SocialIcons via its className prop.
+	.subfooter-social {
 		float: left;
 		height: 40px;
 		line-height: 40px;

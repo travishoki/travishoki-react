@@ -13,7 +13,7 @@ export const Banner = () => (
 		<div>
 			<h1>Travis Hoki</h1>
 			<p className="job-title">Web Developer</p>
-			<SocialIcons />
+			<SocialIcons className="banner-social" />
 			<Link className="btn btn-primary btn-lg" to="/contact">
 				Contact
 			</Link>

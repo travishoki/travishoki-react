@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import './ReadMoreButton.scss';
+import styles from './ReadMoreButton.module.scss';
 
 type ReadMoreButtonProps = {
 	className?: string;
@@ -16,7 +16,7 @@ export const ReadMoreButton = ({
 	onToggle,
 }: ReadMoreButtonProps) => (
 	<button
-		className={classNames('read-more-button', className)}
+		className={classNames(styles.readMoreButton, className)}
 		onClick={onToggle}
 	>
 		<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />

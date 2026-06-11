@@ -26,9 +26,10 @@ section.current-tech-interests-component {
 			margin-bottom: 0;
 		}
 	}
+}
 
-	// blue-one (the default link color) is invisible on this blue section.
-	.read-more-button {
-		color: $white;
-	}
+// blue-one (the default link color) is invisible on this blue section. Passed
+// to ReadMoreButton via TextWithReadMore's buttonClassName prop.
+.current-tech-interests-read-more {
+	color: $white;
 }

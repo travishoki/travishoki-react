@@ -65,7 +65,8 @@
 		}
 	}
 
-	.social-icons {
+	// Layout override passed to SocialIcons via its className prop.
+	.banner-social {
 		margin: 0 auto 20px;
 	}
 }

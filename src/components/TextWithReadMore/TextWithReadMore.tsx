@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 type TextWithReadMoreProps = {
+	buttonClassName?: string;
 	initiallyExpanded?: boolean;
 	paragraphs: string[];
 };
 
 export const TextWithReadMore = ({
+	buttonClassName,
 	initiallyExpanded = false,
 	paragraphs,
 }: TextWithReadMoreProps) => {
@@ -27,6 +29,7 @@ export const TextWithReadMore = ({
 
 			{hasMore && (
 				<ReadMoreButton
+					className={buttonClassName}
 					expanded={expanded}
 					onToggle={() => setExpanded(!expanded)}
 				/>
