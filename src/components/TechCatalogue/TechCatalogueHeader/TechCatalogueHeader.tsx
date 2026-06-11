@@ -1,6 +1,8 @@
 import React from 'react';
 
-import './TechCatalogueHeader.scss';
+import classNames from 'classnames';
+
+import styles from './TechCatalogueHeader.module.scss';
 
 type TechCatalogueHeaderProps = {
 	label: string;
@@ -13,7 +15,10 @@ export const TechCatalogueHeader = ({
 	onToggle,
 	open,
 }: TechCatalogueHeaderProps) => (
-	<button className="tech-catalogue-header px-3 py-2" onClick={onToggle}>
+	<button
+		className={classNames('px-3 py-2', styles['tech-catalogue-header'])}
+		onClick={onToggle}
+	>
 		{label}
 		<i className={`fa fa-${open ? 'minus' : 'plus'}`} />
 	</button>
