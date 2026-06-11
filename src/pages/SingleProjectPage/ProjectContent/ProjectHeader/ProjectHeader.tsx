@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ProjectHeader.scss';
+import styles from './ProjectHeader.module.scss';
 
 type ProjectHeaderProps = {
 	company: string;
@@ -8,7 +8,7 @@ type ProjectHeaderProps = {
 };
 
 export const ProjectHeader = ({ company, subtitle }: ProjectHeaderProps) => (
-	<div className="project-heading mb-3">
+	<div className={`${styles.projectHeading} mb-3`}>
 		<h2>{company}</h2>
 		<h3>{subtitle}</h3>
 	</div>

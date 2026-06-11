@@ -1,6 +1,6 @@
 @import '../../../../styles/variables.scss';
 
-.current-filter {
+.currentFilter {
 	align-items: center;
 	border: solid 1px $gray-two;
 	display: flex;
@@ -11,11 +11,11 @@
 		font-size: 26px;
 	}
 
-	.tech-container {
+	.techContainer {
 		align-items: center;
 		display: flex;
 
-		.current-filter-tech-icon {
+		.currentFilterTechIcon {
 			margin-right: 20px;
 		}
 	}

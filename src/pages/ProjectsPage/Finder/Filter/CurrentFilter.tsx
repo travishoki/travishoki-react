@@ -3,7 +3,7 @@ import React from 'react';
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechFilterType } from '~const/Tech.const';
 
-import './CurrentFilter.scss';
+import styles from './CurrentFilter.module.scss';
 
 export const CurrentFilter = ({
 	filter,
@@ -14,9 +14,9 @@ export const CurrentFilter = ({
 	const { label } = TECH[filter];
 
 	return (
-		<div className="current-filter">
-			<div className="tech-container">
-				<TechIcon className="current-filter-tech-icon" name={filter} />
+		<div className={styles.currentFilter}>
+			<div className={styles.techContainer}>
+				<TechIcon className={styles.currentFilterTechIcon} name={filter} />
 				<p>{label}</p>
 			</div>
 			<i

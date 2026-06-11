@@ -9,7 +9,7 @@ import {
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
-import './ProjectImageCarousel.scss';
+import styles from './ProjectImageCarousel.module.scss';
 
 export const ProjectImageCarousel = ({
 	gallery,
@@ -24,7 +24,7 @@ export const ProjectImageCarousel = ({
 	const currentSrc = websiteGalleryImageSrc(gallery[page].filename);
 
 	return (
-		<div className="project-image-carousel">
+		<div className={styles.projectImageCarousel}>
 			{modalOpen && (
 				<ImageModal
 					dimensions={dimensions}
@@ -37,7 +37,7 @@ export const ProjectImageCarousel = ({
 
 			<img
 				alt={gallery[page].caption}
-				className="project-img"
+				className={styles.projectImg}
 				onClick={() => setModalOpen(true)}
 				onError={handleWebsiteImageError('gallery')}
 				onLoad={(event) =>
@@ -50,7 +50,7 @@ export const ProjectImageCarousel = ({
 			/>
 
 			{gallery[page].caption && (
-				<p className="project-image-caption">{gallery[page].caption}</p>
+				<p className={styles.projectImageCaption}>{gallery[page].caption}</p>
 			)}
 
 			<CarouselDots

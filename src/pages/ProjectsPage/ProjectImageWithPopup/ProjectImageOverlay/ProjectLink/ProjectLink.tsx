@@ -1,5 +1,5 @@
 import React from 'react';
 
-import './ProjectLink.scss';
+import styles from './ProjectLink.module.scss';
 
-export const ProjectLink = () => <p className="project-link">View</p>;
+export const ProjectLink = () => <p className={styles.projectLink}>View</p>;
