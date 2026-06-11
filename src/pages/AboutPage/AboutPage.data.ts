@@ -84,6 +84,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLargeDimensions: [1440, 1440],
 		imgSmall: ImgStandupComedySmall,
 		title: 'Standup Comedy',
+		video: 'videos/standup-comedy.mp4',
 	},
 	{
 		desc: [
