@@ -1,14 +1,15 @@
 import React from 'react';
 
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-import './NotFoundPage.scss';
+import styles from './NotFoundPage.module.scss';
 
 export const NotFoundPage = () => (
 	<div className="not-found" id="container">
 		<h1>Page Not Found</h1>
 
-		<div className="row link-buckets">
+		<div className={classNames('row', styles['link-buckets'])}>
 			<div className="col-sm-4">
 				<Link to="/projects">
 					<h2>Projects</h2>

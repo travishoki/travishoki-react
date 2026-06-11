@@ -2,8 +2,12 @@
 @import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
-#container.not-found {
-	.link-buckets {
-		text-align: center;
+.header {
+	background: $secondary;
+	color: $white;
+	overflow: hidden;
+
+	@include tablet-up {
+		height: 60px;
 	}
 }

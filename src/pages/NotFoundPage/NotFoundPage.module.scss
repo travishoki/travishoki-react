@@ -2,12 +2,6 @@
 @import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
-#header {
-	background: $secondary;
-	color: $white;
-	overflow: hidden;
-
-	@include tablet-up {
-		height: 60px;
-	}
+.link-buckets {
+	text-align: center;
 }
