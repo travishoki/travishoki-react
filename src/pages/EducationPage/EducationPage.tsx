@@ -5,10 +5,11 @@ import { SalesforceTrailhead } from './SalesforceTrailhead/SalesforceTrailhead';
 import { Timpanogos } from './Timpanogos/Timpanogos';
 import { Uvu } from './Uvu/Uvu';
 
+import styles from './EducationPage.module.scss';
 import './EducationPage.scss';
 
 export const EducationPage = () => (
-	<div className="education" id="container">
+	<div className={styles.education} id="container">
 		<h1>Education</h1>
 		<SalesforceTrailhead />
 		<Uvu />

@@ -1,22 +1,4 @@
-@import '../../styles/mixins.scss';
 @import '../../styles/responsive.scss';
-@import '../../styles/variables.scss';
-
-section.education {
-	p {
-		font-size: 24px;
-		margin: 0;
-
-		&.degree {
-			font-weight: bold;
-		}
-
-		&.image-caption {
-			color: $gray-four;
-			font-size: 14px;
-		}
-	}
-}
 
 img.school {
 	@include phone-down {
