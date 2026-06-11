@@ -1,0 +1,29 @@
+@import '../../../../styles/variables.scss';
+
+.how-its-made-list {
+	display: block;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 0;
+
+	li {
+		padding-left: 24px;
+		position: relative;
+
+		&::before {
+			color: $green-one;
+			content: '\f00c';
+			font-family: 'FontAwesome';
+			left: 0;
+			position: absolute;
+		}
+	}
+}
+
+// Passed to ReadMoreList's buttonClassName prop (ReadMoreButton's base class is
+// now a CSS module).
+.how-its-made-read-more {
+	display: block;
+	margin: 10px auto 0;
+}
