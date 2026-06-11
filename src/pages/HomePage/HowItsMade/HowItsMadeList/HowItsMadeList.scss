@@ -1,27 +1,29 @@
 @import '../../../../styles/variables.scss';
 
-ul.how-its-made-list {
-	display: block;
-	list-style: none;
-	margin: 0 auto;
-	max-width: 400px;
-	padding: 0;
+section.how-its-made {
+	ul.how-its-made-list {
+		display: block;
+		list-style: none;
+		margin: 0 auto;
+		max-width: 400px;
+		padding: 0;
 
-	li {
-		padding-left: 24px;
-		position: relative;
+		li {
+			padding-left: 24px;
+			position: relative;
 
-		&::before {
-			color: $green-one;
-			content: '\f00c';
-			font-family: 'FontAwesome';
-			left: 0;
-			position: absolute;
+			&::before {
+				color: $green-one;
+				content: '\f00c';
+				font-family: 'FontAwesome';
+				left: 0;
+				position: absolute;
+			}
 		}
 	}
-}
 
-.read-more-button {
-	display: block;
-	margin: 10px auto 0;
+	.read-more-button {
+		display: block;
+		margin: 10px auto 0;
+	}
 }
