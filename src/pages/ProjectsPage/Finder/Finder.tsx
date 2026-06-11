@@ -6,7 +6,7 @@ import { Filter } from './Filter/Filter';
 import { SearchForm } from './SearchForm/SearchForm';
 import { useFinderHandlers } from './hooks/useFinderHandlers';
 
-import './Finder.scss';
+import styles from './Finder.module.scss';
 
 export const Finder = ({
 	filter,
@@ -39,7 +39,7 @@ export const Finder = ({
 	const showResultsCount = (filter || searchTerm) && projectsLength > 0;
 
 	return (
-		<div className="find-section">
+		<div className={styles.findSection}>
 			<p className="center">
 				Click on the icons below to filter my work by different technologies
 			</p>
@@ -64,7 +64,7 @@ export const Finder = ({
 			/>
 
 			{showResultsCount && (
-				<p className="results-count">Results: {projectsLength}</p>
+				<p className={styles.resultsCount}>Results: {projectsLength}</p>
 			)}
 		</div>
 	);

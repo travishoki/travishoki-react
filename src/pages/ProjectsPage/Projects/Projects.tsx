@@ -5,7 +5,7 @@ import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
 import { ProjectType } from '../ProjectsPage.types';
 
-import './Projects.scss';
+import styles from './Projects.module.scss';
 
 export const Projects = ({
 	grid = false,
@@ -16,7 +16,7 @@ export const Projects = ({
 		const resultsCountClass = getResultsCountClass(projects.length);
 
 		return (
-			<ul className={`projects-grid ${resultsCountClass}`}>
+			<ul className={`${styles.projectsGrid} ${resultsCountClass}`}>
 				{projects.map((project, index) => (
 					<li key={index}>
 						<ProjectItemGrid projectLink={projectLink} {...project} />
@@ -27,7 +27,7 @@ export const Projects = ({
 	}
 
 	return (
-		<ul className="projects-lines">
+		<ul className={styles.projectsLines}>
 			{projects.map((project, index) => (
 				<li key={index}>
 					<ProjectItemLine projectLink={projectLink} {...project} />

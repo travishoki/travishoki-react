@@ -1,0 +1,56 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.findSection {
+	margin: 20px auto;
+	max-width: 400px;
+
+	// .filter-item is applied by the Filter child components.
+	:global(.filter-item) {
+		overflow: hidden;
+	}
+
+	input {
+		@include border-radius(0);
+		@include box-shadow(none);
+		border-bottom: solid 1px $gray-four;
+		color: $white;
+	}
+
+	form {
+		// #input-holder / .has-search-term are applied by the SearchForm child.
+		:global(#input-holder) {
+			height: 60px;
+			position: relative;
+
+			&:global(.has-search-term) {
+				padding-right: 30px;
+			}
+
+			i {
+				cursor: pointer;
+				font-size: 26px;
+				line-height: 60px;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+// .results-count is applied by Finder; .view-controls by the ViewControl child.
+p.resultsCount,
+:global(p.view-controls) {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+p.resultsCount {
+	float: left;
+}
+
+:global(p.view-controls) {
+	cursor: pointer;
+	text-align: right;
+}
