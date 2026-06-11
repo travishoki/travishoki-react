@@ -143,6 +143,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLargeDimensions: [620, 413],
 		imgSmall: ImgBreakdanceSmall,
 		title: 'Breakdance',
+		video: 'videos/green-man.MP4',
 	},
 	{
 		desc: [
