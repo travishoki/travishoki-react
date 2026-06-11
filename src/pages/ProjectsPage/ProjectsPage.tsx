@@ -51,11 +51,15 @@ export const ProjectsPage = () => {
 				/>
 
 				{projects.length > 0 && (
-					<ViewControl grid={grid} toggleView={() => setGrid(!grid)} />
-				)}
+					<>
+						<ViewControl grid={grid} toggleView={() => setGrid(!grid)} />
 
-				{projects.length === 0 && (
-					<Projects grid={grid} projectLink={projectLink} projects={projects} />
+						<Projects
+							grid={grid}
+							projectLink={projectLink}
+							projects={projects}
+						/>
+					</>
 				)}
 
 				{projects.length === 0 && (
