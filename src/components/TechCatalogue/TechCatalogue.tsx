@@ -10,6 +10,7 @@ import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 
+import styles from './TechCatalogue.module.scss';
 import './TechCatalogue.scss';
 
 type TechCatalogueProps = {
@@ -42,10 +43,12 @@ export const TechCatalogue = ({
 				onToggle={() => setExpanded(!expanded)}
 				open={expanded}
 			/>
-			<div className="tech-catalogue-content">
+			<div className={styles['tech-catalogue-content']}>
 				<div
 					className={
-						expanded ? 'tech-catalogue-vertical' : 'tech-catalogue-horizontal'
+						expanded
+							? styles['tech-catalogue-vertical']
+							: styles['tech-catalogue-horizontal']
 					}
 				>
 					{expanded ? (

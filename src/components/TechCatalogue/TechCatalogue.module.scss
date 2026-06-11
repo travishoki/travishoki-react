@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+$gap: 15px;
+
+.tech-catalogue-content {
+	border: solid 1px $primary;
+	border-top: none;
+	padding: $gap;
+}
+
+.tech-catalogue-horizontal ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tech-catalogue-vertical {
+	.tech-catalogue-section-group:not(:last-child) {
+		margin-bottom: $gap;
+	}
+
+	ul {
+		$iconW: 40px;
+		display: block;
+		list-style: none;
+		margin: 10px 0 0 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a,
+			.tech-catalogue-item {
+				align-items: center;
+				display: flex;
+			}
+
+			.tech-catalogue-icon {
+				margin-right: 10px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: $iconW;
+				line-height: 18px;
+				margin: 0;
+			}
+		}
+	}
+}
