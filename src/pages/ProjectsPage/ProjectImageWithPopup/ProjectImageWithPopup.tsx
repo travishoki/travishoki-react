@@ -7,7 +7,7 @@ import {
 
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 
-import './ProjectImageWithPopup.scss';
+import styles from './ProjectImageWithPopup.module.scss';
 
 type ProjectImageWithPopupProps = {
 	companySlug: string;
@@ -20,7 +20,7 @@ export const ProjectImageWithPopup = ({
 	itemKey,
 	projectLink,
 }: ProjectImageWithPopupProps) => (
-	<div className="project-image-with-popup">
+	<div className={styles['project-image-with-popup']}>
 		<ProjectImageOverlay
 			companySlug={companySlug}
 			itemKey={itemKey}
