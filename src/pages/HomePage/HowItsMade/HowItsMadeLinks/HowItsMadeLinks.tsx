@@ -13,8 +13,8 @@ export const HowItsMadeLinks = () => {
 					target="_blank"
 				>
 					<i className="fa fa-github" />
-					<p className="how-its-made-link-label">Github</p>
-					<p className="how-its-made-link-description">Source Code</p>
+					<p className={styles['how-its-made-link-label']}>Github</p>
+					<p className={styles['how-its-made-link-description']}>Source Code</p>
 				</a>
 			</div>
 			<div>
@@ -25,8 +25,10 @@ export const HowItsMadeLinks = () => {
 					target="_blank"
 				>
 					<i className="fa fa-book" />
-					<p className="how-its-made-link-label">Storybook</p>
-					<p className="how-its-made-link-description">Component Library</p>
+					<p className={styles['how-its-made-link-label']}>Storybook</p>
+					<p className={styles['how-its-made-link-description']}>
+						Component Library
+					</p>
 				</a>
 			</div>
 		</div>
