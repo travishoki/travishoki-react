@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './BulletedList.scss';
+import styles from './BulletedList.module.scss';
 
 export const BulletedList = ({ list }: BulletedListPropTypes) => (
-	<ul className="bulleted mb-2">
+	<ul className={`${styles.bulleted} mb-2`}>
 		{list.map((item, index) => (
-			<li key={index} className="bulleted-item">
+			<li key={index} className={styles.bulletedItem}>
 				{item}
 			</li>
 		))}

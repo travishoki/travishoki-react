@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './VideoButton.scss';
+import styles from './VideoButton.module.scss';
 
 type VideoButtonProps = {
 	onClick: () => void;
@@ -16,13 +16,17 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 
 	return (
 		<button
-			className="video-button"
+			className={styles.videoButton}
 			onClick={onClick}
 			style={{ height: size, width: size }}
 		>
-			<img alt="Video thumbnail" className="video-button-image" src={src} />
+			<img
+				alt="Video thumbnail"
+				className={styles.videoButtonImage}
+				src={src}
+			/>
 			<span
-				className="video-button-icon"
+				className={styles.videoButtonIcon}
 				style={{ fontSize, height: iconSize, width: iconSize }}
 			>
 				<i className="fa fa-video-camera" />

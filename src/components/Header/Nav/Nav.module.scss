@@ -2,12 +2,12 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/responsive.scss';
 
-.menu-btn {
+.menuBtn {
 	@include tablet-up {
 		display: none;
 	}
 
-	.mobile-menu-icon {
+	.mobileMenuIcon {
 		cursor: pointer;
 		font-size: 30px;
 		line-height: 60px;
@@ -63,9 +63,11 @@
 		padding: 0 10px;
 		text-decoration: none;
 
+		// `active` is added globally by react-router's NavLink, so it must not be
+		// hashed.
 		&:focus,
 		&:hover,
-		&.active {
+		&:global(.active) {
 			background: $primary;
 			color: white;
 		}

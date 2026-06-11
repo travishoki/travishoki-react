@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 
-.back-to-top {
+.backToTop {
 	align-items: center;
 	background: $primary;
 	border: none;
@@ -28,12 +28,12 @@
 		top: 10px;
 	}
 
-	&--visible {
-		opacity: 1;
-		pointer-events: auto;
-	}
-
 	&:hover {
 		background: $blue-four;
 	}
+}
+
+.visible {
+	opacity: 1;
+	pointer-events: auto;
 }

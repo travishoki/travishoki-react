@@ -1,14 +1,14 @@
-.image-maximizable {
+.imageMaximizable {
 	display: block;
 	margin: 0;
 	position: relative;
 
-	.zoom-overlay {
+	.zoomOverlay {
 		display: none;
 	}
 
 	&:hover {
-		.zoom-overlay {
+		.zoomOverlay {
 			display: flex;
 		}
 	}
@@ -18,7 +18,7 @@
 	}
 }
 
-.zoom-overlay {
+.zoomOverlay {
 	align-items: center;
 	background: rgba(0, 0, 0, 0.75);
 	cursor: pointer;

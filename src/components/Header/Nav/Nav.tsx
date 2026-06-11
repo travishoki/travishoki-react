@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import { NavItem } from './NavItem/NavItem';
 
-import './Nav.scss';
+import styles from './Nav.module.scss';
 
 export const Nav = () => {
 	const location = useLocation();
@@ -20,13 +20,16 @@ export const Nav = () => {
 
 	return (
 		<>
-			<div className="menu-btn">
-				<i className="fa fa-bars mobile-menu-icon" onClick={toggleOpen} />
+			<div className={styles.menuBtn}>
+				<i
+					className={`fa fa-bars ${styles.mobileMenuIcon}`}
+					onClick={toggleOpen}
+				/>
 			</div>
 
 			<ul
-				className={classnames('navigation', {
-					open,
+				className={classnames(styles.navigation, {
+					[styles.open]: open,
 				})}
 			>
 				<NavItem title="Home" to="/" />

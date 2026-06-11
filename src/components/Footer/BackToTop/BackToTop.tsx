@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import './BackToTop.scss';
+import styles from './BackToTop.module.scss';
 
 const SCROLL_DISTANCE = 200;
 
@@ -21,7 +21,7 @@ export const BackToTop = () => {
 
 	return (
 		<button
-			className={`back-to-top ${visible ? 'back-to-top--visible' : ''}`}
+			className={`${styles.backToTop} ${visible ? styles.visible : ''}`}
 			onClick={scrollToTop}
 		>
 			<i className="fa fa-chevron-up" />

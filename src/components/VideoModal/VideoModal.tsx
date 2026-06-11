@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './VideoModal.scss';
+import styles from './VideoModal.module.scss';
 
 type VideoModalProps = {
 	onClose: () => void;
@@ -8,10 +8,13 @@ type VideoModalProps = {
 };
 
 export const VideoModal = ({ onClose, src }: VideoModalProps) => (
-	<div className="video-modal" onClick={onClose}>
-		<div className="video-modal-inner" onClick={(e) => e.stopPropagation()}>
-			<video autoPlay className="video-modal-player" controls src={src} />
-			<button className="video-modal-close" onClick={onClose}>
+	<div className={styles.videoModal} onClick={onClose}>
+		<div
+			className={styles.videoModalInner}
+			onClick={(e) => e.stopPropagation()}
+		>
+			<video autoPlay className={styles.videoModalPlayer} controls src={src} />
+			<button className={styles.videoModalClose} onClick={onClose}>
 				<i className="fa fa-close" />
 			</button>
 		</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import './CarouselDots.scss';
+import styles from './CarouselDots.module.scss';
 
 type CarouselDotsProps = {
 	activeIndex: number;
@@ -15,13 +15,13 @@ export const CarouselDots = ({
 	count,
 	onSelect,
 }: CarouselDotsProps) => (
-	<ul className="carousel-dots">
+	<ul className={styles.carouselDots}>
 		{Array.from({ length: count }, (_, index) => (
 			<li key={index}>
 				<button
 					aria-label={`Show slide ${index + 1}`}
-					className={classNames('carousel-dot', {
-						active: activeIndex === index,
+					className={classNames(styles.carouselDot, {
+						[styles.active]: activeIndex === index,
 					})}
 					onClick={() => {
 						onSelect(index);

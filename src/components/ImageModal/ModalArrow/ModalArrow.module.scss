@@ -1,7 +1,7 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/variables.scss';
 
-.modal-arrow {
+.modalArrow {
 	$size: 50px;
 	@include border-radius(50%);
 	align-items: center;
@@ -21,11 +21,11 @@
 		font-size: 30px;
 	}
 
-	&.modal-arrow-prev {
+	&.prev {
 		left: 20px;
 	}
 
-	&.modal-arrow-next {
+	&.next {
 		right: 20px;
 	}
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './BluehostAffiliate.scss';
+import styles from './BluehostAffiliate.module.scss';
 
 export const BluehostAffiliate = () => (
-	<div className="affiliates">
+	<div className={styles.affiliates}>
 		<a
 			href="https://www.bluehost.com/track/travishoki/"
 			rel="noreferrer"

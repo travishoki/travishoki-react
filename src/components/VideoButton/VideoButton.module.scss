@@ -3,7 +3,7 @@
 $border-color: $blue-two;
 $border-width: 5px;
 
-.video-button {
+.videoButton {
 	background: none;
 	border: $border-width solid $border-color;
 	border-radius: 50%;
@@ -17,13 +17,13 @@ $border-width: 5px;
 		border-color: $blue-four;
 	}
 
-	&:hover .video-button-icon {
+	&:hover .videoButtonIcon {
 		background: $blue-four;
 		border-color: $blue-four;
 	}
 }
 
-.video-button-image {
+.videoButtonImage {
 	border-radius: 50%;
 	height: 100%;
 	object-fit: cover;
@@ -31,7 +31,7 @@ $border-width: 5px;
 	width: 100%;
 }
 
-.video-button-icon {
+.videoButtonIcon {
 	align-items: center;
 	background: $blue-three;
 	border: $border-width solid $border-color;

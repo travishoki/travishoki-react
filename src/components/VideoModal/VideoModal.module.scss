@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
-.video-modal {
+.videoModal {
 	align-items: center;
 	background: rgba(0, 0, 0, 0.9);
 	display: flex;
@@ -14,16 +14,16 @@
 	z-index: 1000;
 }
 
-.video-modal-inner {
+.videoModalInner {
 	position: relative;
 }
 
-.video-modal-player {
+.videoModalPlayer {
 	max-height: 90vh;
 	max-width: 90vw;
 }
 
-.video-modal-close {
+.videoModalClose {
 	$size: 50px;
 
 	@include border-radius(50%);

@@ -2,10 +2,10 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-import './Title.scss';
+import styles from './Title.module.scss';
 
 export const Title = () => (
-	<NavLink className="nav-title" to="/">
+	<NavLink className={styles.navTitle} to="/">
 		Travis Hoki
 	</NavLink>
 );

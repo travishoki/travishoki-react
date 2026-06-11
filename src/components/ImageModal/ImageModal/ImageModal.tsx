@@ -6,7 +6,7 @@ import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
 import { LeftModalArrow } from '../LeftModalArrow/LeftModalArrow';
 import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
 
-import './ImageModal.scss';
+import styles from './ImageModal.module.scss';
 
 export const ImageModal = ({
 	dimensions,
@@ -28,8 +28,8 @@ export const ImageModal = ({
 	);
 
 	return (
-		<div className="image-modal" onClick={onClose}>
-			<div className="image-modal-inner">
+		<div className={styles.imageModal} onClick={onClose}>
+			<div className={styles.imageModalInner}>
 				{onPrev && <LeftModalArrow onClick={onPrev} />}
 
 				<img

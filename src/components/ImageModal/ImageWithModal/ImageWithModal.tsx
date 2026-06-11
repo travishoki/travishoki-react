@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { ImageModal } from '../ImageModal/ImageModal';
 import { useImageModal } from '../useImageModal';
 
-import './ImageWithModal.scss';
+import styles from './ImageWithModal.module.scss';
 
 type ImageWithModalProps = {
 	alt?: string;
@@ -35,7 +35,7 @@ export const ImageWithModal = ({
 
 			<img
 				alt={alt}
-				className={classNames('image-with-modal', className)}
+				className={classNames(styles.imageWithModal, className)}
 				onClick={(event) => {
 					const img = event.currentTarget;
 					setDimensions([img.naturalWidth, img.naturalHeight]);

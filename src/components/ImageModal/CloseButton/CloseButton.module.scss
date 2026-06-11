@@ -1,7 +1,7 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/variables.scss';
 
-.close-icon {
+.closeIcon {
 	$size: 50px;
 	@include border-radius(50%);
 	background: black;

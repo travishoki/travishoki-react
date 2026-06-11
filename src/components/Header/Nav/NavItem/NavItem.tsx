@@ -2,8 +2,6 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-import '../Nav.scss';
-
 export const NavItem = ({ title, to }: NavItemProps) => {
 	return (
 		<li>

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
 
-import './ImageMaximizable.scss';
+import styles from './ImageMaximizable.module.scss';
 
 export const ImageMaximizable = ({
 	alt,
@@ -22,7 +22,7 @@ export const ImageMaximizable = ({
 	const width = dimensions[0];
 
 	return (
-		<div className={classNames('image-maximizable', className)}>
+		<div className={classNames(styles.imageMaximizable, className)}>
 			{selectedImg && (
 				<ImageModal
 					dimensions={srcLargeDimensions ?? dimensions}
@@ -31,7 +31,7 @@ export const ImageMaximizable = ({
 				/>
 			)}
 
-			<div className="zoom-overlay" onClick={() => onClickImage(src)}>
+			<div className={styles.zoomOverlay} onClick={() => onClickImage(src)}>
 				<i className="fa fa-search-plus" />
 			</div>
 

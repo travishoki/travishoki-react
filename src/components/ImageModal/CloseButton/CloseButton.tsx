@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './CloseButton.scss';
+import styles from './CloseButton.module.scss';
 
 type CloseButtonProps = {
 	onClick: () => void;
@@ -8,7 +8,7 @@ type CloseButtonProps = {
 
 export const CloseButton = ({ onClick }: CloseButtonProps) => (
 	<button
-		className="close-icon"
+		className={styles.closeIcon}
 		onClick={(event) => {
 			event.stopPropagation();
 			onClick();

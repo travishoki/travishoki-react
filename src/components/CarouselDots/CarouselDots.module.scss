@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.carousel-dots {
+.carouselDots {
 	display: flex;
 	gap: 15px;
 	justify-content: center;
@@ -8,7 +8,7 @@
 	margin: 20px 0 0;
 	padding: 0;
 
-	.carousel-dot {
+	.carouselDot {
 		background: rgba($white, 0.4);
 		border: none;
 		border-radius: 50%;

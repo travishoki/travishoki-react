@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import './ModalArrow.scss';
+import styles from './ModalArrow.module.scss';
 
 type ModalArrowProps = {
 	direction: 'next' | 'prev';
@@ -11,7 +11,7 @@ type ModalArrowProps = {
 
 export const ModalArrow = ({ direction, onClick }: ModalArrowProps) => (
 	<button
-		className={classNames('modal-arrow', `modal-arrow-${direction}`)}
+		className={classNames(styles.modalArrow, styles[direction])}
 		onClick={(event) => {
 			event.stopPropagation();
 			onClick();
