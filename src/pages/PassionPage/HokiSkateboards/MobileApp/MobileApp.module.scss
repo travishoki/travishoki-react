@@ -1,0 +1,10 @@
+@import '../../../../styles/variables.scss';
+
+.appSection {
+	border-top: solid 3px $gray-five;
+
+	.appIcon {
+		display: block;
+		margin: 0 auto 10px;
+	}
+}

@@ -17,7 +17,7 @@ import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { MobileAppImageGallery } from './MobileAppImageGallery/MobileAppImageGallery';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 
-import './MobileApp.scss';
+import styles from './MobileApp.module.scss';
 
 const techs: TechKey[] = [
 	CSS,
@@ -29,12 +29,12 @@ const techs: TechKey[] = [
 ];
 
 export const MobileApp = () => (
-	<div className="pt-4 app-section">
+	<div className={`pt-4 ${styles.appSection}`}>
 		<div className="row mb-4">
 			<div className="col-sm-7">
 				<Title title="Mobile App" />
 				<img
-					className="app-icon"
+					className={styles.appIcon}
 					height="200"
 					src="http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png"
 					title="Hoki Skateboards App"

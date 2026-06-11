@@ -1,0 +1,17 @@
+.appBadges {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	img {
+		width: auto;
+	}
+
+	img.appleBadge {
+		height: 50px;
+	}
+
+	img.googleBadge {
+		height: 75px;
+	}
+}
