@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { ProjectLink } from './ProjectLink/ProjectLink';
 
-import './ProjectImageOverlay.scss';
+import styles from './ProjectImageOverlay.module.scss';
 
 type ProjectImageOverlayProps = {
 	companySlug: string;
@@ -21,12 +21,12 @@ export const ProjectImageOverlay = ({
 }: ProjectImageOverlayProps) => (
 	<div className="popup">
 		<Link to={`${projectLink}/${itemKey}`}>
-			<div className="popup-inner">
-				<div className="popup-cont">
+			<div className={styles.popupInner}>
+				<div className={styles.popupCont}>
 					<img src={logos(`./${companySlug}.jpg`)} />
 					<ProjectLink />
 				</div>
-				<div className="popup-overlay" />
+				<div className={styles.popupOverlay} />
 			</div>
 		</Link>
 	</div>

@@ -1,7 +1,10 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/variables.scss';
 
-.popup {
+// .popup is hover-revealed by parent components (ProjectImageWithPopup,
+// ProjectItemLine) across files, so it stays global. The inner pieces are
+// applied and styled only here, so they are scoped.
+:global(.popup) {
 	bottom: 0;
 	cursor: pointer;
 	display: none;
@@ -10,12 +13,12 @@
 	right: 0;
 	top: 0;
 
-	.popup-inner {
+	.popupInner {
 		height: 100%;
 		position: relative;
 		width: 100%;
 
-		.popup-cont {
+		.popupCont {
 			align-items: center;
 			bottom: 0;
 			display: flex;
@@ -42,7 +45,7 @@
 			}
 		}
 
-		.popup-overlay {
+		.popupOverlay {
 			@include opacity(0.8);
 			background: $gray-four;
 			bottom: 0;

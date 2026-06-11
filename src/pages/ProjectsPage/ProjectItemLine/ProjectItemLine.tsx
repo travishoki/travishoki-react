@@ -4,7 +4,7 @@ import { ProjectType } from '../ProjectsPage.types';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
 import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 
-import './ProjectItemLine.scss';
+import styles from './ProjectItemLine.module.scss';
 
 export const ProjectItemLine = ({
 	company,
@@ -15,7 +15,7 @@ export const ProjectItemLine = ({
 	subtitle,
 }: ProjectItemLineProps) => {
 	return (
-		<div className="project-item-line">
+		<div className={styles.projectItemLine}>
 			<ProjectImageWithPopup
 				companySlug={companySlug}
 				itemKey={itemKey}

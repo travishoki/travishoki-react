@@ -1,0 +1,35 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/responsive.scss';
+
+.projectItemLine {
+	display: flex;
+	flex-direction: row;
+	padding: 4px;
+	position: relative;
+
+	@include phone-down {
+		margin-bottom: 15px;
+	}
+
+	@include tablet-up {
+		margin-bottom: 20px;
+	}
+
+	// .popup and .project-image-with-popup are shared cross-component classes
+	// (applied by ProjectImageOverlay / ProjectImageWithPopup), so they stay
+	// global.
+	&:hover > :global(.popup) {
+		display: block;
+	}
+
+	:global(.project-image-with-popup) {
+		@include phone-down {
+			flex: 0 0 33%;
+		}
+
+		@include tablet-up {
+			flex: 0 0 250px;
+		}
+	}
+}
