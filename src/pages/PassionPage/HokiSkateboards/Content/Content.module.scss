@@ -1,7 +1,9 @@
 @import '../../../../styles/variables.scss';
 
-.hoki-skateboards-inner-content {
-	p.button-link {
+// .button-link, .project-image and .hoki-skateboards-inner-content-col are
+// applied by the child column components, so they stay global via :global().
+.hokiSkateboardsInnerContent {
+	:global(p.button-link) {
 		background-color: $blue-three;
 		border-radius: 8px;
 		display: block;
@@ -13,7 +15,7 @@
 		text-transform: uppercase;
 	}
 
-	.hoki-skateboards-inner-content-col {
+	:global(.hoki-skateboards-inner-content-col) {
 		border-top: solid 3px $gray-five;
 	}
 
@@ -21,11 +23,11 @@
 		text-decoration: none;
 	}
 
-	a:hover p.button-link {
+	a:hover :global(p.button-link) {
 		color: white;
 	}
 
-	img.project-image {
+	:global(img.project-image) {
 		height: auto;
 		margin: 0 auto 10px;
 		max-width: 300px;
