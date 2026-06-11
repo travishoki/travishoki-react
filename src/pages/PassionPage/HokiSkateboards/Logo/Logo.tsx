@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Logo.scss';
+import styles from './Logo.module.scss';
 
 export const Logo = () => (
 	<a
-		className="hoki-skateboards-logo"
+		className={styles.hokiSkateboardsLogo}
 		href="https://hokiskateboards.com"
 		rel="noreferrer"
 		target="_blank"

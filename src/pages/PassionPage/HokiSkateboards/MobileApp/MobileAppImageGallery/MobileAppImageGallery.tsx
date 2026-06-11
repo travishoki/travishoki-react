@@ -5,7 +5,7 @@ import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery.data';
 
-import './MobileAppImageGallery.scss';
+import styles from './MobileAppImageGallery.module.scss';
 
 const imageSrc = (filename: string) =>
 	`${process.env.PUBLIC_URL}/images/websites/gallery/${filename}`;
@@ -21,7 +21,7 @@ export const MobileAppImageGallery = () => {
 	const currentSrc = imageSrc(APP_GALLERY_IMAGES[page]);
 
 	return (
-		<div className="mobile-app-image-gallery">
+		<div className={styles.mobileAppImageGallery}>
 			{modalOpen && (
 				<ImageModal
 					dimensions={dimensions}
@@ -34,7 +34,7 @@ export const MobileAppImageGallery = () => {
 
 			<img
 				alt={`Hoki Skateboards app screen ${page + 1}`}
-				className="mobile-app-image-gallery-image"
+				className={styles.mobileAppImageGalleryImage}
 				onClick={() => setModalOpen(true)}
 				onLoad={(event) =>
 					setDimensions([

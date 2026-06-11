@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { VideoButton } from '~components/VideoButton/VideoButton';
 import { VideoModal } from '~components/VideoModal/VideoModal';
 
-import './MobileAppVideo.scss';
+import styles from './MobileAppVideo.module.scss';
 
 const APP_ICON =
 	'http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png';
@@ -14,7 +14,7 @@ export const MobileAppVideo = () => {
 
 	return (
 		<>
-			<div className="mobile-app-video">
+			<div className={styles.mobileAppVideo}>
 				<VideoButton onClick={() => setOpen(true)} size={250} src={APP_ICON} />
 			</div>
 

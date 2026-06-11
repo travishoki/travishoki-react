@@ -2,14 +2,15 @@ import React from 'react';
 
 import { TECH, TechKey } from '~const/Tech.const';
 
-import './TechIcon.scss';
+import styles from './TechIcon.module.scss';
 
-export const TechIcon = ({ name }: TechIconProps) => (
-	<div className="tech-icon-holder">
-		<img className="tech-icon" src={TECH[name].image} />
+export const TechIcon = ({ className, name }: TechIconProps) => (
+	<div className={className}>
+		<img className={styles.techIcon} src={TECH[name].image} />
 	</div>
 );
 
 type TechIconProps = {
+	className?: string;
 	name: TechKey;
 };

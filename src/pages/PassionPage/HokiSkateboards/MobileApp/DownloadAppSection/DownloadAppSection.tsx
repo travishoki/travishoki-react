@@ -2,10 +2,10 @@ import React from 'react';
 
 import { AppBadges } from '../AppBadges';
 
-import './DownloadAppSection.scss';
+import styles from './DownloadAppSection.module.scss';
 
 export const DownloadAppSection = () => (
-	<div className="download-app-section">
+	<div className={styles.downloadAppSection}>
 		<h3>Download My App!</h3>
 
 		<p className="indent">
@@ -19,7 +19,7 @@ export const DownloadAppSection = () => (
 
 		<AppBadges />
 
-		<p className="copyright">
+		<p className={styles.copyright}>
 			Apple and the Apple logo are trademarks of Apple Inc. Android, Google Play
 			and the Google Play logo are trademarks of Google LLC.
 		</p>

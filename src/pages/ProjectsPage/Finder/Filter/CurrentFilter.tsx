@@ -16,7 +16,7 @@ export const CurrentFilter = ({
 	return (
 		<div className="current-filter">
 			<div className="tech-container">
-				<TechIcon name={filter} />
+				<TechIcon className="current-filter-tech-icon" name={filter} />
 				<p>{label}</p>
 			</div>
 			<i

@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 
-import './PassionLabel.scss';
+import styles from './PassionLabel.module.scss';
 
 export const PassionLabel = ({ children }: PassionLabelProps) => (
-	<p className="passion-label mb-1">{children}</p>
+	<p className={`${styles.passionLabel} mb-1`}>{children}</p>
 );
 
 type PassionLabelProps = {
