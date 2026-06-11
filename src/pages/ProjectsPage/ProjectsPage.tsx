@@ -9,7 +9,7 @@ import { FILTER_LIST } from './ProjectsPage.const';
 import { ViewControl } from './ViewControl/ViewControl';
 import { useProjectFiltering } from './hooks/useProjectFiltering';
 
-import './ProjectsPage.scss';
+import styles from './ProjectsPage.module.scss';
 
 const projectLink = '/project';
 
@@ -32,7 +32,7 @@ export const ProjectsPage = () => {
 		<div className="projects" id="container">
 			<h1>Projects</h1>
 			<div
-				className={classnames('projects-container', {
+				className={classnames(styles['projects-container'], {
 					grid,
 					list: !grid,
 				})}
