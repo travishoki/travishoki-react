@@ -6,7 +6,7 @@ import { useIsMobile } from '~helpers/useIsMobile';
 import { ListColumn } from './ListColumn/ListColumn';
 import { splitListInHalf } from './ListSection.helpers';
 
-import './ListSection.scss';
+import styles from './ListSection.module.scss';
 
 export const ListSection = ({ list, title }: ListSectionProps) => {
 	const [LIST_A, LIST_B] = useMemo(() => splitListInHalf(list), [list]);
@@ -31,7 +31,7 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 
 				{isMobile && (
 					<ReadMoreButton
-						className="list-section-read-more"
+						className={styles['list-section-read-more']}
 						expanded={expanded}
 						onToggle={() => setExpanded(!expanded)}
 					/>
