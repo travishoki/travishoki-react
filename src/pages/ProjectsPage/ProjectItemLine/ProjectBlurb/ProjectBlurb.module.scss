@@ -1,0 +1,26 @@
+.projectBlurb {
+	min-width: 0;
+	padding: 0 20px;
+
+	p.company {
+		font-size: 20px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	p.subtitle {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	p.description {
+		font-size: 14px;
+
+		&.truncate {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}

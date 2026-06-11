@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getLabelByKey } from '~helpers/projects';
 
-import './NoResults.scss';
+import styles from './NoResults.module.scss';
 
 export const NoResults = ({
 	filter,
@@ -13,7 +13,7 @@ export const NoResults = ({
 	const filterLabel = filter ? getLabelByKey(filter) : null;
 
 	return (
-		<div className="no-results">
+		<div className={styles.noResults}>
 			<h2>No Results</h2>
 			<p>Clear filter and search terms to find more results.</p>
 

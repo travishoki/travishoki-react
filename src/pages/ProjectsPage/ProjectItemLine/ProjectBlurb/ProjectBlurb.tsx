@@ -4,7 +4,7 @@ import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../ProjectsPage.types';
 
-import './ProjectBlurb.scss';
+import styles from './ProjectBlurb.module.scss';
 
 export const ProjectBlurb = ({
 	company,
@@ -14,12 +14,12 @@ export const ProjectBlurb = ({
 	const desc = getFirstParagraph(description);
 
 	return (
-		<div className="project-blurb">
+		<div className={styles.projectBlurb}>
 			<div className="mb-2">
-				<p className="company">{company}</p>
-				{subtitle && <p className="subtitle">{subtitle}</p>}
+				<p className={styles.company}>{company}</p>
+				{subtitle && <p className={styles.subtitle}>{subtitle}</p>}
 			</div>
-			<p className="description truncate">{desc}</p>
+			<p className={`${styles.description} ${styles.truncate}`}>{desc}</p>
 		</div>
 	);
 };
