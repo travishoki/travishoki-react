@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './HowItsMadeLinks.scss';
+import styles from './HowItsMadeLinks.module.scss';
 
 export const HowItsMadeLinks = () => {
 	return (
-		<div className="how-its-made-links">
+		<div className={styles.howItsMadeLinks}>
 			<div>
 				<a
-					className="how-its-made-link"
+					className={styles.howItsMadeLink}
 					href="https://github.com/travishoki/travishoki-react"
 					rel="noreferrer"
 					target="_blank"
@@ -19,7 +19,7 @@ export const HowItsMadeLinks = () => {
 			</div>
 			<div>
 				<a
-					className="how-its-made-link"
+					className={styles.howItsMadeLink}
 					href="https://travishoki.com/storybook-static"
 					rel="noreferrer"
 					target="_blank"

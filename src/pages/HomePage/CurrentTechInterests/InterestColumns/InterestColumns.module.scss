@@ -1,6 +1,6 @@
 @import '../../../../styles/responsive.scss';
 
-.interest-columns {
+.interestColumns {
 	margin: 0 auto;
 	max-width: 900px;
 
@@ -16,7 +16,8 @@
 			display: none;
 		}
 
-		.interest-item {
+		// .interest-item is applied by the InterestItem child component.
+		:global(.interest-item) {
 			flex: 0 0 100%;
 			scroll-snap-align: center;
 		}

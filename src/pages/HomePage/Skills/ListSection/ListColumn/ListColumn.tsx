@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './ListColumn.scss';
+import styles from './ListColumn.module.scss';
 
 type ListColumnProps = {
 	items: string[];
 };
 
 export const ListColumn = ({ items }: ListColumnProps) => (
-	<ul className="list-column">
+	<ul className={styles.listColumn}>
 		{items.map((item, index) => (
 			<li key={index}>{item}</li>
 		))}

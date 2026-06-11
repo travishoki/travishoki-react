@@ -1,25 +1,25 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
 
-section.volunteer-component {
+section.volunteerComponent {
 	h3 {
 		color: $blue-one;
 		font-size: 24px;
 	}
 
-	.volunteer-component-subtitle {
+	.volunteerComponentSubtitle {
 		font-size: 20px;
 	}
 
-	.volunteer-icon {
+	.volunteerIcon {
 		color: $primary;
 		font-size: 36px;
 	}
 
-	.leader-positions {
+	.leaderPositions {
 		justify-content: center;
 
-		.leader-position {
+		.leaderPosition {
 			@include phone-down {
 				margin-bottom: 15px;
 			}

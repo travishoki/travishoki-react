@@ -1,6 +1,6 @@
 @import '../../../../../styles/responsive.scss';
 
-.list-column {
+.listColumn {
 	@include phone-down {
 		display: block;
 		margin: 0 auto;

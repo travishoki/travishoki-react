@@ -2,12 +2,14 @@ import React from 'react';
 
 import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
-import './Volunteer.scss';
+import styles from './Volunteer.module.scss';
 
 export const Volunteer = () => (
-	<section className="center primary volunteer-component">
+	<section className={`center primary ${styles.volunteerComponent}`}>
 		<h2 className="mb-0">Volunteer Work</h2>
-		<p className="mb-2 volunteer-component-subtitle">Scouting America</p>
+		<p className={`mb-2 ${styles.volunteerComponentSubtitle}`}>
+			Scouting America
+		</p>
 
 		<img
 			className="center mb-2"
@@ -16,8 +18,8 @@ export const Volunteer = () => (
 			width="177"
 		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>
-		<div className="row leader-positions">
-			<div className="col-auto leader-position">
+		<div className={`row ${styles.leaderPositions}`}>
+			<div className={`col-auto ${styles.leaderPosition}`}>
 				<p>Bear&apos;s Assistant Den Leader</p>
 				<p>Since Spring of 2025</p>
 			</div>
