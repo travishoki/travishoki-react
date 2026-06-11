@@ -7,7 +7,7 @@ import { CURRENT_TECH_INTERESTS } from './CurrentTechInterests.data';
 import { CurrentTechInterestsHeader } from './CurrentTechInterestsHeader/CurrentTechInterestsHeader';
 import { InterestColumns } from './InterestColumns/InterestColumns';
 
-import './CurrentTechInterests.scss';
+import styles from './CurrentTechInterests.module.scss';
 
 export const CurrentTechInterests = () => {
 	const trackRef = useRef<HTMLDivElement>(null);
@@ -29,7 +29,7 @@ export const CurrentTechInterests = () => {
 	};
 
 	return (
-		<section className="blue center current-tech-interests-component">
+		<section className={`blue center ${styles.currentTechInterestsComponent}`}>
 			<CurrentTechInterestsHeader />
 
 			<InterestColumns onScroll={handleScroll} ref={trackRef} />

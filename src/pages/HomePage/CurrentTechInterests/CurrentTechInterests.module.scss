@@ -1,13 +1,14 @@
 @import '../../../styles/variables.scss';
 
-section.current-tech-interests-component {
-	.interest-image {
+section.currentTechInterestsComponent {
+	// .interest-image and .interest-item are applied by the InterestItem child.
+	:global(.interest-image) {
 		border-radius: 8px;
 		max-width: 350px;
 		width: 100%;
 	}
 
-	.interest-item {
+	:global(.interest-item) {
 		text-align: left;
 	}
 
@@ -29,7 +30,8 @@ section.current-tech-interests-component {
 }
 
 // blue-one (the default link color) is invisible on this blue section. Passed
-// to ReadMoreButton via TextWithReadMore's buttonClassName prop.
-.current-tech-interests-read-more {
+// to ReadMoreButton via TextWithReadMore's buttonClassName prop (a plain
+// string), so it stays global.
+:global(.current-tech-interests-read-more) {
 	color: $white;
 }
