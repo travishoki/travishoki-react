@@ -7,10 +7,10 @@ import { Experience } from './Experience/Experience';
 import { Skills } from '../HomePage/Skills/Skills';
 import { TechTiles } from '../HomePage/TechTiles/TechTiles';
 
-import './ResumePage.scss';
+import styles from './ResumePage.module.scss';
 
 export const ResumePage = () => (
-	<div className="resume" id="container">
+	<div className={styles.resume} id="container">
 		<h1>Resume</h1>
 
 		<DownloadSection />

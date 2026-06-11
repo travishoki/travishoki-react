@@ -1,11 +1,14 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
 import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../../../ProjectsPage/ProjectsPage.types';
+import { AnswerSection } from '../../AnswerSection/AnswerSection';
 
-import './Contributions.scss';
+import styles from './Contributions.module.scss';
 
 export const Contributions = ({ contributions }: ContributionsProps) => {
 	if (!contributions || contributions.length === 0) return null;
@@ -16,18 +19,18 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 	return (
 		<>
 			<p className="label">Contributions:</p>
-			<div className="answer-section">
+			<AnswerSection>
 				{isList ? (
 					<ReadMoreList
-						buttonClassName="contributions-read-more"
+						buttonClassName={styles['contributions-read-more']}
 						initiallyExpanded
 						items={bullets}
-						listClassName="disc answer-section-list"
+						listClassName={classNames('disc', styles['answer-section-list'])}
 					/>
 				) : (
 					<p className="indent">{getFirstParagraph(contributions)}</p>
 				)}
-			</div>
+			</AnswerSection>
 		</>
 	);
 };

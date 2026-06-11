@@ -6,8 +6,7 @@ import { makeArray } from '~helpers/arrays';
 
 import { Contributions } from './Contributions/Contributions';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
-
-import './ProjectInfoSection.scss';
+import { AnswerSection } from '../AnswerSection/AnswerSection';
 
 const logos = require.context('../../../../images/clients', true);
 
@@ -31,21 +30,21 @@ export const ProjectInfoSection = ({
 			{date && (
 				<>
 					<p className="label">Date Range:</p>
-					<div className="answer-section">
+					<AnswerSection>
 						<p>{date}</p>
-					</div>
+					</AnswerSection>
 				</>
 			)}
 
 			{description.length && (
 				<>
 					<p className="label">Description:</p>
-					<div className="answer-section">
+					<AnswerSection>
 						<TextWithReadMore
 							initiallyExpanded
 							paragraphs={makeArray(description)}
 						/>
-					</div>
+					</AnswerSection>
 				</>
 			)}
 
@@ -54,12 +53,12 @@ export const ProjectInfoSection = ({
 			{learned && (
 				<>
 					<p className="label">What I Learned:</p>
-					<div className="answer-section">
+					<AnswerSection>
 						<TextWithReadMore
 							initiallyExpanded
 							paragraphs={makeArray(learned)}
 						/>
-					</div>
+					</AnswerSection>
 				</>
 			)}
 
