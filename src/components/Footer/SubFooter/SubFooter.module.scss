@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.subfooter {
+	background: $gray-three;
+	overflow: hidden;
+}
+
+.contact-info {
+	@media (min-width: 500px) {
+		float: left;
+	}
+}
+
+.contact-link {
+	color: $white;
+	line-height: 40px;
+}
+
+.subfooter-social {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
