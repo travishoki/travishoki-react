@@ -8,14 +8,14 @@ import imgTimpanogos from '~images/education/timpanogos.png';
 
 import { Scholarships } from './Scholarships/Scholarships';
 
-import './Timpanogos.scss';
+import styles from './Timpanogos.module.scss';
 
 const IMG_WIDTH = 600;
 const IMG_HEIGHT = 400;
 
 export const Timpanogos = () => (
 	<section className="white center education">
-		<div className="boxed timpanogos">
+		<div className={`boxed ${styles.timpanogos}`}>
 			<Panels className="reverse">
 				<Panel>
 					<h2>Timpanogos High School</h2>
@@ -23,8 +23,8 @@ export const Timpanogos = () => (
 					<p className="degree">High School Diploma</p>
 					<p>Aug 2009 - Apr 2006</p>
 					<Scholarships />
-					<p className="label">Activities and Societies:</p>
-					<p className="activities">
+					<p className={styles.label}>Activities and Societies:</p>
+					<p className={styles.activities}>
 						Timpanogos Ballroom Team, UVU Breakdance Club, BYU Breakdance Club,
 						Timpanogos Hip-Hop Club, Orem High Breakdance Club, Provo High
 						Breakdance Club

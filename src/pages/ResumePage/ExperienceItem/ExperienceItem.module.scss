@@ -1,0 +1,23 @@
+@import '../../../styles/responsive.scss';
+@import '../../../styles/variables.scss';
+
+.experienceImage {
+	background-color: white;
+}
+
+.experienceItem {
+	&:global(.staggered-item) {
+		:global(.image) {
+			height: 200px;
+			width: 200px;
+		}
+
+		:global(.image-container) {
+			margin-bottom: 20px;
+
+			@include tablet-up {
+				flex: 1 0 200px;
+			}
+		}
+	}
+}

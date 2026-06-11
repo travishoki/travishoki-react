@@ -3,11 +3,11 @@ import React, { Fragment } from 'react';
 import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
 import { LinkedInLink } from './LinkedInLink/LinkedInLink';
 
-import './ContactInfo.scss';
+import styles from './ContactInfo.module.scss';
 
 export const ContactInfo = () => (
 	<Fragment>
-		<div className="contact-info-header mb-3">
+		<div className={`${styles.contactInfoHeader} mb-3`}>
 			<h2>Get In Touch With Me</h2>
 			<p>Travis Hoki</p>
 		</div>

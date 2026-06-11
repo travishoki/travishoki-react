@@ -1,12 +1,12 @@
 @import '../../../../styles/responsive.scss';
 @import '../../../../styles/variables.scss';
 
-.contact-info-grid {
+.contactInfoGrid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.contact-info-item {
+.contactInfoItem {
 	text-align: center;
 
 	&:nth-child(odd) {
@@ -17,7 +17,7 @@
 		border-bottom: solid 3px $gray-five;
 	}
 
-	i.contact-info-icon {
+	i.contactInfoIcon {
 		color: $primary;
 		font-size: 40px;
 	}

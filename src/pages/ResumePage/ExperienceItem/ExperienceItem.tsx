@@ -7,7 +7,7 @@ import { ResumeDataType } from '../ResumePage.data';
 import { AffiliatedCompany } from './AffiliatedCompany/AffiliatedCompany';
 import { SubLine } from './SubLine/SubLine';
 
-import './ExperienceItem.scss';
+import styles from './ExperienceItem.module.scss';
 
 export const ExperienceItem = ({
 	affiliatedCompany,
@@ -19,9 +19,9 @@ export const ExperienceItem = ({
 	techs,
 	title,
 }: ExperienceItemPropTypes) => (
-	<li className="experience-item staggered-item">
+	<li className={`${styles.experienceItem} staggered-item`}>
 		<div className="image-container">
-			<img className="image round experience-image" src={img} />
+			<img className={`image round ${styles.experienceImage}`} src={img} />
 		</div>
 
 		<div className="info-box">

@@ -28,7 +28,7 @@
 	$breakpoint1: 400px;
 	$breakpoint2: 768px;
 
-	.trailhead-image {
+	.trailheadImage {
 		@media (max-width: $breakpoint1) {
 			display: block;
 			margin: 0 auto 10px;

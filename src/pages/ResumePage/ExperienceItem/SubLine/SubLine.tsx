@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SubLine.scss';
+import styles from './SubLine.module.scss';
 
 type SubLineProps = {
 	dateEnd: string;
@@ -9,9 +9,9 @@ type SubLineProps = {
 };
 
 export const SubLine = ({ dateEnd, dateStart, position }: SubLineProps) => (
-	<div className="sub-line">
+	<div className={styles.subLine}>
 		<h4>{position}</h4>
-		<p className="date">
+		<p className={styles.date}>
 			{dateStart} - {dateEnd}
 		</p>
 	</div>

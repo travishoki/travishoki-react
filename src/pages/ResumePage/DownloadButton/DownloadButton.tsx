@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './DownloadButton.scss';
+import styles from './DownloadButton.module.scss';
 
 export const DownloadButton = () => (
 	<a
-		className="btn btn-secondary btn-lg download-button"
+		className={`btn btn-secondary btn-lg ${styles.downloadButton}`}
 		href="http://travishoki.com/travis-hoki-resume.pdf"
 		rel="noreferrer"
 		target="_blank"

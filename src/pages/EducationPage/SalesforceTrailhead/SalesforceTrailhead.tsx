@@ -4,13 +4,13 @@ import imgRanger from '~images/education/ranger.png';
 
 import { SalesforceIcon } from '../SalesforceIcon/SalesforceIcon';
 
-import './SalesforceTrailhead.scss';
+import styles from './SalesforceTrailhead.module.scss';
 
 export const SalesforceTrailhead = () => (
 	<section>
-		<div className="boxed trailhead">
-			<img className="trailhead-image" src={imgRanger} />
-			<div className="earned">
+		<div className={`boxed ${styles.trailhead}`}>
+			<img className={styles.trailheadImage} src={imgRanger} />
+			<div className={styles.earned}>
 				<h2>Salesforce&apos;s Ranger Status</h2>
 				<p>Earned July 25, 2024</p>
 				<a
@@ -23,7 +23,7 @@ export const SalesforceTrailhead = () => (
 					View my profile
 				</a>
 			</div>
-			<div className="rank">
+			<div className={styles.rank}>
 				<h3>What are Trailblazer Ranks?</h3>
 				<p>
 					<a
