@@ -16,7 +16,7 @@ export const FilterItem = ({
 
 	return (
 		<li
-			className={classnames('filter-item', {
+			className={classnames('filterItem', {
 				active: filter === null || filter === item,
 			})}
 			onClick={() => onSelectFilter(item)}

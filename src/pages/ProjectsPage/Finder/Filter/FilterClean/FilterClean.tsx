@@ -4,7 +4,7 @@ import styles from './FilterClean.module.scss';
 
 export const FilterClean = ({ toggleOpenFilter }: FilterCleanProps) => (
 	<div
-		className={`${styles.filterClean} filter-item pointer`}
+		className={`${styles.filterClean} filterItem pointer`}
 		onClick={toggleOpenFilter}
 	>
 		<p>Filter by Tech</p>

@@ -28,7 +28,7 @@ export const RecentProjectsList = () => (
 						</div>
 					</div>
 					<img
-						className="project-img"
+						className="projectImg"
 						onError={handleWebsiteImageError('thumbnail')}
 						src={websiteImageSrc(project.itemKey, 'thumbnail')}
 					/>

@@ -27,7 +27,7 @@ export const ProjectImageWithPopup = ({
 			projectLink={projectLink}
 		/>
 		<img
-			className="project-img"
+			className="projectImg"
 			onError={handleWebsiteImageError('thumbnail')}
 			src={websiteImageSrc(itemKey, 'thumbnail')}
 		/>

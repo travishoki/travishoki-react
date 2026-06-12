@@ -16,7 +16,7 @@ export const SingleProjectPage = () => {
 
 	return (
 		<div className="projects" id="container">
-			<div className="projects-container grid">
+			<div className="projectsContainer grid">
 				<BackButton />
 				<ProjectContent project={singleProject} />
 			</div>
