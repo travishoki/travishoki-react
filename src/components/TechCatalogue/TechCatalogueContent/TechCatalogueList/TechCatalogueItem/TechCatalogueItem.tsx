@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { TechCatalogueItemData } from '../TechCatalogue.types';
+import { TechCatalogueItemData } from '../../../TechCatalogue.types';
 
 import styles from './TechCatalogueItem.module.scss';
 

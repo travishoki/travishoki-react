@@ -2,8 +2,8 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-import { TechCatalogueItemData } from '../TechCatalogue.types';
-import { TechCatalogueItem } from '../TechCatalogueItem/TechCatalogueItem';
+import { TechCatalogueItemData } from '../../TechCatalogue.types';
+import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
 type TechCatalogueListProps = {
 	expanded: boolean;

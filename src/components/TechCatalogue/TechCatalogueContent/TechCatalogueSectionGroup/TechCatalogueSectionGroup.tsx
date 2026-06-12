@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { TechCatalogueItemData } from '../TechCatalogue.types';
-import { TechCatalogueHeader } from '../TechCatalogueHeader/TechCatalogueHeader';
+import { TechCatalogueItemData } from '../../TechCatalogue.types';
+import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
 import styles from './TechCatalogueSectionGroup.module.scss';
