@@ -7,12 +7,12 @@
 	margin: 20px 0;
 	padding: 20px 0;
 
-	:global(p.label) {
+	p.label {
 		font-weight: bold;
 		margin: 0 0 0 10px;
 	}
 
-	:global(.btn) {
+	.btn {
 		display: block;
 		margin: 20px auto 0;
 		max-width: 200px;

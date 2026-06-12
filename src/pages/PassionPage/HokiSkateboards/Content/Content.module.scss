@@ -5,7 +5,7 @@
 		text-decoration: none;
 	}
 
-	a:hover :global(p.button-link) {
+	a:hover p.button-link {
 		color: white;
 	}
 }
