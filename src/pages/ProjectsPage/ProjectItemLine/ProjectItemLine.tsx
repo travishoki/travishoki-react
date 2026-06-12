@@ -17,6 +17,7 @@ export const ProjectItemLine = ({
 	return (
 		<div className={styles.projectItemLine}>
 			<ProjectImageWithPopup
+				company={company}
 				companySlug={companySlug}
 				itemKey={itemKey}
 				projectLink={projectLink}

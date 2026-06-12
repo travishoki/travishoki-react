@@ -6,15 +6,10 @@ import { ProjectLink } from './ProjectLink/ProjectLink';
 
 import styles from './ProjectImageOverlay.module.scss';
 
-type ProjectImageOverlayProps = {
-	companySlug: string;
-	itemKey: string;
-	projectLink: string;
-};
-
 const logos = require.context('../../../../images/clients', true);
 
 export const ProjectImageOverlay = ({
+	company,
 	companySlug,
 	itemKey,
 	projectLink,
@@ -23,7 +18,7 @@ export const ProjectImageOverlay = ({
 		<Link to={`${projectLink}/${itemKey}`}>
 			<div className={styles.prodjectImageOverlayInner}>
 				<div className={styles.prodjectImageOverlayContent}>
-					<img src={logos(`./${companySlug}.jpg`)} />
+					<img alt={company} src={logos(`./${companySlug}.jpg`)} />
 					<ProjectLink />
 				</div>
 				<div className={styles.prodjectImageOverlayOverlay} />
@@ -31,3 +26,10 @@ export const ProjectImageOverlay = ({
 		</Link>
 	</div>
 );
+
+type ProjectImageOverlayProps = {
+	company: string;
+	companySlug: string;
+	itemKey: string;
+	projectLink: string;
+};

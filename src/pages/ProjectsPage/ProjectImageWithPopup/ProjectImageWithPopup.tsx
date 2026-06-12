@@ -9,19 +9,15 @@ import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 
 import styles from './ProjectImageWithPopup.module.scss';
 
-type ProjectImageWithPopupProps = {
-	companySlug: string;
-	itemKey: string;
-	projectLink: string;
-};
-
 export const ProjectImageWithPopup = ({
+	company,
 	companySlug,
 	itemKey,
 	projectLink,
 }: ProjectImageWithPopupProps) => (
 	<div className={styles.projectImageWithPopup}>
 		<ProjectImageOverlay
+			company={company}
 			companySlug={companySlug}
 			itemKey={itemKey}
 			projectLink={projectLink}
@@ -32,3 +28,10 @@ export const ProjectImageWithPopup = ({
 		/>
 	</div>
 );
+
+type ProjectImageWithPopupProps = {
+	company: string;
+	companySlug: string;
+	itemKey: string;
+	projectLink: string;
+};
