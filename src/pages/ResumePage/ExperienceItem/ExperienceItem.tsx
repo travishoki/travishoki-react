@@ -27,6 +27,7 @@ export const ExperienceItem = ({
 	<StaggeredItem className={styles.experienceItem}>
 		<ImageContainer className={styles.imageContainer}>
 			<img
+				alt={`${title} Logo`}
 				className={classNames(
 					styles.staggeredItemImage,
 					'round',

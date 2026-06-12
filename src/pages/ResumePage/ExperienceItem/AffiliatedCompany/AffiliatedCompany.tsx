@@ -11,7 +11,11 @@ export const AffiliatedCompany = ({
 
 	return (
 		<div className={styles.experienceAffiliatedCompany}>
-			<img className="round" src={affiliatedCompany.img} />
+			<img
+				alt={`${affiliatedCompany.title} Logo`}
+				className="round"
+				src={affiliatedCompany.img}
+			/>
 			<p>{affiliatedCompany.title}</p>
 		</div>
 	);
