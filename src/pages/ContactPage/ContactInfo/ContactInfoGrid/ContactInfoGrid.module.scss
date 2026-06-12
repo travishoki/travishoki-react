@@ -17,11 +17,6 @@
 		border-bottom: solid 3px $gray-five;
 	}
 
-	i.contactInfoIcon {
-		color: $primary;
-		font-size: 40px;
-	}
-
 	p {
 		color: $white;
 		margin: 0;
@@ -39,4 +34,9 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+i.contactInfoIcon {
+	color: $primary;
+	font-size: 40px;
 }
