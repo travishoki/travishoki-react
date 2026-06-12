@@ -1,7 +1,13 @@
+@import '../../../../styles/responsive.scss';
+
 .projectImageCarousel {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+
+	@include phone-down {
+		margin-bottom: 20px;
+	}
 
 	.projectImg {
 		cursor: pointer;
