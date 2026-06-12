@@ -15,6 +15,7 @@ const logos = require.context('../../../../images/clients', true);
 import styles from './ProjectInfoSection.module.scss';
 
 export const ProjectInfoSection = ({
+	company,
 	companySlug,
 	contributions,
 	date,
@@ -25,6 +26,7 @@ export const ProjectInfoSection = ({
 	return (
 		<>
 			<img
+				alt={company}
 				className={classNames('center', styles.logo)}
 				src={logos(`./${companySlug}.jpg`)}
 			/>
@@ -73,5 +75,11 @@ export const ProjectInfoSection = ({
 
 type ProjectInfoSectionProps = Pick<
 	ProjectType,
-	'companySlug' | 'contributions' | 'date' | 'description' | 'learned' | 'techs'
+	| 'company'
+	| 'companySlug'
+	| 'contributions'
+	| 'date'
+	| 'description'
+	| 'learned'
+	| 'techs'
 >;

@@ -25,6 +25,8 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 		url,
 	} = project;
 
+	const alt = subtitle ? `${company} ${subtitle}` : company;
+
 	return (
 		<div className={styles.projectContent}>
 			<ProjectHeader company={company} subtitle={subtitle} />
@@ -34,11 +36,12 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 					{gallery && gallery.length > 1 ? (
 						<ProjectImageCarousel gallery={gallery} />
 					) : (
-						<ProjectImage itemKey={itemKey} />
+						<ProjectImage alt={alt} itemKey={itemKey} />
 					)}
 				</div>
 				<div className="col-sm-7">
 					<ProjectInfoSection
+						company={company}
 						companySlug={companySlug}
 						contributions={contributions}
 						date={date}

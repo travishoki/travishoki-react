@@ -7,13 +7,6 @@ import { useImageModal } from '../useImageModal';
 
 import styles from './ImageWithModal.module.scss';
 
-type ImageWithModalProps = {
-	alt?: string;
-	className?: string;
-	onError?: React.ReactEventHandler<HTMLImageElement>;
-	src: string;
-};
-
 export const ImageWithModal = ({
 	alt,
 	className,
@@ -46,4 +39,11 @@ export const ImageWithModal = ({
 			/>
 		</>
 	);
+};
+
+type ImageWithModalProps = {
+	alt: string;
+	className?: string;
+	onError?: React.ReactEventHandler<HTMLImageElement>;
+	src: string;
 };

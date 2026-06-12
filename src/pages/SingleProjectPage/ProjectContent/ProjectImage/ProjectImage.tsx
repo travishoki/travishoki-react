@@ -8,13 +8,17 @@ import {
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
-export const ProjectImage = ({ itemKey }: ProjectImageProps) => (
-	<ImageWithModal
-		onError={handleWebsiteImageError('gallery')}
-		src={websiteImageSrc(itemKey, 'gallery')}
-	/>
-);
+export const ProjectImage = ({ alt, itemKey }: ProjectImageProps) => {
+	return (
+		<ImageWithModal
+			alt={alt}
+			onError={handleWebsiteImageError('gallery')}
+			src={websiteImageSrc(itemKey, 'gallery')}
+		/>
+	);
+};
 
 type ProjectImageProps = {
+	alt: string;
 	itemKey: ProjectType['itemKey'];
 };
