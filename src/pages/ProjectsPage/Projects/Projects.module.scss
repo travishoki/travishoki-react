@@ -24,18 +24,22 @@
 .resultsFull {
 	@media (max-width: 349px) {
 		max-width: 250px;
-
-		.GridItem {
-			width: 100%;
-		}
 	}
 
 	@media (min-width: 350px) and (max-width: 499px) {
 		max-width: 500px;
+	}
+}
 
-		.GridItem {
-			width: 50%;
-		}
+.results2GridItem,
+.results3GridItem,
+.resultsFullGridItem {
+	@media (max-width: 349px) {
+		width: 100%;
+	}
+
+	@media (min-width: 350px) and (max-width: 499px) {
+		width: 50%;
 	}
 }
 
