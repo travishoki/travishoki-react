@@ -27,7 +27,7 @@ export const TechCatalogueItem = ({
 			)}
 			data-tooltip={label}
 		>
-			<img alt={label} className={iconClass} src={image} />
+			<img alt={`${label} Logo Icon`} className={iconClass} src={image} />
 			{expanded && <p>{label}</p>}
 		</div>
 	</li>
