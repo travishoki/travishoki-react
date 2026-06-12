@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
+import { ItemLink } from './ItemLink/ItemLink';
+import { ReadMoreListItem } from './ReadMoreList.types';
+
 type ReadMoreListProps = {
 	buttonClassName?: string;
 	collapsedCount?: number;
 	initiallyExpanded?: boolean;
-	items: string[];
+	items: ReadMoreListItem[];
 	listClassName?: string;
 };
 
@@ -27,7 +30,10 @@ export const ReadMoreList = ({
 		<>
 			<ul className={listClassName}>
 				{visibleItems.map((item, index) => (
-					<li key={index}>{item}</li>
+					<li key={index}>
+						{item.text}
+						{item.link && <ItemLink link={item.link} text={item.text} />}
+					</li>
 				))}
 			</ul>
 

@@ -7,11 +7,11 @@ import { ReadMoreList } from './ReadMoreList';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const items = [
-	'Connect to Firebase for inventorying food',
-	'Design the website and collect food images',
-	'Wrap changes in feature flags',
-	'Coordinate with multiple teams to deploy at once',
-	'Write unit tests for the new components',
+	{ text: 'Connect to Firebase for inventorying food' },
+	{ text: 'Design the website and collect food images' },
+	{ text: 'Wrap changes in feature flags' },
+	{ text: 'Coordinate with multiple teams to deploy at once' },
+	{ text: 'Write unit tests for the new components' },
 ];
 
 const meta: Meta<typeof ReadMoreList> = {
