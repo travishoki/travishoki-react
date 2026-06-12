@@ -47,7 +47,7 @@ export const ProjectImageCarousel = ({
 				<ZoomOverlay onClick={() => setModalOpen(true)} />
 
 				<img
-					alt={alt}
+					alt={imgAlt}
 					className="pointer"
 					onError={handleWebsiteImageError('gallery')}
 					onLoad={(event) =>
