@@ -10,6 +10,7 @@ export const GRAY_4 = '#404040';
 export const GRAY_5 = '#373737';
 
 // Blue
+export const BLUE_0 = '#9fb0e8';
 export const BLUE_1 = '#7c8fce';
 export const BLUE_2 = '#5a6fb4';
 export const BLUE_3 = '#415082';
