@@ -3,7 +3,6 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
-import { ReadMoreListItem } from '~components/ReadMoreList/ReadMoreList.types';
 import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../../../ProjectsPage/ProjectsPage.types';
@@ -16,9 +15,6 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 
 	const isList = Array.isArray(contributions) && contributions.length > 1;
 	const bullets = Array.isArray(contributions) ? contributions : [];
-	const formattedBullets: ReadMoreListItem[] = bullets.map((item) => ({
-		text: item,
-	}));
 
 	return (
 		<>
@@ -28,7 +24,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 					<ReadMoreList
 						buttonClassName={styles.contributionsReadMore}
 						initiallyExpanded
-						items={formattedBullets}
+						items={bullets}
 						listClassName={classNames('disc', styles.answerSectionList)}
 					/>
 				) : (
