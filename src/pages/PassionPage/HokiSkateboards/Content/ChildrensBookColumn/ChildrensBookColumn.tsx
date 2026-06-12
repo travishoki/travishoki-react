@@ -6,6 +6,7 @@ import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skat
 
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
+import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 const appSoftwareList: SoftwareKey[] = [
 	'ILLUSTRATOR',
@@ -24,9 +25,8 @@ export const ChildrensBookColumn = () => (
 			title="You Should Always Skateboard"
 		>
 			<Title title="Children's Book" />
-			<img
+			<ProjectImage
 				alt="You Should Always Skateboard"
-				className="center project-image"
 				src={ImgYouShouldAlwaysSkateboard}
 			/>
 			<p className="button-link">View on Amazon</p>
