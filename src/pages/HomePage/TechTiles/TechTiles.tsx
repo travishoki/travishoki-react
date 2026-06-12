@@ -4,10 +4,8 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 
 import { DISPLAYED_LIST } from './TechTiles.data';
 
-import styles from './TechTiles.module.scss';
-
 export const TechTiles = () => (
-	<section className={styles.techTiles}>
+	<section>
 		<TechListCatalogue
 			header="Proficient Tech"
 			itemClassName="col-6 col-md-4"
