@@ -20,7 +20,7 @@ export const Timpanogos = () => (
 			<Panel>
 				<h2>Timpanogos High School</h2>
 				<img className={styles.school} src={imgTimpanogos} />
-				<p className="degree">High School Diploma</p>
+				<p className="bold">High School Diploma</p>
 				<p>Aug 2009 - Apr 2006</p>
 				<Scholarships />
 				<p className={styles.label}>Activities and Societies:</p>

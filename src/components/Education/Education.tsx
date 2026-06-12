@@ -10,7 +10,7 @@ export const Education = () => (
 		<img className="center" src={imgUvu} />
 
 		<p>Digital Media Major</p>
-		<p className={styles.degree}>Bachelor of Science</p>
+		<p className="bold">Bachelor of Science</p>
 		<p>Internet Technology Emphasis</p>
 	</section>
 );
