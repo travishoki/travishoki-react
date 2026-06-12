@@ -6,6 +6,8 @@ import { Panels } from '~components/Panels/Panels';
 import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
 import imgUvu from '~images/education/uvu.png';
 
+import { ImageCaption } from '../ImageCaption/ImageCaption';
+
 const SMALL_WIDTH = 600;
 const SMALL_HEIGHT = 400;
 
@@ -38,7 +40,7 @@ export const Uvu = () => (
 						src={imgUvuGraduation}
 						srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 					/>
-					<p className="image-caption">(College graduation with my wife.)</p>
+					<ImageCaption>(College graduation with my wife.)</ImageCaption>
 				</Panel>
 			</Panels>
 		</div>

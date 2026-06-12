@@ -1,17 +1,12 @@
 @import '../../styles/variables.scss';
 
-section.education {
+.education {
 	p {
 		font-size: 24px;
 		margin: 0;
-
-		&.degree {
-			font-weight: bold;
-		}
-
-		&.image-caption {
-			color: $gray-four;
-			font-size: 14px;
-		}
 	}
+}
+
+.degree {
+	font-weight: bold;
 }
