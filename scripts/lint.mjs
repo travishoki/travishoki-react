@@ -11,12 +11,14 @@ const matchCount = (string, subString) => {
 
 export const logLintWarningStats = () => {
 	exec('yarn lint --fix', (_err, stdout) => {
-		// const noUnusedVarTotal = matchCount(stdout, 'no-unused-var');
 		const total = matchCount(stdout, ' warning ');
 
-		log(chalk.bold.underline('Lint Warnings'));
-		// log(`No Unused Var: ${noUnusedVarTotal}`);
-		log(`Total: ${total}`);
+		if (total > 0) {
+			log(chalk.bold.underline('Lint Warnings'));
+			log(`Total: ${total}`);
+		} else {
+			log(chalk.green('Success'));
+		}
 
 		logSpacer();
 	});
