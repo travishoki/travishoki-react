@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classNames from 'classnames';
+import { CarouselDot } from './CarouselDot/CarouselDot';
 
 import styles from './CarouselDots.module.scss';
 
@@ -17,18 +17,12 @@ export const CarouselDots = ({
 }: CarouselDotsProps) => (
 	<ul className={styles.carouselDots}>
 		{Array.from({ length: count }, (_, index) => (
-			<li key={index}>
-				<button
-					aria-label={`Show slide ${index + 1}`}
-					className={classNames(styles.carouselDot, {
-						[styles.active]: activeIndex === index,
-					})}
-					onClick={() => {
-						onSelect(index);
-					}}
-					type="button"
-				/>
-			</li>
+			<CarouselDot
+				key={index}
+				isActive={activeIndex === index}
+				label={`Show slide ${index + 1}`}
+				onClick={() => onSelect(index)}
+			/>
 		))}
 	</ul>
 );

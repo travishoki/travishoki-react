@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+
+.carouselDot {
+	background: rgba($white, 0.4);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 20px;
+	padding: 0;
+	width: 20px;
+
+	&:hover {
+		background: rgba($white, 0.3);
+	}
+
+	&.active {
+		background: $white;
+	}
+}
