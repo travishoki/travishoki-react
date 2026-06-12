@@ -3,13 +3,10 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
-import { makeArray } from '~helpers/arrays';
 
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
-import { AnswerSection } from '../AnswerSection/AnswerSection';
 
 const logos = require.context('../../../../images/clients', true);
 
@@ -32,34 +29,15 @@ export const ProjectInfoSection = ({
 				src={logos(`./${companySlug}.jpg`)}
 			/>
 
-			{date && <ProjectInfo answer={<p>{date}</p>} label="Date Range" />}
+			{date && <ProjectInfo label="Date Range" text={date} />}
 
 			{description.length && (
-				<ProjectInfo
-					answer={
-						<TextWithReadMore
-							buttonClassName={styles.readMoreButton}
-							initiallyExpanded
-							paragraphs={makeArray(description)}
-						/>
-					}
-					label="Description"
-				/>
+				<ProjectInfo label="Description" text={description} />
 			)}
 
 			<Contributions contributions={contributions} />
 
-			{learned && (
-				<ProjectInfo
-					answer={
-						<TextWithReadMore
-							initiallyExpanded
-							paragraphs={makeArray(learned)}
-						/>
-					}
-					label="What I Learned"
-				/>
-			)}
+			{learned && <ProjectInfo label="What I Learned" text={learned} />}
 
 			{techs && techs.length > 0 && (
 				<TechListCatalogue initialExpanded list={techs} />

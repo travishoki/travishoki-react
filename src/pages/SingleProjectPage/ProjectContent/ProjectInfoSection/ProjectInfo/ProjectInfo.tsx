@@ -1,17 +1,28 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
+import { makeArray } from '~helpers/arrays';
 
 import { AnswerSection } from '../../AnswerSection/AnswerSection';
 
-export const ProjectInfo = ({ answer, label }: ProjectInfoProps) => {
+import styles from './ProjectInfo.module.scss';
+
+export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
 	return (
 		<>
 			<p className="label">{label}:</p>
-			<AnswerSection>{answer}</AnswerSection>
+			<AnswerSection>
+				<TextWithReadMore
+					buttonClassName={styles.readMoreButton}
+					initiallyExpanded
+					paragraphs={makeArray(text)}
+				/>
+			</AnswerSection>
 		</>
 	);
 };
 
 type ProjectInfoProps = {
-	answer: ReactNode;
 	label: string;
+	text: string | string[];
 };
