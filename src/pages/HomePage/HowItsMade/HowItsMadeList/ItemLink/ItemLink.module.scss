@@ -2,5 +2,8 @@
 
 .itemLink {
 	color: $blue-zero;
-	text-decoration: none;
+
+	&:hover {
+		color: $blue-one;
+	}
 }

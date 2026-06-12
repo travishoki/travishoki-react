@@ -8,6 +8,16 @@
 	margin-bottom: 10px;
 }
 
+.howItsMadeLinkLabel {
+	color: $blue-zero;
+	font-size: 16px;
+}
+
+.howItsMadeLinkDescription {
+	color: $gray-one;
+	font-size: 12px;
+}
+
 .howItsMadeLink {
 	align-items: center;
 	color: $white;
@@ -19,14 +29,18 @@
 		font-size: 40px;
 		margin-bottom: 10px;
 	}
-}
 
-.howItsMadeLinkLabel {
-	color: $blue-zero;
-	font-size: 16px;
-}
+	&:hover {
+		i {
+			color: $gray-one;
+		}
 
-.howItsMadeLinkDescription {
-	color: $gray-one;
-	font-size: 12px;
+		.howItsMadeLinkLabel {
+			color: $blue-one;
+		}
+
+		.howItsMadeLinkDescription {
+			color: $gray-two;
+		}
+	}
 }
