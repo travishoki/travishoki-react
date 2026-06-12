@@ -8,8 +8,8 @@ import styles from './Content.module.scss';
 export const Content = () => (
 	<div className={`${styles.hokiSkateboardsInnerContent} mb-3`}>
 		<div className="row">
-			<RetailWebsiteColumn />
-			<ChildrensBookColumn />
+			<RetailWebsiteColumn className={styles.column} />
+			<ChildrensBookColumn className={styles.column} />
 		</div>
 	</div>
 );
