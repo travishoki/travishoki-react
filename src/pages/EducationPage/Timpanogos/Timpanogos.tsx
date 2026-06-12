@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';
@@ -15,7 +17,7 @@ const IMG_WIDTH = 600;
 const IMG_HEIGHT = 400;
 
 export const Timpanogos = () => (
-	<section className="white center">
+	<section className={classNames('white center', styles.timpanogos)}>
 		<div className="boxed">
 			<Panels reverse>
 				<Panel>
