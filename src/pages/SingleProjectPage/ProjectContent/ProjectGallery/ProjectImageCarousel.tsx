@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
+import { ZoomOverlay } from '~components/ImageModal/ImageMaximizable/ZoomOverlay/ZoomOverlay';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import {
 	handleWebsiteImageError,
@@ -35,19 +36,22 @@ export const ProjectImageCarousel = ({
 				/>
 			)}
 
-			<img
-				alt={gallery[page].caption}
-				className="pointer"
-				onClick={() => setModalOpen(true)}
-				onError={handleWebsiteImageError('gallery')}
-				onLoad={(event) =>
-					setDimensions([
-						event.currentTarget.naturalWidth,
-						event.currentTarget.naturalHeight,
-					])
-				}
-				src={currentSrc}
-			/>
+			<div className={styles.imageContainer}>
+				<ZoomOverlay onClick={() => setModalOpen(true)} />
+
+				<img
+					alt={gallery[page].caption}
+					className="pointer"
+					onError={handleWebsiteImageError('gallery')}
+					onLoad={(event) =>
+						setDimensions([
+							event.currentTarget.naturalWidth,
+							event.currentTarget.naturalHeight,
+						])
+					}
+					src={currentSrc}
+				/>
+			</div>
 
 			{gallery[page].caption && (
 				<p className={styles.projectImageCaption}>{gallery[page].caption}</p>
