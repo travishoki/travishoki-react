@@ -4,9 +4,9 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { FilterItem } from './FilterItem/FilterItem';
 
-import styles from './FilterItems.module.scss';
+import styles from './FilterList.module.scss';
 
-export const FilterItems = ({
+export const FilterList = ({
 	filter,
 	filterList,
 	filterTerm,

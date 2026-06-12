@@ -5,7 +5,7 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 import { CurrentFilter } from './CurrentFilter/CurrentFilter';
 import { FilterClean } from './FilterClean/FilterClean';
 import { FilterForm } from './FilterForm/FilterForm';
-import { FilterItems } from './FilterItems/FilterItems';
+import { FilterList } from './FilterList/FilterList';
 
 export const Filter = ({
 	filter,
@@ -32,7 +32,7 @@ export const Filter = ({
 							onChangeFilter={onChangeFilter}
 							onClearAndCloseFilter={onClearAndCloseFilter}
 						/>
-						<FilterItems
+						<FilterList
 							filter={filter}
 							filterList={filterList}
 							filterTerm={filterTerm}
