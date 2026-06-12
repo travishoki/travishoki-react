@@ -21,6 +21,7 @@ export const ProjectItemLine = ({
 				companySlug={companySlug}
 				itemKey={itemKey}
 				projectLink={projectLink}
+				subtitle={subtitle}
 			/>
 			<ProjectBlurb
 				company={company}

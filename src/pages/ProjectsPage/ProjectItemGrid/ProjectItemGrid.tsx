@@ -13,6 +13,7 @@ export const ProjectItemGrid = ({
 	companySlug,
 	itemKey,
 	projectLink,
+	subtitle,
 }: ProjectItemGridProps) => (
 	<div className={classNames(styles.gridItem, className)}>
 		<ProjectImageWithPopup
@@ -20,6 +21,7 @@ export const ProjectItemGrid = ({
 			companySlug={companySlug}
 			itemKey={itemKey}
 			projectLink={projectLink}
+			subtitle={subtitle}
 		/>{' '}
 	</div>
 );
@@ -27,4 +29,4 @@ export const ProjectItemGrid = ({
 type ProjectItemGridProps = {
 	className?: string;
 	projectLink: string;
-} & Pick<ProjectType, 'companySlug' | 'itemKey' | 'company'>;
+} & Pick<ProjectType, 'companySlug' | 'itemKey' | 'company' | 'subtitle'>;

@@ -14,6 +14,7 @@ export const ProjectImageWithPopup = ({
 	companySlug,
 	itemKey,
 	projectLink,
+	subtitle,
 }: ProjectImageWithPopupProps) => (
 	<div className={styles.projectImageWithPopup}>
 		<ProjectImageOverlay
@@ -23,6 +24,7 @@ export const ProjectImageWithPopup = ({
 			projectLink={projectLink}
 		/>
 		<img
+			alt={`${company} ${subtitle}`}
 			onError={handleWebsiteImageError('thumbnail')}
 			src={websiteImageSrc(itemKey, 'thumbnail')}
 		/>
@@ -34,4 +36,5 @@ type ProjectImageWithPopupProps = {
 	companySlug: string;
 	itemKey: string;
 	projectLink: string;
+	subtitle?: string;
 };
