@@ -1,3 +1,5 @@
+@import '../../../styles/responsive.scss';
+
 .timpanogos {
 	p.label {
 		font-size: 14px;
@@ -8,5 +10,15 @@
 	p.activities {
 		font-size: 14px;
 		text-align: left;
+	}
+}
+
+.school {
+	@include phone-down {
+		max-width: 200px;
+	}
+
+	@include tablet-up {
+		max-width: 250px;
 	}
 }

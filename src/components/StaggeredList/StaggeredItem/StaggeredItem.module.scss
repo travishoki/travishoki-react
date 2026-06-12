@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/responsive.scss';
+
+.staggered-item {
+	display: flex;
+	list-style: none;
+	padding: 25px 0;
+
+	&:not(:last-child) {
+		border-bottom: solid 3px $gray-five;
+	}
+
+	@include phone-down {
+		display: block;
+		justify-content: center;
+		margin: 0 auto 20px;
+		max-width: 600px;
+	}
+
+	.image {
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.image-container {
+		@include phone-down {
+			margin-bottom: 20px;
+		}
+	}
+
+	.info-box {
+		@include phone-down {
+			margin-bottom: 20px;
+
+			h2 {
+				margin-top: 0;
+				width: 100%;
+			}
+		}
+
+		@include tablet-up {
+			flex: 100%;
+			padding: 10px 20px;
+		}
+
+		h2,
+		h3 {
+			text-align: left;
+		}
+	}
+
+	@include tablet-up {
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+		&:nth-child(odd) {
+			flex-direction: row;
+		}
+	}
+}

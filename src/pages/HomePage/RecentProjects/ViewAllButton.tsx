@@ -1,11 +1,15 @@
 import React from 'react';
 
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-import './ViewAllButton.scss';
+import styles from './ViewAllButton.module.scss';
 
 export const ViewAllButton = () => (
-	<Link className="btn btn-primary btn-lg view-all-button" to="/projects">
+	<Link
+		className={classNames('btn btn-primary btn-lg', styles['view-all-button'])}
+		to="/projects"
+	>
 		View All Projects
 	</Link>
 );

@@ -1,8 +1,11 @@
-ul.staggered {
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.staggered {
 	margin: 0;
 	padding: 0;
 
-	li.staggered-item {
+	.staggered-item {
 		display: flex;
 		list-style: none;
 		padding: 25px 0;

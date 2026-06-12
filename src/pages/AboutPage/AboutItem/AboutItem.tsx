@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 
 import { AboutType } from '../AboutPage.data';
@@ -10,7 +11,7 @@ import { Signature } from './Signature/Signature';
 import styles from './AboutItem.module.scss';
 
 export const AboutItem = (item: AboutType) => (
-	<li className={`staggered-item ${styles.aboutItem}`}>
+	<StaggeredItem className={styles.aboutItem}>
 		<div className="image-container">
 			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
 		</div>
@@ -21,5 +22,5 @@ export const AboutItem = (item: AboutType) => (
 
 			{item.hasSignature && <Signature />}
 		</div>
-	</li>
+	</StaggeredItem>
 );

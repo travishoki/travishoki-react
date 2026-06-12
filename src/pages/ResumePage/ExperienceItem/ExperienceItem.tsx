@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { BulletedList } from '~components/BulletedList/BulletedList';
+import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
 import { ResumeDataType } from '../ResumePage.data';
@@ -19,7 +20,7 @@ export const ExperienceItem = ({
 	techs,
 	title,
 }: ExperienceItemPropTypes) => (
-	<li className={`${styles.experienceItem} staggered-item`}>
+	<StaggeredItem className={styles.experienceItem}>
 		<div className="image-container">
 			<img className={`image round ${styles.experienceImage}`} src={img} />
 		</div>
@@ -31,7 +32,7 @@ export const ExperienceItem = ({
 			<AffiliatedCompany affiliatedCompany={affiliatedCompany} />
 			<TechListCatalogue list={techs} />
 		</div>
-	</li>
+	</StaggeredItem>
 );
 
 type ExperienceItemPropTypes = ResumeDataType;

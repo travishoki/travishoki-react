@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 
+import { StaggeredList } from '~components/StaggeredList/StaggeredList';
+
 import { ExperienceItem } from '../ExperienceItem/ExperienceItem';
 import { RESUME_DATA } from '../ResumePage.data';
 import { TechDivider } from '../TechDivider/TechDivider';
@@ -13,7 +15,7 @@ export const Experience = () => (
 			<CareerOverview />
 
 			<h2>Experience</h2>
-			<ul className="staggered">
+			<StaggeredList>
 				{RESUME_DATA.map((job, index) => {
 					const showTechDivider = index === RESUME_DATA.length - DIVIDER_POS;
 
@@ -24,7 +26,7 @@ export const Experience = () => (
 						</Fragment>
 					);
 				})}
-			</ul>
+			</StaggeredList>
 		</div>
 	</section>
 );

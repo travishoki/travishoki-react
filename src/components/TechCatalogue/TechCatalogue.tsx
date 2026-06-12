@@ -11,7 +11,6 @@ import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 
 import styles from './TechCatalogue.module.scss';
-import './TechCatalogue.scss';
 
 type TechCatalogueProps = {
 	circle?: boolean;
@@ -32,12 +31,15 @@ export const TechCatalogue = ({
 
 	if (items.length === 0) return null;
 
-	const iconClass = classnames(styles['tech-catalogue-icon'], { circle });
+	const iconClass = classnames(
+		styles['tech-catalogue-icon'],
+		circle ? styles['tech-catalogue-icon-circle'] : '',
+	);
 
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div className="tech-catalogue mb-3">
+		<div className={classnames(styles['tech-catalogue'], 'mb-3')}>
 			<TechCatalogueHeader
 				label={header}
 				onToggle={() => setExpanded(!expanded)}

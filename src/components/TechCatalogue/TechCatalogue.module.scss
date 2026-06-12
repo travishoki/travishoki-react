@@ -2,6 +2,13 @@
 
 $gap: 15px;
 
+// When an itemClassName grid is passed, defer layout to the Bootstrap row/col
+// classes (overrides the orientation display + gap rules above/below).
+.tech-catalogue ul.row {
+	display: flex;
+	gap: 0;
+}
+
 .tech-catalogue-content {
 	border: solid 1px $primary;
 	border-top: none;
@@ -65,8 +72,8 @@ $gap: 15px;
 	$iconW: 40px;
 	height: $iconW;
 	width: $iconW;
+}
 
-	.circle {
-		border-radius: 50%;
-	}
+.tech-catalogue-icon-circle {
+	border-radius: 50%;
 }

@@ -6,7 +6,6 @@ import { Timpanogos } from './Timpanogos/Timpanogos';
 import { Uvu } from './Uvu/Uvu';
 
 import styles from './EducationPage.module.scss';
-import './EducationPage.scss';
 
 export const EducationPage = () => (
 	<div className={styles.education} id="container">
