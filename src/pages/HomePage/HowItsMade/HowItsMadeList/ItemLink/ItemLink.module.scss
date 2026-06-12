@@ -1,13 +1,6 @@
 @import '../../../../../styles/variables.scss';
 
-.link {
-	margin-left: 10px;
-
-	i {
-		color: $blue-zero;
-
-		&:hover {
-			color: $blue-one;
-		}
-	}
+.itemLink {
+	color: $blue-zero;
+	text-decoration: none;
 }

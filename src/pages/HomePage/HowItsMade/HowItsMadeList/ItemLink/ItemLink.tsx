@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import styles from './ItemLink.module.scss';
 
-export const ItemLink = ({ link, title }: ItemLinkProps) => {
+export const ItemLink = ({ children, href, title }: ItemLinkProps) => {
 	return (
 		<a
-			className={styles.link}
-			href={link}
+			className={styles.itemLink}
+			href={href}
 			rel="noreferrer"
 			target="_blank"
 			title={title}
 		>
-			<i className="fa fa-link" />
+			{children}
 		</a>
 	);
 };
 
 type ItemLinkProps = {
-	link: string;
+	children: ReactNode;
+	href: string;
 	title: string;
 };

@@ -17,47 +17,55 @@ export const HowItsMadeList = () => {
 		<>
 			<ul className={styles.howItsMadeList}>
 				<li>
-					Typed with Typescript
+					Typed with{' '}
 					<ItemLink
-						link="https://www.typescriptlang.org/"
+						href="https://www.typescriptlang.org/"
 						title="Typescript NPM Module"
-					/>
+					>
+						Typescript
+					</ItemLink>
 				</li>
 				<li>
-					Unit testing with Jest
-					<ItemLink
-						link="https://jestjs.io/docs/getting-started"
-						title="Jest"
-					/>
+					Unit testing with{' '}
+					<ItemLink href="https://jestjs.io/docs/getting-started" title="Jest">
+						Jest
+					</ItemLink>
 				</li>
 				<li>
-					Eslint for consistent coding style
-					<ItemLink link="https://eslint.org/" title="Eslint" />
+					<ItemLink href="https://eslint.org/" title="Eslint">
+						Eslint
+					</ItemLink>{' '}
+					for consistent coding style
 				</li>
 
 				{showAll && (
 					<>
 						<li>
-							Storybook for component management
-							<ItemLink link="https://storybook.js.org/" title="Storybook" />
+							<ItemLink href="https://storybook.js.org/" title="Storybook">
+								Storybook
+							</ItemLink>{' '}
+							for component management
 						</li>
 						<li>
-							Husky automatically runs scripts
+							<ItemLink href="https://typicode.github.io/husky/" title="Husky">
+								Husky
+							</ItemLink>{' '}
+							automatically runs scripts
+						</li>
+						<li>
+							Build with some assistance from{' '}
+							<ItemLink href="https://claude.com/" title="Claude Code">
+								Claude Code
+							</ItemLink>
+						</li>
+						<li>
+							ADA accessibility optimization using{' '}
 							<ItemLink
-								link="https://typicode.github.io/husky/"
-								title="Husky"
-							/>
-						</li>
-						<li>
-							Build with some assistance from Claude Code
-							<ItemLink link="https://claude.com/" title="Claude Code" />
-						</li>
-						<li>
-							ADA accessibility optimization using axe DevTools
-							<ItemLink
-								link="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
+								href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
 								title="axe DevTools Google Chrome Plugin"
-							/>
+							>
+								axe DevTools
+							</ItemLink>
 						</li>
 					</>
 				)}
