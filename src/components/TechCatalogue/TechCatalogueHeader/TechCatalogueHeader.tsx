@@ -20,6 +20,6 @@ export const TechCatalogueHeader = ({
 		onClick={onToggle}
 	>
 		{label}
-		<i className={`fa fa-${open ? 'minus' : 'plus'}`} />
+		<i className={`fa fa-${open ? 'chevron-up' : 'chevron-down'}`} />
 	</button>
 );
