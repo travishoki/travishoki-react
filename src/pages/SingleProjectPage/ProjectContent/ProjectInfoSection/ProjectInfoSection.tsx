@@ -32,41 +32,33 @@ export const ProjectInfoSection = ({
 				src={logos(`./${companySlug}.jpg`)}
 			/>
 
-			{date && (
-				<>
-					<ProjectInfo answer={<p>{date}</p>} label="Date Range" />
-				</>
-			)}
+			{date && <ProjectInfo answer={<p>{date}</p>} label="Date Range" />}
 
 			{description.length && (
-				<>
-					<ProjectInfo
-						answer={
-							<TextWithReadMore
-								buttonClassName={styles.readMoreButton}
-								initiallyExpanded
-								paragraphs={makeArray(description)}
-							/>
-						}
-						label="Description"
-					/>
-				</>
+				<ProjectInfo
+					answer={
+						<TextWithReadMore
+							buttonClassName={styles.readMoreButton}
+							initiallyExpanded
+							paragraphs={makeArray(description)}
+						/>
+					}
+					label="Description"
+				/>
 			)}
 
 			<Contributions contributions={contributions} />
 
 			{learned && (
-				<>
-					<ProjectInfo
-						answer={
-							<TextWithReadMore
-								initiallyExpanded
-								paragraphs={makeArray(learned)}
-							/>
-						}
-						label="What I Learned"
-					/>
-				</>
+				<ProjectInfo
+					answer={
+						<TextWithReadMore
+							initiallyExpanded
+							paragraphs={makeArray(learned)}
+						/>
+					}
+					label="What I Learned"
+				/>
 			)}
 
 			{techs && techs.length > 0 && (
