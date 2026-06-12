@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { BulletedList } from '~components/BulletedList/BulletedList';
+import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';
 import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
@@ -25,13 +26,13 @@ export const ExperienceItem = ({
 			<img className={`image round ${styles.experienceImage}`} src={img} />
 		</div>
 
-		<div className="info-box">
+		<InfoBox>
 			<h3 className="m-0">{title}</h3>
 			<SubLine dateEnd={dateEnd} dateStart={dateStart} position={position} />
 			<BulletedList list={tasks} />
 			<AffiliatedCompany affiliatedCompany={affiliatedCompany} />
 			<TechListCatalogue list={techs} />
-		</div>
+		</InfoBox>
 	</StaggeredItem>
 );
 

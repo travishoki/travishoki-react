@@ -1,0 +1,22 @@
+@import '../../../../styles/responsive.scss';
+
+.info-box {
+	@include phone-down {
+		margin-bottom: 20px;
+
+		h2 {
+			margin-top: 0;
+			width: 100%;
+		}
+	}
+
+	@include tablet-up {
+		flex: 100%;
+		padding: 10px 20px;
+	}
+
+	h2,
+	h3 {
+		text-align: left;
+	}
+}

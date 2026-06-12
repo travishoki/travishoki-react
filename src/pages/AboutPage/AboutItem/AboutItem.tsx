@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';
 import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 
@@ -15,12 +16,12 @@ export const AboutItem = (item: AboutType) => (
 		<div className="image-container">
 			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
 		</div>
-		<div className="info-box">
+		<InfoBox>
 			<h2>{item.title}</h2>
 
 			<TextWithReadMore paragraphs={item.desc} />
 
 			{item.hasSignature && <Signature />}
-		</div>
+		</InfoBox>
 	</StaggeredItem>
 );
