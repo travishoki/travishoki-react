@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { getImgAltText } from '~helpers/images';
+
 import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectImage } from './ProjectImage/ProjectImage';
@@ -25,7 +27,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 		url,
 	} = project;
 
-	const alt = subtitle ? `${company} ${subtitle}` : company;
+	const imgAlt = getImgAltText(company, subtitle);
 
 	return (
 		<div className={styles.projectContent}>
@@ -40,7 +42,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 							subtitle={subtitle}
 						/>
 					) : (
-						<ProjectImage alt={alt} itemKey={itemKey} />
+						<ProjectImage alt={imgAlt} itemKey={itemKey} />
 					)}
 				</div>
 				<div className="col-sm-7">

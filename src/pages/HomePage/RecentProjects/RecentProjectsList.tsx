@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import { getImgAltText } from '~helpers/images';
 import {
 	handleWebsiteImageError,
 	websiteImageSrc,
@@ -20,7 +21,7 @@ export const RecentProjectsList = () => (
 	<ul className={styles.recentProjectsList}>
 		{currentProjects.map((project, index) => {
 			const { company, itemKey, subtitle } = project;
-			const imageAlt = subtitle ? `${company} ${subtitle}` : company;
+			const imgAlt = getImgAltText(company, subtitle);
 
 			return (
 				<li key={index}>
@@ -32,7 +33,7 @@ export const RecentProjectsList = () => (
 							</div>
 						</div>
 						<img
-							alt={imageAlt}
+							alt={imgAlt}
 							onError={handleWebsiteImageError('thumbnail')}
 							src={websiteImageSrc(project.itemKey, 'thumbnail')}
 						/>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ZoomOverlay } from '~components/ImageModal/ImageMaximizable/ZoomOverlay/ZoomOverlay';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
+import { getImgAltText } from '~helpers/images';
 import {
 	handleWebsiteImageError,
 	websiteGalleryImageSrc,
@@ -26,14 +27,14 @@ export const ProjectImageCarousel = ({
 
 	const currentSrc = websiteGalleryImageSrc(gallery[page].filename);
 
-	const alt = subtitle ? `${company} ${subtitle}` : company;
+	const imgAlt = getImgAltText(company, subtitle);
 	const { caption } = gallery[page];
 
 	return (
 		<div className={styles.projectImageCarousel}>
 			{modalOpen && (
 				<ImageModal
-					alt={alt}
+					alt={imgAlt}
 					dimensions={dimensions}
 					onClose={() => setModalOpen(false)}
 					onNext={() => goToPage(page + 1)}

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { getImgAltText } from '~helpers/images';
 import {
 	handleWebsiteImageError,
 	websiteImageSrc,
@@ -16,7 +17,7 @@ export const ProjectImageWithPopup = ({
 	projectLink,
 	subtitle,
 }: ProjectImageWithPopupProps) => {
-	const imageAlt = subtitle ? `${company} ${subtitle}` : company;
+	const imgAlt = getImgAltText(company, subtitle);
 
 	return (
 		<div className={styles.projectImageWithPopup}>
@@ -27,7 +28,7 @@ export const ProjectImageWithPopup = ({
 				projectLink={projectLink}
 			/>
 			<img
-				alt={imageAlt}
+				alt={imgAlt}
 				onError={handleWebsiteImageError('thumbnail')}
 				src={websiteImageSrc(itemKey, 'thumbnail')}
 			/>
