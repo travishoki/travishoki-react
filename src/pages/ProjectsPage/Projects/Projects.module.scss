@@ -9,26 +9,14 @@
 
 .results1 {
 	max-width: 250px;
-
-	.gridItem {
-		width: 100%;
-	}
 }
 
 .results2 {
 	max-width: 500px;
-
-	.gridItem {
-		width: 50%;
-	}
 }
 
 .results3 {
 	max-width: 750px;
-
-	.gridItem {
-		width: 33.33333333%;
-	}
 }
 
 .results2,
@@ -37,7 +25,7 @@
 	@media (max-width: 349px) {
 		max-width: 250px;
 
-		.gridItem {
+		.GridItem {
 			width: 100%;
 		}
 	}
@@ -45,7 +33,7 @@
 	@media (min-width: 350px) and (max-width: 499px) {
 		max-width: 500px;
 
-		.gridItem {
+		.GridItem {
 			width: 50%;
 		}
 	}
@@ -54,18 +42,25 @@
 .resultsFull {
 	@media (min-width: 500px) and (max-width: 767px) {
 		max-width: 750px;
+	}
+}
 
-		.gridItem {
-			width: 33.33333333%;
-		}
+.results1GridItem {
+	width: 100%;
+}
+.results2GridItem {
+	width: 50%;
+}
+.results3GridItem {
+	width: 33.33333333%;
+}
+.resultsFullGridItem {
+	@media (min-width: 500px) and (max-width: 767px) {
+		width: 33.33333333%;
 	}
 
 	@include tablet-up {
-		.gridItem {
-			@include tablet-up {
-				width: 25%;
-			}
-		}
+		width: 25%;
 	}
 }
 

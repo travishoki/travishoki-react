@@ -1,16 +1,19 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 import { ProjectType } from '../ProjectsPage.types';
 
 import styles from './ProjectItemGrid.module.scss';
 
 export const ProjectItemGrid = ({
+	className,
 	companySlug,
 	itemKey,
 	projectLink,
 }: ProjectItemGridProps) => (
-	<div className={styles.gridItem}>
+	<div className={classNames(styles.gridItem, className)}>
 		<ProjectImageWithPopup
 			companySlug={companySlug}
 			itemKey={itemKey}
@@ -20,5 +23,6 @@ export const ProjectItemGrid = ({
 );
 
 type ProjectItemGridProps = {
+	className?: string;
 	projectLink: string;
 } & Pick<ProjectType, 'companySlug' | 'itemKey'>;

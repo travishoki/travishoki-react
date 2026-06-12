@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getResultsCountClass } from './Projects.helpers';
+import { getGridCountClass, getResultsCountClass } from './Projects.helpers';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
 import { ProjectType } from '../ProjectsPage.types';
@@ -13,13 +13,17 @@ export const Projects = ({
 	projects = [],
 }: ProjectsProps) => {
 	if (grid) {
-		const resultsCountClass = getResultsCountClass(projects.length);
+		const count = projects.length;
 
 		return (
-			<ul className={`${styles.projectsGrid} ${resultsCountClass}`}>
+			<ul className={`${styles.projectsGrid} ${getResultsCountClass(count)}`}>
 				{projects.map((project, index) => (
 					<li key={index}>
-						<ProjectItemGrid projectLink={projectLink} {...project} />
+						<ProjectItemGrid
+							className={getGridCountClass(count)}
+							projectLink={projectLink}
+							{...project}
+						/>
 					</li>
 				))}
 			</ul>
