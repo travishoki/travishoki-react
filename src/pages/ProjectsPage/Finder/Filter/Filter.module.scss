@@ -1,6 +1,6 @@
 @import '../../../../styles/variables.scss';
 
-// Only .filter-section is owned by Filter; .filter-item, ul.filters and
+// Only .filter-section is owned by Filter; .filter-item, .filters and
 // .filter-tech-icon are applied by child components, so they stay global.
 .filterSection {
 	form {
@@ -13,7 +13,7 @@
 		}
 	}
 
-	:global(ul.filters) {
+	:global(.filters) {
 		background: $gray-two;
 		margin: 0;
 		max-height: 200px;

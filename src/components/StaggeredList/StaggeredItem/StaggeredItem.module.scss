@@ -17,12 +17,6 @@
 		max-width: 600px;
 	}
 
-	.image-container {
-		@include phone-down {
-			margin-bottom: 20px;
-		}
-	}
-
 	@include tablet-up {
 		&:nth-child(even) {
 			flex-direction: row-reverse;

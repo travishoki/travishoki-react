@@ -2,7 +2,7 @@
 
 // .results-* modifiers come from a helper as plain strings, and .grid-item is
 // applied/owned by the ProjectItemGrid child, so both stay global.
-ul.projectsGrid {
+.projectsGrid {
 	list-style: none;
 	margin: 0 auto 60px;
 	overflow: hidden;
@@ -71,7 +71,7 @@ ul.projectsGrid {
 	}
 }
 
-ul.projectsLines {
+.projectsLines {
 	list-style: none;
 	margin: 0 auto 60px;
 	overflow: hidden;

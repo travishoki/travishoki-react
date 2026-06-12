@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ImageContainer } from '~components/StaggeredList/StaggeredItem/ImageContainer/ImageContainer';
 import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';
 import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
@@ -9,13 +10,11 @@ import { AboutImage } from './AboutImage/AboutImage';
 import { AboutVideo } from './AboutVideo/AboutVideo';
 import { Signature } from './Signature/Signature';
 
-import styles from './AboutItem.module.scss';
-
 export const AboutItem = (item: AboutType) => (
-	<StaggeredItem className={styles.aboutItem}>
-		<div className="image-container">
+	<StaggeredItem>
+		<ImageContainer>
 			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
-		</div>
+		</ImageContainer>
 		<InfoBox>
 			<h2>{item.title}</h2>
 

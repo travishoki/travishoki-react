@@ -3,6 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { BulletedList } from '~components/BulletedList/BulletedList';
+import { ImageContainer } from '~components/StaggeredList/StaggeredItem/ImageContainer/ImageContainer';
 import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';
 import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
@@ -24,7 +25,7 @@ export const ExperienceItem = ({
 	title,
 }: ExperienceItemPropTypes) => (
 	<StaggeredItem className={styles.experienceItem}>
-		<div className="image-container">
+		<ImageContainer>
 			<img
 				className={classNames(
 					styles['staggered-item-image'],
@@ -33,7 +34,7 @@ export const ExperienceItem = ({
 				)}
 				src={img}
 			/>
-		</div>
+		</ImageContainer>
 
 		<InfoBox>
 			<h3 className="m-0">{title}</h3>

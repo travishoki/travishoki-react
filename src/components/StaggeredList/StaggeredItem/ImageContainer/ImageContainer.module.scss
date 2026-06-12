@@ -1,0 +1,27 @@
+@import '../../../../styles/responsive.scss';
+
+.image-container {
+	border: solid 1px red;
+
+	@include phone-down {
+		margin-bottom: 20px;
+	}
+}
+
+// .aboutItem {
+// 		.image-container {
+// 			@include tablet-up {
+// 				flex: 1 0 250px;
+// 			}
+// 		}
+// }
+
+// .experienceItem {
+// 		.image-container {
+// 			margin-bottom: 20px;
+
+// 			@include tablet-up {
+// 				flex: 1 0 200px;
+// 			}
+
+// }

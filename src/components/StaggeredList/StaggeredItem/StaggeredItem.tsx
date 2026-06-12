@@ -14,5 +14,5 @@ export const StaggeredItem = ({ children, className }: StaggeredItemProps) => {
 
 type StaggeredItemProps = {
 	children: ReactNode;
-	className: string;
+	className?: string;
 };
