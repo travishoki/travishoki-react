@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TechCatalogueItemData } from '../TechCatalogue.types';
 
-import './TechCatalogueItem.scss';
+import styles from './TechCatalogueItem.module.scss';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;
@@ -18,7 +18,7 @@ export const TechCatalogueItem = ({
 	label,
 }: TechCatalogueItemProps) => (
 	<li className={itemClassName}>
-		<div className="tech-catalogue-item" data-tooltip={label}>
+		<div className={styles['tech-catalogue-item']} data-tooltip={label}>
 			<img alt={label} className={iconClass} src={image} />
 			{expanded && <p>{label}</p>}
 		</div>
