@@ -7,6 +7,7 @@ import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore'
 import { makeArray } from '~helpers/arrays';
 
 import { Contributions } from './Contributions/Contributions';
+import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import { AnswerSection } from '../AnswerSection/AnswerSection';
 
@@ -33,23 +34,22 @@ export const ProjectInfoSection = ({
 
 			{date && (
 				<>
-					<p className="label">Date Range:</p>
-					<AnswerSection>
-						<p>{date}</p>
-					</AnswerSection>
+					<ProjectInfo answer={<p>{date}</p>} label="Date Range" />
 				</>
 			)}
 
 			{description.length && (
 				<>
-					<p className="label">Description:</p>
-					<AnswerSection>
-						<TextWithReadMore
-							buttonClassName={styles.readMoreButton}
-							initiallyExpanded
-							paragraphs={makeArray(description)}
-						/>
-					</AnswerSection>
+					<ProjectInfo
+						answer={
+							<TextWithReadMore
+								buttonClassName={styles.readMoreButton}
+								initiallyExpanded
+								paragraphs={makeArray(description)}
+							/>
+						}
+						label="Description"
+					/>
 				</>
 			)}
 
@@ -57,13 +57,15 @@ export const ProjectInfoSection = ({
 
 			{learned && (
 				<>
-					<p className="label">What I Learned:</p>
-					<AnswerSection>
-						<TextWithReadMore
-							initiallyExpanded
-							paragraphs={makeArray(learned)}
-						/>
-					</AnswerSection>
+					<ProjectInfo
+						answer={
+							<TextWithReadMore
+								initiallyExpanded
+								paragraphs={makeArray(learned)}
+							/>
+						}
+						label="What I Learned"
+					/>
 				</>
 			)}
 
