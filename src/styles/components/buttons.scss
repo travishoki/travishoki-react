@@ -1,20 +1,18 @@
-.btn {
-	&.btn-primary {
-		background: $primary;
-		border: none;
+.btn-primary {
+	background: $primary;
+	border: none;
 
-		&:hover {
-			background: $secondary;
-		}
-	}
-
-	&.btn-secondary {
+	&:hover {
 		background: $secondary;
-		border: solid 3px $secondary;
+	}
+}
 
-		&:hover {
-			background: $primary;
-			border: solid 3px $secondary;
-		}
+.btn-secondary {
+	background: $secondary;
+	border: solid 3px $secondary;
+
+	&:hover {
+		background: $primary;
+		border: solid 3px $secondary;
 	}
 }
