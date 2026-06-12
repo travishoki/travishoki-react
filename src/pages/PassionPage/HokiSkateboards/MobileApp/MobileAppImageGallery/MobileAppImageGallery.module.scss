@@ -2,11 +2,11 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+}
 
-	.mobileAppImageGalleryImage {
-		border-radius: 12px;
-		cursor: pointer;
-		max-height: 500px;
-		width: auto;
-	}
+.mobileAppImageGalleryImage {
+	border-radius: 12px;
+	cursor: pointer;
+	max-height: 500px;
+	width: auto;
 }

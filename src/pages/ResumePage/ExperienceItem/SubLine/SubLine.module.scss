@@ -15,18 +15,18 @@
 		margin: 0;
 		text-align: left;
 	}
+}
 
-	.date {
-		margin: 0;
+.date {
+	margin: 0;
 
-		@include phone-down {
-			color: $gray-one;
-			font-size: 14px;
-		}
+	@include phone-down {
+		color: $gray-one;
+		font-size: 14px;
+	}
 
-		@include tablet-up {
-			display: flex;
-			justify-content: space-between;
-		}
+	@include tablet-up {
+		display: flex;
+		justify-content: space-between;
 	}
 }

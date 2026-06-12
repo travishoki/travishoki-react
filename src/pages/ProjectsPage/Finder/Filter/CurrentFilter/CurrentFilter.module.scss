@@ -11,16 +11,16 @@
 		font-size: 26px;
 	}
 
-	.techContainer {
-		align-items: center;
-		display: flex;
-
-		.currentFilterTechIcon {
-			margin-right: 20px;
-		}
-	}
-
 	p {
 		margin: 0;
 	}
+}
+
+.techContainer {
+	align-items: center;
+	display: flex;
+}
+
+.currentFilterTechIcon {
+	margin-right: 20px;
 }
