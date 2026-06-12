@@ -62,6 +62,7 @@ export const TechCatalogue = ({
 							return (
 								<TechCatalogueSectionGroup
 									key={type}
+									expanded={expanded}
 									iconClass={iconClass}
 									itemClassName={itemClassName}
 									items={group}
