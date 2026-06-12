@@ -2,15 +2,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/responsive.scss';
 
-.mobileMenuIcon {
-	cursor: pointer;
-	font-size: 30px;
-	line-height: 60px;
-	position: absolute;
-	right: 20px;
-	top: 0;
-}
-
 .navigation {
 	$fullMobileNavHeight: 645px;
 	$mobileNavAnimSpeed: 0.7s;
