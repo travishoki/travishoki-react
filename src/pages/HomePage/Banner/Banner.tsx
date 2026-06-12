@@ -1,5 +1,6 @@
 import React from 'react';
 
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 import { SocialIcons } from '~components/SocialIcons/SocialIcons';
@@ -14,7 +15,10 @@ export const Banner = () => (
 			<h1>Travis Hoki</h1>
 			<p className={styles.jobTitle}>Web Developer</p>
 			<SocialIcons className={styles.bannerSocial} />
-			<Link className="btn btn-primary btn-lg" to="/contact">
+			<Link
+				className={classNames('btn btn-primary btn-lg', styles.homeBannerBtn)}
+				to="/contact"
+			>
 				Contact
 			</Link>
 		</div>

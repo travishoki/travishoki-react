@@ -27,20 +27,20 @@
 		padding: 0;
 		text-align: center;
 	}
+}
 
-	.btn {
-		display: block;
-		margin: 0 auto;
+.homeBannerBtn {
+	display: block;
+	margin: 0 auto;
 
-		@include phone-down {
-			margin-top: 10px;
-			width: 150px;
-		}
+	@include phone-down {
+		margin-top: 10px;
+		width: 150px;
+	}
 
-		@include tablet-up {
-			margin-top: 20px;
-			width: 200px;
-		}
+	@include tablet-up {
+		margin-top: 20px;
+		width: 200px;
 	}
 }
 
