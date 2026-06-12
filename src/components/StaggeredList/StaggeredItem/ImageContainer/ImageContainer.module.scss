@@ -1,8 +1,6 @@
 @import '../../../../styles/responsive.scss';
 
 .imageContainer {
-	border: solid 1px red;
-
 	@include phone-down {
 		margin-bottom: 20px;
 	}
