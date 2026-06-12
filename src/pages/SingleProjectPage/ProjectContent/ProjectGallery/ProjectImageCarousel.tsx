@@ -37,7 +37,7 @@ export const ProjectImageCarousel = ({
 
 			<img
 				alt={gallery[page].caption}
-				className={styles.projectImg}
+				className="pointer"
 				onClick={() => setModalOpen(true)}
 				onError={handleWebsiteImageError('gallery')}
 				onLoad={(event) =>

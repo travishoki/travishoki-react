@@ -8,14 +8,10 @@
 	@include phone-down {
 		margin-bottom: 20px;
 	}
+}
 
-	.projectImg {
-		cursor: pointer;
-	}
-
-	.projectImageCaption {
-		font-size: 12px;
-		margin: 12px 0 0;
-		text-align: center;
-	}
+.projectImageCaption {
+	font-size: 12px;
+	margin: 12px 0 0;
+	text-align: center;
 }

@@ -10,7 +10,6 @@ import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
 export const ProjectImage = ({ itemKey }: ProjectImageProps) => (
 	<ImageWithModal
-		className="projectImg"
 		onError={handleWebsiteImageError('gallery')}
 		src={websiteImageSrc(itemKey, 'gallery')}
 	/>
