@@ -1,5 +1,9 @@
 @import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
+
+$breakpoint1: 400px;
+$breakpoint2: 768px;
 
 .trailhead {
 	position: relative;
@@ -24,40 +28,37 @@
 		margin: 0;
 		max-width: 600px;
 	}
+}
 
-	$breakpoint1: 400px;
-	$breakpoint2: 768px;
-
-	.trailheadImage {
-		@media (max-width: $breakpoint1) {
-			display: block;
-			margin: 0 auto 10px;
-		}
-		@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
-			float: left;
-			margin-bottom: 15px;
-			margin-right: 15px;
-		}
-		@media (min-width: $breakpoint2) {
-			left: 0;
-			position: absolute;
-		}
+.trailheadImage {
+	@media (max-width: $breakpoint1) {
+		display: block;
+		margin: 0 auto 10px;
 	}
-
-	.earned {
-		margin-bottom: 10px;
-
-		@media (min-width: $breakpoint2) {
-			margin-left: 200px;
-		}
+	@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+		float: left;
+		margin-bottom: 15px;
+		margin-right: 15px;
 	}
+	@media (min-width: $breakpoint2) {
+		left: 0;
+		position: absolute;
+	}
+}
 
-	.rank {
-		@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
-			clear: both;
-		}
-		@media (min-width: $breakpoint2) {
-			margin-left: 200px;
-		}
+.earned {
+	margin-bottom: 10px;
+
+	@media (min-width: $breakpoint2) {
+		margin-left: 200px;
+	}
+}
+
+.rank {
+	@media (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+		clear: both;
+	}
+	@media (min-width: $breakpoint2) {
+		margin-left: 200px;
 	}
 }
