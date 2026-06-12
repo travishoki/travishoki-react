@@ -21,6 +21,7 @@ export const BackToTop = () => {
 
 	return (
 		<button
+			aria-label="Scroll to Top"
 			className={`${styles.backToTop} ${visible ? styles.visible : ''}`}
 			onClick={scrollToTop}
 		>
