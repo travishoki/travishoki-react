@@ -18,22 +18,27 @@ const currentProjects = orderTopThreeInPodium(
 
 export const RecentProjectsList = () => (
 	<ul className={styles.recentProjectsList}>
-		{currentProjects.map((project, index) => (
-			<li key={index}>
-				<Link to={`/project/${project.itemKey}`}>
-					<div className={styles.projectHeader}>
-						<div className={styles.projectHeaderInner}>
-							<h3>{project.company}</h3>
-							<h4>{project.subtitle}</h4>
+		{currentProjects.map((project, index) => {
+			const { company, itemKey, subtitle } = project;
+			const imageAlt = subtitle ? `${company} ${subtitle}` : company;
+
+			return (
+				<li key={index}>
+					<Link to={`/project/${itemKey}`}>
+						<div className={styles.projectHeader}>
+							<div className={styles.projectHeaderInner}>
+								<h3>{company}</h3>
+								<h4>{subtitle}</h4>
+							</div>
 						</div>
-					</div>
-					<img
-						alt={`${project.company} ${project.subtitle}`}
-						onError={handleWebsiteImageError('thumbnail')}
-						src={websiteImageSrc(project.itemKey, 'thumbnail')}
-					/>
-				</Link>
-			</li>
-		))}
+						<img
+							alt={imageAlt}
+							onError={handleWebsiteImageError('thumbnail')}
+							src={websiteImageSrc(project.itemKey, 'thumbnail')}
+						/>
+					</Link>
+				</li>
+			);
+		})}
 	</ul>
 );
