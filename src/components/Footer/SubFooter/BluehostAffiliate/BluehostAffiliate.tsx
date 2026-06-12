@@ -9,7 +9,10 @@ export const BluehostAffiliate = () => (
 			rel="noreferrer"
 			target="_blank"
 		>
-			<img src="https://bluehost-cdn.com/media/partner/images/travishoki/160x40/160x40BW.png" />
+			<img
+				alt="Bluehost Affiliate"
+				src="https://bluehost-cdn.com/media/partner/images/travishoki/160x40/160x40BW.png"
+			/>
 		</a>
 	</div>
 );
