@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import { useLocation } from 'react-router-dom';
 
+import { MenuButton } from './MenuButton/MenuButton';
 import { NavItem } from './NavItem/NavItem';
 
 import styles from './Nav.module.scss';
@@ -20,12 +21,7 @@ export const Nav = () => {
 
 	return (
 		<>
-			<div className={styles.menuBtn}>
-				<i
-					className={`fa fa-bars ${styles.mobileMenuIcon}`}
-					onClick={toggleOpen}
-				/>
-			</div>
+			<MenuButton onClick={toggleOpen} />
 
 			<ul
 				className={classnames(styles.navigation, {

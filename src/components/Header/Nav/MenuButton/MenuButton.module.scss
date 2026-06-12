@@ -1,0 +1,7 @@
+@import '../../../../styles/responsive.scss';
+
+.menuBtn {
+	@include tablet-up {
+		display: none;
+	}
+}

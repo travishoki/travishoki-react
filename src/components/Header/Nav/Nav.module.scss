@@ -2,12 +2,6 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/responsive.scss';
 
-.menuBtn {
-	@include tablet-up {
-		display: none;
-	}
-}
-
 .mobileMenuIcon {
 	cursor: pointer;
 	font-size: 30px;
