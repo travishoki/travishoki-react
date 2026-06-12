@@ -1,0 +1,7 @@
+$gap: 15px;
+
+.tech-catalogue-section-group {
+	&:not(:last-child) {
+		margin-bottom: $gap;
+	}
+}

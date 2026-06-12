@@ -4,6 +4,8 @@ import { TechCatalogueItemData } from '../TechCatalogue.types';
 import { TechCatalogueHeader } from '../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
+import styles from './TechCatalogueSectionGroup.module.scss';
+
 type TechCatalogueSectionGroupProps = {
 	iconClass: string;
 	itemClassName?: string;
@@ -20,7 +22,7 @@ export const TechCatalogueSectionGroup = ({
 	const [open, setOpen] = useState(true);
 
 	return (
-		<div className="tech-catalogue-section-group">
+		<div className={styles['tech-catalogue-section-group']}>
 			<TechCatalogueHeader
 				label={label}
 				onToggle={() => setOpen(!open)}
