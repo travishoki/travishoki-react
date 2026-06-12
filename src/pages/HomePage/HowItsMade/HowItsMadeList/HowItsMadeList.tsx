@@ -9,10 +9,11 @@ import styles from './HowItsMadeList.module.scss';
 
 export const HowItsMadeList = () => {
 	const isMobile = useIsMobile();
+	const collapsedCount = isMobile ? COLLAPSED_COUNT : ITEMS.length;
 
 	return (
 		<ReadMoreList
-			collapsedCount={isMobile ? COLLAPSED_COUNT : ITEMS.length}
+			collapsedCount={collapsedCount}
 			items={ITEMS}
 			listClassName={styles.howItsMadeList}
 		/>
