@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { TechFilterType } from '~const/Tech.const';
+import { TECH, TechFilterType } from '~const/Tech.const';
 
 import { PROJECTS_DATA } from '../ProjectsPage.data';
 import { createProjectsPageUrl, filterProjects } from '../ProjectsPage.helpers';
@@ -15,12 +15,11 @@ export const useProjectFiltering = () => {
 
 	let initialFilter: TechFilterType = null;
 
-	if (paramFilter) {
-		const noFilter = paramFilter !== 'all' && paramFilter !== 'null';
-
-		if (noFilter) {
-			initialFilter = paramFilter as TechFilterType;
-		}
+	// Only treat the URL param as a filter when it's an actual tech key —
+	// otherwise a stray value (e.g. a search term in the filter slot) would set
+	// filter to something not in TECH and crash CurrentFilter.
+	if (paramFilter && paramFilter in TECH) {
+		initialFilter = paramFilter as TechFilterType;
 	}
 
 	const initialSearch = paramSearch ?? '';

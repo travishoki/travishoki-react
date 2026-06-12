@@ -11,7 +11,11 @@ export const CurrentFilter = ({
 }: CurrentFilterProps) => {
 	if (!filter || filter === 'all' || filter === 'null') return null;
 
-	const { label } = TECH[filter];
+	const tech = TECH[filter];
+
+	if (!tech) return null;
+
+	const { label } = tech;
 
 	return (
 		<div className={styles.currentFilter}>
