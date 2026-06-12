@@ -1,0 +1,17 @@
+.boxed {
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 10px;
+
+	&.boxed-sm {
+		max-width: 300px;
+	}
+
+	&.boxed-md {
+		max-width: 600px;
+	}
+
+	&.boxed-lg {
+		max-width: 900px;
+	}
+}

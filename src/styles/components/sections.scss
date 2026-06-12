@@ -1,0 +1,38 @@
+section {
+	padding: 20px;
+
+	&.white {
+		background: $white;
+		color: $gray-three;
+	}
+
+	&.primary {
+		background: $primary;
+		color: $white;
+	}
+
+	&.blue {
+		background: $blue-two;
+		color: $white;
+	}
+
+	&.gray {
+		background: $gray-three;
+		color: $white;
+	}
+
+	h2,
+	h3 {
+		font-weight: bold;
+		margin: 0 0 20px;
+		text-align: center;
+
+		@include phone-down {
+			font-size: 25px;
+		}
+
+		@include tablet-up {
+			font-size: 30px;
+		}
+	}
+}

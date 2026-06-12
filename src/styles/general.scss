@@ -19,14 +19,6 @@ body {
 	cursor: pointer;
 }
 
-.center {
-	text-align: center;
-}
-
-.indent {
-	text-indent: 2em;
-}
-
 .f-left {
 	float: left;
 }
@@ -37,10 +29,6 @@ body {
 
 .disc {
 	list-style: disc;
-}
-
-.bold {
-	font-weight: bold;
 }
 
 p.indent {
@@ -58,17 +46,6 @@ li {
 	font-size: 16px;
 }
 
-div,
-section {
-	&.center {
-		text-align: center;
-	}
-
-	&.bold {
-		font-weight: bold;
-	}
-}
-
 img {
 	max-width: 100%;
 
@@ -78,62 +55,7 @@ img {
 	}
 }
 
-section {
-	padding: 20px;
-
-	&.white {
-		background: $white;
-		color: $gray-three;
-	}
-
-	&.primary {
-		background: $primary;
-		color: $white;
-	}
-
-	&.blue {
-		background: $blue-two;
-		color: $white;
-	}
-
-	&.gray {
-		background: $gray-three;
-		color: $white;
-	}
-
-	h2,
-	h3 {
-		font-weight: bold;
-		margin: 0 0 20px;
-		text-align: center;
-
-		@include phone-down {
-			font-size: 25px;
-		}
-
-		@include tablet-up {
-			font-size: 30px;
-		}
-	}
-}
-
-.boxed {
-	margin: 0 auto;
-	max-width: 1024px;
-	padding: 0 10px;
-
-	&.boxed-sm {
-		max-width: 300px;
-	}
-
-	&.boxed-md {
-		max-width: 600px;
-	}
-
-	&.boxed-lg {
-		max-width: 900px;
-	}
-}
+/*-- Headings ---*/
 
 h1 {
 	background: $gray-three;
