@@ -14,7 +14,7 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 	const isMobile = useIsMobile();
 
 	return (
-		<section className="primary list-section">
+		<section className="primary">
 			<h2>{title}</h2>
 
 			<div className="boxed boxed-md">
