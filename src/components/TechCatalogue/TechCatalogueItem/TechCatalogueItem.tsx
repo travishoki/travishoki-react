@@ -22,8 +22,8 @@ export const TechCatalogueItem = ({
 	<li className={itemClassName}>
 		<div
 			className={classNames(
-				styles['tech-catalogue-item'],
-				expanded ? styles['tech-catalogue-item-expanded'] : '',
+				styles.techCatalogueItem,
+				expanded ? styles.techCatalogueItemExpanded : '',
 			)}
 			data-tooltip={label}
 		>

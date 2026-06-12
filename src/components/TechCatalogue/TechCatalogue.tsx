@@ -32,25 +32,25 @@ export const TechCatalogue = ({
 	if (items.length === 0) return null;
 
 	const iconClass = classnames(
-		styles['tech-catalogue-icon'],
-		circle ? styles['tech-catalogue-icon-circle'] : '',
+		styles.techCatalogueIcon,
+		circle ? styles.techCatalogueIconCircle : '',
 	);
 
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div className={classnames(styles['tech-catalogue'], 'mb-3')}>
+		<div className={classnames(styles.techCatalogue, 'mb-3')}>
 			<TechCatalogueHeader
 				label={header}
 				onToggle={() => setExpanded(!expanded)}
 				open={expanded}
 			/>
-			<div className={styles['tech-catalogue-content']}>
+			<div className={styles.techCatalogueContent}>
 				<div
 					className={
 						expanded
-							? styles['tech-catalogue-vertical']
-							: styles['tech-catalogue-horizontal']
+							? styles.techCatalogueVertical
+							: styles.techCatalogueHorizontal
 					}
 				>
 					{expanded ? (

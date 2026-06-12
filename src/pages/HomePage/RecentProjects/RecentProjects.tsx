@@ -6,7 +6,7 @@ import { ViewAllButton } from './ViewAllButton';
 import styles from './RecentProjects.module.scss';
 
 export const RecentProjects = () => (
-	<section className={styles['recent-projects']}>
+	<section className={styles.recentProjects}>
 		<h2>Recent Projects</h2>
 
 		<div className="boxed boxed-lg">

@@ -4,7 +4,7 @@ $gap: 15px;
 
 // When an itemClassName grid is passed, defer layout to the Bootstrap row/col
 // classes (overrides the orientation display + gap rules above/below).
-.tech-catalogue {
+.techCatalogue {
 	margin: 0 auto;
 	max-width: 900px;
 
@@ -14,13 +14,13 @@ $gap: 15px;
 	}
 }
 
-.tech-catalogue-content {
+.techCatalogueContent {
 	border: solid 1px $primary;
 	border-top: none;
 	padding: $gap;
 }
 
-.tech-catalogue-horizontal {
+.techCatalogueHorizontal {
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -32,7 +32,7 @@ $gap: 15px;
 	}
 }
 
-.tech-catalogue-vertical {
+.techCatalogueVertical {
 	ul {
 		$iconW: 40px;
 		list-style: none;
@@ -46,7 +46,7 @@ $gap: 15px;
 				margin-bottom: 0;
 			}
 
-			.tech-catalogue-icon {
+			.techCatalogueIcon {
 				margin-right: 10px;
 			}
 
@@ -64,12 +64,12 @@ $gap: 15px;
 	}
 }
 
-.tech-catalogue-icon {
+.techCatalogueIcon {
 	$iconW: 40px;
 	height: $iconW;
 	width: $iconW;
 }
 
-.tech-catalogue-icon-circle {
+.techCatalogueIconCircle {
 	border-radius: 50%;
 }

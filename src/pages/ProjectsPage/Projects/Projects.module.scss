@@ -1,6 +1,6 @@
 @import '../../../styles/responsive.scss';
 
-// .results-* modifiers come from a helper as plain strings, and .grid-item is
+// .results-* modifiers come from a helper as plain strings, and .gridItem is
 // applied/owned by the ProjectItemGrid child, so both stay global.
 .projectsGrid {
 	list-style: none;
@@ -9,37 +9,37 @@
 	padding: 0;
 }
 
-.results-1 {
+.results1 {
 	max-width: 250px;
 
-	.grid-item {
+	.gridItem {
 		width: 100%;
 	}
 }
 
-.results-2 {
+.results2 {
 	max-width: 500px;
 
-	.grid-item {
+	.gridItem {
 		width: 50%;
 	}
 }
 
-.results-3 {
+.results3 {
 	max-width: 750px;
 
-	.grid-item {
+	.gridItem {
 		width: 33.33333333%;
 	}
 }
 
-.results-2,
-.results-3,
-.results-full {
+.results2,
+.results3,
+.resultsFull {
 	@media (max-width: 349px) {
 		max-width: 250px;
 
-		.grid-item {
+		.gridItem {
 			width: 100%;
 		}
 	}
@@ -47,23 +47,23 @@
 	@media (min-width: 350px) and (max-width: 499px) {
 		max-width: 500px;
 
-		.grid-item {
+		.gridItem {
 			width: 50%;
 		}
 	}
 }
 
-.results-full {
+.resultsFull {
 	@media (min-width: 500px) and (max-width: 767px) {
 		max-width: 750px;
 
-		.grid-item {
+		.gridItem {
 			width: 33.33333333%;
 		}
 	}
 
 	@include tablet-up {
-		.grid-item {
+		.gridItem {
 			@include tablet-up {
 				width: 25%;
 			}

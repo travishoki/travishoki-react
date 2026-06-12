@@ -32,7 +32,7 @@ export const ProjectsPage = () => {
 		<div className="projects" id="container">
 			<h1>Projects</h1>
 			<div
-				className={classnames(styles['projects-container'], {
+				className={classnames(styles.projectsContainer, {
 					grid,
 					list: !grid,
 				})}

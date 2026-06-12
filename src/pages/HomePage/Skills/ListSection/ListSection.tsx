@@ -31,7 +31,7 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 
 				{isMobile && (
 					<ReadMoreButton
-						className={styles['list-section-read-more']}
+						className={styles.listSectionReadMore}
 						expanded={expanded}
 						onToggle={() => setExpanded(!expanded)}
 					/>

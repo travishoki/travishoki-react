@@ -12,10 +12,10 @@ export const HowItsMadeList = () => {
 
 	return (
 		<ReadMoreList
-			buttonClassName={styles['how-its-made-read-more']}
+			buttonClassName={styles.howItsMadeReadMore}
 			collapsedCount={isMobile ? COLLAPSED_COUNT : ITEMS.length}
 			items={ITEMS}
-			listClassName={styles['how-its-made-list']}
+			listClassName={styles.howItsMadeList}
 		/>
 	);
 };

@@ -3,7 +3,7 @@
 // The toggle only renders on mobile; blue-one (the default link color) is
 // low-contrast on this blue section, so use white. Passed to ReadMoreButton
 // via its className prop (the base class is now a CSS module).
-.list-section-read-more {
+.listSectionReadMore {
 	color: $white;
 	display: block;
 	margin: 10px auto 0;

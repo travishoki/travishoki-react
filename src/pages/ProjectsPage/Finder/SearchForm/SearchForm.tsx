@@ -11,8 +11,8 @@ export const SearchForm = ({
 }: SearchFormProps) => (
 	<form>
 		<div
-			className={classNames(styles['input-holder'], {
-				[styles['has-search-term']]: searchTerm,
+			className={classNames(styles.inputHolder, {
+				[styles.hasSearchTerm]: searchTerm,
 			})}
 		>
 			<input

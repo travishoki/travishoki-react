@@ -28,7 +28,7 @@ export const ExperienceItem = ({
 		<ImageContainer>
 			<img
 				className={classNames(
-					styles['staggered-item-image'],
+					styles.staggeredItemImage,
 					'round',
 					styles.experienceImage,
 				)}

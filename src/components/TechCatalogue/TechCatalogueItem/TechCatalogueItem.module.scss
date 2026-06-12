@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 
-.tech-catalogue-item {
+.techCatalogueItem {
 	position: relative;
 	width: fit-content;
 
@@ -33,7 +33,7 @@
 	}
 }
 
-.tech-catalogue-item-expanded {
+.techCatalogueItemExpanded {
 	align-items: center;
 	display: flex;
 }

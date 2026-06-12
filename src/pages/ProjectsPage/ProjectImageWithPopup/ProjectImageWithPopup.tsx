@@ -20,7 +20,7 @@ export const ProjectImageWithPopup = ({
 	itemKey,
 	projectLink,
 }: ProjectImageWithPopupProps) => (
-	<div className={styles['project-image-with-popup']}>
+	<div className={styles.projectImageWithPopup}>
 		<ProjectImageOverlay
 			companySlug={companySlug}
 			itemKey={itemKey}

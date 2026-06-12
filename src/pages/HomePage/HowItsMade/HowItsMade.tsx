@@ -7,7 +7,7 @@ import styles from './HowItsMade.module.scss';
 
 export const HowItsMade = () => {
 	return (
-		<section className={styles['how-its-made']}>
+		<section className={styles.howItsMade}>
 			<h2>How This Site Was Made</h2>
 			<HowItsMadeLinks />
 			<HowItsMadeList />

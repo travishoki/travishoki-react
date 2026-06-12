@@ -2,7 +2,7 @@
 @import '../../../styles/responsive.scss';
 @import '../../../styles/variables.scss';
 
-.recent-projects-list {
+.recentProjectsList {
 	// flow-root contains the floated items without clipping the center
 	// podium item's drop shadow (which overflow: hidden would cut off).
 	display: flow-root;
@@ -61,7 +61,7 @@
 	}
 }
 
-.project-header {
+.projectHeader {
 	height: 50px;
 	margin-bottom: 10px;
 	position: relative;
@@ -71,7 +71,7 @@
 	}
 }
 
-.project-header-inner {
+.projectHeaderInner {
 	bottom: 0;
 	position: absolute;
 	width: 100%;

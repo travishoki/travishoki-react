@@ -1,6 +1,6 @@
 @import '../../../../styles/responsive.scss';
 
-.image-container {
+.imageContainer {
 	border: solid 1px red;
 
 	@include phone-down {
@@ -9,7 +9,7 @@
 }
 
 // .aboutItem {
-// 		.image-container {
+// 		.imageContainer {
 // 			@include tablet-up {
 // 				flex: 1 0 250px;
 // 			}
@@ -17,7 +17,7 @@
 // }
 
 // .experienceItem {
-// 		.image-container {
+// 		.imageContainer {
 // 			margin-bottom: 20px;
 
 // 			@include tablet-up {

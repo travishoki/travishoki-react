@@ -22,10 +22,10 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 			<AnswerSection>
 				{isList ? (
 					<ReadMoreList
-						buttonClassName={styles['contributions-read-more']}
+						buttonClassName={styles.contributionsReadMore}
 						initiallyExpanded
 						items={bullets}
-						listClassName={classNames('disc', styles['answer-section-list'])}
+						listClassName={classNames('disc', styles.answerSectionList)}
 					/>
 				) : (
 					<p className="indent">{getFirstParagraph(contributions)}</p>

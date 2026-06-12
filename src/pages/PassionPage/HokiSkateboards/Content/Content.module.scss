@@ -5,12 +5,12 @@
 		text-decoration: none;
 	}
 
-	a:hover p.button-link {
+	a:hover p.buttonLink {
 		color: white;
 	}
 }
 
-p.button-link {
+p.buttonLink {
 	background-color: $blue-three;
 	border-radius: 8px;
 	display: block;
@@ -22,6 +22,6 @@ p.button-link {
 	text-transform: uppercase;
 }
 
-.hoki-skateboards-inner-content-col {
+.hokiSkateboardsInnerContentCol {
 	border-top: solid 3px $gray-five;
 }

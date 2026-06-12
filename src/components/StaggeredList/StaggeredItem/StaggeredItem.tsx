@@ -6,9 +6,7 @@ import styles from './StaggeredItem.module.scss';
 
 export const StaggeredItem = ({ children, className }: StaggeredItemProps) => {
 	return (
-		<li className={classNames(styles['staggered-item'], className)}>
-			{children}
-		</li>
+		<li className={classNames(styles.staggeredItem, className)}>{children}</li>
 	);
 };
 

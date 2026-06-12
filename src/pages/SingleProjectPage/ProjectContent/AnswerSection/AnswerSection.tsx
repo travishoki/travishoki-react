@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import styles from './AnswerSection.module.scss';
 
 export const AnswerSection = ({ children }: AnswerSectionProps) => {
-	return <div className={styles['answer-section']}>{children}</div>;
+	return <div className={styles.answerSection}>{children}</div>;
 };
 
 type AnswerSectionProps = {

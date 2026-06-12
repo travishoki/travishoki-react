@@ -14,7 +14,7 @@ export const TechCatalogueButton = ({
 	onClick,
 }: TechCatalogueButtonProps) => (
 	<button
-		className={classNames('btn btn-primary', styles['tech-catalogue-button'])}
+		className={classNames('btn btn-primary', styles.techCatalogueButton)}
 		onClick={onClick}
 	>
 		<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />

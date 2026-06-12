@@ -21,7 +21,7 @@ export const FilterItem = ({
 			})}
 			onClick={() => onSelectFilter(item)}
 		>
-			<TechIcon className={styles['filter-tech-icon']} name={item} />
+			<TechIcon className={styles.filterTechIcon} name={item} />
 			<p>{label}</p>
 		</li>
 	);

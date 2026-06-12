@@ -1,6 +1,6 @@
 @import '../../../../styles/variables.scss';
 
-.how-its-made-list {
+.howItsMadeList {
 	display: block;
 	list-style: none;
 	margin: 0 auto;
@@ -23,7 +23,7 @@
 
 // Passed to ReadMoreList's buttonClassName prop (ReadMoreButton's base class is
 // now a CSS module).
-.how-its-made-read-more {
+.howItsMadeReadMore {
 	display: block;
 	margin: 10px auto 0;
 }

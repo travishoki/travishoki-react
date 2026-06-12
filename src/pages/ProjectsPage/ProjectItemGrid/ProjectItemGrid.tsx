@@ -10,7 +10,7 @@ export const ProjectItemGrid = ({
 	itemKey,
 	projectLink,
 }: ProjectItemGridProps) => (
-	<div className={styles['grid-item']}>
+	<div className={styles.gridItem}>
 		<ProjectImageWithPopup
 			companySlug={companySlug}
 			itemKey={itemKey}

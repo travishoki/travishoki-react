@@ -9,7 +9,7 @@ export const NotFoundPage = () => (
 	<div className="not-found" id="container">
 		<h1>Page Not Found</h1>
 
-		<div className={classNames('row', styles['link-buckets'])}>
+		<div className={classNames('row', styles.linkBuckets)}>
 			<div className="col-sm-4">
 				<Link to="/projects">
 					<h2>Projects</h2>

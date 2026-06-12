@@ -16,7 +16,7 @@ export const TechCatalogueHeader = ({
 	open,
 }: TechCatalogueHeaderProps) => (
 	<button
-		className={classNames('px-3 py-2', styles['tech-catalogue-header'])}
+		className={classNames('px-3 py-2', styles.techCatalogueHeader)}
 		onClick={onToggle}
 	>
 		{label}

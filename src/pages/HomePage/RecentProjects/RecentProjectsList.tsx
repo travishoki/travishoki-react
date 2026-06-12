@@ -17,12 +17,12 @@ const currentProjects = orderTopThreeInPodium(
 );
 
 export const RecentProjectsList = () => (
-	<ul className={styles['recent-projects-list']}>
+	<ul className={styles.recentProjectsList}>
 		{currentProjects.map((project, index) => (
 			<li key={index}>
 				<Link to={`/project/${project.itemKey}`}>
-					<div className={styles['project-header']}>
-						<div className={styles['project-header-inner']}>
+					<div className={styles.projectHeader}>
+						<div className={styles.projectHeaderInner}>
 							<h3>{project.company}</h3>
 							<h4>{project.subtitle}</h4>
 						</div>

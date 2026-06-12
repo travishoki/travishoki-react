@@ -24,7 +24,7 @@ export const TechCatalogueSectionGroup = ({
 	const [open, setOpen] = useState(true);
 
 	return (
-		<div className={styles['tech-catalogue-section-group']}>
+		<div className={styles.techCatalogueSectionGroup}>
 			<TechCatalogueHeader
 				label={label}
 				onToggle={() => setOpen(!open)}
