@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import styles from './SearchForm.module.scss';
 
 export const SearchForm = ({
@@ -9,8 +11,9 @@ export const SearchForm = ({
 }: SearchFormProps) => (
 	<form>
 		<div
-			className={searchTerm ? styles['has-search-term'] : ''}
-			id="input-holder"
+			className={classNames(styles['input-holder'], {
+				[styles['has-search-term']]: searchTerm,
+			})}
 		>
 			<input
 				className="form-control"

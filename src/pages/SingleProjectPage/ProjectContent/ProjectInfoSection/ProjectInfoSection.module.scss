@@ -1,0 +1,13 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/responsive.scss';
+
+.logo {
+	@include border-radius(50%);
+	height: 80px;
+	margin-bottom: 20px;
+	width: 80px;
+
+	@include phone-down {
+		margin-top: 20px;
+	}
+}

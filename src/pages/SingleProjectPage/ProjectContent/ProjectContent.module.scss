@@ -7,24 +7,9 @@
 	margin: 20px 0;
 	padding: 20px 0;
 
-	// .label, .logo and .btn are applied by child components (ProjectInfoSection
-	// / Contributions) or are global utilities, so they stay global.
 	:global(p.label) {
 		font-weight: bold;
 		margin: 0 0 0 10px;
-	}
-
-	img {
-		&:global(.logo) {
-			@include border-radius(50%);
-			height: 80px;
-			margin-bottom: 20px;
-			width: 80px;
-
-			@include phone-down {
-				margin-top: 20px;
-			}
-		}
 	}
 
 	:global(.btn) {

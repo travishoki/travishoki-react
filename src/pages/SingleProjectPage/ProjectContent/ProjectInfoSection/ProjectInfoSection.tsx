@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { makeArray } from '~helpers/arrays';
@@ -10,10 +12,7 @@ import { AnswerSection } from '../AnswerSection/AnswerSection';
 
 const logos = require.context('../../../../images/clients', true);
 
-type ProjectInfoSectionProps = Pick<
-	ProjectType,
-	'companySlug' | 'contributions' | 'date' | 'description' | 'learned' | 'techs'
->;
+import styles from './ProjectInfoSection.module.scss';
 
 export const ProjectInfoSection = ({
 	companySlug,
@@ -25,7 +24,10 @@ export const ProjectInfoSection = ({
 }: ProjectInfoSectionProps) => {
 	return (
 		<>
-			<img className="logo center" src={logos(`./${companySlug}.jpg`)} />
+			<img
+				className={classNames('center', styles.logo)}
+				src={logos(`./${companySlug}.jpg`)}
+			/>
 
 			{date && (
 				<>
@@ -68,3 +70,8 @@ export const ProjectInfoSection = ({
 		</>
 	);
 };
+
+type ProjectInfoSectionProps = Pick<
+	ProjectType,
+	'companySlug' | 'contributions' | 'date' | 'description' | 'learned' | 'techs'
+>;

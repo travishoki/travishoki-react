@@ -5,33 +5,16 @@
 	margin: 20px auto;
 	max-width: 400px;
 
-	// .filter-item is applied by the Filter child components.
-	:global(.filter-item) {
-		overflow: hidden;
-	}
-
 	input {
 		@include border-radius(0);
 		@include box-shadow(none);
 		border-bottom: solid 1px $gray-four;
 		color: $white;
 	}
+}
 
-	form {
-		:global(#input-holder) {
-			height: 60px;
-			position: relative;
-
-			i {
-				cursor: pointer;
-				font-size: 26px;
-				line-height: 60px;
-				position: absolute;
-				right: 0;
-				top: 0;
-			}
-		}
-	}
+.filter-item {
+	overflow: hidden;
 }
 
 .resultsCount,

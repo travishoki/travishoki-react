@@ -1,3 +1,17 @@
 .has-search-term {
 	padding-right: 30px;
 }
+
+.input-holder {
+	height: 60px;
+	position: relative;
+
+	i {
+		cursor: pointer;
+		font-size: 26px;
+		line-height: 60px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
