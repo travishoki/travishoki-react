@@ -15,7 +15,7 @@ const LARGE_WIDTH = 1200;
 const LARGE_HEIGHT = 800;
 
 export const Uvu = () => (
-	<section className="white center education">
+	<section className="white center">
 		<div className="boxed">
 			<Panels>
 				<Panel>
