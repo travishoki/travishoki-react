@@ -45,6 +45,7 @@ export const ProjectInfoSection = ({
 					<p className="label">Description:</p>
 					<AnswerSection>
 						<TextWithReadMore
+							buttonClassName={styles.readMoreButton}
 							initiallyExpanded
 							paragraphs={makeArray(description)}
 						/>
