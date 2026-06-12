@@ -9,6 +9,7 @@ export const ITEMS: ReadMoreListItem[] = [
 	{ text: 'Build with some assistance from Claude Code' },
 	{
 		link: 'https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US',
+		linkTitle: 'axe DevTools Google Chrome Plugin',
 		text: 'Accessability optimization using axe DevTools',
 	},
 ];

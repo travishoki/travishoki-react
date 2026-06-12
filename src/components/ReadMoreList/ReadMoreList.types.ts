@@ -1,4 +1,9 @@
-export type ReadMoreListItem = {
-	link?: string;
-	text: string;
-};
+export type ReadMoreListItem =
+	| {
+			text: string;
+	  }
+	| {
+			link: string;
+			linkTitle: string;
+			text: string;
+	  };

@@ -32,7 +32,9 @@ export const ReadMoreList = ({
 				{visibleItems.map((item, index) => (
 					<li key={index}>
 						{item.text}
-						{item.link && <ItemLink link={item.link} text={item.text} />}
+						{'link' in item && item.link && (
+							<ItemLink link={item.link} title={item.linkTitle} />
+						)}
 					</li>
 				))}
 			</ul>
