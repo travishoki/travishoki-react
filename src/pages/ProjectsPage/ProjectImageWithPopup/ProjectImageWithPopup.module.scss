@@ -3,6 +3,7 @@
 @import '../../../styles/variables.scss';
 
 .projectImageWithPopup {
+	cursor: pointer;
 	position: relative;
 
 	@include phone-down {
@@ -11,9 +12,5 @@
 
 	@include tablet-up {
 		flex: 0 0 250px;
-	}
-
-	&:hover > .popup {
-		display: block;
 	}
 }
