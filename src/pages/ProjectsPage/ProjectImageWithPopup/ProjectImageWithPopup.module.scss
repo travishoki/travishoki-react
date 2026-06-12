@@ -4,6 +4,14 @@
 .project-image-with-popup {
 	position: relative;
 
+	@include phone-down {
+		flex: 0 0 33%;
+	}
+
+	@include tablet-up {
+		flex: 0 0 250px;
+	}
+
 	&:hover > .popup {
 		display: block;
 	}
