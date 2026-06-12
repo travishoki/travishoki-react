@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { TechFilterType } from '~const/Tech.const';
 
 import styles from './FilterForm.module.scss';
@@ -9,7 +11,7 @@ export const FilterForm = ({
 	onChangeFilter,
 	onClearAndCloseFilter,
 }: FilterFormProps) => (
-	<form className={styles.filterForm}>
+	<form className={classNames('m-0', styles.filterForm)}>
 		<input
 			className="form-control"
 			maxLength={25}

@@ -7,8 +7,6 @@ import { FilterClean } from './FilterClean/FilterClean';
 import { FilterForm } from './FilterForm/FilterForm';
 import { FilterItems } from './FilterItems/FilterItems';
 
-import styles from './Filter.module.scss';
-
 export const Filter = ({
 	filter,
 	filterList,
@@ -19,7 +17,7 @@ export const Filter = ({
 	onSelectFilter,
 	toggleOpenFilter,
 }: FilterProps) => (
-	<div className={styles.filterSection}>
+	<div>
 		<CurrentFilter
 			filter={filter}
 			onClearAndCloseFilter={onClearAndCloseFilter}
