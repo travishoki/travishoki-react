@@ -22,7 +22,7 @@ export const ProjectImageOverlay = ({
 	<div className={styles.popup}>
 		<Link to={`${projectLink}/${itemKey}`}>
 			<div className={styles.popupInner}>
-				<div className={styles.popupCont}>
+				<div className={styles.popupContent}>
 					<img src={logos(`./${companySlug}.jpg`)} />
 					<ProjectLink />
 				</div>

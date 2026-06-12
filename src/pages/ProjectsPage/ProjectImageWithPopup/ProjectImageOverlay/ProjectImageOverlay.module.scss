@@ -9,47 +9,47 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+}
 
-	.popupInner {
-		height: 100%;
-		position: relative;
-		width: 100%;
+.popupInner {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
 
-		.popupCont {
-			align-items: center;
-			bottom: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-			z-index: 1;
+.popupContent {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
 
-			img {
-				@include border-radius(50%);
-				display: block;
-				height: 80px;
-				margin: 0 auto;
-				width: 80px;
-			}
-
-			a {
-				display: block;
-				margin: 10px auto 0;
-				width: 60px;
-			}
-		}
-
-		.popupOverlay {
-			@include opacity(0.8);
-			background: $gray-four;
-			bottom: 0;
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
+	img {
+		@include border-radius(50%);
+		display: block;
+		height: 80px;
+		margin: 0 auto;
+		width: 80px;
 	}
+
+	a {
+		display: block;
+		margin: 10px auto 0;
+		width: 60px;
+	}
+}
+
+.popupOverlay {
+	@include opacity(0.8);
+	background: $gray-four;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
