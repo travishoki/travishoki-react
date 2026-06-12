@@ -8,6 +8,7 @@ type CloseButtonProps = {
 
 export const CloseButton = ({ onClick }: CloseButtonProps) => (
 	<button
+		aria-label="Close Button"
 		className={styles.closeIcon}
 		onClick={(event) => {
 			event.stopPropagation();
