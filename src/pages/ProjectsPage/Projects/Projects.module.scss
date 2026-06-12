@@ -1,7 +1,5 @@
 @import '../../../styles/responsive.scss';
 
-// .results-* modifiers come from a helper as plain strings, and .gridItem is
-// applied/owned by the ProjectItemGrid child, so both stay global.
 .projectsGrid {
 	list-style: none;
 	margin: 0 auto 60px;
