@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export const CareerOverview = () => {
 	return (
-		<Fragment>
+		<>
 			<h2>Career Overview</h2>
 			<p className="indent">
 				Highly accomplished Senior Frontend Engineer with over 14 years of
@@ -12,6 +12,6 @@ export const CareerOverview = () => {
 				cleanliness, and leading high-leverage framework migrations while
 				establishing standards and mentoring technical teams.
 			</p>
-		</Fragment>
+		</>
 	);
 };
