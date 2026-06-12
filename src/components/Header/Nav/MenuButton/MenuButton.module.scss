@@ -6,7 +6,9 @@
 	}
 }
 
-.mobileMenuIcon {
+// Element-qualified (i.mobileMenuIcon) so it outranks Font Awesome's single
+// `.fa` class, which otherwise wins the font-size on source order alone.
+i.mobileMenuIcon {
 	cursor: pointer;
 	font-size: 30px;
 	line-height: 60px;
