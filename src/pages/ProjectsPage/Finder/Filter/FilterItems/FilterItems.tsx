@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TechFilterType, TechKey } from '~const/Tech.const';
 
-import { FilterItem } from './FilterItem';
+import { FilterItem } from './FilterItem/FilterItem';
 
 import styles from './FilterItems.module.scss';
 
