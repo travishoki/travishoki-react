@@ -27,6 +27,7 @@ export const ProjectImageCarousel = ({
 	const currentSrc = websiteGalleryImageSrc(gallery[page].filename);
 
 	const alt = subtitle ? `${company} ${subtitle}` : company;
+	const { caption } = gallery[page];
 
 	return (
 		<div className={styles.projectImageCarousel}>
@@ -58,9 +59,7 @@ export const ProjectImageCarousel = ({
 				/>
 			</div>
 
-			{gallery[page].caption && (
-				<p className={styles.projectImageCaption}>{gallery[page].caption}</p>
-			)}
+			{caption && <p className={styles.projectImageCaption}>{caption}</p>}
 
 			<CarouselDots
 				activeIndex={page}
