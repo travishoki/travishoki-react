@@ -10,9 +10,11 @@ import { AboutImage } from './AboutImage/AboutImage';
 import { AboutVideo } from './AboutVideo/AboutVideo';
 import { Signature } from './Signature/Signature';
 
+import styles from './AboutItem.module.scss';
+
 export const AboutItem = (item: AboutType) => (
 	<StaggeredItem>
-		<ImageContainer>
+		<ImageContainer className={styles.imageContainer}>
 			{item.video ? <AboutVideo item={item} /> : <AboutImage item={item} />}
 		</ImageContainer>
 		<InfoBox>

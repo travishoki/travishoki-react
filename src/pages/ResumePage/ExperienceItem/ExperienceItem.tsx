@@ -25,7 +25,7 @@ export const ExperienceItem = ({
 	title,
 }: ExperienceItemPropTypes) => (
 	<StaggeredItem className={styles.experienceItem}>
-		<ImageContainer>
+		<ImageContainer className={styles.imageContainer}>
 			<img
 				className={classNames(
 					styles.staggeredItemImage,

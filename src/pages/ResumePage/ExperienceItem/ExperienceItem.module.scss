@@ -19,3 +19,11 @@
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+.imageContainer {
+	margin-bottom: 20px;
+
+	@include tablet-up {
+		flex: 1 0 200px;
+	}
+}
