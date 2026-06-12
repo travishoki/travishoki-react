@@ -10,7 +10,11 @@ export const ContactPage = () => (
 			<div className="pt-4">
 				<div className="row">
 					<div className="col-sm-6">
-						<img className="pb-3" src={ImgProfilePic} />
+						<img
+							alt="Travis Hoki Profile Picture"
+							className="pb-3"
+							src={ImgProfilePic}
+						/>
 					</div>
 
 					<div className="col-sm-6">

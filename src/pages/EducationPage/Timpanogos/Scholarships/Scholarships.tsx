@@ -6,7 +6,7 @@ import styles from './Scholarships.module.scss';
 
 export const Scholarships = () => (
 	<div className={`${styles.scholarships} mb-2`}>
-		<img src={imgGearUp} />{' '}
+		<img alt="Gear Up Logo" src={imgGearUp} />{' '}
 		<p className={styles.scholarshipDescription}>
 			Recipient of the{' '}
 			<a

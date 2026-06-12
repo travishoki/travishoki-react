@@ -12,7 +12,12 @@ export const LinkedInLink = () => (
 		target="_blank"
 		title="Travis's Linked In"
 	>
-		<img height="50" src={ImgProfilePic} width="50" />
+		<img
+			alt="LinkedIn Profile Picture"
+			height="50"
+			src={ImgProfilePic}
+			width="50"
+		/>
 		<p>Connect with me on</p>
 		<i className="fa fa-linkedin" />
 	</a>
