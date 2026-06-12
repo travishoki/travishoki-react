@@ -15,21 +15,25 @@ export const ProjectImageWithPopup = ({
 	itemKey,
 	projectLink,
 	subtitle,
-}: ProjectImageWithPopupProps) => (
-	<div className={styles.projectImageWithPopup}>
-		<ProjectImageOverlay
-			company={company}
-			companySlug={companySlug}
-			itemKey={itemKey}
-			projectLink={projectLink}
-		/>
-		<img
-			alt={`${company} ${subtitle}`}
-			onError={handleWebsiteImageError('thumbnail')}
-			src={websiteImageSrc(itemKey, 'thumbnail')}
-		/>
-	</div>
-);
+}: ProjectImageWithPopupProps) => {
+	const imageAlt = subtitle ? `${company} ${subtitle}` : company;
+
+	return (
+		<div className={styles.projectImageWithPopup}>
+			<ProjectImageOverlay
+				company={company}
+				companySlug={companySlug}
+				itemKey={itemKey}
+				projectLink={projectLink}
+			/>
+			<img
+				alt={imageAlt}
+				onError={handleWebsiteImageError('thumbnail')}
+				src={websiteImageSrc(itemKey, 'thumbnail')}
+			/>
+		</div>
+	);
+};
 
 type ProjectImageWithPopupProps = {
 	company: string;
