@@ -15,11 +15,5 @@
 		&::-webkit-scrollbar {
 			display: none;
 		}
-
-		// .interest-item is applied by the InterestItem child component.
-		:global(.interest-item) {
-			flex: 0 0 100%;
-			scroll-snap-align: center;
-		}
 	}
 }

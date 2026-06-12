@@ -27,7 +27,7 @@ export const Projects = ({
 	}
 
 	return (
-		<ul className={styles.projectsLines}>
+		<ul className={styles.projectsList}>
 			{projects.map((project, index) => (
 				<li key={index}>
 					<ProjectItemLine projectLink={projectLink} {...project} />

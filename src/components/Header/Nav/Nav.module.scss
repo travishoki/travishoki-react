@@ -6,15 +6,15 @@
 	@include tablet-up {
 		display: none;
 	}
+}
 
-	.mobileMenuIcon {
-		cursor: pointer;
-		font-size: 30px;
-		line-height: 60px;
-		position: absolute;
-		right: 20px;
-		top: 0;
-	}
+.mobileMenuIcon {
+	cursor: pointer;
+	font-size: 30px;
+	line-height: 60px;
+	position: absolute;
+	right: 20px;
+	top: 0;
 }
 
 .navigation {
@@ -66,10 +66,16 @@
 		// `active` is added globally by react-router's NavLink, so it must not be
 		// hashed.
 		&:focus,
-		&:hover,
-		&:global(.active) {
+		&:hover {
 			background: $primary;
 			color: white;
 		}
+	}
+}
+
+a {
+	&.active {
+		background: $primary;
+		color: white;
 	}
 }

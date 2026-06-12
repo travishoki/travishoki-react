@@ -1,24 +1,6 @@
 @import '../../../../styles/variables.scss';
 
-// .button-link, .project-image and .hoki-skateboards-inner-content-col are
-// applied by the child column components, so they stay global via :global().
 .hokiSkateboardsInnerContent {
-	:global(p.button-link) {
-		background-color: $blue-three;
-		border-radius: 8px;
-		display: block;
-		font-weight: bold;
-		margin: 0 auto 20px;
-		max-width: 200px;
-		padding: 5px;
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	:global(.hoki-skateboards-inner-content-col) {
-		border-top: solid 3px $gray-five;
-	}
-
 	a {
 		text-decoration: none;
 	}
@@ -33,4 +15,20 @@
 		max-width: 300px;
 		width: 100%;
 	}
+}
+
+p.button-link {
+	background-color: $blue-three;
+	border-radius: 8px;
+	display: block;
+	font-weight: bold;
+	margin: 0 auto 20px;
+	max-width: 200px;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hoki-skateboards-inner-content-col {
+	border-top: solid 3px $gray-five;
 }

@@ -1,28 +1,11 @@
 import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import {
-	CSS,
-	HTML,
-	JAVASCRIPT,
-	PHP,
-	REACT_JS,
-	TechKey,
-	WORDPRESS,
-} from '~const/Tech.const';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
 
+import { websiteTechList } from './RetailWebsiteColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
-
-const websiteTechList: TechKey[] = [
-	CSS,
-	HTML,
-	JAVASCRIPT,
-	PHP,
-	REACT_JS,
-	WORDPRESS,
-];
 
 export const RetailWebsiteColumn = () => (
 	<div className="hoki-skateboards-inner-content-col col-sm-6 pt-3">

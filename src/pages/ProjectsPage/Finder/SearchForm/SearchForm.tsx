@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classnames from 'classnames';
+import styles from './SearchForm.module.scss';
 
 export const SearchForm = ({
 	onChangeSearch,
@@ -9,9 +9,7 @@ export const SearchForm = ({
 }: SearchFormProps) => (
 	<form>
 		<div
-			className={classnames({
-				'has-search-term': searchTerm,
-			})}
+			className={searchTerm ? styles['has-search-term'] : ''}
 			id="input-holder"
 		>
 			<input

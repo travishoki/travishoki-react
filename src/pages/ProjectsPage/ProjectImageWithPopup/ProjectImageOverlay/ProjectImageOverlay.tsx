@@ -19,7 +19,7 @@ export const ProjectImageOverlay = ({
 	itemKey,
 	projectLink,
 }: ProjectImageOverlayProps) => (
-	<div className="popup">
+	<div className={styles.popup}>
 		<Link to={`${projectLink}/${itemKey}`}>
 			<div className={styles.popupInner}>
 				<div className={styles.popupCont}>

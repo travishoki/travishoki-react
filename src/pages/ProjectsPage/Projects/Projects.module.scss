@@ -7,71 +7,71 @@
 	margin: 0 auto 60px;
 	overflow: hidden;
 	padding: 0;
+}
 
-	&:global(.results-1) {
+.results-1 {
+	max-width: 250px;
+
+	.grid-item {
+		width: 100%;
+	}
+}
+
+.results-2 {
+	max-width: 500px;
+
+	.grid-item {
+		width: 50%;
+	}
+}
+
+.results-3 {
+	max-width: 750px;
+
+	.grid-item {
+		width: 33.33333333%;
+	}
+}
+
+.results-2,
+.results-3,
+.results-full {
+	@media (max-width: 349px) {
 		max-width: 250px;
 
-		:global(.grid-item) {
+		.grid-item {
 			width: 100%;
 		}
 	}
 
-	&:global(.results-2) {
+	@media (min-width: 350px) and (max-width: 499px) {
 		max-width: 500px;
 
-		:global(.grid-item) {
+		.grid-item {
 			width: 50%;
 		}
 	}
+}
 
-	&:global(.results-3) {
+.results-full {
+	@media (min-width: 500px) and (max-width: 767px) {
 		max-width: 750px;
 
-		:global(.grid-item) {
+		.grid-item {
 			width: 33.33333333%;
 		}
 	}
 
-	&:global(.results-2),
-	&:global(.results-3),
-	&:global(.results-full) {
-		@media (max-width: 349px) {
-			max-width: 250px;
-
-			:global(.grid-item) {
-				width: 100%;
-			}
-		}
-
-		@media (min-width: 350px) and (max-width: 499px) {
-			max-width: 500px;
-
-			:global(.grid-item) {
-				width: 50%;
-			}
-		}
-	}
-
-	&:global(.results-full) {
-		@media (min-width: 500px) and (max-width: 767px) {
-			max-width: 750px;
-
-			:global(.grid-item) {
-				width: 33.33333333%;
-			}
-		}
-
-		@include tablet-up {
-			:global(.grid-item) {
-				@include tablet-up {
-					width: 25%;
-				}
+	@include tablet-up {
+		.grid-item {
+			@include tablet-up {
+				width: 25%;
 			}
 		}
 	}
 }
 
-.projectsLines {
+.projectsList {
 	list-style: none;
 	margin: 0 auto 60px;
 	overflow: hidden;

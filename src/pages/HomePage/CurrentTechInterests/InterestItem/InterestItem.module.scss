@@ -1,0 +1,17 @@
+@import '../../../../styles/variables.scss';
+
+.current-tech-interests-read-more {
+	color: $white;
+}
+
+.interest-image {
+	border-radius: 8px;
+	max-width: 350px;
+	width: 100%;
+}
+
+.interest-item {
+	flex: 0 0 100%;
+	scroll-snap-align: center;
+	text-align: left;
+}

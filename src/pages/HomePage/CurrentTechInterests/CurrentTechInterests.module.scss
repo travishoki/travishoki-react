@@ -1,17 +1,6 @@
 @import '../../../styles/variables.scss';
 
 .currentTechInterestsComponent {
-	// .interest-image and .interest-item are applied by the InterestItem child.
-	:global(.interest-image) {
-		border-radius: 8px;
-		max-width: 350px;
-		width: 100%;
-	}
-
-	:global(.interest-item) {
-		text-align: left;
-	}
-
 	h3 {
 		font-size: 22px;
 		margin: 0 0 16px;
@@ -27,11 +16,4 @@
 			margin-bottom: 0;
 		}
 	}
-}
-
-// blue-one (the default link color) is invisible on this blue section. Passed
-// to ReadMoreButton via TextWithReadMore's buttonClassName prop (a plain
-// string), so it stays global.
-:global(.current-tech-interests-read-more) {
-	color: $white;
 }

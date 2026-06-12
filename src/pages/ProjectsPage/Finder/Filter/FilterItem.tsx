@@ -5,6 +5,8 @@ import classnames from 'classnames';
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechKey, TechFilterType } from '~const/Tech.const';
 
+import styles from './FilterItem.module.scss';
+
 export const FilterItem = ({
 	filter,
 	item,
@@ -19,7 +21,7 @@ export const FilterItem = ({
 			})}
 			onClick={() => onSelectFilter(item)}
 		>
-			<TechIcon className="filter-tech-icon" name={item} />
+			<TechIcon className={styles['filter-tech-icon']} name={item} />
 			<p>{label}</p>
 		</li>
 	);
