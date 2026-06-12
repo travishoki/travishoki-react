@@ -17,12 +17,6 @@
 		max-width: 600px;
 	}
 
-	.image {
-		display: block;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-
 	.image-container {
 		@include phone-down {
 			margin-bottom: 20px;

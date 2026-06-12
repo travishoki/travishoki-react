@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { BulletedList } from '~components/BulletedList/BulletedList';
 import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';
 import { StaggeredItem } from '~components/StaggeredList/StaggeredItem/StaggeredItem';
@@ -23,7 +25,14 @@ export const ExperienceItem = ({
 }: ExperienceItemPropTypes) => (
 	<StaggeredItem className={styles.experienceItem}>
 		<div className="image-container">
-			<img className={`image round ${styles.experienceImage}`} src={img} />
+			<img
+				className={classNames(
+					styles['staggered-item-image'],
+					'round',
+					styles.experienceImage,
+				)}
+				src={img}
+			/>
 		</div>
 
 		<InfoBox>
