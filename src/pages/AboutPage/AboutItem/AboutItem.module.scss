@@ -1,7 +1,12 @@
+@import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
 
 .imageContainer {
 	@include tablet-up {
 		flex: 1 0 250px;
 	}
+}
+
+.readMoreButton {
+	color: $blue-zero;
 }

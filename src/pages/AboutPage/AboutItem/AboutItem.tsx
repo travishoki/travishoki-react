@@ -20,7 +20,10 @@ export const AboutItem = (item: AboutType) => (
 		<InfoBox>
 			<h2>{item.title}</h2>
 
-			<TextWithReadMore paragraphs={item.desc} />
+			<TextWithReadMore
+				buttonClassName={styles.readMoreButton}
+				paragraphs={item.desc}
+			/>
 
 			{item.hasSignature && <Signature />}
 		</InfoBox>
