@@ -21,6 +21,12 @@
 		font-size: 30px;
 	}
 
+	&:hover {
+		i {
+			color: $gray-one;
+		}
+	}
+
 	&.prev {
 		left: 20px;
 	}
