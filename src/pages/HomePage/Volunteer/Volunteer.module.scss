@@ -24,10 +24,10 @@
 
 .leaderPositions {
 	justify-content: center;
+}
 
-	.leaderPosition {
-		@include phone-down {
-			margin-bottom: 15px;
-		}
+.leaderPosition {
+	@include phone-down {
+		margin-bottom: 15px;
 	}
 }
