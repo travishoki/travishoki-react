@@ -1,40 +1,33 @@
 form {
 	margin-top: 20px;
 
-	textarea {
-		min-height: 150px;
-	}
-
 	label {
 		font-weight: bold;
 	}
 
-	input,
-	textarea {
-		&.form-control {
-			background: $gray-three;
-			border: none;
-			color: $gray-one;
-			font-size: 16px;
-			height: 60px;
-			padding: 10px 20px;
-
-			&::placeholder {
-				color: $black;
-			}
-
-			&:focus {
-				background: $gray-three;
-			}
-		}
-	}
-
 	.alert {
 		border: none;
+	}
 
-		&.alert-danger {
-			background: $red-two;
-			color: $red-one;
+	.alert-danger {
+		background: $red-two;
+		color: $red-one;
+	}
+
+	.form-control {
+		background: $gray-three;
+		border: none;
+		color: $gray-one;
+		font-size: 16px;
+		height: 60px;
+		padding: 10px 20px;
+
+		&::placeholder {
+			color: $black;
+		}
+
+		&:focus {
+			background: $gray-three;
 		}
 	}
 }
