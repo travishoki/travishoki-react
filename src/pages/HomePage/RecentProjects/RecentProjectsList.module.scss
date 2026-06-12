@@ -1,5 +1,65 @@
-@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
 @import '../../../styles/responsive.scss';
+@import '../../../styles/variables.scss';
+
+.recent-projects-list {
+	// flow-root contains the floated items without clipping the center
+	// podium item's drop shadow (which overflow: hidden would cut off).
+	display: flow-root;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	@include phone-down {
+		margin: 0 auto;
+		max-width: 300px;
+		padding-bottom: 20px;
+	}
+
+	li {
+		@include phone-down {
+			// Disable navigation on mobile.
+			a {
+				cursor: default;
+				pointer-events: none;
+			}
+
+			&:first-child {
+				float: left;
+			}
+
+			&:nth-child(2) {
+				@include box-shadow(0 0 20px 0 #000000);
+				left: 50%;
+				margin-left: -75px;
+				position: absolute;
+				top: 0;
+				width: 150px;
+			}
+
+			&:last-child {
+				float: right;
+			}
+
+			&:first-child,
+			&:last-child {
+				margin: 20px 0;
+				width: 100px;
+			}
+		}
+
+		@include tablet-up {
+			float: left;
+			width: 33.33333333%;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
 
 .project-header {
 	height: 50px;
