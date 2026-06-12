@@ -1,0 +1,22 @@
+@import '../../../../../styles/variables.scss';
+
+.filterList {
+	background: $gray-two;
+	margin: 0;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 0;
+
+	li {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		margin: 0;
+		padding: 10px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
