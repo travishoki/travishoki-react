@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './CurrentTechInterestsHeader.module.scss';
 
 export const CurrentTechInterestsHeader = () => (
-	<div className={`${styles.currentTechInterestsComponentHeader} mb-3`}>
+	<div className={`${styles.currentTechInterestsHeader} mb-3`}>
 		<h2>Current Tech Interests</h2>
 		<p>
 			I&apos;m highly motivated to deepen my knowledge and refine my skills in
