@@ -22,7 +22,7 @@ export const FilterItem = ({
 			onClick={() => onSelectFilter(item)}
 		>
 			<TechIcon className={styles.filterTechIcon} name={item} />
-			<p>{label}</p>
+			<p className="m-0">{label}</p>
 		</li>
 	);
 };

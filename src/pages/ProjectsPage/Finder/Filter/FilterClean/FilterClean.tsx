@@ -3,11 +3,8 @@ import React from 'react';
 import styles from './FilterClean.module.scss';
 
 export const FilterClean = ({ toggleOpenFilter }: FilterCleanProps) => (
-	<div
-		className={`${styles.filterClean} filterItem pointer`}
-		onClick={toggleOpenFilter}
-	>
-		<p>Filter by Tech</p>
+	<div className={`${styles.filterClean} pointer`} onClick={toggleOpenFilter}>
+		<p className="m-0">Filter by Tech</p>
 		<i className="fa fa-chevron-down" />
 	</div>
 );

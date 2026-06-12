@@ -28,7 +28,7 @@ export const FilterList = ({
 		<ul className={styles.filterList}>
 			{!filterTerm && (
 				<li className="filterItem" onClick={onClearAndCloseFilter}>
-					<p>All</p>
+					<p className="m-0">All</p>
 				</li>
 			)}
 
