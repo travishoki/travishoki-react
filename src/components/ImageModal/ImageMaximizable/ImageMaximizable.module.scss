@@ -3,33 +3,7 @@
 	margin: 0;
 	position: relative;
 
-	.zoomOverlay {
-		display: none;
-	}
-
-	&:hover {
-		.zoomOverlay {
-			display: flex;
-		}
-	}
-
 	img {
 		height: auto;
-	}
-}
-
-.zoomOverlay {
-	align-items: center;
-	background: rgba(0, 0, 0, 0.75);
-	cursor: pointer;
-	height: 100%;
-	justify-content: center;
-	position: absolute;
-	width: 100%;
-	z-index: 1;
-
-	i {
-		color: white;
-		font-size: 40px;
 	}
 }
