@@ -4,7 +4,7 @@ import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 type ReadMoreListProps = {
 	buttonClassName?: string;
-	collapsedCount?: number;
+	collapsedCount: number;
 	initiallyExpanded?: boolean;
 	items: string[];
 	listClassName?: string;
@@ -12,7 +12,7 @@ type ReadMoreListProps = {
 
 export const ReadMoreList = ({
 	buttonClassName,
-	collapsedCount = 3,
+	collapsedCount,
 	initiallyExpanded = false,
 	items,
 	listClassName,

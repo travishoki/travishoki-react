@@ -10,6 +10,8 @@ import { AnswerSection } from '../../AnswerSection/AnswerSection';
 
 import styles from './Contributions.module.scss';
 
+const COLLAPSE_COUNT = 2;
+
 export const Contributions = ({ contributions }: ContributionsProps) => {
 	if (!contributions || contributions.length === 0) return null;
 
@@ -23,6 +25,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 				{isList ? (
 					<ReadMoreList
 						buttonClassName={styles.contributionsReadMore}
+						collapsedCount={COLLAPSE_COUNT}
 						initiallyExpanded
 						items={bullets}
 						listClassName={classNames('disc', styles.answerSectionList)}
