@@ -2,10 +2,10 @@ import React from 'react';
 
 import { TechFilterType, TechKey } from '~const/Tech.const';
 
-import { CurrentFilter } from './CurrentFilter';
-import { FilterClean } from './FilterClean';
-import { FilterForm } from './FilterForm';
-import { FilterItems } from './FilterItems';
+import { CurrentFilter } from './CurrentFilter/CurrentFilter';
+import { FilterClean } from './FilterClean/FilterClean';
+import { FilterForm } from './FilterForm/FilterForm';
+import { FilterItems } from './FilterItems/FilterItems';
 
 import styles from './Filter.module.scss';
 
