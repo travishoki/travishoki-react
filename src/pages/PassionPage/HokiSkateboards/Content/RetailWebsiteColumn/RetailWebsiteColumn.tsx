@@ -8,6 +8,7 @@ import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.
 import { websiteTechList } from './RetailWebsiteColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 export const RetailWebsiteColumn = ({
@@ -22,7 +23,7 @@ export const RetailWebsiteColumn = ({
 		>
 			<Title title="Retail Website" />
 			<ProjectImage alt="Hoki Skateboards" src={ImgHokiSkateboardsWebsite} />
-			<p className="button-link">Go to Site</p>
+			<ButtonLink text="Go to Site" />
 		</a>
 
 		<PassionLabel>Description:</PassionLabel>

@@ -8,6 +8,7 @@ import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skat
 import { appSoftwareList } from './ChildrensBookColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 export const ChildrensBookColumn = ({
@@ -25,7 +26,7 @@ export const ChildrensBookColumn = ({
 				alt="You Should Always Skateboard"
 				src={ImgYouShouldAlwaysSkateboard}
 			/>
-			<p className="button-link">View on Amazon</p>
+			<ButtonLink text="View on Amazon" />
 		</a>
 
 		<PassionLabel>Description:</PassionLabel>
