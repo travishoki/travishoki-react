@@ -28,6 +28,7 @@ export const RecentProjectsList = () => (
 						</div>
 					</div>
 					<img
+						alt={`${project.company} ${project.subtitle}`}
 						onError={handleWebsiteImageError('thumbnail')}
 						src={websiteImageSrc(project.itemKey, 'thumbnail')}
 					/>

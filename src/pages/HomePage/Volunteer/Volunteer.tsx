@@ -12,6 +12,7 @@ export const Volunteer = () => (
 		</p>
 
 		<img
+			alt="Scouting America Logo"
 			className="center mb-2"
 			height="200"
 			src={imgScoutingAmerica}

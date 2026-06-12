@@ -10,7 +10,11 @@ import styles from './Banner.module.scss';
 
 export const Banner = () => (
 	<div className={`boxed ${styles.homeBanner}`}>
-		<img className={styles.bannerPic} src={ImgProfilePic} />
+		<img
+			alt="Travis Hoki Profile Picture"
+			className={styles.bannerPic}
+			src={ImgProfilePic}
+		/>
 		<div>
 			<h1>Travis Hoki</h1>
 			<p className={styles.jobTitle}>Web Developer</p>

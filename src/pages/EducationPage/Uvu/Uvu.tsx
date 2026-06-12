@@ -23,7 +23,11 @@ export const Uvu = () => (
 				<Panel>
 					<div className={styles.uvu}>
 						<h2>Utah Valley University</h2>
-						<img className="center" src={imgUvu} />
+						<img
+							alt="Utah Valley University Logo"
+							className="center"
+							src={imgUvu}
+						/>
 						<div className="mb-3">
 							<p>Digital Media Major</p>
 							<p className="bold">Bachelor of Science</p>

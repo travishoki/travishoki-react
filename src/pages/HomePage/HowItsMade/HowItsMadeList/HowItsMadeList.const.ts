@@ -1,9 +1,10 @@
 export const ITEMS = [
+	'Typed with Typescript',
+	'Unit testing with Jest',
 	'Eslint for consistent coding style',
-	'Unit tests with Jest',
-	'Typescript',
 	'Storybook for component management',
-	'Husky automatically runs scripts, tests, or linters during Git events',
+	'Husky automatically runs scripts',
+	'Build with some assistance from Claude Code',
 ];
 
 export const COLLAPSED_COUNT = 3;
