@@ -12,7 +12,6 @@ export const HowItsMadeList = () => {
 
 	return (
 		<ReadMoreList
-			buttonClassName={styles.howItsMadeReadMore}
 			collapsedCount={isMobile ? COLLAPSED_COUNT : ITEMS.length}
 			items={ITEMS}
 			listClassName={styles.howItsMadeList}
