@@ -1,33 +1,33 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
 
-section.volunteerComponent {
+.volunteerComponent {
 	h3 {
 		color: $blue-one;
 		font-size: 24px;
 	}
 
-	.volunteerComponentSubtitle {
-		font-size: 20px;
-	}
-
-	.volunteerIcon {
-		color: $primary;
-		font-size: 36px;
-	}
-
-	.leaderPositions {
-		justify-content: center;
-
-		.leaderPosition {
-			@include phone-down {
-				margin-bottom: 15px;
-			}
-		}
-	}
-
 	p {
 		font-size: 16px;
 		margin: 0;
+	}
+}
+
+.volunteerComponentSubtitle {
+	font-size: 20px;
+}
+
+.volunteerIcon {
+	color: $primary;
+	font-size: 36px;
+}
+
+.leaderPositions {
+	justify-content: center;
+
+	.leaderPosition {
+		@include phone-down {
+			margin-bottom: 15px;
+		}
 	}
 }

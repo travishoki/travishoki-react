@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 
-section.currentTechInterestsComponent {
+.currentTechInterestsComponent {
 	// .interest-image and .interest-item are applied by the InterestItem child.
 	:global(.interest-image) {
 		border-radius: 8px;
