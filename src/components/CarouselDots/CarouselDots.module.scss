@@ -18,6 +18,10 @@
 	padding: 0;
 	width: 20px;
 
+	&:hover {
+		background: rgba($white, 0.3);
+	}
+
 	&.active {
 		background: $white;
 	}
