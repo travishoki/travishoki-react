@@ -34,7 +34,11 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 			<div className="row">
 				<div className="col-sm-5">
 					{gallery && gallery.length > 1 ? (
-						<ProjectImageCarousel gallery={gallery} />
+						<ProjectImageCarousel
+							company={company}
+							gallery={gallery}
+							subtitle={subtitle}
+						/>
 					) : (
 						<ProjectImage alt={alt} itemKey={itemKey} />
 					)}

@@ -20,10 +20,13 @@ export const MobileAppImageGallery = () => {
 
 	const currentSrc = imageSrc(APP_GALLERY_IMAGES[page]);
 
+	const alt = `Hoki Skateboards app screen ${page + 1}`;
+
 	return (
 		<div className={styles.mobileAppImageGallery}>
 			{modalOpen && (
 				<ImageModal
+					alt={alt}
 					dimensions={dimensions}
 					onClose={() => setModalOpen(false)}
 					onNext={() => goToPage(page + 1)}
@@ -33,7 +36,7 @@ export const MobileAppImageGallery = () => {
 			)}
 
 			<img
-				alt={`Hoki Skateboards app screen ${page + 1}`}
+				alt={alt}
 				className={styles.mobileAppImageGalleryImage}
 				onClick={() => setModalOpen(true)}
 				onLoad={(event) =>

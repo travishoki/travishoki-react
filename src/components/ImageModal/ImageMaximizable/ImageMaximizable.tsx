@@ -27,6 +27,7 @@ export const ImageMaximizable = ({
 		<div className={classNames(styles.imageMaximizable, className)}>
 			{selectedImg && (
 				<ImageModal
+					alt={alt}
 					dimensions={srcLargeDimensions ?? dimensions}
 					onClose={onCloseImage}
 					src={srcLarge ?? selectedImg}

@@ -13,7 +13,9 @@ import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 import styles from './ProjectImageCarousel.module.scss';
 
 export const ProjectImageCarousel = ({
+	company,
 	gallery,
+	subtitle,
 }: ProjectImageCarouselProps) => {
 	const [page, setPage] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
@@ -24,10 +26,13 @@ export const ProjectImageCarousel = ({
 
 	const currentSrc = websiteGalleryImageSrc(gallery[page].filename);
 
+	const alt = subtitle ? `${company} ${subtitle}` : company;
+
 	return (
 		<div className={styles.projectImageCarousel}>
 			{modalOpen && (
 				<ImageModal
+					alt={alt}
 					dimensions={dimensions}
 					onClose={() => setModalOpen(false)}
 					onNext={() => goToPage(page + 1)}
@@ -40,7 +45,7 @@ export const ProjectImageCarousel = ({
 				<ZoomOverlay onClick={() => setModalOpen(true)} />
 
 				<img
-					alt={gallery[page].caption}
+					alt={alt}
 					className="pointer"
 					onError={handleWebsiteImageError('gallery')}
 					onLoad={(event) =>
@@ -67,5 +72,7 @@ export const ProjectImageCarousel = ({
 };
 
 type ProjectImageCarouselProps = {
+	company: ProjectType['company'];
 	gallery: NonNullable<ProjectType['gallery']>;
+	subtitle: ProjectType['subtitle'];
 };

@@ -9,6 +9,7 @@ import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
 import styles from './ImageModal.module.scss';
 
 export const ImageModal = ({
+	alt,
 	dimensions,
 	onClose,
 	onNext,
@@ -33,6 +34,7 @@ export const ImageModal = ({
 				{onPrev && <LeftModalArrow onClick={onPrev} />}
 
 				<img
+					alt={alt}
 					onLoad={(event) =>
 						setNaturalDimensions([
 							event.currentTarget.naturalWidth,
@@ -55,6 +57,7 @@ export const ImageModal = ({
 };
 
 type ImageModalProps = {
+	alt: string;
 	dimensions: number[];
 	onClose: () => void;
 	onNext?: () => void;

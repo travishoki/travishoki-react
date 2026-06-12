@@ -20,6 +20,7 @@ export const ImageWithModal = ({
 		<>
 			{selectedImg && (
 				<ImageModal
+					alt={alt}
 					dimensions={dimensions}
 					onClose={onCloseImage}
 					src={selectedImg}
