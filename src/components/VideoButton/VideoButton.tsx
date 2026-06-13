@@ -22,7 +22,7 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 			style={{ height: size, width: size }}
 		>
 			<div className={styles.videoButtonContents}>
-				<ZoomOverlay onClick={() => onClick()} />
+				<ZoomOverlay iconClassName="fa-play" onClick={() => onClick()} />
 				<img
 					alt="Video thumbnail"
 					className={styles.videoButtonImage}
