@@ -62,6 +62,21 @@ export const HowItsMadeList = () => {
 							</ItemLink>
 						</li>
 						<li>
+							<ItemLink
+								href="https://sass-lang.com/"
+								title="Sass Land Documentation"
+							>
+								SCSS
+							</ItemLink>{' '}
+							preprocessed styling with
+							<ItemLink
+								href="https://github.com/css-modules/css-modules"
+								title="CSS Modules Documentation"
+							>
+								CSS Modules
+							</ItemLink>
+						</li>
+						<li>
 							ADA accessibility optimized using{' '}
 							<ItemLink
 								href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
