@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 import { useIsMobile } from '~helpers/useIsMobile';
 import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
+import ImgPingdomSpeedTestReport from '~images/how-its-made/pingdom-speed-test.jpg';
 
 import { ItemLink } from './ItemLink/ItemLink';
 import { ViewScreenShot } from './ViewScreenShot/ViewScreenShot';
@@ -61,7 +62,7 @@ export const HowItsMadeList = () => {
 							</ItemLink>
 						</li>
 						<li>
-							ADA accessibility optimization using{' '}
+							ADA accessibility optimized using{' '}
 							<ItemLink
 								href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
 								title="axe DevTools Google Chrome Plugin"
@@ -73,6 +74,21 @@ export const HowItsMadeList = () => {
 								/* eslint-disable-next-line no-magic-numbers */
 								dimensions={[1743, 1694]}
 								src={ImgAxeDevToolsReport}
+							/>
+						</li>
+						<li>
+							<ItemLink
+								href="https://tools.pingdom.com/"
+								title="Pingdom Website Speed Test"
+							>
+								Pingdom
+							</ItemLink>{' '}
+							website speed test optimized (A 97)
+							<ViewScreenShot
+								alt="Pingdom Website Speed Test Report"
+								/* eslint-disable-next-line no-magic-numbers */
+								dimensions={[1743, 1694]}
+								src={ImgPingdomSpeedTestReport}
 							/>
 						</li>
 					</>
