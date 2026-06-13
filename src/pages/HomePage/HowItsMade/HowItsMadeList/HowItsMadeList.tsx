@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 import { useIsMobile } from '~helpers/useIsMobile';
+import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
 
 import { ItemLink } from './ItemLink/ItemLink';
+import { ViewScreenShot } from './ViewScreenShot/ViewScreenShot';
 
 import styles from './HowItsMadeList.module.scss';
 
@@ -66,6 +68,12 @@ export const HowItsMadeList = () => {
 							>
 								axe DevTools
 							</ItemLink>
+							<ViewScreenShot
+								alt="Axe DevTools Report"
+								/* eslint-disable-next-line no-magic-numbers */
+								dimensions={[1743, 1694]}
+								src={ImgAxeDevToolsReport}
+							/>
 						</li>
 					</>
 				)}
