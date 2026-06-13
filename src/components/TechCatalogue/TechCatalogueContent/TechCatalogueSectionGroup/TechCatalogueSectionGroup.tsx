@@ -8,7 +8,7 @@ import styles from './TechCatalogueSectionGroup.module.scss';
 
 type TechCatalogueSectionGroupProps = {
 	expanded: boolean;
-	iconClass: string;
+	iconClassName: string;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
 	label: string;
@@ -16,7 +16,7 @@ type TechCatalogueSectionGroupProps = {
 
 export const TechCatalogueSectionGroup = ({
 	expanded,
-	iconClass,
+	iconClassName,
 	itemClassName,
 	items,
 	label,
@@ -34,7 +34,7 @@ export const TechCatalogueSectionGroup = ({
 			{open && (
 				<TechCatalogueList
 					expanded={expanded}
-					iconClass={iconClass}
+					iconClassName={iconClassName}
 					itemClassName={itemClassName}
 					items={items}
 				/>

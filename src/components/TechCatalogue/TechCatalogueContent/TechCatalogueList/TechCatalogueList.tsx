@@ -7,14 +7,14 @@ import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
 type TechCatalogueListProps = {
 	expanded: boolean;
-	iconClass: string;
+	iconClassName: string;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
 };
 
 export const TechCatalogueList = ({
 	expanded,
-	iconClass,
+	iconClassName,
 	itemClassName,
 	items,
 }: TechCatalogueListProps) => {
@@ -26,7 +26,7 @@ export const TechCatalogueList = ({
 				<TechCatalogueItem
 					key={index}
 					expanded={expanded}
-					iconClass={iconClass}
+					iconClassName={iconClassName}
 					itemClassName={itemClassName}
 					{...item}
 				/>

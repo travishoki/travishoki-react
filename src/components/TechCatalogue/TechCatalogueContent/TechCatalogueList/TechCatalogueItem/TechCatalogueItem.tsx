@@ -8,13 +8,13 @@ import styles from './TechCatalogueItem.module.scss';
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;
-	iconClass: string;
+	iconClassName: string;
 	itemClassName?: string;
 };
 
 export const TechCatalogueItem = ({
 	expanded,
-	iconClass,
+	iconClassName,
 	image,
 	itemClassName,
 	label,
@@ -26,7 +26,7 @@ export const TechCatalogueItem = ({
 			})}
 			data-tooltip={label}
 		>
-			<img alt={`${label} Logo Icon`} className={iconClass} src={image} />
+			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
 			{expanded && <p>{label}</p>}
 		</div>
 	</li>
