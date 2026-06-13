@@ -25,7 +25,7 @@ export const ViewScreenShot = ({
 			)}
 
 			<i
-				className={classNames('fa fa-search-plus', styles.viewScreenShot)}
+				className={classNames('fa fa-image', styles.viewScreenShot)}
 				onClick={() => setModalOpen(true)}
 			/>
 		</>
