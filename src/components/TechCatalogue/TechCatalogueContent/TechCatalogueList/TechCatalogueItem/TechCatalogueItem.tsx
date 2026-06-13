@@ -21,10 +21,9 @@ export const TechCatalogueItem = ({
 }: TechCatalogueItemProps) => (
 	<li className={itemClassName}>
 		<div
-			className={classNames(
-				styles.techCatalogueItem,
-				expanded ? styles.techCatalogueItemExpanded : '',
-			)}
+			className={classNames(styles.techCatalogueItem, {
+				[styles.techCatalogueItemExpanded]: expanded,
+			})}
 			data-tooltip={label}
 		>
 			<img alt={`${label} Logo Icon`} className={iconClass} src={image} />

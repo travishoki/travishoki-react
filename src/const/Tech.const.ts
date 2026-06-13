@@ -1,5 +1,5 @@
 import { TechType } from '~components/TechCatalogue/TechCatalogue.types';
-import ImgCursor from '~images/icons/software-icons/cursor.png';
+import ImgCursor from '~images/icons/software-icons/cursor.jpg';
 import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
 import ImgAmp from '~images/icons/tech-icons/amp-bind.jpg';
 import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';

@@ -738,15 +738,18 @@ const PROJECTS: ProjectInput[] = [
 	},
 	{
 		company: 'Enspark',
-		contributions: 'I got to animate the assets in Adobe Flash.',
+		contributions: [
+			'I got to animate the assets in Adobe Flash.',
+			'I had learned flash in school and was so excited to be able to work on a project for a real client.',
+		],
 		description:
-			'Animated banner adds that would populate on the side of websites. ',
+			'Animated banner ads that would populate on the side of websites. ',
 		gallery: [
 			{ filename: 'enspark-flash-banner-1.jpg' },
 			{ filename: 'enspark-flash-banner-2.jpg' },
 		],
 		learned:
-			'I had learned flash in school and was so excited to be able to work on a project for a real client.',
+			'As an intern I had mentors directly working with me on these projects.',
 		subtitle: 'Flash Banner',
 		techs: [ACTION_SCRIPT],
 	},

@@ -1,8 +1,8 @@
-import ImgIllustrator from '~images/icons/software-icons/adobe-illustrator.png';
-import ImgIndesign from '~images/icons/software-icons/adobe-indesign.png';
-import ImgPhotoshop from '~images/icons/software-icons/adobe-photoshop.png';
-import ImgPremierPro from '~images/icons/software-icons/adobe-premier-pro.png';
-import ImgProcreate from '~images/icons/software-icons/procreate.png';
+import ImgIllustrator from '~images/icons/software-icons/adobe-illustrator.jpg';
+import ImgIndesign from '~images/icons/software-icons/adobe-indesign.jpg';
+import ImgPhotoshop from '~images/icons/software-icons/adobe-photoshop.jpg';
+import ImgPremierPro from '~images/icons/software-icons/adobe-premier-pro.jpg';
+import ImgProcreate from '~images/icons/software-icons/procreate.jpg';
 
 type SoftwareType = 'design' | 'illustration' | 'video';
 

@@ -27,7 +27,9 @@ export const TechCatalogueContent = ({
 
 	const iconClass = classnames(
 		styles.techCatalogueIcon,
-		circle ? styles.techCatalogueIconCircle : '',
+		circle
+			? styles.techCatalogueIconCircle
+			: styles.softwareCatalogueIconRounded,
 	);
 
 	const groupedTech = groupTechByType(items);
