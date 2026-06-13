@@ -24,7 +24,7 @@ export const ImageMaximizable = ({
 	const width = dimensions[0];
 
 	return (
-		<div className={classNames(styles.imageMaximizable, className)}>
+		<>
 			{selectedImg && (
 				<ImageModal
 					alt={alt}
@@ -34,16 +34,17 @@ export const ImageMaximizable = ({
 				/>
 			)}
 
-			<ZoomOverlay onClick={() => onClickImage(src)} />
-
-			<img
-				alt={alt}
-				className={imageClassName}
-				height={height}
-				src={src}
-				width={width}
-			/>
-		</div>
+			<div className={classNames(styles.imageMaximizable, className)}>
+				<ZoomOverlay onClick={() => onClickImage(src)} />
+				<img
+					alt={alt}
+					className={imageClassName}
+					height={height}
+					src={src}
+					width={width}
+				/>
+			</div>
+		</>
 	);
 };
 
