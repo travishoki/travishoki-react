@@ -736,6 +736,20 @@ const PROJECTS: ProjectInput[] = [
 		subtitle: 'eLearning Courses',
 		techs: [ACTION_SCRIPT],
 	},
+	{
+		company: 'Enspark',
+		contributions: 'I got to animate the assets in Adobe Flash.',
+		description:
+			'Animated banner adds that would populate on the side of websites. ',
+		gallery: [
+			{ filename: 'enspark-flash-banner-1.jpg' },
+			{ filename: 'enspark-flash-banner-2.jpg' },
+		],
+		learned:
+			'I had learned flash in school and was so excited to be able to work on a project for a real client.',
+		subtitle: 'Flash Banner',
+		techs: [ACTION_SCRIPT],
+	},
 ];
 
 export const PROJECTS_DATA: ProjectType[] = PROJECTS.map((project) => {

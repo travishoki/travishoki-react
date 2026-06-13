@@ -10,7 +10,7 @@ import styles from './ProjectInfo.module.scss';
 export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
 	return (
 		<>
-			<p className="label">{label}:</p>
+			<p className="m-0">{label}:</p>
 			<AnswerSection>
 				<TextWithReadMore
 					buttonClassName={styles.readMoreButton}

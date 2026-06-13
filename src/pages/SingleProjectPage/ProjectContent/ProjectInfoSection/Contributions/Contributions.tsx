@@ -20,7 +20,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 
 	return (
 		<>
-			<p className="label">Contributions:</p>
+			<p className="m-0">Contributions:</p>
 			<AnswerSection>
 				{isList ? (
 					<ReadMoreList
