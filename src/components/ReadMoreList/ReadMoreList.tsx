@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
-type ReadMoreListProps = {
-	buttonClassName?: string;
-	collapsedCount: number;
-	initiallyExpanded?: boolean;
-	items: string[];
-	listClassName?: string;
-};
-
 export const ReadMoreList = ({
 	buttonClassName,
 	collapsedCount,
@@ -40,4 +32,12 @@ export const ReadMoreList = ({
 			)}
 		</>
 	);
+};
+
+type ReadMoreListProps = {
+	buttonClassName?: string;
+	collapsedCount: number;
+	initiallyExpanded?: boolean;
+	items: string[];
+	listClassName?: string;
 };

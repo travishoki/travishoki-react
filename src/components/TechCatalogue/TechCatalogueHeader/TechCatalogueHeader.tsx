@@ -4,12 +4,6 @@ import classNames from 'classnames';
 
 import styles from './TechCatalogueHeader.module.scss';
 
-type TechCatalogueHeaderProps = {
-	label: string;
-	onToggle: () => void;
-	open: boolean;
-};
-
 export const TechCatalogueHeader = ({
 	label,
 	onToggle,
@@ -23,3 +17,9 @@ export const TechCatalogueHeader = ({
 		<i className={`fa fa-${open ? 'chevron-up' : 'chevron-down'}`} />
 	</button>
 );
+
+type TechCatalogueHeaderProps = {
+	label: string;
+	onToggle: () => void;
+	open: boolean;
+};

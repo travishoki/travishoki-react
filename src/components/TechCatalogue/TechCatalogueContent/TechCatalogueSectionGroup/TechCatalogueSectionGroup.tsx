@@ -6,14 +6,6 @@ import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
 import styles from './TechCatalogueSectionGroup.module.scss';
 
-type TechCatalogueSectionGroupProps = {
-	expanded: boolean;
-	iconClassName: string;
-	itemClassName?: string;
-	items: TechCatalogueItemData[];
-	label: string;
-};
-
 export const TechCatalogueSectionGroup = ({
 	expanded,
 	iconClassName,
@@ -41,4 +33,12 @@ export const TechCatalogueSectionGroup = ({
 			)}
 		</div>
 	);
+};
+
+type TechCatalogueSectionGroupProps = {
+	expanded: boolean;
+	iconClassName: string;
+	itemClassName?: string;
+	items: TechCatalogueItemData[];
+	label: string;
 };

@@ -2,10 +2,6 @@ import React from 'react';
 
 import styles from './CloseButton.module.scss';
 
-type CloseButtonProps = {
-	onClick: () => void;
-};
-
 export const CloseButton = ({ onClick }: CloseButtonProps) => (
 	<button
 		aria-label="Close Button"
@@ -18,3 +14,7 @@ export const CloseButton = ({ onClick }: CloseButtonProps) => (
 		<i className="fa fa-close" />
 	</button>
 );
+
+type CloseButtonProps = {
+	onClick: () => void;
+};

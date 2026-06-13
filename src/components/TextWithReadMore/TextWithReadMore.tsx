@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
-type TextWithReadMoreProps = {
-	buttonClassName?: string;
-	initiallyExpanded?: boolean;
-	paragraphs: string[];
-};
-
 export const TextWithReadMore = ({
 	buttonClassName,
 	initiallyExpanded = false,
@@ -36,4 +30,10 @@ export const TextWithReadMore = ({
 			)}
 		</>
 	);
+};
+
+type TextWithReadMoreProps = {
+	buttonClassName?: string;
+	initiallyExpanded?: boolean;
+	paragraphs: string[];
 };

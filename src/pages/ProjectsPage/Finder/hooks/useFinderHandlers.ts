@@ -8,15 +8,6 @@ import { createProjectsPageUrl } from '../../ProjectsPage.helpers';
 
 const PROJECTS_PAGE_URL = '/projects';
 
-type UseFinderHandlersProps = {
-	filter: TechFilterType;
-	onClearFilter: () => void;
-	searchTerm: string;
-	setFilter: (filter: TechFilterType) => void;
-	setFilterTerm: (filterTerm: TechFilterType) => void;
-	setSearchTerm: (searchTerm: string) => void;
-};
-
 export const useFinderHandlers = ({
 	filter,
 	onClearFilter,
@@ -82,4 +73,13 @@ export const useFinderHandlers = ({
 		onSelectFilter,
 		toggleOpenFilter,
 	};
+};
+
+type UseFinderHandlersProps = {
+	filter: TechFilterType;
+	onClearFilter: () => void;
+	searchTerm: string;
+	setFilter: (filter: TechFilterType) => void;
+	setFilterTerm: (filterTerm: TechFilterType) => void;
+	setSearchTerm: (searchTerm: string) => void;
 };

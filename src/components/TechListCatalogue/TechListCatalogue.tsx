@@ -4,13 +4,6 @@ import { TechCatalogue } from '~components/TechCatalogue/TechCatalogue';
 import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
 import { TECH, TechKey } from '~const/Tech.const';
 
-type TechListProps = {
-	header?: string;
-	initialExpanded?: boolean;
-	itemClassName?: string;
-	list: TechKey[];
-};
-
 export const TechListCatalogue = ({
 	header = 'Tech Stack',
 	initialExpanded = false,
@@ -30,4 +23,11 @@ export const TechListCatalogue = ({
 			items={items}
 		/>
 	);
+};
+
+type TechListProps = {
+	header?: string;
+	initialExpanded?: boolean;
+	itemClassName?: string;
+	list: TechKey[];
 };

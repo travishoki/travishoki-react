@@ -4,12 +4,6 @@ import classNames from 'classnames';
 
 import styles from './ReadMoreButton.module.scss';
 
-type ReadMoreButtonProps = {
-	className?: string;
-	expanded: boolean;
-	onToggle: () => void;
-};
-
 export const ReadMoreButton = ({
 	className,
 	expanded,
@@ -23,3 +17,9 @@ export const ReadMoreButton = ({
 		{expanded ? 'Read Less' : 'Read More'}
 	</button>
 );
+
+type ReadMoreButtonProps = {
+	className?: string;
+	expanded: boolean;
+	onToggle: () => void;
+};

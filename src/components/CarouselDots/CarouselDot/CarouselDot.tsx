@@ -4,12 +4,6 @@ import classNames from 'classnames';
 
 import styles from './CarouselDot.module.scss';
 
-type CarouselDotProps = {
-	isActive: boolean;
-	label: string;
-	onClick: () => void;
-};
-
 export const CarouselDot = ({ isActive, label, onClick }: CarouselDotProps) => (
 	<li>
 		<button
@@ -24,3 +18,9 @@ export const CarouselDot = ({ isActive, label, onClick }: CarouselDotProps) => (
 		/>
 	</li>
 );
+
+type CarouselDotProps = {
+	isActive: boolean;
+	label: string;
+	onClick: () => void;
+};

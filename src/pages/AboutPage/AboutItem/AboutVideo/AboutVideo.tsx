@@ -6,10 +6,6 @@ import { VideoModal } from '~components/VideoModal/VideoModal';
 import { DEFAULT_IMAGE_SIZE } from '../../AboutPage.const';
 import { AboutType } from '../../AboutPage.data';
 
-type AboutVideoProps = {
-	item: AboutType;
-};
-
 export const AboutVideo = ({ item }: AboutVideoProps) => {
 	const [open, setOpen] = useState(false);
 
@@ -26,4 +22,7 @@ export const AboutVideo = ({ item }: AboutVideoProps) => {
 			{open && <VideoModal onClose={() => setOpen(false)} src={item.video!} />}
 		</>
 	);
+};
+type AboutVideoProps = {
+	item: AboutType;
 };

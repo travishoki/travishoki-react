@@ -6,12 +6,6 @@ import { TechCatalogueItemData } from '../../../TechCatalogue.types';
 
 import styles from './TechCatalogueItem.module.scss';
 
-type TechCatalogueItemProps = TechCatalogueItemData & {
-	expanded: boolean;
-	iconClassName: string;
-	itemClassName?: string;
-};
-
 export const TechCatalogueItem = ({
 	expanded,
 	iconClassName,
@@ -31,3 +25,9 @@ export const TechCatalogueItem = ({
 		</div>
 	</li>
 );
+
+type TechCatalogueItemProps = TechCatalogueItemData & {
+	expanded: boolean;
+	iconClassName: string;
+	itemClassName?: string;
+};

@@ -4,12 +4,6 @@ import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
 import styles from './VideoButton.module.scss';
 
-type VideoButtonProps = {
-	onClick: () => void;
-	size?: number;
-	src: string;
-};
-
 const DIVIDER = 3;
 
 export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
@@ -37,4 +31,10 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 			</span>
 		</div>
 	);
+};
+
+type VideoButtonProps = {
+	onClick: () => void;
+	size?: number;
+	src: string;
 };

@@ -2,11 +2,6 @@ import React from 'react';
 
 import styles from './VideoModal.module.scss';
 
-type VideoModalProps = {
-	onClose: () => void;
-	src: string;
-};
-
 export const VideoModal = ({ onClose, src }: VideoModalProps) => (
 	<div className={styles.videoModal} onClick={onClose}>
 		<div
@@ -20,3 +15,8 @@ export const VideoModal = ({ onClose, src }: VideoModalProps) => (
 		</div>
 	</div>
 );
+
+type VideoModalProps = {
+	onClose: () => void;
+	src: string;
+};

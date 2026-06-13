@@ -4,11 +4,6 @@ import classNames from 'classnames';
 
 import styles from './TechCatalogueButton.module.scss';
 
-type TechCatalogueButtonProps = {
-	expanded: boolean;
-	onClick: () => void;
-};
-
 export const TechCatalogueButton = ({
 	expanded,
 	onClick,
@@ -21,3 +16,8 @@ export const TechCatalogueButton = ({
 		{expanded ? 'Close' : 'Open'}
 	</button>
 );
+
+type TechCatalogueButtonProps = {
+	expanded: boolean;
+	onClick: () => void;
+};

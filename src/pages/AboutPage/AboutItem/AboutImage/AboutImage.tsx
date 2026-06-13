@@ -7,10 +7,6 @@ import { AboutType } from '../../AboutPage.data';
 
 import styles from './AboutImage.module.scss';
 
-type AboutImageProps = {
-	item: AboutType;
-};
-
 export const AboutImage = ({ item }: AboutImageProps) => (
 	<ImageMaximizable
 		alt={item.alt ?? item.title}
@@ -22,3 +18,6 @@ export const AboutImage = ({ item }: AboutImageProps) => (
 		srcLargeDimensions={item.imgLargeDimensions ?? DEFAULT_IMAGE_DIMENSIONS}
 	/>
 );
+type AboutImageProps = {
+	item: AboutType;
+};

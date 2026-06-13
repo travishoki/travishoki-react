@@ -4,12 +4,6 @@ import { CarouselDot } from './CarouselDot/CarouselDot';
 
 import styles from './CarouselDots.module.scss';
 
-type CarouselDotsProps = {
-	activeIndex: number;
-	count: number;
-	onSelect: (index: number) => void;
-};
-
 export const CarouselDots = ({
 	activeIndex,
 	count,
@@ -26,3 +20,9 @@ export const CarouselDots = ({
 		))}
 	</ul>
 );
+
+type CarouselDotsProps = {
+	activeIndex: number;
+	count: number;
+	onSelect: (index: number) => void;
+};

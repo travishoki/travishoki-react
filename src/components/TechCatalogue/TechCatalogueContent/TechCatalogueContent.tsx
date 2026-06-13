@@ -10,13 +10,6 @@ import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatal
 
 import styles from './TechCatalogueContent.module.scss';
 
-type ContentProps = {
-	circle: boolean;
-	expanded: boolean;
-	itemClassName?: string;
-	items: TechCatalogueItemData[];
-};
-
 export const TechCatalogueContent = ({
 	circle,
 	expanded,
@@ -70,4 +63,11 @@ export const TechCatalogueContent = ({
 			</div>
 		</div>
 	);
+};
+
+type ContentProps = {
+	circle: boolean;
+	expanded: boolean;
+	itemClassName?: string;
+	items: TechCatalogueItemData[];
 };

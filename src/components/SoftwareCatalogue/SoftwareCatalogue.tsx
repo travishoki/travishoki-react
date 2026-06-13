@@ -4,12 +4,6 @@ import { TechCatalogue } from '~components/TechCatalogue/TechCatalogue';
 import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
 import { SOFTWARE, SoftwareKey } from '~const/Software.const';
 
-type SoftwareListProps = {
-	header?: string;
-	itemClassName?: string;
-	list: SoftwareKey[];
-};
-
 export const SoftwareCatalogue = ({
 	header = 'Software',
 	itemClassName,
@@ -28,4 +22,10 @@ export const SoftwareCatalogue = ({
 			items={items}
 		/>
 	);
+};
+
+type SoftwareListProps = {
+	header?: string;
+	itemClassName?: string;
+	list: SoftwareKey[];
 };

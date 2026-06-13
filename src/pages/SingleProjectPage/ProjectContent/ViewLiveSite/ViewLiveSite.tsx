@@ -1,9 +1,5 @@
 import React from 'react';
 
-type ViewLiveSiteProps = {
-	url?: string;
-};
-
 export const ViewLiveSite = ({ url }: ViewLiveSiteProps) => (
 	<a
 		className="btn btn-primary btn-lg"
@@ -14,3 +10,7 @@ export const ViewLiveSite = ({ url }: ViewLiveSiteProps) => (
 		View Live Site
 	</a>
 );
+
+type ViewLiveSiteProps = {
+	url?: string;
+};

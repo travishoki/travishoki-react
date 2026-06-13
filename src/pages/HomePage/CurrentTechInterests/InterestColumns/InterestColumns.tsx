@@ -5,10 +5,6 @@ import { InterestItem } from '../InterestItem/InterestItem';
 
 import styles from './InterestColumns.module.scss';
 
-type InterestColumnsProps = {
-	onScroll: React.UIEventHandler<HTMLDivElement>;
-};
-
 export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 	({ onScroll }, ref) => (
 		<div
@@ -22,5 +18,9 @@ export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 		</div>
 	),
 );
+
+type InterestColumnsProps = {
+	onScroll: React.UIEventHandler<HTMLDivElement>;
+};
 
 InterestColumns.displayName = 'InterestColumns';

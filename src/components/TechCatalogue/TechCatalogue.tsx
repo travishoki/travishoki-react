@@ -9,14 +9,6 @@ import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 
 import styles from './TechCatalogue.module.scss';
 
-type TechCatalogueProps = {
-	circle?: boolean;
-	header: string;
-	initialExpanded?: boolean;
-	itemClassName?: string;
-	items: TechCatalogueItemData[];
-};
-
 export const TechCatalogue = ({
 	circle = false,
 	header,
@@ -47,4 +39,12 @@ export const TechCatalogue = ({
 			/>
 		</div>
 	);
+};
+
+type TechCatalogueProps = {
+	circle?: boolean;
+	header: string;
+	initialExpanded?: boolean;
+	itemClassName?: string;
+	items: TechCatalogueItemData[];
 };

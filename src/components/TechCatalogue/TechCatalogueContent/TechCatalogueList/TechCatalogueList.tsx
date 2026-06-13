@@ -5,13 +5,6 @@ import classnames from 'classnames';
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
-type TechCatalogueListProps = {
-	expanded: boolean;
-	iconClassName: string;
-	itemClassName?: string;
-	items: TechCatalogueItemData[];
-};
-
 export const TechCatalogueList = ({
 	expanded,
 	iconClassName,
@@ -33,4 +26,11 @@ export const TechCatalogueList = ({
 			))}
 		</ul>
 	);
+};
+
+type TechCatalogueListProps = {
+	expanded: boolean;
+	iconClassName: string;
+	itemClassName?: string;
+	items: TechCatalogueItemData[];
 };
