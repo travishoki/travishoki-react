@@ -25,7 +25,7 @@ export const TechCatalogueContent = ({
 }: ContentProps) => {
 	if (items.length === 0) return null;
 
-	const iconClass = classnames(
+	const iconClassName = classnames(
 		styles.techCatalogueIcon,
 		circle
 			? styles.techCatalogueIconCircle
@@ -53,7 +53,7 @@ export const TechCatalogueContent = ({
 							<TechCatalogueSectionGroup
 								key={type}
 								expanded={expanded}
-								iconClass={iconClass}
+								iconClassName={iconClassName}
 								itemClassName={itemClassName}
 								items={group}
 								label={label}
