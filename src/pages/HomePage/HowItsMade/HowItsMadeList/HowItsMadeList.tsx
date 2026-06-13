@@ -20,7 +20,7 @@ export const HowItsMadeList = () => {
 		<>
 			<ul className={styles.howItsMadeList}>
 				<li>
-					Typed with{' '}
+					Typed Javascript with{' '}
 					<ItemLink
 						href="https://www.typescriptlang.org/"
 						title="Typescript NPM Module"
@@ -53,7 +53,7 @@ export const HowItsMadeList = () => {
 							<ItemLink href="https://typicode.github.io/husky/" title="Husky">
 								Husky
 							</ItemLink>{' '}
-							automatically runs scripts
+							for Git lifecycle automated scripts
 						</li>
 						<li>
 							Build with some assistance from{' '}
@@ -87,7 +87,7 @@ export const HowItsMadeList = () => {
 							<ViewScreenShot
 								alt="Pingdom Website Speed Test Report"
 								/* eslint-disable-next-line no-magic-numbers */
-								dimensions={[1743, 1694]}
+								dimensions={[2048, 1220]}
 								src={ImgPingdomSpeedTestReport}
 							/>
 						</li>
