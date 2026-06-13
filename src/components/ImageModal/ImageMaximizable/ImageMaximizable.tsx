@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
 
-import { ZoomOverlay } from './ZoomOverlay/ZoomOverlay';
+import { OverlayWithIcon } from '../../OverlayWithIcon/OverlayWithIcon';
 
 import styles from './ImageMaximizable.module.scss';
 
@@ -35,7 +35,7 @@ export const ImageMaximizable = ({
 			)}
 
 			<div className={classNames(styles.imageMaximizable, className)}>
-				<ZoomOverlay onClick={() => onClickImage(src)} />
+				<OverlayWithIcon onClick={() => onClickImage(src)} />
 				<img
 					alt={alt}
 					className={imageClassName}

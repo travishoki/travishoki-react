@@ -2,14 +2,14 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import styles from './ZoomOverlay.module.scss';
+import styles from './OverlayWithIcon.module.scss';
 
-export const ZoomOverlay = ({
+export const OverlayWithIcon = ({
 	iconClassName = 'fa-search-plus',
 	onClick,
 }: ZoomOverlayProps) => {
 	return (
-		<div className={styles.zoomOverlay} onClick={onClick}>
+		<div className={styles.overlayWithIcon} onClick={onClick}>
 			<i className={classNames('fa', iconClassName)} />
 		</div>
 	);

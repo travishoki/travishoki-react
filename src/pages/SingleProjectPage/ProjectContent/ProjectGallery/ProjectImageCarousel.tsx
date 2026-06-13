@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
-import { ZoomOverlay } from '~components/ImageModal/ImageMaximizable/ZoomOverlay/ZoomOverlay';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
+import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 import { getImgAltText } from '~helpers/images';
 import {
 	handleWebsiteImageError,
@@ -44,7 +44,7 @@ export const ProjectImageCarousel = ({
 			)}
 
 			<div className={styles.imageContainer}>
-				<ZoomOverlay onClick={() => setModalOpen(true)} />
+				<OverlayWithIcon onClick={() => setModalOpen(true)} />
 
 				<img
 					alt={imgAlt}
