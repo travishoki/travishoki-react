@@ -20,50 +20,57 @@ export const HowItsMadeList = () => {
 		<>
 			<ul className={styles.howItsMadeList}>
 				<li>
-					Typed Javascript with{' '}
+					Built with{' '}
+					<ItemLink href="https://react.dev" title="ReactJS Documentation">
+						ReactJS
+					</ItemLink>
+				</li>
+				<li>
 					<ItemLink
-						href="https://www.typescriptlang.org/"
+						href="https://www.typescriptlang.org"
 						title="Typescript NPM Module"
 					>
 						Typescript
-					</ItemLink>
+					</ItemLink>{' '}
+					typed Javascript
 				</li>
 				<li>
-					Unit testing with{' '}
+					Unit tested with{' '}
 					<ItemLink href="https://jestjs.io/docs/getting-started" title="Jest">
 						Jest
 					</ItemLink>
-				</li>
-				<li>
-					<ItemLink href="https://eslint.org/" title="Eslint">
-						Eslint
-					</ItemLink>{' '}
-					for consistent coding style
 				</li>
 
 				{showAll && (
 					<>
 						<li>
-							<ItemLink href="https://storybook.js.org/" title="Storybook">
+							<ItemLink href="https://eslint.org" title="Eslint">
+								Eslint
+							</ItemLink>{' '}
+							for consistent coding style
+						</li>
+
+						<li>
+							<ItemLink href="https://storybook.js.org" title="Storybook">
 								Storybook
 							</ItemLink>{' '}
 							for component management
 						</li>
 						<li>
-							<ItemLink href="https://typicode.github.io/husky/" title="Husky">
+							<ItemLink href="https://typicode.github.io/husky" title="Husky">
 								Husky
 							</ItemLink>{' '}
 							for Git lifecycle automated scripts
 						</li>
 						<li>
 							Build with some assistance from{' '}
-							<ItemLink href="https://claude.com/" title="Claude Code">
+							<ItemLink href="https://claude.com" title="Claude Code">
 								Claude Code
 							</ItemLink>
 						</li>
 						<li>
 							<ItemLink
-								href="https://sass-lang.com/"
+								href="https://sass-lang.com"
 								title="Sass Land Documentation"
 							>
 								SCSS
@@ -93,7 +100,7 @@ export const HowItsMadeList = () => {
 						</li>
 						<li>
 							<ItemLink
-								href="https://tools.pingdom.com/"
+								href="https://tools.pingdom.com"
 								title="Pingdom Website Speed Test"
 							>
 								Pingdom
