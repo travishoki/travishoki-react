@@ -3,17 +3,22 @@
 $border-color: $blue-two;
 $border-width: 5px;
 
-.videoButton {
-	background: none;
+.videoButtonContents {
 	border: $border-width solid $border-color;
 	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.videoButtonContainer {
+	background: none;
 	cursor: pointer;
 	display: inline-block;
 	padding: 0;
 	position: relative;
 	transition: border-color 0.2s ease;
 
-	&:hover {
+	&:hover .videoButtonContents {
 		border-color: $blue-four;
 	}
 
@@ -42,7 +47,5 @@ $border-width: 5px;
 	justify-content: center;
 	position: absolute;
 	right: 0;
-	transition:
-		background 0.2s ease,
-		border-color 0.2s ease;
+	z-index: 101;
 }

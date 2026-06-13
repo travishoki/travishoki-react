@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ZoomOverlay } from '~components/ImageModal/ImageMaximizable/ZoomOverlay/ZoomOverlay';
+
 import styles from './VideoButton.module.scss';
 
 type VideoButtonProps = {
@@ -15,22 +17,24 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 	const fontSize = iconSize / DIVIDER;
 
 	return (
-		<button
-			className={styles.videoButton}
-			onClick={onClick}
+		<div
+			className={styles.videoButtonContainer}
 			style={{ height: size, width: size }}
 		>
-			<img
-				alt="Video thumbnail"
-				className={styles.videoButtonImage}
-				src={src}
-			/>
+			<div className={styles.videoButtonContents}>
+				<ZoomOverlay onClick={() => onClick()} />
+				<img
+					alt="Video thumbnail"
+					className={styles.videoButtonImage}
+					src={src}
+				/>
+			</div>
 			<span
 				className={styles.videoButtonIcon}
 				style={{ fontSize, height: iconSize, width: iconSize }}
 			>
 				<i className="fa fa-video-camera" />
 			</span>
-		</button>
+		</div>
 	);
 };
