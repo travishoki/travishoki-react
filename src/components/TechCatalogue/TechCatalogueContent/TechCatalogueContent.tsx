@@ -63,7 +63,7 @@ export const TechCatalogueContent = ({
 				) : (
 					<TechCatalogueList
 						expanded={expanded}
-						iconClass={iconClass}
+						iconClassName={iconClassName}
 						items={items}
 					/>
 				)}
