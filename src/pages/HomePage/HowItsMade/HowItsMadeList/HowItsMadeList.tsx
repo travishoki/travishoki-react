@@ -75,7 +75,7 @@ export const HowItsMadeList = () => {
 							>
 								SCSS
 							</ItemLink>{' '}
-							preprocessed styling with
+							preprocessed styling with{' '}
 							<ItemLink
 								href="https://github.com/css-modules/css-modules"
 								title="CSS Modules Documentation"
