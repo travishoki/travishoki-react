@@ -15,8 +15,6 @@ export const SvgIconFacebook = ({
 	</svg>
 );
 
-SvgIconFacebook.displayName = 'SvgIconFacebook';
-
 /*-------------------- Types --------------------*/
 
 type SvgIconFacebookType = {
