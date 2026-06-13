@@ -121,9 +121,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgOverstock,
 		position: 'Front-end Developer',
 		tasks: [
-			'Developed high-performance e-commerce interfaces utilizing preprocessed CSS (Less/Sass) and media queries for responsive layouts.',
-			'Enhanced customer-review functionality across product pages',
-			'Managed the front-end for all user-generated content, including reviews, product images, and Q&A',
+			'Enhanced customer review functionality across high-traffic retail pages.',
+			'Managed the front-end for all user-generated content, including reviews, product images, and Q&A.',
+			'Features A/B tested and proven positive for revenue.',
 			'Integrated tracking pixels for retargeting and third-party platforms',
 			'Pioneered the affiliate links program',
 		],
