@@ -15,8 +15,6 @@ export const SvgIconFacebook = ({
 	</svg>
 );
 
-/*-------------------- Types --------------------*/
-
 type SvgIconFacebookType = {
 	className?: string;
 	color?: string;

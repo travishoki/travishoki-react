@@ -15,8 +15,6 @@ export const SvgIconYoutube = ({
 	</svg>
 );
 
-/*-------------------- Types --------------------*/
-
 type SvgIconYoutubeType = {
 	className?: string;
 	color?: string;

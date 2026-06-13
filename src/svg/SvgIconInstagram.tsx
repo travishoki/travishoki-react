@@ -23,8 +23,6 @@ export const SvgIconInstagram = ({
 	</svg>
 );
 
-/*-------------------- Types --------------------*/
-
 type SvgIconInstagramType = {
 	className?: string;
 	color?: string;

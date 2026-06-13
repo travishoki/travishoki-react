@@ -34,8 +34,6 @@ export const SvgIconTikTok = ({
 	</svg>
 );
 
-/*-------------------- Types --------------------*/
-
 type SvgIconTikTok = {
 	className?: string;
 	color?: string;
