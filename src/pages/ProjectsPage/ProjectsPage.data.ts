@@ -747,6 +747,7 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{ filename: 'enspark-flash-banner-1.jpg' },
 			{ filename: 'enspark-flash-banner-2.jpg' },
+			{ filename: 'enspark-flash-banner-3.jpg' },
 		],
 		learned:
 			'As an intern I had mentors directly working with me on these projects.',
