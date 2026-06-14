@@ -1,17 +1,25 @@
 import React from 'react';
 
+import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
+
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
 import styles from './VideoButton.module.scss';
 
 const DIVIDER = 3;
 
-export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
+export const VideoButton = ({
+	animate = false,
+	onClick,
+	size = 300,
+	src,
+}: VideoButtonProps) => {
 	const iconSize = size / DIVIDER;
 	const fontSize = iconSize / DIVIDER;
 
 	return (
-		<div
+		<DivMaybeAnimateScale
+			animate={animate}
 			className={styles.videoButtonContainer}
 			style={{ height: size, width: size }}
 		>
@@ -29,11 +37,12 @@ export const VideoButton = ({ onClick, size = 300, src }: VideoButtonProps) => {
 			>
 				<i className="fa fa-video-camera" />
 			</span>
-		</div>
+		</DivMaybeAnimateScale>
 	);
 };
 
 type VideoButtonProps = {
+	animate?: boolean;
 	onClick: () => void;
 	size?: number;
 	src: string;

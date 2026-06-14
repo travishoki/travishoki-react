@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
 
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
@@ -11,6 +12,7 @@ import styles from './ImageMaximizable.module.scss';
 
 export const ImageMaximizable = ({
 	alt,
+	animate = false,
 	className,
 	dimensions,
 	imageClassName,
@@ -34,7 +36,10 @@ export const ImageMaximizable = ({
 				/>
 			)}
 
-			<div className={classNames(styles.imageMaximizable, className)}>
+			<DivMaybeAnimateScale
+				animate={animate}
+				className={classNames(styles.imageMaximizable, className)}
+			>
 				<OverlayWithIcon onClick={() => onClickImage(src)} />
 				<img
 					alt={alt}
@@ -43,13 +48,14 @@ export const ImageMaximizable = ({
 					src={src}
 					width={width}
 				/>
-			</div>
+			</DivMaybeAnimateScale>
 		</>
 	);
 };
 
 type ImageMaximizableProps = {
 	alt: string;
+	animate?: boolean;
 	className?: string;
 	dimensions: number[];
 	imageClassName?: string;

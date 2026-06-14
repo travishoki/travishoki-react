@@ -10,6 +10,7 @@ import styles from './AboutImage.module.scss';
 export const AboutImage = ({ item }: AboutImageProps) => (
 	<ImageMaximizable
 		alt={item.alt ?? item.title}
+		animate
 		className={styles.aboutItemImage}
 		dimensions={DEFAULT_IMAGE_DIMENSIONS}
 		imageClassName="image"
