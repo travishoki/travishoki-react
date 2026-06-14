@@ -18,6 +18,7 @@ export const AboutImage = ({ item }: AboutImageProps) => (
 		srcLargeDimensions={item.imgLargeDimensions ?? DEFAULT_IMAGE_DIMENSIONS}
 	/>
 );
+
 type AboutImageProps = {
 	item: AboutType;
 };
