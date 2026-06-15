@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import { motion } from 'motion/react';
 
 import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
 
@@ -8,6 +9,8 @@ import { getExpandedStyle } from './TechCatalogueItem.helpers';
 import { TechCatalogueItemData } from '../../../TechCatalogue.types';
 
 import styles from './TechCatalogueItem.module.scss';
+
+const TRANSITION = { duration: 0.3, ease: 'easeInOut' } as const;
 
 export const TechCatalogueItem = ({
 	columns,
@@ -31,11 +34,18 @@ export const TechCatalogueItem = ({
 	);
 
 	return (
-		// The grid column class only applies in the expanded layout.
-		<li className={itemClassName} data-tooltip={expanded ? undefined : label}>
+		// `layout="position"` glides the item to its new spot when the list
+		// switches between the collapsed row and the expanded grid, without
+		// scaling (which would distort the fixed-size icon).
+		<motion.li
+			className={itemClassName}
+			data-tooltip={expanded ? undefined : label}
+			layout="position"
+			transition={TRANSITION}
+		>
 			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
 			{expanded && <p className={styles.label}>{label}</p>}
-		</li>
+		</motion.li>
 	);
 };
 
