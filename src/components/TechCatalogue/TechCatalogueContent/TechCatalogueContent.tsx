@@ -28,27 +28,25 @@ export const TechCatalogueContent = ({
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div
-			className={classNames(styles.techCatalogueContent, {
-				[styles.techCatalogueContentExpanded]: expanded,
-			})}
-		>
+		<div className={styles.techCatalogueContent}>
 			<MotionAutoHeight trigger={expanded}>
 				{expanded ? (
-					TYPE_SECTIONS.map(({ label, type }) => {
-						const group = groupedTech[type];
+					<div className={styles.fart}>
+						{TYPE_SECTIONS.map(({ label, type }) => {
+							const group = groupedTech[type];
 
-						if (group.length === 0) return null;
+							if (group.length === 0) return null;
 
-						return (
-							<TechCatalogueSectionGroup
-								key={type}
-								iconClassName={iconClassName}
-								items={group}
-								title={label}
-							/>
-						);
-					})
+							return (
+								<TechCatalogueSectionGroup
+									key={type}
+									iconClassName={iconClassName}
+									items={group}
+									title={label}
+								/>
+							);
+						})}
+					</div>
 				) : (
 					<div className={styles.techCatalogueCollapsed}>
 						<TechCatalogueList

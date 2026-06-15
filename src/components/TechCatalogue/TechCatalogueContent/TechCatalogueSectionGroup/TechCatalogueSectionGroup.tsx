@@ -16,7 +16,7 @@ export const TechCatalogueSectionGroup = ({
 	const [open, setOpen] = useState(true);
 
 	return (
-		<>
+		<div>
 			<TechCatalogueHeader
 				onToggle={() => setOpen(!open)}
 				open={open}
@@ -40,7 +40,7 @@ export const TechCatalogueSectionGroup = ({
 					/>
 				</div>
 			</MotionAutoHeight>
-		</>
+		</div>
 	);
 };
 

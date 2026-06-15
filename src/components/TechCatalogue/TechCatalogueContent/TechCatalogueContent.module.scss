@@ -8,10 +8,11 @@ $iconW: 40px;
 	border-top: none;
 }
 
-.techCatalogueContentExpanded {
+.fart {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
 	padding: $gap;
-}
-.techCatalogueContentCollapsed {
 }
 
 .techCatalogueIcon {
@@ -43,11 +44,11 @@ $iconW: 40px;
 	ul {
 		$iconW: 40px;
 		list-style: none;
-		margin: $gap 0 0 0;
+		margin: 0;
 		padding: 0;
 
 		li {
-			margin-bottom: $gap;
+			margin-top: $gap;
 
 			a {
 				text-decoration: none;

@@ -6,7 +6,7 @@ import { TECH, TechKey } from '~const/Tech.const';
 
 export const TechListCatalogue = ({
 	initialExpanded = false,
-	itemClassName = 'col-12',
+	itemClassName,
 	list,
 	title = 'Tech Stack',
 }: TechListProps) => {
