@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { MotionExpand } from 'src/animations/MotionExpand';
+
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
@@ -23,14 +25,14 @@ export const TechCatalogueSectionGroup = ({
 				open={open}
 			/>
 
-			{open && (
+			<MotionExpand isOpen={open}>
 				<TechCatalogueList
 					expanded={expanded}
 					iconClassName={iconClassName}
 					itemClassName={itemClassName}
 					items={items}
 				/>
-			)}
+			</MotionExpand>
 		</div>
 	);
 };
