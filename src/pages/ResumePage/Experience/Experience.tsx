@@ -7,6 +7,8 @@ import { RESUME_DATA } from '../ResumePage.data';
 import { TechDivider } from '../TechDivider/TechDivider';
 import { CareerOverview } from './CareerOverview/CareerOverview';
 
+import styles from './Experience.module.scss';
+
 const DIVIDER_POS = 3;
 
 export const Experience = () => (
@@ -15,7 +17,7 @@ export const Experience = () => (
 			<CareerOverview />
 
 			<h2>Experience</h2>
-			<StaggeredList>
+			<StaggeredList className={styles.staggeredList}>
 				{RESUME_DATA.map((job, index) => {
 					const showTechDivider = index === RESUME_DATA.length - DIVIDER_POS;
 
