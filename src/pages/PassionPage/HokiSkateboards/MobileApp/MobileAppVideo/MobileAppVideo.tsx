@@ -15,7 +15,12 @@ export const MobileAppVideo = () => {
 	return (
 		<>
 			<div className={styles.mobileAppVideo}>
-				<VideoButton onClick={() => setOpen(true)} size={250} src={APP_ICON} />
+				<VideoButton
+					animate
+					onClick={() => setOpen(true)}
+					size={250}
+					src={APP_ICON}
+				/>
 			</div>
 
 			{open && <VideoModal onClose={() => setOpen(false)} src={VIDEO_SRC} />}
