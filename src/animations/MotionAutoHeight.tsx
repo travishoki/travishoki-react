@@ -14,15 +14,20 @@ export const MotionAutoHeight = ({
 	trigger,
 }: MotionAutoHeightProps) => {
 	const [scope, animate] = useAnimate<HTMLDivElement>();
-	const contentRef = useRef<HTMLDivElement>(null);
 	const previousHeight = useRef<number | null>(null);
 
 	useLayoutEffect(() => {
 		const wrapper = scope.current;
-		const content = contentRef.current;
-		if (!wrapper || !content) return;
+		if (!wrapper) return;
 
-		const nextHeight = content.offsetHeight;
+		// Measure the true resting height: force `auto` and read it back. The
+		// wrapper is a permanent BFC (flow-root below), so child margins are
+		// contained the same way in every state — the measured target therefore
+		// matches the final `auto` layout and there's no snap when released.
+		wrapper.style.height = 'auto';
+		wrapper.style.overflow = '';
+		const nextHeight = wrapper.offsetHeight;
+
 		const prevHeight = previousHeight.current;
 		previousHeight.current = nextHeight;
 
@@ -45,9 +50,12 @@ export const MotionAutoHeight = ({
 		);
 	}, [animate, scope, trigger]);
 
+	// flow-root keeps the wrapper a block formatting context at all times so
+	// children's vertical margins stay contained whether overflow is visible
+	// (at rest) or hidden (mid-animation), keeping measurements consistent.
 	return (
-		<div ref={scope}>
-			<div ref={contentRef}>{children}</div>
+		<div ref={scope} style={{ display: 'flow-root' }}>
+			{children}
 		</div>
 	);
 };
