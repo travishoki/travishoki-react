@@ -2,6 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import { Typewriter } from 'src/animations/Typewriter';
 
 import { SocialIcons } from '~components/SocialIcons/SocialIcons';
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
@@ -16,7 +17,9 @@ export const Banner = () => (
 			src={ImgProfilePic}
 		/>
 		<div>
-			<h1>Travis Hoki</h1>
+			<h1>
+				<Typewriter text="Travis Hoki" />
+			</h1>
 			<p className={styles.jobTitle}>Web Developer</p>
 			<SocialIcons className={styles.bannerSocial} />
 			<Link
