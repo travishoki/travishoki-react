@@ -1,3 +1,5 @@
+@import '../../../styles/z-index.scss';
+
 .imageModal {
 	align-items: center;
 	background: rgba(0, 0, 0, 0.9);
@@ -9,7 +11,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: $z-index-modal;
 }
 
 .imageModalInner {
