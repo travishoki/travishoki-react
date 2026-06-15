@@ -19,7 +19,7 @@ export const TechCatalogueContent = ({ expanded, items }: ContentProps) => {
 		<div className={styles.techCatalogueContent}>
 			<MotionAutoHeight trigger={expanded}>
 				{expanded ? (
-					<div className={styles.fart}>
+					<div className={styles.techCatalogueContentExpendedContent}>
 						{TYPE_SECTIONS.map(({ label, type }) => {
 							const group = groupedTech[type];
 
