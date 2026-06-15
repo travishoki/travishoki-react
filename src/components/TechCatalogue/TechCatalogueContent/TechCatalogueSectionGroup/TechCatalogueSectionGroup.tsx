@@ -9,7 +9,6 @@ import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 import contentStyles from '../TechCatalogueContent.module.scss';
 
 export const TechCatalogueSectionGroup = ({
-	iconClassName,
 	items,
 	title,
 }: TechCatalogueSectionGroupProps) => {
@@ -33,11 +32,7 @@ export const TechCatalogueSectionGroup = ({
 							: contentStyles.techCatalogueCollapsed
 					}
 				>
-					<TechCatalogueList
-						expanded={open}
-						iconClassName={iconClassName}
-						items={items}
-					/>
+					<TechCatalogueList expanded={open} items={items} />
 				</div>
 			</MotionAutoHeight>
 		</div>
@@ -45,7 +40,6 @@ export const TechCatalogueSectionGroup = ({
 };
 
 type TechCatalogueSectionGroupProps = {
-	iconClassName: string;
 	items: TechCatalogueItemData[];
 	title: string;
 };

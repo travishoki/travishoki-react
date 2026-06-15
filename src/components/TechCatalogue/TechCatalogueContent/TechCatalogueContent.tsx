@@ -1,6 +1,5 @@
 import React from 'react';
 
-import classNames from 'classnames';
 import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
 
 import { TYPE_SECTIONS } from '../TechCatalogue.const';
@@ -11,19 +10,8 @@ import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatal
 
 import styles from './TechCatalogueContent.module.scss';
 
-export const TechCatalogueContent = ({
-	circle,
-	expanded,
-	items,
-}: ContentProps) => {
+export const TechCatalogueContent = ({ expanded, items }: ContentProps) => {
 	if (items.length === 0) return null;
-
-	const iconClassName = classNames(
-		styles.techCatalogueIcon,
-		circle
-			? styles.techCatalogueIconCircle
-			: styles.softwareCatalogueIconRounded,
-	);
 
 	const groupedTech = groupTechByType(items);
 
@@ -40,7 +28,6 @@ export const TechCatalogueContent = ({
 							return (
 								<TechCatalogueSectionGroup
 									key={type}
-									iconClassName={iconClassName}
 									items={group}
 									title={label}
 								/>
@@ -49,11 +36,7 @@ export const TechCatalogueContent = ({
 					</div>
 				) : (
 					<div className={styles.techCatalogueCollapsed}>
-						<TechCatalogueList
-							expanded={expanded}
-							iconClassName={iconClassName}
-							items={items}
-						/>
+						<TechCatalogueList expanded={expanded} items={items} />
 					</div>
 				)}
 			</MotionAutoHeight>
@@ -62,7 +45,6 @@ export const TechCatalogueContent = ({
 };
 
 type ContentProps = {
-	circle: boolean;
 	expanded: boolean;
 	items: TechCatalogueItemData[];
 };

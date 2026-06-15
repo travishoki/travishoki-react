@@ -8,7 +8,6 @@ import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
 export const TechCatalogueList = ({
 	expanded,
-	iconClassName,
 	items,
 }: TechCatalogueListProps) => {
 	const itemClassName = useItemClassName();
@@ -20,12 +19,7 @@ export const TechCatalogueList = ({
 		// collapsed layout is a plain horizontal flex row of icons.
 		<ul className={classnames({ row: expanded && itemClassName })}>
 			{items.map((item, index) => (
-				<TechCatalogueItem
-					key={index}
-					expanded={expanded}
-					iconClassName={iconClassName}
-					{...item}
-				/>
+				<TechCatalogueItem key={index} expanded={expanded} {...item} />
 			))}
 		</ul>
 	);
@@ -33,6 +27,5 @@ export const TechCatalogueList = ({
 
 type TechCatalogueListProps = {
 	expanded: boolean;
-	iconClassName: string;
 	items: TechCatalogueItemData[];
 };

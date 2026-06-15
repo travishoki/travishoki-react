@@ -3,17 +3,28 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { TechCatalogueItemData } from '../../../TechCatalogue.types';
-import { useItemClassName } from '../../../TechCatalogueContext';
+import { useCircle, useItemClassName } from '../../../TechCatalogueContext';
 
 import styles from './TechCatalogueItem.module.scss';
+import contentStyles from '../../TechCatalogueContent.module.scss';
 
 export const TechCatalogueItem = ({
 	expanded,
-	iconClassName,
 	image,
 	label,
 }: TechCatalogueItemProps) => {
+	const circle = useCircle();
 	const itemClassName = useItemClassName();
+
+	// Derived from the circle context here at the leaf, rather than computed in
+	// Content and drilled down. The icon classes live in Content's module so the
+	// `.techCatalogueExpanded .techCatalogueIcon` margin rule still matches.
+	const iconClassName = classNames(
+		contentStyles.techCatalogueIcon,
+		circle
+			? contentStyles.techCatalogueIconCircle
+			: contentStyles.softwareCatalogueIconRounded,
+	);
 
 	return (
 		// The grid column class only applies in the expanded layout.
@@ -33,5 +44,4 @@ export const TechCatalogueItem = ({
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
 	expanded: boolean;
-	iconClassName: string;
 };

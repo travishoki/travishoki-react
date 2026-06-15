@@ -12,7 +12,6 @@ describe('TechCatalogueList', () => {
 	it('should not render', async () => {
 		const props = {
 			expanded: true,
-			iconClassName: '',
 			items: [],
 		};
 
