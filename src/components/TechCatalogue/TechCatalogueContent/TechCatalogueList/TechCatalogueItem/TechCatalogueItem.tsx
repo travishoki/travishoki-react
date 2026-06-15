@@ -32,7 +32,7 @@ export const TechCatalogueItem = ({
 
 	return (
 		// The grid column class only applies in the expanded layout.
-		<li className={itemClassName} data-tooltip={label}>
+		<li className={itemClassName} data-tooltip={expanded ? undefined : label}>
 			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
 			{expanded && <p className={styles.label}>{label}</p>}
 		</li>
