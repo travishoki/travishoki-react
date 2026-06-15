@@ -1,4 +1,4 @@
-@import '../../../../styles/responsive.scss';
+@use 'styles' as *;
 
 .infoBox {
 	@include phone-down {

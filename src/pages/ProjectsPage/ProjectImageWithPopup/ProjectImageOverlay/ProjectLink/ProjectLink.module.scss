@@ -1,4 +1,4 @@
-@import '../../../../../styles/variables.scss';
+@use 'styles' as *;
 
 .projectLink {
 	color: $white;

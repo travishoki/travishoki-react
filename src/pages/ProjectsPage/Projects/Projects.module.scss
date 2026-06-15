@@ -1,4 +1,4 @@
-@import '../../../styles/responsive.scss';
+@use 'styles' as *;
 
 .projectsGrid {
 	list-style: none;

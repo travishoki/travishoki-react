@@ -1,4 +1,4 @@
-@import '../../../../../styles/variables.scss';
+@use 'styles' as *;
 
 .buttonLink {
 	background-color: $blue-three;

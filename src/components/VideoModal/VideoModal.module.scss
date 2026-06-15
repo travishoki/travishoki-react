@@ -1,6 +1,4 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/z-index.scss';
+@use 'styles' as *;
 
 .videoModal {
 	align-items: center;

@@ -1,5 +1,4 @@
-@import '../../styles/variables.scss';
-@import '../../styles/z-index.scss';
+@use 'styles' as *;
 
 $border-color: $blue-two;
 $border-width: 5px;

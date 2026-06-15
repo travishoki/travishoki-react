@@ -1,4 +1,4 @@
-@import '../../../../../styles/responsive.scss';
+@use 'styles' as *;
 
 .listColumn {
 	@include phone-down {

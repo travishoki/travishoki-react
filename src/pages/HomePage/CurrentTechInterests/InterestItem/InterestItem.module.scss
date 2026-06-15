@@ -1,5 +1,4 @@
-@import '../../../../styles/variables.scss';
-@import '../../../../styles/responsive.scss';
+@use 'styles' as *;
 
 .currentTechInterestsReadMore {
 	color: $white;

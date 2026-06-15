@@ -1,5 +1,4 @@
-@import '../../../../styles/responsive.scss';
-@import '../../../../styles/variables.scss';
+@use 'styles' as *;
 
 .contactInfoGrid {
 	display: grid;

@@ -1,4 +1,4 @@
-@import '../../../../styles/variables.scss';
+@use 'styles' as *;
 
 // The toggle only renders on mobile; blue-one (the default link color) is
 // low-contrast on this blue section, so use white. Passed to ReadMoreButton

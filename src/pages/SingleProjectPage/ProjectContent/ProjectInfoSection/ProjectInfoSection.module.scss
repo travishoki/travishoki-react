@@ -1,6 +1,4 @@
-@import '../../../../styles/variables.scss';
-@import '../../../../styles/mixins.scss';
-@import '../../../../styles/responsive.scss';
+@use 'styles' as *;
 
 .logo {
 	@include border-radius(50%);

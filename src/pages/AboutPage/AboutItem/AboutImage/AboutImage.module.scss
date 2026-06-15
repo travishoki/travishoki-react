@@ -1,4 +1,4 @@
-@import '../../../../styles/mixins.scss';
+@use 'styles' as *;
 
 .aboutItemImage {
 	@include border-radius(50%);

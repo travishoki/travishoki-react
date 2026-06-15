@@ -1,5 +1,4 @@
-@import '../../../../styles/mixins.scss';
-@import '../../../../styles/variables.scss';
+@use 'styles' as *;
 
 .projectImageOverlay {
 	bottom: 0;
