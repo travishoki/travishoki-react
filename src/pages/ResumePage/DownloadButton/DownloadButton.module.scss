@@ -1,13 +1,21 @@
 @import '../../../styles/variables.scss';
+@import '../../../styles/responsive.scss';
 
 .downloadButton {
 	font-size: 16px;
 	margin-bottom: 2px;
-	min-width: 200px;
+
+	@include phone-down {
+		width: 100%;
+	}
+
+	@include tablet-up {
+		width: 200px;
+	}
 }
 
 .caption {
-	color: $blue-five;
+	color: $white;
 	font-size: 12px;
 	margin: 0;
 	text-align: center;
