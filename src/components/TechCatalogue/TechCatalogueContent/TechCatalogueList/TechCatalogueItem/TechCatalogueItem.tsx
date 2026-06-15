@@ -2,38 +2,51 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { TechCatalogueItemContent } from './TechCatalogueItemContent/TechCatalogueItemContent';
+import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
+
 import { TechCatalogueItemData } from '../../../TechCatalogue.types';
-import { useItemClassName } from '../../../TechCatalogueContext';
+import { COLUMNS_THREE, COLUMNS_TWO } from '../TechCatalogueList.const';
 
 import styles from './TechCatalogueItem.module.scss';
 
+const getExpandedStyle = (columns: number) => {
+	if (columns === COLUMNS_TWO) return styles.techCatalogueItemExpandedTwo;
+	if (columns === COLUMNS_THREE) return styles.techCatalogueItemExpandedThree;
+
+	return styles.techCatalogueItemExpandedOne;
+};
+
 export const TechCatalogueItem = ({
+	columns,
 	expanded,
 	image,
 	label,
 }: TechCatalogueItemProps) => {
-	const itemClassName = useItemClassName();
+	const circle = useCircle();
+
+	const itemClassName = classNames(
+		styles.techCatalogueItem,
+		expanded ? getExpandedStyle(columns) : '',
+	);
+
+	// Derived from the circle context here at the leaf.
+	const iconClassName = classNames(
+		styles.techCatalogueIcon,
+		circle
+			? styles.techCatalogueIconCircle
+			: styles.softwareCatalogueIconRounded,
+	);
 
 	return (
 		// The grid column class only applies in the expanded layout.
-		<li className={expanded ? itemClassName : undefined}>
-			<div
-				className={classNames(styles.techCatalogueItem, {
-					[styles.techCatalogueItemExpanded]: expanded,
-				})}
-				data-tooltip={label}
-			>
-				<TechCatalogueItemContent
-					expanded={expanded}
-					image={image}
-					label={label}
-				/>
-			</div>
+		<li className={itemClassName} data-tooltip={label}>
+			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
+			{expanded && <p className={styles.label}>{label}</p>}
 		</li>
 	);
 };
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
+	columns: number;
 	expanded: boolean;
 };

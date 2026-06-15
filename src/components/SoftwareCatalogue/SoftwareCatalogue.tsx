@@ -5,7 +5,6 @@ import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.t
 import { SOFTWARE, SoftwareKey } from '~const/Software.const';
 
 export const SoftwareCatalogue = ({
-	itemClassName,
 	list,
 	title = 'Software',
 }: SoftwareListProps) => {
@@ -15,13 +14,10 @@ export const SoftwareCatalogue = ({
 		type: SOFTWARE[software].type,
 	}));
 
-	return (
-		<TechCatalogue itemClassName={itemClassName} items={items} title={title} />
-	);
+	return <TechCatalogue items={items} title={title} />;
 };
 
 type SoftwareListProps = {
-	itemClassName?: string;
 	list: SoftwareKey[];
 	title?: string;
 };

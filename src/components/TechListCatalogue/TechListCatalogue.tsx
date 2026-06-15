@@ -6,7 +6,6 @@ import { TECH, TechKey } from '~const/Tech.const';
 
 export const TechListCatalogue = ({
 	initialExpanded = false,
-	itemClassName,
 	list,
 	title = 'Tech Stack',
 }: TechListProps) => {
@@ -18,7 +17,6 @@ export const TechListCatalogue = ({
 		<TechCatalogue
 			circle
 			initialExpanded={initialExpanded}
-			itemClassName={itemClassName}
 			items={items}
 			title={title}
 		/>
@@ -27,7 +25,6 @@ export const TechListCatalogue = ({
 
 type TechListProps = {
 	initialExpanded?: boolean;
-	itemClassName?: string;
 	list: TechKey[];
 	title?: string;
 };

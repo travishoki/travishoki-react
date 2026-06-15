@@ -1,0 +1,19 @@
+$gap: 12px;
+
+.techCatalogueList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: $gap $gap 0 $gap;
+	padding: 0;
+
+	&.techCatalogueListCollapsed {
+		gap: $gap;
+	}
+
+	&.techCatalogueListExpanded {
+		row-gap: $gap;
+	}
+}

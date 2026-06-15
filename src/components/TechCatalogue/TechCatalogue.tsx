@@ -13,7 +13,6 @@ import styles from './TechCatalogue.module.scss';
 export const TechCatalogue = ({
 	circle = false,
 	initialExpanded = false,
-	itemClassName = 'col-12',
 	items,
 	title,
 }: TechCatalogueProps) => {
@@ -28,7 +27,7 @@ export const TechCatalogue = ({
 				open={expanded}
 				title={title}
 			/>
-			<TechCatalogueProvider value={{ circle, itemClassName }}>
+			<TechCatalogueProvider value={{ circle }}>
 				<TechCatalogueContent expanded={expanded} items={items} />
 			</TechCatalogueProvider>
 			<TechCatalogueButton
@@ -42,7 +41,6 @@ export const TechCatalogue = ({
 type TechCatalogueProps = {
 	circle?: boolean;
 	initialExpanded?: boolean;
-	itemClassName?: string;
 	items: TechCatalogueItemData[];
 	title: string;
 };

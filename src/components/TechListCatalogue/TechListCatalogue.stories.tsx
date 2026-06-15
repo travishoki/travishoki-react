@@ -33,7 +33,6 @@ export const Few: Story = {
 
 export const All: Story = {
 	args: {
-		itemClassName: 'col-sm-4',
 		list: [
 			'ACTION_SCRIPT',
 			'AMP',

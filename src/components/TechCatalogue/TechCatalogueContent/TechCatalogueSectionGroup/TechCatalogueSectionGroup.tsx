@@ -6,8 +6,6 @@ import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
-import styles from './TechCatalogueSectionGroup.module.scss';
-
 export const TechCatalogueSectionGroup = ({
 	items,
 	title,
@@ -25,15 +23,7 @@ export const TechCatalogueSectionGroup = ({
 			{/* Collapsing a section keeps the icons visible as a compact horizontal
 			    row (labels hidden), rather than hiding the section entirely. */}
 			<MotionAutoHeight trigger={open}>
-				<div
-					className={
-						open
-							? styles.techCatalogueSectionGroupExpanded
-							: styles.techCatalogueSectionGroupCollapsed
-					}
-				>
-					<TechCatalogueList expanded={open} items={items} />
-				</div>
+				<TechCatalogueList expanded={open} items={items} />
 			</MotionAutoHeight>
 		</div>
 	);

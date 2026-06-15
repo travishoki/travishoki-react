@@ -1,13 +1,6 @@
 @use 'styles' as *;
 
-// When an itemClassName grid is passed, defer layout to the Bootstrap row/col
-// classes (overrides the orientation display + gap rules above/below).
 .techCatalogue {
 	margin: 0 auto;
 	max-width: 900px;
-
-	:global(.row) {
-		display: flex;
-		gap: 0;
-	}
 }
