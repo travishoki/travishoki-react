@@ -3,14 +3,14 @@
 .readMoreButton {
 	background: none;
 	border: none;
-	color: $blue-one;
+	color: $primary-one;
 	cursor: pointer;
 	font-size: 14px;
 	padding: 0;
 	text-decoration: underline;
 
 	&:hover {
-		color: $blue-two;
+		color: $primary-two;
 	}
 
 	i {

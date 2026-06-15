@@ -26,13 +26,13 @@ $button-height: 40px;
 	}
 
 	.buttonText {
-		background: $blue-three;
+		background: $primary-three;
 		flex: 1;
 		text-align: center;
 	}
 
 	.icon {
-		background: $blue-four;
+		background: $primary-four;
 		flex: 0 0 $button-height;
 		font-size: 16px;
 		text-align: center;
@@ -43,7 +43,7 @@ $button-height: 40px;
 		color: $gray-one;
 
 		.buttonText {
-			background: $blue-four;
+			background: $primary-four;
 		}
 		.icon {
 			background: $blue-five;

@@ -2,7 +2,7 @@
 
 .backToTop {
 	align-items: center;
-	background: $primary;
+	background: $primary-three;
 	border: none;
 	border-radius: 50%;
 	bottom: 10px;
@@ -30,7 +30,7 @@
 	}
 
 	&:hover {
-		background: $blue-four;
+		background: $primary-four;
 	}
 }
 

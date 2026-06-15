@@ -1,9 +1,9 @@
 @use 'styles' as *;
 
 .itemLink {
-	color: $blue-zero;
+	color: $primary-zero;
 
 	&:hover {
-		color: $blue-one;
+		color: $primary-one;
 	}
 }

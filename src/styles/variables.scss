@@ -25,8 +25,15 @@ $red-one: #f2dede;
 $red-two: #a94442;
 
 // Primary
-$primary: $blue-three;
-$secondary: $blue-four;
+$primary-zero: $blue-zero;
+$primary-one: $blue-one;
+$primary-two: $blue-two;
+$primary-three: $blue-three;
+$primary-four: $blue-four;
+$primary-five: $blue-five;
+
+// Secondary
+$secondary: $primary-four;
 
 // Bluehost
 $bluehost-blue: #1d73da;

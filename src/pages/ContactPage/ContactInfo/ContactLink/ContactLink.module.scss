@@ -34,7 +34,7 @@ a.contactLink {
 
 	i {
 		align-items: center;
-		background: $blue-three;
+		background: $primary-three;
 		color: $white;
 		display: flex;
 		font-size: 20px;
@@ -44,6 +44,6 @@ a.contactLink {
 	}
 
 	&:hover i {
-		background: $blue-four;
+		background: $primary-four;
 	}
 }

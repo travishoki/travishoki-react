@@ -1,6 +1,6 @@
 @use 'styles' as *;
 
-$border-color: $blue-two;
+$border-color: $primary-two;
 $border-width: 5px;
 
 .videoButtonContents {
@@ -18,12 +18,12 @@ $border-width: 5px;
 	position: relative;
 
 	&:hover .videoButtonContents {
-		border-color: $blue-four;
+		border-color: $primary-four;
 	}
 
 	&:hover .videoButtonIcon {
-		background: $blue-four;
-		border-color: $blue-four;
+		background: $primary-four;
+		border-color: $primary-four;
 	}
 }
 
@@ -37,7 +37,7 @@ $border-width: 5px;
 
 .videoButtonIcon {
 	align-items: center;
-	background: $blue-three;
+	background: $primary-three;
 	border: $border-width solid $border-color;
 	border-radius: 50%;
 	bottom: 0;

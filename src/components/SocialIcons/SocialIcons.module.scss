@@ -27,20 +27,20 @@ $size: 32px;
 	width: 100%;
 
 	&:not(.reverse) {
-		background: $blue-three;
+		background: $primary-three;
 		color: $white;
 
 		&:hover {
-			background: $blue-four;
+			background: $primary-four;
 		}
 	}
 
 	&.reverse {
 		background: $white;
-		color: $blue-four;
+		color: $primary-four;
 
 		&:hover {
-			background: $blue-four;
+			background: $primary-four;
 			color: $white;
 		}
 	}
