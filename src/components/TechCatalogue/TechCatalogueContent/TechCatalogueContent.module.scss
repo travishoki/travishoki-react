@@ -1,6 +1,7 @@
 @use 'styles' as *;
 
 $gap: 12px;
+$iconW: 40px;
 
 .techCatalogueContent {
 	border: solid 1px $primary;
@@ -9,7 +10,6 @@ $gap: 12px;
 }
 
 .techCatalogueIcon {
-	$iconW: 40px;
 	height: $iconW;
 	width: $iconW;
 }
