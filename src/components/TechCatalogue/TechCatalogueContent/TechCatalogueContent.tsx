@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classnames from 'classnames';
+import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
 
 import { TYPE_SECTIONS } from '../TechCatalogue.const';
 import { groupTechByType } from '../TechCatalogue.helpers';
@@ -29,38 +30,40 @@ export const TechCatalogueContent = ({
 
 	return (
 		<div className={styles.techCatalogueContent}>
-			<div
-				className={
-					expanded
-						? styles.techCatalogueVertical
-						: styles.techCatalogueHorizontal
-				}
-			>
-				{expanded ? (
-					TYPE_SECTIONS.map(({ label, type }) => {
-						const group = groupedTech[type];
+			<MotionAutoHeight trigger={expanded}>
+				<div
+					className={
+						expanded
+							? styles.techCatalogueVertical
+							: styles.techCatalogueHorizontal
+					}
+				>
+					{expanded ? (
+						TYPE_SECTIONS.map(({ label, type }) => {
+							const group = groupedTech[type];
 
-						if (group.length === 0) return null;
+							if (group.length === 0) return null;
 
-						return (
-							<TechCatalogueSectionGroup
-								key={type}
-								expanded={expanded}
-								iconClassName={iconClassName}
-								itemClassName={itemClassName}
-								items={group}
-								label={label}
-							/>
-						);
-					})
-				) : (
-					<TechCatalogueList
-						expanded={expanded}
-						iconClassName={iconClassName}
-						items={items}
-					/>
-				)}
-			</div>
+							return (
+								<TechCatalogueSectionGroup
+									key={type}
+									expanded={expanded}
+									iconClassName={iconClassName}
+									itemClassName={itemClassName}
+									items={group}
+									label={label}
+								/>
+							);
+						})
+					) : (
+						<TechCatalogueList
+							expanded={expanded}
+							iconClassName={iconClassName}
+							items={items}
+						/>
+					)}
+				</div>
+			</MotionAutoHeight>
 		</div>
 	);
 };
