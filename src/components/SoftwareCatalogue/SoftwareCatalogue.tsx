@@ -5,9 +5,9 @@ import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.t
 import { SOFTWARE, SoftwareKey } from '~const/Software.const';
 
 export const SoftwareCatalogue = ({
-	header = 'Software',
 	itemClassName,
 	list,
+	title = 'Software',
 }: SoftwareListProps) => {
 	const items: TechCatalogueItemData[] = list.map((software) => ({
 		image: SOFTWARE[software].image,
@@ -16,16 +16,12 @@ export const SoftwareCatalogue = ({
 	}));
 
 	return (
-		<TechCatalogue
-			header={header}
-			itemClassName={itemClassName}
-			items={items}
-		/>
+		<TechCatalogue itemClassName={itemClassName} items={items} title={title} />
 	);
 };
 
 type SoftwareListProps = {
-	header?: string;
 	itemClassName?: string;
 	list: SoftwareKey[];
+	title?: string;
 };

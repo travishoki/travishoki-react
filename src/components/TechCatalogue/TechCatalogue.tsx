@@ -11,10 +11,10 @@ import styles from './TechCatalogue.module.scss';
 
 export const TechCatalogue = ({
 	circle = false,
-	header,
 	initialExpanded = false,
 	itemClassName,
 	items,
+	title,
 }: TechCatalogueProps) => {
 	const [expanded, setExpanded] = useState(initialExpanded);
 
@@ -23,9 +23,9 @@ export const TechCatalogue = ({
 	return (
 		<div className={classnames(styles.techCatalogue, 'mb-3')}>
 			<TechCatalogueHeader
-				label={header}
 				onToggle={() => setExpanded(!expanded)}
 				open={expanded}
+				title={title}
 			/>
 			<TechCatalogueContent
 				circle={circle}
@@ -43,8 +43,8 @@ export const TechCatalogue = ({
 
 type TechCatalogueProps = {
 	circle?: boolean;
-	header: string;
 	initialExpanded?: boolean;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
+	title: string;
 };

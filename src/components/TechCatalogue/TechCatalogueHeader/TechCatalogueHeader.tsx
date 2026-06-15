@@ -5,21 +5,21 @@ import classNames from 'classnames';
 import styles from './TechCatalogueHeader.module.scss';
 
 export const TechCatalogueHeader = ({
-	label,
 	onToggle,
 	open,
+	title,
 }: TechCatalogueHeaderProps) => (
 	<button
 		className={classNames('px-3 py-2', styles.techCatalogueHeader)}
 		onClick={onToggle}
 	>
-		{label}
+		{title}
 		<i className={`fa fa-${open ? 'chevron-up' : 'chevron-down'}`} />
 	</button>
 );
 
 type TechCatalogueHeaderProps = {
-	label: string;
 	onToggle: () => void;
 	open: boolean;
+	title: string;
 };

@@ -51,7 +51,7 @@ export const TechCatalogueContent = ({
 									iconClassName={iconClassName}
 									itemClassName={itemClassName}
 									items={group}
-									label={label}
+									title={label}
 								/>
 							);
 						})

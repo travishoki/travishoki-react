@@ -13,16 +13,16 @@ export const TechCatalogueSectionGroup = ({
 	iconClassName,
 	itemClassName,
 	items,
-	label,
+	title,
 }: TechCatalogueSectionGroupProps) => {
 	const [open, setOpen] = useState(true);
 
 	return (
 		<div className={styles.techCatalogueSectionGroup}>
 			<TechCatalogueHeader
-				label={label}
 				onToggle={() => setOpen(!open)}
 				open={open}
+				title={title}
 			/>
 
 			<MotionExpand isOpen={open}>
@@ -42,5 +42,5 @@ type TechCatalogueSectionGroupProps = {
 	iconClassName: string;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
-	label: string;
+	title: string;
 };

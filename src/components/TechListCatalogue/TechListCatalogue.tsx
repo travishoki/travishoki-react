@@ -5,10 +5,10 @@ import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.t
 import { TECH, TechKey } from '~const/Tech.const';
 
 export const TechListCatalogue = ({
-	header = 'Tech Stack',
 	initialExpanded = false,
 	itemClassName,
 	list,
+	title = 'Tech Stack',
 }: TechListProps) => {
 	const items: TechCatalogueItemData[] = list.map((tech) => ({
 		...TECH[tech],
@@ -17,17 +17,17 @@ export const TechListCatalogue = ({
 	return (
 		<TechCatalogue
 			circle
-			header={header}
 			initialExpanded={initialExpanded}
 			itemClassName={itemClassName}
 			items={items}
+			title={title}
 		/>
 	);
 };
 
 type TechListProps = {
-	header?: string;
 	initialExpanded?: boolean;
 	itemClassName?: string;
 	list: TechKey[];
+	title?: string;
 };
