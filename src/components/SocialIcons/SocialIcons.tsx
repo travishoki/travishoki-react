@@ -13,7 +13,7 @@ export const SocialIcons = ({ className }: SocialIconsProps) => (
 				target="_blank"
 				title="Travis's Github"
 			>
-				<i className="circ-sm fa fa-git" />
+				<i className={classNames('fa fa-git', styles.circleIcon)} />
 			</a>
 		</li>
 		<li>
@@ -23,7 +23,7 @@ export const SocialIcons = ({ className }: SocialIconsProps) => (
 				target="_blank"
 				title="Travis's Linked In"
 			>
-				<i className="circ-sm fa fa-linkedin" />
+				<i className={classNames('fa fa-linkedin', styles.circleIcon)} />
 			</a>
 		</li>
 	</ul>
