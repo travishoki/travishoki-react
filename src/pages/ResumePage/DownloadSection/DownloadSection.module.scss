@@ -1,3 +1,4 @@
+@import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
 
 .resumeButtons {
@@ -13,4 +14,12 @@
 		flex-direction: row;
 		gap: 20px;
 	}
+}
+
+.caption {
+	color: $white;
+	font-size: 12px;
+	margin: 0;
+	margin-bottom: 2px;
+	text-align: center;
 }

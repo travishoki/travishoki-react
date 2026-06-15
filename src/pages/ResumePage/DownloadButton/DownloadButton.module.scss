@@ -3,9 +3,6 @@
 
 $button-height: 40px;
 
-.buttonContainer {
-}
-
 .downloadButton {
 	align-items: center;
 	color: $white;
@@ -15,7 +12,7 @@ $button-height: 40px;
 
 	@include phone-down {
 		margin: 0 auto;
-		max-width: 500px;
+		max-width: 400px;
 		width: 100%;
 	}
 
@@ -53,12 +50,4 @@ $button-height: 40px;
 			background: $blue-five;
 		}
 	}
-}
-
-.caption {
-	color: $white;
-	font-size: 12px;
-	margin: 0;
-	margin-bottom: 2px;
-	text-align: center;
 }
