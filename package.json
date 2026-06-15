@@ -11,6 +11,8 @@
 		"eject": "craco eject",
 		"lint": "eslint --ext .js,.ts,.tsx src/",
 		"lint:css": "stylelint \"src/**/*.scss\"",
+		"lint:css:fix": "stylelint \"src/**/*.scss\" --fix",
+		"format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
 		"bounce": "rm -rf node_modules && yarn install",
 		"ts-check": "npx tsc",
 		"prepare": "husky install",
