@@ -22,7 +22,7 @@ $iconW: 40px;
 	border-radius: 22%;
 }
 
-.techCatalogueHorizontal {
+.techCatalogueCollapsed {
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -34,7 +34,7 @@ $iconW: 40px;
 	}
 }
 
-.techCatalogueVertical {
+.techCatalogueExpanded {
 	ul {
 		$iconW: 40px;
 		list-style: none;

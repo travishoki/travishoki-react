@@ -30,8 +30,8 @@ export const TechCatalogueSectionGroup = ({
 				<div
 					className={
 						open
-							? contentStyles.techCatalogueVertical
-							: contentStyles.techCatalogueHorizontal
+							? contentStyles.techCatalogueExpanded
+							: contentStyles.techCatalogueCollapsed
 					}
 				>
 					<TechCatalogueList

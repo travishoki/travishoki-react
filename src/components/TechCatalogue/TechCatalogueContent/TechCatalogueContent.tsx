@@ -48,7 +48,7 @@ export const TechCatalogueContent = ({
 						);
 					})
 				) : (
-					<div className={styles.techCatalogueHorizontal}>
+					<div className={styles.techCatalogueCollapsed}>
 						<TechCatalogueList
 							expanded={expanded}
 							iconClassName={iconClassName}
