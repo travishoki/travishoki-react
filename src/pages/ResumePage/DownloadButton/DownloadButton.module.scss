@@ -4,9 +4,10 @@ $button-height: 40px;
 
 .downloadButton {
 	align-items: center;
-	color: $white;
+	color: $secondary-four;
 	display: flex;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: bold;
 	text-decoration: none;
 
 	@include phone-down {
@@ -26,13 +27,13 @@ $button-height: 40px;
 	}
 
 	.buttonText {
-		background: $secondary-three;
+		background: $secondary-one;
 		flex: 1;
 		text-align: center;
 	}
 
 	.icon {
-		background: $secondary-four;
+		background: $secondary-two;
 		flex: 0 0 $button-height;
 		font-size: 16px;
 		text-align: center;
@@ -40,13 +41,13 @@ $button-height: 40px;
 	}
 
 	&:hover {
-		color: $gray-one;
+		// color: $gray-one;
 
 		.buttonText {
-			background: $secondary-four;
+			background: $secondary-two;
 		}
 		.icon {
-			background: $secondary-five;
+			background: $secondary-three;
 		}
 	}
 }
