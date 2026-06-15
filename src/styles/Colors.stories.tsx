@@ -13,6 +13,7 @@ type ColorSwatch = {
 type ColorGroup = {
 	colors: ColorSwatch[];
 	label: string;
+	palletName?: string;
 };
 
 const GRAY_GROUPS: ColorGroup[] = [
@@ -30,6 +31,78 @@ const GRAY_GROUPS: ColorGroup[] = [
 	},
 ];
 
+const BLUES: ColorGroup = {
+	colors: [
+		{ hex: COLORS.BLUE_1, name: 'Blue One', variable: '$blue-one' },
+		{ hex: COLORS.BLUE_2, name: 'Blue Two', variable: '$blue-two' },
+		{
+			hex: COLORS.BLUE_3,
+			name: 'Blue Three',
+			variable: '$blue-three',
+		},
+		{
+			hex: COLORS.BLUE_4,
+			name: 'Blue Four',
+			variable: '$blue-four ',
+		},
+		{ hex: COLORS.BLUE_5, name: 'Blue Five', variable: '$blue-five' },
+	],
+	label: 'Blues',
+	palletName: 'Primary',
+};
+
+const GOLDS: ColorGroup = {
+	colors: [
+		{ hex: COLORS.GOLD_1, name: 'Gold One', variable: '$gold-one' },
+		{ hex: COLORS.GOLD_2, name: 'Gold Two', variable: '$gold-two' },
+		{
+			hex: COLORS.GOLD_3,
+			name: 'Gold Three',
+			variable: '$gold-three',
+		},
+		{
+			hex: COLORS.GOLD_4,
+			name: 'Gold Four',
+			variable: '$gold-four ',
+		},
+		{ hex: COLORS.GOLD_5, name: 'Gold Five', variable: '$gold-five' },
+	],
+	label: 'Golds',
+	palletName: 'Secondary',
+};
+
+const TERRACOTTAS: ColorGroup = {
+	colors: [
+		{
+			hex: COLORS.TERRACOTTA_1,
+			name: 'Terracotta One',
+			variable: '$terracotta-one',
+		},
+		{
+			hex: COLORS.TERRACOTTA_2,
+			name: 'Terracotta Two',
+			variable: '$terracotta-two',
+		},
+		{
+			hex: COLORS.TERRACOTTA_3,
+			name: 'Terracotta Three',
+			variable: '$terracotta-three',
+		},
+		{
+			hex: COLORS.TERRACOTTA_4,
+			name: 'Terracotta Four',
+			variable: '$terracotta-four ',
+		},
+		{
+			hex: COLORS.TERRACOTTA_5,
+			name: 'Terracotta Five',
+			variable: '$terracotta-five',
+		},
+	],
+	label: 'Terracottas',
+	palletName: 'Tertiary',
+};
+
 const GREENS: ColorGroup = {
 	colors: [{ hex: COLORS.GREEN_1, name: 'Green One', variable: '$green-one' }],
 	label: 'Greens',
@@ -43,103 +116,92 @@ const REDS: ColorGroup = {
 	label: 'Reds',
 };
 
-const BLUES: ColorGroup = {
-	colors: [
-		{ hex: COLORS.BLUE_1, name: 'Blue One', variable: '$blue-one' },
-		{ hex: COLORS.BLUE_2, name: 'Blue Two', variable: '$blue-two' },
-		{
-			hex: COLORS.BLUE_3,
-			name: 'Blue Three / Primary',
-			variable: '$blue-three / $primary',
-		},
-		{
-			hex: COLORS.BLUE_4,
-			name: 'Blue Four / Secondary',
-			variable: '$blue-four / $secondary',
-		},
-		{ hex: COLORS.BLUE_5, name: 'Blue Five', variable: '$blue-five' },
-	],
-	label: 'Blues',
-};
-
 const PAGE_STYLE: React.CSSProperties = {
 	fontFamily: 'sans-serif',
 	padding: '2rem',
 };
 
-const ColorSection = ({ group }: { group: ColorGroup }) => (
-	<section style={{ marginBottom: '2.5rem', width: 'fit-content' }}>
-		<h2
-			style={{
-				color: COLORS.WHITE,
-				fontSize: '1rem',
-				fontWeight: 600,
-				letterSpacing: '0.05em',
-				marginBottom: '0.75rem',
-				textAlign: 'center',
-				textTransform: 'uppercase',
-			}}
-		>
-			{group.label}
-		</h2>
-		<div style={{ display: 'flex', flexWrap: 'wrap' }}>
-			{group.colors.map((color) => (
-				<div
-					key={color.variable}
-					style={{
-						boxShadow: '0 1px 4px rgba(0,0,0,0.15)',
-						overflow: 'hidden',
-						width: '160px',
-					}}
-				>
+const ColorSection = ({ group }: { group: ColorGroup }) => {
+	let title = group.label;
+
+	if (group.palletName) {
+		title += ` (${group.palletName})`;
+	}
+
+	return (
+		<section style={{ marginBottom: '2.5rem', width: 'fit-content' }}>
+			<h2
+				style={{
+					color: COLORS.WHITE,
+					fontSize: '1rem',
+					fontWeight: 600,
+					letterSpacing: '0.05em',
+					marginBottom: '0.75rem',
+					textAlign: 'center',
+					textTransform: 'uppercase',
+				}}
+			>
+				{title}
+			</h2>
+			<div style={{ display: 'flex', flexWrap: 'wrap' }}>
+				{group.colors.map((color) => (
 					<div
+						key={color.variable}
 						style={{
-							backgroundColor: color.hex,
-							borderBottom: `solid 1px ${color.hex === COLORS.WHITE ? COLORS.GRAY_1 : color.hex}`,
-							height: '120px',
-						}}
-					/>
-					<div
-						style={{
-							background: COLORS.WHITE,
-							minHeight: '100px',
-							padding: '0.5rem 0.75rem',
+							boxShadow: '0 1px 4px rgba(0,0,0,0.15)',
+							overflow: 'hidden',
+							width: '160px',
 						}}
 					>
 						<div
 							style={{
-								color: COLORS.GRAY_2,
-								fontSize: '0.8rem',
-								fontWeight: 600,
+								backgroundColor: color.hex,
+								borderBottom: `solid 1px ${color.hex === COLORS.WHITE ? COLORS.GRAY_1 : color.hex}`,
+								height: '120px',
 							}}
-						>
-							{color.name}
-						</div>
+						/>
 						<div
 							style={{
-								color: COLORS.GRAY_2,
-								fontSize: '0.75rem',
-								marginTop: '2px',
+								background: COLORS.WHITE,
+								minHeight: '100px',
+								padding: '0.5rem 0.75rem',
 							}}
 						>
-							{color.hex.toUpperCase()}
-						</div>
-						<div
-							style={{
-								color: COLORS.GRAY_1,
-								fontFamily: 'monospace',
-								fontSize: '0.7rem',
-								marginTop: '2px',
-							}}
-						>
-							{color.variable}
+							<div
+								style={{
+									color: COLORS.GRAY_2,
+									fontSize: '0.8rem',
+									fontWeight: 600,
+								}}
+							>
+								{color.name}
+							</div>
+							<div
+								style={{
+									color: COLORS.GRAY_2,
+									fontSize: '0.75rem',
+									marginTop: '2px',
+								}}
+							>
+								{color.hex.toUpperCase()}
+							</div>
+							<div
+								style={{
+									color: COLORS.GRAY_1,
+									fontFamily: 'monospace',
+									fontSize: '0.7rem',
+									marginTop: '2px',
+								}}
+							>
+								{color.variable}
+							</div>
 						</div>
 					</div>
-				</div>
-			))}
-		</div>
-	</section>
-);
+				))}
+			</div>
+		</section>
+	);
+};
 
 const ColorPalette = ({ groups }: { groups: ColorGroup[] }) => (
 	<div style={PAGE_STYLE}>
@@ -167,6 +229,8 @@ export const Colors: Story = {
 	render: () => (
 		<div style={PAGE_STYLE}>
 			<ColorSection group={BLUES} />
+			<ColorSection group={GOLDS} />
+			<ColorSection group={TERRACOTTAS} />
 			<div style={{ display: 'flex', gap: '2.5rem' }}>
 				<ColorSection group={REDS} />
 				<ColorSection group={GREENS} />
