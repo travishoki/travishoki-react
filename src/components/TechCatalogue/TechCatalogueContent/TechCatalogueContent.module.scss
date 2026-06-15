@@ -6,7 +6,12 @@ $iconW: 40px;
 .techCatalogueContent {
 	border: solid 1px $primary;
 	border-top: none;
+}
+
+.techCatalogueContentExpanded {
 	padding: $gap;
+}
+.techCatalogueContentCollapsed {
 }
 
 .techCatalogueIcon {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classnames from 'classnames';
+import classNames from 'classnames';
 import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
 
 import { TYPE_SECTIONS } from '../TechCatalogue.const';
@@ -14,12 +14,11 @@ import styles from './TechCatalogueContent.module.scss';
 export const TechCatalogueContent = ({
 	circle,
 	expanded,
-	itemClassName,
 	items,
 }: ContentProps) => {
 	if (items.length === 0) return null;
 
-	const iconClassName = classnames(
+	const iconClassName = classNames(
 		styles.techCatalogueIcon,
 		circle
 			? styles.techCatalogueIconCircle
@@ -29,7 +28,11 @@ export const TechCatalogueContent = ({
 	const groupedTech = groupTechByType(items);
 
 	return (
-		<div className={styles.techCatalogueContent}>
+		<div
+			className={classNames(styles.techCatalogueContent, {
+				[styles.techCatalogueContentExpanded]: expanded,
+			})}
+		>
 			<MotionAutoHeight trigger={expanded}>
 				{expanded ? (
 					TYPE_SECTIONS.map(({ label, type }) => {
@@ -41,7 +44,6 @@ export const TechCatalogueContent = ({
 							<TechCatalogueSectionGroup
 								key={type}
 								iconClassName={iconClassName}
-								itemClassName={itemClassName}
 								items={group}
 								title={label}
 							/>
@@ -64,6 +66,5 @@ export const TechCatalogueContent = ({
 type ContentProps = {
 	circle: boolean;
 	expanded: boolean;
-	itemClassName?: string;
 	items: TechCatalogueItemData[];
 };

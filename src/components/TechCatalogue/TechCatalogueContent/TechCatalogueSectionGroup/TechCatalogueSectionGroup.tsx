@@ -10,7 +10,6 @@ import contentStyles from '../TechCatalogueContent.module.scss';
 
 export const TechCatalogueSectionGroup = ({
 	iconClassName,
-	itemClassName,
 	items,
 	title,
 }: TechCatalogueSectionGroupProps) => {
@@ -37,7 +36,6 @@ export const TechCatalogueSectionGroup = ({
 					<TechCatalogueList
 						expanded={open}
 						iconClassName={iconClassName}
-						itemClassName={open ? itemClassName : undefined}
 						items={items}
 					/>
 				</div>
@@ -48,7 +46,6 @@ export const TechCatalogueSectionGroup = ({
 
 type TechCatalogueSectionGroupProps = {
 	iconClassName: string;
-	itemClassName?: string;
 	items: TechCatalogueItemData[];
 	title: string;
 };

@@ -3,24 +3,27 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
+import { useItemClassName } from '../../TechCatalogueContext';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
 export const TechCatalogueList = ({
 	expanded,
 	iconClassName,
-	itemClassName,
 	items,
 }: TechCatalogueListProps) => {
+	const itemClassName = useItemClassName();
+
 	if (items.length === 0) return null;
 
 	return (
-		<ul className={classnames({ row: itemClassName })}>
+		// The Bootstrap grid (row/col) is only used in the expanded layout; the
+		// collapsed layout is a plain horizontal flex row of icons.
+		<ul className={classnames({ row: expanded && itemClassName })}>
 			{items.map((item, index) => (
 				<TechCatalogueItem
 					key={index}
 					expanded={expanded}
 					iconClassName={iconClassName}
-					itemClassName={itemClassName}
 					{...item}
 				/>
 			))}
@@ -31,6 +34,5 @@ export const TechCatalogueList = ({
 type TechCatalogueListProps = {
 	expanded: boolean;
 	iconClassName: string;
-	itemClassName?: string;
 	items: TechCatalogueItemData[];
 };

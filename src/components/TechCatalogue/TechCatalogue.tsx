@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { TechCatalogueItemData } from './TechCatalogue.types';
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
 import { TechCatalogueContent } from './TechCatalogueContent/TechCatalogueContent';
+import { ItemClassNameProvider } from './TechCatalogueContext';
 import { TechCatalogueHeader } from './TechCatalogueHeader/TechCatalogueHeader';
 
 import styles from './TechCatalogue.module.scss';
@@ -27,12 +28,13 @@ export const TechCatalogue = ({
 				open={expanded}
 				title={title}
 			/>
-			<TechCatalogueContent
-				circle={circle}
-				expanded={expanded}
-				itemClassName={itemClassName}
-				items={items}
-			/>
+			<ItemClassNameProvider value={itemClassName}>
+				<TechCatalogueContent
+					circle={circle}
+					expanded={expanded}
+					items={items}
+				/>
+			</ItemClassNameProvider>
 			<TechCatalogueButton
 				expanded={expanded}
 				onClick={() => setExpanded(!expanded)}
