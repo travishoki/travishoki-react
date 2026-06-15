@@ -1,7 +1,5 @@
 @use 'styles' as *;
 
-$gap: 15px;
-
 // When an itemClassName grid is passed, defer layout to the Bootstrap row/col
 // classes (overrides the orientation display + gap rules above/below).
 .techCatalogue {

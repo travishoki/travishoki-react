@@ -31,38 +31,31 @@ export const TechCatalogueContent = ({
 	return (
 		<div className={styles.techCatalogueContent}>
 			<MotionAutoHeight trigger={expanded}>
-				<div
-					className={
-						expanded
-							? styles.techCatalogueVertical
-							: styles.techCatalogueHorizontal
-					}
-				>
-					{expanded ? (
-						TYPE_SECTIONS.map(({ label, type }) => {
-							const group = groupedTech[type];
+				{expanded ? (
+					TYPE_SECTIONS.map(({ label, type }) => {
+						const group = groupedTech[type];
 
-							if (group.length === 0) return null;
+						if (group.length === 0) return null;
 
-							return (
-								<TechCatalogueSectionGroup
-									key={type}
-									expanded={expanded}
-									iconClassName={iconClassName}
-									itemClassName={itemClassName}
-									items={group}
-									title={label}
-								/>
-							);
-						})
-					) : (
+						return (
+							<TechCatalogueSectionGroup
+								key={type}
+								iconClassName={iconClassName}
+								itemClassName={itemClassName}
+								items={group}
+								title={label}
+							/>
+						);
+					})
+				) : (
+					<div className={styles.techCatalogueHorizontal}>
 						<TechCatalogueList
 							expanded={expanded}
 							iconClassName={iconClassName}
 							items={items}
 						/>
-					)}
-				</div>
+					</div>
+				)}
 			</MotionAutoHeight>
 		</div>
 	);

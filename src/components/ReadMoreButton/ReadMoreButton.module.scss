@@ -9,6 +9,10 @@
 	padding: 0;
 	text-decoration: underline;
 
+	&:hover {
+		color: $blue-two;
+	}
+
 	i {
 		margin-right: 6px;
 	}

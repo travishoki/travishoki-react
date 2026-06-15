@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
-import { MotionExpand } from 'src/animations/MotionExpand';
+import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
 
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
-import styles from './TechCatalogueSectionGroup.module.scss';
+import contentStyles from '../TechCatalogueContent.module.scss';
 
 export const TechCatalogueSectionGroup = ({
-	expanded,
 	iconClassName,
 	itemClassName,
 	items,
@@ -18,27 +17,36 @@ export const TechCatalogueSectionGroup = ({
 	const [open, setOpen] = useState(true);
 
 	return (
-		<div className={styles.techCatalogueSectionGroup}>
+		<>
 			<TechCatalogueHeader
 				onToggle={() => setOpen(!open)}
 				open={open}
 				title={title}
 			/>
 
-			<MotionExpand isOpen={open}>
-				<TechCatalogueList
-					expanded={expanded}
-					iconClassName={iconClassName}
-					itemClassName={itemClassName}
-					items={items}
-				/>
-			</MotionExpand>
-		</div>
+			{/* Collapsing a section keeps the icons visible as a compact horizontal
+			    row (labels hidden), rather than hiding the section entirely. */}
+			<MotionAutoHeight trigger={open}>
+				<div
+					className={
+						open
+							? contentStyles.techCatalogueVertical
+							: contentStyles.techCatalogueHorizontal
+					}
+				>
+					<TechCatalogueList
+						expanded={open}
+						iconClassName={iconClassName}
+						itemClassName={open ? itemClassName : undefined}
+						items={items}
+					/>
+				</div>
+			</MotionAutoHeight>
+		</>
 	);
 };
 
 type TechCatalogueSectionGroupProps = {
-	expanded: boolean;
 	iconClassName: string;
 	itemClassName?: string;
 	items: TechCatalogueItemData[];
