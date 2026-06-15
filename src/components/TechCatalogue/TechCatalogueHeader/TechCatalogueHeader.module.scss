@@ -2,7 +2,7 @@
 
 .techCatalogueHeader {
 	align-items: center;
-	background: $blue-three;
+	background: $primary;
 	border: none;
 	color: $white;
 	cursor: pointer;
@@ -10,5 +10,10 @@
 	font-size: 14px;
 	font-weight: bold;
 	justify-content: space-between;
+	transition: background 0.3s ease;
 	width: 100%;
+
+	&:hover {
+		background: $secondary;
+	}
 }
