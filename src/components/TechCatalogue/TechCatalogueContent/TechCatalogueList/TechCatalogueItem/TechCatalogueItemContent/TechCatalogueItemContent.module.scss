@@ -1,0 +1,14 @@
+$iconW: 40px;
+
+.techCatalogueIcon {
+	height: $iconW;
+	width: $iconW;
+
+	&.techCatalogueIconCircle {
+		border-radius: 50%;
+	}
+
+	&.softwareCatalogueIconRounded {
+		border-radius: 22%;
+	}
+}

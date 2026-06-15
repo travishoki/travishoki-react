@@ -1,7 +1,5 @@
 @use 'styles' as *;
 
-$iconW: 40px;
-
 .techCatalogueItem {
 	position: relative;
 	width: fit-content;
@@ -38,17 +36,4 @@ $iconW: 40px;
 .techCatalogueItemExpanded {
 	align-items: center;
 	display: flex;
-}
-
-.techCatalogueIcon {
-	height: $iconW;
-	width: $iconW;
-
-	&.techCatalogueIconCircle {
-		border-radius: 50%;
-	}
-
-	&.softwareCatalogueIconRounded {
-		border-radius: 22%;
-	}
 }
