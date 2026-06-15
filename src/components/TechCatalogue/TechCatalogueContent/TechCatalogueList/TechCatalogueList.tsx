@@ -4,15 +4,10 @@ import classnames from 'classnames';
 
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
-import { MAX_COLUMNS, MAX_ITEM_WIDTH } from './TechCatalogueList.const';
+import { clamp } from './TechCatalogueItem/TechCatalogueItem.helpers';
+import { MAX_ITEM_WIDTH } from './TechCatalogueList.const';
 
 import styles from './TechCatalogueList.module.scss';
-
-const clamp = (num: number) => {
-	if (num > MAX_COLUMNS) return MAX_COLUMNS;
-
-	return num;
-};
 
 export const TechCatalogueList = ({
 	expanded,

@@ -4,17 +4,10 @@ import classNames from 'classnames';
 
 import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
 
+import { getExpandedStyle } from './TechCatalogueItem.helpers';
 import { TechCatalogueItemData } from '../../../TechCatalogue.types';
-import { COLUMNS_THREE, COLUMNS_TWO } from '../TechCatalogueList.const';
 
 import styles from './TechCatalogueItem.module.scss';
-
-const getExpandedStyle = (columns: number) => {
-	if (columns === COLUMNS_TWO) return styles.techCatalogueItemExpandedTwo;
-	if (columns === COLUMNS_THREE) return styles.techCatalogueItemExpandedThree;
-
-	return styles.techCatalogueItemExpandedOne;
-};
 
 export const TechCatalogueItem = ({
 	columns,
