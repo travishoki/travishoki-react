@@ -84,6 +84,15 @@ export const HowItsMadeList = () => {
 							</ItemLink>
 						</li>
 						<li>
+							Animated with{' '}
+							<ItemLink
+								href="https://motion.dev/docs/react"
+								title="CSS Modules Documentation"
+							>
+								Motion
+							</ItemLink>
+						</li>
+						<li>
 							ADA accessibility optimized using{' '}
 							<ItemLink
 								href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
