@@ -12,7 +12,7 @@ export const SubFooter = () => (
 	<div className={styles.subfooter}>
 		<div className={classNames(styles.contactInfo, 'm-2')}>
 			<div className={styles.socialContainer}>
-				<SocialIcons linkClassName={styles.subfooterSocial} />
+				<SocialIcons reverseColors />
 			</div>
 			<NavLink
 				className={classNames(styles.contactLink, 'active ms-3')}

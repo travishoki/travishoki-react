@@ -6,6 +6,10 @@
 }
 
 .contactInfo {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
 	@media (min-width: 500px) {
 		float: left;
 	}
@@ -14,18 +18,12 @@
 .contactLink {
 	color: $white;
 	line-height: 40px;
+
+	&:hover {
+		color: $gray-one;
+	}
 }
 
 .socialContainer {
 	float: left;
-}
-
-.subfooterSocial {
-	background: $white;
-	color: $blue-four;
-
-	&:hover {
-		background: $blue-four;
-		color: $white;
-	}
 }

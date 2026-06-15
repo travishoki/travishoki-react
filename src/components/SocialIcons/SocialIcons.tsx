@@ -4,11 +4,11 @@ import classNames from 'classnames';
 
 import styles from './SocialIcons.module.scss';
 
-export const SocialIcons = ({ className, linkClassName }: SocialIconsProps) => (
+export const SocialIcons = ({ className, reverseColors }: SocialIconsProps) => (
 	<ul className={classNames(styles.socialIcons, className)}>
 		<li>
 			<a
-				className={classNames(styles.link, linkClassName)}
+				className={classNames(styles.link, { [styles.reverse]: reverseColors })}
 				href="https://github.com/travishoki/"
 				rel="noreferrer"
 				target="_blank"
@@ -19,7 +19,7 @@ export const SocialIcons = ({ className, linkClassName }: SocialIconsProps) => (
 		</li>
 		<li>
 			<a
-				className={classNames(styles.link, linkClassName)}
+				className={classNames(styles.link, { [styles.reverse]: reverseColors })}
 				href="https://www.linkedin.com/in/travishoki"
 				rel="noreferrer"
 				target="_blank"
@@ -33,5 +33,5 @@ export const SocialIcons = ({ className, linkClassName }: SocialIconsProps) => (
 
 type SocialIconsProps = {
 	className?: string;
-	linkClassName?: string;
+	reverseColors?: boolean;
 };

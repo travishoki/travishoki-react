@@ -21,8 +21,6 @@ $size: 32px;
 
 .link {
 	@include border-radius(50%);
-	background: $blue-three;
-	color: $white;
 	cursor: pointer;
 	display: block;
 	height: 100%;
@@ -30,8 +28,23 @@ $size: 32px;
 	text-align: center;
 	width: 100%;
 
-	&:hover {
-		background: $blue-four;
+	&:not(.reverse) {
+		background: $blue-three;
+		color: $white;
+
+		&:hover {
+			background: $blue-four;
+		}
+	}
+
+	&.reverse {
+		background: $white;
+		color: $blue-four;
+
+		&:hover {
+			background: $blue-four;
+			color: $white;
+		}
 	}
 
 	i {
