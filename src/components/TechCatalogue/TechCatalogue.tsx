@@ -13,7 +13,7 @@ import styles from './TechCatalogue.module.scss';
 export const TechCatalogue = ({
 	circle = false,
 	initialExpanded = false,
-	itemClassName,
+	itemClassName = 'col-12',
 	items,
 	title,
 }: TechCatalogueProps) => {
