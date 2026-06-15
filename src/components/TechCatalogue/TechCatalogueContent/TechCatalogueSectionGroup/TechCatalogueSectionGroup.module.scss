@@ -1,4 +1,5 @@
 $gap: 12px;
+$iconW: 40px;
 
 .techCatalogueSectionGroupCollapsed {
 	ul {
@@ -14,24 +15,12 @@ $gap: 12px;
 
 .techCatalogueSectionGroupExpanded {
 	ul {
-		$iconW: 40px;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 
 		li {
 			margin-top: $gap;
-
-			a {
-				text-decoration: none;
-			}
-
-			p {
-				font-size: 14px;
-				line-height: $iconW;
-				line-height: 18px;
-				margin: 0 0 0 10px;
-			}
 		}
 	}
 }

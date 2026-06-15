@@ -24,7 +24,7 @@ export const TechCatalogueItemContent = ({
 	return (
 		<>
 			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
-			{expanded && <p>{label}</p>}
+			{expanded && <p className={styles.label}>{label}</p>}
 		</>
 	);
 };
