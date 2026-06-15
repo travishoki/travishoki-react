@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import { AnimatePresence } from 'motion/react';
+import { MotionListItem } from 'src/animations/MotionListItem';
+
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const ReadMoreList = ({
@@ -12,15 +15,22 @@ export const ReadMoreList = ({
 	const [expanded, setExpanded] = useState(initiallyExpanded);
 
 	const hasReadMore = items.length > collapsedCount;
-	const visibleItems =
-		expanded || !hasReadMore ? items : items.slice(0, collapsedCount);
+	const baseItems = hasReadMore ? items.slice(0, collapsedCount) : items;
+	const extraItems = hasReadMore ? items.slice(collapsedCount) : [];
 
 	return (
 		<>
 			<ul className={listClassName}>
-				{visibleItems.map((item, index) => (
+				{baseItems.map((item, index) => (
 					<li key={index}>{item}</li>
 				))}
+
+				<AnimatePresence initial={false}>
+					{expanded &&
+						extraItems.map((item, index) => (
+							<MotionListItem key={`extra-${index}`}>{item}</MotionListItem>
+						))}
+				</AnimatePresence>
 			</ul>
 
 			{hasReadMore && (

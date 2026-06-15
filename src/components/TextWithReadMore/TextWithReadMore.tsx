@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { MotionExpand } from 'src/animations/MotionExpand';
+
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const TextWithReadMore = ({
@@ -11,15 +13,19 @@ export const TextWithReadMore = ({
 
 	const hasMore = paragraphs.length > 1;
 
-	const visibleParagraphs = expanded ? paragraphs : paragraphs.slice(0, 1);
+	const [firstParagraph, ...restParagraphs] = paragraphs;
 
 	return (
 		<>
-			{visibleParagraphs.map((paragraph, index) => (
-				<p key={index} className="indent">
-					{paragraph}
-				</p>
-			))}
+			<p className="indent">{firstParagraph}</p>
+
+			<MotionExpand isOpen={expanded}>
+				{restParagraphs.map((paragraph, index) => (
+					<p key={index} className="indent">
+						{paragraph}
+					</p>
+				))}
+			</MotionExpand>
 
 			{hasMore && (
 				<ReadMoreButton

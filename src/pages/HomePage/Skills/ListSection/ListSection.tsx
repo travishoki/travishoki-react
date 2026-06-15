@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
+import { MotionExpand } from 'src/animations/MotionExpand';
+
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 import { useIsMobile } from '~helpers/useIsMobile';
 
@@ -22,7 +24,13 @@ export const ListSection = ({ list, title }: ListSectionProps) => {
 					<div className="col-md-6">
 						<ListColumn items={LIST_A} />
 					</div>
-					{(!isMobile || expanded) && (
+					{isMobile ? (
+						<MotionExpand isOpen={expanded}>
+							<div className="col-md-6">
+								<ListColumn items={LIST_B} />
+							</div>
+						</MotionExpand>
+					) : (
 						<div className="col-md-6">
 							<ListColumn items={LIST_B} />
 						</div>
