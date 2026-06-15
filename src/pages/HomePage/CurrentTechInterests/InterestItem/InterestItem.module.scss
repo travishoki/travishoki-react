@@ -1,4 +1,5 @@
 @import '../../../../styles/variables.scss';
+@import '../../../../styles/responsive.scss';
 
 .currentTechInterestsReadMore {
 	color: $white;
@@ -11,7 +12,12 @@
 }
 
 .interestItem {
-	flex: 0 0 100%;
-	scroll-snap-align: center;
 	text-align: left;
+
+	// Full-width, one-per-view only for the mobile carousel. On larger screens
+	// the Bootstrap col-md-4 grid handles the 3-column layout.
+	@include phone-down {
+		flex: 0 0 100%;
+		scroll-snap-align: center;
+	}
 }
