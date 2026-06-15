@@ -2,6 +2,8 @@
 @import '../../styles/responsive.scss';
 @import '../../styles/variables.scss';
 
+$size: 32px;
+
 .socialIcons {
 	align-items: center;
 	display: flex;
@@ -12,30 +14,27 @@
 	padding: 0;
 
 	li {
-		&:last-child {
-			margin: 0;
-		}
-
-		i {
-			&:hover {
-				background: $primary;
-			}
-		}
+		height: $size;
+		width: $size;
 	}
 }
 
-.circleIcon {
+.link {
 	@include border-radius(50%);
-	background: $white;
-	color: $gray-two;
+	background: $blue-three;
+	color: $white;
 	cursor: pointer;
-	height: 30px;
-	line-height: 30px;
+	display: block;
+	height: 100%;
+	line-height: $size;
 	text-align: center;
-	width: 30px;
+	width: 100%;
 
 	&:hover {
-		background: $gray-two;
-		color: $white;
+		background: $blue-four;
+	}
+
+	i {
+		font-size: 16px;
 	}
 }

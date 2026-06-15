@@ -16,8 +16,16 @@
 	line-height: 40px;
 }
 
-.subfooterSocial {
+.socialContainer {
 	float: left;
-	height: 40px;
-	line-height: 40px;
+}
+
+.subfooterSocial {
+	background: $white;
+	color: $blue-four;
+
+	&:hover {
+		background: $blue-four;
+		color: $white;
+	}
 }
