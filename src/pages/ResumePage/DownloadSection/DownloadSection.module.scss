@@ -1,0 +1,16 @@
+@import '../../../styles/responsive.scss';
+
+.resumeButtons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	max-width: 250px;
+
+	@include phone-down {
+		flex-direction: column;
+	}
+
+	@include tablet-up {
+		flex-direction: row;
+	}
+}

@@ -10,11 +10,10 @@
 
 .btn-secondary {
 	background: $secondary;
-	border: solid 3px $secondary;
+	border: none;
 	transition: background 0.3s ease;
 
 	&:hover {
 		background: $primary;
-		border: solid 3px $secondary;
 	}
 }

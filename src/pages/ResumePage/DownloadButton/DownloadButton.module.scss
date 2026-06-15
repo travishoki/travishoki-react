@@ -1,5 +1,14 @@
+@import '../../../styles/variables.scss';
+
 .downloadButton {
-	display: block;
-	margin: 0 auto 5px;
-	width: 200px;
+	font-size: 16px;
+	margin-bottom: 2px;
+	min-width: 200px;
+}
+
+.caption {
+	color: $blue-five;
+	font-size: 12px;
+	margin: 0;
+	text-align: center;
 }
