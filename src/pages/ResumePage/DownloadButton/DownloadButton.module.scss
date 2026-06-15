@@ -1,16 +1,57 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/responsive.scss';
 
+$button-height: 40px;
+
+.buttonContainer {
+}
+
 .downloadButton {
+	align-items: center;
+	color: $white;
+	display: flex;
 	font-size: 16px;
-	margin-bottom: 2px;
+	text-decoration: none;
 
 	@include phone-down {
+		margin: 0 auto;
+		max-width: 500px;
 		width: 100%;
 	}
 
 	@include tablet-up {
 		width: 200px;
+	}
+
+	.buttonText,
+	.icon {
+		height: $button-height;
+		line-height: $button-height;
+	}
+
+	.buttonText {
+		background: $blue-three;
+		flex: 1;
+		text-align: center;
+	}
+
+	.icon {
+		background: $blue-four;
+		flex: 0 0 $button-height;
+		font-size: 16px;
+		text-align: center;
+		width: $button-height;
+	}
+
+	&:hover {
+		color: $gray-one;
+
+		.buttonText {
+			background: $blue-four;
+		}
+		.icon {
+			background: $blue-five;
+		}
 	}
 }
 
@@ -18,5 +59,6 @@
 	color: $white;
 	font-size: 12px;
 	margin: 0;
+	margin-bottom: 2px;
 	text-align: center;
 }

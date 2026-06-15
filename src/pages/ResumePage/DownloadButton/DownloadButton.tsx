@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes } from 'react';
 
 import classNames from 'classnames';
 
@@ -6,22 +6,21 @@ import styles from './DownloadButton.module.scss';
 
 export const DownloadButton = ({
 	caption,
-	href,
 	icon,
 	text,
-	title,
+	...rest
 }: DownloadButtonProps) => (
-	<div>
+	<div className={styles.buttonContainer}>
+		{caption && <p className={styles.caption}>({caption})</p>}
 		<a
-			className={`btn btn-secondary btn-lg ${styles.downloadButton}`}
-			href={href}
+			className={styles.downloadButton}
 			rel="noreferrer"
 			target="_blank"
-			title={title}
+			{...rest}
 		>
-			{text} <i className={classNames('fa', icon)} />
+			<div className={styles.buttonText}>{text}</div>{' '}
+			<i className={classNames('fa', icon, styles.icon)} />
 		</a>
-		{caption && <p className={styles.caption}>({caption})</p>}
 	</div>
 );
 
@@ -31,4 +30,4 @@ type DownloadButtonProps = {
 	icon: string;
 	text: string;
 	title: string;
-};
+} & AnchorHTMLAttributes<HTMLAnchorElement>;
