@@ -6,7 +6,7 @@ import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
 import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
 
-import contentStyles from '../TechCatalogueContent.module.scss';
+import styles from './TechCatalogueSectionGroup.module.scss';
 
 export const TechCatalogueSectionGroup = ({
 	items,
@@ -28,8 +28,8 @@ export const TechCatalogueSectionGroup = ({
 				<div
 					className={
 						open
-							? contentStyles.techCatalogueExpanded
-							: contentStyles.techCatalogueCollapsed
+							? styles.techCatalogueSectionGroupExpanded
+							: styles.techCatalogueSectionGroupCollapsed
 					}
 				>
 					<TechCatalogueList expanded={open} items={items} />

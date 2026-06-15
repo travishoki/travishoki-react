@@ -6,7 +6,6 @@ import { TechCatalogueItemData } from '../../../TechCatalogue.types';
 import { useCircle, useItemClassName } from '../../../TechCatalogueContext';
 
 import styles from './TechCatalogueItem.module.scss';
-import contentStyles from '../../TechCatalogueContent.module.scss';
 
 export const TechCatalogueItem = ({
 	expanded,
@@ -20,10 +19,10 @@ export const TechCatalogueItem = ({
 	// Content and drilled down. The icon classes live in Content's module so the
 	// `.techCatalogueExpanded .techCatalogueIcon` margin rule still matches.
 	const iconClassName = classNames(
-		contentStyles.techCatalogueIcon,
+		styles.techCatalogueIcon,
 		circle
-			? contentStyles.techCatalogueIconCircle
-			: contentStyles.softwareCatalogueIconRounded,
+			? styles.techCatalogueIconCircle
+			: styles.softwareCatalogueIconRounded,
 	);
 
 	return (

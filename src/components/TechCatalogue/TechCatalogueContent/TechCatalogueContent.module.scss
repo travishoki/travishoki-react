@@ -8,27 +8,16 @@ $iconW: 40px;
 	border-top: none;
 }
 
-.techCatalogueContentExpendedContent {
+.techCatalogueContentExpended {
 	display: flex;
 	flex-direction: column;
 	gap: $gap;
 	padding: $gap;
 }
 
-.techCatalogueIcon {
-	height: $iconW;
-	width: $iconW;
-}
+.techCatalogueContentCollapsed {
+	border: solid 1px purple;
 
-.techCatalogueIconCircle {
-	border-radius: 50%;
-}
-
-.softwareCatalogueIconRounded {
-	border-radius: 22%;
-}
-
-.techCatalogueCollapsed {
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -37,33 +26,5 @@ $iconW: 40px;
 		list-style-type: none;
 		margin: $gap;
 		padding: 0;
-	}
-}
-
-.techCatalogueExpanded {
-	ul {
-		$iconW: 40px;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-
-		li {
-			margin-top: $gap;
-
-			a {
-				text-decoration: none;
-			}
-
-			p {
-				font-size: 14px;
-				line-height: $iconW;
-				line-height: 18px;
-				margin: 0;
-			}
-		}
-	}
-
-	.techCatalogueIcon {
-		margin-right: 10px;
 	}
 }
