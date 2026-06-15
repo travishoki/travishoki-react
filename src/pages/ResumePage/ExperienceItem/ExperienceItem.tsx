@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
 
 import { BulletedList } from '~components/BulletedList/BulletedList';
 import { ImageContainer } from '~components/StaggeredList/StaggeredItem/ImageContainer/ImageContainer';
@@ -26,15 +27,17 @@ export const ExperienceItem = ({
 }: ExperienceItemPropTypes) => (
 	<StaggeredItem className={styles.experienceItem}>
 		<ImageContainer className={styles.imageContainer}>
-			<img
-				alt={`${title} Logo`}
-				className={classNames(
-					styles.staggeredItemImage,
-					'round',
-					styles.experienceImage,
-				)}
-				src={img}
-			/>
+			<DivMaybeAnimateScale animate>
+				<img
+					alt={`${title} Logo`}
+					className={classNames(
+						styles.staggeredItemImage,
+						'round',
+						styles.experienceImage,
+					)}
+					src={img}
+				/>
+			</DivMaybeAnimateScale>
 		</ImageContainer>
 
 		<InfoBox>
