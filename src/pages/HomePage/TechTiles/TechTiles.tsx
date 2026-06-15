@@ -9,7 +9,7 @@ export const TechTiles = () => (
 		<TechListCatalogue
 			itemClassName="col-6 col-md-4"
 			list={DISPLAYED_LIST}
-			title="Tech I have worked with:"
+			title="Tech I have worked with"
 		/>
 	</section>
 );
