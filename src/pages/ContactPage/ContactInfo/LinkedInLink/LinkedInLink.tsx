@@ -2,14 +2,11 @@ import React from 'react';
 
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
 
-import styles from './LinkedInLink.module.scss';
+import { ContactLink } from '../ContactLink/ContactLink';
 
 export const LinkedInLink = () => (
-	<a
-		className={styles.linkedLink}
+	<ContactLink
 		href="https://www.linkedin.com/in/travishoki"
-		rel="noreferrer"
-		target="_blank"
 		title="Travis's Linked In"
 	>
 		<img
@@ -20,5 +17,5 @@ export const LinkedInLink = () => (
 		/>
 		<p>Connect with me on</p>
 		<i className="fa fa-linkedin" />
-	</a>
+	</ContactLink>
 );

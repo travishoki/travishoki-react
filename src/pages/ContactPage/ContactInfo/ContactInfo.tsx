@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
+import { GitLink } from './GitLink/GitLink';
 import { LinkedInLink } from './LinkedInLink/LinkedInLink';
 
 import styles from './ContactInfo.module.scss';
@@ -15,5 +16,6 @@ export const ContactInfo = () => (
 		<ContactInfoGrid />
 
 		<LinkedInLink />
+		<GitLink />
 	</>
 );
