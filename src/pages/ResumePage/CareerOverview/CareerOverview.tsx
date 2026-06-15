@@ -1,11 +1,15 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
+import styles from './CareerOverview.module.scss';
+
 export const CareerOverview = () => {
 	return (
 		<section className="primary">
 			<div className="boxed">
 				<h2>Career Overview</h2>
-				<p className="indent">
+				<p className={classNames('indent', styles.careerOverviewParagraph)}>
 					Highly accomplished Senior Frontend Engineer with over 14 years of
 					experience building, scaling, and optimizing enterprise-grade web
 					applications. Proven track record of architecting robust
