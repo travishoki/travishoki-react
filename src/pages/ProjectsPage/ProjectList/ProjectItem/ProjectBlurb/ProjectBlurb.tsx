@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { getFirstParagraph } from '~helpers/arrays';
 
-import { ProjectType } from '../../ProjectsPage.types';
+import { ProjectType } from '../../../ProjectsPage.types';
 
 import styles from './ProjectBlurb.module.scss';
 

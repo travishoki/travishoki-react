@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
 
-import { ProjectType } from '../ProjectsPage.types';
+import { ProjectType } from '../../ProjectsPage.types';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
 import { ProjectImageWithPopup } from './ProjectImageWithPopup/ProjectImageWithPopup';
 

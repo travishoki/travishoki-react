@@ -2,9 +2,9 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import classNames from 'classnames';
 
+import { ProjectItem } from './ProjectItem/ProjectItem';
 import { MAX_ITEM_WIDTH } from './ProjectList.const';
 import { clamp, getExpandedStyle } from './ProjectList.helpers';
-import { ProjectItem } from '../ProjectItem/ProjectItem';
 import { ProjectType } from '../ProjectsPage.types';
 
 import styles from './ProjectList.module.scss';
