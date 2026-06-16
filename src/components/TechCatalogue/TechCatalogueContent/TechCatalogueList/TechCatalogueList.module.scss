@@ -1,5 +1,5 @@
 $gap: 12px;
-$item-max-width: 250px;
+$item-max-width: 200px;
 
 .techCatalogueList {
 	display: flex;
@@ -15,12 +15,12 @@ $item-max-width: 250px;
 
 	&.techCatalogueListExpanded {
 		display: grid;
-		gap: $gap;
 
 		// Each item is capped at $item-max-width (it never stretches wider); the
 		// browser fits as many columns as the width allows. min(…, 100%) lets the
 		// item shrink below the cap on very narrow screens so it can't overflow.
 		// justify-content centers the leftover space across the row.
 		grid-template-columns: repeat(auto-fill, min(#{$item-max-width}, 100%));
+		row-gap: $gap;
 	}
 }
