@@ -10,16 +10,16 @@ import {
 
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 
-import styles from './ProjectImageWithPopup.module.scss';
+import styles from './ProjectImageWithOverlay.module.scss';
 
-export const ProjectImageWithPopup = ({
+export const ProjectImageWithOverlay = ({
 	className,
 	company,
 	companySlug,
 	itemKey,
 	projectLink,
 	subtitle,
-}: ProjectImageWithPopupProps) => {
+}: ProjectImageWithOverlayProps) => {
 	const imgAlt = getImgAltText(company, subtitle);
 
 	return (
@@ -40,7 +40,7 @@ export const ProjectImageWithPopup = ({
 	);
 };
 
-type ProjectImageWithPopupProps = {
+type ProjectImageWithOverlayProps = {
 	className?: string;
 	company: string;
 	companySlug: string;
