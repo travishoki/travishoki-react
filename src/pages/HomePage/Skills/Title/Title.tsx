@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CountUp } from 'src/animations/CountUp';
 
-import { getExperienceYears } from '../../HomePage.helpers';
+import { getExperienceYears } from './Title.helpers';
 
 const yearsOfExperience = getExperienceYears();
 

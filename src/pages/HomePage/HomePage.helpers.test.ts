@@ -1,7 +1,7 @@
 /* global describe, it, jest, afterEach */
 import expect from 'expect';
 
-import { getExperienceYears } from './HomePage.helpers';
+import { getExperienceYears } from './Skills/Title/Title.helpers';
 
 describe('getExperienceYears', () => {
 	afterEach(() => {
