@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import { Finder } from './Finder/Finder';
 import { NoResults } from './NoResults/NoResults';
-import { Projects } from './Projects/Projects';
+import { ProjectList } from './ProjectList/ProjectList';
 import { FILTER_LIST } from './ProjectsPage.const';
 import { ViewControl } from './ViewControl/ViewControl';
 import { useProjectFiltering } from './hooks/useProjectFiltering';
@@ -54,7 +54,7 @@ export const ProjectsPage = () => {
 					<>
 						<ViewControl grid={grid} toggleView={() => setGrid(!grid)} />
 
-						<Projects
+						<ProjectList
 							grid={grid}
 							projectLink={projectLink}
 							projects={projects}

@@ -1,6 +1,6 @@
-import { COLUMNS_THREE, COLUMNS_TWO, MAX_COLUMNS } from './Projects.const';
+import { COLUMNS_THREE, COLUMNS_TWO, MAX_COLUMNS } from './ProjectList.const';
 
-import styles from './Projects.module.scss';
+import styles from './ProjectList.module.scss';
 
 export const getExpandedStyle = (columns: number) => {
 	if (columns === COLUMNS_TWO) return styles.projectsGridTwo;

@@ -2,18 +2,18 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import classNames from 'classnames';
 
-import { MAX_ITEM_WIDTH } from './Projects.const';
-import { clamp, getExpandedStyle } from './Projects.helpers';
+import { MAX_ITEM_WIDTH } from './ProjectList.const';
+import { clamp, getExpandedStyle } from './ProjectList.helpers';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
 import { ProjectType } from '../ProjectsPage.types';
 
-import styles from './Projects.module.scss';
+import styles from './ProjectList.module.scss';
 
-export const Projects = ({
+export const ProjectList = ({
 	grid = false,
 	projectLink,
 	projects = [],
-}: ProjectsProps) => {
+}: ProjectListProps) => {
 	const count = projects.length;
 
 	const ulRef = useRef(null);
@@ -52,7 +52,7 @@ export const Projects = ({
 	);
 };
 
-type ProjectsProps = {
+type ProjectListProps = {
 	grid: boolean;
 	projectLink: string;
 	projects: ProjectType[];
