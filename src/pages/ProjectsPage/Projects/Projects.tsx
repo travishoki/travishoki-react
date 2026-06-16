@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { getGridCountClass, getResultsCountClass } from './Projects.helpers';
 import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
 import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
@@ -12,29 +14,28 @@ export const Projects = ({
 	projectLink,
 	projects = [],
 }: ProjectsProps) => {
-	if (grid) {
-		const count = projects.length;
+	const count = projects.length;
 
-		return (
-			<ul className={`${styles.projectsGrid} ${getResultsCountClass(count)}`}>
-				{projects.map((project, index) => (
-					<li key={index}>
+	return (
+		<ul
+			className={classNames(
+				grid ? styles.projectsGrid : styles.projectsList,
+				getResultsCountClass(count),
+			)}
+		>
+			{projects.map((project, index) => (
+				<li key={index}>
+					{grid ? (
 						<ProjectItemGrid
 							className={getGridCountClass(count)}
 							projectLink={projectLink}
 							{...project}
 						/>
-					</li>
-				))}
-			</ul>
-		);
-	}
-
-	return (
-		<ul className={styles.projectsList}>
-			{projects.map((project, index) => (
-				<li key={index}>
-					<ProjectItemLine projectLink={projectLink} {...project} />
+					) : (
+						<li key={index}>
+							<ProjectItemLine projectLink={projectLink} {...project} />
+						</li>
+					)}
 				</li>
 			))}
 		</ul>
