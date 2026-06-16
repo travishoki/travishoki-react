@@ -1,7 +1,5 @@
 import React from 'react';
 
-import classnames from 'classnames';
-
 import { Finder } from './Finder/Finder';
 import { NoResults } from './NoResults/NoResults';
 import { ProjectList } from './ProjectList/ProjectList';
