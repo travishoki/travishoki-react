@@ -6,7 +6,7 @@ import { ProjectLink } from './ProjectLink/ProjectLink';
 
 import styles from './ProjectImageOverlay.module.scss';
 
-const logos = require.context('../../../../images/clients', true);
+const logos = require.context('../../../../../images/clients', true);
 
 export const ProjectImageOverlay = ({
 	company,

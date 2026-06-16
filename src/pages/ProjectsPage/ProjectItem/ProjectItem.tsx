@@ -3,9 +3,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
 
-import { ProjectImageWithPopup } from '../ProjectImageWithPopup/ProjectImageWithPopup';
 import { ProjectType } from '../ProjectsPage.types';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
+import { ProjectImageWithPopup } from './ProjectImageWithPopup/ProjectImageWithPopup';
 
 import styles from './ProjectItem.module.scss';
 
