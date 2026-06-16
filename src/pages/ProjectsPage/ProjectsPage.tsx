@@ -31,12 +31,8 @@ export const ProjectsPage = () => {
 	return (
 		<div className="projects" id="container">
 			<h1>Projects</h1>
-			<div
-				className={classnames(styles.projectsContainer, {
-					grid,
-					list: !grid,
-				})}
-			>
+
+			<div className={styles.projectsContainer}>
 				<Finder
 					filter={filter}
 					filterList={FILTER_LIST}
