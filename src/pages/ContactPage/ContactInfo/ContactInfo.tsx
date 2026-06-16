@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Typewriter } from 'src/animations/Typewriter';
+
 import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
 import { GitLink } from './GitLink/GitLink';
 import { LinkedInLink } from './LinkedInLink/LinkedInLink';
@@ -10,7 +12,9 @@ export const ContactInfo = () => (
 	<>
 		<div className={`${styles.contactInfoHeader} mb-3`}>
 			<h2>Get In Touch With Me</h2>
-			<p>Travis Hoki</p>
+			<p>
+				<Typewriter text="Travis Hoki" />
+			</p>
 		</div>
 
 		<ContactInfoGrid />
