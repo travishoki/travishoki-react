@@ -32,9 +32,7 @@ export const Projects = ({
 							{...project}
 						/>
 					) : (
-						<li key={index}>
-							<ProjectItemLine projectLink={projectLink} {...project} />
-						</li>
+						<ProjectItemLine projectLink={projectLink} {...project} />
 					)}
 				</li>
 			))}
