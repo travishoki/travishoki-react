@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 
 import { ProjectType } from '../../ProjectsPage.types';
 import { ProjectBlurb } from './ProjectBlurb/ProjectBlurb';
-import { ProjectImageWithOverlay } from './ProjectImageWithOverlay/ProjectImageWithOverlay';
+import { ProjectImage } from './ProjectImage/ProjectImage';
 
 import styles from './ProjectItem.module.scss';
 
@@ -28,7 +28,7 @@ export const ProjectItem = ({
 			layout="position"
 			transition={TRANSITION}
 		>
-			<ProjectImageWithOverlay
+			<ProjectImage
 				className={grid ? '' : styles.lineItemImage}
 				company={company}
 				companySlug={companySlug}
@@ -36,6 +36,7 @@ export const ProjectItem = ({
 				projectLink={projectLink}
 				subtitle={subtitle}
 			/>
+
 			{!grid && (
 				<ProjectBlurb
 					className={grid ? '' : styles.lineItemBlurb}
