@@ -1,12 +1,9 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React from 'react';
 
 import classnames from 'classnames';
 
-import { cap } from '~helpers/numbers';
-
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
-import { MAX_COLUMNS, MAX_ITEM_WIDTH } from './TechCatalogueList.const';
 
 import styles from './TechCatalogueList.module.scss';
 
@@ -14,22 +11,6 @@ export const TechCatalogueList = ({
 	expanded,
 	items,
 }: TechCatalogueListProps) => {
-	const ulRef = useRef(null);
-
-	const [columns, setColumns] = useState(1);
-
-	useLayoutEffect(() => {
-		if (!ulRef.current) return;
-
-		const { clientWidth } = ulRef.current;
-
-		const newColumns = cap(
-			Math.floor(clientWidth / MAX_ITEM_WIDTH),
-			MAX_COLUMNS,
-		);
-		setColumns(newColumns);
-	}, []);
-
 	if (items.length === 0) return null;
 
 	return (
@@ -40,15 +21,9 @@ export const TechCatalogueList = ({
 					? styles.techCatalogueListExpanded
 					: styles.techCatalogueListCollapsed,
 			)}
-			ref={ulRef}
 		>
 			{items.map((item, index) => (
-				<TechCatalogueItem
-					key={index}
-					columns={columns}
-					expanded={expanded}
-					{...item}
-				/>
+				<TechCatalogueItem key={index} expanded={expanded} {...item} />
 			))}
 		</ul>
 	);

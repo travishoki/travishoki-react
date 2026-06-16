@@ -5,7 +5,6 @@ import { motion } from 'motion/react';
 
 import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
 
-import { getExpandedStyle } from './TechCatalogueItem.helpers';
 import { TechCatalogueItemData } from '../../../TechCatalogue.types';
 
 import styles from './TechCatalogueItem.module.scss';
@@ -13,17 +12,13 @@ import styles from './TechCatalogueItem.module.scss';
 const TRANSITION = { duration: 0.3, ease: 'easeInOut' } as const;
 
 export const TechCatalogueItem = ({
-	columns,
 	expanded,
 	image,
 	label,
 }: TechCatalogueItemProps) => {
 	const circle = useCircle();
 
-	const itemClassName = classNames(
-		styles.techCatalogueItem,
-		expanded ? getExpandedStyle(columns) : '',
-	);
+	const itemClassName = classNames(styles.techCatalogueItem);
 
 	// Derived from the circle context here at the leaf.
 	const iconClassName = classNames(
@@ -50,6 +45,5 @@ export const TechCatalogueItem = ({
 };
 
 type TechCatalogueItemProps = TechCatalogueItemData & {
-	columns: number;
 	expanded: boolean;
 };
