@@ -5,6 +5,8 @@ import { InterestItem } from '../InterestItem/InterestItem';
 
 import styles from './InterestColumns.module.scss';
 
+export const STAGGER_SECONDS = 0.15;
+
 export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 	({ onScroll }, ref) => (
 		<div
@@ -13,7 +15,7 @@ export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 			ref={ref}
 		>
 			{CURRENT_TECH_INTERESTS.map((item, index) => (
-				<InterestItem key={index} {...item} />
+				<InterestItem key={index} delay={index * STAGGER_SECONDS} item={item} />
 			))}
 		</div>
 	),
