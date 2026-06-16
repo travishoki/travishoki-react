@@ -2,10 +2,11 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import classnames from 'classnames';
 
+import { cap } from '~helpers/numbers';
+
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
-import { clamp } from './TechCatalogueItem/TechCatalogueItem.helpers';
-import { MAX_ITEM_WIDTH } from './TechCatalogueList.const';
+import { MAX_COLUMNS, MAX_ITEM_WIDTH } from './TechCatalogueList.const';
 
 import styles from './TechCatalogueList.module.scss';
 
@@ -22,7 +23,10 @@ export const TechCatalogueList = ({
 
 		const { clientWidth } = ulRef.current;
 
-		const newColumns = clamp(Math.floor(clientWidth / MAX_ITEM_WIDTH));
+		const newColumns = cap(
+			Math.floor(clientWidth / MAX_ITEM_WIDTH),
+			MAX_COLUMNS,
+		);
 		setColumns(newColumns);
 	}, []);
 

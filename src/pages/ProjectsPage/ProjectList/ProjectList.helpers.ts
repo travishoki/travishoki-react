@@ -1,16 +1,10 @@
-import { COLUMNS_THREE, COLUMNS_TWO, MAX_COLUMNS } from './ProjectList.const';
-
 import styles from './ProjectList.module.scss';
 
 export const getExpandedStyle = (columns: number) => {
-	if (columns === COLUMNS_TWO) return styles.projectsGridTwo;
-	if (columns === COLUMNS_THREE) return styles.projectsGridThree;
+	/* eslint-disable no-magic-numbers */
+	if (columns === 2) return styles.projectsGridTwo;
+	if (columns === 3) return styles.projectsGridThree;
+	/* eslint-enable no-magic-numbers */
 
 	return styles.projectsGridTwo;
-};
-
-export const clamp = (num: number) => {
-	if (num > MAX_COLUMNS) return MAX_COLUMNS;
-
-	return num;
 };

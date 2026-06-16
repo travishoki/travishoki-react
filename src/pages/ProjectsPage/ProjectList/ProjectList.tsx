@@ -2,9 +2,11 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import classNames from 'classnames';
 
+import { cap } from '~helpers/numbers';
+
 import { ProjectItem } from './ProjectItem/ProjectItem';
-import { MAX_ITEM_WIDTH } from './ProjectList.const';
-import { clamp, getExpandedStyle } from './ProjectList.helpers';
+import { MAX_COLUMNS, MAX_ITEM_WIDTH } from './ProjectList.const';
+import { getExpandedStyle } from './ProjectList.helpers';
 import { ProjectType } from '../ProjectsPage.types';
 
 import styles from './ProjectList.module.scss';
@@ -25,7 +27,10 @@ export const ProjectList = ({
 
 		const { clientWidth } = ulRef.current;
 
-		const newColumns = clamp(Math.floor(clientWidth / MAX_ITEM_WIDTH));
+		const newColumns = cap(
+			Math.floor(clientWidth / MAX_ITEM_WIDTH),
+			MAX_COLUMNS,
+		);
 		setColumns(newColumns);
 	}, []);
 
