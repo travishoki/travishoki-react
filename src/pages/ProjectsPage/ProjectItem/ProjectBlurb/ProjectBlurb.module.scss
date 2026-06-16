@@ -1,6 +1,8 @@
+$gap: 12px;
+
 .projectBlurb {
 	min-width: 0;
-	padding: 0 20px;
+	padding-left: $gap;
 }
 
 .company {

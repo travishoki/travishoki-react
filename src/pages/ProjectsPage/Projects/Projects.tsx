@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import classNames from 'classnames';
 
-import { getGridCountClass, getResultsCountClass } from './Projects.helpers';
-import { ProjectItemGrid } from '../ProjectItemGrid/ProjectItemGrid';
-import { ProjectItemLine } from '../ProjectItemLine/ProjectItemLine';
+import { MAX_ITEM_WIDTH } from './Projects.const';
+import { clamp, getExpandedStyle } from './Projects.helpers';
+import { ProjectItem } from '../ProjectItem/ProjectItem';
 import { ProjectType } from '../ProjectsPage.types';
 
 import styles from './Projects.module.scss';
@@ -16,25 +16,37 @@ export const Projects = ({
 }: ProjectsProps) => {
 	const count = projects.length;
 
+	const ulRef = useRef(null);
+
+	const [columns, setColumns] = useState(1);
+
+	useLayoutEffect(() => {
+		if (!ulRef.current) return;
+
+		const { clientWidth } = ulRef.current;
+
+		const newColumns = clamp(Math.floor(clientWidth / MAX_ITEM_WIDTH));
+		setColumns(newColumns);
+	}, []);
+
+	if (count === 0) return 0;
+
 	return (
 		<ul
 			className={classNames(
+				styles.projects,
 				grid ? styles.projectsGrid : styles.projectsList,
-				getResultsCountClass(count),
+				grid ? getExpandedStyle(columns) : '',
 			)}
+			ref={ulRef}
 		>
 			{projects.map((project, index) => (
-				<li key={index}>
-					{grid ? (
-						<ProjectItemGrid
-							className={getGridCountClass(count)}
-							projectLink={projectLink}
-							{...project}
-						/>
-					) : (
-						<ProjectItemLine projectLink={projectLink} {...project} />
-					)}
-				</li>
+				<ProjectItem
+					key={index}
+					grid={grid}
+					project={project}
+					projectLink={projectLink}
+				/>
 			))}
 		</ul>
 	);

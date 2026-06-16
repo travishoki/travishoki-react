@@ -1,0 +1,20 @@
+@use 'styles' as *;
+
+.projectItem {
+	position: relative;
+}
+
+.lineItem {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+}
+
+.lineItemImage {
+	flex: 0 0 30%;
+}
+
+.lineItemBlurb {
+	flex: 0 0 70%;
+}

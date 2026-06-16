@@ -1,76 +1,30 @@
 @use 'styles' as *;
 
-.projectsGrid {
+$gap: 12px;
+
+.projects {
+	flex-direction: row;
+	flex-wrap: wrap;
 	list-style: none;
-	margin: 0 auto 60px;
+	margin: 0;
 	overflow: hidden;
 	padding: 0;
-}
 
-.results1 {
-	max-width: 250px;
-}
-
-.results2 {
-	max-width: 500px;
-}
-
-.results3 {
-	max-width: 750px;
-}
-
-.results2,
-.results3,
-.resultsFull {
-	@media (max-width: 349px) {
-		max-width: 250px;
+	&.projectsGrid {
+		display: grid;
+		gap: $gap;
 	}
 
-	@media (min-width: 350px) and (max-width: 499px) {
-		max-width: 500px;
-	}
-}
-
-.results2GridItem,
-.results3GridItem,
-.resultsFullGridItem {
-	@media (max-width: 349px) {
-		width: 100%;
+	&.projectsGridTwo {
+		grid-template-columns: 1fr 1fr;
 	}
 
-	@media (min-width: 350px) and (max-width: 499px) {
-		width: 50%;
-	}
-}
-
-.resultsFull {
-	@media (min-width: 500px) and (max-width: 767px) {
-		max-width: 750px;
-	}
-}
-
-.results1GridItem {
-	width: 100%;
-}
-.results2GridItem {
-	width: 50%;
-}
-.results3GridItem {
-	width: 33.33333333%;
-}
-.resultsFullGridItem {
-	@media (min-width: 500px) and (max-width: 767px) {
-		width: 33.33333333%;
+	&.projectsGridThree {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	@include tablet-up {
-		width: 25%;
+	&.projectsList {
+		display: flex;
+		row-gap: $gap;
 	}
-}
-
-.projectsList {
-	list-style: none;
-	margin: 0 auto 60px;
-	overflow: hidden;
-	padding: 0;
 }

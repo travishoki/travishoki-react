@@ -3,12 +3,8 @@
 .projectImageWithPopup {
 	cursor: pointer;
 	position: relative;
+}
 
-	@include phone-down {
-		flex: 0 0 33%;
-	}
-
-	@include tablet-up {
-		flex: 0 0 250px;
-	}
+.img {
+	width: 100%;
 }

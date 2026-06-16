@@ -18,7 +18,11 @@ export const ProjectImageOverlay = ({
 		<Link to={`${projectLink}/${itemKey}`}>
 			<div className={styles.projectImageOverlayInner}>
 				<div className={styles.projectImageOverlayContent}>
-					<img alt={company} src={logos(`./${companySlug}.jpg`)} />
+					<img
+						alt={company}
+						className="mb-2"
+						src={logos(`./${companySlug}.jpg`)}
+					/>
 					<ProjectLink />
 				</div>
 				<div className={styles.projectImageOverlayOverlay} />

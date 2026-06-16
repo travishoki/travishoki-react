@@ -1,21 +1,16 @@
+import { COLUMNS_THREE, COLUMNS_TWO, MAX_COLUMNS } from './Projects.const';
+
 import styles from './Projects.module.scss';
 
-export const getResultsCountClass = (num: number) => {
-	const MAX_COLUMN_COUNT = 4;
+export const getExpandedStyle = (columns: number) => {
+	if (columns === COLUMNS_TWO) return styles.projectsGridTwo;
+	if (columns === COLUMNS_THREE) return styles.projectsGridThree;
 
-	if (num < MAX_COLUMN_COUNT) {
-		return styles[`results${num}`];
-	}
-
-	return styles.resultsFull;
+	return styles.projectsGridTwo;
 };
 
-export const getGridCountClass = (num: number) => {
-	const MAX_COLUMN_COUNT = 4;
+export const clamp = (num: number) => {
+	if (num > MAX_COLUMNS) return MAX_COLUMNS;
 
-	if (num < MAX_COLUMN_COUNT) {
-		return styles[`results${num}GridItem`];
-	}
-
-	return styles.resultsFullGridItem;
+	return num;
 };

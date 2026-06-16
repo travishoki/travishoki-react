@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../ProjectsPage.types';
@@ -7,6 +9,7 @@ import { ProjectType } from '../../ProjectsPage.types';
 import styles from './ProjectBlurb.module.scss';
 
 export const ProjectBlurb = ({
+	className,
 	company,
 	description,
 	subtitle,
@@ -14,7 +17,7 @@ export const ProjectBlurb = ({
 	const desc = getFirstParagraph(description);
 
 	return (
-		<div className={styles.projectBlurb}>
+		<div className={classNames(styles.projectBlurb, className)}>
 			<div className="mb-2">
 				<p className={styles.company}>{company}</p>
 				{subtitle && <p className={styles.subtitle}>{subtitle}</p>}
@@ -24,7 +27,6 @@ export const ProjectBlurb = ({
 	);
 };
 
-type ProjectBlurbProps = Pick<
-	ProjectType,
-	'company' | 'description' | 'subtitle'
->;
+type ProjectBlurbProps = {
+	className: string;
+} & Pick<ProjectType, 'company' | 'description' | 'subtitle'>;
