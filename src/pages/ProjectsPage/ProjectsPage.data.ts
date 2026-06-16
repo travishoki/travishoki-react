@@ -49,7 +49,21 @@ const PROJECTS: ProjectInput[] = [
 			'The cards are styled like Pokemon cards, just for fun.',
 			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
-		learned: '',
+		gallery: [
+			{
+				filename: 'food-cards-1.jpg',
+			},
+			{
+				caption: 'Fuzzy search to find similar suggested searches',
+				filename: 'food-cards-2.jpg',
+			},
+			{
+				caption:
+					'Whether or not a product is "instock" is stored in the Firebase database.',
+				filename: 'food-cards-3.jpg',
+			},
+		],
+		learned: ['How to implement a "fuzzy" search'],
 		techs: [
 			REACT_JS,
 			JAVASCRIPT,
