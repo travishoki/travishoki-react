@@ -15,7 +15,7 @@ const LARGE_HEIGHT = 1030;
 export const CoverImage = () => (
 	<ImageMaximizable
 		alt="Hoki Skateboards"
-		className={styles.mainImage}
+		className={styles.coverImage}
 		dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 		src={ImgHokiSkateboardsSmall}
 		srcLarge={ImgHokiSkateboards}

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import {
 	CSS,
@@ -14,7 +15,7 @@ import {
 import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
-import { MobileAppImageGallery } from './MobileAppImageGallery/MobileAppImageGallery';
+import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 
 import styles from './MobileApp.module.scss';
@@ -46,7 +47,7 @@ export const MobileApp = () => (
 				<TechListCatalogue list={techs} />
 			</div>
 			<div className="col-sm-5">
-				<MobileAppImageGallery />
+				<ImageGallery images={APP_GALLERY_IMAGES} />;
 			</div>
 		</div>
 

@@ -2,26 +2,23 @@ import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
-import { websiteGalleryImageSrc } from '~helpers/websiteGallery';
 
-import { APP_GALLERY_IMAGES } from './MobileAppImageGallery.data';
+import styles from './ImageGallery.module.scss';
 
-import styles from './MobileAppImageGallery.module.scss';
-
-export const MobileAppImageGallery = () => {
+export const ImageGallery = ({ images }: ImageGalleryProps) => {
 	const [page, setPage] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
 	const [dimensions, setDimensions] = useState<number[]>([0, 0]);
 
 	const goToPage = (index: number) =>
-		setPage((index + APP_GALLERY_IMAGES.length) % APP_GALLERY_IMAGES.length);
+		setPage((index + images.length) % images.length);
 
-	const currentSrc = websiteGalleryImageSrc(APP_GALLERY_IMAGES[page]);
+	const currentSrc = images[page];
 
 	const alt = `Hoki Skateboards app screen ${page + 1}`;
 
 	return (
-		<div className={styles.mobileAppImageGallery}>
+		<div className={styles.gallery}>
 			{modalOpen && (
 				<ImageModal
 					alt={alt}
@@ -35,7 +32,7 @@ export const MobileAppImageGallery = () => {
 
 			<img
 				alt={alt}
-				className={styles.mobileAppImageGalleryImage}
+				className={styles.image}
 				onClick={() => setModalOpen(true)}
 				onLoad={(event) =>
 					setDimensions([
@@ -48,9 +45,13 @@ export const MobileAppImageGallery = () => {
 
 			<CarouselDots
 				activeIndex={page}
-				count={APP_GALLERY_IMAGES.length}
+				count={images.length}
 				onSelect={setPage}
 			/>
 		</div>
 	);
+};
+
+type ImageGalleryProps = {
+	images: string[];
 };

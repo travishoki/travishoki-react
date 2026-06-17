@@ -3,11 +3,20 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
+// import GifFailMontage from '~images/404/gif-fail-montage.gif';
+
 import styles from './NotFoundPage.module.scss';
 
 export const NotFoundPage = () => (
 	<div className="not-found" id="container">
 		<h1>Page Not Found</h1>
+
+		{/* <img
+			alt="Travis Fail Montage"
+			height="225px"
+			src={GifFailMontage}
+			width="400px"
+		/> */}
 
 		<div className={classNames('row', styles.linkBuckets)}>
 			<div className="col-sm-4">
