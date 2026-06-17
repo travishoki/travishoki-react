@@ -1,8 +1,8 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
 
+import { DivMaybeAnimateScale } from '~animations/DivMaybeAnimateScale';
 import { BulletedList } from '~components/BulletedList/BulletedList';
 import { ImageContainer } from '~components/StaggeredList/StaggeredItem/ImageContainer/ImageContainer';
 import { InfoBox } from '~components/StaggeredList/StaggeredItem/InfoBox/InfoBox';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
+import { MotionAutoHeight } from '~animations/MotionAutoHeight';
 
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';

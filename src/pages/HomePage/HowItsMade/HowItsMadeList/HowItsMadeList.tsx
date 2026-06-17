@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { AnimatePresence } from 'motion/react';
-import { MotionListItem } from 'src/animations/MotionListItem';
 
+import { MotionListItem } from '~animations/MotionListItem';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
 import ImgPingdomSpeedTestReport from '~images/how-its-made/pingdom-speed-test.jpg';

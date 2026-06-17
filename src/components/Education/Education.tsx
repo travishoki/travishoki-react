@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
-
+import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
 import imgUvu from '~images/education/uvu.png';
 
 import styles from './Education.module.scss';

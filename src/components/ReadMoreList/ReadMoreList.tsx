@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { AnimatePresence } from 'motion/react';
-import { MotionListItem } from 'src/animations/MotionListItem';
 
+import { MotionListItem } from '~animations/MotionListItem';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const ReadMoreList = ({

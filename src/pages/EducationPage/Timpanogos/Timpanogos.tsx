@@ -1,8 +1,8 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
 
+import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';

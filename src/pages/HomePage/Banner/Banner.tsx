@@ -2,8 +2,8 @@ import React from 'react';
 
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { Typewriter } from 'src/animations/Typewriter';
 
+import { Typewriter } from '~animations/Typewriter';
 import { SocialIcons } from '~components/SocialIcons/SocialIcons';
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
 

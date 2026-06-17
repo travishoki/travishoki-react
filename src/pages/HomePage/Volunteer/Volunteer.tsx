@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
-
+import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
 import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
 import styles from './Volunteer.module.scss';

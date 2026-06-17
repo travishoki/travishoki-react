@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import { MotionExpand } from 'src/animations/MotionExpand';
-
+import { MotionExpand } from '~animations/MotionExpand';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const TextWithReadMore = ({

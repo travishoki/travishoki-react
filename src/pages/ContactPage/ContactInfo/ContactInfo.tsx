@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typewriter } from 'src/animations/Typewriter';
+import { Typewriter } from '~animations/Typewriter';
 
 import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
 import { GitLink } from './GitLink/GitLink';

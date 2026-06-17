@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
-
+import { DivMaybeAnimateScale } from '~animations/DivMaybeAnimateScale';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
 import styles from './VideoButton.module.scss';

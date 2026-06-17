@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MotionAutoHeight } from 'src/animations/MotionAutoHeight';
+import { MotionAutoHeight } from '~animations/MotionAutoHeight';
 
 import { TYPE_SECTIONS } from '../TechCatalogue.const';
 import { groupTechByType } from '../TechCatalogue.helpers';

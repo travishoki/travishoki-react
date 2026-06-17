@@ -1,8 +1,8 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { DivMaybeAnimateScale } from 'src/animations/DivMaybeAnimateScale';
 
+import { DivMaybeAnimateScale } from '~animations/DivMaybeAnimateScale';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CountUp } from 'src/animations/CountUp';
+import { CountUp } from '~animations/CountUp';
 
 import { getExperienceYears } from './Title.helpers';
 
