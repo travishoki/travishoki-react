@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
-import ImgYouShouldAlwaysSkateboard from '~images/passion/you-should-always-skateboard.jpg';
+import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-should-always-skateboard.jpg';
 
 import { appSoftwareList } from './ChildrensBookColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';

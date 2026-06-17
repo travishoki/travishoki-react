@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
-import ImgHokiSkateboardsSmall from '~images/passion/hoki-skateboards-small.jpg';
-import ImgHokiSkateboards from '~images/passion/hoki-skateboards.jpg';
+import ImgHokiSkateboardsSmall from '~images/passion/hoki-skateboards/hoki-skateboards-small.jpg';
+import ImgHokiSkateboards from '~images/passion/hoki-skateboards/hoki-skateboards.jpg';
 
 import { Content } from './Content/Content';
 import { Logo } from './Logo/Logo';

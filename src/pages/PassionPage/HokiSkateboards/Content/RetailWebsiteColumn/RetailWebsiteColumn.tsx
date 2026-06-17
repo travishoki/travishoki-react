@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards-website.jpg';
+import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
 import { websiteTechList } from './RetailWebsiteColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
