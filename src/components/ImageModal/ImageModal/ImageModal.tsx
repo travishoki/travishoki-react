@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { createPortal } from 'react-dom';
+
 import { CloseButton } from '../CloseButton/CloseButton';
 import { getDimensions } from '../ImageModal.helpers';
 import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
@@ -28,7 +30,10 @@ export const ImageModal = ({
 		window.innerHeight,
 	);
 
-	return (
+	// Render in a portal on document.body so the fixed-position modal isn't
+	// trapped or clipped by an ancestor's stacking context / clip-path / transform
+	// (e.g. the clip-path on MotionListItem was clipping it to the list item box).
+	return createPortal(
 		<div className={styles.imageModal} onClick={onClose}>
 			<div className={styles.imageModalInner}>
 				{onPrev && <LeftModalArrow onClick={onPrev} />}
@@ -52,7 +57,8 @@ export const ImageModal = ({
 
 				<CloseButton onClick={onClose} />
 			</div>
-		</div>
+		</div>,
+		document.body,
 	);
 };
 
