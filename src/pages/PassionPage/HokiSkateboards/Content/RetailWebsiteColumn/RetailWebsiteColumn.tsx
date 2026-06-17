@@ -1,20 +1,16 @@
 import React from 'react';
 
-import classNames from 'classnames';
-
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
 import { websiteTechList } from './RetailWebsiteColumn.const';
+import { ButtonLink } from '../../../ButtonLink/ButtonLink';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
-import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
-export const RetailWebsiteColumn = ({
-	className,
-}: RetailWebsiteColumnProps) => (
-	<div className={classNames('col-sm-6 pt-3', className)}>
+export const RetailWebsiteColumn = () => (
+	<>
 		<a
 			href="https://hokiskateboards.com"
 			rel="noreferrer"
@@ -36,9 +32,5 @@ export const RetailWebsiteColumn = ({
 		</p>
 
 		<TechListCatalogue list={websiteTechList} />
-	</div>
+	</>
 );
-
-type RetailWebsiteColumnProps = {
-	className?: string;
-};
