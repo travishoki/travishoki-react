@@ -10,7 +10,7 @@ export const CareerOverview = () => {
 			<div className="boxed">
 				<h2>Career Overview</h2>
 				<p className={classNames('indent', styles.careerOverviewParagraph)}>
-					Highly accomplished Senior Frontend Engineer with over 14 years of
+					Highly accomplished Senior Software Engineer with over 14 years of
 					experience building, scaling, and optimizing enterprise-grade web
 					applications. Proven track record of architecting robust
 					internationalization infrastructure, automating engineering code
