@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 import imgUvu from '~images/education/uvu.png';
 
 import styles from './Education.module.scss';
@@ -8,7 +8,7 @@ import styles from './Education.module.scss';
 export const Education = () => (
 	<section className={`white center ${styles.educationComponent}`}>
 		<h2>Utah Valley University</h2>
-		<FadeInImage
+		<ImgPopIn
 			alt="Utah Valley University Logo"
 			className="center"
 			src={imgUvu}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
 import { ContactInfo } from './ContactInfo/ContactInfo';
@@ -11,7 +11,7 @@ export const ContactPage = () => (
 			<div className="pt-4">
 				<div className="row">
 					<div className="col-sm-6">
-						<FadeInImage
+						<ImgPopIn
 							alt="Travis Hoki Profile Picture"
 							className="pb-3"
 							src={ImgProfilePic}

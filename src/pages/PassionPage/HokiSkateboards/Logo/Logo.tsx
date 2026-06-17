@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 
 import styles from './Logo.module.scss';
 
@@ -12,7 +12,7 @@ export const Logo = () => (
 		target="_blank"
 		title="Hoki Skateboards"
 	>
-		<FadeInImage
+		<ImgPopIn
 			alt="Hoki Skateboards"
 			className="center"
 			height="142px"

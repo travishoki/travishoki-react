@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';
@@ -23,7 +23,7 @@ export const Timpanogos = () => (
 			<Panels reverse>
 				<Panel>
 					<h2>Timpanogos High School</h2>
-					<FadeInImage
+					<ImgPopIn
 						alt="Timpanogos High School Logo"
 						className={styles.school}
 						src={imgTimpanogos}

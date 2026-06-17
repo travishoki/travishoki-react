@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
 import styles from './Volunteer.module.scss';
@@ -12,7 +12,7 @@ export const Volunteer = () => (
 			Scouting America
 		</p>
 
-		<FadeInImage
+		<ImgPopIn
 			alt="Scouting America Logo"
 			className="center mb-2"
 			height="200"

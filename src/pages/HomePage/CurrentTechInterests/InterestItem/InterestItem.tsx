@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
+import { ImgPopIn } from '~animations/ImgPopIn';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 
 import { InterestItem as InterestItemType } from '../CurrentTechInterests.data';
@@ -14,7 +14,7 @@ export const InterestItem = ({ delay, item }: InterestItemProps) => {
 
 	return (
 		<div className={classNames('col-12 col-md-4', styles.interestItem)}>
-			<FadeInImage
+			<ImgPopIn
 				alt={title}
 				className={classNames('center mb-3', styles.interestImage)}
 				initial={{ scale: 0.5 }}
