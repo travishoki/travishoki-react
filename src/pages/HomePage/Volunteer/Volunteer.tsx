@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
+
 import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
 import styles from './Volunteer.module.scss';
@@ -11,7 +13,7 @@ export const Volunteer = () => (
 			Scouting America
 		</p>
 
-		<img
+		<FadeInImage
 			alt="Scouting America Logo"
 			className="center mb-2"
 			height="200"

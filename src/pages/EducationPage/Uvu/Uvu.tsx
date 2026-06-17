@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
+
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';
@@ -23,7 +25,7 @@ export const Uvu = () => (
 				<Panel>
 					<div className={styles.uvu}>
 						<h2>Utah Valley University</h2>
-						<img
+						<FadeInImage
 							alt="Utah Valley University Logo"
 							className="center"
 							src={imgUvu}
