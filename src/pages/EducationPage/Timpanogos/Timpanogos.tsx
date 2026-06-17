@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import { FadeInImage } from 'src/animations/FadeInImage/FadeInImage';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
@@ -22,7 +23,7 @@ export const Timpanogos = () => (
 			<Panels reverse>
 				<Panel>
 					<h2>Timpanogos High School</h2>
-					<img
+					<FadeInImage
 						alt="Timpanogos High School Logo"
 						className={styles.school}
 						src={imgTimpanogos}
