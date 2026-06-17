@@ -5,7 +5,7 @@ import { HTMLMotionProps, motion } from 'motion/react';
 // Reusable <img> that fades and scales in the first time it scrolls into view.
 // Accepts all the usual img props (src, alt, className, ...) plus any motion
 // props, which override the defaults below if provided.
-export const ImagePopIn = (props: ImagePopInProps) => {
+export const ImgPopIn = (props: ImgPopInProps) => {
 	return (
 		<motion.img
 			initial={{ opacity: 0, scale: 0.8 }}
@@ -17,4 +17,4 @@ export const ImagePopIn = (props: ImagePopInProps) => {
 	);
 };
 
-type ImagePopInProps = HTMLMotionProps<'img'>;
+type ImgPopInProps = HTMLMotionProps<'img'>;
