@@ -4,9 +4,9 @@ import classNames from 'classnames';
 
 import { getImgAltText } from '~helpers/images';
 import {
-	handleWebsiteImageError,
-	websiteImageSrc,
-} from '~helpers/websiteImages';
+	handleThumbnailError,
+	websiteThumbnailSrc,
+} from '~helpers/websiteThumbnails';
 
 import { ProjectImageOverlay } from './ProjectImageOverlay/ProjectImageOverlay';
 
@@ -33,8 +33,8 @@ export const ProjectImage = ({
 			<img
 				alt={imgAlt}
 				className={styles.img}
-				onError={handleWebsiteImageError('thumbnail')}
-				src={websiteImageSrc(itemKey, 'thumbnail')}
+				onError={handleThumbnailError}
+				src={websiteThumbnailSrc(itemKey)}
 			/>
 		</div>
 	);

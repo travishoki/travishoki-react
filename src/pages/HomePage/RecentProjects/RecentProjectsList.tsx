@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 import { getImgAltText } from '~helpers/images';
 import {
-	handleWebsiteImageError,
-	websiteImageSrc,
-} from '~helpers/websiteImages';
+	handleThumbnailError,
+	websiteThumbnailSrc,
+} from '~helpers/websiteThumbnails';
 
 import { orderTopThreeInPodium, PODIUM_COUNT } from './RecentProjects.helpers';
 import { PROJECTS_DATA } from '../../ProjectsPage/ProjectsPage.data';
@@ -34,8 +34,8 @@ export const RecentProjectsList = () => (
 						</div>
 						<img
 							alt={imgAlt}
-							onError={handleWebsiteImageError('thumbnail')}
-							src={websiteImageSrc(project.itemKey, 'thumbnail')}
+							onError={handleThumbnailError}
+							src={websiteThumbnailSrc(project.itemKey)}
 						/>
 					</Link>
 				</li>
