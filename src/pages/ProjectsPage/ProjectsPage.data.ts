@@ -82,8 +82,8 @@ const PROJECTS: ProjectInput[] = [
 		company: 'Spiff',
 		contributions: [
 			"Researched and tested different wysiwyg's for our use case.",
-			'I implementing and customized an integration with a wysiwyg.',
-			'Build out the merge field functionality to swap out handlebar syntax with dynamic values from the users profile.',
+			'I implemented and customized an integration with a wysiwyg.',
+			'Built out the merge field functionality to swap out handlebar syntax with dynamic values from the users profile.',
 			'The PDF was created server-side, I was able to dig into the Ruby code enough to modify the pdf output.',
 		],
 		description: [
@@ -119,7 +119,7 @@ const PROJECTS: ProjectInput[] = [
 			'Manually updated a lot of strings to use the translations.',
 		],
 		description: [
-			'Develop infrastructure for string translations, enhancing global accessibility',
+			'Developed infrastructure for string translations, enhancing global accessibility',
 			'Internationalization is a big value add to Spiff/Salesforce.',
 		],
 		gallery: [
