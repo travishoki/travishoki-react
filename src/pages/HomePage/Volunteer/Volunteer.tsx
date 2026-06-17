@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ImgPopIn } from '~animations/ImgPopIn';
-import imgScoutingAmerica from '~images/volunteer/scouting-america.png';
+import ImgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
 import styles from './Volunteer.module.scss';
 
@@ -16,7 +16,7 @@ export const Volunteer = () => (
 			alt="Scouting America Logo"
 			className="center mb-2"
 			height="200"
-			src={imgScoutingAmerica}
+			src={ImgScoutingAmerica}
 			width="177"
 		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>

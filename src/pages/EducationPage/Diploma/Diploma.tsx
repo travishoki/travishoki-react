@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
-import imgDiplomaSmall from '~images/education/travis-hoki-diploma-small.jpg';
-import imgDiploma from '~images/education/travis-hoki-diploma.jpg';
+import ImgDiplomaSmall from '~images/education/travis-hoki-diploma-small.jpg';
+import ImgDiploma from '~images/education/travis-hoki-diploma.jpg';
 
 import styles from './Diploma.module.scss';
 
@@ -18,8 +18,8 @@ export const Diploma = () => (
 			<ImageMaximizable
 				alt="UVU Diploma"
 				dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
-				src={imgDiplomaSmall}
-				srcLarge={imgDiploma}
+				src={ImgDiplomaSmall}
+				srcLarge={ImgDiploma}
 				srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 			/>
 		</div>

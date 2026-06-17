@@ -6,8 +6,8 @@ import { ImgPopIn } from '~animations/ImgPopIn';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';
-import imgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
-import imgTimpanogos from '~images/education/timpanogos.png';
+import ImgTimpanogosGraduation from '~images/education/timpanogos-graduation.jpg';
+import ImgTimpanogos from '~images/education/timpanogos.png';
 
 import { Scholarships } from './Scholarships/Scholarships';
 import { ImageCaption } from '../ImageCaption/ImageCaption';
@@ -26,7 +26,7 @@ export const Timpanogos = () => (
 					<ImgPopIn
 						alt="Timpanogos High School Logo"
 						className={styles.school}
-						src={imgTimpanogos}
+						src={ImgTimpanogos}
 					/>
 					<div className={styles.diplomaText}>
 						<p className="bold">High School Diploma</p>
@@ -46,7 +46,7 @@ export const Timpanogos = () => (
 						alt="High School Graduation"
 						dimensions={[IMG_WIDTH, IMG_HEIGHT]}
 						imageClassName="picture"
-						src={imgTimpanogosGraduation}
+						src={ImgTimpanogosGraduation}
 					/>
 					<ImageCaption>
 						(High School graduation with girlfriend at the time, eventual wife.)

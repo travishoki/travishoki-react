@@ -4,8 +4,8 @@ import { ImgPopIn } from '~animations/ImgPopIn';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { Panel } from '~components/Panels/Panel/Panel';
 import { Panels } from '~components/Panels/Panels';
-import imgUvuGraduation from '~images/education/uvu-graduation.jpg';
-import imgUvu from '~images/education/uvu.png';
+import ImgUvuGraduation from '~images/education/uvu-graduation.jpg';
+import ImgUvu from '~images/education/uvu.png';
 
 import { ImageCaption } from '../ImageCaption/ImageCaption';
 
@@ -27,7 +27,7 @@ export const Uvu = () => (
 						<ImgPopIn
 							alt="Utah Valley University Logo"
 							className="center"
-							src={imgUvu}
+							src={ImgUvu}
 						/>
 						<div className="mb-3">
 							<p>Digital Media Major</p>
@@ -46,7 +46,7 @@ export const Uvu = () => (
 						alt="University Graduation"
 						dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 						imageClassName="picture"
-						src={imgUvuGraduation}
+						src={ImgUvuGraduation}
 						srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
 					/>
 					<ImageCaption>(College graduation with my wife.)</ImageCaption>

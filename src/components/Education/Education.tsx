@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ImgPopIn } from '~animations/ImgPopIn';
-import imgUvu from '~images/education/uvu.png';
+import ImgUvu from '~images/education/uvu.png';
 
 import styles from './Education.module.scss';
 
@@ -11,7 +11,7 @@ export const Education = () => (
 		<ImgPopIn
 			alt="Utah Valley University Logo"
 			className="center"
-			src={imgUvu}
+			src={ImgUvu}
 		/>
 		<p>Digital Media Major</p>
 		<p className="bold">Bachelor of Science</p>

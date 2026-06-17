@@ -1,6 +1,6 @@
 import React from 'react';
 
-import imgRanger from '~images/education/ranger.png';
+import ImgRanger from '~images/education/ranger.png';
 
 import { SalesforceIcon } from '../SalesforceIcon/SalesforceIcon';
 
@@ -12,7 +12,7 @@ export const SalesforceTrailhead = () => (
 			<img
 				alt="Salesforce Ranger Badge"
 				className={styles.trailheadImage}
-				src={imgRanger}
+				src={ImgRanger}
 			/>
 			<div className={styles.earned}>
 				<h2>Salesforce&apos;s Ranger Status</h2>
