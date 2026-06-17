@@ -5,6 +5,7 @@ import { Education } from '~components/Education/Education';
 import { CareerOverview } from './CareerOverview/CareerOverview';
 import { DownloadSection } from './DownloadSection/DownloadSection';
 import { Experience } from './Experience/Experience';
+import { TechDivider } from './TechDivider/TechDivider';
 import { Skills } from '../HomePage/Skills/Skills';
 import { TechTiles } from '../HomePage/TechTiles/TechTiles';
 
@@ -16,6 +17,9 @@ export const ResumePage = () => (
 		<DownloadSection />
 		<CareerOverview />
 		<Experience />
+		<div className="boxed boxed-lg">
+			<TechDivider text="Tech Experience" />
+		</div>
 		<TechTiles />
 		<Skills />
 		<Education />
