@@ -18,25 +18,23 @@ const LARGE_WIDTH = 1541;
 const LARGE_HEIGHT = 1030;
 
 export const HokiSkateboards = () => (
-	<section className="hoki-skateboards p-3">
-		<div className="boxed">
-			<Logo />
-			<ImageMaximizable
-				alt="Hoki Skateboards"
-				className={styles.mainImage}
-				dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
-				src={ImgHokiSkateboardsSmall}
-				srcLarge={ImgHokiSkateboards}
-				srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
-			/>
-			<p className={styles.passionProjectDescription}>
-				Hoki Skateboards is my passion project. Through the years I have enjoyed
-				building to my little company. I&apos;ve made and sold skateboards,
-				wrote a children&apos;s book, an app, and met so many cool people.
-			</p>
-			<SocialMedia />
-			<Content />
-			<MobileApp />
-		</div>
+	<section className="boxed boxed-lg p-3">
+		<Logo />
+		<ImageMaximizable
+			alt="Hoki Skateboards"
+			className={styles.mainImage}
+			dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
+			src={ImgHokiSkateboardsSmall}
+			srcLarge={ImgHokiSkateboards}
+			srcLargeDimensions={[LARGE_WIDTH, LARGE_HEIGHT]}
+		/>
+		<p className={styles.passionProjectDescription}>
+			Hoki Skateboards is my passion project. Through the years I have enjoyed
+			building to my little company. I&apos;ve made and sold skateboards, wrote
+			a children&apos;s book, an app, and met so many cool people.
+		</p>
+		<SocialMedia />
+		<Content />
+		<MobileApp />
 	</section>
 );
