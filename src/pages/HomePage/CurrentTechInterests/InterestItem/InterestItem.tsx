@@ -1,8 +1,8 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { motion } from 'motion/react';
 
+import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 
 import { InterestItem as InterestItemType } from '../CurrentTechInterests.data';
@@ -14,19 +14,15 @@ export const InterestItem = ({ delay, item }: InterestItemProps) => {
 
 	return (
 		<div className={classNames('col-12 col-md-4', styles.interestItem)}>
-			<motion.div
+			<FadeInImage
+				alt={title}
+				className={classNames('center mb-3', styles.interestImage)}
 				initial={{ scale: 0.5 }}
+				src={img}
 				transition={{ delay, duration: 0.3, ease: 'easeInOut' }}
 				viewport={{ once: true }}
 				whileInView={{ scale: 1 }}
-			>
-				<img
-					alt={title}
-					className={classNames('center mb-3', styles.interestImage)}
-					src={img}
-				/>
-			</motion.div>
-
+			/>
 			<h3>{title}</h3>
 			<TextWithReadMore
 				buttonClassName={styles.currentTechInterestsReadMore}

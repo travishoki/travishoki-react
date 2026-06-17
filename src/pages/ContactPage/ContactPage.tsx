@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { motion } from 'motion/react';
-
+import { FadeInImage } from '~animations/FadeInImage/FadeInImage';
 import ImgProfilePic from '~images/global/travis-hoki-2.jpg';
 
 import { ContactInfo } from './ContactInfo/ContactInfo';
@@ -12,15 +11,12 @@ export const ContactPage = () => (
 			<div className="pt-4">
 				<div className="row">
 					<div className="col-sm-6">
-						<motion.div animate={{ scale: 1 }} initial={{ scale: 0.5 }}>
-							<img
-								alt="Travis Hoki Profile Picture"
-								className="pb-3"
-								src={ImgProfilePic}
-							/>
-						</motion.div>
+						<FadeInImage
+							alt="Travis Hoki Profile Picture"
+							className="pb-3"
+							src={ImgProfilePic}
+						/>
 					</div>
-
 					<div className="col-sm-6">
 						<ContactInfo />
 					</div>
