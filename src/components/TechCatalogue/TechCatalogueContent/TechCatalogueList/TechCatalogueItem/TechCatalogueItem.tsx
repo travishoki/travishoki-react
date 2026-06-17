@@ -5,16 +5,33 @@ import { motion } from 'motion/react';
 
 import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
 
-import { TechCatalogueItemData } from '../../../TechCatalogue.types';
+import {
+	LEVELS,
+	ProficiencyLevel,
+	TechCatalogueItemData,
+} from '../../../TechCatalogue.types';
 
 import styles from './TechCatalogueItem.module.scss';
 
 const TRANSITION = { duration: 0.3, ease: 'easeInOut' } as const;
 
+const LEVEL_LABEL: Record<ProficiencyLevel, string> = {
+	[LEVELS.ADVANCED]: 'Advanced',
+	[LEVELS.BEGINNER]: 'Beginner',
+	[LEVELS.EXPERT]: 'Expert',
+};
+
+const LEVEL_CLASS: Record<ProficiencyLevel, string> = {
+	[LEVELS.ADVANCED]: styles.levelAdvanced,
+	[LEVELS.BEGINNER]: styles.levelBeginner,
+	[LEVELS.EXPERT]: styles.levelExpert,
+};
+
 export const TechCatalogueItem = ({
 	expanded,
 	image,
 	label,
+	level,
 }: TechCatalogueItemProps) => {
 	const circle = useCircle();
 
@@ -39,7 +56,17 @@ export const TechCatalogueItem = ({
 			transition={TRANSITION}
 		>
 			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
-			{expanded && <p className={styles.label}>{label}</p>}
+
+			{expanded && (
+				<div className={styles.labalContainer}>
+					<p className={styles.label}>{label}</p>
+					{level && (
+						<span className={classNames(styles.levelPill, LEVEL_CLASS[level])}>
+							{LEVEL_LABEL[level]}
+						</span>
+					)}
+				</div>
+			)}
 		</motion.li>
 	);
 };

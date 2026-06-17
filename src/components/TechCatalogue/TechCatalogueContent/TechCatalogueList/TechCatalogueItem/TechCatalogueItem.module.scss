@@ -55,5 +55,39 @@ $iconW: 40px;
 	font-size: 14px;
 	line-height: $iconW;
 	line-height: 18px;
-	margin: 0 0 0 10px;
+	margin: 0;
+}
+
+.levelPill {
+	border-radius: 8px;
+	font-size: 8px;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+	line-height: 1;
+	padding: 2px 5px;
+	text-transform: uppercase;
+}
+
+// Gold / silver / bronze, descending with proficiency.
+.levelExpert {
+	background: $medal-gold;
+	color: $primary-five;
+}
+
+.levelAdvanced {
+	background: $medal-silver;
+	color: $primary-five;
+}
+
+.levelBeginner {
+	background: $medal-bronze;
+	color: $white;
+}
+
+.labalContainer {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
 }

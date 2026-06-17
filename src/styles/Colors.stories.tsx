@@ -116,6 +116,15 @@ const REDS: ColorGroup = {
 	label: 'Reds',
 };
 
+const METALS: ColorGroup = {
+	colors: [
+		{ hex: COLORS.MEDAL_GOLD, name: 'Gold', variable: '$medal-gold' },
+		{ hex: COLORS.MEDAL_SILVER, name: 'Silver', variable: '$medal-silver' },
+		{ hex: COLORS.MEDAL_BRONZE, name: 'Bronze', variable: '$medal-bronze' },
+	],
+	label: 'Metals',
+};
+
 const PAGE_STYLE: React.CSSProperties = {
 	fontFamily: 'sans-serif',
 	padding: '2rem',
@@ -235,6 +244,7 @@ export const Colors: Story = {
 				<ColorSection group={REDS} />
 				<ColorSection group={GREENS} />
 			</div>
+			<ColorSection group={METALS} />
 		</div>
 	),
 };

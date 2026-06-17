@@ -40,6 +40,11 @@ export const GREEN_1 = '#39b54c';
 export const RED_1 = '#f2dede';
 export const RED_2 = '#a94442';
 
+// Metal (proficiency medals)
+export const MEDAL_GOLD = '#d4af37';
+export const MEDAL_SILVER = '#c0c0c0';
+export const MEDAL_BRONZE = '#8a6a2d';
+
 /*----- Pallets -----*/
 
 // Primary
