@@ -20,7 +20,11 @@ export const Banner = () => (
 			<h1>
 				<Typewriter text="Travis Hoki" />
 			</h1>
-			<p className={styles.jobTitle}>Web Developer</p>
+			<p className={styles.jobTitle}>
+				Senior Software
+				<br />
+				Development Engineer
+			</p>
 			<SocialIcons className={styles.bannerSocial} />
 			<Link
 				className={classNames('btn btn-primary btn-lg', styles.homeBannerBtn)}
