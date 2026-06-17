@@ -1,6 +1,5 @@
 import React from 'react';
 
-import ImgAllAmericanSod from '~images/websites/thumbnail/all-american-sod.jpg';
 import ImgBarrierPestControl from '~images/websites/thumbnail/barrier-pest-control.jpg';
 import ImgBeitLehi from '~images/websites/thumbnail/beit-lehi.jpg';
 import ImgBlueMondaySalon from '~images/websites/thumbnail/blue-monday-salon.jpg';
@@ -33,13 +32,11 @@ import ImgOverstockComReviewsBreakout from '~images/websites/thumbnail/overstock
 import ImgOverstockComRewardsForReviews from '~images/websites/thumbnail/overstock-com-rewards-for-reviews.jpg';
 import ImgOverstockComSeeAllReviewsPageMobileAddToCart from '~images/websites/thumbnail/overstock-com-see-all-reviews-page-mobile-add-to-cart.jpg';
 import ImgOverstockComStarRatingsColor from '~images/websites/thumbnail/overstock-com-star-ratings-color.jpg';
-import ImgParadigmLifeLms from '~images/websites/thumbnail/paradigm-life-lms.jpg';
 import ImgParadigmLife from '~images/websites/thumbnail/paradigm-life.jpg';
 import ImgRgdjanitorial from '~images/websites/thumbnail/rgdjanitorial.jpg';
 import ImgRookeCapitalManagementFinancialPlanning from '~images/websites/thumbnail/rooke-capital-management-financial-planning.jpg';
 import ImgRoomChoiceStudentHousingSoftware from '~images/websites/thumbnail/room-choice-student-housing-software.jpg';
 import ImgSaintsAndSinnersHalfMarathonAndTeamRelay from '~images/websites/thumbnail/saints-and-sinners-half-marathon-and-team-relay.jpg';
-import ImgSolitudepg from '~images/websites/thumbnail/solitudepg.jpg';
 import ImgSouthamConsulting from '~images/websites/thumbnail/southam-consulting.jpg';
 import ImgSpiffDocuments from '~images/websites/thumbnail/spiff-documents.jpg';
 import ImgSpiffTeamHierarchy from '~images/websites/thumbnail/spiff-team-hierarchy.jpg';
@@ -54,7 +51,6 @@ import ImgWininsights from '~images/websites/thumbnail/wininsights.jpg';
 // thumbnail is fingerprinted by webpack (cache-busting) and validated at build
 // time, rather than resolved from a runtime PUBLIC_URL string.
 const THUMBNAILS: Record<string, string> = {
-	'all-american-sod': ImgAllAmericanSod,
 	'barrier-pest-control': ImgBarrierPestControl,
 	'beit-lehi': ImgBeitLehi,
 	'blue-monday-salon': ImgBlueMondaySalon,
@@ -90,14 +86,12 @@ const THUMBNAILS: Record<string, string> = {
 		ImgOverstockComSeeAllReviewsPageMobileAddToCart,
 	'overstock-com-star-ratings-color': ImgOverstockComStarRatingsColor,
 	'paradigm-life': ImgParadigmLife,
-	'paradigm-life-lms': ImgParadigmLifeLms,
 	rgdjanitorial: ImgRgdjanitorial,
 	'rooke-capital-management-financial-planning':
 		ImgRookeCapitalManagementFinancialPlanning,
 	'room-choice-student-housing-software': ImgRoomChoiceStudentHousingSoftware,
 	'saints-and-sinners-half-marathon-and-team-relay':
 		ImgSaintsAndSinnersHalfMarathonAndTeamRelay,
-	solitudepg: ImgSolitudepg,
 	'southam-consulting': ImgSouthamConsulting,
 	'spiff-documents': ImgSpiffDocuments,
 	'spiff-team-hierarchy': ImgSpiffTeamHierarchy,

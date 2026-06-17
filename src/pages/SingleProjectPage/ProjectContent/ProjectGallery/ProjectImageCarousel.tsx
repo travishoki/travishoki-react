@@ -5,9 +5,9 @@ import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 import { getImgAltText } from '~helpers/images';
 import {
-	handleWebsiteImageError,
+	handleGalleryError,
 	websiteGalleryImageSrc,
-} from '~helpers/websiteImages';
+} from '~helpers/websiteGallery';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
@@ -49,7 +49,7 @@ export const ProjectImageCarousel = ({
 				<img
 					alt={imgAlt}
 					className="pointer"
-					onError={handleWebsiteImageError('gallery')}
+					onError={handleGalleryError}
 					onLoad={(event) =>
 						setDimensions([
 							event.currentTarget.naturalWidth,

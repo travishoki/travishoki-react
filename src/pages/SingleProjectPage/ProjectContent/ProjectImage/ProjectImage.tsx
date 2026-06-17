@@ -2,23 +2,21 @@ import React from 'react';
 
 import { ImageWithModal } from '~components/ImageModal/ImageWithModal/ImageWithModal';
 import {
-	handleWebsiteImageError,
-	websiteImageSrc,
-} from '~helpers/websiteImages';
+	handleGalleryError,
+	websiteGalleryImageSrc,
+} from '~helpers/websiteGallery';
 
-import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
-
-export const ProjectImage = ({ alt, itemKey }: ProjectImageProps) => {
+export const ProjectImage = ({ alt, filename }: ProjectImageProps) => {
 	return (
 		<ImageWithModal
 			alt={alt}
-			onError={handleWebsiteImageError('gallery')}
-			src={websiteImageSrc(itemKey, 'gallery')}
+			onError={handleGalleryError}
+			src={websiteGalleryImageSrc(filename)}
 		/>
 	);
 };
 
 type ProjectImageProps = {
 	alt: string;
-	itemKey: ProjectType['itemKey'];
+	filename: string;
 };

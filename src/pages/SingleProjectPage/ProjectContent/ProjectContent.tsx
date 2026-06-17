@@ -19,7 +19,6 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 		date,
 		description,
 		gallery,
-		itemKey,
 		learned,
 		live = false,
 		subtitle,
@@ -35,14 +34,14 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 
 			<div className="row">
 				<div className="col-sm-5">
-					{gallery && gallery.length > 1 ? (
+					{gallery.length > 1 ? (
 						<ProjectImageCarousel
 							company={company}
 							gallery={gallery}
 							subtitle={subtitle}
 						/>
 					) : (
-						<ProjectImage alt={imgAlt} itemKey={itemKey} />
+						<ProjectImage alt={imgAlt} filename={gallery[0].filename} />
 					)}
 				</div>
 				<div className="col-sm-7">

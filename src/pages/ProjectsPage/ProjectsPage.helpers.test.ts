@@ -11,6 +11,7 @@ const makeProject = (overrides: Partial<ProjectType>): ProjectType => ({
 	companySlug: 'company',
 	contributions: '',
 	description: '',
+	gallery: [],
 	itemKey: 'company',
 	learned: '',
 	techs: [],

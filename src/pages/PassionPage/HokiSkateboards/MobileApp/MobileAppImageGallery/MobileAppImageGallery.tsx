@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
+import { websiteGalleryImageSrc } from '~helpers/websiteGallery';
 
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery.data';
 
 import styles from './MobileAppImageGallery.module.scss';
-
-const imageSrc = (filename: string) =>
-	`${process.env.PUBLIC_URL}/images/websites/gallery/${filename}`;
 
 export const MobileAppImageGallery = () => {
 	const [page, setPage] = useState(0);
@@ -18,7 +16,7 @@ export const MobileAppImageGallery = () => {
 	const goToPage = (index: number) =>
 		setPage((index + APP_GALLERY_IMAGES.length) % APP_GALLERY_IMAGES.length);
 
-	const currentSrc = imageSrc(APP_GALLERY_IMAGES[page]);
+	const currentSrc = websiteGalleryImageSrc(APP_GALLERY_IMAGES[page]);
 
 	const alt = `Hoki Skateboards app screen ${page + 1}`;
 
