@@ -2,15 +2,7 @@ import React from 'react';
 
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import {
-	CSS,
-	FIREBASE,
-	HTML,
-	JAVASCRIPT,
-	REACT_JS,
-	REACT_NATIVE,
-	TechKey,
-} from '~const/Tech.const';
+import * as TECH from '~const/Tech.const';
 
 import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
@@ -20,13 +12,13 @@ import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 
 import styles from './MobileApp.module.scss';
 
-const techs: TechKey[] = [
-	CSS,
-	HTML,
-	JAVASCRIPT,
-	REACT_JS,
-	REACT_NATIVE,
-	FIREBASE,
+const techs: TECH.TechKey[] = [
+	TECH.CSS,
+	TECH.HTML,
+	TECH.JAVASCRIPT,
+	TECH.REACT_JS,
+	TECH.REACT_NATIVE,
+	TECH.FIREBASE,
 ];
 
 export const MobileApp = () => (

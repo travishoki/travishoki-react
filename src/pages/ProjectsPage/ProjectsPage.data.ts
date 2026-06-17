@@ -1,39 +1,8 @@
 import { getItemKey, slugify } from '~helpers/projects';
 
+import * as Images from './ProjectsPage.Images.data';
 import { ProjectType } from './ProjectsPage.types';
-import {
-	ACTION_SCRIPT,
-	AMP,
-	ANGULAR_JS,
-	CLAUDE_CODE,
-	COFFEE_SCRIPT,
-	CSS,
-	CURSOR,
-	DJANGO,
-	EXPRESS,
-	FIREBASE,
-	GRUNT,
-	HANDLEBARS_JS,
-	HTML,
-	JAVASCRIPT,
-	JEST,
-	JQUERY,
-	LESS_CSS,
-	NODE_JS,
-	PHP,
-	PYTHON,
-	REACT_JS,
-	REACT_NATIVE,
-	REDUX,
-	SCSS,
-	SQL,
-	STORYBOOK,
-	STRIPE,
-	TYPESCRIPT,
-	WEBPACK,
-	WOO_COMMERCE,
-	WORDPRESS,
-} from '../../const/Tech.const';
+import * as TECH from '../../const/Tech.const';
 
 const PROJECTS: ProjectInput[] = [
 	{
@@ -52,29 +21,29 @@ const PROJECTS: ProjectInput[] = [
 		],
 		gallery: [
 			{
-				filename: 'food-cards-1.jpg',
+				filename: Images.ImgFoodCards1,
 			},
 			{
 				caption: 'Fuzzy search to find similar suggested searches',
-				filename: 'food-cards-2.jpg',
+				filename: Images.ImgFoodCards2,
 			},
 			{
 				caption:
 					'Whether or not a product is "instock" is stored in the Firebase database.',
-				filename: 'food-cards-3.jpg',
+				filename: Images.ImgFoodCards3,
 			},
 		],
 		learned: ['How to implement a "fuzzy" search'],
 		techs: [
-			REACT_JS,
-			JAVASCRIPT,
-			JEST,
-			CSS,
-			HTML,
-			FIREBASE,
-			CLAUDE_CODE,
-			CURSOR,
-			STORYBOOK,
+			TECH.REACT_JS,
+			TECH.JAVASCRIPT,
+			TECH.JEST,
+			TECH.CSS,
+			TECH.HTML,
+			TECH.FIREBASE,
+			TECH.CLAUDE_CODE,
+			TECH.CURSOR,
+			TECH.STORYBOOK,
 		],
 		url: 'https://food-cards.travishoki.com/',
 	},
@@ -93,24 +62,24 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{
 				caption: 'Document composer with merge fields',
-				filename: 'spiff-documents-1.jpg',
+				filename: Images.ImgSpiffDocuments1,
 			},
 			{
 				caption: 'Document preview before the pdf download',
-				filename: 'spiff-documents-2.jpg',
+				filename: Images.ImgSpiffDocuments2,
 			},
 		],
 		learned: '',
 		subtitle: 'Documents',
 		techs: [
-			CLAUDE_CODE,
-			REACT_JS,
-			JAVASCRIPT,
-			TYPESCRIPT,
-			JEST,
-			CSS,
-			HTML,
-			CURSOR,
+			TECH.CLAUDE_CODE,
+			TECH.REACT_JS,
+			TECH.JAVASCRIPT,
+			TECH.TYPESCRIPT,
+			TECH.JEST,
+			TECH.CSS,
+			TECH.HTML,
+			TECH.CURSOR,
 		],
 	},
 	{
@@ -123,24 +92,30 @@ const PROJECTS: ProjectInput[] = [
 			'Internationalization is a big value add to Spiff/Salesforce.',
 		],
 		gallery: [
-			{ filename: 'spiff-translations-english.jpg' },
-			{ filename: 'spiff-translations-japanese.jpg' },
-			{ filename: 'spiff-translations-spanish.jpg' },
+			{ filename: Images.ImgSpiffTranslationsEnglish },
+			{ filename: Images.ImgSpiffTranslationsJapanese },
+			{ filename: Images.ImgSpiffTranslationsSpanish },
 			{
 				caption:
 					"In dev mode there's an option to switch to X's. A quick and easy way for use to make sure strings are translated.",
-				filename: 'spiff-translations-xxx.jpg',
+				filename: Images.ImgSpiffTranslationsXxx,
 			},
-			{ filename: 'spiff-translations-table-english.jpg' },
+			{ filename: Images.ImgSpiffTranslationsTableEnglish },
 			{
 				caption:
 					"In dev mode there's an option to switch to X's. A quick and easy way for use to make sure strings are translated.",
-				filename: 'spiff-translations-table-xxx.jpg',
+				filename: Images.ImgSpiffTranslationsTableXxx,
 			},
 		],
 		learned: '',
 		subtitle: 'Translations',
-		techs: [REACT_JS, TYPESCRIPT, JAVASCRIPT, JEST, HTML],
+		techs: [
+			TECH.REACT_JS,
+			TECH.TYPESCRIPT,
+			TECH.JAVASCRIPT,
+			TECH.JEST,
+			TECH.HTML,
+		],
 	},
 	{
 		company: 'Spiff',
@@ -148,12 +123,18 @@ const PROJECTS: ProjectInput[] = [
 		description: ["Create a hierarchical org chart for a company's team."],
 		gallery: [
 			{
-				filename: 'spiff-team-hierarchy.jpg',
+				filename: Images.ImgSpiffTeamHierarchy,
 			},
 		],
 		learned: '',
 		subtitle: 'Team Hierarchy',
-		techs: [REACT_JS, TYPESCRIPT, JAVASCRIPT, JEST, HTML],
+		techs: [
+			TECH.REACT_JS,
+			TECH.TYPESCRIPT,
+			TECH.JAVASCRIPT,
+			TECH.JEST,
+			TECH.HTML,
+		],
 	},
 	{
 		company: 'Hoki Skateboards',
@@ -169,30 +150,30 @@ const PROJECTS: ProjectInput[] = [
 			"It's so exciting to see this app come together! I'm really proud of it!",
 		],
 		gallery: [
-			{ filename: 'hoki-skateboards-1-home.jpg' },
-			{ filename: 'hoki-skateboards-2-levels.jpg' },
-			{ filename: 'hoki-skateboards-3-game.jpg' },
-			{ filename: 'hoki-skateboards-4-game.jpg' },
-			{ filename: 'hoki-skateboards-5-coloring.jpg' },
-			{ filename: 'hoki-skateboards-6-book.jpg' },
-			{ filename: 'hoki-skateboards-7-shop.jpg' },
-			{ filename: 'hoki-skateboards-8-build-a-board.jpg' },
-			{ filename: 'hoki-skateboards-9-login.jpg' },
+			{ filename: Images.ImgHokiSkateboards1Home },
+			{ filename: Images.ImgHokiSkateboards2Levels },
+			{ filename: Images.ImgHokiSkateboards3Game },
+			{ filename: Images.ImgHokiSkateboards4Game },
+			{ filename: Images.ImgHokiSkateboards5Coloring },
+			{ filename: Images.ImgHokiSkateboards6Book },
+			{ filename: Images.ImgHokiSkateboards7Shop },
+			{ filename: Images.ImgHokiSkateboards8BuildABoard },
+			{ filename: Images.ImgHokiSkateboards9Login },
 		],
 		learned: '',
 		subtitle: 'React Native Game',
 		techs: [
-			REACT_JS,
-			REACT_NATIVE,
-			TYPESCRIPT,
-			JAVASCRIPT,
-			JEST,
-			CSS,
-			HTML,
-			FIREBASE,
-			CLAUDE_CODE,
-			CURSOR,
-			STORYBOOK,
+			TECH.REACT_JS,
+			TECH.REACT_NATIVE,
+			TECH.TYPESCRIPT,
+			TECH.JAVASCRIPT,
+			TECH.JEST,
+			TECH.CSS,
+			TECH.HTML,
+			TECH.FIREBASE,
+			TECH.CLAUDE_CODE,
+			TECH.CURSOR,
+			TECH.STORYBOOK,
 		],
 		url: 'https://www.hokiskateboards.com/app/',
 	},
@@ -210,15 +191,15 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{
 				caption: 'Custom WordPress homepage design',
-				filename: 'blue-monday-salon-1.jpg',
+				filename: Images.ImgBlueMondaySalon1,
 			},
 			{
 				caption: 'Logo Design',
-				filename: 'blue-monday-salon-2.jpg',
+				filename: Images.ImgBlueMondaySalon2,
 			},
 		],
 		learned: '',
-		techs: [PHP, HTML, CSS, WORDPRESS],
+		techs: [TECH.PHP, TECH.HTML, TECH.CSS, TECH.WORDPRESS],
 	},
 	{
 		company: 'Chatbooks.com',
@@ -230,13 +211,20 @@ const PROJECTS: ProjectInput[] = [
 			'Revamp existing create book page with new UI written in ReactJs',
 		gallery: [
 			{
-				filename: 'chatbooks-com-book-creation.jpg',
+				filename: Images.ImgChatbooksComBookCreation,
 			},
 		],
 		learned: '',
 		live: true,
 		subtitle: 'Book Creation',
-		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS, STORYBOOK],
+		techs: [
+			TECH.REACT_JS,
+			TECH.REDUX,
+			TECH.JAVASCRIPT,
+			TECH.HTML,
+			TECH.SCSS,
+			TECH.STORYBOOK,
+		],
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
@@ -249,12 +237,12 @@ const PROJECTS: ProjectInput[] = [
 			"Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
 		gallery: [
 			{
-				filename: 'chatbooks-com-cards-quick-flow-sources.jpg',
+				filename: Images.ImgChatbooksComCardsQuickFlowSources,
 			},
 		],
 		learned: '',
 		subtitle: 'Cards Quick Flow Sources',
-		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
+		techs: [TECH.REACT_JS, TECH.REDUX, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 	},
 	{
 		company: 'Chatbooks.com',
@@ -263,13 +251,13 @@ const PROJECTS: ProjectInput[] = [
 			'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		gallery: [
 			{
-				filename: 'chatbooks-com-premium-layflat.jpg',
+				filename: Images.ImgChatbooksComPremiumLayflat,
 			},
 		],
 		learned: '',
 		live: true,
 		subtitle: 'Premium Layflat',
-		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
+		techs: [TECH.REACT_JS, TECH.REDUX, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
@@ -283,12 +271,12 @@ const PROJECTS: ProjectInput[] = [
 			'Creating cards taxonomy pages with categories and search filters.',
 		gallery: [
 			{
-				filename: 'chatbooks-com-cards-taxonomy-pages.jpg',
+				filename: Images.ImgChatbooksComCardsTaxonomyPages,
 			},
 		],
 		learned: '',
 		subtitle: 'Cards Taxonomy Pages',
-		techs: [REACT_JS, REDUX, JAVASCRIPT, HTML, SCSS],
+		techs: [TECH.REACT_JS, TECH.REDUX, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 	},
 	{
 		company: 'Overstock.com',
@@ -301,28 +289,34 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{
 				caption: 'Customer review images on the product page',
-				filename: 'overstock-com-customer-review-images-1.jpg',
+				filename: Images.ImgOverstockComCustomerReviewImages1,
 			},
 			{
 				caption: 'Customer review images on the product page',
-				filename: 'overstock-com-customer-review-images-2.jpg',
+				filename: Images.ImgOverstockComCustomerReviewImages2,
 			},
 			{
 				caption: 'Customer images within the review section',
-				filename: 'overstock-com-customer-review-images-3.jpg',
+				filename: Images.ImgOverstockComCustomerReviewImages3,
 			},
 			{
 				caption: 'Review with customer review images',
-				filename: 'overstock-com-customer-review-images-4.jpg',
+				filename: Images.ImgOverstockComCustomerReviewImages4,
 			},
 			{
 				caption: 'Modal with a gallery of customer review images',
-				filename: 'overstock-com-customer-review-images-5.jpg',
+				filename: Images.ImgOverstockComCustomerReviewImages5,
 			},
 		],
 		learned: '',
 		subtitle: 'Customer Review Images',
-		techs: [REACT_JS, HTML, JAVASCRIPT, WEBPACK, LESS_CSS],
+		techs: [
+			TECH.REACT_JS,
+			TECH.HTML,
+			TECH.JAVASCRIPT,
+			TECH.WEBPACK,
+			TECH.LESS_CSS,
+		],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -334,12 +328,12 @@ const PROJECTS: ProjectInput[] = [
 			'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
 		gallery: [
 			{
-				filename: 'overstock-com-amp-featured-product.jpg',
+				filename: Images.ImgOverstockComAmpFeaturedProduct,
 			},
 		],
 		learned: '',
 		subtitle: 'AMP Featured Product',
-		techs: [HTML, JAVASCRIPT, AMP, WEBPACK, LESS_CSS],
+		techs: [TECH.HTML, TECH.JAVASCRIPT, TECH.AMP, TECH.WEBPACK, TECH.LESS_CSS],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -351,20 +345,20 @@ const PROJECTS: ProjectInput[] = [
 			'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
 		gallery: [
 			{
-				filename: 'overstock-com-admin-portal.jpg',
+				filename: Images.ImgOverstockComAdminPortal,
 			},
 		],
 		learned: 'I got a deeper understanding of the Redux flow.',
 		subtitle: 'Admin Portal',
 		techs: [
-			REACT_JS,
-			REDUX,
-			NODE_JS,
-			EXPRESS,
-			HTML,
-			LESS_CSS,
-			JAVASCRIPT,
-			WEBPACK,
+			TECH.REACT_JS,
+			TECH.REDUX,
+			TECH.NODE_JS,
+			TECH.EXPRESS,
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.WEBPACK,
 		],
 		url: 'http://www.overstock.com/',
 	},
@@ -377,12 +371,20 @@ const PROJECTS: ProjectInput[] = [
 			'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
 		gallery: [
 			{
-				filename: 'overstock-com-hackathon-2017.jpg',
+				filename: Images.ImgOverstockComHackathon2017,
 			},
 		],
 		learned: '',
 		subtitle: 'Hackathon 2017',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, REACT_JS, REDUX, JQUERY, WEBPACK],
+		techs: [
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.REACT_JS,
+			TECH.REDUX,
+			TECH.JQUERY,
+			TECH.WEBPACK,
+		],
 		url: 'https://www.overstock.com/94864/static.html',
 	},
 	{
@@ -391,12 +393,19 @@ const PROJECTS: ProjectInput[] = [
 		description: 'Reward users for leaving a qualifying review.',
 		gallery: [
 			{
-				filename: 'overstock-com-rewards-for-reviews.jpg',
+				filename: Images.ImgOverstockComRewardsForReviews,
 			},
 		],
 		learned: '',
 		subtitle: 'Rewards for Reviews',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
+		techs: [
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HANDLEBARS_JS,
+			TECH.GRUNT,
+		],
 		url: 'https://www.overstock.com/rewards-for-reviews',
 	},
 	{
@@ -407,14 +416,21 @@ const PROJECTS: ProjectInput[] = [
 		description: 'Site that resizes down to mobile devices',
 		gallery: [
 			{
-				filename: 'overstock-com-responsive-see-all-reviews-page.jpg',
+				filename: Images.ImgOverstockComResponsiveSeeAllReviewsPage,
 			},
 		],
 		learned:
 			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
 		live: true,
 		subtitle: 'Responsive See All Reviews Page',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, JQUERY, HANDLEBARS_JS, GRUNT],
+		techs: [
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HANDLEBARS_JS,
+			TECH.GRUNT,
+		],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -425,13 +441,13 @@ const PROJECTS: ProjectInput[] = [
 		description: 'On mobile devices, an add to cart popup.',
 		gallery: [
 			{
-				filename: 'overstock-com-see-all-reviews-page-mobile-add-to-cart.jpg',
+				filename: Images.ImgOverstockComSeeAllReviewsPageMobileAddToCart,
 			},
 		],
 		learned: 'This was my first production level ReactJs work.',
 		live: true,
 		subtitle: 'See All Reviews Page Mobile Add To Cart',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, REACT_JS],
+		techs: [TECH.HTML, TECH.LESS_CSS, TECH.JAVASCRIPT, TECH.REACT_JS],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -440,14 +456,20 @@ const PROJECTS: ProjectInput[] = [
 		description: 'Allowing a user to leave rating only reviews.',
 		gallery: [
 			{
-				filename: 'overstock-com-reviews-breakout.jpg',
+				filename: Images.ImgOverstockComReviewsBreakout,
 			},
 		],
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
 		live: true,
 		subtitle: 'Reviews Breakout',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, HANDLEBARS_JS, JQUERY],
+		techs: [
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.HANDLEBARS_JS,
+			TECH.JQUERY,
+		],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -463,18 +485,24 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{
 				caption: 'Updated gold star ratings',
-				filename: 'overstock-com-star-ratings-color-1.jpg',
+				filename: Images.ImgOverstockComStarRatingsColor1,
 			},
 			{
 				caption: 'Original red star ratings',
-				filename: 'overstock-com-star-ratings-color-2.jpg',
+				filename: Images.ImgOverstockComStarRatingsColor2,
 			},
 		],
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
 		live: true,
 		subtitle: 'Star Ratings Color',
-		techs: [HTML, LESS_CSS, JAVASCRIPT, HANDLEBARS_JS, JQUERY],
+		techs: [
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.JAVASCRIPT,
+			TECH.HANDLEBARS_JS,
+			TECH.JQUERY,
+		],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -483,13 +511,20 @@ const PROJECTS: ProjectInput[] = [
 		description: 'Embeddable affiliate links',
 		gallery: [
 			{
-				filename: 'overstock-com-affiliate-links.jpg',
+				filename: Images.ImgOverstockComAffiliateLinks,
 			},
 		],
 		learned: '',
 		live: true,
 		subtitle: 'Affiliate Links',
-		techs: [JAVASCRIPT, JQUERY, PHP, HTML, LESS_CSS, GRUNT],
+		techs: [
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.PHP,
+			TECH.HTML,
+			TECH.LESS_CSS,
+			TECH.GRUNT,
+		],
 		url: 'http://www.overstock.com/',
 	},
 	{
@@ -499,12 +534,12 @@ const PROJECTS: ProjectInput[] = [
 			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		gallery: [
 			{
-				filename: 'lindseyhoki-com.jpg',
+				filename: Images.ImgLindseyhokiCom,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [WORDPRESS, HTML, CSS],
+		techs: [TECH.WORDPRESS, TECH.HTML, TECH.CSS],
 		url: 'http://www.lindseyhoki.com/',
 	},
 	{
@@ -518,12 +553,21 @@ const PROJECTS: ProjectInput[] = [
 			'Passion project skateboard company I am building and branding.',
 		gallery: [
 			{
-				filename: 'hoki-skateboards.jpg',
+				filename: Images.ImgHokiSkateboards,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [WORDPRESS, WOO_COMMERCE, STRIPE, PHP, JQUERY, HTML, CSS, REACT_JS],
+		techs: [
+			TECH.WORDPRESS,
+			TECH.WOO_COMMERCE,
+			TECH.STRIPE,
+			TECH.PHP,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+			TECH.REACT_JS,
+		],
 		url: 'http://www.hokiskateboards.com/',
 	},
 	{
@@ -533,11 +577,11 @@ const PROJECTS: ProjectInput[] = [
 			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		gallery: [
 			{
-				filename: 'truly-lindsey-photography.jpg',
+				filename: Images.ImgTrulyLindseyPhotography,
 			},
 		],
 		learned: '',
-		techs: [WORDPRESS, HTML, CSS],
+		techs: [TECH.WORDPRESS, TECH.HTML, TECH.CSS],
 		url: 'http://www.trulylindseyphotography.com/',
 	},
 	{
@@ -551,7 +595,7 @@ const PROJECTS: ProjectInput[] = [
 			'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
 		gallery: [
 			{
-				filename: 'room-choice-student-housing-software.jpg',
+				filename: Images.ImgRoomChoiceStudentHousingSoftware,
 			},
 		],
 		learned:
@@ -559,13 +603,13 @@ const PROJECTS: ProjectInput[] = [
 		live: true,
 		subtitle: 'Student Housing Software',
 		techs: [
-			PYTHON,
-			DJANGO,
-			ANGULAR_JS,
-			JAVASCRIPT,
-			COFFEE_SCRIPT,
-			HTML,
-			LESS_CSS,
+			TECH.PYTHON,
+			TECH.DJANGO,
+			TECH.ANGULAR_JS,
+			TECH.JAVASCRIPT,
+			TECH.COFFEE_SCRIPT,
+			TECH.HTML,
+			TECH.LESS_CSS,
 		],
 		url: 'http://www.roomchoice.com/',
 	},
@@ -580,12 +624,19 @@ const PROJECTS: ProjectInput[] = [
 			'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
 		gallery: [
 			{
-				filename: 'rooke-capital-management-financial-planning.jpg',
+				filename: Images.ImgRookeCapitalManagementFinancialPlanning,
 			},
 		],
 		learned: '',
 		subtitle: 'Financial Planning',
-		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [
+			TECH.PHP,
+			TECH.WORDPRESS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+		],
 		url: 'http://www.rookecapital.com/',
 	},
 	{
@@ -599,12 +650,12 @@ const PROJECTS: ProjectInput[] = [
 			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
 		gallery: [
 			{
-				filename: 'rgdjanitorial.jpg',
+				filename: Images.ImgRgdjanitorial,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [PHP, WORDPRESS, JAVASCRIPT, HTML, CSS],
+		techs: [TECH.PHP, TECH.WORDPRESS, TECH.JAVASCRIPT, TECH.HTML, TECH.CSS],
 		url: 'http://www.rgdjanitorial.com/',
 	},
 	{
@@ -613,13 +664,13 @@ const PROJECTS: ProjectInput[] = [
 		description: 'This is the wedding website that I made for my wedding.',
 		gallery: [
 			{
-				filename: 'wedding-website.jpg',
+				filename: Images.ImgWeddingWebsite,
 			},
 		],
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
 		live: true,
-		techs: [ANGULAR_JS, JAVASCRIPT, HTML, SCSS],
+		techs: [TECH.ANGULAR_JS, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 		url: 'http://www.wedding.hokihappenings.com/',
 	},
 	{
@@ -634,13 +685,20 @@ const PROJECTS: ProjectInput[] = [
 			'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
 		gallery: [
 			{
-				filename: 'eric-aroca-motivational-speaker.jpg',
+				filename: Images.ImgEricArocaMotivationalSpeaker,
 			},
 		],
 		learned:
 			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collaborative effort to get his site put together.',
 		subtitle: 'Motivational Speaker',
-		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [
+			TECH.PHP,
+			TECH.WORDPRESS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+		],
 		url: 'http://www.ericaroca.com/',
 	},
 	{
@@ -653,12 +711,19 @@ const PROJECTS: ProjectInput[] = [
 			'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
 		gallery: [
 			{
-				filename: 'saints-and-sinners-half-marathon-and-team-relay.jpg',
+				filename: Images.ImgSaintsAndSinnersHalfMarathonAndTeamRelay,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
+		techs: [
+			TECH.PHP,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+			TECH.SQL,
+		],
 		url: 'http://www.saintsandsinnershalf.com/',
 	},
 	{
@@ -667,11 +732,18 @@ const PROJECTS: ProjectInput[] = [
 		description: 'Build out the HTML and CSS for a new landing page.',
 		gallery: [
 			{
-				filename: 'new-life-recovery.jpg',
+				filename: Images.ImgNewLifeRecovery,
 			},
 		],
 		learned: '',
-		techs: [PHP, WORDPRESS, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [
+			TECH.PHP,
+			TECH.WORDPRESS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+		],
 		url: 'http://www.newlife-recovery.org/',
 	},
 	{
@@ -685,11 +757,18 @@ const PROJECTS: ProjectInput[] = [
 			'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
 		gallery: [
 			{
-				filename: 'creative-media-education.jpg',
+				filename: Images.ImgCreativeMediaEducation,
 			},
 		],
 		learned: '',
-		techs: [ANGULAR_JS, PHP, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [
+			TECH.ANGULAR_JS,
+			TECH.PHP,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+		],
 		url: 'http://www.cmeducation.org/',
 	},
 	{
@@ -702,11 +781,11 @@ const PROJECTS: ProjectInput[] = [
 			'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
 		gallery: [
 			{
-				filename: 'lavavolt.jpg',
+				filename: Images.ImgLavavolt,
 			},
 		],
 		learned: '',
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.lavavolt.com',
 	},
 	{
@@ -718,12 +797,12 @@ const PROJECTS: ProjectInput[] = [
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		gallery: [
 			{
-				filename: 'enspark-learning-management-system.jpg',
+				filename: Images.ImgEnsparkLearningManagementSystem,
 			},
 		],
 		learned: 'This is one of my first full-stack projects.',
 		subtitle: 'Learning Management System',
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.lms.enspark.com',
 	},
 	{
@@ -735,12 +814,19 @@ const PROJECTS: ProjectInput[] = [
 			'We provide discounted integrated solutions to ship your products or your customers products for less money.',
 		gallery: [
 			{
-				filename: 'first-mile.jpg',
+				filename: Images.ImgFirstMile,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [PHP, ANGULAR_JS, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [
+			TECH.PHP,
+			TECH.ANGULAR_JS,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+		],
 		url: 'http://www.enspark.net/internationalfulfillment/',
 	},
 	{
@@ -752,11 +838,11 @@ const PROJECTS: ProjectInput[] = [
 			'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
 		gallery: [
 			{
-				filename: 'the-putting-tour.jpg',
+				filename: Images.ImgThePuttingTour,
 			},
 		],
 		learned: '',
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.theputtingtour.com',
 	},
 	{
@@ -768,11 +854,11 @@ const PROJECTS: ProjectInput[] = [
 			'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
 		gallery: [
 			{
-				filename: 'wininsights.jpg',
+				filename: Images.ImgWininsights,
 			},
 		],
 		learned: '',
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS],
+		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.wininsights.com',
 	},
 	{
@@ -784,12 +870,12 @@ const PROJECTS: ProjectInput[] = [
 			'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
 		gallery: [
 			{
-				filename: 'barrier-pest-control.jpg',
+				filename: Images.ImgBarrierPestControl,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [JAVASCRIPT, JQUERY, HTML, CSS, SQL],
+		techs: [TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS, TECH.SQL],
 		url: 'http://www.barrierpc.com',
 	},
 	{
@@ -801,13 +887,20 @@ const PROJECTS: ProjectInput[] = [
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		gallery: [
 			{
-				filename: 'enspark-marketing-website.jpg',
+				filename: Images.ImgEnsparkMarketingWebsite,
 			},
 		],
 		learned: '',
 		live: true,
 		subtitle: 'Marketing Website',
-		techs: [JAVASCRIPT, JQUERY, HTML, CSS, PHP, SQL],
+		techs: [
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+			TECH.PHP,
+			TECH.SQL,
+		],
 		url: 'http://www.enspark.com',
 	},
 	{
@@ -823,27 +916,27 @@ const PROJECTS: ProjectInput[] = [
 		gallery: [
 			{
 				caption: 'Desktop homepage',
-				filename: 'beit-lehi-1.jpg',
+				filename: Images.ImgBeitLehi1,
 			},
 			{
 				caption: 'Desktop homepage',
-				filename: 'beit-lehi-2.jpg',
+				filename: Images.ImgBeitLehi2,
 			},
 			{
 				caption: 'Mobile homepage',
-				filename: 'beit-lehi-mobile-1.jpg',
+				filename: Images.ImgBeitLehiMobile1,
 			},
 			{
 				caption: 'Mobile homepage',
-				filename: 'beit-lehi-mobile-2.jpg',
+				filename: Images.ImgBeitLehiMobile2,
 			},
 			{
 				caption: 'Mobile homepage',
-				filename: 'beit-lehi-mobile-3.jpg',
+				filename: Images.ImgBeitLehiMobile3,
 			},
 		],
 		learned: '',
-		techs: [HTML, CSS, PHP, JAVASCRIPT, WORDPRESS],
+		techs: [TECH.HTML, TECH.CSS, TECH.PHP, TECH.JAVASCRIPT, TECH.WORDPRESS],
 	},
 	{
 		company: 'Utah Casa',
@@ -854,12 +947,12 @@ const PROJECTS: ProjectInput[] = [
 			'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
 		gallery: [
 			{
-				filename: 'utah-casa.jpg',
+				filename: Images.ImgUtahCasa,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [PHP, HTML, CSS],
+		techs: [TECH.PHP, TECH.HTML, TECH.CSS],
 		url: 'http://www.utahcasa.org/',
 	},
 	{
@@ -871,12 +964,19 @@ const PROJECTS: ProjectInput[] = [
 			'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
 		gallery: [
 			{
-				filename: 'paradigm-life.jpg',
+				filename: Images.ImgParadigmLife,
 			},
 		],
 		learned: '',
 		live: true,
-		techs: [PHP, JAVASCRIPT, JQUERY, HTML, CSS, SQL],
+		techs: [
+			TECH.PHP,
+			TECH.JAVASCRIPT,
+			TECH.JQUERY,
+			TECH.HTML,
+			TECH.CSS,
+			TECH.SQL,
+		],
 		url: 'http://www.paradigmlife.net/',
 	},
 	{
@@ -888,11 +988,11 @@ const PROJECTS: ProjectInput[] = [
 			'Get a Free Online Report and recommended solution to your debt problem.',
 		gallery: [
 			{
-				filename: 'debt-free-planning.jpg',
+				filename: Images.ImgDebtFreePlanning,
 			},
 		],
 		learned: '',
-		techs: [PHP, LESS_CSS, HTML, JAVASCRIPT],
+		techs: [TECH.PHP, TECH.LESS_CSS, TECH.HTML, TECH.JAVASCRIPT],
 		url: 'http://www.debt-free-planning.com',
 	},
 	{
@@ -904,11 +1004,11 @@ const PROJECTS: ProjectInput[] = [
 			'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
 		gallery: [
 			{
-				filename: 'southam-consulting.jpg',
+				filename: Images.ImgSouthamConsulting,
 			},
 		],
 		learned: '',
-		techs: [PHP, CSS, HTML, JAVASCRIPT],
+		techs: [TECH.PHP, TECH.CSS, TECH.HTML, TECH.JAVASCRIPT],
 		url: 'http://www.southamconsulting.net',
 	},
 	{
@@ -919,14 +1019,14 @@ const PROJECTS: ProjectInput[] = [
 			'The courses were interactive and built in Flash. Flash pretty quickly died after I started working at Enspark. I miss flash. It was fun. RIP.',
 		],
 		gallery: [
-			{ filename: 'enspark-art-of-negotiation.jpg' },
-			{ filename: 'enspark-conflict-resolution.jpg' },
-			{ filename: 'enspark-email-etiquette.jpg' },
+			{ filename: Images.ImgEnsparkArtOfNegotiation },
+			{ filename: Images.ImgEnsparkConflictResolution },
+			{ filename: Images.ImgEnsparkEmailEtiquette },
 		],
 		learned:
 			"This was my first tech job. I had a lot of fun learning and growing. I'm thankful for those at Enspark that gave me a change and got my career started.",
 		subtitle: 'eLearning Courses',
-		techs: [ACTION_SCRIPT],
+		techs: [TECH.ACTION_SCRIPT],
 	},
 	{
 		company: 'Enspark',
@@ -937,14 +1037,14 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Animated banner ads that would populate on the side of websites. ',
 		gallery: [
-			{ filename: 'enspark-flash-banner-1.jpg' },
-			{ filename: 'enspark-flash-banner-2.jpg' },
-			{ filename: 'enspark-flash-banner-3.jpg' },
+			{ filename: Images.ImgEnsparkFlashBanner1 },
+			{ filename: Images.ImgEnsparkFlashBanner2 },
+			{ filename: Images.ImgEnsparkFlashBanner3 },
 		],
 		learned:
 			'As an intern I had mentors directly working with me on these projects.',
 		subtitle: 'Flash Banner',
-		techs: [ACTION_SCRIPT],
+		techs: [TECH.ACTION_SCRIPT],
 	},
 ];
 

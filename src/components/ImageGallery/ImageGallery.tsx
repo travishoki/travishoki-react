@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 
+import { GalleryImage } from './types';
+
 import styles from './ImageGallery.module.scss';
 
 export const ImageGallery = ({ images }: ImageGalleryProps) => {
@@ -13,9 +15,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 	const goToPage = (index: number) =>
 		setPage((index + images.length) % images.length);
 
-	const currentSrc = images[page];
-
-	const alt = `Hoki Skateboards app screen ${page + 1}`;
+	const { alt, caption, filename } = images[page];
 
 	return (
 		<div className={styles.gallery}>
@@ -26,7 +26,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 					onClose={() => setModalOpen(false)}
 					onNext={() => goToPage(page + 1)}
 					onPrev={() => goToPage(page - 1)}
-					src={currentSrc}
+					src={filename}
 				/>
 			)}
 
@@ -40,8 +40,10 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 						event.currentTarget.naturalHeight,
 					])
 				}
-				src={currentSrc}
+				src={filename}
 			/>
+
+			{caption && <p className={styles.projectImageCaption}>{caption}</p>}
 
 			<CarouselDots
 				activeIndex={page}
@@ -53,5 +55,5 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 };
 
 type ImageGalleryProps = {
-	images: string[];
+	images: GalleryImage[];
 };

@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { CarouselDots } from '~components/CarouselDots/CarouselDots';
-import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
-import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
+import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { getImgAltText } from '~helpers/images';
-import {
-	handleGalleryError,
-	websiteGalleryImageSrc,
-} from '~helpers/websiteGallery';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
@@ -18,57 +12,14 @@ export const ProjectImageCarousel = ({
 	gallery,
 	subtitle,
 }: ProjectImageCarouselProps) => {
-	const [page, setPage] = useState(0);
-	const [modalOpen, setModalOpen] = useState(false);
-	const [dimensions, setDimensions] = useState<number[]>([0, 0]);
-
-	const goToPage = (index: number) =>
-		setPage((index + gallery.length) % gallery.length);
-
-	const currentSrc = websiteGalleryImageSrc(gallery[page].filename);
-
 	const imgAlt = getImgAltText(company, subtitle);
-	const { caption } = gallery[page];
 
-	return (
-		<div className={styles.projectImageCarousel}>
-			{modalOpen && (
-				<ImageModal
-					alt={imgAlt}
-					dimensions={dimensions}
-					onClose={() => setModalOpen(false)}
-					onNext={() => goToPage(page + 1)}
-					onPrev={() => goToPage(page - 1)}
-					src={currentSrc}
-				/>
-			)}
+	const images = gallery.map((image) => ({
+		...image,
+		alt: imgAlt,
+	}));
 
-			<div className={styles.imageContainer}>
-				<OverlayWithIcon onClick={() => setModalOpen(true)} />
-
-				<img
-					alt={imgAlt}
-					className="pointer"
-					onError={handleGalleryError}
-					onLoad={(event) =>
-						setDimensions([
-							event.currentTarget.naturalWidth,
-							event.currentTarget.naturalHeight,
-						])
-					}
-					src={currentSrc}
-				/>
-			</div>
-
-			{caption && <p className={styles.projectImageCaption}>{caption}</p>}
-
-			<CarouselDots
-				activeIndex={page}
-				count={gallery.length}
-				onSelect={setPage}
-			/>
-		</div>
-	);
+	return <ImageGallery images={images} />;
 };
 
 type ProjectImageCarouselProps = {

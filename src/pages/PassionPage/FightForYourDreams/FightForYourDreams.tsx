@@ -1,8 +1,7 @@
 import React from 'react';
 
-import classNames from 'classnames';
-
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
+import { GalleryImage } from '~components/ImageGallery/types';
 import ImgBackCover from '~images/passion/fight-for-your-dreams/fight-for-your-dreams-back.jpg';
 import ImgCover from '~images/passion/fight-for-your-dreams/fight-for-your-dreams.jpg';
 
@@ -10,7 +9,10 @@ import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { BookHeading } from './BookHeading/BookHeading';
 import { CoverImage } from './CoverImage/CoverImage';
 
-const GALLERY_IMAGES = [ImgCover, ImgBackCover] as string[];
+const GALLERY_IMAGES = [
+	{ filename: ImgCover },
+	{ filename: ImgBackCover },
+] as GalleryImage[];
 
 export const FightForYourDreams = () => {
 	return (

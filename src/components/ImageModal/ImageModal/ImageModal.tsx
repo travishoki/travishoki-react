@@ -63,7 +63,7 @@ export const ImageModal = ({
 };
 
 type ImageModalProps = {
-	alt: string;
+	alt?: string;
 	dimensions: number[];
 	onClose: () => void;
 	onNext?: () => void;

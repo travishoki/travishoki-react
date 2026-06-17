@@ -1,9 +1,5 @@
+import { GalleryImage } from '~components/ImageGallery/types';
 import { TechKey } from '~const/Tech.const';
-
-type GalleryImage = {
-	caption?: string;
-	filename: string;
-};
 
 export type ProjectType = {
 	company: string;
