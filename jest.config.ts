@@ -15,12 +15,11 @@ module.exports = {
 	moduleNameMapper: {
 		'\\.(jpg|jpeg|png|gif|webp|svg|css|scss|sass)$':
 			'<rootDir>/testing/fileMock.ts',
-		'^~actions/(.*)$': '<rootDir>/src/redux/actions/$1',
+		'^~animations/(.*)$': '<rootDir>/src/redux/animations/$1',
 		'^~components/(.*)$': '<rootDir>/src/components/$1',
 		'^~const/(.*)$': '<rootDir>/src/const/$1',
 		'^~helpers/(.*)$': '<rootDir>/src/helpers/$1',
 		'^~images/(.*)$': '<rootDir>/src/images/$1',
-		'^~reducers/(.*)$': '<rootDir>/src/redux/reducers/$1',
 		'^~svg/(.*)$': '<rootDir>/src/svg/$1',
 	},
 	preset: 'ts-jest',

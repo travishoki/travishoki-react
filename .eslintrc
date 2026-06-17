@@ -193,12 +193,11 @@
 		"import/resolver": {
 			"alias": {
 				"map": [
-					["~actions", "./src/redux/actions"],
+					["~animations", "./src/animations"],
 					["~components", "./src/components"],
 					["~const", "./src/const"],
 					["~helpers", "./src/helpers"],
 					["~images", "./src/images"],
-					["~reducers", "./src/redux/reducers"],
 					["~svg", "./src/svg"],
 				],
 			},
