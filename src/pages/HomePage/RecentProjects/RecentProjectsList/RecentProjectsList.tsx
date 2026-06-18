@@ -12,8 +12,12 @@ const currentProjects = orderTopThreeInPodium(
 
 export const RecentProjectsList = () => (
 	<ul className={styles.recentProjectsList}>
-		{currentProjects.map((project) => (
-			<RecentProjectItem key={project.itemKey} project={project} />
+		{currentProjects.map((project, index) => (
+			<RecentProjectItem
+				key={project.itemKey}
+				index={index}
+				project={project}
+			/>
 		))}
 	</ul>
 );
