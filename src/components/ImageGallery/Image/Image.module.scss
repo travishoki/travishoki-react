@@ -1,5 +1,10 @@
+.imageWrapper {
+	display: inline-block;
+	position: relative;
+}
+
 .image {
-	cursor: pointer;
+	display: block;
 	max-height: 500px;
 	width: auto;
 }
