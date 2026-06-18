@@ -5,7 +5,7 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 import { DISPLAYED_LIST } from './TechTiles.data';
 
 export const TechTiles = () => (
-	<section className="gray-three">
+	<section className="gray-four">
 		<TechListCatalogue list={DISPLAYED_LIST} title="Tech I have worked with" />
 	</section>
 );
