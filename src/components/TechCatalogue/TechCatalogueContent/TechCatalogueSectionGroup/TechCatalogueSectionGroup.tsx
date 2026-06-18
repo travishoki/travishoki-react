@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 import { MotionAutoHeight } from '~animations/MotionAutoHeight';
-
-import { TechCatalogueItemData } from '../../TechCatalogue.types';
-import { TechCatalogueHeader } from '../../TechCatalogueHeader/TechCatalogueHeader';
-import { TechCatalogueList } from '../TechCatalogueList/TechCatalogueList';
+import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
+import { TechCatalogueList } from '~components/TechCatalogue/TechCatalogueContent/TechCatalogueList/TechCatalogueList';
+import { TechCatalogueHeader } from '~components/TechCatalogue/TechCatalogueHeader/TechCatalogueHeader';
 
 export const TechCatalogueSectionGroup = ({
 	items,

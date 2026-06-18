@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { useLeftArrowKey } from '../ImageModal.hooks';
-import { ModalArrow } from '../ModalArrow/ModalArrow';
+import { useLeftArrowKey } from '~components/ImageModal/ImageModal.hooks';
+import { ModalArrow } from '~components/ImageModal/ModalArrow/ModalArrow';
 
 export const LeftModalArrow = ({ onClick }: LeftModalArrowProps) => {
 	useLeftArrowKey(onClick);

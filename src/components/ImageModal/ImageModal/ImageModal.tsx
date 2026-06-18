@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 
 import { createPortal } from 'react-dom';
 
-import { CloseButton } from '../CloseButton/CloseButton';
-import { getDimensions } from '../ImageModal.helpers';
-import { useCloseOnEscape, useScrollLock } from '../ImageModal.hooks';
-import { LeftModalArrow } from '../LeftModalArrow/LeftModalArrow';
-import { RightModalArrow } from '../RightModalArrow/RightModalArrow';
+import { CloseButton } from '~components/ImageModal/CloseButton/CloseButton';
+import { getDimensions } from '~components/ImageModal/ImageModal.helpers';
+import {
+	useCloseOnEscape,
+	useScrollLock,
+} from '~components/ImageModal/ImageModal.hooks';
+import { LeftModalArrow } from '~components/ImageModal/LeftModalArrow/LeftModalArrow';
+import { RightModalArrow } from '~components/ImageModal/RightModalArrow/RightModalArrow';
 
 import styles from './ImageModal.module.scss';
 

@@ -1,8 +1,7 @@
 import React from 'react';
 
+import { GalleryImage } from '~components/ImageGallery/types';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
-
-import { GalleryImage } from '../types';
 
 import styles from './Image.module.scss';
 

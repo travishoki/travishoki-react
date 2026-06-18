@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { MotionAutoHeight } from '~animations/MotionAutoHeight';
+import { TYPE_SECTIONS } from '~components/TechCatalogue/TechCatalogue.const';
+import { groupTechByType } from '~components/TechCatalogue/TechCatalogue.helpers';
+import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
 
-import { TYPE_SECTIONS } from '../TechCatalogue.const';
-import { groupTechByType } from '../TechCatalogue.helpers';
-import { TechCatalogueItemData } from '../TechCatalogue.types';
 import { TechCatalogueList } from './TechCatalogueList/TechCatalogueList';
 import { TechCatalogueSectionGroup } from './TechCatalogueSectionGroup/TechCatalogueSectionGroup';
 

@@ -2,7 +2,8 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { TechCatalogueItemData } from '../../TechCatalogue.types';
+import { TechCatalogueItemData } from '~components/TechCatalogue/TechCatalogue.types';
+
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
 
 import styles from './TechCatalogueList.module.scss';

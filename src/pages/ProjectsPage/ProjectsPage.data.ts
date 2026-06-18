@@ -1,8 +1,8 @@
+import * as TECH from '~const/Tech.const';
 import { getItemKey, slugify } from '~helpers/projects';
 
 import * as Images from './ProjectsPage.Images.data';
 import { ProjectType } from './ProjectsPage.types';
-import * as TECH from '../../const/Tech.const';
 
 const PROJECTS: ProjectInput[] = [
 	{

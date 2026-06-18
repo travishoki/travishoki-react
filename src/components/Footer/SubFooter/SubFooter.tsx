@@ -3,8 +3,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
+import { SocialIcons } from '~components/SocialIcons/SocialIcons';
+
 import { BluehostAffiliate } from './BluehostAffiliate/BluehostAffiliate';
-import { SocialIcons } from '../../SocialIcons/SocialIcons';
 
 import styles from './SubFooter.module.scss';
 
