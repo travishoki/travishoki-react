@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FightForYourDreams } from '../FightForYourDreams/FightForYourDreams';
+import { FightForYourDreams } from './FightForYourDreams';
 import { PassionNav } from '../PassionNav/PassionNav';
 
 export const FightForYourDreamsPage = () => (
