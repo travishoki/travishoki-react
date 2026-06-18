@@ -1,0 +1,11 @@
+@use 'styles' as *;
+
+.videoContainer {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	video {
+		max-width: 100%;
+	}
+}
