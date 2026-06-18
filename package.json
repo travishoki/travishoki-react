@@ -3,12 +3,12 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"start": "craco start",
-		"build": "craco build",
+		"start": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
 		"test": "jest",
 		"test:coverage": "jest --coverage",
 		"test:watch": "jest --watch",
-		"eject": "craco eject",
 		"lint": "eslint --ext .js,.ts,.tsx src/",
 		"lint:css": "stylelint \"src/**/*.scss\"",
 		"lint:css:fix": "stylelint \"src/**/*.scss\" --fix",
@@ -16,7 +16,6 @@
 		"bounce": "rm -rf node_modules && yarn install",
 		"ts-check": "npx tsc",
 		"prepare": "husky install",
-		"postinstall": "bash scripts/patch-schema-utils.sh",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"stats": "node scripts/stats.mjs",
@@ -39,15 +38,11 @@
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^6.26.1",
-		"react-scripts": "5.0.1",
-		"resolve-url-loader": "^5.0.0",
 		"typescript": "^5.5.4",
 		"web-vitals": "^2.1.4"
 	},
 	"eslintConfig": {
 		"extends": [
-			"react-app",
-			"react-app/jest",
 			"plugin:storybook/recommended"
 		]
 	},
@@ -64,28 +59,29 @@
 		]
 	},
 	"devDependencies": {
-		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-		"@craco/craco": "^7.1.0",
 		"@storybook/addon-a11y": "^10.4.2",
 		"@storybook/addon-docs": "^10.4.2",
 		"@storybook/addon-onboarding": "^10.4.2",
 		"@storybook/addon-vitest": "^10.4.2",
 		"@storybook/react-vite": "^10.4.2",
 		"@testing-library/dom": "^10.4.1",
-		"@types/webpack-env": "^1.18.5",
 		"@typescript-eslint/eslint-plugin": "^8.3.0",
 		"@typescript-eslint/parser": "^8.3.0",
 		"@vitejs/plugin-react": "^6.0.2",
 		"@vitest/browser": "^4.1.8",
 		"@vitest/browser-playwright": "^4.1.8",
 		"console-table-printer": "^2.16.1",
-		"craco-alias": "^3.0.1",
+		"eslint": "8",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-alias": "^1.1.2",
 		"eslint-import-resolver-typescript": "^3.6.3",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
 		"eslint-plugin-no-only-tests": "^3.3.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-promise": "^7.1.0",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^7.1.1",
 		"eslint-plugin-sort-destructure-keys": "^2.0.0",
 		"eslint-plugin-storybook": "^10.4.2",
 		"eslint-plugin-typescript-sort-keys": "^3.2.0",
@@ -97,7 +93,6 @@
 		"mockdate": "^3.0.5",
 		"msw": "^2.14.6",
 		"msw-storybook-addon": "^2.0.7",
-		"patch-package": "^8.0.1",
 		"playwright": "^1.60.0",
 		"postcss-scss": "^4.0.9",
 		"prettier": "^3.3.3",
@@ -111,18 +106,6 @@
 		"ts-prune": "^0.10.3",
 		"vite": "^8.0.16",
 		"vitest": "^4.1.8"
-	},
-	"overrides": {
-		"ajv-keywords": "^3.5.2",
-		"schema-utils": "^3.3.0",
-		"fork-ts-checker-webpack-plugin": {
-			"schema-utils": "2.7.0"
-		}
-	},
-	"resolutions": {
-		"ajv-keywords": "^3.5.2",
-		"schema-utils": "^3.3.0",
-		"fork-ts-checker-webpack-plugin/schema-utils": "2.7.0"
 	},
 	"lint-staged": {
 		"*.{js,ts,tsx}": [

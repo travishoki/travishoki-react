@@ -15,7 +15,7 @@ module.exports = {
 	moduleNameMapper: {
 		'\\.(jpg|jpeg|png|gif|webp|svg|css|scss|sass)$':
 			'<rootDir>/testing/fileMock.ts',
-		'^~animations/(.*)$': '<rootDir>/src/redux/animations/$1',
+		'^~animations/(.*)$': '<rootDir>/src/animations/$1',
 		'^~components/(.*)$': '<rootDir>/src/components/$1',
 		'^~const/(.*)$': '<rootDir>/src/const/$1',
 		'^~helpers/(.*)$': '<rootDir>/src/helpers/$1',

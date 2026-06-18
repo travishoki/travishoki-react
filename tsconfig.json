@@ -1,14 +1,16 @@
 {
 	"compilerOptions": {
 		"allowJs": true,
+		"esModuleInterop": true,
 		"jsx": "react",
-		"module": "esnext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"noEmit": true,
 		"skipLibCheck": true,
 		"strict": true,
+		"target": "ESNext",
 		"baseUrl": ".",
-		"esModuleInterop": true,
 		"typeRoots": ["node_modules/@types", "src/types"],
 		"paths": {
 			"~animations/*": ["./src/animations/*"],
@@ -19,6 +21,6 @@
 			"~svg/*": ["./src/svg/*"]
 		}
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "vite.config.ts"],
 	"exclude": ["node_modules"]
 }
