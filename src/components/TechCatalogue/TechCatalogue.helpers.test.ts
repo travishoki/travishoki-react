@@ -18,6 +18,7 @@ describe('groupTechByType', () => {
 		const result = groupTechByType(items);
 
 		expect(result).toEqual({
+			ai: [],
 			backend: [
 				{ image: 'node.jpg', label: 'Node.js', type: 'backend' },
 				{ image: 'php.jpg', label: 'PHP', type: 'backend' },
