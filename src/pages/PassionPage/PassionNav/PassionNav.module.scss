@@ -1,0 +1,28 @@
+@use 'styles' as *;
+
+.passionNav {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	margin-bottom: 24px;
+	margin-top: 32px;
+}
+
+.navButton {
+	background-color: $primary-three;
+	border: none;
+	border-radius: 8px;
+	color: $white;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 8px 20px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $primary-four;
+	}
+
+	&.active {
+		background-color: $primary-four;
+	}
+}

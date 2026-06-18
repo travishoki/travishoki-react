@@ -33,7 +33,7 @@ export const Nav = () => {
 				<NavItem title="Resume" to="resume" />
 				<NavItem title="Education" to="education" />
 				<NavItem title="About" to="about" />
-				<NavItem title="Passion" to="passion" />
+				<NavItem title="Passion" to="passion/hoki-skateboards" />
 				<NavItem title="Contact" to="contact" />
 			</ul>
 		</>

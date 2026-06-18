@@ -8,7 +8,8 @@ import { ContactPage } from './pages/ContactPage/ContactPage';
 import { EducationPage } from './pages/EducationPage/EducationPage';
 import { HomePage } from './pages/HomePage/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
-import { PassionPage } from './pages/PassionPage/PassionPage';
+import { FightForYourDreamsPage } from './pages/PassionPage/FightForYourDreamsPage/FightForYourDreamsPage';
+import { HokiSkateboardsPage } from './pages/PassionPage/HokiSkateboardsPage/HokiSkateboardsPage';
 import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { ResumePage } from './pages/ResumePage/ResumePage';
 import { SingleProjectPage } from './pages/SingleProjectPage/SingleProjectPage';
@@ -27,7 +28,14 @@ export const AppRoutes = () => (
 				<Route element={<EducationPage />} path="/education" />
 				<Route element={<ContactPage />} path="/contact" />
 				<Route element={<AboutPage />} path="/about" />
-				<Route element={<PassionPage />} path="/passion" />
+				<Route
+					element={<HokiSkateboardsPage />}
+					path="/passion/hoki-skateboards"
+				/>
+				<Route
+					element={<FightForYourDreamsPage />}
+					path="/passion/fight-for-your-dreams"
+				/>
 				<Route element={<NotFoundPage />} path="*" />
 			</Routes>
 		</App>
