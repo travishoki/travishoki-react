@@ -1,0 +1,25 @@
+import React from 'react';
+
+import classNames from 'classnames';
+import { Signature } from 'src/pages/HomePage/About/Signature/Signature';
+
+import { getYearsSince } from '~helpers/years';
+
+import styles from './About.module.scss';
+
+const MY_BIRTH_YEAR = '1990-07-08';
+const MY_AGE = getYearsSince(MY_BIRTH_YEAR);
+
+export const About = () => (
+	<section className={classNames('boxed mb-3', styles.about)}>
+		<p className="indent mb-0">
+			My name is Travis Hoki. I&apos;m from Pleasant Grove, UT. I&apos;m
+			{MY_AGE} years old. I drive a gray Honda Accord, its name is Bruce like
+			the shark in Finding Nemo. I&apos;ve been told I look like Mike Shinoda
+			from Linkin Park, or like a less attractive version of Keanu Reeves. I
+			look tired and unshaven but am nice. I&apos;m rocking a dad bod, but
+			people that don&apos;t like ice cream can’t be trusted.`
+		</p>
+		<Signature />
+	</section>
+);

@@ -1,0 +1,76 @@
+@use 'styles' as *;
+
+.recentProjectItem {
+	@include phone-down {
+		// Disable navigation on mobile.
+		a {
+			cursor: default;
+			pointer-events: none;
+		}
+
+		&:first-child {
+			float: left;
+		}
+
+		&:nth-child(2) {
+			@include box-shadow(0 0 20px 0 #000000);
+			left: 50%;
+			margin-left: -75px;
+			position: absolute;
+			top: 0;
+			width: 150px;
+		}
+
+		&:last-child {
+			float: right;
+		}
+
+		&:first-child,
+		&:last-child {
+			margin: 20px 0;
+			width: 100px;
+		}
+	}
+
+	@include tablet-up {
+		float: left;
+		width: 33.33333333%;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.projectHeader {
+	height: 50px;
+	margin-bottom: 10px;
+	position: relative;
+
+	@include phone-down {
+		display: none;
+	}
+}
+
+.projectHeaderInner {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+
+	h3,
+	h4 {
+		margin: 0;
+		text-align: center;
+	}
+
+	h3 {
+		color: $gray-three;
+		font-size: 22px;
+	}
+
+	h4 {
+		color: $gray-two;
+		font-size: 14px;
+	}
+}

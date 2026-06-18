@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+.recentProjectsList {
+	// flow-root contains the floated items without clipping the center
+	// podium item's drop shadow (which overflow: hidden would cut off).
+	display: flow-root;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	@include phone-down {
+		margin: 0 auto;
+		max-width: 300px;
+		padding-bottom: 20px;
+	}
+}

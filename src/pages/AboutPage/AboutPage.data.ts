@@ -1,3 +1,4 @@
+import { getYearsSince } from '~helpers/years';
 import ImgBallroomSmall from '~images/about/ballroom-small.jpg';
 import ImgBallroom from '~images/about/ballroom.jpg';
 import ImgChildrensBookSmall from '~images/about/childrens-book-small.jpg';
@@ -24,11 +25,6 @@ import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
 import ImgWeddingSmall from '~images/about/wedding-small.jpg';
 import ImgWedding from '~images/about/wedding.jpg';
 
-import { getYearsSince } from './AboutPage.helpers';
-
-const MY_BIRTH_YEAR = '1990-07-08';
-const MY_AGE = getYearsSince(MY_BIRTH_YEAR);
-
 const MARRIAGE_YEAR = '2015-06-06';
 const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
 
@@ -41,27 +37,30 @@ const KODA_AGE = getYearsSince(KODA_DOB);
 /* eslint-disable no-magic-numbers */
 export const ABOUT_PAGE_DATA: AboutType[] = [
 	{
-		alt: 'Travis Hoki',
-		desc: [
-			`My name is Travis Hoki. I'm from Pleasant Grove, UT. I'm ${MY_AGE} years old. I drive a gray Honda Accord, its name is Bruce like the shark in Finding Nemo. I’ve been told I look like Mike Shinoda from Linkin Park, or like a less attractive version of Keanu Reeves. I look tired and unshaven but am nice. I’m rocking a dad bod, but people that don’t like ice cream can’t be trusted.`,
-		],
-		hasSignature: true,
+		description:
+			'When I’m not staring at a code editor or building things for the web, here is a little look at what keeps me busy, what I love doing, and who I am outside of work.',
 		imgLarge: ImgProfilePic,
 		imgLargeDimensions: [300, 300],
 		imgSmall: ImgProfilePic,
-		title: 'Hey,',
 	},
 	{
-		desc: [
+		description:
+			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "screamy"! I love my family, even if we are all a little "Hoki"!',
+		imgLarge: ImgFamily,
+		imgLargeDimensions: [1463, 2048],
+		imgSmall: ImgFamilySmall,
+		title: 'Family',
+	},
+	{
+		description:
 			"In 2025, I started volunteering with Cub Scouts. I'm happy the scouting program that I loved as a kid is still around for my sons. Each of us parents are active in the pack. I'm the Bear's den leader. I've enjoyed working with the kids and other leaders.",
-		],
 		imgLarge: ImgCubScouts,
 		imgLargeDimensions: [1518, 2024],
 		imgSmall: ImgCubScoutsSmall,
 		title: 'Cub Scouts',
 	},
 	{
-		desc: [
+		description: [
 			"I've always enjoyed reading books with my kids when putting them to bed. I have illustrated two children's books, and self published each of them. They are available on Amazon and other book platforms.",
 			'This is the video from my Kickstarter campaign when I launched my book. I spent 2 years learning how to illustrate, author, and publish the book. It was so fun seeing everything starting to come together.',
 		],
@@ -72,7 +71,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		video: 'videos/you-should-always-skateboard.mp4',
 	},
 	{
-		desc: [
+		description: [
 			'In 2021, I graduated from the Improv Broadway Stand-up Comedy class! In a six month series of classes, we studied joke writing and storytelling. We analyzed bits from other comedians and worked on creating our own bits. We took turns pitching our sets, and receiving feedback from everyone else in the class.',
 			'It was really cool to see how classmates would take feedback and improve their stories. Every time a story was pitched it was better than before. You quickly grow a comradery with people in the stand up community. It was so awesome to see classmates develop their sets then get up at open mic and actually perform!',
 			'Watching comedy and creative writing has helped me through the last couple of years. Sharing my humor and creativity with others has been a way of coping with my own anxiety and depression. I’ve had fun being able to dabble in it myself now. This was an awesome experience!',
@@ -86,27 +85,15 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		title: 'Standup Comedy',
 	},
 	{
-		desc: [
-			'We have two crazy kids that keep us busy! If they were the two additional dwarves, they would be "chatty" and "screamy"! I love my family, even if we are all a little "Hoki"!',
-		],
-		imgLarge: ImgFamily,
-		imgLargeDimensions: [1463, 2048],
-		imgSmall: ImgFamilySmall,
-		title: 'Family',
-	},
-	{
-		desc: [
-			`My Australian son. Koda is our Australian Shepherd doggy. My oldest son called him “Diggy “. We adopted him from the Puppy Barn ${KODA_AGE} years ago. He is an important part of our family.`,
-		],
+		description: `My Australian son. Koda is our Australian Shepherd doggy. My oldest son called him “Diggy “. We adopted him from the Puppy Barn ${KODA_AGE} years ago. He is an important part of our family.`,
 		imgLarge: ImgKoda,
 		imgLargeDimensions: [1536, 2048],
 		imgSmall: ImgKodaSmall,
 		title: 'Doggo',
 	},
 	{
-		desc: [
+		description:
 			'Skatingboarding is a big stress reliever for me. I always have my board in the trunk of my car and use it whenever possible. Why walk anywhere when you can skateboard?',
-		],
 		imgLarge: ImgSkateboard,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgSkateboardSmall,
@@ -114,16 +101,14 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		video: 'videos/skate-clip.MP4',
 	},
 	{
-		desc: [
-			`I am married to my best friend and high school sweetheart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
-		],
+		description: `I am married to my best friend and high school sweetheart, Lindsey. We’ve been married for ${YEARS_MARRIED} years, but been together for ${YEARS_DATING}, we celebrate both anniversaries!`,
 		imgLarge: ImgWedding,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgWeddingSmall,
 		title: 'Wife',
 	},
 	{
-		desc: [
+		description: [
 			"I learned how to play the guitar to propose to my wife. I knew how I wanted to propose but didn't know when. I secretly took guitar and vocal lessons for 1.5 years before the actual proposal.",
 			'In 2015, at The Festival of Trees they gave me the stage.',
 			"Nowadays I still play the guitar just for fun and as a way to relax and de-stress. A few times I've accompanied family sing-alongs around the camp fire.",
@@ -134,7 +119,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		title: 'Guitar',
 	},
 	{
-		desc: [
+		description: [
 			"Breakdancing is one of my favorite form of exercise. Other developers don't seem to have the need to spin on the ground like I do, weird!",
 			'I started breakdancing in Jr High. I got really involved in the HipHop culture and scene. I went to as many breakdance clubs as I could and competed in breakdance battles.',
 			"In college, I joined the Green Man Group. They are UVU's Drum Line. We performed at UVU basketball games, a variety of UVU events, Grizzly Hockey games, the Olympic Oval, the Hope of America, and Jazz Basketball games.",
@@ -146,7 +131,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		video: 'videos/green-man.MP4',
 	},
 	{
-		desc: [
+		description: [
 			'I met my wife in the ballroom of our high school. She was a ballroom dancer and I was a breakdancer. I ended up taking some ballroom classes and joining the Timpanogos High School team.',
 			'In high school, I interned at the Academy of Ballet and ended up as their breakdance instructor. My wife (Girlfriend at the time) helped to teach the class.',
 		],
@@ -156,7 +141,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		title: 'Ballroom Dance',
 	},
 	{
-		desc: [
+		description: [
 			'I loved the scouting program and so many of the lessons it taught me about leadership, service, and seeing a project through from start to finish.',
 			'For my Eagle service project, I organized painting house addresses on neighborhood curbs, making homes easier for emergency responders to find.',
 		],
@@ -166,7 +151,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		title: 'Eagle Scout',
 	},
 	{
-		desc: [
+		description: [
 			'TaeKwonDo was such a valuable part of my childhood, teaching me discipline, perseverance, and respect. Stepping onto the mat each week taught me how to push through physical and mental challenges, build unwavering focus, and carry myself with confidence both on and off the mat. I believe that those early lessons shaped who I am today.',
 			"It brings me so much joy to see my own kids tie their belts and step onto the mat and train at the same studio a couple decades later. Watching them embrace the same traditions, face their own challenges, and learn those same invaluable life lessons that I did as a kid. I'm so grateful we get to share this powerful legacy as a family.",
 		],
@@ -180,11 +165,10 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 
 export type AboutType = {
 	alt?: string;
-	desc: string[];
-	hasSignature?: boolean;
+	description: string | string[];
 	imgLarge: string;
 	imgLargeDimensions: number[];
 	imgSmall: string;
-	title: string;
+	title?: string;
 	video?: string;
 };
