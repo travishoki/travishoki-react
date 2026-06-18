@@ -20,7 +20,7 @@ export const About = () => {
 			</p>
 			<p className="indent">
 				The book launch event was at Beyond Sports TaeKwonDo studio, the same
-				studio I practiced at 20 years ago! It was still run by the Sorenson
+				studio I practiced at 20 years ago! It is still ran by the Sorenson
 				family. The book was sponsored by Kaytlin&apos;s athletic sponsor,
 				Century Martial Arts.
 			</p>
