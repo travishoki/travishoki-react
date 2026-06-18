@@ -22,18 +22,22 @@ export const FightForYourDreams = () => {
 		<section className="boxed boxed-lg p-3">
 			<BookHeading />
 			<CoverImage />
-			<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
-			<ImageGallery images={GALLERY_IMAGES} />
-
-			<div className="boxed boxed-lg">
-				<p>Book Description:</p>
-				<p>Fight For Your Dreams</p>
-				<p>
-					Go Get It, Girl! While the girls are at a slumber party, they talk
-					about what they want to be when they grow up. One of the girls throws
-					the others for a loop when she says what she wants to be and the
-					girls&apos; minds are opened to new possibilities.
-				</p>
+			<div className="row">
+				<div className="col-sm-6 pt-3">
+					<div className="boxed boxed-lg">
+						<p>Book Description:</p>
+						<p>
+							Go Get It, Girl! While the girls are at a slumber party, they talk
+							about what they want to be when they grow up. One of the girls
+							throws the others for a loop when she says what she wants to be
+							and the girls&apos; minds are opened to new possibilities.
+						</p>
+						<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
+					</div>
+				</div>
+				<div className="col-sm-6 pt-3">
+					<ImageGallery images={GALLERY_IMAGES} />
+				</div>
 			</div>
 		</section>
 	);

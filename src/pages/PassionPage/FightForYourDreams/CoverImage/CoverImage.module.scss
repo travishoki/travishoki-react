@@ -1,5 +1,12 @@
 .coverImage {
 	display: block;
 	margin: 0 auto 10px;
-	width: fit-content;
+	max-width: 600px;
+	width: 100%;
+
+	img {
+		height: auto;
+		max-width: 100%;
+		width: 100%;
+	}
 }
