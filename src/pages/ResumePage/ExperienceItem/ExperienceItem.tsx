@@ -24,7 +24,7 @@ export const ExperienceItem = ({
 	tasks,
 	techs,
 	title,
-}: ExperienceItemPropTypes) => (
+}: ExperienceItemProps) => (
 	<StaggeredItem className={styles.experienceItem}>
 		<ImageContainer className={styles.imageContainer}>
 			<DivMaybeAnimateScale animate>
@@ -50,4 +50,4 @@ export const ExperienceItem = ({
 	</StaggeredItem>
 );
 
-type ExperienceItemPropTypes = ResumeDataType;
+type ExperienceItemProps = ResumeDataType;

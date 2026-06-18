@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './BulletedList.module.scss';
 
-export const BulletedList = ({ list }: BulletedListPropTypes) => (
+export const BulletedList = ({ list }: BulletedListProps) => (
 	<ul className={`${styles.bulleted} mb-2`}>
 		{list.map((item, index) => (
 			<li key={index} className={styles.bulletedItem}>
@@ -12,6 +12,6 @@ export const BulletedList = ({ list }: BulletedListPropTypes) => (
 	</ul>
 );
 
-type BulletedListPropTypes = {
+type BulletedListProps = {
 	list: string[];
 };
