@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -46,7 +46,10 @@ export const useProjectFiltering = () => {
 		setSearchTerm('');
 	};
 
-	const projects = filterProjects(PROJECTS_DATA, filter, searchTerm);
+	const projects = useMemo(
+		() => filterProjects(PROJECTS_DATA, filter, searchTerm),
+		[filter, searchTerm],
+	);
 
 	return {
 		filter,
