@@ -10,17 +10,14 @@ import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
+const LINK = 'https://hokiskateboards.com';
+
 export const RetailWebsiteColumn = () => (
 	<>
-		<a
-			href="https://hokiskateboards.com"
-			rel="noreferrer"
-			target="_blank"
-			title="Hoki Skateboards"
-		>
+		<a href={LINK} rel="noreferrer" target="_blank" title="Hoki Skateboards">
 			<Title title="Retail Website" />
 			<ProjectImage alt="Hoki Skateboards" src={ImgHokiSkateboardsWebsite} />
-			<ButtonLink text="Go to Site" />
+			<ButtonLink href={LINK} text="Go to Site" />
 		</a>
 
 		<PassionLabel>Description:</PassionLabel>

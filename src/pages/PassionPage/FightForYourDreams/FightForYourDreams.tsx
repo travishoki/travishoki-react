@@ -9,6 +9,9 @@ import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { BookHeading } from './BookHeading/BookHeading';
 import { CoverImage } from './CoverImage/CoverImage';
 
+const AMAZON_HREF =
+	'https://www.amazon.com/dp/1734008393/ref=cm_sw_r_as_gl_api_gl_i_98XS8F2BTKPZQ7RK5H76?linkCode=ml1&tag=hokiskatebo0f-20&_encoding=UTF8&tag=hokiskatebo0f-20&linkCode=ur2&linkId=c8f27dfffb604bda3dba492d9425eabe&camp=1789&creative=9325';
+
 const GALLERY_IMAGES = [
 	{ filename: ImgCover },
 	{ filename: ImgBackCover },
@@ -19,13 +22,7 @@ export const FightForYourDreams = () => {
 		<section className="boxed boxed-lg p-3">
 			<BookHeading />
 			<CoverImage />
-			<a
-				href="https://www.amazon.com/dp/1734008393/ref=cm_sw_r_as_gl_api_gl_i_98XS8F2BTKPZQ7RK5H76?linkCode=ml1&tag=hokiskatebo0f-20&_encoding=UTF8&tag=hokiskatebo0f-20&linkCode=ur2&linkId=c8f27dfffb604bda3dba492d9425eabe&camp=1789&creative=9325"
-				rel="noreferrer"
-				target="_blank"
-			>
-				<ButtonLink text="View on Amazon" />
-			</a>
+			<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 			<ImageGallery images={GALLERY_IMAGES} />
 
 			<div className="boxed boxed-lg">
