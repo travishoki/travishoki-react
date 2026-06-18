@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechKey, TechFilterType } from '~const/Tech.const';
@@ -16,7 +16,7 @@ export const FilterItem = ({
 
 	return (
 		<li
-			className={classnames('filterItem', {
+			className={classNames('filterItem', {
 				active: filter === null || filter === item,
 			})}
 			onClick={() => onSelectFilter(item)}

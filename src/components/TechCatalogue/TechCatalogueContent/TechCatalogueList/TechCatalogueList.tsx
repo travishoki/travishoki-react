@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import { TechCatalogueItemData } from '../../TechCatalogue.types';
 import { TechCatalogueItem } from './TechCatalogueItem/TechCatalogueItem';
@@ -15,7 +15,7 @@ export const TechCatalogueList = ({
 
 	return (
 		<ul
-			className={classnames(
+			className={classNames(
 				styles.techCatalogueList,
 				expanded
 					? styles.techCatalogueListExpanded

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import { TechCatalogueItemData } from './TechCatalogue.types';
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
@@ -21,7 +21,7 @@ export const TechCatalogue = ({
 	if (items.length === 0) return null;
 
 	return (
-		<div className={classnames(styles.techCatalogue, 'mb-3')}>
+		<div className={classNames(styles.techCatalogue, 'mb-3')}>
 			<TechCatalogueHeader
 				onToggle={() => setExpanded(!expanded)}
 				open={expanded}

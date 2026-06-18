@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import classnames from 'classnames';
+import classNames from 'classnames';
 import { useLocation } from 'react-router-dom';
 
 import { MenuButton } from './MenuButton/MenuButton';
@@ -24,7 +24,7 @@ export const Nav = () => {
 			<MenuButton onClick={toggleOpen} />
 
 			<ul
-				className={classnames(styles.navigation, {
+				className={classNames(styles.navigation, {
 					[styles.open]: open,
 				})}
 			>
