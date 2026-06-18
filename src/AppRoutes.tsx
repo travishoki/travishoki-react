@@ -2,8 +2,6 @@ import React, { Suspense } from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { PageLoader } from '~components/PageLoader/PageLoader';
-
 import { App } from './App';
 
 const AboutPage = React.lazy(() =>
@@ -56,7 +54,7 @@ const SingleProjectPage = React.lazy(() =>
 export const AppRoutes = () => (
 	<Router>
 		<App>
-			<Suspense fallback={<PageLoader />}>
+			<Suspense fallback={null}>
 				<Routes>
 					<Route element={<HomePage />} path="/" />
 					<Route
