@@ -34,8 +34,10 @@ export const RecentProjectsList = () => (
 						</div>
 						<img
 							alt={imgAlt}
+							height={250}
 							onError={handleThumbnailError}
 							src={websiteThumbnailSrc(project.itemKey)}
+							width={250}
 						/>
 					</Link>
 				</li>

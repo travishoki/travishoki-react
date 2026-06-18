@@ -33,8 +33,10 @@ export const ProjectImage = ({
 			<img
 				alt={imgAlt}
 				className={styles.img}
+				height={250}
 				onError={handleThumbnailError}
 				src={websiteThumbnailSrc(itemKey)}
+				width={250}
 			/>
 		</div>
 	);
