@@ -16,7 +16,7 @@ export const SearchForm = ({
 			})}
 		>
 			<input
-				className="form-control"
+				className={styles.input}
 				maxLength={25}
 				onChange={onChangeSearch}
 				placeholder="Search Term"
