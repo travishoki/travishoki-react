@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import classNames from 'classnames';
-
 import { TechCatalogueItemData } from './TechCatalogue.types';
 import { TechCatalogueButton } from './TechCatalogueButton/TechCatalogueButton';
 import { TechCatalogueContent } from './TechCatalogueContent/TechCatalogueContent';
