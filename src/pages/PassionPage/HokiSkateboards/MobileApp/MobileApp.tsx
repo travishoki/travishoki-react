@@ -4,11 +4,11 @@ import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import * as TECH from '~const/Tech.const';
 
-import { PassionLabel } from '../PassionLabel/PassionLabel';
-import { Title } from '../Title/Title';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
+import { Title } from '../../Title/Title';
+import { PassionLabel } from '../PassionLabel/PassionLabel';
 
 import styles from './MobileApp.module.scss';
 

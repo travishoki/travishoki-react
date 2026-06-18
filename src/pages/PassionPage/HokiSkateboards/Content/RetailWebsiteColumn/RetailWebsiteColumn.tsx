@@ -6,8 +6,8 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
 import { websiteTechList } from './RetailWebsiteColumn.const';
+import { Title } from '../../../Title/Title';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
-import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 const LINK = 'https://hokiskateboards.com';

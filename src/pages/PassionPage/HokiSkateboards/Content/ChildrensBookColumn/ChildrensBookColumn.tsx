@@ -5,8 +5,8 @@ import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-s
 
 import { appSoftwareList } from './ChildrensBookColumn.const';
 import { ButtonLink } from '../../../ButtonLink/ButtonLink';
+import { Title } from '../../../Title/Title';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
-import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 const AMAZON_HREF =
