@@ -91,7 +91,7 @@ export const TECH: Record<string, TechInfo> = {
 		type: 'frontend',
 	},
 	CSS: { image: ImgCss, label: 'CSS', level: LEVELS.EXPERT, type: 'frontend' },
-	CURSOR: { image: ImgCursor, label: 'Cursor', type: 'ai' },
+	CURSOR: { image: ImgCursor, label: 'Cursor AI', type: 'ai' },
 	DJANGO: {
 		image: ImgDjango,
 		label: 'Django',
