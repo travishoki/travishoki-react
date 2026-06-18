@@ -6,7 +6,13 @@ import { ProjectLink } from './ProjectLink/ProjectLink';
 
 import styles from './ProjectImageOverlay.module.scss';
 
-const logos = require.context('../../../../../../images/clients', true);
+const logos = import.meta.glob<string>(
+	'../../../../../../images/clients/*.jpg',
+	{
+		eager: true,
+		import: 'default',
+	},
+);
 
 export const ProjectImageOverlay = ({
 	company,
@@ -21,7 +27,7 @@ export const ProjectImageOverlay = ({
 					<img
 						alt={company}
 						className="mb-2"
-						src={logos(`./${companySlug}.jpg`)}
+						src={logos[`../../../../../../images/clients/${companySlug}.jpg`]}
 					/>
 					<ProjectLink />
 				</div>

@@ -8,9 +8,12 @@ import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
-const logos = require.context('../../../../images/clients', true);
-
 import styles from './ProjectInfoSection.module.scss';
+
+const logos = import.meta.glob<string>('../../../../images/clients/*.jpg', {
+	eager: true,
+	import: 'default',
+});
 
 export const ProjectInfoSection = ({
 	company,
@@ -26,7 +29,7 @@ export const ProjectInfoSection = ({
 			<img
 				alt={company}
 				className={classNames('center', styles.logo)}
-				src={logos(`./${companySlug}.jpg`)}
+				src={logos[`../../../../images/clients/${companySlug}.jpg`]}
 			/>
 
 			{date && <ProjectInfo label="Date Range" text={date} />}
