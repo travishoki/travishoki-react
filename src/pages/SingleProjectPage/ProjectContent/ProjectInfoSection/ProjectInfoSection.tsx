@@ -6,14 +6,10 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
+import { CLIENT_LOGOS } from '../../../ProjectsPage/ProjectsPage.ClientLogos.data';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
 import styles from './ProjectInfoSection.module.scss';
-
-const logos = import.meta.glob<string>('../../../../images/clients/*.jpg', {
-	eager: true,
-	import: 'default',
-});
 
 export const ProjectInfoSection = ({
 	company,
@@ -29,7 +25,7 @@ export const ProjectInfoSection = ({
 			<img
 				alt={company}
 				className={classNames('center', styles.logo)}
-				src={logos[`../../../../images/clients/${companySlug}.jpg`]}
+				src={CLIENT_LOGOS[companySlug]}
 			/>
 
 			{date && <ProjectInfo label="Date Range" text={date} />}
