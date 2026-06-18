@@ -1,6 +1,7 @@
 import { TechType } from './TechCatalogue.types';
 
 export const TYPE_SECTIONS: { label: string; type: TechType }[] = [
+	{ label: 'AI Tools', type: 'ai' },
 	{ label: 'Frontend', type: 'frontend' },
 	{ label: 'Backend', type: 'backend' },
 	{ label: 'Content Management System', type: 'cms' },

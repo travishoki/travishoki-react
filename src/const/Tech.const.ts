@@ -84,14 +84,14 @@ export const TECH: Record<string, TechInfo> = {
 	},
 	AMP: { image: ImgAmp, label: 'AMP', type: 'frontend' },
 	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS', type: 'frontend' },
-	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: 'tool' },
+	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: 'ai' },
 	COFFEE_SCRIPT: {
 		image: ImgCoffeeScript,
 		label: 'Coffee Script',
 		type: 'frontend',
 	},
 	CSS: { image: ImgCss, label: 'CSS', level: LEVELS.EXPERT, type: 'frontend' },
-	CURSOR: { image: ImgCursor, label: 'Cursor', type: 'tool' },
+	CURSOR: { image: ImgCursor, label: 'Cursor', type: 'ai' },
 	DJANGO: {
 		image: ImgDjango,
 		label: 'Django',

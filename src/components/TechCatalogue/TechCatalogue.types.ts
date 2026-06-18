@@ -1,4 +1,5 @@
 export type TechType =
+	| 'ai'
 	| 'frontend'
 	| 'backend'
 	| 'cms'
