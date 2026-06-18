@@ -32,6 +32,7 @@ export const VideoButton = ({
 			</div>
 			<span
 				className={styles.videoButtonIcon}
+				onClick={() => onClick()}
 				style={{ fontSize, height: iconSize, width: iconSize }}
 			>
 				<i className="fa fa-video-camera" />
