@@ -1,4 +1,3 @@
-/* global describe, it */
 import expect from 'expect';
 
 import { EMPTY_GROUP_BY_TYPE, groupTechByType } from './TechCatalogue.helpers';

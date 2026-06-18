@@ -1,4 +1,3 @@
-/* global describe, it, jest, afterEach */
 import expect from 'expect';
 
 import { getExperienceYears } from './Skills/Title/Title.helpers';

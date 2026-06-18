@@ -1,4 +1,3 @@
-/* global describe, it */
 import expect from 'expect';
 
 import { getImgAltText } from './images';

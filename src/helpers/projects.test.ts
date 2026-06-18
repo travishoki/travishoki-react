@@ -1,4 +1,3 @@
-/* global describe, it */
 import expect from 'expect';
 
 import { getItemKey, slugify } from './projects';

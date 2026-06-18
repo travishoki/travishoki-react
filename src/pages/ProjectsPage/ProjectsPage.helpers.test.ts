@@ -1,4 +1,3 @@
-/* global describe, it */
 import expect from 'expect';
 
 import { JAVASCRIPT, REACT_JS } from '~const/Tech.const';
