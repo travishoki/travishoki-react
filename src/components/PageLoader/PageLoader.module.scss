@@ -1,0 +1,8 @@
+@use 'styles' as *;
+
+.pageLoader {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 400px;
+}
