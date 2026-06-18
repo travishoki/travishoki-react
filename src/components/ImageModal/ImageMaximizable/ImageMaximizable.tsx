@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { DivMaybeAnimateScale } from '~animations/DivMaybeAnimateScale';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
-import { useImageModal } from '~components/ImageModal/useImageModal';
+import { useImageModal } from '~components/ImageModal/ImageModal.hooks';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
 import styles from './ImageMaximizable.module.scss';

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { TechFilterType } from '~const/Tech.const';
 
-import { createProjectsPageUrl } from '../../ProjectsPage.helpers';
+import { createProjectsPageUrl } from '../ProjectsPage.helpers';
 
 const PROJECTS_PAGE_URL = '/projects';
 

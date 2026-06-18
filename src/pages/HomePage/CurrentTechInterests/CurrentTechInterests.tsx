@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
-import { useIsMobile } from '~helpers/useIsMobile';
+import { useIsMobile } from '~hooks/isMobile';
 
 import { CURRENT_TECH_INTERESTS } from './CurrentTechInterests.data';
 import { CurrentTechInterestsHeader } from './CurrentTechInterestsHeader/CurrentTechInterestsHeader';

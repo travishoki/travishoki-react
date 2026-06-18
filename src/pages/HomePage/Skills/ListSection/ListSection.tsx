@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 
 import { MotionExpand } from '~animations/MotionExpand';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
-import { useIsMobile } from '~helpers/useIsMobile';
+import { useIsMobile } from '~hooks/isMobile';
 
 import { ListColumn } from './ListColumn/ListColumn';
 import { splitListInHalf } from './ListSection.helpers';

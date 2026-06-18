@@ -4,8 +4,8 @@ import { Finder } from './Finder/Finder';
 import { NoResults } from './NoResults/NoResults';
 import { ProjectList } from './ProjectList/ProjectList';
 import { FILTER_LIST } from './ProjectsPage.const';
+import { useProjectFiltering } from './ProjectsPage.hooks';
 import { ViewControl } from './ViewControl/ViewControl';
-import { useProjectFiltering } from './hooks/useProjectFiltering';
 
 import styles from './ProjectsPage.module.scss';
 
