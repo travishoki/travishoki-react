@@ -8,7 +8,13 @@ export const VideoModal = ({ onClose, src }: VideoModalProps) => (
 			className={styles.videoModalInner}
 			onClick={(e) => e.stopPropagation()}
 		>
-			<video autoPlay className={styles.videoModalPlayer} controls src={src} />
+			<video
+				autoPlay
+				className={styles.videoModalPlayer}
+				controls
+				muted
+				src={src}
+			/>
 			<button className={styles.videoModalClose} onClick={onClose}>
 				<i className="fa fa-close" />
 			</button>
