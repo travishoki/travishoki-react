@@ -56,7 +56,7 @@ export const Video = () => {
 						src={VIDEO_SRC}
 						width={size.width || undefined}
 					/>
-					<p className={styles.overlay}>Looks like you bailed.</p>
+					<p className={styles.overlay}>Looks like you bailed!</p>
 				</>
 			)}
 		</div>
