@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -20,50 +20,59 @@ export const useFinderHandlers = ({
 
 	const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-	const toggleOpenFilter = () => {
-		setIsFilterOpen(!isFilterOpen);
-	};
+	const toggleOpenFilter = useCallback(() => {
+		setIsFilterOpen((prev) => !prev);
+	}, []);
 
-	const onSelectFilter = (filterProp: TechFilterType) => {
-		const newFilter = filter === filterProp ? null : filterProp;
-		const newLocation = createProjectsPageUrl(
-			PROJECTS_PAGE_URL,
-			newFilter,
-			searchTerm,
-		);
+	const onSelectFilter = useCallback(
+		(filterProp: TechFilterType) => {
+			const newFilter = filter === filterProp ? null : filterProp;
+			const newLocation = createProjectsPageUrl(
+				PROJECTS_PAGE_URL,
+				newFilter,
+				searchTerm,
+			);
 
-		navigate(newLocation);
+			navigate(newLocation);
 
-		setFilter(newFilter);
-		setFilterTerm(newFilter);
-	};
+			setFilter(newFilter);
+			setFilterTerm(newFilter);
+		},
+		[filter, navigate, searchTerm, setFilter, setFilterTerm],
+	);
 
-	const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const newSearchTerm = e.currentTarget.value;
-		const newLocation = createProjectsPageUrl(
-			PROJECTS_PAGE_URL,
-			filter,
-			newSearchTerm,
-		);
+	const onChangeSearch = useCallback(
+		(e: React.ChangeEvent<HTMLInputElement>) => {
+			const newSearchTerm = e.currentTarget.value;
+			const newLocation = createProjectsPageUrl(
+				PROJECTS_PAGE_URL,
+				filter,
+				newSearchTerm,
+			);
 
-		navigate(newLocation);
+			navigate(newLocation);
 
-		setSearchTerm(newSearchTerm);
-	};
+			setSearchTerm(newSearchTerm);
+		},
+		[filter, navigate, setSearchTerm],
+	);
 
-	const onChangeFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const newFilter = e.target.value as TechFilterType;
-		const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter);
+	const onChangeFilter = useCallback(
+		(e: React.ChangeEvent<HTMLInputElement>) => {
+			const newFilter = e.target.value as TechFilterType;
+			const newLocation = createProjectsPageUrl(PROJECTS_PAGE_URL, newFilter);
 
-		navigate(newLocation);
+			navigate(newLocation);
 
-		setFilterTerm(newFilter);
-	};
+			setFilterTerm(newFilter);
+		},
+		[navigate, setFilterTerm],
+	);
 
-	const onClearAndCloseFilter = () => {
+	const onClearAndCloseFilter = useCallback(() => {
 		onClearFilter();
 		toggleOpenFilter();
-	};
+	}, [onClearFilter, toggleOpenFilter]);
 
 	return {
 		isFilterOpen,
