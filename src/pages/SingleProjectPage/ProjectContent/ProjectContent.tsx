@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { formatGalleryImage } from '~components/ImageGallery/ImageGallery.helpers';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { getImgAltText } from '~helpers/images';
 
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
-import { ProjectImage } from './ProjectImage/ProjectImage';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
 import styles from './ProjectContent.module.scss';
+
+const DEFAULT_DIMENSIONS = [0, 0];
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {
 	const {
@@ -26,6 +28,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 		techs,
 		url,
 	} = project;
+	const [dimensions, setDimensions] = useState(DEFAULT_DIMENSIONS);
 
 	const images = gallery.map((image) => {
 		const obj = formatGalleryImage(image);
@@ -45,7 +48,12 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 					{gallery.length > 1 ? (
 						<ImageGallery images={images} />
 					) : (
-						<ProjectImage alt={images[0].alt} filename={images[0].filename} />
+						<ImageMaximizable
+							alt={images[0].alt}
+							dimensions={dimensions}
+							setDimensions={setDimensions}
+							src={images[0].filename}
+						/>
 					)}
 				</div>
 				<div className="col-sm-7">

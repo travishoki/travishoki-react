@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 
 import classNames from 'classnames';
 
@@ -16,6 +16,7 @@ export const ImageMaximizable = ({
 	className,
 	dimensions,
 	imageClassName,
+	setDimensions,
 	src,
 	srcLarge,
 	srcLargeDimensions,
@@ -24,6 +25,15 @@ export const ImageMaximizable = ({
 
 	const height = dimensions[1];
 	const width = dimensions[0];
+
+	const onLoad = (event: SyntheticEvent<HTMLImageElement>) => {
+		if (setDimensions) {
+			setDimensions([
+				event.currentTarget.naturalWidth,
+				event.currentTarget.naturalHeight,
+			]);
+		}
+	};
 
 	return (
 		<>
@@ -45,6 +55,7 @@ export const ImageMaximizable = ({
 					alt={alt}
 					className={imageClassName}
 					height={height}
+					onLoad={onLoad}
 					src={src}
 					width={width}
 				/>
@@ -59,6 +70,7 @@ type ImageMaximizableProps = {
 	className?: string;
 	dimensions: number[];
 	imageClassName?: string;
+	setDimensions?: (size: number[]) => void;
 	src: string;
 	srcLarge?: string;
 	srcLargeDimensions?: number[];
