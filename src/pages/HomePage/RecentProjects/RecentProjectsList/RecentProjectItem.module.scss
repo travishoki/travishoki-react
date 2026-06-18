@@ -1,9 +1,8 @@
 @use 'styles' as *;
-
-$recent-projects-breakpoint: 900px;
+@use './RecentProjectsList.variables' as *;
 
 .recentProjectItem {
-	@media (max-width: #{$recent-projects-breakpoint - 1}) {
+	@media (max-width: #{$recent-projects-large - 1}) {
 		// Disable navigation on mobile.
 		a {
 			cursor: default;
@@ -17,24 +16,44 @@ $recent-projects-breakpoint: 900px;
 		&:nth-child(2) {
 			@include box-shadow(0 0 20px 0 #000000);
 			left: 50%;
-			margin-left: -75px;
 			position: absolute;
 			top: 0;
-			width: 150px;
 		}
 
 		&:last-child {
 			float: right;
 		}
 
-		&:first-child,
-		&:last-child {
-			margin: 20px 0;
-			width: 100px;
+		// Small mobile
+		@media (max-width: #{$recent-projects-medium - 1}) {
+			&:nth-child(2) {
+				margin-left: -75px;
+				width: 150px;
+			}
+
+			&:first-child,
+			&:last-child {
+				margin: 20px 0;
+				width: 100px;
+			}
+		}
+
+		// Medium
+		@media (min-width: $recent-projects-medium) and (max-width: #{$recent-projects-large - 1}) {
+			&:nth-child(2) {
+				margin-left: -110px;
+				width: 220px;
+			}
+
+			&:first-child,
+			&:last-child {
+				margin: 30px 0;
+				width: 150px;
+			}
 		}
 	}
 
-	@media (min-width: $recent-projects-breakpoint) {
+	@media (min-width: $recent-projects-large) {
 		float: left;
 		width: 33.33333333%;
 	}
@@ -43,7 +62,7 @@ $recent-projects-breakpoint: 900px;
 		display: block;
 		margin: 0 auto;
 
-		@media (max-width: #{$recent-projects-breakpoint - 1}) {
+		@media (max-width: #{$recent-projects-large - 1}) {
 			height: 100%;
 			object-fit: cover;
 			width: 100%;
@@ -56,7 +75,7 @@ $recent-projects-breakpoint: 900px;
 	margin-bottom: 10px;
 	position: relative;
 
-	@media (max-width: #{$recent-projects-breakpoint - 1}) {
+	@media (max-width: #{$recent-projects-large - 1}) {
 		display: none;
 	}
 }

@@ -1,6 +1,5 @@
 @use 'styles' as *;
-
-$recent-projects-breakpoint: 900px;
+@use './RecentProjectsList.variables' as *;
 
 .recentProjectsList {
 	// flow-root contains the floated items without clipping the center
@@ -11,9 +10,15 @@ $recent-projects-breakpoint: 900px;
 	padding: 0;
 	position: relative;
 
-	@media (max-width: #{$recent-projects-breakpoint - 1}) {
+	@media (max-width: 599px) {
 		margin: 0 auto;
 		max-width: 300px;
 		padding-bottom: 20px;
+	}
+
+	@media (min-width: 600px) and (max-width: #{$recent-projects-large - 1}) {
+		margin: 0 auto;
+		max-width: 440px;
+		padding-bottom: 30px;
 	}
 }
