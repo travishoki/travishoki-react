@@ -26,4 +26,7 @@ export default defineConfig({
 			'~svg': path.resolve(__dirname, 'src/svg'),
 		},
 	},
+	server: {
+		port: 3000,
+	},
 });
