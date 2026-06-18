@@ -39,7 +39,7 @@ export const MobileApp = () => (
 				<TechListCatalogue list={techs} />
 			</div>
 			<div className="col-sm-5">
-				<ImageGallery images={APP_GALLERY_IMAGES} />;
+				<ImageGallery images={APP_GALLERY_IMAGES} />
 			</div>
 		</div>
 
