@@ -14,11 +14,11 @@ const LINK = 'https://hokiskateboards.com';
 
 export const RetailWebsiteColumn = () => (
 	<>
+		<Title title="Retail Website" />
 		<a href={LINK} rel="noreferrer" target="_blank" title="Hoki Skateboards">
-			<Title title="Retail Website" />
 			<ProjectImage alt="Hoki Skateboards" src={ImgHokiSkateboardsWebsite} />
-			<ButtonLink href={LINK} text="Go to Site" />
 		</a>
+		<ButtonLink href={LINK} text="Go to Site" />
 
 		<PassionLabel>Description:</PassionLabel>
 		<p className="indent">
