@@ -5,7 +5,7 @@ import { Title } from './Title/Title';
 
 export const Skills = () => {
 	return (
-		<section className="primary">
+		<section className="primary-three">
 			<Title />
 
 			<ListSection />

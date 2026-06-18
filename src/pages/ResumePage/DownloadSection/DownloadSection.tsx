@@ -8,7 +8,7 @@ import { DownloadButton } from '../DownloadButton/DownloadButton';
 import styles from './DownloadSection.module.scss';
 
 export const DownloadSection = () => (
-	<section className="blue ">
+	<section className="primary-two">
 		<div className={classNames('boxed', styles.resumeButtons)}>
 			{DOWNLOADS.map(({ caption, href, icon, linkTitle, text }, index) => (
 				<div key={href}>

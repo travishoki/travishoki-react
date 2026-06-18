@@ -6,7 +6,7 @@ import ImgScoutingAmerica from '~images/volunteer/scouting-america.png';
 import styles from './Volunteer.module.scss';
 
 export const Volunteer = () => (
-	<section className={`center primary ${styles.volunteerComponent}`}>
+	<section className={`center primary-three ${styles.volunteerComponent}`}>
 		<h2 className="mb-0">Volunteer Work</h2>
 		<p className={`mb-2 ${styles.volunteerComponentSubtitle}`}>
 			Scouting America

@@ -1,4 +1,5 @@
 section {
+	color: $white;
 	padding: 20px;
 
 	&.white {
@@ -6,19 +7,28 @@ section {
 		color: $gray-three;
 	}
 
-	&.primary {
-		background: $primary-three;
-		color: $white;
+	&.primary-one {
+		background: $primary-one;
 	}
 
-	&.blue {
+	&.primary-two {
 		background: $primary-two;
-		color: $white;
+	}
+
+	&.primary-three {
+		background: $primary-three;
+	}
+
+	&.primary-four {
+		background: $primary-four;
+	}
+
+	&.primary-five {
+		background: $primary-five;
 	}
 
 	&.gray {
 		background: $gray-three;
-		color: $white;
 	}
 
 	h2,
