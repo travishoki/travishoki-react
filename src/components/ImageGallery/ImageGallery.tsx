@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
 
+import { Image } from './Image/Image';
 import { GalleryImage } from './types';
 
 import styles from './ImageGallery.module.scss';
@@ -15,7 +16,8 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 	const goToPage = (index: number) =>
 		setPage((index + images.length) % images.length);
 
-	const { alt, caption, filename } = images[page];
+	const image = images[page];
+	const { alt, caption, filename } = image;
 
 	return (
 		<div className={styles.gallery}>
@@ -30,17 +32,10 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 				/>
 			)}
 
-			<img
-				alt={alt}
-				className={styles.image}
-				onClick={() => setModalOpen(true)}
-				onLoad={(event) =>
-					setDimensions([
-						event.currentTarget.naturalWidth,
-						event.currentTarget.naturalHeight,
-					])
-				}
-				src={filename}
+			<Image
+				image={image}
+				setDimensions={setDimensions}
+				setModalOpen={setModalOpen}
 			/>
 
 			{caption && <p className={styles.caption}>{caption}</p>}
@@ -55,5 +50,5 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 };
 
 type ImageGalleryProps = {
-	images: GalleryImage[] | [];
+	images: GalleryImage[];
 };
