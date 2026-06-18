@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HokiSkateboards } from '../HokiSkateboards/HokiSkateboards';
+import { HokiSkateboards } from './HokiSkateboards';
 import { PassionNav } from '../PassionNav/PassionNav';
 
 export const HokiSkateboardsPage = () => (

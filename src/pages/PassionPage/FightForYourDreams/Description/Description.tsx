@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PassionLabel } from '../../HokiSkateboards/PassionLabel/PassionLabel';
+import { PassionLabel } from '../../HokiSkateboardsPage/PassionLabel/PassionLabel';
 
 export const Discription = () => {
 	return (
