@@ -5,7 +5,7 @@ import { InterestItem } from '../InterestItem/InterestItem';
 
 import styles from './InterestColumns.module.scss';
 
-export const STAGGER_SECONDS = 0.15;
+const STAGGER_SECONDS = 0.15;
 
 export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 	({ onScroll }, ref) => (
