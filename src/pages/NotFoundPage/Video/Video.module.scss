@@ -4,8 +4,24 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	position: relative;
 
 	video {
 		max-width: 100%;
 	}
+}
+
+.overlay {
+	bottom: 16%;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	left: 50%;
+	pointer-events: none;
+	position: absolute;
+	text-shadow:
+		0 2px 4px rgba(0, 0, 0, 0.8),
+		0 4px 16px rgba(0, 0, 0, 0.6);
+	transform: translateX(-50%);
+	white-space: nowrap;
 }

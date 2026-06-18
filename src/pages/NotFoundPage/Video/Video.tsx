@@ -46,15 +46,18 @@ export const Video = () => {
 			}}
 		>
 			{loaded && (
-				<video
-					autoPlay
-					height={size.height || undefined}
-					loop
-					muted
-					playsInline
-					src={VIDEO_SRC}
-					width={size.width || undefined}
-				/>
+				<>
+					<video
+						autoPlay
+						height={size.height || undefined}
+						loop
+						muted
+						playsInline
+						src={VIDEO_SRC}
+						width={size.width || undefined}
+					/>
+					<p className={styles.overlay}>Looks like you bailed.</p>
+				</>
 			)}
 		</div>
 	);
