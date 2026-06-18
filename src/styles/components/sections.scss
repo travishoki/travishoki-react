@@ -27,8 +27,24 @@ section {
 		background: $primary-five;
 	}
 
-	&.gray {
+	&.gray-one {
+		background: $gray-one;
+	}
+
+	&.gray-two {
+		background: $gray-two;
+	}
+
+	&.gray-three {
 		background: $gray-three;
+	}
+
+	&.gray-four {
+		background: $gray-four;
+	}
+
+	&.gray-five {
+		background: $gray-five;
 	}
 
 	h2,

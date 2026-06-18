@@ -13,7 +13,7 @@ const LARGE_WIDTH = 2178;
 const LARGE_HEIGHT = 1684;
 
 export const Diploma = () => (
-	<section className="gray">
+	<section className="gray-three">
 		<div className={styles.diplomaContainer}>
 			<ImageMaximizable
 				alt="UVU Diploma"
