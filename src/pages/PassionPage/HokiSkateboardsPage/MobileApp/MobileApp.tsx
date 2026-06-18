@@ -7,8 +7,8 @@ import * as TECH from '~const/Tech.const';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
+import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
-import { PassionLabel } from '../PassionLabel/PassionLabel';
 
 import styles from './MobileApp.module.scss';
 
