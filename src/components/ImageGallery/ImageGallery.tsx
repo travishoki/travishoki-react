@@ -43,7 +43,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 				src={filename}
 			/>
 
-			{caption && <p className={styles.projectImageCaption}>{caption}</p>}
+			{caption && <p className={styles.caption}>{caption}</p>}
 
 			<CarouselDots
 				activeIndex={page}
@@ -55,5 +55,5 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 };
 
 type ImageGalleryProps = {
-	images: GalleryImage[];
+	images: GalleryImage[] | [];
 };

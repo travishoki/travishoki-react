@@ -1,8 +1,9 @@
 import React from 'react';
 
+import { ImageGallery } from '~components/ImageGallery/ImageGallery';
+import { formatGalleryImage } from '~components/ImageGallery/ImageGallery.helpers';
 import { getImgAltText } from '~helpers/images';
 
-import { ProjectImageCarousel } from './ProjectGallery/ProjectImageCarousel';
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectImage } from './ProjectImage/ProjectImage';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
@@ -26,7 +27,14 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 		url,
 	} = project;
 
-	const imgAlt = getImgAltText(company, subtitle);
+	const images = gallery.map((image) => {
+		const obj = formatGalleryImage(image);
+
+		return {
+			...obj,
+			alt: obj.alt ?? getImgAltText(company, subtitle),
+		};
+	});
 
 	return (
 		<div className={styles.projectContent}>
@@ -35,13 +43,9 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 			<div className="row">
 				<div className="col-sm-5">
 					{gallery.length > 1 ? (
-						<ProjectImageCarousel
-							company={company}
-							gallery={gallery}
-							subtitle={subtitle}
-						/>
+						<ImageGallery images={images} />
 					) : (
-						<ProjectImage alt={imgAlt} filename={gallery[0].filename} />
+						<ProjectImage alt={images[0].alt} filename={images[0].filename} />
 					)}
 				</div>
 				<div className="col-sm-7">
