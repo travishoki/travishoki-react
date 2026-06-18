@@ -32,9 +32,9 @@ export const FilterList = ({
 				</li>
 			)}
 
-			{filterListFiltered.map((item, index) => (
+			{filterListFiltered.map((item) => (
 				<FilterItem
-					key={index}
+					key={item}
 					filter={filter}
 					item={item}
 					onSelectFilter={onSelectFilter}

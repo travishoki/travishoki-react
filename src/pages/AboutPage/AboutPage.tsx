@@ -11,8 +11,8 @@ export const AboutPage = () => {
 			<h1>About Me</h1>
 			<div className="boxed boxed-lg">
 				<StaggeredList>
-					{ABOUT_PAGE_DATA.map((item, index) => (
-						<AboutItem key={index} {...item} />
+					{ABOUT_PAGE_DATA.map((item) => (
+						<AboutItem key={item.title} {...item} />
 					))}
 				</StaggeredList>
 			</div>

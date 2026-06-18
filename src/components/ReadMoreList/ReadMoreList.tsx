@@ -21,14 +21,14 @@ export const ReadMoreList = ({
 	return (
 		<>
 			<ul className={listClassName}>
-				{baseItems.map((item, index) => (
-					<li key={index}>{item}</li>
+				{baseItems.map((item) => (
+					<li key={item}>{item}</li>
 				))}
 
 				<AnimatePresence initial={false}>
 					{expanded &&
-						extraItems.map((item, index) => (
-							<MotionListItem key={`extra-${index}`}>{item}</MotionListItem>
+						extraItems.map((item) => (
+							<MotionListItem key={item}>{item}</MotionListItem>
 						))}
 				</AnimatePresence>
 			</ul>

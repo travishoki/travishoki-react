@@ -21,9 +21,9 @@ export const ProjectList = ({
 				grid ? styles.projectsGrid : styles.projectsList,
 			)}
 		>
-			{projects.map((project, index) => (
+			{projects.map((project) => (
 				<ProjectItem
-					key={index}
+					key={project.itemKey}
 					grid={grid}
 					project={project}
 					projectLink={projectLink}

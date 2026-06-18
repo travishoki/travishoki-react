@@ -19,8 +19,8 @@ export const TextWithReadMore = ({
 			<p className="indent">{firstParagraph}</p>
 
 			<MotionExpand isOpen={expanded}>
-				{restParagraphs.map((paragraph, index) => (
-					<p key={index} className="indent">
+				{restParagraphs.map((paragraph) => (
+					<p key={paragraph} className="indent">
 						{paragraph}
 					</p>
 				))}

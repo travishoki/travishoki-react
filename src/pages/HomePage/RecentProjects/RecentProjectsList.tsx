@@ -24,7 +24,7 @@ export const RecentProjectsList = () => (
 			const imgAlt = getImgAltText(company, subtitle);
 
 			return (
-				<li key={index}>
+				<li key={itemKey}>
 					<Link to={`/project/${itemKey}`}>
 						<div className={styles.projectHeader}>
 							<div className={styles.projectHeaderInner}>

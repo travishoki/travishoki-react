@@ -20,7 +20,7 @@ export const Experience = () => (
 						index === RESUME_DATA.length - DIVIDER_POSITION;
 
 					return (
-						<Fragment key={index}>
+						<Fragment key={job.title}>
 							{showTechDivider && (
 								<li className={styles.techDividerContainer}>
 									<TechDivider text="Pre Tech Experience" />

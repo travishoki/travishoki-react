@@ -15,7 +15,11 @@ export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 			ref={ref}
 		>
 			{CURRENT_TECH_INTERESTS.map((item, index) => (
-				<InterestItem key={index} delay={index * STAGGER_SECONDS} item={item} />
+				<InterestItem
+					key={item.title}
+					delay={index * STAGGER_SECONDS}
+					item={item}
+				/>
 			))}
 		</div>
 	),

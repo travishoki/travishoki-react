@@ -23,8 +23,8 @@ export const TechCatalogueList = ({
 					: styles.techCatalogueListCollapsed,
 			)}
 		>
-			{items.map((item, index) => (
-				<TechCatalogueItem key={index} expanded={expanded} {...item} />
+			{items.map((item) => (
+				<TechCatalogueItem key={item.label} expanded={expanded} {...item} />
 			))}
 		</ul>
 	);
