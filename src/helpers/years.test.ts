@@ -1,5 +1,7 @@
 import expect from 'expect';
 
+import { getYearsSince } from './years';
+
 describe('getYearsSince', () => {
 	it('Should return a date', () => {
 		const year = '2000-01-01';
