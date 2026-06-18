@@ -21,7 +21,7 @@ export const TechCatalogue = ({
 	if (items.length === 0) return null;
 
 	return (
-		<div className={classNames(styles.techCatalogue, 'mb-3')}>
+		<div className={styles.techCatalogue}>
 			<TechCatalogueHeader
 				onToggle={() => setExpanded(!expanded)}
 				open={expanded}
