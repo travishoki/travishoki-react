@@ -18,6 +18,7 @@
 			"~const/*": ["./src/const/*"],
 			"~helpers/*": ["./src/helpers/*"],
 			"~images/*": ["./src/images/*"],
+			"~hooks/*": ["./src/hooks/*"],
 			"~svg/*": ["./src/svg/*"]
 		}
 	},

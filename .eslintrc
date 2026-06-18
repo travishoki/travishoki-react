@@ -198,6 +198,7 @@
 					["~components", "./src/components"],
 					["~const", "./src/const"],
 					["~helpers", "./src/helpers"],
+					["~hooks", "./src/hooks"],
 					["~images", "./src/images"],
 					["~svg", "./src/svg"],
 				],

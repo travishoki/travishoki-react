@@ -19,6 +19,7 @@ module.exports = {
 		'^~components/(.*)$': '<rootDir>/src/components/$1',
 		'^~const/(.*)$': '<rootDir>/src/const/$1',
 		'^~helpers/(.*)$': '<rootDir>/src/helpers/$1',
+		'^~hooks/(.*)$': '<rootDir>/src/hooks/$1',
 		'^~images/(.*)$': '<rootDir>/src/images/$1',
 		'^~svg/(.*)$': '<rootDir>/src/svg/$1',
 	},

@@ -22,6 +22,7 @@ export default defineConfig({
 			'~components': path.resolve(__dirname, 'src/components'),
 			'~const': path.resolve(__dirname, 'src/const'),
 			'~helpers': path.resolve(__dirname, 'src/helpers'),
+			'~hooks': path.resolve(__dirname, 'src/hooks'),
 			'~images': path.resolve(__dirname, 'src/images'),
 			'~svg': path.resolve(__dirname, 'src/svg'),
 		},
