@@ -111,6 +111,12 @@ export const HowItsMadeList = () => {
 						src={ImgPingdomSpeedTestReport}
 					/>
 				</li>
+				<li>
+					Website hosted with Bluehost{' '}
+					<ItemLink href="https://www.bluehost.com/" title="Bluehost ">
+						Bluehost
+					</ItemLink>
+				</li>
 			</ul>
 		</div>
 	);
