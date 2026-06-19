@@ -27,6 +27,11 @@ const HokiSkateboardsPage = React.lazy(() =>
 		(m) => ({ default: m.HokiSkateboardsPage }),
 	),
 );
+const PassionPage = React.lazy(() =>
+	import('./pages/PassionPage/PassionPage').then((m) => ({
+		default: m.PassionPage,
+	})),
+);
 const HomePage = React.lazy(() =>
 	import('./pages/HomePage/HomePage').then((m) => ({ default: m.HomePage })),
 );
@@ -69,14 +74,13 @@ export const AppRoutes = () => (
 					<Route element={<EducationPage />} path="/education" />
 					<Route element={<ContactPage />} path="/contact" />
 					<Route element={<AboutPage />} path="/about" />
-					<Route
-						element={<HokiSkateboardsPage />}
-						path="/passion/hoki-skateboards"
-					/>
-					<Route
-						element={<FightForYourDreamsPage />}
-						path="/passion/fight-for-your-dreams"
-					/>
+					<Route element={<PassionPage />} path="/passion">
+						<Route element={<HokiSkateboardsPage />} path="hoki-skateboards" />
+						<Route
+							element={<FightForYourDreamsPage />}
+							path="fight-for-your-dreams"
+						/>
+					</Route>
 					<Route element={<NotFoundPage />} path="*" />
 				</Routes>
 			</Suspense>
