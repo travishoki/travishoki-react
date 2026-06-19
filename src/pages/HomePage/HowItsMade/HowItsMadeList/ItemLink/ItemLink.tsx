@@ -1,8 +1,10 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import { ExternalLinkProps } from '~types/Link.types';
 
 import styles from './ItemLink.module.scss';
 
-export const ItemLink = ({ children, href, title }: ItemLinkProps) => {
+export const ItemLink = ({ children, href, title }: ExternalLinkProps) => {
 	return (
 		<a
 			className={styles.itemLink}
@@ -14,10 +16,4 @@ export const ItemLink = ({ children, href, title }: ItemLinkProps) => {
 			{children}
 		</a>
 	);
-};
-
-type ItemLinkProps = {
-	children: ReactNode;
-	href: string;
-	title: string;
 };

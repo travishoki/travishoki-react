@@ -25,6 +25,7 @@ export default defineConfig({
 			'~hooks': path.resolve(__dirname, 'src/hooks'),
 			'~images': path.resolve(__dirname, 'src/images'),
 			'~svg': path.resolve(__dirname, 'src/svg'),
+			'~types': path.resolve(__dirname, 'src/types'),
 		},
 	},
 	server: {

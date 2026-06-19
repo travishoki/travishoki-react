@@ -1,8 +1,10 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import { ExternalLinkProps } from '~types/Link.types';
 
 import styles from './ContactLink.module.scss';
 
-export const ContactLink = ({ children, href, title }: ContactLinkProps) => (
+export const ContactLink = ({ children, href, title }: ExternalLinkProps) => (
 	<a
 		className={styles.contactLink}
 		href={href}
@@ -13,9 +15,3 @@ export const ContactLink = ({ children, href, title }: ContactLinkProps) => (
 		{children}
 	</a>
 );
-
-type ContactLinkProps = {
-	children: ReactNode;
-	href: string;
-	title: string;
-};
