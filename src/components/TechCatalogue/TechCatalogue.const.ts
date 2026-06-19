@@ -7,7 +7,6 @@ export const TYPE_SECTIONS: { label: string; type: TechType }[] = [
 	{ label: 'Content Management System', type: TYPES.CMS },
 	{ label: 'Tools', type: TYPES.TOOL },
 	{ label: 'Integrations', type: TYPES.INTEGRATIONS },
-	{ label: 'Legacy Tech', type: TYPES.LEGACY },
 	{ label: 'Design', type: TYPES.DESIGN },
 	{ label: 'Illustration', type: TYPES.ILLUSTRATION },
 	{ label: 'Video', type: TYPES.VIDEO },

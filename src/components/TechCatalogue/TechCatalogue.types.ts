@@ -6,7 +6,6 @@ export const TYPES = {
 	FRONTEND: 'frontend',
 	ILLUSTRATION: 'illustration',
 	INTEGRATIONS: 'integrations',
-	LEGACY: 'legacy',
 	TOOL: 'tool',
 	VIDEO: 'video',
 } as const;

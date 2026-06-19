@@ -37,6 +37,10 @@ import {
 
 // Ordered for display by what I want to advertise first
 export const DISPLAYED_LIST: TechKey[] = [
+	// AI
+	CLAUDE_CODE,
+	CURSOR_AI,
+
 	// Frontend
 	REACT_JS,
 	REACT_NATIVE,
@@ -44,13 +48,14 @@ export const DISPLAYED_LIST: TechKey[] = [
 	JAVASCRIPT,
 	TYPESCRIPT,
 	JEST,
-	CYPRESS,
 	HTML,
 	CSS,
 	SCSS,
 	LESS_CSS,
 	ANGULAR_JS,
 	COFFEE_SCRIPT,
+	JQUERY,
+	ACTION_SCRIPT,
 
 	// Backend
 	NODE_JS,
@@ -70,13 +75,8 @@ export const DISPLAYED_LIST: TechKey[] = [
 
 	// Tools
 	GITHUB,
-	CLAUDE_CODE,
-	CURSOR_AI,
+	CYPRESS,
 	PHP_MY_ADMIN,
 	WEBPACK,
 	GRUNT,
-
-	// Legacy Tech
-	JQUERY,
-	ACTION_SCRIPT,
 ];

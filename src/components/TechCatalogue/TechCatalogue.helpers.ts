@@ -8,7 +8,6 @@ export const EMPTY_GROUP_BY_TYPE: Record<TechType, TechCatalogueItemData[]> = {
 	frontend: [],
 	illustration: [],
 	integrations: [],
-	legacy: [],
 	tool: [],
 	video: [],
 };

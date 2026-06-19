@@ -93,7 +93,7 @@ export const TECH: Record<string, TechInfo> = {
 		image: ImgActionScript,
 		label: 'Action Script',
 		legacy: true,
-		type: TYPES.LEGACY,
+		type: TYPES.FRONTEND,
 	},
 	AMP: { image: ImgAmp, label: 'AMP', type: TYPES.FRONTEND },
 	ANGULAR_JS: {
