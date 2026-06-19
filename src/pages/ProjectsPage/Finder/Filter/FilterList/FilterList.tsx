@@ -21,7 +21,7 @@ export const FilterList = ({
 	});
 
 	if (filterListFiltered.length === 0) {
-		return <p className="center">No Results</p>;
+		return <p className="center pt-2">No Results</p>;
 	}
 
 	return (

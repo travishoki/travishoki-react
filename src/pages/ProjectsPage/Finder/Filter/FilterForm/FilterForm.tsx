@@ -16,7 +16,7 @@ export const FilterForm = ({
 			className="form-control"
 			maxLength={25}
 			onChange={onChangeFilter}
-			placeholder="Tech Filter"
+			placeholder="Filter by Tech"
 			type="text"
 			value={filterTerm || ''}
 		/>
