@@ -2,6 +2,7 @@ import {
 	LEVELS,
 	ProficiencyLevel,
 	TechType,
+	TYPES,
 } from '~components/TechCatalogue/TechCatalogue.types';
 import ImgCursor from '~images/icons/software-icons/cursor.jpg';
 import ImgActionScript from '~images/icons/tech-icons/action-script.jpg';
@@ -10,6 +11,7 @@ import ImgAngularJs from '~images/icons/tech-icons/angular-js.jpg';
 import ImgClaudeCode from '~images/icons/tech-icons/claude-code.jpg';
 import ImgCoffeeScript from '~images/icons/tech-icons/coffee-script.jpg';
 import ImgCss from '~images/icons/tech-icons/css.jpg';
+import ImgCypress from '~images/icons/tech-icons/cypress.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
 import ImgExpress from '~images/icons/tech-icons/express.jpg';
 import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
@@ -43,6 +45,7 @@ export const CLAUDE_CODE = 'CLAUDE_CODE';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
 export const CURSOR = 'CURSOR';
+export const CYPRESS = 'CYPRESS';
 export const DJANGO = 'DJANGO';
 export const EXPRESS = 'EXPRESS';
 export const FIREBASE = 'FIREBASE';
@@ -72,6 +75,7 @@ export const WORDPRESS = 'WORDPRESS';
 type TechInfo = {
 	image: string;
 	label: string;
+	legacy?: boolean;
 	level?: ProficiencyLevel;
 	type: TechType;
 };
@@ -80,101 +84,126 @@ export const TECH: Record<string, TechInfo> = {
 	ACTION_SCRIPT: {
 		image: ImgActionScript,
 		label: 'Action Script',
-		type: 'legacy',
+		legacy: true,
+		type: TYPES.LEGACY,
 	},
-	AMP: { image: ImgAmp, label: 'AMP', type: 'frontend' },
-	ANGULAR_JS: { image: ImgAngularJs, label: 'Angular JS', type: 'frontend' },
-	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: 'ai' },
+	AMP: { image: ImgAmp, label: 'AMP', type: TYPES.FRONTEND },
+	ANGULAR_JS: {
+		image: ImgAngularJs,
+		label: 'Angular JS',
+		type: TYPES.FRONTEND,
+	},
+	CLAUDE_CODE: { image: ImgClaudeCode, label: 'Claude Code', type: TYPES.AI },
 	COFFEE_SCRIPT: {
 		image: ImgCoffeeScript,
 		label: 'Coffee Script',
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
-	CSS: { image: ImgCss, label: 'CSS', level: LEVELS.EXPERT, type: 'frontend' },
-	CURSOR: { image: ImgCursor, label: 'Cursor AI', type: 'ai' },
+	CSS: {
+		image: ImgCss,
+		label: 'CSS',
+		level: LEVELS.EXPERT,
+		type: TYPES.FRONTEND,
+	},
+	CURSOR: { image: ImgCursor, label: 'Cursor AI', type: TYPES.AI },
+	CYPRESS: {
+		image: ImgCypress,
+		label: 'Cypress',
+		level: LEVELS.EXPERT,
+		type: TYPES.FRONTEND,
+	},
 	DJANGO: {
 		image: ImgDjango,
 		label: 'Django',
 		level: LEVELS.NOVICE,
-		type: 'backend',
+		type: TYPES.BACKEND,
 	},
-	EXPRESS: { image: ImgExpress, label: 'Express', type: 'backend' },
-	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: 'backend' },
-	GRUNT: { image: ImgGrunt, label: 'Grunt', type: 'tool' },
+	EXPRESS: { image: ImgExpress, label: 'Express', type: TYPES.BACKEND },
+	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: TYPES.BACKEND },
+	GRUNT: { image: ImgGrunt, label: 'Grunt', type: TYPES.TOOL },
 	HANDLEBARS_JS: {
 		image: ImgHandlebarsJs,
 		label: 'Handlebars JS',
-		type: 'backend',
+		type: TYPES.BACKEND,
 	},
 	HTML: {
 		image: ImgHtml,
 		label: 'HTML',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
 	JAVASCRIPT: {
 		image: ImgJavascript,
 		label: 'Javascript',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
 	JEST: {
 		image: ImgJest,
 		label: 'Jest',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
-	JQUERY: { image: ImgJquery, label: 'jQuery', type: 'legacy' },
-	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: 'frontend' },
-	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: 'backend' },
-	PHP: { image: ImgPhp, label: 'PHP', type: 'backend' },
-	PHP_MY_ADMIN: { image: ImgPhpMyAdmin, label: 'phpMyAdmin', type: 'backend' },
+	JQUERY: {
+		image: ImgJquery,
+		label: 'jQuery',
+		legacy: true,
+		type: TYPES.FRONTEND,
+	},
+	LESS_CSS: { image: ImgLessCss, label: 'LESS CSS', type: TYPES.FRONTEND },
+	NODE_JS: { image: ImgNodeJs, label: 'Node JS', type: TYPES.BACKEND },
+	PHP: { image: ImgPhp, label: 'PHP', type: TYPES.BACKEND },
+	PHP_MY_ADMIN: {
+		image: ImgPhpMyAdmin,
+		label: 'phpMyAdmin',
+		type: TYPES.BACKEND,
+	},
 	PYTHON: {
 		image: ImgPython,
 		label: 'Python',
 		level: LEVELS.NOVICE,
-		type: 'backend',
+		type: TYPES.BACKEND,
 	},
 	REACT_JS: {
 		image: ImgReactJs,
 		label: 'React JS',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
 	REACT_NATIVE: {
 		image: ImgReactNative,
 		label: 'React Native',
 		level: LEVELS.ADVANCED,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
 	REDUX: {
 		image: ImgRedux,
 		label: 'Redux',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
 	SCSS: {
 		image: ImgScss,
 		label: 'SCSS',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
-	SQL: { image: ImgSql, label: 'SQL', type: 'backend' },
-	STORYBOOK: { image: ImgStorybook, label: 'Storybook', type: 'tool' },
-	STRIPE: { image: ImgStripe, label: 'Stripe', type: 'integrations' },
+	SQL: { image: ImgSql, label: 'SQL', type: TYPES.BACKEND },
+	STORYBOOK: { image: ImgStorybook, label: 'Storybook', type: TYPES.TOOL },
+	STRIPE: { image: ImgStripe, label: 'Stripe', type: TYPES.INTEGRATIONS },
 	TYPESCRIPT: {
 		image: ImgTypescript,
 		label: 'Typescript',
 		level: LEVELS.EXPERT,
-		type: 'frontend',
+		type: TYPES.FRONTEND,
 	},
-	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: 'tool' },
+	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: TYPES.TOOL },
 	WOO_COMMERCE: {
 		image: ImgWooCommerce,
 		label: 'Woo Commerce',
-		type: 'integrations',
+		type: TYPES.INTEGRATIONS,
 	},
-	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: 'cms' },
+	WORDPRESS: { image: ImgWordpress, label: 'Wordpress', type: TYPES.CMS },
 };
 
 export type TechKey = keyof typeof TECH;

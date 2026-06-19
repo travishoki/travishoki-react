@@ -1,14 +1,17 @@
-export type TechType =
-	| 'ai'
-	| 'frontend'
-	| 'backend'
-	| 'cms'
-	| 'tool'
-	| 'integrations'
-	| 'legacy'
-	| 'design'
-	| 'illustration'
-	| 'video';
+export const TYPES = {
+	AI: 'ai',
+	BACKEND: 'backend',
+	CMS: 'cms',
+	DESIGN: 'design',
+	FRONTEND: 'frontend',
+	ILLUSTRATION: 'illustration',
+	INTEGRATIONS: 'integrations',
+	LEGACY: 'legacy',
+	TOOL: 'tool',
+	VIDEO: 'video',
+} as const;
+
+export type TechType = (typeof TYPES)[keyof typeof TYPES];
 
 // `as const` makes each value a string literal (not `string`), so the
 // ProficiencyLevel type derived below is constrained to exactly these values.
@@ -25,6 +28,7 @@ export type ProficiencyLevel = (typeof LEVELS)[keyof typeof LEVELS];
 export type TechCatalogueItemData = {
 	image: string;
 	label: string;
+	legacy?: boolean;
 	level?: ProficiencyLevel;
 	type?: TechType;
 };

@@ -24,7 +24,7 @@ export const TechCatalogueList = ({
 			)}
 		>
 			{items.map((item) => (
-				<TechCatalogueItem key={item.label} expanded={expanded} {...item} />
+				<TechCatalogueItem key={item.label} expanded={expanded} item={item} />
 			))}
 		</ul>
 	);
