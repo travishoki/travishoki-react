@@ -1,5 +1,7 @@
 @use 'styles' as *;
 
+$two-col-breakpoint: #{250px * 2 + 12px * 3};
+
 .lineItem {
 	display: flex;
 	flex-direction: row;
@@ -9,8 +11,16 @@
 
 .lineItemImage {
 	flex: 0 0 30%;
+
+	@media (max-width: $two-col-breakpoint) {
+		flex: 0 0 50%;
+	}
 }
 
 .lineItemBlurb {
 	flex: 0 0 70%;
+
+	@media (max-width: $two-col-breakpoint) {
+		flex: 0 0 50%;
+	}
 }
