@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { useLocation } from 'react-router-dom';
 
+import { ROUTES } from '~const/Routes.const';
+
 import { MenuButton } from './MenuButton/MenuButton';
 import { NavItem } from './NavItem/NavItem';
 
@@ -28,13 +30,13 @@ export const Nav = () => {
 					[styles.open]: open,
 				})}
 			>
-				<NavItem title="Home" to="/" />
-				<NavItem title="Projects" to="projects" />
-				<NavItem title="Resume" to="resume" />
-				<NavItem title="Education" to="education" />
-				<NavItem title="About" to="about" />
-				<NavItem title="Passion" to="passion/hoki-skateboards" />
-				<NavItem title="Contact" to="contact" />
+				<NavItem title="Home" to={ROUTES.HOME} />
+				<NavItem title="Projects" to={ROUTES.PROJECTS} />
+				<NavItem title="Resume" to={ROUTES.RESUME} />
+				<NavItem title="Education" to={ROUTES.EDUCATION} />
+				<NavItem title="About" to={ROUTES.ABOUT} />
+				<NavItem title="Passion" to={ROUTES.HOKI_SKATEBOARDS} />
+				<NavItem title="Contact" to={ROUTES.CONTACT} />
 			</ul>
 		</>
 	);

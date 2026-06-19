@@ -3,6 +3,8 @@ import React from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
+import { ROUTES } from '~const/Routes.const';
+
 import styles from './PassionNav.module.scss';
 
 export const PassionNav = () => (
@@ -11,7 +13,7 @@ export const PassionNav = () => (
 			className={({ isActive }) =>
 				classNames(styles.navButton, { [styles.active]: isActive })
 			}
-			to="/passion/hoki-skateboards"
+			to={ROUTES.HOKI_SKATEBOARDS}
 		>
 			Hoki Skateboards <i className="fa fa-mobile" />
 		</NavLink>
@@ -19,7 +21,7 @@ export const PassionNav = () => (
 			className={({ isActive }) =>
 				classNames(styles.navButton, { [styles.active]: isActive })
 			}
-			to="/passion/fight-for-your-dreams"
+			to={ROUTES.FIGHT_FOR_YOUR_DREAMS}
 		>
 			Fight For Your Dreams <i className="fa fa-book" />
 		</NavLink>

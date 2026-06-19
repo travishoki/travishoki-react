@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 import { SocialIcons } from '~components/SocialIcons/SocialIcons';
+import { ROUTES } from '~const/Routes.const';
 
 import { BluehostAffiliate } from './BluehostAffiliate/BluehostAffiliate';
 
@@ -19,7 +20,7 @@ export const SubFooter = () => (
 			</div>
 			<NavLink
 				className={classNames(styles.contactLink, 'active ms-3')}
-				to="/contact"
+				to={ROUTES.CONTACT}
 			>
 				Contact
 			</NavLink>

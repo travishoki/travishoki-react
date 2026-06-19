@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { Typewriter } from '~animations/Typewriter';
 import { SocialIcons } from '~components/SocialIcons/SocialIcons';
+import { ROUTES } from '~const/Routes.const';
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
 
 import styles from './Banner.module.scss';
@@ -28,7 +29,7 @@ export const Banner = () => (
 			<SocialIcons className={styles.bannerSocial} />
 			<Link
 				className={classNames('btn btn-primary btn-lg', styles.homeBannerBtn)}
-				to="/contact"
+				to={ROUTES.CONTACT}
 			>
 				Contact
 			</Link>
