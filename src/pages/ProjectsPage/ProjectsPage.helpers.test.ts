@@ -5,7 +5,7 @@ import { JAVASCRIPT, REACT_JS } from '~const/Tech.const';
 import { createProjectsPageUrl, filterProjects } from './ProjectsPage.helpers';
 import { ProjectType } from './ProjectsPage.types';
 
-const makeProject = (overrides: Partial<ProjectType>): ProjectType => ({
+const mockProject = (overrides: Partial<ProjectType>): ProjectType => ({
 	company: 'Company',
 	companySlug: 'company',
 	contributions: '',
@@ -18,8 +18,8 @@ const makeProject = (overrides: Partial<ProjectType>): ProjectType => ({
 });
 
 describe('filterProjects', () => {
-	const reactProject = makeProject({ company: 'Reacty', techs: [REACT_JS] });
-	const jsProject = makeProject({
+	const reactProject = mockProject({ company: 'Reacty', techs: [REACT_JS] });
+	const jsProject = mockProject({
 		company: 'Scripty',
 		description: 'uses vanilla',
 		techs: [JAVASCRIPT],
