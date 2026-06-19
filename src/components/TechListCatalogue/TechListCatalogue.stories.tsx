@@ -40,7 +40,7 @@ export const All: Story = {
 			'CLAUDE_CODE',
 			'COFFEE_SCRIPT',
 			'CSS',
-			'CURSOR',
+			'CURSOR_AI',
 			'DJANGO',
 			'EXPRESS',
 			'FIREBASE',

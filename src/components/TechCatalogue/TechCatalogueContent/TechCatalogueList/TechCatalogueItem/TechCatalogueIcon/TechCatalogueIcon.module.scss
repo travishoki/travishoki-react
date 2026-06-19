@@ -1,0 +1,18 @@
+$iconW: 40px;
+
+.icon {
+	height: $iconW;
+	width: $iconW;
+
+	&.circle {
+		border-radius: 50%;
+	}
+
+	&.rounded {
+		border-radius: 22%;
+	}
+
+	&.blackAndWhite {
+		filter: grayscale(100%);
+	}
+}

@@ -15,7 +15,7 @@ export type TechType = (typeof TYPES)[keyof typeof TYPES];
 
 // `as const` makes each value a string literal (not `string`), so the
 // ProficiencyLevel type derived below is constrained to exactly these values.
-export const LEVELS = {
+export const LEVEL = {
 	ADVANCED: 'advanced',
 	EXPERT: 'expert',
 	NOVICE: 'novice',
@@ -23,7 +23,7 @@ export const LEVELS = {
 
 // Proficiency tiers, surfaced as a colored pill in the expanded catalogue view.
 // Ordered most-to-least proficient.
-export type ProficiencyLevel = (typeof LEVELS)[keyof typeof LEVELS];
+export type ProficiencyLevel = (typeof LEVEL)[keyof typeof LEVEL];
 
 export type TechCatalogueItemData = {
 	image: string;

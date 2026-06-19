@@ -36,28 +36,8 @@ $gap: 15px;
 	}
 }
 
-$iconW: 40px;
-
-.techCatalogueIcon {
-	height: $iconW;
-	width: $iconW;
-
-	&.techCatalogueIconCircle {
-		border-radius: 50%;
-	}
-
-	&.softwareCatalogueIconRounded {
-		border-radius: 22%;
-	}
-
-	&.blackAndWhite {
-		filter: grayscale(100%);
-	}
-}
-
 .label {
 	font-size: 14px;
-	line-height: $iconW;
 	line-height: 18px;
 	margin: 0;
 }

@@ -4,6 +4,8 @@ import {
 	COFFEE_SCRIPT,
 	CSS,
 	DJANGO,
+	GITHUB,
+	GRAPHQL,
 	GRUNT,
 	HANDLEBARS_JS,
 	EXPRESS,
@@ -20,6 +22,8 @@ import {
 	REACT_JS,
 	REACT_NATIVE,
 	REDUX,
+	RUBY,
+	RUBY_ON_RAILS,
 	SCSS,
 	SQL,
 	TechKey,
@@ -28,7 +32,7 @@ import {
 	WORDPRESS,
 	CLAUDE_CODE,
 	PHP_MY_ADMIN,
-	CURSOR,
+	CURSOR_AI,
 } from '~const/Tech.const';
 
 // Ordered for display by what I want to advertise first
@@ -51,11 +55,13 @@ export const DISPLAYED_LIST: TechKey[] = [
 	// Backend
 	NODE_JS,
 	EXPRESS,
-	HANDLEBARS_JS,
 	PHP,
-	PHP_MY_ADMIN,
 	SQL,
 	FIREBASE,
+	HANDLEBARS_JS,
+	GRAPHQL,
+	RUBY,
+	RUBY_ON_RAILS,
 	PYTHON,
 	DJANGO,
 
@@ -63,8 +69,10 @@ export const DISPLAYED_LIST: TechKey[] = [
 	WORDPRESS,
 
 	// Tools
+	GITHUB,
 	CLAUDE_CODE,
-	CURSOR,
+	CURSOR_AI,
+	PHP_MY_ADMIN,
 	WEBPACK,
 	GRUNT,
 

@@ -1,5 +1,5 @@
 import {
-	LEVELS,
+	LEVEL,
 	ProficiencyLevel,
 	TechType,
 	TYPES,
@@ -15,6 +15,8 @@ import ImgCypress from '~images/icons/tech-icons/cypress.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
 import ImgExpress from '~images/icons/tech-icons/express.jpg';
 import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
+import ImgGithub from '~images/icons/tech-icons/github.jpg';
+import ImgGraphQl from '~images/icons/tech-icons/graphql.jpg';
 import ImgGrunt from '~images/icons/tech-icons/grunt.jpg';
 import ImgHandlebarsJs from '~images/icons/tech-icons/handlebars-js.jpg';
 import ImgHtml from '~images/icons/tech-icons/html.jpg';
@@ -29,6 +31,8 @@ import ImgPython from '~images/icons/tech-icons/python.jpg';
 import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
 import ImgReactNative from '~images/icons/tech-icons/react-native.jpg';
 import ImgRedux from '~images/icons/tech-icons/redux.jpg';
+import ImgRubyOnRails from '~images/icons/tech-icons/ruby-on-rails.jpg';
+import ImgRuby from '~images/icons/tech-icons/ruby.jpg';
 import ImgScss from '~images/icons/tech-icons/sass.jpg';
 import ImgSql from '~images/icons/tech-icons/sql.jpg';
 import ImgStorybook from '~images/icons/tech-icons/storybook.jpg';
@@ -44,11 +48,13 @@ export const ANGULAR_JS = 'ANGULAR_JS';
 export const CLAUDE_CODE = 'CLAUDE_CODE';
 export const COFFEE_SCRIPT = 'COFFEE_SCRIPT';
 export const CSS = 'CSS';
-export const CURSOR = 'CURSOR';
+export const CURSOR_AI = 'CURSOR_AI';
 export const CYPRESS = 'CYPRESS';
 export const DJANGO = 'DJANGO';
 export const EXPRESS = 'EXPRESS';
 export const FIREBASE = 'FIREBASE';
+export const GITHUB = 'GITHUB';
+export const GRAPHQL = 'GRAPHQL';
 export const GRUNT = 'GRUNT';
 export const HANDLEBARS_JS = 'HANDLEBARS_JS';
 export const HTML = 'HTML';
@@ -63,6 +69,8 @@ export const PYTHON = 'PYTHON';
 export const REACT_JS = 'REACT_JS';
 export const REACT_NATIVE = 'REACT_NATIVE';
 export const REDUX = 'REDUX';
+export const RUBY = 'RUBY';
+export const RUBY_ON_RAILS = 'RUBY_ON_RAILS';
 export const SCSS = 'SCSS';
 export const SQL = 'SQL';
 export const STRIPE = 'STRIPE';
@@ -102,24 +110,36 @@ export const TECH: Record<string, TechInfo> = {
 	CSS: {
 		image: ImgCss,
 		label: 'CSS',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
-	CURSOR: { image: ImgCursor, label: 'Cursor AI', type: TYPES.AI },
+	CURSOR_AI: { image: ImgCursor, label: 'Cursor AI', type: TYPES.AI },
 	CYPRESS: {
 		image: ImgCypress,
 		label: 'Cypress',
-		level: LEVELS.EXPERT,
-		type: TYPES.FRONTEND,
+		level: LEVEL.NOVICE,
+		type: TYPES.TOOL,
 	},
 	DJANGO: {
 		image: ImgDjango,
 		label: 'Django',
-		level: LEVELS.NOVICE,
+		level: LEVEL.NOVICE,
 		type: TYPES.BACKEND,
 	},
 	EXPRESS: { image: ImgExpress, label: 'Express', type: TYPES.BACKEND },
 	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: TYPES.BACKEND },
+	GITHUB: {
+		image: ImgGithub,
+		label: 'GitHub',
+		level: LEVEL.ADVANCED,
+		type: TYPES.TOOL,
+	},
+	GRAPHQL: {
+		image: ImgGraphQl,
+		label: 'GraphQL',
+		level: LEVEL.NOVICE,
+		type: TYPES.BACKEND,
+	},
 	GRUNT: { image: ImgGrunt, label: 'Grunt', type: TYPES.TOOL },
 	HANDLEBARS_JS: {
 		image: ImgHandlebarsJs,
@@ -129,19 +149,19 @@ export const TECH: Record<string, TechInfo> = {
 	HTML: {
 		image: ImgHtml,
 		label: 'HTML',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	JAVASCRIPT: {
 		image: ImgJavascript,
 		label: 'Javascript',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	JEST: {
 		image: ImgJest,
 		label: 'Jest',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	JQUERY: {
@@ -156,36 +176,48 @@ export const TECH: Record<string, TechInfo> = {
 	PHP_MY_ADMIN: {
 		image: ImgPhpMyAdmin,
 		label: 'phpMyAdmin',
-		type: TYPES.BACKEND,
+		type: TYPES.TOOL,
 	},
 	PYTHON: {
 		image: ImgPython,
 		label: 'Python',
-		level: LEVELS.NOVICE,
+		level: LEVEL.NOVICE,
 		type: TYPES.BACKEND,
 	},
 	REACT_JS: {
 		image: ImgReactJs,
 		label: 'React JS',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	REACT_NATIVE: {
 		image: ImgReactNative,
 		label: 'React Native',
-		level: LEVELS.ADVANCED,
+		level: LEVEL.ADVANCED,
 		type: TYPES.FRONTEND,
 	},
 	REDUX: {
 		image: ImgRedux,
 		label: 'Redux',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
+	},
+	RUBY: {
+		image: ImgRuby,
+		label: 'Ruby',
+		level: LEVEL.NOVICE,
+		type: TYPES.BACKEND,
+	},
+	RUBY_ON_RAILS: {
+		image: ImgRubyOnRails,
+		label: 'Ruby on Rails',
+		level: LEVEL.NOVICE,
+		type: TYPES.BACKEND,
 	},
 	SCSS: {
 		image: ImgScss,
 		label: 'SCSS',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	SQL: { image: ImgSql, label: 'SQL', type: TYPES.BACKEND },
@@ -194,7 +226,7 @@ export const TECH: Record<string, TechInfo> = {
 	TYPESCRIPT: {
 		image: ImgTypescript,
 		label: 'Typescript',
-		level: LEVELS.EXPERT,
+		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: TYPES.TOOL },

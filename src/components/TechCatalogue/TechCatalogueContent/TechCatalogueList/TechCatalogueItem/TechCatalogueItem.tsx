@@ -3,10 +3,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
 
-import { useCircle } from '~components/TechCatalogue/TechCatalogueContext';
-
+import { TechCatalogueIcon } from './TechCatalogueIcon/TechCatalogueIcon';
 import {
-	LEVELS,
+	LEVEL,
 	ProficiencyLevel,
 	TechCatalogueItemData,
 } from '../../../TechCatalogue.types';
@@ -19,9 +18,9 @@ const LEVEL_INFO: Record<
 	ProficiencyLevel,
 	{ className: string; label: string }
 > = {
-	[LEVELS.ADVANCED]: { className: styles.levelAdvanced, label: 'Advanced' },
-	[LEVELS.EXPERT]: { className: styles.levelExpert, label: 'Expert' },
-	[LEVELS.NOVICE]: { className: styles.levelNovice, label: 'Novice' },
+	[LEVEL.ADVANCED]: { className: styles.levelAdvanced, label: 'Advanced' },
+	[LEVEL.EXPERT]: { className: styles.levelExpert, label: 'Expert' },
+	[LEVEL.NOVICE]: { className: styles.levelNovice, label: 'Novice' },
 };
 
 export const TechCatalogueItem = ({
@@ -29,33 +28,20 @@ export const TechCatalogueItem = ({
 	item,
 }: TechCatalogueItemProps) => {
 	const { image, label, legacy = false, level } = item;
-	const circle = useCircle();
-
-	const itemClassName = classNames(styles.techCatalogueItem);
-
-	// Derived from the circle context here at the leaf.
-	const iconClassName = classNames(
-		styles.techCatalogueIcon,
-		circle
-			? styles.techCatalogueIconCircle
-			: styles.softwareCatalogueIconRounded,
-	);
 
 	return (
 		// `layout="position"` glides the item to its new spot when the list
 		// switches between the collapsed row and the expanded grid, without
 		// scaling (which would distort the fixed-size icon).
 		<motion.li
-			className={itemClassName}
+			className={styles.techCatalogueItem}
 			data-tooltip={expanded ? undefined : label}
 			layout="position"
 			transition={TRANSITION}
 		>
-			<img
+			<TechCatalogueIcon
 				alt={`${label} Logo Icon`}
-				className={classNames(iconClassName, {
-					[styles.blackAndWhite]: legacy,
-				})}
+				legacy={legacy}
 				src={image}
 			/>
 
