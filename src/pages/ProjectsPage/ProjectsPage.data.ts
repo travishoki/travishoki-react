@@ -33,6 +33,7 @@ const PROJECTS: ProjectInput[] = [
 			},
 		],
 		learned: ['How to implement a "fuzzy" search'],
+		live: true,
 		techs: [
 			TECH.REACT_JS,
 			TECH.JAVASCRIPT,
