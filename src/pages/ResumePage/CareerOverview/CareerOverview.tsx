@@ -7,7 +7,7 @@ import styles from './CareerOverview.module.scss';
 export const CareerOverview = () => {
 	return (
 		<section className="primary-three">
-			<div className="boxed">
+			<div className="boxed boxed-lg">
 				<h2>Career Overview</h2>
 				<p className={classNames('indent', styles.careerOverviewParagraph)}>
 					Highly accomplished Senior Software Engineer with over 14 years of
