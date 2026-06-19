@@ -14,8 +14,8 @@ export const AboutPage = () => {
 		<div className="about" id="container">
 			<PageSeo seoData={PAGE_SEO[ROUTES.ABOUT]} />
 			<h1>About Me</h1>
+			<Intro />
 			<div className="boxed boxed-lg">
-				<Intro />
 				<StaggeredList>
 					{ABOUT_PAGE_DATA.map((item) => (
 						<AboutItem key={item.itemKey} {...item} />
