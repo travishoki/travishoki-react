@@ -13,7 +13,7 @@ export const PassionNav = () => (
 			}
 			to="/passion/hoki-skateboards"
 		>
-			Hoki Skateboards
+			Hoki Skateboards <i className="fa fa-mobile" />
 		</NavLink>
 		<NavLink
 			className={({ isActive }) =>
@@ -21,7 +21,7 @@ export const PassionNav = () => (
 			}
 			to="/passion/fight-for-your-dreams"
 		>
-			Fight For Your Dreams
+			Fight For Your Dreams <i className="fa fa-book" />
 		</NavLink>
 	</nav>
 );
