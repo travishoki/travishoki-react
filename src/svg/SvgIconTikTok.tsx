@@ -2,13 +2,13 @@ import React, { ReactElement } from 'react';
 
 import { BLUE_1, BLUE_3, BLUE_5 } from '~const/colors.const';
 
-import { svgDefaultProps } from './const';
+import { SvgIconProps, svgDefaultProps } from './const';
 
 export const SvgIconTikTok = ({
 	className,
 	color = svgDefaultProps.color,
 	size = svgDefaultProps.size,
-}: SvgIconTikTok): ReactElement => (
+}: SvgIconProps): ReactElement => (
 	<svg
 		className={className}
 		height={size}
@@ -33,9 +33,3 @@ export const SvgIconTikTok = ({
 		/>
 	</svg>
 );
-
-type SvgIconTikTok = {
-	className?: string;
-	color?: string;
-	size?: number;
-};

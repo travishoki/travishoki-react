@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { svgDefaultProps } from './const';
+import { SvgIconProps, svgDefaultProps } from './const';
 
 const viewWidth = 56.693;
 const viewHeight = 56.693;
@@ -9,7 +9,7 @@ export const SvgIconInstagram = ({
 	className,
 	color = svgDefaultProps.color,
 	size = svgDefaultProps.size,
-}: SvgIconInstagramType): ReactElement => (
+}: SvgIconProps): ReactElement => (
 	<svg
 		className={className}
 		height={size}
@@ -22,9 +22,3 @@ export const SvgIconInstagram = ({
 		/>
 	</svg>
 );
-
-type SvgIconInstagramType = {
-	className?: string;
-	color?: string;
-	size?: number;
-};

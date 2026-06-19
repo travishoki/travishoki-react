@@ -4,3 +4,9 @@ export const svgDefaultProps = {
 	color: GRAY_5,
 	size: 20,
 };
+
+export type SvgIconProps = {
+	className?: string;
+	color?: string;
+	size?: number;
+};
