@@ -3,7 +3,7 @@
 .howItsMadeList {
 	display: block;
 	list-style: none;
-	margin: 0 0 5px 0;
+	margin: 0;
 	padding: 0;
 
 	li {
@@ -18,9 +18,4 @@
 			position: absolute;
 		}
 	}
-}
-
-.howItsMadeListContainer {
-	margin: 0 auto;
-	max-width: 450px;
 }

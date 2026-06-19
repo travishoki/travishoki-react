@@ -42,6 +42,11 @@ const PassionPage = React.lazy(() =>
 const HomePage = React.lazy(() =>
 	import('./pages/HomePage/HomePage').then((m) => ({ default: m.HomePage })),
 );
+const HowItsMadePage = React.lazy(() =>
+	import('./pages/HowItsMadePage/HowItsMadePage').then((m) => ({
+		default: m.HowItsMadePage,
+	})),
+);
 const NotFoundPage = React.lazy(() =>
 	import('./pages/NotFoundPage/NotFoundPage').then((m) => ({
 		default: m.NotFoundPage,
@@ -75,6 +80,10 @@ export const AppRoutes = () => (
 						path={ROUTE_PATTERNS.PROJECT}
 					/>
 					<Route element={<ResumePage />} path={ROUTE_PATTERNS.RESUME} />
+					<Route
+						element={<HowItsMadePage />}
+						path={ROUTE_PATTERNS.HOW_ITS_MADE}
+					/>
 					<Route element={<EducationPage />} path={ROUTE_PATTERNS.EDUCATION} />
 					<Route element={<ContactPage />} path={ROUTE_PATTERNS.CONTACT} />
 					<Route element={<AboutPage />} path={ROUTE_PATTERNS.ABOUT} />

@@ -5,6 +5,7 @@ export const ROUTES = {
 	FIGHT_FOR_YOUR_DREAMS: '/passion/fight-for-your-dreams',
 	HOKI_SKATEBOARDS: '/passion/hoki-skateboards',
 	HOME: '/',
+	HOW_ITS_MADE: '/how-its-made',
 	PROJECT: '/project',
 	PROJECTS: '/projects',
 	RESUME: '/resume',

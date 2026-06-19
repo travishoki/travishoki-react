@@ -7,8 +7,7 @@ import styles from './Intro.module.scss';
 
 const IMG_SIZE = 300;
 const image = {
-	description:
-		"When I'm not staring at a code editor or building things for the web, here is a little look at what keeps me busy, what I love doing, and who I am outside of work.",
+	description: '',
 	imgLarge: ImgProfilePic,
 	imgLargeDimensions: [IMG_SIZE, IMG_SIZE],
 	imgSmall: ImgProfilePicSmall,
@@ -25,7 +24,7 @@ export const Intro = () => (
 				</div>
 				<p className={`indent m-0 ${styles.text}`}>
 					When I&apos;m not staring at a code editor or building things for the
-					web, here is a little look at what keeps me busy, what I love doing,
+					web, here is a look at what keeps me busy. This is what I love doing,
 					and who I am outside of work.
 				</p>
 			</div>

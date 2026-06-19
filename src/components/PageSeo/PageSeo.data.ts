@@ -39,6 +39,12 @@ export const PAGE_SEO: Record<string, SeoData> = {
 		description:
 			'Travis Hoki is a Senior Software Development Engineer specializing in React and TypeScript. View my portfolio, projects, and resume.',
 	},
+	[ROUTES.HOW_ITS_MADE]: {
+		title: 'How This Site Was Made',
+		canonical: ROUTES.HOW_ITS_MADE,
+		description:
+			'A breakdown of the tools, libraries, and technologies used to build travishoki.com.',
+	},
 	[ROUTES.PROJECTS]: {
 		title: 'Projects',
 		canonical: ROUTES.PROJECTS,

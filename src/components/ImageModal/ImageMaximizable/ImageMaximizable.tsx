@@ -63,7 +63,7 @@ export const ImageMaximizable = ({
 	);
 };
 
-type ImageMaximizableProps = {
+export type ImageMaximizableProps = {
 	alt: string;
 	animate?: boolean;
 	className?: string;

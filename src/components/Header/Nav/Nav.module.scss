@@ -43,7 +43,9 @@
 		display: block;
 		font-size: 16px;
 		font-weight: bold;
+		min-width: 60px;
 		padding: 0 10px;
+		text-align: center;
 		text-decoration: none;
 
 		// `active` is added globally by react-router's NavLink, so it must not be

@@ -36,6 +36,7 @@ export const Nav = () => {
 				<NavItem title="Education" to={ROUTES.EDUCATION} />
 				<NavItem title="About" to={ROUTES.ABOUT} />
 				<NavItem title="Passion" to={ROUTES.HOKI_SKATEBOARDS} />
+				<NavItem title="Site" to={ROUTES.HOW_ITS_MADE} />
 				<NavItem title="Contact" to={ROUTES.CONTACT} />
 			</ul>
 		</>
