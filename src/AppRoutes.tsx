@@ -1,6 +1,11 @@
 import React, { Suspense } from 'react';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+	BrowserRouter as Router,
+	Navigate,
+	Route,
+	Routes,
+} from 'react-router-dom';
 
 import { App } from './App';
 
@@ -75,6 +80,10 @@ export const AppRoutes = () => (
 					<Route element={<ContactPage />} path="/contact" />
 					<Route element={<AboutPage />} path="/about" />
 					<Route element={<PassionPage />} path="/passion">
+						<Route
+							element={<Navigate replace to="/passion/hoki-skateboards" />}
+							index
+						/>
 						<Route element={<HokiSkateboardsPage />} path="hoki-skateboards" />
 						<Route
 							element={<FightForYourDreamsPage />}
