@@ -1,12 +1,8 @@
 import { ROUTES } from '~const/Routes.const';
 
-export type PageSeoData = {
-	canonical: string;
-	description: string;
-	title: string;
-};
+import { SeoData } from './PageSeo';
 
-export const PAGE_SEO: Record<string, PageSeoData> = {
+export const PAGE_SEO: Record<string, SeoData> = {
 	[ROUTES.ABOUT]: {
 		title: 'About Me',
 		canonical: ROUTES.ABOUT,

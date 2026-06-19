@@ -9,13 +9,15 @@ import {
 	SITE_NAME,
 } from './PageSeo.const';
 
+export type SeoData = {
+	canonical?: string;
+	description?: string;
+	image?: string;
+	title: string;
+};
+
 interface PageSeoProps {
-	seoData: {
-		canonical?: string;
-		description?: string;
-		image?: string;
-		title: string;
-	};
+	seoData: SeoData;
 }
 
 export const PageSeo = ({ seoData }: PageSeoProps) => {
