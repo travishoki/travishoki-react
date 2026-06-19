@@ -42,6 +42,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgProfilePic,
 		imgLargeDimensions: [300, 300],
 		imgSmall: ImgProfilePic,
+		itemKey: '1',
 	},
 	{
 		description:
@@ -49,6 +50,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgFamily,
 		imgLargeDimensions: [1463, 2048],
 		imgSmall: ImgFamilySmall,
+		itemKey: '2',
 		title: 'Family',
 	},
 	{
@@ -57,6 +59,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgCubScouts,
 		imgLargeDimensions: [1518, 2024],
 		imgSmall: ImgCubScoutsSmall,
+		itemKey: '3',
 		title: 'Cub Scouts',
 	},
 	{
@@ -67,6 +70,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgChildrensBook,
 		imgLargeDimensions: [960, 1200],
 		imgSmall: ImgChildrensBookSmall,
+		itemKey: '4',
 		title: "Children's Book Illustrator",
 		video: 'videos/you-should-always-skateboard.mp4',
 	},
@@ -82,6 +86,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgStandupComedy,
 		imgLargeDimensions: [1440, 1440],
 		imgSmall: ImgStandupComedySmall,
+		itemKey: '5',
 		title: 'Standup Comedy',
 	},
 	{
@@ -89,6 +94,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgKoda,
 		imgLargeDimensions: [1536, 2048],
 		imgSmall: ImgKodaSmall,
+		itemKey: '',
 		title: 'Doggo',
 	},
 	{
@@ -97,6 +103,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgSkateboard,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgSkateboardSmall,
+		itemKey: '6',
 		title: 'Skateboarding',
 		video: 'videos/skate-clip.MP4',
 	},
@@ -105,6 +112,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgWedding,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgWeddingSmall,
+		itemKey: '7',
 		title: 'Wife',
 	},
 	{
@@ -116,6 +124,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgGuitar,
 		imgLargeDimensions: [2048, 1366],
 		imgSmall: ImgGuitarSmall,
+		itemKey: '8',
 		title: 'Guitar',
 	},
 	{
@@ -127,6 +136,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBreakdance,
 		imgLargeDimensions: [620, 413],
 		imgSmall: ImgBreakdanceSmall,
+		itemKey: '9',
 		title: 'Breakdance',
 		video: 'videos/green-man.MP4',
 	},
@@ -138,6 +148,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBallroom,
 		imgLargeDimensions: [453, 604],
 		imgSmall: ImgBallroomSmall,
+		itemKey: '10',
 		title: 'Ballroom Dance',
 	},
 	{
@@ -148,6 +159,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgEagleScout,
 		imgLargeDimensions: [1688, 2000],
 		imgSmall: ImgEagleScoutSmall,
+		itemKey: '11',
 		title: 'Eagle Scout',
 	},
 	{
@@ -158,6 +170,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgTaeKwonDo,
 		imgLargeDimensions: [563, 750],
 		imgSmall: ImgTaeKwonDoSmall,
+		itemKey: '12',
 		title: 'TaeKwonDo',
 	},
 ];
@@ -169,6 +182,7 @@ export type AboutType = {
 	imgLarge: string;
 	imgLargeDimensions: number[];
 	imgSmall: string;
+	itemKey: string;
 	title?: string;
 	video?: string;
 };

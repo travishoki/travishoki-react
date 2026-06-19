@@ -12,7 +12,7 @@ export const AboutPage = () => {
 			<div className="boxed boxed-lg">
 				<StaggeredList>
 					{ABOUT_PAGE_DATA.map((item) => (
-						<AboutItem key={item.title} {...item} />
+						<AboutItem key={item.itemKey} {...item} />
 					))}
 				</StaggeredList>
 			</div>
