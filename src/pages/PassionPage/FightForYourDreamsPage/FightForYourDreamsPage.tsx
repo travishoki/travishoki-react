@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
+import { PageSeo } from '~components/PageSeo/PageSeo';
+import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
+import { ROUTES } from '~const/Routes.const';
 
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { About } from './About/About';
@@ -16,6 +19,7 @@ import { Logo } from './Logo/Logo';
 
 export const FightForYourDreamsPage = () => (
 	<section className="boxed boxed-lg p-3">
+		<PageSeo seoData={PAGE_SEO[ROUTES.FIGHT_FOR_YOUR_DREAMS]} />
 		<Logo />
 		<CoverImage />
 		<BookHeading />

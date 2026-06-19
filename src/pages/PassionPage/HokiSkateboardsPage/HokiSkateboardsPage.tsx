@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { PageSeo } from '~components/PageSeo/PageSeo';
+import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
+import { ROUTES } from '~const/Routes.const';
+
 import { Content } from './Content/Content';
 import { CoverImage } from './CoverImage/CoverImage';
 import { Logo } from './Logo/Logo';
@@ -10,6 +14,7 @@ import styles from './HokiSkateboardsPage.module.scss';
 
 export const HokiSkateboardsPage = () => (
 	<section className="boxed boxed-lg p-3">
+		<PageSeo seoData={PAGE_SEO[ROUTES.HOKI_SKATEBOARDS]} />
 		<Logo />
 		<CoverImage />
 		<p className={styles.description}>
