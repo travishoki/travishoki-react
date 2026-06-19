@@ -1,30 +1,33 @@
 import { getYearsSince } from '~helpers/years';
-import ImgBallroomSmall from '~images/about/ballroom-small.jpg';
-import ImgBallroom from '~images/about/ballroom.jpg';
-import ImgChildrensBookSmall from '~images/about/childrens-book-small.jpg';
-import ImgChildrensBook from '~images/about/childrens-book.jpg';
-import ImgCubScoutsSmall from '~images/about/cub-scouts-small.jpg';
-import ImgCubScouts from '~images/about/cub-scouts.jpg';
-import ImgEagleScoutSmall from '~images/about/eagle-scout-small.jpg';
-import ImgEagleScout from '~images/about/eagle-scout.jpg';
-import ImgFamilySmall from '~images/about/family-small.jpg';
-import ImgFamily from '~images/about/family.jpg';
-import ImgBreakdanceSmall from '~images/about/green-man-group-small.jpg';
-import ImgBreakdance from '~images/about/green-man-group.jpg';
-import ImgGuitarSmall from '~images/about/guitar-small.jpg';
-import ImgGuitar from '~images/about/guitar.jpg';
-import ImgKodaSmall from '~images/about/koda-small.jpg';
-import ImgKoda from '~images/about/koda.jpg';
-import ImgSkateboardSmall from '~images/about/skateboarding-small.jpg';
-import ImgSkateboard from '~images/about/skateboarding.jpg';
-import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
-import ImgStandupComedy from '~images/about/standup-comedy.jpg';
-import ImgTaeKwonDoSmall from '~images/about/taekwondo-small.jpg';
-import ImgTaeKwonDo from '~images/about/taekwondo.jpg';
-import ImgProfilePicSmall from '~images/about/travis-and-lindsey-hoki-small.png';
-import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
-import ImgWeddingSmall from '~images/about/wedding-small.jpg';
-import ImgWedding from '~images/about/wedding.jpg';
+
+import {
+	ImgBallroom,
+	ImgBallroomSmall,
+	ImgBreakdance,
+	ImgBreakdanceSmall,
+	ImgChildrensBook,
+	ImgChildrensBookSmall,
+	ImgCubScouts,
+	ImgCubScoutsSmall,
+	ImgEagleScout,
+	ImgEagleScoutSmall,
+	ImgFamily,
+	ImgFamilySmall,
+	ImgGuitar,
+	ImgGuitarSmall,
+	ImgKoda,
+	ImgKodaSmall,
+	ImgProfilePic,
+	ImgProfilePicSmall,
+	ImgSkateboard,
+	ImgSkateboardSmall,
+	ImgStandupComedy,
+	ImgStandupComedySmall,
+	ImgTaeKwonDo,
+	ImgTaeKwonDoSmall,
+	ImgWedding,
+	ImgWeddingSmall,
+} from './AboutPage.data.images';
 
 const MARRIAGE_YEAR = '2015-06-06';
 const YEARS_MARRIED = getYearsSince(MARRIAGE_YEAR);
@@ -43,7 +46,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgProfilePic,
 		imgLargeDimensions: [300, 300],
 		imgSmall: ImgProfilePicSmall,
-		itemKey: '1',
+		itemKey: 'intro',
 	},
 	{
 		description:
@@ -51,7 +54,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgFamily,
 		imgLargeDimensions: [1463, 2048],
 		imgSmall: ImgFamilySmall,
-		itemKey: '2',
+		itemKey: 'family',
 		title: 'Family',
 	},
 	{
@@ -60,7 +63,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgCubScouts,
 		imgLargeDimensions: [1518, 2024],
 		imgSmall: ImgCubScoutsSmall,
-		itemKey: '3',
+		itemKey: 'cub-scouts',
 		title: 'Cub Scouts',
 	},
 	{
@@ -71,7 +74,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgChildrensBook,
 		imgLargeDimensions: [960, 1200],
 		imgSmall: ImgChildrensBookSmall,
-		itemKey: '4',
+		itemKey: 'childrens-book-illustrator',
 		title: "Children's Book Illustrator",
 		video: 'videos/you-should-always-skateboard.mp4',
 	},
@@ -87,7 +90,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgStandupComedy,
 		imgLargeDimensions: [1440, 1440],
 		imgSmall: ImgStandupComedySmall,
-		itemKey: '5',
+		itemKey: 'standup-comedy',
 		title: 'Standup Comedy',
 	},
 	{
@@ -95,7 +98,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgKoda,
 		imgLargeDimensions: [1536, 2048],
 		imgSmall: ImgKodaSmall,
-		itemKey: '',
+		itemKey: '6',
 		title: 'Doggo',
 	},
 	{
@@ -104,7 +107,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgSkateboard,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgSkateboardSmall,
-		itemKey: '6',
+		itemKey: 'skateboarding',
 		title: 'Skateboarding',
 		video: 'videos/skate-clip.MP4',
 	},
@@ -113,7 +116,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgWedding,
 		imgLargeDimensions: [2048, 1367],
 		imgSmall: ImgWeddingSmall,
-		itemKey: '7',
+		itemKey: 'wife',
 		title: 'Wife',
 	},
 	{
@@ -125,7 +128,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgGuitar,
 		imgLargeDimensions: [2048, 1366],
 		imgSmall: ImgGuitarSmall,
-		itemKey: '8',
+		itemKey: 'guitar',
 		title: 'Guitar',
 	},
 	{
@@ -137,7 +140,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBreakdance,
 		imgLargeDimensions: [620, 413],
 		imgSmall: ImgBreakdanceSmall,
-		itemKey: '9',
+		itemKey: 'breakdance',
 		title: 'Breakdance',
 		video: 'videos/green-man.MP4',
 	},
@@ -149,7 +152,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBallroom,
 		imgLargeDimensions: [453, 604],
 		imgSmall: ImgBallroomSmall,
-		itemKey: '10',
+		itemKey: 'ballroom-dance',
 		title: 'Ballroom Dance',
 	},
 	{
@@ -160,7 +163,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgEagleScout,
 		imgLargeDimensions: [1688, 2000],
 		imgSmall: ImgEagleScoutSmall,
-		itemKey: '11',
+		itemKey: 'eagle-scout',
 		title: 'Eagle Scout',
 	},
 	{
@@ -171,7 +174,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgTaeKwonDo,
 		imgLargeDimensions: [563, 750],
 		imgSmall: ImgTaeKwonDoSmall,
-		itemKey: '12',
+		itemKey: 'taekwondo',
 		title: 'TaeKwonDo',
 	},
 ];
