@@ -1,10 +1,19 @@
 .imageWrapper {
-	display: inline-block;
+	align-items: center;
+	aspect-ratio: 1 / 1;
+	background-color: black;
+	display: flex;
+	justify-content: center;
 	position: relative;
+	width: 100%;
 }
 
 .image {
 	display: block;
-	max-height: 500px;
-	width: auto;
+	height: 100%;
+	left: 0;
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
