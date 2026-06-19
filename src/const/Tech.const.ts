@@ -95,7 +95,7 @@ export const TECH: Record<string, TechInfo> = {
 	DJANGO: {
 		image: ImgDjango,
 		label: 'Django',
-		level: LEVELS.BEGINNER,
+		level: LEVELS.NOVICE,
 		type: 'backend',
 	},
 	EXPRESS: { image: ImgExpress, label: 'Express', type: 'backend' },
@@ -132,7 +132,7 @@ export const TECH: Record<string, TechInfo> = {
 	PYTHON: {
 		image: ImgPython,
 		label: 'Python',
-		level: LEVELS.BEGINNER,
+		level: LEVELS.NOVICE,
 		type: 'backend',
 	},
 	REACT_JS: {

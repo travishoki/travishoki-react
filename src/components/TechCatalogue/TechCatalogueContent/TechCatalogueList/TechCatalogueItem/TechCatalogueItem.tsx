@@ -17,14 +17,14 @@ const TRANSITION = { duration: 0.3, ease: 'easeInOut' } as const;
 
 const LEVEL_LABEL: Record<ProficiencyLevel, string> = {
 	[LEVELS.ADVANCED]: 'Advanced',
-	[LEVELS.BEGINNER]: 'Beginner',
+	[LEVELS.NOVICE]: 'Novice',
 	[LEVELS.EXPERT]: 'Expert',
 };
 
 const LEVEL_CLASS: Record<ProficiencyLevel, string> = {
 	[LEVELS.ADVANCED]: styles.levelAdvanced,
-	[LEVELS.BEGINNER]: styles.levelBeginner,
 	[LEVELS.EXPERT]: styles.levelExpert,
+	[LEVELS.NOVICE]: styles.levelNovice,
 };
 
 export const TechCatalogueItem = ({

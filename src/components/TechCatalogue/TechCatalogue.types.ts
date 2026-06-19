@@ -14,8 +14,8 @@ export type TechType =
 // ProficiencyLevel type derived below is constrained to exactly these values.
 export const LEVELS = {
 	ADVANCED: 'advanced',
-	BEGINNER: 'beginner',
 	EXPERT: 'expert',
+	NOVICE: 'novice',
 } as const;
 
 // Proficiency tiers, surfaced as a colored pill in the expanded catalogue view.
