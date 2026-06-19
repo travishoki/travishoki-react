@@ -15,6 +15,10 @@
 		margin: 0;
 		padding: 10px;
 
+		&:hover {
+			background: $gray-three;
+		}
+
 		&:last-child {
 			margin: 0;
 		}
