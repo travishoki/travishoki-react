@@ -10,6 +10,7 @@
 		"@typescript-eslint",
 		"react",
 		"no-only-tests",
+		"perfectionist",
 		"sort-destructure-keys",
 		"typescript-sort-keys",
 		"promise",
@@ -165,6 +166,30 @@
 		"typescript-sort-keys/string-enum": "error",
 	},
 	"overrides": [
+		{
+			"files": ["**/*.data.ts"],
+			"rules": {
+				"sort-keys": "off",
+				"perfectionist/sort-objects": [
+					"error",
+					{
+						"type": "alphabetical",
+						"order": "asc",
+						"groups": ["top", "unknown"],
+						"customGroups": [
+							{
+								"groupName": "top",
+								"anyOf": [
+									{ "elementNamePattern": "^name$" },
+									{ "elementNamePattern": "^title$" },
+									{ "elementNamePattern": "^itemKey$" },
+								],
+							},
+						],
+					},
+				],
+			},
+		},
 		{
 			"files": ["*.stories.tsx", "*.test.*"],
 			"rules": {
