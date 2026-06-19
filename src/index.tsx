@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { createRoot } from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 
 import { AppRoutes } from './AppRoutes';
 
@@ -11,5 +12,9 @@ const element = document.getElementById('app');
 if (element) {
 	const root = createRoot(element);
 
-	root.render(<AppRoutes />);
+	root.render(
+		<HelmetProvider>
+			<AppRoutes />
+		</HelmetProvider>,
+	);
 }
