@@ -51,7 +51,13 @@ export const TechCatalogueItem = ({
 			layout="position"
 			transition={TRANSITION}
 		>
-			<img alt={`${label} Logo Icon`} className={iconClassName} src={image} />
+			<img
+				alt={`${label} Logo Icon`}
+				className={classNames(iconClassName, {
+					[styles.blackAndWhite]: legacy,
+				})}
+				src={image}
+			/>
 
 			{expanded && (
 				<div className={styles.labalContainer}>
