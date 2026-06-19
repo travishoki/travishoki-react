@@ -6,6 +6,7 @@ import { ProjectType } from './ProjectsPage.types';
 
 const PROJECTS: ProjectInput[] = [
 	{
+		itemKey: 'food-cards',
 		company: 'Food Cards',
 		contributions: [
 			'Connect to Firebase for inventorying food',
@@ -19,7 +20,6 @@ const PROJECTS: ProjectInput[] = [
 			'The cards are styled like Pokemon cards, just for fun.',
 			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
-
 		gallery: [
 			Images.ImgFoodCards1,
 			{
@@ -32,7 +32,6 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgFoodCards3,
 			},
 		],
-		itemKey: 'food-cards',
 		learned: ['How to implement a "fuzzy" search'],
 		techs: [
 			TECH.REACT_JS,
@@ -48,6 +47,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://food-cards.travishoki.com/',
 	},
 	{
+		itemKey: 'spiff-documents',
 		company: 'Spiff',
 		contributions: [
 			"Researched and tested different wysiwyg's for our use case.",
@@ -69,7 +69,6 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgSpiffDocuments2,
 			},
 		],
-		itemKey: 'spiff-documents',
 		learned: '',
 		subtitle: 'Documents',
 		techs: [
@@ -84,6 +83,7 @@ const PROJECTS: ProjectInput[] = [
 		],
 	},
 	{
+		itemKey: 'spiff-translations',
 		company: 'Spiff',
 		contributions: [
 			'Manually updated a lot of strings to use the translations.',
@@ -108,7 +108,6 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgSpiffTranslationsTableXxx,
 			},
 		],
-		itemKey: 'spiff-translations',
 		learned: '',
 		subtitle: 'Translations',
 		techs: [
@@ -120,11 +119,11 @@ const PROJECTS: ProjectInput[] = [
 		],
 	},
 	{
+		itemKey: 'spiff-team-hierarchy',
 		company: 'Spiff',
 		contributions: ['Recursively build out components representing each team.'],
 		description: ["Create a hierarchical org chart for a company's team."],
 		gallery: [Images.ImgSpiffTeamHierarchy],
-		itemKey: 'spiff-team-hierarchy',
 		learned: '',
 		subtitle: 'Team Hierarchy',
 		techs: [
@@ -136,6 +135,7 @@ const PROJECTS: ProjectInput[] = [
 		],
 	},
 	{
+		itemKey: 'hoki-skateboards-react-native-game',
 		company: 'Hoki Skateboards',
 		contributions: [
 			'React Native development',
@@ -159,7 +159,6 @@ const PROJECTS: ProjectInput[] = [
 			Images.ImgHokiSkateboards8BuildABoard,
 			Images.ImgHokiSkateboards9Login,
 		],
-		itemKey: 'hoki-skateboards-react-native-game',
 		learned: '',
 		subtitle: 'React Native Game',
 		techs: [
@@ -178,6 +177,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 	{
+		itemKey: 'blue-monday-salon',
 		company: 'Blue Monday Salon',
 		contributions: [
 			'Logo and website design, top to bottom',
@@ -198,11 +198,11 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgBlueMondaySalon2,
 			},
 		],
-		itemKey: 'blue-monday-salon',
 		learned: '',
 		techs: [TECH.PHP, TECH.HTML, TECH.CSS, TECH.WORDPRESS],
 	},
 	{
+		itemKey: 'chatbooks-com-book-creation',
 		company: 'Chatbooks.com',
 		contributions: [
 			'Tie into existing APIs to create a new book.',
@@ -211,7 +211,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Revamp existing create book page with new UI written in ReactJs',
 		gallery: [Images.ImgChatbooksComBookCreation],
-		itemKey: 'chatbooks-com-book-creation',
 		learned: '',
 		live: true,
 		subtitle: 'Book Creation',
@@ -226,6 +225,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
+		itemKey: 'chatbooks-com-cards-quick-flow-sources',
 		company: 'Chatbooks.com',
 		contributions: [
 			'Create Branch links for redirecting to IOS or android apps.',
@@ -234,18 +234,17 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			"Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
 		gallery: [Images.ImgChatbooksComCardsQuickFlowSources],
-		itemKey: 'chatbooks-com-cards-quick-flow-sources',
 		learned: '',
 		subtitle: 'Cards Quick Flow Sources',
 		techs: [TECH.REACT_JS, TECH.REDUX, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 	},
 	{
+		itemKey: 'chatbooks-com-premium-layflat',
 		company: 'Chatbooks.com',
 		contributions: 'Tie into existing APIs to allow for layflat.',
 		description:
 			'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
 		gallery: [Images.ImgChatbooksComPremiumLayflat],
-		itemKey: 'chatbooks-com-premium-layflat',
 		learned: '',
 		live: true,
 		subtitle: 'Premium Layflat',
@@ -253,6 +252,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://chatbooks.com/app/create?page=web_custom_explainer',
 	},
 	{
+		itemKey: 'chatbooks-com-cards-taxonomy-pages',
 		company: 'Chatbooks.com',
 		contributions: [
 			'Server-side rendering for SEO value',
@@ -262,12 +262,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Creating cards taxonomy pages with categories and search filters.',
 		gallery: [Images.ImgChatbooksComCardsTaxonomyPages],
-		itemKey: 'chatbooks-com-cards-taxonomy-pages',
 		learned: '',
 		subtitle: 'Cards Taxonomy Pages',
 		techs: [TECH.REACT_JS, TECH.REDUX, TECH.JAVASCRIPT, TECH.HTML, TECH.SCSS],
 	},
 	{
+		itemKey: 'overstock-com-customer-review-images',
 		company: 'Overstock.com',
 		contributions: ['Validate and format the image before uploading to AWS.'],
 		description: [
@@ -297,7 +297,6 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgOverstockComCustomerReviewImages5,
 			},
 		],
-		itemKey: 'overstock-com-customer-review-images',
 		learned: '',
 		subtitle: 'Customer Review Images',
 		techs: [
@@ -310,6 +309,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-amp-featured-product',
 		company: 'Overstock.com',
 		contributions: [
 			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
@@ -317,13 +317,13 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
 		gallery: [Images.ImgOverstockComAmpFeaturedProduct],
-		itemKey: 'overstock-com-amp-featured-product',
 		learned: '',
 		subtitle: 'AMP Featured Product',
 		techs: [TECH.HTML, TECH.JAVASCRIPT, TECH.AMP, TECH.WEBPACK, TECH.LESS_CSS],
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-admin-portal',
 		company: 'Overstock.com',
 		contributions: [
 			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
@@ -331,7 +331,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
 		gallery: [Images.ImgOverstockComAdminPortal],
-		itemKey: 'overstock-com-admin-portal',
 		learned: 'I got a deeper understanding of the Redux flow.',
 		subtitle: 'Admin Portal',
 		techs: [
@@ -347,6 +346,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-hackathon-2017',
 		company: 'Overstock.com',
 		contributions: [
 			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
@@ -354,7 +354,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
 		gallery: [Images.ImgOverstockComHackathon2017],
-		itemKey: 'overstock-com-hackathon-2017',
 		learned: '',
 		subtitle: 'Hackathon 2017',
 		techs: [
@@ -369,11 +368,11 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.overstock.com/94864/static.html',
 	},
 	{
+		itemKey: 'overstock-com-rewards-for-reviews',
 		company: 'Overstock.com',
 		contributions: 'Coordinate deployments with multiple departments.',
 		description: 'Reward users for leaving a qualifying review.',
 		gallery: [Images.ImgOverstockComRewardsForReviews],
-		itemKey: 'overstock-com-rewards-for-reviews',
 		learned: '',
 		subtitle: 'Rewards for Reviews',
 		techs: [
@@ -387,13 +386,13 @@ const PROJECTS: ProjectInput[] = [
 		url: 'https://www.overstock.com/rewards-for-reviews',
 	},
 	{
+		itemKey: 'overstock-com-responsive-see-all-reviews-page',
 		company: 'Overstock.com',
 		contributions: [
 			'I implemented an AB test that resulted in lift during a 2 week period.',
 		],
 		description: 'Site that resizes down to mobile devices',
 		gallery: [Images.ImgOverstockComResponsiveSeeAllReviewsPage],
-		itemKey: 'overstock-com-responsive-see-all-reviews-page',
 		learned:
 			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
 		live: true,
@@ -409,13 +408,13 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-see-all-reviews-page-mobile-add-to-cart',
 		company: 'Overstock.com',
 		contributions: [
 			'Componentize the Add To Cart functionality into a react module.',
 		],
 		description: 'On mobile devices, an add to cart popup.',
 		gallery: [Images.ImgOverstockComSeeAllReviewsPageMobileAddToCart],
-		itemKey: 'overstock-com-see-all-reviews-page-mobile-add-to-cart',
 		learned: 'This was my first production level ReactJs work.',
 		live: true,
 		subtitle: 'See All Reviews Page Mobile Add To Cart',
@@ -423,11 +422,11 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-reviews-breakout',
 		company: 'Overstock.com',
 		contributions: 'Coordinate deployments with multiple departments.',
 		description: 'Allowing a user to leave rating only reviews.',
 		gallery: [Images.ImgOverstockComReviewsBreakout],
-		itemKey: 'overstock-com-reviews-breakout',
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
 		live: true,
@@ -442,6 +441,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-star-ratings-color',
 		company: 'Overstock.com',
 		contributions: [
 			'Wrap changes in feature flags',
@@ -461,7 +461,6 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgOverstockComStarRatingsColor2,
 			},
 		],
-		itemKey: 'overstock-com-star-ratings-color',
 		learned:
 			"I was able to get a deep dive into Overstock's processes across many different teams.",
 		live: true,
@@ -476,11 +475,11 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'overstock-com-affiliate-links',
 		company: 'Overstock.com',
 		contributions: 'Took the basic wordpress plugin and rearchitected it.',
 		description: 'Embeddable affiliate links',
 		gallery: [Images.ImgOverstockComAffiliateLinks],
-		itemKey: 'overstock-com-affiliate-links',
 		learned: '',
 		live: true,
 		subtitle: 'Affiliate Links',
@@ -495,18 +494,19 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.overstock.com/',
 	},
 	{
+		itemKey: 'lindseyhoki-com',
 		company: 'LindseyHoki.com',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		description:
 			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
 		gallery: [Images.ImgLindseyhokiCom],
-		itemKey: 'lindseyhoki-com',
 		learned: '',
 		live: true,
 		techs: [TECH.WORDPRESS, TECH.HTML, TECH.CSS],
 		url: 'http://www.lindseyhoki.com/',
 	},
 	{
+		itemKey: 'hoki-skateboards',
 		company: 'Hoki Skateboards',
 		contributions: [
 			'Custom Wordpress theme',
@@ -516,7 +516,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Passion project skateboard company I am building and branding.',
 		gallery: [Images.ImgHokiSkateboards],
-		itemKey: 'hoki-skateboards',
 		learned: '',
 		live: true,
 		techs: [
@@ -532,17 +531,18 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.hokiskateboards.com/',
 	},
 	{
+		itemKey: 'truly-lindsey-photography',
 		company: 'Truly Lindsey Photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		description:
 			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
 		gallery: [Images.ImgTrulyLindseyPhotography],
-		itemKey: 'truly-lindsey-photography',
 		learned: '',
 		techs: [TECH.WORDPRESS, TECH.HTML, TECH.CSS],
 		url: 'http://www.trulylindseyphotography.com/',
 	},
 	{
+		itemKey: 'room-choice-student-housing-software',
 		company: 'Room Choice',
 		contributions: [
 			'Full Stack Development',
@@ -552,7 +552,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
 		gallery: [Images.ImgRoomChoiceStudentHousingSoftware],
-		itemKey: 'room-choice-student-housing-software',
 		learned:
 			'At Room Choice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
 		live: true,
@@ -569,6 +568,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.roomchoice.com/',
 	},
 	{
+		itemKey: 'rooke-capital-management-financial-planning',
 		company: 'Rooke Capital Management',
 		contributions: [
 			'Dove into their custom wordpress theme and build out new pages',
@@ -578,7 +578,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Created additional pages on their custom Wordpress site, optimizing for SEO. Plugged in a contact form for their sales funnel.',
 		gallery: [Images.ImgRookeCapitalManagementFinancialPlanning],
-		itemKey: 'rooke-capital-management-financial-planning',
 		learned: '',
 		subtitle: 'Financial Planning',
 		techs: [
@@ -592,6 +591,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.rookecapital.com/',
 	},
 	{
+		itemKey: 'rgdjanitorial',
 		company: 'RGDJanitorial',
 		contributions: [
 			'Wordpress theme customization.',
@@ -601,18 +601,17 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'RGD Janitorial has been providing Janitorial Services in Utah for over 17 years.',
 		gallery: [Images.ImgRgdjanitorial],
-		itemKey: 'rgdjanitorial',
 		learned: '',
 		live: true,
 		techs: [TECH.PHP, TECH.WORDPRESS, TECH.JAVASCRIPT, TECH.HTML, TECH.CSS],
 		url: 'http://www.rgdjanitorial.com/',
 	},
 	{
+		itemKey: 'wedding-website',
 		company: 'Wedding Website',
 		contributions: 'Site design and development',
 		description: 'This is the wedding website that I made for my wedding.',
 		gallery: [Images.ImgWeddingWebsite],
-		itemKey: 'wedding-website',
 		learned:
 			'This was a personal project of mine. I really wanted to present information about my wedding in a nice way.',
 		live: true,
@@ -620,6 +619,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.wedding.hokihappenings.com/',
 	},
 	{
+		itemKey: 'eric-aroca-motivational-speaker',
 		company: 'Eric Aroca',
 		contributions: [
 			'Set him up with a hosting plan.',
@@ -630,7 +630,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
 		gallery: [Images.ImgEricArocaMotivationalSpeaker],
-		itemKey: 'eric-aroca-motivational-speaker',
 		learned:
 			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collaborative effort to get his site put together.',
 		subtitle: 'Motivational Speaker',
@@ -645,6 +644,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.ericaroca.com/',
 	},
 	{
+		itemKey: 'saints-and-sinners-half-marathon-and-team-relay',
 		company: 'Saints and Sinners Half Marathon and Team Relay',
 		contributions: [
 			'Creation of registration form, authorize.net integration',
@@ -653,7 +653,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'This is a steady downhill race perfect for first time runners, as well as those looking to improve their time. Fun to be had includes saints and sinners aid stations and heaven and heck finish lines.',
 		gallery: [Images.ImgSaintsAndSinnersHalfMarathonAndTeamRelay],
-		itemKey: 'saints-and-sinners-half-marathon-and-team-relay',
 		learned: '',
 		live: true,
 		techs: [
@@ -667,11 +666,11 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.saintsandsinnershalf.com/',
 	},
 	{
+		itemKey: 'new-life-recovery',
 		company: 'New Life Recovery',
 		contributions: 'Bring the design image to life in the browser.',
 		description: 'Build out the HTML and CSS for a new landing page.',
 		gallery: [Images.ImgNewLifeRecovery],
-		itemKey: 'new-life-recovery',
 		learned: '',
 		techs: [
 			TECH.PHP,
@@ -684,6 +683,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.newlife-recovery.org/',
 	},
 	{
+		itemKey: 'creative-media-education',
 		company: 'Creative Media Education',
 		contributions: [
 			'Stripe Integration',
@@ -693,7 +693,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Creative Media Group is a full service media production house based in Orem, Utah. We specialize in high quality digital video production, post-production, and motion graphics.',
 		gallery: [Images.ImgCreativeMediaEducation],
-		itemKey: 'creative-media-education',
 		learned: '',
 		techs: [
 			TECH.ANGULAR_JS,
@@ -706,6 +705,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.cmeducation.org/',
 	},
 	{
+		itemKey: 'lavavolt',
 		company: 'LavaVolt',
 		contributions: [
 			'All of the back-end',
@@ -714,12 +714,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'LavaVolt is an online film festival and digital distribution solution for independent filmmakers.',
 		gallery: [Images.ImgLavavolt],
-		itemKey: 'lavavolt',
 		learned: '',
 		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.lavavolt.com',
 	},
 	{
+		itemKey: 'enspark-learning-management-system',
 		company: 'Enspark',
 		contributions: [
 			'Finished the second version of the LMS. Restructured the user account and course tracking database. Made information requests dynamic with page jquery AJAX.',
@@ -727,13 +727,13 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		gallery: [Images.ImgEnsparkLearningManagementSystem],
-		itemKey: 'enspark-learning-management-system',
 		learned: 'This is one of my first full-stack projects.',
 		subtitle: 'Learning Management System',
 		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.lms.enspark.com',
 	},
 	{
+		itemKey: 'first-mile',
 		company: 'First Mile',
 		contributions: [
 			'All back-end. Worked with the Flash developer sending information to and from the mobile app. Creating a delivery route system, "text message like" system, and automated tasks.',
@@ -741,7 +741,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'We provide discounted integrated solutions to ship your products or your customers products for less money.',
 		gallery: [Images.ImgFirstMile],
-		itemKey: 'first-mile',
 		learned: '',
 		live: true,
 		techs: [
@@ -755,6 +754,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.enspark.net/internationalfulfillment/',
 	},
 	{
+		itemKey: 'the-putting-tour',
 		company: 'The Putting Tour',
 		contributions: [
 			'Created the user account system, sending information to and from the mobile app. Helped to develop the mobile app for the golf kiosk, as well as the bracket system for the online competitions.',
@@ -762,12 +762,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'The Putting Tour at Qualifiers Golf will train your nervous system by challenging you with dozens of such putts in a 30 minute round. It really works!',
 		gallery: [Images.ImgThePuttingTour],
-		itemKey: 'the-putting-tour',
 		learned: '',
 		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.theputtingtour.com',
 	},
 	{
+		itemKey: 'wininsights',
 		company: 'WinInsights',
 		contributions: [
 			'Hand created a custom blog for communities to converse about their executive and cultural groups. Also created a custom slider, and several wordpress pages.',
@@ -775,12 +775,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'WIN Insights is a Diversity and Inclusion - focused learning management system that delivers training, networking, tools, resources, and analytics.',
 		gallery: [Images.ImgWininsights],
-		itemKey: 'wininsights',
 		learned: '',
 		techs: [TECH.PHP, TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS],
 		url: 'http://www.wininsights.com',
 	},
 	{
+		itemKey: 'barrier-pest-control',
 		company: 'Barrier Pest Control',
 		contributions: [
 			'Created a cronjob to store customer transactions in a MYSQL database then email a list of those transactions in a daily report to the company owners. Front-end fixes to the wordpress site, fixing styles and updating images. ',
@@ -788,13 +788,13 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Barrier Pest Control will proactively conquer your existing pest populations and prevent future invasions.',
 		gallery: [Images.ImgBarrierPestControl],
-		itemKey: 'barrier-pest-control',
 		learned: '',
 		live: true,
 		techs: [TECH.JAVASCRIPT, TECH.JQUERY, TECH.HTML, TECH.CSS, TECH.SQL],
 		url: 'http://www.barrierpc.com',
 	},
 	{
+		itemKey: 'enspark-marketing-website',
 		company: 'Enspark',
 		contributions: [
 			'Helping to push the second version of Enspark.com live. Implementing a feed, creating forms, and various front-end fixes.',
@@ -802,7 +802,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'From Leadership Skills to Time Management, our interactive e-Learning courses make people better.',
 		gallery: [Images.ImgEnsparkMarketingWebsite],
-		itemKey: 'enspark-marketing-website',
 		learned: '',
 		live: true,
 		subtitle: 'Marketing Website',
@@ -817,6 +816,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.enspark.com',
 	},
 	{
+		itemKey: 'beit-lehi',
 		company: 'Beit Lehi',
 		contributions: [
 			'Our team met with the owners of the Beit Lehi foundation to collaborate on features and designs for the website.',
@@ -848,11 +848,11 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgBeitLehiMobile3,
 			},
 		],
-		itemKey: 'beit-lehi',
 		learned: '',
 		techs: [TECH.HTML, TECH.CSS, TECH.PHP, TECH.JAVASCRIPT, TECH.WORDPRESS],
 	},
 	{
+		itemKey: 'utah-casa',
 		company: 'Utah Casa',
 		contributions: [
 			'Helped to fix the blog functionality and structure in wordpress as well as front-end fixes.',
@@ -860,13 +860,13 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Casa is a volunteer organization that empowers everyday citizens with the ability to transform the lives of abused and neglected children.',
 		gallery: [Images.ImgUtahCasa],
-		itemKey: 'utah-casa',
 		learned: '',
 		live: true,
 		techs: [TECH.PHP, TECH.HTML, TECH.CSS],
 		url: 'http://www.utahcasa.org/',
 	},
 	{
+		itemKey: 'paradigm-life',
 		company: 'Paradigm Life',
 		contributions: [
 			'Helped with the wordpress theme and structure architecture.',
@@ -874,7 +874,6 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Infinite Banking is a concept that allows individuals to utilize Permanent Life Insurance in ways that most individuals and even insurance professionals could never have imagined.',
 		gallery: [Images.ImgParadigmLife],
-		itemKey: 'paradigm-life',
 		learned: '',
 		live: true,
 		techs: [
@@ -888,6 +887,7 @@ const PROJECTS: ProjectInput[] = [
 		url: 'http://www.paradigmlife.net/',
 	},
 	{
+		itemKey: 'debt-free-planning',
 		company: 'Debt Free Planning',
 		contributions: [
 			'Front-end construction. Creating a email form for user information requests.',
@@ -895,12 +895,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Get a Free Online Report and recommended solution to your debt problem.',
 		gallery: [Images.ImgDebtFreePlanning],
-		itemKey: 'debt-free-planning',
 		learned: '',
 		techs: [TECH.PHP, TECH.LESS_CSS, TECH.HTML, TECH.JAVASCRIPT],
 		url: 'http://www.debt-free-planning.com',
 	},
 	{
+		itemKey: 'southam-consulting',
 		company: 'Southam Consulting',
 		contributions: [
 			'Creating a email form for user information requests. Other front-end fixes.',
@@ -908,12 +908,12 @@ const PROJECTS: ProjectInput[] = [
 		description:
 			'Southam Consulting is a consortium of business specialists in several states who have extensive experience and expertise in helping clients achieve peak performance.',
 		gallery: [Images.ImgSouthamConsulting],
-		itemKey: 'southam-consulting',
 		learned: '',
 		techs: [TECH.PHP, TECH.CSS, TECH.HTML, TECH.JAVASCRIPT],
 		url: 'http://www.southamconsulting.net',
 	},
 	{
+		itemKey: 'enspark-elearning-courses',
 		company: 'Enspark',
 		contributions: 'I was on a team building out HR courses in Action Script.',
 		description: [
@@ -925,13 +925,13 @@ const PROJECTS: ProjectInput[] = [
 			Images.ImgEnsparkConflictResolution,
 			Images.ImgEnsparkEmailEtiquette,
 		],
-		itemKey: 'enspark-elearning-courses',
 		learned:
 			"This was my first tech job. I had a lot of fun learning and growing. I'm thankful for those at Enspark that gave me a change and got my career started.",
 		subtitle: 'eLearning Courses',
 		techs: [TECH.ACTION_SCRIPT],
 	},
 	{
+		itemKey: 'enspark-flash-banner',
 		company: 'Enspark',
 		contributions: [
 			'I got to animate the assets in Adobe Flash.',
@@ -944,7 +944,6 @@ const PROJECTS: ProjectInput[] = [
 			Images.ImgEnsparkFlashBanner2,
 			Images.ImgEnsparkFlashBanner3,
 		],
-		itemKey: 'enspark-flash-banner',
 		learned:
 			'As an intern I had mentors directly working with me on these projects.',
 		subtitle: 'Flash Banner',
