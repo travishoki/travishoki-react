@@ -21,6 +21,7 @@ import ImgStandupComedySmall from '~images/about/standup-comedy-small.jpg';
 import ImgStandupComedy from '~images/about/standup-comedy.jpg';
 import ImgTaeKwonDoSmall from '~images/about/taekwondo-small.jpg';
 import ImgTaeKwonDo from '~images/about/taekwondo.jpg';
+import ImgProfilePicSmall from '~images/about/travis-and-lindsey-hoki-small.png';
 import ImgProfilePic from '~images/about/travis-and-lindsey-hoki.png';
 import ImgWeddingSmall from '~images/about/wedding-small.jpg';
 import ImgWedding from '~images/about/wedding.jpg';
@@ -41,7 +42,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 			'When I’m not staring at a code editor or building things for the web, here is a little look at what keeps me busy, what I love doing, and who I am outside of work.',
 		imgLarge: ImgProfilePic,
 		imgLargeDimensions: [300, 300],
-		imgSmall: ImgProfilePic,
+		imgSmall: ImgProfilePicSmall,
 		itemKey: '1',
 	},
 	{
