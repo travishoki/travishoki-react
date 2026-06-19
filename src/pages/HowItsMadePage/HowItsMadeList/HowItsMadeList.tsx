@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { MotionListItem } from '~animations/MotionListItem';
 import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
 import ImgPingdomSpeedTestReport from '~images/how-its-made/pingdom-speed-test.jpg';
 
@@ -34,31 +33,31 @@ export const HowItsMadeList = () => {
 						Jest
 					</ItemLink>
 				</li>
-				<MotionListItem key="eslint">
+				<li>
 					<ItemLink href="https://eslint.org" title="Eslint">
 						Eslint
 					</ItemLink>{' '}
 					for consistent coding style
-				</MotionListItem>
-				<MotionListItem key="storybook">
+				</li>
+				<li>
 					<ItemLink href="https://storybook.js.org" title="Storybook">
 						Storybook
 					</ItemLink>{' '}
 					for component management
-				</MotionListItem>
-				<MotionListItem key="husky">
+				</li>
+				<li>
 					<ItemLink href="https://typicode.github.io/husky" title="Husky">
 						Husky
 					</ItemLink>{' '}
 					for Git lifecycle automated scripts
-				</MotionListItem>
-				<MotionListItem key="claude">
+				</li>
+				<li>
 					Build with some assistance from{' '}
 					<ItemLink href="https://claude.com" title="Claude Code">
 						Claude Code
 					</ItemLink>
-				</MotionListItem>
-				<MotionListItem key="scss">
+				</li>
+				<li>
 					<ItemLink
 						href="https://sass-lang.com"
 						title="Sass Land Documentation"
@@ -72,8 +71,8 @@ export const HowItsMadeList = () => {
 					>
 						CSS Modules
 					</ItemLink>
-				</MotionListItem>
-				<MotionListItem key="motion">
+				</li>
+				<li>
 					Animated with{' '}
 					<ItemLink
 						href="https://motion.dev/docs/react"
@@ -81,8 +80,8 @@ export const HowItsMadeList = () => {
 					>
 						Motion
 					</ItemLink>
-				</MotionListItem>
-				<MotionListItem key="axe">
+				</li>
+				<li>
 					ADA accessibility optimized using{' '}
 					<ItemLink
 						href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
@@ -96,8 +95,8 @@ export const HowItsMadeList = () => {
 						dimensions={[1743, 1694]}
 						src={ImgAxeDevToolsReport}
 					/>
-				</MotionListItem>
-				<MotionListItem key="pingdom">
+				</li>
+				<li>
 					<ItemLink
 						href="https://tools.pingdom.com"
 						title="Pingdom Website Speed Test"
@@ -111,7 +110,7 @@ export const HowItsMadeList = () => {
 						dimensions={[2048, 1220]}
 						src={ImgPingdomSpeedTestReport}
 					/>
-				</MotionListItem>
+				</li>
 			</ul>
 		</div>
 	);
