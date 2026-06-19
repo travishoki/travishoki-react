@@ -175,16 +175,11 @@
 					{
 						"type": "alphabetical",
 						"order": "asc",
-						"groups": ["top", "unknown"],
+						"groups": ["name", "title", "itemKey", "unknown"],
 						"customGroups": [
-							{
-								"groupName": "top",
-								"anyOf": [
-									{ "elementNamePattern": "^name$" },
-									{ "elementNamePattern": "^title$" },
-									{ "elementNamePattern": "^itemKey$" },
-								],
-							},
+							{ "groupName": "name", "elementNamePattern": "^name$" },
+							{ "groupName": "title", "elementNamePattern": "^title$" },
+							{ "groupName": "itemKey", "elementNamePattern": "^itemKey$" },
 						],
 					},
 				],
