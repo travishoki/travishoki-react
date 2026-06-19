@@ -1,0 +1,6 @@
+# This is a portfolio site intentionally excluded from search indexing.
+# The SEO implementation exists to demonstrate knowledge, not to drive traffic.
+User-agent: *
+Disallow: /
+
+Sitemap: https://travishoki.com/sitemap.xml
