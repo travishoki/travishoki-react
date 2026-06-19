@@ -36,9 +36,10 @@ import ImgXant from '~images/experience/xant.png';
 
 export const RESUME_DATA: ResumeDataType[] = [
 	{
+		title: 'Salesforce',
 		affiliatedCompany: {
-			img: ImgSpiff,
 			title: 'Spiff acquired by Salesforce (March 2024)',
+			img: ImgSpiff,
 		},
 		dateEnd: 'Present',
 		dateStart: 'Mar. 2024',
@@ -60,12 +61,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 			HTML,
 			CURSOR_AI,
 		],
-		title: 'Salesforce',
 	},
 	{
+		title: 'Spiff',
 		affiliatedCompany: {
-			img: ImgSalesforce,
 			title: 'Spiff acquired by Salesforce (March 2024)',
+			img: ImgSalesforce,
 		},
 		dateEnd: 'Present',
 		dateStart: 'Aug. 2021',
@@ -86,12 +87,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 			HTML,
 			CURSOR_AI,
 		],
-		title: 'Spiff',
 	},
 	{
+		title: 'Xant/Inside Sales',
 		affiliatedCompany: {
-			img: ImgInsideSales,
 			title: 'Formerly Inside Sales',
+			img: ImgInsideSales,
 		},
 		dateEnd: 'Aug. 2021',
 		dateStart: 'Dec. 2020',
@@ -105,9 +106,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Resolved bugs and reinforce existing features for reliability',
 		],
 		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
-		title: 'Xant/Inside Sales',
 	},
 	{
+		title: 'Chatbooks',
 		dateEnd: 'Aug. 2020',
 		dateStart: 'Mar. 2019',
 		img: ImgChatbooks,
@@ -118,12 +119,12 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Created and maintained web features and projects for the Books and Cards teams',
 		],
 		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
-		title: 'Chatbooks',
 	},
 	{
+		title: 'Overstock',
 		affiliatedCompany: {
-			img: ImgBedBathAndBeyond,
 			title: 'Now known as Bed Bath & Beyond',
+			img: ImgBedBathAndBeyond,
 		},
 		dateEnd: 'Mar. 2019',
 		dateStart: 'Sept. 2015',
@@ -137,9 +138,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Pioneered the affiliate links program',
 		],
 		techs: [REACT_JS, REDUX, HANDLEBARS_JS, JAVASCRIPT, JEST, CSS, HTML, AMP],
-		title: 'Overstock',
 	},
 	{
+		title: 'Room Choice',
 		dateEnd: 'Sept. 2015',
 		dateStart: 'Dec. 2014',
 		img: ImgRoomChoice,
@@ -151,9 +152,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Optimized application performance and user experience.',
 		],
 		techs: [ANGULAR_JS, PYTHON, DJANGO, JAVASCRIPT, COFFEE_SCRIPT, CSS, HTML],
-		title: 'Room Choice',
 	},
 	{
+		title: 'Enspark',
 		dateEnd: 'Dec. 2014',
 		dateStart: 'Nov. 2011',
 		img: ImgEnspark,
@@ -176,9 +177,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			ANGULAR_JS,
 			WORDPRESS,
 		],
-		title: 'Enspark',
 	},
 	{
+		title: 'All American Sod Farms',
 		dateEnd: 'Jun. 2012',
 		dateStart: 'Jun. 2011',
 		img: ImgAllAm,
@@ -189,9 +190,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Provided customer service and performed clerical work',
 		],
 		techs: [],
-		title: 'All American Sod Farms',
 	},
 	{
+		title: 'Academy of Ballet',
 		dateEnd: 'Jan. 2009',
 		dateStart: 'May 2008',
 		img: ImgAcademyOfBallet,
@@ -202,9 +203,9 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Alongside the students, break it down with sweet dance moves',
 		],
 		techs: [],
-		title: 'Academy of Ballet',
 	},
 	{
+		title: "Wendy's",
 		dateEnd: 'Jun. 2011',
 		dateStart: 'Dec. 2006',
 		img: ImgWendys,
@@ -216,7 +217,6 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Maintained service and courtesy standards during high-pressure situations',
 		],
 		techs: [],
-		title: "Wendy's",
 	},
 ];
 

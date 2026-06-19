@@ -178,6 +178,7 @@
 						"groups": ["name", "title", "itemKey", "unknown"],
 						"customGroups": [
 							{ "groupName": "name", "elementNamePattern": "^name$" },
+							{ "groupName": "company", "elementNamePattern": "^company$" },
 							{ "groupName": "title", "elementNamePattern": "^title$" },
 							{ "groupName": "itemKey", "elementNamePattern": "^itemKey$" },
 						],

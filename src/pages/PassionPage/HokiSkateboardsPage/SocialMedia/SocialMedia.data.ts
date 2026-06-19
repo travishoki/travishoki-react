@@ -12,27 +12,27 @@ export type SocialMediaItemData = {
 
 export const SOCIAL_MEDIA_ITEMS: SocialMediaItemData[] = [
 	{
-		Icon: SvgIconInstagram,
+		title: 'Instagram | Hoki Skateboards',
 		ariaLabel: 'Instagram',
 		href: 'https://instagram.com/hokiskateboards',
-		title: 'Instagram | Hoki Skateboards',
+		Icon: SvgIconInstagram,
 	},
 	{
-		Icon: SvgIconYoutube,
+		title: 'Youtube | Hoki Skateboards',
 		ariaLabel: 'Youtube',
 		href: 'https://www.youtube.com/channel/UCT6ba8pGTUQyYpEk8pnc8og',
-		title: 'Youtube | Hoki Skateboards',
+		Icon: SvgIconYoutube,
 	},
 	{
-		Icon: SvgIconFacebook,
+		title: 'Facebook | Hoki Skateboards',
 		ariaLabel: 'Facebook',
 		href: 'https://www.facebook.com/hokiskateboards',
-		title: 'Facebook | Hoki Skateboards',
+		Icon: SvgIconFacebook,
 	},
 	{
-		Icon: SvgIconTikTok,
+		title: 'TikTok | Hoki Skateboards',
 		ariaLabel: 'TikTok',
 		href: 'https://www.tiktok.com/@hokiskateboards',
-		title: 'TikTok | Hoki Skateboards',
+		Icon: SvgIconTikTok,
 	},
 ];
