@@ -3,6 +3,8 @@ import React from 'react';
 import { AboutImage } from '../AboutItem/AboutImage/AboutImage';
 import { ImgProfilePic, ImgProfilePicSmall } from '../AboutPage.data.images';
 
+import styles from './Intro.module.scss';
+
 const IMG_SIZE = 300;
 const image = {
 	description:
@@ -15,7 +17,7 @@ const image = {
 };
 
 export const Intro = () => (
-	<div className="boxed p-3">
+	<div className={`boxed p-3 ${styles.container}`}>
 		<AboutImage item={image} />
 		<p className="indent">
 			When I&apos;m not staring at a code editor or building things for the web,
