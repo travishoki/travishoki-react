@@ -1,18 +1,15 @@
 import expect from 'expect';
 
+import { hasNoEmptyItemKeys, hasUniqueItemKeys } from '~helpers/itemKeys';
+
 import { ABOUT_PAGE_DATA } from './AboutPage.data';
 
 describe('ABOUT_PAGE_DATA', () => {
 	it('has unique itemKeys', () => {
-		const keys = ABOUT_PAGE_DATA.map((item) => item.itemKey);
-		const uniqueKeys = new Set(keys);
-
-		expect(uniqueKeys.size).toBe(keys.length);
+		expect(hasUniqueItemKeys(ABOUT_PAGE_DATA)).toBe(true);
 	});
 
 	it('has no empty itemKeys', () => {
-		const emptyKeys = ABOUT_PAGE_DATA.filter((item) => item.itemKey === '');
-
-		expect(emptyKeys.length).toBe(0);
+		expect(hasNoEmptyItemKeys(ABOUT_PAGE_DATA)).toBe(true);
 	});
 });
