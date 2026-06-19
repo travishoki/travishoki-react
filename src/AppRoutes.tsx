@@ -7,6 +7,8 @@ import {
 	Routes,
 } from 'react-router-dom';
 
+import { ROUTE_PATTERNS } from '~const/Routes.const';
+
 import { App } from './App';
 
 const AboutPage = React.lazy(() =>
@@ -66,22 +68,21 @@ export const AppRoutes = () => (
 		<App>
 			<Suspense fallback={null}>
 				<Routes>
-					<Route element={<HomePage />} path="/" />
-					<Route
-						element={<ProjectsPage />}
-						path="/projects/:paramFilter?/:paramSearch?"
-					/>
+					<Route element={<HomePage />} path={ROUTE_PATTERNS.HOME} />
+					<Route element={<ProjectsPage />} path={ROUTE_PATTERNS.PROJECTS} />
 					<Route
 						element={<SingleProjectPage />}
-						path="/project/:paramItemKey"
+						path={ROUTE_PATTERNS.PROJECT}
 					/>
-					<Route element={<ResumePage />} path="/resume" />
-					<Route element={<EducationPage />} path="/education" />
-					<Route element={<ContactPage />} path="/contact" />
-					<Route element={<AboutPage />} path="/about" />
+					<Route element={<ResumePage />} path={ROUTE_PATTERNS.RESUME} />
+					<Route element={<EducationPage />} path={ROUTE_PATTERNS.EDUCATION} />
+					<Route element={<ContactPage />} path={ROUTE_PATTERNS.CONTACT} />
+					<Route element={<AboutPage />} path={ROUTE_PATTERNS.ABOUT} />
 					<Route element={<PassionPage />} path="/passion">
 						<Route
-							element={<Navigate replace to="/passion/hoki-skateboards" />}
+							element={
+								<Navigate replace to={ROUTE_PATTERNS.HOKI_SKATEBOARDS} />
+							}
 							index
 						/>
 						<Route element={<HokiSkateboardsPage />} path="hoki-skateboards" />
