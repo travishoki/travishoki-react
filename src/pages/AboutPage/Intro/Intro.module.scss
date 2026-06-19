@@ -1,0 +1,20 @@
+@use 'styles' as *;
+
+.intro {
+	align-items: center;
+	display: flex;
+	gap: 2rem;
+
+	@include phone-down {
+		flex-direction: column;
+	}
+}
+
+.image {
+	flex: 1;
+}
+
+.text {
+	flex: 1;
+	font-size: 1.15rem;
+}
