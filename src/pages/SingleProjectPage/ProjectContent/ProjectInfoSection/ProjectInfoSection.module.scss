@@ -3,6 +3,11 @@
 .logo {
 	@include border-radius(50%);
 	height: 80px;
-	margin-bottom: 20px;
 	width: 80px;
+}
+
+.aiIntegration {
+	background: $secondary-three;
+	margin-bottom: 20px;
+	padding: 20px;
 }

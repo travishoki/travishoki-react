@@ -14,6 +14,7 @@ import styles from './ProjectInfoSection.module.scss';
 
 export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 	const {
+		aiIntegration,
 		company,
 		companySlug,
 		contributions,
@@ -29,9 +30,15 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 		<>
 			<img
 				alt={company}
-				className={classNames('center', styles.logo)}
+				className={classNames('center mb-3', styles.logo)}
 				src={CLIENT_LOGOS[companySlug]}
 			/>
+
+			{aiIntegration && (
+				<div className={styles.aiIntegration}>
+					<ProjectInfo label="AI Integration" text={aiIntegration} />
+				</div>
+			)}
 
 			{date && <ProjectInfo label="Date Range" text={date} />}
 
