@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
+import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
@@ -20,13 +21,12 @@ export const RetailWebsiteColumn = () => (
 		<ButtonLink href={LINK} text="Go to Site" />
 
 		<ParagraphLabel>Description:</ParagraphLabel>
-		<p className="indent">
-			Hoki Skateboards is a small family-owned online skateboard company.
-		</p>
-		<p className="indent">
-			Built in Wordpress with a custom Wordpress Plugin, using Woocommerce, PHP
-			and React.
-		</p>
+		<ParagraphList
+			paragraphs={[
+				'Hoki Skateboards is a small family-owned online skateboard company.',
+				'Built in Wordpress with a custom Wordpress Plugin, using Woocommerce, PHP and React.',
+			]}
+		/>
 
 		<TechListCatalogue list={techWebsiteList} />
 	</>

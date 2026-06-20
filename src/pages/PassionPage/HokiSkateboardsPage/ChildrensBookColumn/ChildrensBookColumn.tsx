@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
+import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-should-always-skateboard.jpg';
 
@@ -29,11 +30,12 @@ export const ChildrensBookColumn = () => (
 		<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 
 		<ParagraphLabel>Description:</ParagraphLabel>
-		<p className="indent">Illustrated kid&apos;s book about skateboarding.</p>
-		<p className="indent">
-			Self authored, illustrated, and published. Successfully Kickstarter
-			backed.
-		</p>
+		<ParagraphList
+			paragraphs={[
+				"Illustrated kid's book about skateboarding.",
+				'Self authored, illustrated, and published. Successfully Kickstarter backed.',
+			]}
+		/>
 
 		<SoftwareCatalogue list={appSoftwareList} />
 	</>
