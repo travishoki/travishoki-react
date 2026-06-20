@@ -1,13 +1,11 @@
 import React from 'react';
 
-import classNames from 'classnames';
-
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
+import { SvgIconSparkle } from '~svg/SvgIconSparkle';
 
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
-import { CLIENT_LOGOS } from '../../../ProjectsPage/ProjectsPage.ClientLogos.data';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
 import styles from './ProjectInfoSection.module.scss';
@@ -15,8 +13,6 @@ import styles from './ProjectInfoSection.module.scss';
 export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 	const {
 		aiIntegration,
-		company,
-		companySlug,
 		contributions,
 		date,
 		description,
@@ -28,15 +24,17 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 
 	return (
 		<>
-			<img
-				alt={company}
-				className={classNames('center mb-3', styles.logo)}
-				src={CLIENT_LOGOS[companySlug]}
-			/>
-
 			{aiIntegration && (
 				<div className={styles.aiIntegration}>
-					<ProjectInfo label="AI Integration" text={aiIntegration} />
+					<ProjectInfo
+						label={
+							<>
+								<SvgIconSparkle color="#ffffff" size={22} />
+								{' AI Integration'}
+							</>
+						}
+						text={aiIntegration}
+					/>
 				</div>
 			)}
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
@@ -24,6 +24,6 @@ export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
 };
 
 type ProjectInfoProps = {
-	label: string;
+	label: string | ReactNode;
 	text: string | string[];
 };

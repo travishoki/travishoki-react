@@ -12,7 +12,7 @@ import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 const DEFAULT_DIMENSIONS = [0, 0];
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {
-	const { company, gallery, subtitle } = project;
+	const { company, companySlug, gallery, subtitle } = project;
 	const [dimensions, setDimensions] = useState(DEFAULT_DIMENSIONS);
 
 	const images = gallery.map((image) => {
@@ -26,7 +26,11 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 
 	return (
 		<>
-			<ProjectHeader company={company} subtitle={subtitle} />
+			<ProjectHeader
+				company={company}
+				companySlug={companySlug}
+				subtitle={subtitle}
+			/>
 
 			<div className="row">
 				<div className="col-sm-5">
