@@ -24,12 +24,10 @@ const PROJECTS: ProjectInput[] = [
 			'Ingegrate wtih an LLM for searching product in plain English.',
 		],
 		description: [
-			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed.",
-			"It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like.",
-			"It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
+			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed. It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like. It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
 			'This is a website that catalogues his "Safe Foods", foods that he will reliably eat. That makes it easier for him to visually see a menu of the foods he likes, making the decision process a little less painful.',
 			'The cards are styled like Pokemon cards, just for fun.',
-			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
+			"This project is a work in progress It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
 		gallery: [
 			Images.ImgFoodCards1,
