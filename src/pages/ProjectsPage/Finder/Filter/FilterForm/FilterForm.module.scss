@@ -1,5 +1,24 @@
+@use 'styles' as *;
+
 .filterForm {
 	display: flex;
+
+	input {
+		background: inherit;
+		border: solid 1px $gray-two;
+		border-radius: 0;
+		box-shadow: none;
+		color: inherit;
+		flex: 1;
+		height: 60px;
+		outline: none;
+		padding: 0 20px;
+
+		&:focus {
+			border-color: $gray-two;
+			box-shadow: none;
+		}
+	}
 
 	i {
 		font-size: 26px;
