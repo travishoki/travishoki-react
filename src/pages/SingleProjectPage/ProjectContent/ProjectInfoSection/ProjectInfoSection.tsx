@@ -8,8 +8,6 @@ import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
-import styles from './ProjectInfoSection.module.scss';
-
 export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 	const {
 		aiIntegration,
