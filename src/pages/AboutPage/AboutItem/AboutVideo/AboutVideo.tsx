@@ -6,12 +6,14 @@ import { VideoModal } from '~components/VideoModal/VideoModal';
 import { DEFAULT_IMAGE_SIZE } from '../../AboutPage.const';
 import { AboutType } from '../../AboutPage.data';
 
+import styles from './AboutVideo.module.scss';
+
 export const AboutVideo = ({ item }: AboutVideoProps) => {
 	const [open, setOpen] = useState(false);
 
 	return (
 		<>
-			<div className="d-flex justify-content-center">
+			<div className={styles.videoWrapper}>
 				<VideoButton
 					animate
 					onClick={() => setOpen(true)}
@@ -24,6 +26,7 @@ export const AboutVideo = ({ item }: AboutVideoProps) => {
 		</>
 	);
 };
+
 type AboutVideoProps = {
 	item: AboutType;
 };
