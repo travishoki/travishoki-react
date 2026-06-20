@@ -31,7 +31,6 @@ const PROJECTS: ProjectInput[] = [
 			'The cards are styled like Pokemon cards, just for fun.',
 			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
-
 		gallery: [
 			Images.ImgFoodCards1,
 			{
@@ -46,6 +45,7 @@ const PROJECTS: ProjectInput[] = [
 		],
 		learned: ['How to implement a "fuzzy" search'],
 		live: true,
+		subtitle: 'Safe Foods',
 		techs: [
 			TECH.REACT_JS,
 			TECH.JAVASCRIPT,
