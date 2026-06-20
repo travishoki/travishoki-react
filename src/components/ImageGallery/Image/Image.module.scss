@@ -8,6 +8,10 @@
 	width: 100%;
 }
 
+.imageWrapperRect {
+	aspect-ratio: unset;
+}
+
 .image {
 	display: block;
 	height: 100%;
@@ -16,4 +20,9 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+.imageRect {
+	height: auto;
+	position: static;
 }

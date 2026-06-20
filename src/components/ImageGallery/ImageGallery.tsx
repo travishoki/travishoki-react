@@ -8,7 +8,7 @@ import { GalleryImage } from './types';
 
 import styles from './ImageGallery.module.scss';
 
-export const ImageGallery = ({ images }: ImageGalleryProps) => {
+export const ImageGallery = ({ images, square = true }: ImageGalleryProps) => {
 	const [page, setPage] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
 	const [dimensions, setDimensions] = useState<number[]>([0, 0]);
@@ -36,6 +36,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 				image={image}
 				setDimensions={setDimensions}
 				setModalOpen={setModalOpen}
+				square={square}
 			/>
 
 			{caption && <p className={styles.caption}>{caption}</p>}
@@ -51,4 +52,5 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
 
 type ImageGalleryProps = {
 	images: GalleryImage[];
+	square?: boolean;
 };
