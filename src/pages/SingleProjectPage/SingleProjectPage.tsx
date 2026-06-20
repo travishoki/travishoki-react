@@ -21,7 +21,10 @@ export const SingleProjectPage = () => {
 	if (!singleProject) return;
 
 	return (
-		<div className="projects" id="container">
+		<div
+			className={classNames('projects', styles.singleProjectPage)}
+			id="container"
+		>
 			<PageSeo seoData={getSeoData(singleProject)} />
 			<div className={classNames(styles.singleProjectsContainer, 'grid')}>
 				<BackButton />
