@@ -4,8 +4,8 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
+import { ImgPopIn } from '~animations/ImgPopIn';
 import { AitInfo } from '~components/AiInfo/AiInfo';
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import { SECONDARY_3 } from '~const/colors.const';
 import ImgFoodCards from '~images/websites/thumbnail/food-cards.jpg';
 import { SvgIconSparkle } from '~svg/SvgIconSparkle';
@@ -29,10 +29,11 @@ export const AiPoweredProjects = () => {
 				<div className={styles.container}>
 					<div className={styles.content}>
 						<div className={styles.imageContainer}>
-							<ImageMaximizable
+							<ImgPopIn
 								alt="Food Cards"
-								dimensions={[THUMBNAIL_SIZE, THUMBNAIL_SIZE]}
+								height={THUMBNAIL_SIZE}
 								src={ImgFoodCards}
+								width={THUMBNAIL_SIZE}
 							/>
 						</div>
 						<Link
