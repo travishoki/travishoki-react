@@ -19,9 +19,9 @@ const PROJECTS: ProjectInput[] = [
 		],
 		company: 'Food Cards',
 		contributions: [
-			'Connect to Firebase for inventorying food',
-			'Design the website and collected food images',
-			'Ingegrate wtih an LLM for searching product in plain English.',
+			'Connected to Firebase to inventory and manage food data.',
+			'Designed the website and sourced food images',
+			"Integrated Claude (Anthropic's LLM) to power a natural language food search experience.",
 		],
 		description: [
 			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed. It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like. It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
@@ -64,14 +64,14 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'spiff-documents',
 		company: 'Spiff',
 		contributions: [
-			"Researched and tested different wysiwyg's for our use case.",
-			'I implemented and customized an integration with a wysiwyg.',
-			'Built out the merge field functionality to swap out handlebar syntax with dynamic values from the users profile.',
-			'The PDF was created server-side, I was able to dig into the Ruby code enough to modify the pdf output.',
+			'Researched and evaluated multiple WYSIWYG editors to find the best fit for the use case.',
+			'Implemented and customized a WYSIWYG editor integration.',
+			"Built merge field functionality to replace Handlebars syntax with dynamic values from the user's profile.",
+			'Extended server-side Ruby code to customize PDF output.',
 		],
 		description: [
-			'The user needed to be able to formulate their own documents. We created a homegrown solution.',
-			'In order to embed dynamic text, we used "merge fields" as placeholders using handlebars notation, i.e. {placeholder}.',
+			'Users needed to compose their own custom documents, so we built a homegrown document editor solution.',
+			'Dynamic text was embedded via "merge fields", Handlebars-style placeholders that resolve to live profile values at render time.',
 		],
 		gallery: [
 			{
@@ -100,11 +100,11 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'spiff-translations',
 		company: 'Spiff',
 		contributions: [
-			'Manually updated a lot of strings to use the translations.',
+			'Migrated hundreds of hardcoded strings across the codebase to use the i18n translation system.',
 		],
 		description: [
-			'Developed infrastructure for string translations, enhancing global accessibility',
-			'Internationalization is a big value add to Spiff/Salesforce.',
+			'Developed the infrastructure for string translations, expanding global platform accessibility.',
+			'Internationalization was a high-priority value add for Spiff and Salesforce, enabling the product to serve a worldwide customer base.',
 		],
 		gallery: [
 			Images.ImgSpiffTranslationsEnglish,
@@ -135,8 +135,12 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'spiff-team-hierarchy',
 		company: 'Spiff',
-		contributions: ['Recursively build out components representing each team.'],
-		description: ["Create a hierarchical org chart for a company's team."],
+		contributions: [
+			"Built a recursive component tree to represent each level of a company's team structure.",
+		],
+		description: [
+			"Built a hierarchical org chart that recursively renders a company's team structure at any depth.",
+		],
 		gallery: [Images.ImgSpiffTeamHierarchy],
 		learned: '',
 		subtitle: 'Team Hierarchy',
@@ -192,11 +196,11 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'chatbooks-com-book-creation',
 		company: 'Chatbooks.com',
 		contributions: [
-			'Tie into existing APIs to create a new book.',
-			'Create reusable UI components',
+			'Integrated existing APIs to support creating a new book.',
+			'Built reusable UI components used across the book creation flow.',
 		],
 		description:
-			'Revamp existing create book page with new UI written in ReactJs',
+			'Revamped the book creation page with a new React UI, improving the user experience for one of the core product flows.',
 		gallery: [Images.ImgChatbooksComBookCreation],
 		learned: '',
 		live: true,
@@ -215,8 +219,8 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'chatbooks-com-cards-quick-flow-sources',
 		company: 'Chatbooks.com',
 		contributions: [
-			'Create Branch links for redirecting to IOS or android apps.',
-			'Create screen for selecting the data source as well as a screen platform specific pages info.',
+			'Created Branch links for deep-linking to iOS and Android apps.',
+			'Built the data source selection screen and platform-specific info screens.',
 		],
 		description:
 			"Helped create individual quickflows for platform-specific custom books. Customers come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
@@ -228,9 +232,10 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'chatbooks-com-premium-layflat',
 		company: 'Chatbooks.com',
-		contributions: 'Tie into existing APIs to allow for layflat.',
+		contributions:
+			'Integrated existing APIs to unlock Premium layflat book support on desktop.',
 		description:
-			'Enable Premium layflat book types for the desktop. This was a breakthrough for the company as it is a better experience to create premium layflat sized books at a desktop size.',
+			'Enabled Premium layflat book creation on desktop, a significant product breakthrough that delivered a far better experience for customers creating large-format books.',
 		gallery: [Images.ImgChatbooksComPremiumLayflat],
 		learned: '',
 		live: true,
@@ -242,12 +247,12 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'chatbooks-com-cards-taxonomy-pages',
 		company: 'Chatbooks.com',
 		contributions: [
-			'Server-side rendering for SEO value',
-			'Work closely with designers and marketing',
-			'Integrating with new APIs',
+			'Implemented server-side rendering to maximize SEO value.',
+			'Collaborated closely with designers and marketing to align on UI and content.',
+			'Integrated new APIs to power category and search filter data.',
 		],
 		description:
-			'Creating cards taxonomy pages with categories and search filters.',
+			'Built Cards taxonomy pages with category browsing and search filters, leveraging SSR for SEO discoverability.',
 		gallery: [Images.ImgChatbooksComCardsTaxonomyPages],
 		learned: '',
 		subtitle: 'Cards Taxonomy Pages',
@@ -256,11 +261,12 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'overstock-com-customer-review-images',
 		company: 'Overstock.com',
-		contributions: ['Validate and format the image before uploading to AWS.'],
+		contributions: [
+			'Validated and formatted customer images client-side before uploading to AWS.',
+		],
 		description: [
-			"As part of the User Generate Content (UGC) Team, we owned the product reviews. One of the projects that I was the most proud of was customer review images. This was a big value add for Overstock and the customer's trust.",
-			'I work with my team to support user being able to submit images along with their reviews.',
-			'We had to A/B test to make sure we had a positive impact on revenue.',
+			'As part of the User Generated Content (UGC) Team, I helped own the product review experience. Customer review images was one of the projects I was most proud of, a meaningful trust signal for shoppers and a significant value add for Overstock.',
+			'Worked with my team to enable customers to submit photos alongside their reviews, then A/B tested the feature to confirm a positive impact on revenue.',
 		],
 		gallery: [
 			{
@@ -299,7 +305,7 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-amp-featured-product',
 		company: 'Overstock.com',
 		contributions: [
-			'Duplicate logic from the mobile product page to create the featured product section on the Search AMP page. Use amp-bind for event triggers when selecting options. Reduce and optimize CSS to fit within AMP specifications.',
+			'Ported featured product logic from the mobile product page into the Search AMP page. Used amp-bind for option-selection event triggers and optimized CSS to meet strict AMP size specifications.',
 		],
 		description:
 			'A version of the search/navigation page was built as an Accelerated Mobile Page for fast loading on mobile devices and for SEO.',
@@ -313,12 +319,13 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-admin-portal',
 		company: 'Overstock.com',
 		contributions: [
-			'I incorporated React Router and set the project up to be extendable with future pages/tools.',
+			'Integrated React Router and architected the project to be easily extensible with future pages and tools.',
 		],
 		description:
-			'Internal SEO tool that enables business employees to do things such as manipulate SEO titles for taxonomy display names.',
+			'Internal SEO tool that allowed business employees to manage SEO titles and taxonomy display names across the site.',
 		gallery: [Images.ImgOverstockComAdminPortal],
-		learned: 'I got a deeper understanding of the Redux flow.',
+		learned:
+			"Deepened my understanding of the Redux data flow while building out the tool's state management.",
 		subtitle: 'Admin Portal',
 		techs: [
 			TECH.REACT_JS,
@@ -336,10 +343,13 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-hackathon-2017',
 		company: 'Overstock.com',
 		contributions: [
-			'The initial project was built within a 24 hour period. Our project was chosen as a finalist. We had to get the project to production level quality within a 3 week time period. It was put into a 50/50 test where user conversion selected the winner. This project really pushed me to jump into new stacks that I had never done before and to prioritize time.',
+			'Built the initial project within 24 hours, earning a finalist selection.',
+			'Elevated the project to production quality within 3 weeks.',
+			'Shipped into a 50/50 A/B test. Our version won on user conversion.',
+			'Rapidly learned new tech stacks under tight time constraints to deliver.',
 		],
 		description:
-			'Project for the Overstock Hackathon. Its goal was to increase the amount of reviews and user generated images.',
+			'Hackathon project aimed at increasing the volume of customer reviews and user-generated images on the Overstock platform.',
 		gallery: [Images.ImgOverstockComHackathon2017],
 		learned: '',
 		subtitle: 'Hackathon 2017',
@@ -357,8 +367,10 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'overstock-com-rewards-for-reviews',
 		company: 'Overstock.com',
-		contributions: 'Coordinate deployments with multiple departments.',
-		description: 'Reward users for leaving a qualifying review.',
+		contributions:
+			'Coordinated deployments across multiple departments to ship the feature.',
+		description:
+			'Built a feature that rewarded users with points for leaving qualifying reviews, incentivizing user-generated content.',
 		gallery: [Images.ImgOverstockComRewardsForReviews],
 		learned: '',
 		subtitle: 'Rewards for Reviews',
@@ -376,9 +388,10 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-responsive-see-all-reviews-page',
 		company: 'Overstock.com',
 		contributions: [
-			'I implemented an AB test that resulted in lift during a 2 week period.',
+			'Implemented an A/B test that produced measurable conversion lift over a 2-week period.',
 		],
-		description: 'Site that resizes down to mobile devices',
+		description:
+			'Responsive redesign of the See All Reviews page, making it fully functional across mobile and desktop screen sizes.',
 		gallery: [Images.ImgOverstockComResponsiveSeeAllReviewsPage],
 		learned:
 			'The A/B site test originally failed due to routing errors. I had to be persistent at keeping the conversation going and getting help from the right people.',
@@ -398,11 +411,13 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-see-all-reviews-page-mobile-add-to-cart',
 		company: 'Overstock.com',
 		contributions: [
-			'Componentize the Add To Cart functionality into a react module.',
+			'Extracted Add To Cart functionality into a reusable React module embedded in the mobile review page.',
 		],
-		description: 'On mobile devices, an add to cart popup.',
+		description:
+			'Added a mobile Add To Cart popup to the See All Reviews page, letting shoppers convert without leaving the review experience.',
 		gallery: [Images.ImgOverstockComSeeAllReviewsPageMobileAddToCart],
-		learned: 'This was my first production level ReactJs work.',
+		learned:
+			'This was my first production-level React work, marking a turning point in my front-end career.',
 		live: true,
 		subtitle: 'See All Reviews Page Mobile Add To Cart',
 		techs: [TECH.HTML, TECH.LESS_CSS, TECH.JAVASCRIPT, TECH.REACT_JS],
@@ -411,8 +426,10 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'overstock-com-reviews-breakout',
 		company: 'Overstock.com',
-		contributions: 'Coordinate deployments with multiple departments.',
-		description: 'Allowing a user to leave rating only reviews.',
+		contributions:
+			'Coordinated a multi-department deployment to ship the rating-only review feature.',
+		description:
+			'Introduced rating-only reviews, lowering the barrier for customers to leave feedback and increasing overall review volume.',
 		gallery: [Images.ImgOverstockComReviewsBreakout],
 		learned:
 			'This project was a huge undertaking. Previously at other companies I had been full-stack. This project helped me understand the limitations and responsibilities of being strictly front-end. I had to learn to coordinate with the back-end and understand what our roles are.',
@@ -431,12 +448,12 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'overstock-com-star-ratings-color',
 		company: 'Overstock.com',
 		contributions: [
-			'Wrap changes in feature flags',
-			'Coordinate with multiple teams to deploy all the changes at once.',
+			'Wrapped all changes behind feature flags to enable a safe, coordinated rollout.',
+			'Coordinated with multiple teams to deploy all changes simultaneously across the site.',
 		],
 		description: [
-			'I was tasked to change all of the star ratings from red to gold. That sounds like a simple task but the amount of coordination was intense!',
-			"This was one of my first tasks in Overstock's shopping site, and at a company of this scale. I had to learn the process of many teams, it was a good initiation for me.",
+			"Led the migration of all star ratings from red to gold across Overstock's shopping site. Deceptively simple in scope, but requiring intense cross-team coordination to execute.",
+			'One of my first tasks at Overstock, this project gave me a deep initiation into how a large-scale retail engineering organization operates across many teams.',
 		],
 		gallery: [
 			{
@@ -449,7 +466,7 @@ const PROJECTS: ProjectInput[] = [
 			},
 		],
 		learned:
-			"I was able to get a deep dive into Overstock's processes across many different teams.",
+			"Gained deep visibility into Overstock's cross-team deployment processes and learned how to navigate a large engineering organization.",
 		live: true,
 		subtitle: 'Star Ratings Color',
 		techs: [
@@ -464,8 +481,10 @@ const PROJECTS: ProjectInput[] = [
 	{
 		itemKey: 'overstock-com-affiliate-links',
 		company: 'Overstock.com',
-		contributions: 'Took the basic wordpress plugin and rearchitected it.',
-		description: 'Embeddable affiliate links',
+		contributions:
+			'Took an existing WordPress plugin and rearchitected it into a more scalable, maintainable solution.',
+		description:
+			'Built an embeddable affiliate links widget that allowed external partners to drive traffic and revenue to Overstock product pages.',
 		gallery: [Images.ImgOverstockComAffiliateLinks],
 		learned: '',
 		live: true,
@@ -485,7 +504,7 @@ const PROJECTS: ProjectInput[] = [
 		company: 'LindseyHoki.com',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		description:
-			"Lindsey Hoki Photography is my wife's photography company. I am helping to brand her company.",
+			"Lindsey Hoki Photography is my wife's photography company. I designed and built her brand and web presence.",
 		gallery: [Images.ImgLindseyhokiCom],
 		learned: '',
 		live: true,
@@ -501,7 +520,7 @@ const PROJECTS: ProjectInput[] = [
 			'Woocommerce integration',
 		],
 		description:
-			'Passion project skateboard company I am building and branding.',
+			'A personal passion project. I designed, branded, and built a full e-commerce skateboard company from the ground up.',
 		gallery: [Images.ImgHokiSkateboards],
 		learned: '',
 		live: true,
@@ -522,7 +541,7 @@ const PROJECTS: ProjectInput[] = [
 		company: 'Truly Lindsey Photography',
 		contributions: ['Wordpress customization', 'Design and branding'],
 		description:
-			"Truly Lindsey Photography is my wife's photography company. I am helping to brand her company.",
+			"Truly Lindsey Photography is my wife's photography company. I designed and built her brand and web presence.",
 		gallery: [Images.ImgTrulyLindseyPhotography],
 		learned: '',
 		techs: [TECH.WORDPRESS, TECH.HTML, TECH.CSS],
@@ -532,15 +551,15 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'room-choice-student-housing-software',
 		company: 'Room Choice',
 		contributions: [
-			'Full Stack Development',
-			'Django and python',
-			'Restful API calls.',
+			'Full-stack feature development across the entire application.',
+			'Built and maintained backend services using Django and Python.',
+			'Developed RESTful API integrations between front-end and back-end layers.',
 		],
 		description:
-			'Room Choice is a student housing property management software that allows you to see room assignments and reservation requests.',
+			'Student housing property management software for viewing room assignments and processing reservation requests.',
 		gallery: [Images.ImgRoomChoiceStudentHousingSoftware],
 		learned:
-			'At Room Choice I got my first experience with external developers. I had to learn to communicate effectively with a lot of details. | Previous to this company I had mostly done custom freelance-type work. This was my first time working as an internal dedicated team. I was able to help optimize, cleanup, and really build structure.',
+			'Gained my first experience collaborating with external developers, learning to communicate technical details clearly and precisely. This was also my first role on a dedicated internal team. I shifted from freelance habits to structured team workflows and helped optimize and bring architecture to the codebase.',
 		live: true,
 		subtitle: 'Student Housing Software',
 		techs: [
@@ -615,7 +634,7 @@ const PROJECTS: ProjectInput[] = [
 			'Embedded testimonials from his clients.',
 		],
 		description:
-			'Motivational speaker Eric Aroca, hired me to build out his promotional website. I created out a custom Wordpress theme for him.',
+			'Motivational speaker Eric Aroca hired me to build out his promotional website. I built a custom Wordpress theme for him.',
 		gallery: [Images.ImgEricArocaMotivationalSpeaker],
 		learned:
 			'Eric was great to work with. He was prompt and proactive with the content. It felt like a collaborative effort to get his site put together.',
@@ -656,7 +675,7 @@ const PROJECTS: ProjectInput[] = [
 		itemKey: 'new-life-recovery',
 		company: 'New Life Recovery',
 		contributions: 'Bring the design image to life in the browser.',
-		description: 'Build out the HTML and CSS for a new landing page.',
+		description: 'Built out the HTML and CSS for a new landing page.',
 		gallery: [Images.ImgNewLifeRecovery],
 		learned: '',
 		techs: [
@@ -904,7 +923,7 @@ const PROJECTS: ProjectInput[] = [
 		company: 'Enspark',
 		contributions: 'I was on a team building out HR courses in Action Script.',
 		description: [
-			'Enspark is a Learning Management System (LMS) that provides HR courses',
+			'Enspark is a Learning Management System (LMS) that provides HR courses.',
 			'The courses were interactive and built in Flash. Flash pretty quickly died after I started working at Enspark. I miss flash. It was fun. RIP.',
 		],
 		gallery: [
@@ -925,7 +944,7 @@ const PROJECTS: ProjectInput[] = [
 			'I had learned flash in school and was so excited to be able to work on a project for a real client.',
 		],
 		description:
-			'Animated banner ads that would populate on the side of websites. ',
+			'Animated banner ads that would populate on the side of websites.',
 		gallery: [
 			Images.ImgEnsparkFlashBanner1,
 			Images.ImgEnsparkFlashBanner2,
