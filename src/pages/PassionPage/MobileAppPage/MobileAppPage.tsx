@@ -7,8 +7,11 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 import { ROUTES } from '~const/Routes.const';
 
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
-import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
-import { techAppList } from './MobileAppPage.const';
+import {
+	hokiSkateboardsMobileAppDescription,
+	hokiSkateboardsMobileAppGallery,
+	hokiSkateboardsMobileAppTechAppList,
+} from './MobileAppPage.const';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
@@ -22,7 +25,7 @@ export const MobileAppPage = () => {
 			<section className="boxed boxed-lg">
 				<div className="row mb-4">
 					<div className="col-sm-7">
-						<Title title="Mobile App" />
+						<Title title="React Native Mobile App" />
 						<img
 							className={styles.appIcon}
 							height="200"
@@ -31,12 +34,20 @@ export const MobileAppPage = () => {
 							width="200"
 						/>
 						<PassionLabel>Description:</PassionLabel>
-						<p className="indent">Kid&apos;s skateboarding game</p>
 
-						<TechListCatalogue list={techAppList} />
+						{hokiSkateboardsMobileAppDescription.map((paragraph, index) => (
+							<p key={index} className="indent">
+								{paragraph}
+							</p>
+						))}
+
+						<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
 					</div>
 					<div className="col-sm-5">
-						<ImageGallery images={APP_GALLERY_IMAGES} square={false} />
+						<ImageGallery
+							images={hokiSkateboardsMobileAppGallery}
+							square={false}
+						/>
 					</div>
 				</div>
 

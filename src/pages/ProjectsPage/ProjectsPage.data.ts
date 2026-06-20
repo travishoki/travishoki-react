@@ -3,6 +3,11 @@ import { slugify } from '~helpers/projects';
 
 import * as Images from './ProjectsPage.data.images';
 import { ProjectType } from './ProjectsPage.types';
+import {
+	hokiSkateboardsMobileAppDescription,
+	hokiSkateboardsMobileAppGallery,
+	hokiSkateboardsMobileAppTechAppList,
+} from '../PassionPage/MobileAppPage/MobileAppPage.const';
 
 const PROJECTS: ProjectInput[] = [
 	{
@@ -20,6 +25,7 @@ const PROJECTS: ProjectInput[] = [
 			'The cards are styled like Pokemon cards, just for fun.',
 			"It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
 		],
+
 		gallery: [
 			Images.ImgFoodCards1,
 			{
@@ -143,38 +149,11 @@ const PROJECTS: ProjectInput[] = [
 			'UI/UX Design',
 			'Character illustrations',
 		],
-		description: [
-			"Hoki Skateboards is my passion project. I'm teaching myself React Native through this project.",
-			"My first 2 years of college was in the Gaming and Animation program, this projects has been super fun being able to flex and build upon those skills. I illustrated all of the graphics myself. This is the perfect application to advertise both the products that I sell, and the kid's book that I created.",
-			"I've really enjoyed learning Firebase. The document database is just what I needed for this project.",
-			"It's so exciting to see this app come together! I'm really proud of it!",
-		],
-		gallery: [
-			Images.ImgHokiSkateboards1Home,
-			Images.ImgHokiSkateboards2Levels,
-			Images.ImgHokiSkateboards3Game,
-			Images.ImgHokiSkateboards4Game,
-			Images.ImgHokiSkateboards5Coloring,
-			Images.ImgHokiSkateboards6Book,
-			Images.ImgHokiSkateboards7Shop,
-			Images.ImgHokiSkateboards8BuildABoard,
-			Images.ImgHokiSkateboards9Login,
-		],
+		description: hokiSkateboardsMobileAppDescription,
+		gallery: hokiSkateboardsMobileAppGallery,
 		learned: '',
-		subtitle: 'React Native Game',
-		techs: [
-			TECH.REACT_JS,
-			TECH.REACT_NATIVE,
-			TECH.TYPESCRIPT,
-			TECH.JAVASCRIPT,
-			TECH.JEST,
-			TECH.CSS,
-			TECH.HTML,
-			TECH.FIREBASE,
-			TECH.CLAUDE_CODE,
-			TECH.CURSOR_AI,
-			TECH.STORYBOOK,
-		],
+		subtitle: 'React Native Mobile Game',
+		techs: hokiSkateboardsMobileAppTechAppList,
 		url: 'https://www.hokiskateboards.com/app/',
 	},
 	{

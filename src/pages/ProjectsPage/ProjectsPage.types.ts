@@ -2,6 +2,7 @@ import { GalleryImage } from '~components/ImageGallery/types';
 import { TechKey } from '~const/Tech.const';
 
 export type ProjectType = {
+	aiIntegration?: string | string[];
 	company: string;
 	companySlug: string;
 	contributions: string | string[];
