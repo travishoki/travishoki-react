@@ -40,7 +40,6 @@ export const MobileAppPage = () => {
 					</div>
 
 					<MobileAppVideo />
-
 					<DownloadAppSection />
 				</div>
 			</section>
