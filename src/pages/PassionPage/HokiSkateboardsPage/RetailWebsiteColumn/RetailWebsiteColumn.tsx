@@ -1,11 +1,11 @@
 import React from 'react';
 
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
 import { techWebsiteList } from './RetailWebsiteColumn.const';
 import { ButtonLink } from '../../ButtonLink/ButtonLink';
-import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
@@ -19,7 +19,7 @@ export const RetailWebsiteColumn = () => (
 		</a>
 		<ButtonLink href={LINK} text="Go to Site" />
 
-		<PassionLabel>Description:</PassionLabel>
+		<ParagraphLabel>Description:</ParagraphLabel>
 		<p className="indent">
 			Hoki Skateboards is a small family-owned online skateboard company.
 		</p>

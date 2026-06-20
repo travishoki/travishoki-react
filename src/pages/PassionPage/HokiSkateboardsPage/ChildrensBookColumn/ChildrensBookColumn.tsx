@@ -1,11 +1,11 @@
 import React from 'react';
 
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-should-always-skateboard.jpg';
 
 import { appSoftwareList } from './ChildrensBookColumn.const';
 import { ButtonLink } from '../../ButtonLink/ButtonLink';
-import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
@@ -28,7 +28,7 @@ export const ChildrensBookColumn = () => (
 		</a>
 		<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 
-		<PassionLabel>Description:</PassionLabel>
+		<ParagraphLabel>Description:</ParagraphLabel>
 		<p className="indent">Illustrated kid&apos;s book about skateboarding.</p>
 		<p className="indent">
 			Self authored, illustrated, and published. Successfully Kickstarter

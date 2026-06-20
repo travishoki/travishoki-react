@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { PassionLabel } from '../../PassionLabel/PassionLabel';
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 
 export const About = () => {
 	return (
 		<>
-			<PassionLabel>About The Project:</PassionLabel>
+			<ParagraphLabel>About The Project:</ParagraphLabel>
 			<p className="indent">
 				Kaytlin was my wife&apos;s roommate in college and her bridesmaid at our
 				wedding. She was then a professional MMA fighter! Over the course of 11

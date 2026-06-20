@@ -3,6 +3,7 @@ import React from 'react';
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
@@ -13,7 +14,6 @@ import {
 	hokiSkateboardsMobileAppTechAppList,
 } from './MobileAppPage.const';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
-import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
 
 import styles from './MobileApp.module.scss';
@@ -33,7 +33,7 @@ export const MobileAppPage = () => {
 							title="Hoki Skateboards App"
 							width="200"
 						/>
-						<PassionLabel>Description:</PassionLabel>
+						<ParagraphLabel>Description:</ParagraphLabel>
 
 						{hokiSkateboardsMobileAppDescription.map((paragraph, index) => (
 							<p key={index} className="indent">
