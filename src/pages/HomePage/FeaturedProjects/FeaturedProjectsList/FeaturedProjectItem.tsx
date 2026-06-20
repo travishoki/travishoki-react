@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 
 import { ImgPopIn } from '~animations/ImgPopIn';
 import { getImgAltText } from '~helpers/images';
+import { bisect } from '~helpers/numbers';
 import {
 	handleThumbnailError,
 	websiteThumbnailSrc,
 } from '~helpers/websiteThumbnails';
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
+import { PODIUM_COUNT } from '../FeaturedProjects.helpers';
 
 import styles from './FeaturedProjectItem.module.scss';
 
@@ -26,6 +28,8 @@ export const FeaturedProjectItem = ({
 }: FeaturedProjectItemProps) => {
 	const { company, itemKey, subtitle } = project;
 	const imgAlt = getImgAltText(company, subtitle);
+	const center = bisect(PODIUM_COUNT - 1);
+	const delay = Math.abs(index - center) * DELAY_MULTIPLIER;
 
 	return (
 		<li className={styles.featuredProjectItem}>
@@ -42,7 +46,7 @@ export const FeaturedProjectItem = ({
 					onError={handleThumbnailError}
 					src={websiteThumbnailSrc(itemKey)}
 					transition={{
-						delay: index * DELAY_MULTIPLIER,
+						delay,
 						duration: 0.4,
 						ease: 'easeInOut',
 					}}
