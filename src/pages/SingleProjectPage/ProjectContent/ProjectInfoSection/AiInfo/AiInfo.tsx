@@ -3,16 +3,17 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 
 import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
+import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { WHITE } from '~const/colors.const';
 import { makeArray } from '~helpers/arrays';
 import { SvgIconSparkle } from '~svg/SvgIconSparkle';
-
-import { AnswerSection } from '../../AnswerSection/AnswerSection';
 
 import styles from './AiInfo.module.scss';
 
 export const AitInfo = ({ text }: AitInfoProps) => {
 	const [expanded, setExpanded] = useState(true);
+
+	const textArray = makeArray(text);
 
 	return (
 		<div className={styles.aiInfo}>
@@ -21,15 +22,7 @@ export const AitInfo = ({ text }: AitInfoProps) => {
 					<SvgIconSparkle color={WHITE} size={22} />
 					AI Integration:
 				</ParagraphLabel>
-				{expanded && (
-					<AnswerSection>
-						{makeArray(text).map((paragraph, index) => (
-							<p key={`${index}-${paragraph}`} className="indent">
-								{paragraph}
-							</p>
-						))}
-					</AnswerSection>
-				)}
+				{expanded && <ParagraphList paragraphs={textArray} />}
 			</div>
 
 			<button

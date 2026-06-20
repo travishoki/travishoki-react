@@ -7,7 +7,6 @@ import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
 import { getFirstParagraph } from '~helpers/arrays';
 
 import { ProjectType } from '../../../../ProjectsPage/ProjectsPage.types';
-import { AnswerSection } from '../../AnswerSection/AnswerSection';
 
 import styles from './Contributions.module.scss';
 
@@ -22,19 +21,17 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 	return (
 		<>
 			<ParagraphLabel>Contributions:</ParagraphLabel>
-			<AnswerSection>
-				{isList ? (
-					<ReadMoreList
-						buttonClassName={styles.contributionsReadMore}
-						collapsedCount={COLLAPSE_COUNT}
-						initiallyExpanded
-						items={bullets}
-						listClassName={classNames('disc', styles.answerSectionList)}
-					/>
-				) : (
-					<p className="indent">{getFirstParagraph(contributions)}</p>
-				)}
-			</AnswerSection>
+			{isList ? (
+				<ReadMoreList
+					buttonClassName={styles.contributionsReadMore}
+					collapsedCount={COLLAPSE_COUNT}
+					initiallyExpanded
+					items={bullets}
+					listClassName={classNames('disc', styles.answerSectionList)}
+				/>
+			) : (
+				<p className="indent">{getFirstParagraph(contributions)}</p>
+			)}
 		</>
 	);
 };

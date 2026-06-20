@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { MotionExpand } from '~animations/MotionExpand';
+import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const TextWithReadMore = ({
@@ -16,14 +17,10 @@ export const TextWithReadMore = ({
 
 	return (
 		<>
-			<p className="indent">{firstParagraph}</p>
+			<ParagraphList paragraphs={[firstParagraph]} />
 
 			<MotionExpand isOpen={expanded}>
-				{restParagraphs.map((paragraph, index) => (
-					<p key={`${index}-${paragraph}`} className="indent">
-						{paragraph}
-					</p>
-				))}
+				<ParagraphList paragraphs={restParagraphs} />
 			</MotionExpand>
 
 			{hasMore && (
