@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { TextWithReadMore } from '~components/TextWithReadMore/TextWithReadMore';
 import { makeArray } from '~helpers/arrays';
 
@@ -10,7 +11,7 @@ import styles from './ProjectInfo.module.scss';
 export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
 	return (
 		<>
-			<p className="m-0">{label}:</p>
+			<ParagraphLabel>{label}:</ParagraphLabel>
 			<AnswerSection>
 				<TextWithReadMore
 					buttonClassName={styles.readMoreButton}

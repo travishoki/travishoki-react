@@ -20,7 +20,7 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 		date,
 		description,
 		learned,
-		live,
+		live = false,
 		techs,
 		url,
 	} = project;
@@ -32,11 +32,15 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 				className={classNames('center', styles.logo)}
 				src={CLIENT_LOGOS[companySlug]}
 			/>
+
 			{date && <ProjectInfo label="Date Range" text={date} />}
+
 			{description.length && (
 				<ProjectInfo label="Description" text={description} />
 			)}
+
 			<Contributions contributions={contributions} />
+
 			{learned && <ProjectInfo label="What I Learned" text={learned} />}
 
 			{live && <ViewLiveSite url={url} />}

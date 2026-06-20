@@ -2,6 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
+import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
 import { ReadMoreList } from '~components/ReadMoreList/ReadMoreList';
 import { getFirstParagraph } from '~helpers/arrays';
 
@@ -20,7 +21,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 
 	return (
 		<>
-			<p className="m-0">Contributions:</p>
+			<ParagraphLabel>Contributions:</ParagraphLabel>
 			<AnswerSection>
 				{isList ? (
 					<ReadMoreList

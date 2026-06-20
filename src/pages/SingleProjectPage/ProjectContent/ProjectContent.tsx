@@ -12,19 +12,7 @@ import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 const DEFAULT_DIMENSIONS = [0, 0];
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {
-	const {
-		company,
-		companySlug,
-		contributions,
-		date,
-		description,
-		gallery,
-		learned,
-		live = false,
-		subtitle,
-		techs,
-		url,
-	} = project;
+	const { company, gallery, subtitle } = project;
 	const [dimensions, setDimensions] = useState(DEFAULT_DIMENSIONS);
 
 	const images = gallery.map((image) => {
