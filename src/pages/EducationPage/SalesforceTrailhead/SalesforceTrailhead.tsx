@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import ImgRanger from '~images/education/ranger.png';
 
 import { SalesforceIcon } from '../SalesforceIcon/SalesforceIcon';
@@ -8,7 +10,7 @@ import styles from './SalesforceTrailhead.module.scss';
 
 export const SalesforceTrailhead = () => (
 	<section>
-		<div className={`boxed boxed-lg ${styles.trailhead}`}>
+		<div className={classNames('boxed boxed-lg', styles.trailhead)}>
 			<img
 				alt="Salesforce Ranger Badge"
 				className={styles.trailheadImage}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { CLIENT_LOGOS } from '../../../ProjectsPage/ProjectsPage.ClientLogos.data';
 
 import styles from './ProjectHeader.module.scss';
@@ -9,7 +11,7 @@ export const ProjectHeader = ({
 	companySlug,
 	subtitle,
 }: ProjectHeaderProps) => (
-	<section className={`primary-three mb-3 ${styles.projectHeading}`}>
+	<section className={classNames('primary-three mb-3', styles.projectHeading)}>
 		{CLIENT_LOGOS[companySlug] && (
 			<img
 				alt={company}

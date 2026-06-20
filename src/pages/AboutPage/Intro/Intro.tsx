@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { AboutImage } from '../AboutItem/AboutImage/AboutImage';
 import { ImgProfilePic, ImgProfilePicSmall } from '../AboutPage.data.images';
 
@@ -22,7 +24,7 @@ export const Intro = () => (
 				<div className={styles.image}>
 					<AboutImage item={image} />
 				</div>
-				<p className={`indent m-0 ${styles.text}`}>
+				<p className={classNames('indent m-0', styles.text)}>
 					When I&apos;m not staring at a code editor or building things for the
 					web, here is a look at what keeps me busy. This is what I love doing,
 					and who I am outside of work.

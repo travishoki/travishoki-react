@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { Typewriter } from '~animations/Typewriter';
 
 import { ContactInfoGrid } from './ContactInfoGrid/ContactInfoGrid';
@@ -10,7 +12,7 @@ import styles from './ContactInfo.module.scss';
 
 export const ContactInfo = () => (
 	<>
-		<div className={`${styles.contactInfoHeader} mb-3`}>
+		<div className={classNames(styles.contactInfoHeader, 'mb-3')}>
 			<h2>Get In Touch With Me</h2>
 			<p>
 				<Typewriter text="Travis Hoki" />

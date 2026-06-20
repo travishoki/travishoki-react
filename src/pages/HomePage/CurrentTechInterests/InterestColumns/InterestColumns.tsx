@@ -1,5 +1,7 @@
 import React, { forwardRef } from 'react';
 
+import classNames from 'classnames';
+
 import { CURRENT_TECH_INTERESTS } from '../CurrentTechInterests.data';
 import { InterestItem } from '../InterestItem/InterestItem';
 
@@ -10,7 +12,7 @@ const STAGGER_SECONDS = 0.15;
 export const InterestColumns = forwardRef<HTMLDivElement, InterestColumnsProps>(
 	({ onScroll }, ref) => (
 		<div
-			className={`row g-4 ${styles.interestColumns}`}
+			className={classNames('row g-4', styles.interestColumns)}
 			onScroll={onScroll}
 			ref={ref}
 		>

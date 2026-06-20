@@ -1,11 +1,13 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import ImgGearUp from '~images/education/gear-up.jpg';
 
 import styles from './Scholarships.module.scss';
 
 export const Scholarships = () => (
-	<div className={`${styles.scholarships} mb-2`}>
+	<div className={classNames(styles.scholarships, 'mb-2')}>
 		<img alt="Gear Up Logo" src={ImgGearUp} />{' '}
 		<p className={styles.scholarshipDescription}>
 			Recipient of the{' '}

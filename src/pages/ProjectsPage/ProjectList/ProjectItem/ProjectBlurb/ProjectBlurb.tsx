@@ -22,7 +22,7 @@ export const ProjectBlurb = ({
 				<p className={styles.company}>{company}</p>
 				{subtitle && <p className={styles.subtitle}>{subtitle}</p>}
 			</div>
-			<p className={`${styles.description} ${styles.truncate}`}>{desc}</p>
+			<p className={classNames(styles.description, styles.truncate)}>{desc}</p>
 		</div>
 	);
 };

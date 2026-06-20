@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 
+import classNames from 'classnames';
+
 import { CarouselDots } from '~components/CarouselDots/CarouselDots';
 import { useIsMobile } from '~hooks/isMobile';
 
