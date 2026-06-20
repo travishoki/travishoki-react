@@ -7,6 +7,7 @@ import { ParagraphBlock } from '~components/ParagraphBlock/ParagraphBlock';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
+import { AppIcon } from './AppIcon/AppIcon';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import {
 	hokiSkateboardsMobileAppDescription,
@@ -16,8 +17,6 @@ import {
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import { Title } from '../Title/Title';
 
-import styles from './MobileApp.module.scss';
-
 export const MobileAppPage = () => {
 	return (
 		<>
@@ -26,14 +25,7 @@ export const MobileAppPage = () => {
 				<div className="row mb-4">
 					<div className="col-sm-7">
 						<Title title="React Native Mobile App" />
-						<img
-							className={styles.appIcon}
-							height="200"
-							src="http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png"
-							title="Hoki Skateboards App"
-							width="200"
-						/>
-
+						<AppIcon />
 						<ParagraphBlock
 							label="Description"
 							text={hokiSkateboardsMobileAppDescription}
@@ -49,8 +41,15 @@ export const MobileAppPage = () => {
 					</div>
 				</div>
 
-				<MobileAppVideo />
-				<DownloadAppSection />
+				<div className="row">
+					<div className="col-sm-auto">
+						<MobileAppVideo />
+					</div>
+					<div className="col-sm">
+						<AppIcon />
+						<DownloadAppSection />
+					</div>
+				</div>
 			</section>
 		</>
 	);

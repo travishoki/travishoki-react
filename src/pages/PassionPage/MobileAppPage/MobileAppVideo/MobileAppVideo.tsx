@@ -6,6 +6,6 @@ const VIDEO_SRC = '/videos/game-launch.mp4';
 
 export const MobileAppVideo = () => (
 	<div className={styles.mobileAppVideo}>
-		<video autoPlay controls loop muted playsInline src={VIDEO_SRC} />
+		<video controls muted playsInline src={VIDEO_SRC} />
 	</div>
 );
