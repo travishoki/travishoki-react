@@ -1,6 +1,15 @@
 export const getYearsSince = (d: string) => {
-	const year = new Date(d).getFullYear();
-	const thisYear = new Date().getFullYear();
+	const birth = new Date(d);
+	const today = new Date();
 
-	return thisYear - year;
+	let age = today.getFullYear() - birth.getFullYear();
+
+	const hasHadBirthdayThisYear =
+		today.getMonth() > birth.getMonth() ||
+		(today.getMonth() === birth.getMonth() &&
+			today.getDate() >= birth.getDate());
+
+	if (!hasHadBirthdayThisYear) age--;
+
+	return age;
 };
