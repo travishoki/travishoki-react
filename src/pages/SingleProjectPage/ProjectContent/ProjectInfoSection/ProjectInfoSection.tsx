@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import { SvgIconSparkle } from '~svg/SvgIconSparkle';
 
+import { AitInfo } from './AiInfo/AiInfo';
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
@@ -26,15 +26,7 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 		<>
 			{aiIntegration && (
 				<div className={styles.aiIntegration}>
-					<ProjectInfo
-						label={
-							<>
-								<SvgIconSparkle color="#ffffff" size={22} />
-								{' AI Integration'}
-							</>
-						}
-						text={aiIntegration}
-					/>
+					<AitInfo text={aiIntegration} />
 				</div>
 			)}
 
