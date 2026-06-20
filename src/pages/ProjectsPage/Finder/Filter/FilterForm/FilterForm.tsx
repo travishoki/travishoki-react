@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import { TechFilterType } from '~const/Tech.const';
 
-import { CurrentFilterBase } from '../CurrentFilterBase/CurrentFilterBase';
+import { FilterContainer } from '../FilterContainer/FilterContainer';
 
 import styles from './FilterForm.module.scss';
 
@@ -14,7 +14,7 @@ export const FilterForm = ({
 	onChangeFilter,
 	onClearAndCloseFilter,
 }: FilterFormProps) => (
-	<CurrentFilterBase icon={faXmark} onClickIcon={onClearAndCloseFilter}>
+	<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
 		<form className={classNames('m-0', styles.filterForm)}>
 			<input
 				autoFocus
@@ -25,7 +25,7 @@ export const FilterForm = ({
 				value={filterTerm || ''}
 			/>
 		</form>
-	</CurrentFilterBase>
+	</FilterContainer>
 );
 
 type FilterFormProps = {

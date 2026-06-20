@@ -3,12 +3,12 @@ import React from 'react';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-import { CurrentFilterBase } from '../CurrentFilterBase/CurrentFilterBase';
+import { FilterContainer } from '../FilterContainer/FilterContainer';
 
 import styles from './FilterClean.module.scss';
 
 export const FilterClean = ({ toggleOpenFilter }: FilterCleanProps) => (
-	<CurrentFilterBase icon={faChevronDown} onClickIcon={toggleOpenFilter}>
+	<FilterContainer icon={faChevronDown} onClickIcon={toggleOpenFilter}>
 		<form className={classNames('m-0', styles.filterClean)}>
 			<input
 				onClick={toggleOpenFilter}
@@ -17,7 +17,7 @@ export const FilterClean = ({ toggleOpenFilter }: FilterCleanProps) => (
 				type="text"
 			/>
 		</form>
-	</CurrentFilterBase>
+	</FilterContainer>
 );
 
 type FilterCleanProps = {

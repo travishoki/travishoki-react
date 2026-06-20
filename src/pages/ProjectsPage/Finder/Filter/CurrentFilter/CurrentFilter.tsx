@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechFilterType } from '~const/Tech.const';
 
-import { CurrentFilterBase } from '../CurrentFilterBase/CurrentFilterBase';
+import { FilterContainer } from '../FilterContainer/FilterContainer';
 
 import styles from './CurrentFilter.module.scss';
 
@@ -22,10 +22,10 @@ export const CurrentFilter = ({
 	const { label } = tech;
 
 	return (
-		<CurrentFilterBase icon={faXmark} onClickIcon={onClearAndCloseFilter}>
+		<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
 			<TechIcon className={styles.techIcon} name={filter} />
 			<p>{label}</p>
-		</CurrentFilterBase>
+		</FilterContainer>
 	);
 };
 
