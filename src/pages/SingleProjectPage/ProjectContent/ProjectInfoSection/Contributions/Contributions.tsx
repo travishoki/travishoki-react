@@ -19,7 +19,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 	const bullets = Array.isArray(contributions) ? contributions : [];
 
 	return (
-		<>
+		<div className="mb-3">
 			<ParagraphLabel>Contributions:</ParagraphLabel>
 			{isList ? (
 				<ReadMoreList
@@ -32,7 +32,7 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 			) : (
 				<p className="indent">{getFirstParagraph(contributions)}</p>
 			)}
-		</>
+		</div>
 	);
 };
 
