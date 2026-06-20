@@ -3,14 +3,16 @@ import React from 'react';
 import { PROJECTS_DATA } from '../../../ProjectsPage/ProjectsPage.data';
 import {
 	orderTopThreeInPodium,
-	PODIUM_COUNT,
+	FEATURED_ITEM_KEYS,
 } from '../FeaturedProjects.helpers';
 import { FeaturedProjectItem } from './FeaturedProjectItem';
 
 import styles from './FeaturedProjectsList.module.scss';
 
 const currentProjects = orderTopThreeInPodium(
-	PROJECTS_DATA.slice(0, PODIUM_COUNT),
+	FEATURED_ITEM_KEYS.map(
+		(key) => PROJECTS_DATA.find((p) => p.itemKey === key)!,
+	),
 );
 
 export const FeaturedProjectsList = () => (

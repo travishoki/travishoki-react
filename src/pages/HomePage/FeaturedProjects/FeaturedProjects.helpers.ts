@@ -1,7 +1,6 @@
-import { ProjectItemKey } from 'src/pages/ProjectsPage/ProjectsPage.itemKeys';
 import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
-export const FEATURED_ITEM_KEYS: ProjectItemKey[] = [
+export const FEATURED_ITEM_KEYS = [
 	'food-cards',
 	'hoki-skateboards-react-native-game',
 	'spiff-translations',
