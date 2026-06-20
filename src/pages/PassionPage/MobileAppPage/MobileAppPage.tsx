@@ -36,7 +36,7 @@ export const MobileAppPage = () => {
 						<TechListCatalogue list={techAppList} />
 					</div>
 					<div className="col-sm-5">
-						<ImageGallery images={APP_GALLERY_IMAGES} />
+						<ImageGallery images={APP_GALLERY_IMAGES} square={false} />
 					</div>
 				</div>
 
