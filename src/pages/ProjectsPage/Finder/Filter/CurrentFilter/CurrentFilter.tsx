@@ -3,7 +3,7 @@ import React from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { TechIcon } from '~components/TechIcon/TechIcon';
-import { TECH, TechFilterType } from '~const/Tech.const';
+import { TECH, TechFilterType, TechKey } from '~const/Tech.const';
 
 import { FilterContainer } from '../FilterContainer/FilterContainer';
 
@@ -13,9 +13,8 @@ export const CurrentFilter = ({
 	filter,
 	onClearAndCloseFilter,
 }: CurrentFilterProps) => {
-	if (!filter || filter === 'all' || filter === 'null') return null;
-
-	const tech = TECH[filter];
+	const techKey = filter as TechKey;
+	const tech = TECH[techKey];
 
 	if (!tech) return null;
 
@@ -23,7 +22,7 @@ export const CurrentFilter = ({
 
 	return (
 		<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
-			<TechIcon className={styles.techIcon} name={filter} />
+			<TechIcon className={styles.techIcon} name={techKey} />
 			<p>{label}</p>
 		</FilterContainer>
 	);

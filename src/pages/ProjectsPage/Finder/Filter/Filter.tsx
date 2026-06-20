@@ -18,10 +18,12 @@ export const Filter = ({
 	toggleOpenFilter,
 }: FilterProps) => (
 	<div>
-		<CurrentFilter
-			filter={filter}
-			onClearAndCloseFilter={onClearAndCloseFilter}
-		/>
+		{filter && filter !== 'all' && filter !== 'null' && (
+			<CurrentFilter
+				filter={filter}
+				onClearAndCloseFilter={onClearAndCloseFilter}
+			/>
+		)}
 
 		{!filter && (
 			<>
