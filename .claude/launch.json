@@ -3,8 +3,8 @@
 	"configurations": [
 		{
 			"name": "vite",
-			"runtimeExecutable": "npm",
-			"runtimeArgs": ["start"],
+			"runtimeExecutable": "/Users/travishoki/.nvm/versions/node/v22.23.0/bin/node",
+			"runtimeArgs": ["node_modules/.bin/vite"],
 			"port": 3000,
 			"autoPort": true
 		}
