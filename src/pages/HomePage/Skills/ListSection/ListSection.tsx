@@ -36,11 +36,13 @@ export const ListSection = () => {
 			</div>
 
 			{isMobile && (
-				<ReadMoreButton
-					className={styles.listSectionReadMore}
-					expanded={expanded}
-					onToggle={() => setExpanded(!expanded)}
-				/>
+				<div className={styles.readMoreWrapper}>
+					<ReadMoreButton
+						className={styles.listSectionReadMore}
+						expanded={expanded}
+						onToggle={() => setExpanded(!expanded)}
+					/>
+				</div>
 			)}
 		</div>
 	);
