@@ -8,7 +8,7 @@ import styles from './SalesforceTrailhead.module.scss';
 
 export const SalesforceTrailhead = () => (
 	<section>
-		<div className={`boxed ${styles.trailhead}`}>
+		<div className={`boxed boxed-lg ${styles.trailhead}`}>
 			<img
 				alt="Salesforce Ranger Badge"
 				className={styles.trailheadImage}

@@ -25,7 +25,7 @@ export const Timpanogos = () => (
 					<h2>Timpanogos High School</h2>
 					<ImgPopIn
 						alt="Timpanogos High School Logo"
-						className={styles.school}
+						className={classNames('center', styles.school)}
 						src={ImgTimpanogos}
 					/>
 					<div className={styles.diplomaText}>
