@@ -13,6 +13,7 @@ export const FilterForm = ({
 }: FilterFormProps) => (
 	<form className={classNames('m-0', styles.filterForm)}>
 		<input
+			autoFocus
 			className="form-control"
 			maxLength={25}
 			onChange={onChangeFilter}
