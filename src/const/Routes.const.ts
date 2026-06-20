@@ -6,6 +6,7 @@ export const ROUTES = {
 	HOKI_SKATEBOARDS: '/passion/hoki-skateboards',
 	HOME: '/',
 	HOW_ITS_MADE: '/how-its-made',
+	MOBILE_APP: '/passion/mobile-app',
 	PROJECT: '/project',
 	PROJECTS: '/projects',
 	RESUME: '/resume',

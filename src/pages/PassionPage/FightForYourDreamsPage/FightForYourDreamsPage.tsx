@@ -18,23 +18,25 @@ import {
 import { Logo } from './Logo/Logo';
 
 export const FightForYourDreamsPage = () => (
-	<section className="boxed boxed-lg p-3">
+	<>
 		<PageSeo seoData={PAGE_SEO[ROUTES.FIGHT_FOR_YOUR_DREAMS]} />
-		<Logo />
-		<CoverImage />
-		<BookHeading />
-		<div className="row">
-			<div className="col-sm-6 pt-3">
-				<div className="boxed boxed-lg">
-					<About />
-					<ImageGallery images={BOOK_LAUCH_GALLERY} />
+		<section className="boxed boxed-lg">
+			<Logo />
+			<CoverImage />
+			<BookHeading />
+			<div className="row">
+				<div className="col-sm-6 pt-3">
+					<div className="boxed boxed-lg">
+						<About />
+						<ImageGallery images={BOOK_LAUCH_GALLERY} />
+					</div>
+				</div>
+				<div className="col-sm-6 pt-3">
+					<ImageGallery images={BOOK_GALLERY} />
+					<Discription />
+					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 				</div>
 			</div>
-			<div className="col-sm-6 pt-3">
-				<ImageGallery images={BOOK_GALLERY} />
-				<Discription />
-				<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
-			</div>
-		</div>
-	</section>
+		</section>
+	</>
 );

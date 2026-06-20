@@ -45,6 +45,12 @@ export const PAGE_SEO: Record<string, SeoData> = {
 		description:
 			'A breakdown of the tools, libraries, and technologies used to build travishoki.com.',
 	},
+	[ROUTES.MOBILE_APP]: {
+		title: 'Mobile App',
+		canonical: ROUTES.MOBILE_APP,
+		description:
+			"Hoki Skateboards mobile app built with React Native and Firebase. A kid's skateboarding game available on iOS and Android.",
+	},
 	[ROUTES.PROJECTS]: {
 		title: 'Projects',
 		canonical: ROUTES.PROJECTS,
