@@ -1,10 +1,13 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ROUTES } from '~const/Routes.const';
 
-import { Content } from './Content/Content';
+import { ChildrensBookColumn } from './Content/ChildrensBookColumn/ChildrensBookColumn';
+import { RetailWebsiteColumn } from './Content/RetailWebsiteColumn/RetailWebsiteColumn';
 import { CoverImage } from './CoverImage/CoverImage';
 import { Logo } from './Logo/Logo';
 import { SocialMedia } from './SocialMedia/SocialMedia';
@@ -25,7 +28,16 @@ export const HokiSkateboardsPage = () => (
 			<SocialMedia />
 		</section>
 		<section className="boxed boxed-lg">
-			<Content />
+			<div className={`${styles.hokiSkateboardsInnerContent} mb-3`}>
+				<div className="row">
+					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+						<RetailWebsiteColumn />
+					</div>
+					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+						<ChildrensBookColumn />
+					</div>
+				</div>
+			</div>
 		</section>
 	</>
 );
