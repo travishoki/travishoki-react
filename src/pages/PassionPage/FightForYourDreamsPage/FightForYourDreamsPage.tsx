@@ -5,6 +5,7 @@ import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import { ROUTES } from '~const/Routes.const';
+import ImgCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams.jpg';
 
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { About } from './About/About';
@@ -13,11 +14,11 @@ import { CoverImage } from './CoverImage/CoverImage';
 import { Description } from './Description/Description';
 import {
 	AMAZON_HREF,
-	BOOK_GALLERY,
 	BOOK_LAUCH_GALLERY,
 	techSoftwareList,
 } from './FightForYourDreams.const';
 import { Logo } from './Logo/Logo';
+import { ProjectImage } from '../HokiSkateboardsPage/ProjectImage/ProjectImage';
 
 export const FightForYourDreamsPage = () => (
 	<>
@@ -34,10 +35,17 @@ export const FightForYourDreamsPage = () => (
 					</div>
 				</div>
 				<div className="col-sm-6 pt-3">
-					<ImageGallery images={BOOK_GALLERY} />
+					<a
+						href={AMAZON_HREF}
+						rel="noreferrer"
+						target="_blank"
+						title="Fight For Your Dreams"
+					>
+						<ProjectImage alt="Fight For Your Dreams" src={ImgCover} />
+					</a>
+					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 					<Description />
 					<SoftwareCatalogue list={techSoftwareList} />
-					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 				</div>
 			</div>
 		</section>

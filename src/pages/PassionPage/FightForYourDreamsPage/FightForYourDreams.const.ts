@@ -1,7 +1,5 @@
 import { GalleryImage } from '~components/ImageGallery/types';
 import { SoftwareKey } from '~const/Software.const';
-import ImgBackCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams-back.jpg';
-import ImgCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams.jpg';
 import ImgBookLaunch1 from '~images/passion/fight-for-your-dreams/book-launch-gallery/ffyd_1.jpg';
 import ImgBookLaunch2 from '~images/passion/fight-for-your-dreams/book-launch-gallery/ffyd_2.jpg';
 import ImgBookLaunch3 from '~images/passion/fight-for-your-dreams/book-launch-gallery/ffyd_3.jpg';
@@ -13,11 +11,6 @@ import ImgBookLaunch8 from '~images/passion/fight-for-your-dreams/book-launch-ga
 
 export const AMAZON_HREF =
 	'https://www.amazon.com/dp/1734008393/ref=cm_sw_r_as_gl_api_gl_i_98XS8F2BTKPZQ7RK5H76?linkCode=ml1&tag=hokiskatebo0f-20&_encoding=UTF8&tag=hokiskatebo0f-20&linkCode=ur2&linkId=c8f27dfffb604bda3dba492d9425eabe&camp=1789&creative=9325';
-
-export const BOOK_GALLERY = [
-	{ filename: ImgCover },
-	{ filename: ImgBackCover },
-] as GalleryImage[];
 
 export const BOOK_LAUCH_GALLERY = [
 	{ filename: ImgBookLaunch1 },
