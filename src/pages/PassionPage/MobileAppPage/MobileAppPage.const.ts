@@ -1,6 +1,6 @@
 import * as TECH from '~const/Tech.const';
 
-export const techs: TECH.TechKey[] = [
+export const techAppList: TECH.TechKey[] = [
 	TECH.CSS,
 	TECH.HTML,
 	TECH.JAVASCRIPT,

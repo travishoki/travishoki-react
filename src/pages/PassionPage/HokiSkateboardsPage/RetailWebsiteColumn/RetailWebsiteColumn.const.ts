@@ -8,7 +8,7 @@ import {
 	WORDPRESS,
 } from '~const/Tech.const';
 
-export const websiteTechList: TechKey[] = [
+export const techWebsiteList: TechKey[] = [
 	CSS,
 	HTML,
 	JAVASCRIPT,

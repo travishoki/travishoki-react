@@ -5,7 +5,7 @@ import { ButtonLink } from 'src/pages/PassionPage/ButtonLink/ButtonLink';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
-import { websiteTechList } from './RetailWebsiteColumn.const';
+import { techWebsiteList } from './RetailWebsiteColumn.const';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
@@ -29,6 +29,6 @@ export const RetailWebsiteColumn = () => (
 			and React.
 		</p>
 
-		<TechListCatalogue list={websiteTechList} />
+		<TechListCatalogue list={techWebsiteList} />
 	</>
 );

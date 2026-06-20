@@ -3,6 +3,7 @@ import React from 'react';
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
+import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
 import { ButtonLink } from '../ButtonLink/ButtonLink';
@@ -14,6 +15,7 @@ import {
 	AMAZON_HREF,
 	BOOK_GALLERY,
 	BOOK_LAUCH_GALLERY,
+	techSoftwareList,
 } from './FightForYourDreams.const';
 import { Logo } from './Logo/Logo';
 
@@ -29,6 +31,7 @@ export const FightForYourDreamsPage = () => (
 					<div className="boxed boxed-lg">
 						<About />
 						<ImageGallery images={BOOK_LAUCH_GALLERY} />
+						<TechListCatalogue list={techSoftwareList} />
 					</div>
 				</div>
 				<div className="col-sm-6 pt-3">

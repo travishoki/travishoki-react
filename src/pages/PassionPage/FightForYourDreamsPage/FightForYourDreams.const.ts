@@ -1,4 +1,13 @@
 import { GalleryImage } from '~components/ImageGallery/types';
+import {
+	CSS,
+	HTML,
+	JAVASCRIPT,
+	PHP,
+	REACT_JS,
+	TechKey,
+	WORDPRESS,
+} from '~const/Tech.const';
 import ImgBackCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams-back.jpg';
 import ImgCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams.jpg';
 import ImgBookLaunch1 from '~images/passion/fight-for-your-dreams/book-launch-gallery/ffyd_1.jpg';
@@ -28,3 +37,12 @@ export const BOOK_LAUCH_GALLERY = [
 	{ filename: ImgBookLaunch7 },
 	{ filename: ImgBookLaunch8 },
 ] as GalleryImage[];
+
+export const techSoftwareList: TechKey[] = [
+	CSS,
+	HTML,
+	JAVASCRIPT,
+	PHP,
+	REACT_JS,
+	WORDPRESS,
+];

@@ -8,7 +8,7 @@ import { ROUTES } from '~const/Routes.const';
 
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
-import { techs } from './MobileAppPage.const';
+import { techAppList } from './MobileAppPage.const';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
@@ -33,15 +33,15 @@ export const MobileAppPage = () => {
 						<PassionLabel>Description:</PassionLabel>
 						<p className="indent">Kid&apos;s skateboarding game</p>
 
-						<TechListCatalogue list={techs} />
+						<TechListCatalogue list={techAppList} />
 					</div>
 					<div className="col-sm-5">
 						<ImageGallery images={APP_GALLERY_IMAGES} />
 					</div>
-
-					<MobileAppVideo />
-					<DownloadAppSection />
 				</div>
+
+				<MobileAppVideo />
+				<DownloadAppSection />
 			</section>
 		</>
 	);
