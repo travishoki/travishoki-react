@@ -20,25 +20,23 @@ export const MobileAppPage = () => {
 		<>
 			<PageSeo seoData={PAGE_SEO[ROUTES.MOBILE_APP]} />
 			<section className="boxed boxed-lg">
-				<div className={`pt-4 ${styles.appSection}`}>
-					<div className="row mb-4">
-						<div className="col-sm-7">
-							<Title title="Mobile App" />
-							<img
-								className={styles.appIcon}
-								height="200"
-								src="http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png"
-								title="Hoki Skateboards App"
-								width="200"
-							/>
-							<PassionLabel>Description:</PassionLabel>
-							<p className="indent">Kid&apos;s skateboarding game</p>
+				<div className="row mb-4">
+					<div className="col-sm-7">
+						<Title title="Mobile App" />
+						<img
+							className={styles.appIcon}
+							height="200"
+							src="http://www.hokiskateboards.com/wp-content/themes/hokiskateboards-wp/src/images/app/icon.png"
+							title="Hoki Skateboards App"
+							width="200"
+						/>
+						<PassionLabel>Description:</PassionLabel>
+						<p className="indent">Kid&apos;s skateboarding game</p>
 
-							<TechListCatalogue list={techs} />
-						</div>
-						<div className="col-sm-5">
-							<ImageGallery images={APP_GALLERY_IMAGES} />
-						</div>
+						<TechListCatalogue list={techs} />
+					</div>
+					<div className="col-sm-5">
+						<ImageGallery images={APP_GALLERY_IMAGES} />
 					</div>
 
 					<MobileAppVideo />

@@ -22,7 +22,7 @@ const techs: TECH.TechKey[] = [
 ];
 
 export const MobileApp = () => (
-	<div className={`pt-4 ${styles.appSection}`}>
+	<div className="pt-4">
 		<div className="row mb-4">
 			<div className="col-sm-7">
 				<Title title="Mobile App" />
