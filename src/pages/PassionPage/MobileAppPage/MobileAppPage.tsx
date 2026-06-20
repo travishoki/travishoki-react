@@ -3,8 +3,7 @@ import React from 'react';
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
-import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
-import { ParagraphList } from '~components/ParagraphList/ParagraphList';
+import { ParagraphBlock } from '~components/ParagraphBlock/ParagraphBlock';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
@@ -34,9 +33,11 @@ export const MobileAppPage = () => {
 							title="Hoki Skateboards App"
 							width="200"
 						/>
-						<ParagraphLabel>Description:</ParagraphLabel>
 
-						<ParagraphList paragraphs={hokiSkateboardsMobileAppDescription} />
+						<ParagraphBlock
+							label="Description"
+							text={hokiSkateboardsMobileAppDescription}
+						/>
 
 						<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
 					</div>

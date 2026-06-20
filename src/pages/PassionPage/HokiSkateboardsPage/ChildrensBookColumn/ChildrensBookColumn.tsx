@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
-import { ParagraphList } from '~components/ParagraphList/ParagraphList';
+import { ParagraphBlock } from '~components/ParagraphBlock/ParagraphBlock';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-should-always-skateboard.jpg';
 
@@ -29,9 +28,9 @@ export const ChildrensBookColumn = () => (
 		</a>
 		<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 
-		<ParagraphLabel>Description:</ParagraphLabel>
-		<ParagraphList
-			paragraphs={[
+		<ParagraphBlock
+			label="Description"
+			text={[
 				"Illustrated kid's book about skateboarding.",
 				'Self authored, illustrated, and published. Successfully Kickstarter backed.',
 			]}

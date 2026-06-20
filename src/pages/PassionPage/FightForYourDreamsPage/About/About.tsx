@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
-import { ParagraphList } from '~components/ParagraphList/ParagraphList';
+import { ParagraphBlock } from '~components/ParagraphBlock/ParagraphBlock';
 
 const paragraphs = [
 	"Kaytlin was my wife's roommate in college and her bridesmaid at our wedding. She was then a professional MMA fighter! Over the course of 11 years Lindsey and I had been to many of her fights in person, or watched her fights on TV.",
@@ -12,8 +11,5 @@ const paragraphs = [
 ];
 
 export const About = () => (
-	<>
-		<ParagraphLabel>About The Project:</ParagraphLabel>
-		<ParagraphList paragraphs={paragraphs} />
-	</>
+	<ParagraphBlock label="About The Project" text={paragraphs} />
 );

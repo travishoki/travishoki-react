@@ -7,13 +7,15 @@ import { makeArray } from '~helpers/arrays';
 import styles from './ProjectInfo.module.scss';
 
 export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
+	const paragraphs = makeArray(text);
+
 	return (
 		<div className="mb-3">
 			<ParagraphLabel>{label}:</ParagraphLabel>
 			<TextWithReadMore
 				buttonClassName={styles.readMoreButton}
 				initiallyExpanded
-				paragraphs={makeArray(text)}
+				paragraphs={paragraphs}
 			/>
 		</div>
 	);
