@@ -7,17 +7,13 @@ import { ROUTES } from '~const/Routes.const';
 import { HowItsMadeLinks } from './HowItsMadeLinks/HowItsMadeLinks';
 import { HowItsMadeList } from './HowItsMadeList/HowItsMadeList';
 
-import styles from './HowItsMadePage.module.scss';
-
 export const HowItsMadePage = () => {
 	return (
 		<div id="container">
 			<PageSeo seoData={PAGE_SEO[ROUTES.HOW_ITS_MADE]} />
 			<h1>How This Site Was Made</h1>
-			<section className={styles.howItsMadePage}>
-				<HowItsMadeLinks />
-				<HowItsMadeList />
-			</section>
+			<HowItsMadeLinks />
+			<HowItsMadeList />
 		</div>
 	);
 };
