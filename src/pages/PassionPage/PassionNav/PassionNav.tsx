@@ -8,7 +8,7 @@ import { ROUTES } from '~const/Routes.const';
 import styles from './PassionNav.module.scss';
 
 export const PassionNav = () => (
-	<div className={classNames('boxed', styles.passionNav)}>
+	<div className={styles.passionNav}>
 		<nav>
 			<NavLink
 				className={({ isActive }) =>

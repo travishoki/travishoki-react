@@ -9,10 +9,22 @@
 		margin-left: 16px;
 		margin-right: 16px;
 	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+
+		@include phone-down {
+			max-width: 300px;
+		}
+	}
 }
 
 .navButton {
 	@include phone-down {
+		flex: 1 1 100%;
 		text-align: center;
 	}
 
@@ -31,5 +43,9 @@
 
 	&.active {
 		background-color: $primary-four;
+	}
+
+	@include phone-down {
+		border-bottom: solid 1px $primary-four;
 	}
 }

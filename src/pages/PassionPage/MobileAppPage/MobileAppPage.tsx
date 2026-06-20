@@ -17,6 +17,8 @@ import {
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import { Title } from '../Title/Title';
 
+import styles from './MobileApp.module.scss';
+
 export const MobileAppPage = () => {
 	return (
 		<>
@@ -31,13 +33,17 @@ export const MobileAppPage = () => {
 							text={hokiSkateboardsMobileAppDescription}
 						/>
 
-						<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
+						<div className="mb-3">
+							<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
+						</div>
 					</div>
 					<div className="col-sm-5">
-						<ImageGallery
-							images={hokiSkateboardsMobileAppGallery}
-							square={false}
-						/>
+						<div className={styles.gallery}>
+							<ImageGallery
+								images={hokiSkateboardsMobileAppGallery}
+								square={false}
+							/>
+						</div>
 					</div>
 				</div>
 
