@@ -3,6 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { GalleryImage } from '~components/ImageGallery/types';
+import { ImageCaption } from '~components/ImageModal/ImageCaption/ImageCaption';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
 import styles from './Image.module.scss';
@@ -13,7 +14,7 @@ export const Image = ({
 	setModalOpen,
 	square = true,
 }: ImageProps) => {
-	const { alt, filename } = image;
+	const { alt, caption, filename } = image;
 
 	const onLoad = (event: React.SyntheticEvent<HTMLImageElement>) =>
 		setDimensions([
@@ -35,6 +36,7 @@ export const Image = ({
 				onLoad={onLoad}
 				src={filename}
 			/>
+			{caption && <ImageCaption>{caption}</ImageCaption>}
 		</div>
 	);
 };

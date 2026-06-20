@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import { CloseButton } from '~components/ImageModal/CloseButton/CloseButton';
+import { ImageCaption } from '~components/ImageModal/ImageCaption/ImageCaption';
 import { getDimensions } from '~components/ImageModal/ImageModal.helpers';
 import {
 	useCloseOnEscape,
@@ -15,6 +16,7 @@ import styles from './ImageModal.module.scss';
 
 export const ImageModal = ({
 	alt,
+	caption,
 	dimensions,
 	onClose,
 	onNext,
@@ -41,20 +43,23 @@ export const ImageModal = ({
 			<div className={styles.imageModalInner}>
 				{onPrev && <LeftModalArrow onClick={onPrev} />}
 
-				<img
-					alt={alt}
-					onLoad={(event) =>
-						setNaturalDimensions([
-							event.currentTarget.naturalWidth,
-							event.currentTarget.naturalHeight,
-						])
-					}
-					src={src}
-					style={{
-						height,
-						width,
-					}}
-				/>
+				<div className={styles.imageWrapper}>
+					<img
+						alt={alt}
+						onLoad={(event) =>
+							setNaturalDimensions([
+								event.currentTarget.naturalWidth,
+								event.currentTarget.naturalHeight,
+							])
+						}
+						src={src}
+						style={{
+							height,
+							width,
+						}}
+					/>
+					{caption && <ImageCaption size="lg">{caption}</ImageCaption>}
+				</div>
 
 				{onNext && <RightModalArrow onClick={onNext} />}
 
@@ -67,6 +72,7 @@ export const ImageModal = ({
 
 type ImageModalProps = {
 	alt?: string;
+	caption?: string;
 	dimensions: number[];
 	onClose: () => void;
 	onNext?: () => void;

@@ -24,6 +24,7 @@ export const ImageGallery = ({ images, square = true }: ImageGalleryProps) => {
 			{modalOpen && (
 				<ImageModal
 					alt={alt}
+					caption={caption}
 					dimensions={dimensions}
 					onClose={() => setModalOpen(false)}
 					onNext={() => goToPage(page + 1)}
@@ -44,8 +45,6 @@ export const ImageGallery = ({ images, square = true }: ImageGalleryProps) => {
 				count={images.length}
 				onSelect={setPage}
 			/>
-
-			{caption && <p className={styles.caption}>{caption}</p>}
 		</div>
 	);
 };
