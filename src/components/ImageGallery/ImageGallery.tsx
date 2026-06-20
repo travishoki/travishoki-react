@@ -39,13 +39,13 @@ export const ImageGallery = ({ images, square = true }: ImageGalleryProps) => {
 				square={square}
 			/>
 
-			{caption && <p className={styles.caption}>{caption}</p>}
-
 			<CarouselDots
 				activeIndex={page}
 				count={images.length}
 				onSelect={setPage}
 			/>
+
+			{caption && <p className={styles.caption}>{caption}</p>}
 		</div>
 	);
 };
