@@ -3,7 +3,7 @@ import React from 'react';
 import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
 import ImgPingdomSpeedTestReport from '~images/how-its-made/pingdom-speed-test.jpg';
 
-import * as Link from './Links';
+import * as Link from './HowItsMade.links.data';
 import { ViewScreenShot } from './ViewScreenShot/ViewScreenShot';
 
 import styles from './HowItsMadeList.module.scss';
