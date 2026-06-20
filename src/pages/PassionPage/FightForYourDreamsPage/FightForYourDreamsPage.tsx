@@ -3,14 +3,14 @@ import React from 'react';
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
-import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
+import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { About } from './About/About';
 import { BookHeading } from './BookHeading/BookHeading';
 import { CoverImage } from './CoverImage/CoverImage';
-import { Discription } from './Description/Description';
+import { Description } from './Description/Description';
 import {
 	AMAZON_HREF,
 	BOOK_GALLERY,
@@ -31,12 +31,12 @@ export const FightForYourDreamsPage = () => (
 					<div className="boxed boxed-lg">
 						<About />
 						<ImageGallery images={BOOK_LAUCH_GALLERY} />
-						<TechListCatalogue list={techSoftwareList} />
 					</div>
 				</div>
 				<div className="col-sm-6 pt-3">
 					<ImageGallery images={BOOK_GALLERY} />
-					<Discription />
+					<Description />
+					<SoftwareCatalogue list={techSoftwareList} />
 					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 				</div>
 			</div>

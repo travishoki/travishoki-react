@@ -2,7 +2,7 @@ import React from 'react';
 
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 
-export const Discription = () => {
+export const Description = () => {
 	return (
 		<>
 			<PassionLabel>Book Description:</PassionLabel>
