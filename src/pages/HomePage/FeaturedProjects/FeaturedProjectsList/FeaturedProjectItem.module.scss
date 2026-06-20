@@ -1,8 +1,8 @@
 @use 'styles' as *;
-@use './RecentProjectsList.variables' as *;
+@use './FeaturedProjectsList.variables' as *;
 
-.recentProjectItem {
-	@media (max-width: #{$recent-projects-large - 1}) {
+.featuredProjectItem {
+	@media (max-width: #{$featured-projects-large - 1}) {
 		// Disable navigation on mobile.
 		a {
 			cursor: default;
@@ -25,7 +25,7 @@
 		}
 
 		// Small mobile
-		@media (max-width: #{$recent-projects-medium - 1}) {
+		@media (max-width: #{$featured-projects-medium - 1}) {
 			&:nth-child(2) {
 				margin-left: -75px;
 				width: 150px;
@@ -39,7 +39,7 @@
 		}
 
 		// Medium
-		@media (min-width: $recent-projects-medium) and (max-width: #{$recent-projects-large - 1}) {
+		@media (min-width: $featured-projects-medium) and (max-width: #{$featured-projects-large - 1}) {
 			&:nth-child(2) {
 				margin-left: -110px;
 				width: 220px;
@@ -53,7 +53,7 @@
 		}
 	}
 
-	@media (min-width: $recent-projects-large) {
+	@media (min-width: $featured-projects-large) {
 		float: left;
 		width: 33.33333333%;
 	}
@@ -62,7 +62,7 @@
 		display: block;
 		margin: 0 auto;
 
-		@media (max-width: #{$recent-projects-large - 1}) {
+		@media (max-width: #{$featured-projects-large - 1}) {
 			height: 100%;
 			object-fit: cover;
 			width: 100%;
@@ -75,7 +75,7 @@
 	margin-bottom: 10px;
 	position: relative;
 
-	@media (max-width: #{$recent-projects-large - 1}) {
+	@media (max-width: #{$featured-projects-large - 1}) {
 		display: none;
 	}
 }

@@ -1,19 +1,22 @@
 import React from 'react';
 
 import { PROJECTS_DATA } from '../../../ProjectsPage/ProjectsPage.data';
-import { orderTopThreeInPodium, PODIUM_COUNT } from '../RecentProjects.helpers';
-import { RecentProjectItem } from './RecentProjectItem';
+import {
+	orderTopThreeInPodium,
+	PODIUM_COUNT,
+} from '../FeaturedProjects.helpers';
+import { FeaturedProjectItem } from './FeaturedProjectItem';
 
-import styles from './RecentProjectsList.module.scss';
+import styles from './FeaturedProjectsList.module.scss';
 
 const currentProjects = orderTopThreeInPodium(
 	PROJECTS_DATA.slice(0, PODIUM_COUNT),
 );
 
-export const RecentProjectsList = () => (
-	<ul className={styles.recentProjectsList}>
+export const FeaturedProjectsList = () => (
+	<ul className={styles.featuredProjectsList}>
 		{currentProjects.map((project, index) => (
-			<RecentProjectItem
+			<FeaturedProjectItem
 				key={project.itemKey}
 				index={index}
 				project={project}

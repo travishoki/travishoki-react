@@ -1,7 +1,7 @@
 import expect from 'expect';
 import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
-import { orderTopThreeInPodium } from './RecentProjects.helpers';
+import { orderTopThreeInPodium } from './FeaturedProjects.helpers';
 
 describe('orderTopThreeInPodium', () => {
 	it('Should return top three in podium order', () => {

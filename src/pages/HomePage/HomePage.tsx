@@ -8,7 +8,7 @@ import { ROUTES } from '~const/Routes.const';
 import { About } from './About/About';
 import { Banner } from './Banner/Banner';
 import { CurrentTechInterests } from './CurrentTechInterests/CurrentTechInterests';
-import { RecentProjects } from './RecentProjects/RecentProjects';
+import { FeaturedProjects } from './FeaturedProjects/FeaturedProjects';
 import { Skills } from './Skills/Skills';
 import { TechTiles } from './TechTiles/TechTiles';
 import { Volunteer } from './Volunteer/Volunteer';
@@ -19,7 +19,7 @@ export const HomePage = () => (
 		<Banner />
 		<About />
 		<TechTiles />
-		<RecentProjects />
+		<FeaturedProjects />
 		<Skills />
 		<CurrentTechInterests />
 		<Education />

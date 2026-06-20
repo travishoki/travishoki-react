@@ -11,24 +11,24 @@ import {
 
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
-import styles from './RecentProjectItem.module.scss';
+import styles from './FeaturedProjectItem.module.scss';
 
-type RecentProjectItemProps = {
+type FeaturedProjectItemProps = {
 	index: number;
 	project: ProjectType;
 };
 
 const DELAY_MULTIPLIER = 0.2;
 
-export const RecentProjectItem = ({
+export const FeaturedProjectItem = ({
 	index,
 	project,
-}: RecentProjectItemProps) => {
+}: FeaturedProjectItemProps) => {
 	const { company, itemKey, subtitle } = project;
 	const imgAlt = getImgAltText(company, subtitle);
 
 	return (
-		<li className={styles.recentProjectItem}>
+		<li className={styles.featuredProjectItem}>
 			<Link to={`/project/${itemKey}`}>
 				<div className={styles.projectHeader}>
 					<div className={styles.projectHeaderInner}>

@@ -1,7 +1,7 @@
 @use 'styles' as *;
-@use './RecentProjectsList.variables' as *;
+@use './FeaturedProjectsList.variables' as *;
 
-.recentProjectsList {
+.featuredProjectsList {
 	// flow-root contains the floated items without clipping the center
 	// podium item's drop shadow (which overflow: hidden would cut off).
 	display: flow-root;
@@ -16,7 +16,7 @@
 		padding-bottom: 20px;
 	}
 
-	@media (min-width: 600px) and (max-width: #{$recent-projects-large - 1}) {
+	@media (min-width: 600px) and (max-width: #{$featured-projects-large - 1}) {
 		margin: 0 auto;
 		max-width: 440px;
 		padding-bottom: 30px;

@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { ButtonLink } from 'src/pages/PassionPage/ButtonLink/ButtonLink';
-
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import ImgHokiSkateboardsWebsite from '~images/passion/hoki-skateboards/hoki-skateboards-website.jpg';
 
 import { techWebsiteList } from './RetailWebsiteColumn.const';
+import { ButtonLink } from '../../ButtonLink/ButtonLink';
 import { PassionLabel } from '../../PassionLabel/PassionLabel';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
