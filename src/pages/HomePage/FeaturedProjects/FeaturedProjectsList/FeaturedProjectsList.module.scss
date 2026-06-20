@@ -21,4 +21,10 @@
 		max-width: 440px;
 		padding-bottom: 30px;
 	}
+
+	@media (min-width: $featured-projects-large) {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
 }
