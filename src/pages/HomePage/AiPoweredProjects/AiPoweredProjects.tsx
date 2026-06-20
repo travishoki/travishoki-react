@@ -29,12 +29,14 @@ export const AiPoweredProjects = () => {
 				<div className={styles.container}>
 					<div className={styles.content}>
 						<div className={styles.imageContainer}>
-							<ImgPopIn
-								alt="Food Cards"
-								height={THUMBNAIL_SIZE}
-								src={ImgFoodCards}
-								width={THUMBNAIL_SIZE}
-							/>
+							<Link to="/project/food-cards">
+								<ImgPopIn
+									alt="Food Cards"
+									height={THUMBNAIL_SIZE}
+									src={ImgFoodCards}
+									width={THUMBNAIL_SIZE}
+								/>
+							</Link>
 						</div>
 						<Link
 							className={classNames(
