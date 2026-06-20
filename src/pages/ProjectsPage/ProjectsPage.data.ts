@@ -42,6 +42,7 @@ const PROJECTS: ProjectInput[] = [
 			},
 		],
 		learned: [
+			'I tied into an Anthropic LLM to search the food cards with plain English',
 			'I haven\'t programmed a "fuzzy" search. It was interesting learning how matches are scored.',
 		],
 		live: true,
