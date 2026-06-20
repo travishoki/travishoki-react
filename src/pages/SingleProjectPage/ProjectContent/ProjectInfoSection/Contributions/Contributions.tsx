@@ -23,7 +23,6 @@ export const Contributions = ({ contributions }: ContributionsProps) => {
 			<ParagraphLabel>Contributions:</ParagraphLabel>
 			{isList ? (
 				<ReadMoreList
-					buttonClassName={styles.contributionsReadMore}
 					collapsedCount={COLLAPSE_COUNT}
 					initiallyExpanded
 					items={bullets}
