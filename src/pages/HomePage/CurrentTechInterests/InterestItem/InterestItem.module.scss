@@ -11,8 +11,6 @@
 }
 
 .interestItem {
-	text-align: left;
-
 	// Full-width, one-per-view only for the mobile carousel. On larger screens
 	// the Bootstrap col-md-4 grid handles the 3-column layout.
 	@include phone-down {
