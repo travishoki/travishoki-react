@@ -1,40 +1,52 @@
 import React from 'react';
 
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 import { AitInfo } from '~components/AiInfo/AiInfo';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
+import { SECONDARY_3 } from '~const/colors.const';
 import ImgFoodCards from '~images/websites/thumbnail/food-cards.jpg';
 import { SvgIconSparkle } from '~svg/SvgIconSparkle';
 
-import { foodCardsAiIntegration } from './AiPoweredProjects.const';
+import { AI_POWERED_FOOD } from './AiPoweredProjects.const';
 
 import styles from './AiPoweredProjects.module.scss';
 
 const THUMBNAIL_SIZE = 250;
 
 export const AiPoweredProjects = () => {
+	const { aiIntegration } = AI_POWERED_FOOD as ProjectType;
+
 	return (
 		<section className={styles.aiPoweredProjects}>
 			<div className="boxed boxed-lg">
 				<h2>
-					<SvgIconSparkle size={28} />
+					<SvgIconSparkle color={SECONDARY_3} size={28} />
 					AI Powered Project
 				</h2>
-				<div className={styles.content}>
-					<div className={styles.imageContainer}>
-						<ImageMaximizable
-							alt="Food Cards"
-							dimensions={[THUMBNAIL_SIZE, THUMBNAIL_SIZE]}
-							src={ImgFoodCards}
-						/>
-						<Link className="btn btn-primary" to="/project/food-cards">
+				<div className={styles.container}>
+					<div className={styles.content}>
+						<div className={styles.imageContainer}>
+							<ImageMaximizable
+								alt="Food Cards"
+								dimensions={[THUMBNAIL_SIZE, THUMBNAIL_SIZE]}
+								src={ImgFoodCards}
+							/>
+						</div>
+						<Link
+							className={classNames(
+								'btn btn-primary',
+								styles.viewProjectButton,
+							)}
+							to="/project/food-cards"
+						>
 							View Project
 						</Link>
 					</div>
-
-					<div className={styles.aiInfo}>
-						<AitInfo text={foodCardsAiIntegration} />
+					<div className={styles.aiInfoContainer}>
+						<AitInfo text={aiIntegration as string[]} />
 					</div>
 				</div>
 			</div>
