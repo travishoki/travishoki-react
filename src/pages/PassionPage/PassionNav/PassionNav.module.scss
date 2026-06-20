@@ -3,6 +3,7 @@
 .passionNav {
 	display: flex;
 	justify-content: center;
+	margin: 20px auto;
 
 	@include phone-down {
 		margin-left: 16px;
