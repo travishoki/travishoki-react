@@ -8,7 +8,7 @@
 	margin: 0;
 	padding: 0;
 
-	@include phone-down {
+	@media (max-width: #{$nav-breakpoint - 1}) {
 		overflow: hidden;
 
 		li:last-child {
@@ -26,7 +26,7 @@
 		}
 	}
 
-	@include tablet-up {
+	@media (min-width: $nav-breakpoint) {
 		display: flex;
 		float: right;
 	}
@@ -34,7 +34,7 @@
 	li {
 		line-height: 60px;
 
-		@include phone-down {
+		@media (max-width: #{$nav-breakpoint - 1}) {
 			display: block;
 		}
 	}

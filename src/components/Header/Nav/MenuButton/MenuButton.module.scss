@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .menuBtn {
-	@include tablet-up {
+	@media (min-width: $nav-breakpoint) {
 		display: none;
 	}
 }
