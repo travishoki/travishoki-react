@@ -20,7 +20,7 @@ export const AitInfo = ({ text }: AitInfoProps) => {
 			<div className={styles.aiInfoContent}>
 				<ParagraphLabel>
 					<SvgIconSparkle color={WHITE} size={22} />
-					AI Integration:
+					<span className={styles.label}>AI Integration:</span>
 				</ParagraphLabel>
 				{expanded && <ParagraphList paragraphs={textArray} />}
 			</div>
