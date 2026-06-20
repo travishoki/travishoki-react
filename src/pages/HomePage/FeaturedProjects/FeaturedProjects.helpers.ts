@@ -1,8 +1,8 @@
 import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 export const FEATURED_ITEM_KEYS = [
-	'food-cards',
 	'hoki-skateboards-react-native-game',
+	'spiff-documents',
 	'spiff-translations',
 ];
 
