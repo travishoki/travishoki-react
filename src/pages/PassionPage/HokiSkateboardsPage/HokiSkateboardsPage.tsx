@@ -6,10 +6,10 @@ import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ROUTES } from '~const/Routes.const';
 
-import { ChildrensBookColumn } from './Content/ChildrensBookColumn/ChildrensBookColumn';
-import { RetailWebsiteColumn } from './Content/RetailWebsiteColumn/RetailWebsiteColumn';
+import { ChildrensBookColumn } from './ChildrensBookColumn/ChildrensBookColumn';
 import { CoverImage } from './CoverImage/CoverImage';
 import { Logo } from './Logo/Logo';
+import { RetailWebsiteColumn } from './RetailWebsiteColumn/RetailWebsiteColumn';
 import { SocialMedia } from './SocialMedia/SocialMedia';
 
 import styles from './HokiSkateboardsPage.module.scss';

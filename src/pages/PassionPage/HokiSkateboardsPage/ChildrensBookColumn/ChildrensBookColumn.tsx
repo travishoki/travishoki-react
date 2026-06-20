@@ -4,9 +4,9 @@ import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalog
 import ImgYouShouldAlwaysSkateboard from '~images/passion/hoki-skateboards/you-should-always-skateboard.jpg';
 
 import { appSoftwareList } from './ChildrensBookColumn.const';
-import { ButtonLink } from '../../../ButtonLink/ButtonLink';
-import { PassionLabel } from '../../../PassionLabel/PassionLabel';
-import { Title } from '../../../Title/Title';
+import { ButtonLink } from '../../ButtonLink/ButtonLink';
+import { PassionLabel } from '../../PassionLabel/PassionLabel';
+import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 const AMAZON_HREF =
