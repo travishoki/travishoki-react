@@ -20,7 +20,7 @@ export const HokiSkateboardsPage = () => (
 		<section className="boxed boxed-lg">
 			<Logo />
 			<CoverImage />
-			<p className={styles.description}>
+			<p className={classNames('mb-3', styles.description)}>
 				Hoki Skateboards is my passion project. Through the years I have enjoyed
 				building to my little company. I&apos;ve made and sold skateboards,
 				wrote a children&apos;s book, an app, and met so many cool people.

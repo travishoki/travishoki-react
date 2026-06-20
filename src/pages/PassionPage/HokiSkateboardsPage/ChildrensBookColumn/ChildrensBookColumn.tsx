@@ -9,23 +9,28 @@ import { ButtonLink } from '../../ButtonLink/ButtonLink';
 import { Title } from '../../Title/Title';
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
+import styles from './ChildrensBookColumn.module.scss';
+
 const AMAZON_HREF =
 	'https://www.amazon.com/gp/product/173400830X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=173400830X&linkCode=as2&tag=hokiskatebo0f-20&linkId=d66288b7c17823a393fe530309328062';
 
 export const ChildrensBookColumn = () => (
 	<>
 		<Title title="Children's Book" />
-		<a
-			href={AMAZON_HREF}
-			rel="noreferrer"
-			target="_blank"
-			title="You Should Always Skateboard"
-		>
-			<ProjectImage
-				alt="You Should Always Skateboard"
-				src={ImgYouShouldAlwaysSkateboard}
-			/>
-		</a>
+		<div className={styles.imageLinkWrapper}>
+			<a
+				className={styles.imageLink}
+				href={AMAZON_HREF}
+				rel="noreferrer"
+				target="_blank"
+				title="You Should Always Skateboard"
+			>
+				<ProjectImage
+					alt="You Should Always Skateboard"
+					src={ImgYouShouldAlwaysSkateboard}
+				/>
+			</a>
+		</div>
 		<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 
 		<ParagraphBlock
