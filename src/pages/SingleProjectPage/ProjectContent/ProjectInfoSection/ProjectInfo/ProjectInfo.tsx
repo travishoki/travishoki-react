@@ -8,14 +8,14 @@ import styles from './ProjectInfo.module.scss';
 
 export const ProjectInfo = ({ label, text }: ProjectInfoProps) => {
 	return (
-		<>
+		<div className="mb-3">
 			<ParagraphLabel>{label}:</ParagraphLabel>
 			<TextWithReadMore
 				buttonClassName={styles.readMoreButton}
 				initiallyExpanded
 				paragraphs={makeArray(text)}
 			/>
-		</>
+		</div>
 	);
 };
 
