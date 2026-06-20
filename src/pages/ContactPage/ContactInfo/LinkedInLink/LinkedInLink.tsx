@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import ImgProfilePic from '~images/global/travis-hoki.jpg';
 
 import { ContactLink } from '../ContactLink/ContactLink';
@@ -16,6 +19,6 @@ export const LinkedInLink = () => (
 			width="50"
 		/>
 		<p>Connect with me on</p>
-		<i className="fa fa-linkedin" />
+		<FontAwesomeIcon icon={faLinkedin} />
 	</ContactLink>
 );

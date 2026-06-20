@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { faGit, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import styles from './SocialIcons.module.scss';
@@ -14,7 +16,7 @@ export const SocialIcons = ({ className, reverseColors }: SocialIconsProps) => (
 				target="_blank"
 				title="Travis's Github"
 			>
-				<i className={classNames('fa fa-git', styles.icon)} />
+				<FontAwesomeIcon className={styles.icon} icon={faGit} />
 			</a>
 		</li>
 		<li>
@@ -25,7 +27,7 @@ export const SocialIcons = ({ className, reverseColors }: SocialIconsProps) => (
 				target="_blank"
 				title="Travis's Linked In"
 			>
-				<i className="fa fa-linkedin" />
+				<FontAwesomeIcon icon={faLinkedin} />
 			</a>
 		</li>
 	</ul>

@@ -1,21 +1,25 @@
 import React from 'react';
 
-import classNames from 'classnames';
+import {
+	faSearchPlus,
+	IconDefinition,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './OverlayWithIcon.module.scss';
 
 export const OverlayWithIcon = ({
-	iconClassName = 'fa-search-plus',
+	icon = faSearchPlus,
 	onClick,
 }: ZoomOverlayProps) => {
 	return (
 		<div className={styles.overlayWithIcon} onClick={onClick}>
-			<i className={classNames('fa', iconClassName)} />
+			<FontAwesomeIcon icon={icon} />
 		</div>
 	);
 };
 
 type ZoomOverlayProps = {
-	iconClassName?: string;
+	icon?: IconDefinition;
 	onClick: () => void;
 };

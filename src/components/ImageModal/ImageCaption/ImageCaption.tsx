@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import { faCircleInfo, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import styles from './ImageCaption.module.scss';
 
 export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
@@ -18,7 +21,7 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 				}
 				onClick={toggle}
 			>
-				<i className="fa fa-info" />
+				<FontAwesomeIcon icon={faCircleInfo} />
 			</button>
 		);
 	}
@@ -27,7 +30,7 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 		<div className={styles[size]}>
 			{children}
 			<button className={styles.iconButton} onClick={toggle}>
-				<i className="fa fa-times" />
+				<FontAwesomeIcon icon={faXmark} />
 			</button>
 		</div>
 	);

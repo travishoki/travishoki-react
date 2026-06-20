@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import styles from './TechCatalogueHeader.module.scss';
@@ -14,7 +16,7 @@ export const TechCatalogueHeader = ({
 		onClick={onToggle}
 	>
 		{title}
-		<i className={`fa fa-${open ? 'chevron-up' : 'chevron-down'}`} />
+		<FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} />
 	</button>
 );
 

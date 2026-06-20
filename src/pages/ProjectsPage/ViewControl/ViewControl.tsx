@@ -1,11 +1,14 @@
 import React from 'react';
 
+import { faThLarge, faThList } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import styles from './ViewControl.module.scss';
 
 export const ViewControl = ({ grid = false, toggleView }: ViewControlProps) => {
 	return (
 		<p className={styles.viewControls} onClick={toggleView}>
-			View: <i className={`fa fa-${grid ? 'th-large' : 'th-list'}`} />
+			View: <FontAwesomeIcon icon={grid ? faThLarge : faThList} />
 		</p>
 	);
 };

@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import styles from './HowItsMadeLinks.module.scss';
 
 const linkProps = {
@@ -16,7 +20,7 @@ export const HowItsMadeLinks = () => {
 					href="https://github.com/travishoki/travishoki-react"
 					{...linkProps}
 				>
-					<i className="fa fa-github" />
+					<FontAwesomeIcon icon={faGithub} />
 					<p className={styles.howItsMadeLinkLabel}>Github</p>
 					<p className={styles.howItsMadeLinkDescription}>Source Code</p>
 				</a>
@@ -25,7 +29,7 @@ export const HowItsMadeLinks = () => {
 					href="https://travishoki.com/storybook-static"
 					{...linkProps}
 				>
-					<i className="fa fa-book" />
+					<FontAwesomeIcon icon={faBook} />
 					<p className={styles.howItsMadeLinkLabel}>Storybook</p>
 					<p className={styles.howItsMadeLinkDescription}>Component Library</p>
 				</a>

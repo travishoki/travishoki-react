@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import styles from './BackToTop.module.scss';
@@ -27,7 +29,7 @@ export const BackToTop = () => {
 			className={classNames(styles.backToTop, { [styles.visible]: visible })}
 			onClick={scrollToTop}
 		>
-			<i className="fa fa-chevron-up" />
+			<FontAwesomeIcon icon={faChevronUp} />
 		</button>
 	);
 };

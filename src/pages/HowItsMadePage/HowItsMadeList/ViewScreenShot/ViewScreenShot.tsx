@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { faImage } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import { ImageModal } from '~components/ImageModal/ImageModal/ImageModal';
@@ -24,8 +26,9 @@ export const ViewScreenShot = ({
 				/>
 			)}
 
-			<i
-				className={classNames('fa fa-image', styles.viewScreenShot)}
+			<FontAwesomeIcon
+				className={classNames(styles.viewScreenShot)}
+				icon={faImage}
 				onClick={() => setModalOpen(true)}
 			/>
 		</>

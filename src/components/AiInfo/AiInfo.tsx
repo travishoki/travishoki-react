@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import { MotionExpand } from '~animations/MotionExpand';
@@ -36,7 +38,7 @@ export const AitInfo = ({ text }: AitInfoProps) => {
 					className={classNames('btn btn-secondary', styles.toggleButton)}
 					onClick={() => setExpanded(!expanded)}
 				>
-					<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
+					<FontAwesomeIcon icon={expanded ? faChevronUp : faChevronDown} />
 					{expanded ? 'Close' : 'Open'}
 				</button>
 			)}

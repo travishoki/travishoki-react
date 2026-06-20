@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import styles from './CloseButton.module.scss';
 
 export const CloseButton = ({ onClick }: CloseButtonProps) => (
@@ -11,7 +14,7 @@ export const CloseButton = ({ onClick }: CloseButtonProps) => (
 			onClick();
 		}}
 	>
-		<i className="fa fa-close" />
+		<FontAwesomeIcon icon={faXmark} />
 	</button>
 );
 

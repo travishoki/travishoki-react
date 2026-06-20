@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { faBook, faMobile } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +18,7 @@ export const PassionNav = () => (
 				}
 				to={ROUTES.HOKI_SKATEBOARDS}
 			>
-				Skate Book <i className="fa fa-book" />
+				Skate Book <FontAwesomeIcon icon={faBook} />
 			</NavLink>
 			<NavLink
 				className={({ isActive }) =>
@@ -24,7 +26,7 @@ export const PassionNav = () => (
 				}
 				to={ROUTES.MOBILE_APP}
 			>
-				Skate App <i className="fa fa-mobile" />
+				Skate App <FontAwesomeIcon icon={faMobile} />
 			</NavLink>
 			<NavLink
 				className={({ isActive }) =>
@@ -32,7 +34,7 @@ export const PassionNav = () => (
 				}
 				to={ROUTES.FIGHT_FOR_YOUR_DREAMS}
 			>
-				Fight Book <i className="fa fa-book" />
+				Fight Book <FontAwesomeIcon icon={faBook} />
 			</NavLink>
 		</nav>
 	</div>

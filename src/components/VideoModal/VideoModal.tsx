@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import styles from './VideoModal.module.scss';
 
 export const VideoModal = ({ onClose, src }: VideoModalProps) => (
@@ -16,7 +19,7 @@ export const VideoModal = ({ onClose, src }: VideoModalProps) => (
 				src={src}
 			/>
 			<button className={styles.videoModalClose} onClick={onClose}>
-				<i className="fa fa-close" />
+				<FontAwesomeIcon icon={faXmark} />
 			</button>
 		</div>
 	</div>

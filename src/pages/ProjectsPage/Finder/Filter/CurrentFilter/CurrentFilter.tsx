@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechFilterType } from '~const/Tech.const';
 
@@ -23,8 +26,9 @@ export const CurrentFilter = ({
 				<TechIcon className={styles.currentFilterTechIcon} name={filter} />
 				<p>{label}</p>
 			</div>
-			<i
-				className="fa fa-close pointer f-right"
+			<FontAwesomeIcon
+				className="pointer f-right"
+				icon={faXmark}
 				onClick={onClearAndCloseFilter}
 			/>
 		</div>

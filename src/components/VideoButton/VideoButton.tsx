@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faPlay, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { DivMaybeAnimateScale } from '~animations/DivMaybeAnimateScale';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
@@ -23,7 +26,7 @@ export const VideoButton = ({
 			style={{ height: size, width: size }}
 		>
 			<div className={styles.videoButtonContents}>
-				<OverlayWithIcon iconClassName="fa-play" onClick={() => onClick()} />
+				<OverlayWithIcon icon={faPlay} onClick={() => onClick()} />
 				<img
 					alt="Video thumbnail"
 					className={styles.videoButtonImage}
@@ -35,7 +38,7 @@ export const VideoButton = ({
 				onClick={() => onClick()}
 				style={{ fontSize, height: iconSize, width: iconSize }}
 			>
-				<i className="fa fa-video-camera" />
+				<FontAwesomeIcon icon={faVideo} />
 			</span>
 		</DivMaybeAnimateScale>
 	);

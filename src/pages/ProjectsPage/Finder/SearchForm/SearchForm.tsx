@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import styles from './SearchForm.module.scss';
@@ -23,7 +25,9 @@ export const SearchForm = ({
 				type="text"
 				value={searchTerm || ''}
 			/>
-			{searchTerm && <i className="fa fa-close" onClick={onClearSearchTerm} />}
+			{searchTerm && (
+				<FontAwesomeIcon icon={faXmark} onClick={onClearSearchTerm} />
+			)}
 		</div>
 	</form>
 );

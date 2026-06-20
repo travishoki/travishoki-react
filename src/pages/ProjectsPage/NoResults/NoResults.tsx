@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { getLabelByKey } from '~helpers/projects';
 
 import styles from './NoResults.module.scss';
@@ -19,13 +22,13 @@ export const NoResults = ({
 
 			{filter && (
 				<p onClick={onClearFilter}>
-					Filter: {filterLabel} <i className="fa fa-close" />
+					Filter: {filterLabel} <FontAwesomeIcon icon={faXmark} />
 				</p>
 			)}
 
 			{searchTerm && (
 				<p onClick={onClearSearchTerm}>
-					Search Term: {searchTerm} <i className="fa fa-close" />
+					Search Term: {searchTerm} <FontAwesomeIcon icon={faXmark} />
 				</p>
 			)}
 		</div>

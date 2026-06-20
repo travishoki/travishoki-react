@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import styles from './ReadMoreButton.module.scss';
@@ -13,7 +15,7 @@ export const ReadMoreButton = ({
 		className={classNames(styles.readMoreButton, className)}
 		onClick={onToggle}
 	>
-		<i className={`fa fa-chevron-${expanded ? 'up' : 'down'}`} />
+		<FontAwesomeIcon icon={expanded ? faChevronUp : faChevronDown} />
 		{expanded ? 'Read Less' : 'Read More'}
 	</button>
 );
