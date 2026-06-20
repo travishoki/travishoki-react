@@ -27,7 +27,7 @@ const PROJECTS: ProjectInput[] = [
 			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed. It's far beyond him just being a picky eater. He had such strong aversions to foods and smells that he will gag and throw up if he sees or smells food that he doesn't like. It causes him anxiety having to figure out what to eat. It's a struggle every day, practically every meal.",
 			'This is a website that catalogues his "Safe Foods", foods that he will reliably eat. That makes it easier for him to visually see a menu of the foods he likes, making the decision process a little less painful.',
 			'The cards are styled like Pokemon cards, just for fun.',
-			"This project is a work in progress It's just a little site for son and I. I've been pulling him into the dev process to teach him coding as well.",
+			"This project is a work in progress. It's just a little site for my son and me. I've been pulling him into the dev process to teach him coding as well.",
 		],
 		gallery: [
 			Images.ImgFoodCards1,
@@ -172,7 +172,7 @@ const PROJECTS: ProjectInput[] = [
 			'Integrating a Google Calendar into the site',
 		],
 		description: [
-			"Website for a family friend's salon on wheels. ",
+			"This is a website for a family friend's salon on wheels.",
 			'Tiff would drive her bus to workplaces, park out front, and give hair cuts to employees during their work day.',
 		],
 		gallery: [
@@ -219,7 +219,7 @@ const PROJECTS: ProjectInput[] = [
 			'Create screen for selecting the data source as well as a screen platform specific pages info.',
 		],
 		description:
-			"Helping to create individual quickflows for creating platform specific custom books. Customers will come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
+			"Helped create individual quickflows for platform-specific custom books. Customers come to the quickflow from Instagram's storefront, then create a book by picking a data source.",
 		gallery: [Images.ImgChatbooksComCardsQuickFlowSources],
 		learned: '',
 		subtitle: 'Cards Quick Flow Sources',

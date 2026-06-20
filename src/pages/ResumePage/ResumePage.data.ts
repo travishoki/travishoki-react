@@ -49,7 +49,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Architected and deployed a highly scalable, enterprise-wide string translation infrastructure, expanding global platform accessibility.',
 			'Engineered custom automated tooling scripts to enforce repository cleanliness, systematically driving down technical debt.',
 			'Advanced corporate engineering quality standards by establishing strict ESLint rule sets, expanding automated Unit Testing, and driving TypeScript adoption.',
-			'Elevate the codebase to Salesforce standards through extensive unit-test coverage',
+			'Elevated the codebase to Salesforce standards through extensive unit-test coverage.',
 		],
 		techs: [
 			CLAUDE_CODE,
@@ -103,7 +103,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 			'Mentored mid-level and junior developers through strategic pair-programming sessions, accelerating velocity and feature shipping.',
 			'Upgraded legacy core technologies and modernized syntax paradigms to optimize runtime performance.',
 			'Created and documented standards and best practices for the Front End Team',
-			'Resolved bugs and reinforce existing features for reliability',
+			'Resolved bugs and reinforced existing features for reliability.',
 		],
 		techs: [REACT_JS, REDUX, JAVASCRIPT, TYPESCRIPT, JEST, CSS, HTML],
 	},
