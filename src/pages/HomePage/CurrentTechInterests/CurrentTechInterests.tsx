@@ -29,7 +29,7 @@ export const CurrentTechInterests = () => {
 	};
 
 	return (
-		<section className={`primary-two ${styles.currentTechInterests}`}>
+		<section className={classNames('primary-two', styles.currentTechInterests)}>
 			<CurrentTechInterestsHeader />
 
 			<InterestColumns onScroll={handleScroll} ref={trackRef} />

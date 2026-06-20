@@ -28,7 +28,7 @@ export const HokiSkateboardsPage = () => (
 			<SocialMedia />
 		</section>
 		<section className="boxed boxed-lg">
-			<div className={`${styles.hokiSkateboardsInnerContent} mb-3`}>
+			<div className={classNames(styles.hokiSkateboardsInnerContent, 'mb-3')}>
 				<div className="row">
 					<div className={classNames('col-sm-6 pt-3', styles.column)}>
 						<RetailWebsiteColumn />

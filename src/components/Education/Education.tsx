@@ -1,12 +1,14 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ImgPopIn } from '~animations/ImgPopIn';
 import ImgUvu from '~images/education/uvu.png';
 
 import styles from './Education.module.scss';
 
 export const Education = () => (
-	<section className={`white ${styles.educationComponent}`}>
+	<section className={classNames('white', styles.educationComponent)}>
 		<h2>Utah Valley University</h2>
 		<ImgPopIn
 			alt="Utah Valley University Logo"

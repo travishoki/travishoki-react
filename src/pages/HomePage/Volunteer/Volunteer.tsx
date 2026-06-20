@@ -1,14 +1,16 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { ImgPopIn } from '~animations/ImgPopIn';
 import ImgScoutingAmerica from '~images/volunteer/scouting-america.png';
 
 import styles from './Volunteer.module.scss';
 
 export const Volunteer = () => (
-	<section className={`primary-three ${styles.volunteerComponent}`}>
+	<section className={classNames('primary-three', styles.volunteerComponent)}>
 		<h2 className="mb-0">Volunteer Work</h2>
-		<p className={`mb-2 ${styles.volunteerComponentSubtitle}`}>
+		<p className={classNames('mb-2', styles.volunteerComponentSubtitle)}>
 			Scouting America
 		</p>
 
@@ -20,8 +22,8 @@ export const Volunteer = () => (
 			width="177"
 		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>
-		<div className={`row ${styles.leaderPositions}`}>
-			<div className={`col-auto ${styles.leaderPosition}`}>
+		<div className={classNames('row', styles.leaderPositions)}>
+			<div className={classNames('col-auto', styles.leaderPosition)}>
 				<p>Bear&apos;s Assistant Den Leader</p>
 				<p>Since Spring of 2025</p>
 			</div>

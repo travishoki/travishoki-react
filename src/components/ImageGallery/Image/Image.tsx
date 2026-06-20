@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { GalleryImage } from '~components/ImageGallery/types';
 import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 
@@ -21,12 +23,15 @@ export const Image = ({
 
 	return (
 		<div
-			className={`${styles.imageWrapper}${square ? '' : ` ${styles.imageWrapperRect}`}`}
+			className={classNames(
+				styles.imageWrapper,
+				!square && styles.imageWrapperRect,
+			)}
 		>
 			<OverlayWithIcon onClick={() => setModalOpen(true)} />
 			<img
 				alt={alt}
-				className={`${styles.image}${square ? '' : ` ${styles.imageRect}`}`}
+				className={classNames(styles.image, !square && styles.imageRect)}
 				onLoad={onLoad}
 				src={filename}
 			/>
