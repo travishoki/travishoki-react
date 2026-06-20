@@ -4,6 +4,7 @@ import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ParagraphLabel } from '~components/ParagraphLabel/ParagraphLabel';
+import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
 
@@ -35,11 +36,7 @@ export const MobileAppPage = () => {
 						/>
 						<ParagraphLabel>Description:</ParagraphLabel>
 
-						{hokiSkateboardsMobileAppDescription.map((paragraph, index) => (
-							<p key={index} className="indent">
-								{paragraph}
-							</p>
-						))}
+						<ParagraphList paragraphs={hokiSkateboardsMobileAppDescription} />
 
 						<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
 					</div>
