@@ -5,24 +5,15 @@ import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 import { ROUTES } from '~const/Routes.const';
-import * as TECH from '~const/Tech.const';
 
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
 import { APP_GALLERY_IMAGES } from './MobileAppImageGallery/MobileAppImageGallery.data';
+import { techs } from './MobileAppPage.const';
 import { MobileAppVideo } from './MobileAppVideo/MobileAppVideo';
 import { PassionLabel } from '../PassionLabel/PassionLabel';
 import { Title } from '../Title/Title';
 
 import styles from './MobileApp.module.scss';
-
-const techs: TECH.TechKey[] = [
-	TECH.CSS,
-	TECH.HTML,
-	TECH.JAVASCRIPT,
-	TECH.REACT_JS,
-	TECH.REACT_NATIVE,
-	TECH.FIREBASE,
-];
 
 export const MobileAppPage = () => {
 	return (
