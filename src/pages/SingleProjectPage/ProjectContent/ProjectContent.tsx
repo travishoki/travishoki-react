@@ -7,7 +7,6 @@ import { getImgAltText } from '~helpers/images';
 
 import { ProjectHeader } from './ProjectHeader/ProjectHeader';
 import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
-import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
 const DEFAULT_DIMENSIONS = [0, 0];
@@ -55,19 +54,9 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 					)}
 				</div>
 				<div className="col-sm-7">
-					<ProjectInfoSection
-						company={company}
-						companySlug={companySlug}
-						contributions={contributions}
-						date={date}
-						description={description}
-						learned={learned}
-						techs={techs}
-					/>
+					<ProjectInfoSection project={project} />
 				</div>
 			</div>
-
-			{live && <ViewLiveSite url={url} />}
 		</>
 	);
 };

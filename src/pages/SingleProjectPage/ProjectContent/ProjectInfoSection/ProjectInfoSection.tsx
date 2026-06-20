@@ -6,20 +6,25 @@ import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalog
 
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
+import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { CLIENT_LOGOS } from '../../../ProjectsPage/ProjectsPage.ClientLogos.data';
 import { ProjectType } from '../../../ProjectsPage/ProjectsPage.types';
 
 import styles from './ProjectInfoSection.module.scss';
 
-export const ProjectInfoSection = ({
-	company,
-	companySlug,
-	contributions,
-	date,
-	description,
-	learned,
-	techs,
-}: ProjectInfoSectionProps) => {
+export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
+	const {
+		company,
+		companySlug,
+		contributions,
+		date,
+		description,
+		learned,
+		live,
+		techs,
+		url,
+	} = project;
+
 	return (
 		<>
 			<img
@@ -27,16 +32,14 @@ export const ProjectInfoSection = ({
 				className={classNames('center', styles.logo)}
 				src={CLIENT_LOGOS[companySlug]}
 			/>
-
 			{date && <ProjectInfo label="Date Range" text={date} />}
-
 			{description.length && (
 				<ProjectInfo label="Description" text={description} />
 			)}
-
 			<Contributions contributions={contributions} />
-
 			{learned && <ProjectInfo label="What I Learned" text={learned} />}
+
+			{live && <ViewLiveSite url={url} />}
 
 			{techs && techs.length > 0 && (
 				<TechListCatalogue initialExpanded list={techs} />
@@ -45,13 +48,6 @@ export const ProjectInfoSection = ({
 	);
 };
 
-type ProjectInfoSectionProps = Pick<
-	ProjectType,
-	| 'company'
-	| 'companySlug'
-	| 'contributions'
-	| 'date'
-	| 'description'
-	| 'learned'
-	| 'techs'
->;
+type ProjectInfoSectionProps = {
+	project: ProjectType;
+};
