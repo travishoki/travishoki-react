@@ -41,7 +41,9 @@ const PROJECTS: ProjectInput[] = [
 				filename: Images.ImgFoodCards3,
 			},
 		],
-		learned: ['How to implement a "fuzzy" search'],
+		learned: [
+			'I haven\'t programmed a "fuzzy" search. It was interesting learning how matches are scored.',
+		],
 		live: true,
 		subtitle: 'Safe Foods',
 		techs: [
