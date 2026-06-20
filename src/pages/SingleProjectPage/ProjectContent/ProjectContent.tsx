@@ -10,8 +10,6 @@ import { ProjectInfoSection } from './ProjectInfoSection/ProjectInfoSection';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';
 import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
-import styles from './ProjectContent.module.scss';
-
 const DEFAULT_DIMENSIONS = [0, 0];
 
 export const ProjectContent = ({ project }: ProjectContentProps) => {
@@ -40,7 +38,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 	});
 
 	return (
-		<div className={styles.projectContent}>
+		<>
 			<ProjectHeader company={company} subtitle={subtitle} />
 
 			<div className="row">
@@ -70,7 +68,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 			</div>
 
 			{live && <ViewLiveSite url={url} />}
-		</div>
+		</>
 	);
 };
 
