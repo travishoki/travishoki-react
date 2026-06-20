@@ -3,7 +3,7 @@ import React from 'react';
 import ImgAxeDevToolsReport from '~images/how-its-made/axe-dev-tools-report.jpg';
 import ImgPingdomSpeedTestReport from '~images/how-its-made/pingdom-speed-test.jpg';
 
-import { ItemLink } from './ItemLink/ItemLink';
+import * as Link from './Links';
 import { ViewScreenShot } from './ViewScreenShot/ViewScreenShot';
 
 import styles from './HowItsMadeList.module.scss';
@@ -13,82 +13,34 @@ export const HowItsMadeList = () => {
 		<div className="boxed">
 			<ul className={styles.howItsMadeList}>
 				<li>
-					Built with{' '}
-					<ItemLink href="https://react.dev" title="ReactJS Documentation">
-						ReactJS
-					</ItemLink>
+					Built with <Link.ReactJS />
 				</li>
 				<li>
-					<ItemLink
-						href="https://www.typescriptlang.org"
-						title="Typescript NPM Module"
-					>
-						Typescript
-					</ItemLink>{' '}
-					typed Javascript
+					<Link.Typescript /> typed Javascript
 				</li>
 				<li>
-					Unit tested with{' '}
-					<ItemLink href="https://jestjs.io/docs/getting-started" title="Jest">
-						Jest
-					</ItemLink>
+					Unit tested with <Link.Jest />
 				</li>
 				<li>
-					<ItemLink href="https://eslint.org" title="Eslint">
-						Eslint
-					</ItemLink>{' '}
-					for consistent coding style
+					<Link.Eslint /> for consistent coding style
 				</li>
 				<li>
-					<ItemLink href="https://storybook.js.org" title="Storybook">
-						Storybook
-					</ItemLink>{' '}
-					for component management
+					<Link.Storybook /> for component management
 				</li>
 				<li>
-					<ItemLink href="https://typicode.github.io/husky" title="Husky">
-						Husky
-					</ItemLink>{' '}
-					for Git lifecycle automated scripts
+					<Link.Husky /> for Git lifecycle automated scripts
 				</li>
 				<li>
-					Build with some assistance from{' '}
-					<ItemLink href="https://claude.com" title="Claude Code">
-						Claude Code
-					</ItemLink>
+					Built with some assistance from <Link.ClaudeCode />
 				</li>
 				<li>
-					<ItemLink
-						href="https://sass-lang.com"
-						title="Sass Land Documentation"
-					>
-						SCSS
-					</ItemLink>{' '}
-					preprocessed styling with{' '}
-					<ItemLink
-						href="https://github.com/css-modules/css-modules"
-						title="CSS Modules Documentation"
-					>
-						CSS Modules
-					</ItemLink>
+					<Link.Scss /> preprocessed styling with <Link.CssModules />
 				</li>
 				<li>
-					Animated with{' '}
-					<ItemLink
-						href="https://motion.dev/docs/react"
-						title="CSS Modules Documentation"
-					>
-						Motion
-					</ItemLink>
+					Animated with <Link.Motion />
 				</li>
 				<li>
-					ADA accessibility optimized using{' '}
-					<ItemLink
-						href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
-						title="axe DevTools Google Chrome Plugin"
-					>
-						axe DevTools
-					</ItemLink>
+					ADA accessibility optimized using <Link.AxeDevTools />
 					<ViewScreenShot
 						alt="Axe DevTools Report"
 						/* eslint-disable-next-line no-magic-numbers */
@@ -97,13 +49,7 @@ export const HowItsMadeList = () => {
 					/>
 				</li>
 				<li>
-					<ItemLink
-						href="https://tools.pingdom.com"
-						title="Pingdom Website Speed Test"
-					>
-						Pingdom
-					</ItemLink>{' '}
-					website speed test optimized (A 97)
+					<Link.Pingdom /> website speed test optimized (A 97)
 					<ViewScreenShot
 						alt="Pingdom Website Speed Test Report"
 						/* eslint-disable-next-line no-magic-numbers */
@@ -112,10 +58,7 @@ export const HowItsMadeList = () => {
 					/>
 				</li>
 				<li>
-					Website hosted with Bluehost{' '}
-					<ItemLink href="https://www.bluehost.com/" title="Bluehost ">
-						Bluehost
-					</ItemLink>
+					Website hosted with <Link.Bluehost />
 				</li>
 			</ul>
 		</div>
