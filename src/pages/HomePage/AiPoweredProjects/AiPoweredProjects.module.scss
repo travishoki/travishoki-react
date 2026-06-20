@@ -1,7 +1,32 @@
+@use 'styles' as *;
+
 .aiPoweredProjects {
 	padding: 40px 0;
 }
 
+.content {
+	align-items: flex-start;
+	display: flex;
+	gap: 24px;
+
+	@include phone-down {
+		flex-direction: column;
+	}
+}
+
+.aiInfo {
+	flex: 1;
+}
+
 .imageContainer {
-	display: inline-block;
+	flex-shrink: 0;
+	text-align: center;
+
+	@include phone-down {
+		width: 100%;
+	}
+
+	img {
+		margin-bottom: 20px;
+	}
 }

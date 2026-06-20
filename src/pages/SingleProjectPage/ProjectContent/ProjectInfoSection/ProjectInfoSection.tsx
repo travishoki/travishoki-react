@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { AitInfo } from '~components/AiInfo/AiInfo';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
 
-import { AitInfo } from './AiInfo/AiInfo';
 import { Contributions } from './Contributions/Contributions';
 import { ProjectInfo } from './ProjectInfo/ProjectInfo';
 import { ViewLiveSite } from './ViewLiveSite/ViewLiveSite';

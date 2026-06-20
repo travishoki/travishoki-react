@@ -18,6 +18,7 @@ const PROJECTS: ProjectInput[] = [
 		contributions: [
 			'Connect to Firebase for inventorying food',
 			'Design the website and collected food images',
+			'Ingegrate wtih an LLM for searching product in plain English.',
 		],
 		description: [
 			"My son has Avoidant/Restrictive Food Intake Disorder (ARFID). In simple terms, he's extremely difficult to feed.",

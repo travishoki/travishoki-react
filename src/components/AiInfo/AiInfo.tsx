@@ -11,7 +11,7 @@ import { SvgIconSparkle } from '~svg/SvgIconSparkle';
 import styles from './AiInfo.module.scss';
 
 export const AitInfo = ({ text }: AitInfoProps) => {
-	const [expanded, setExpanded] = useState(true);
+	const [expanded, setExpanded] = useState(false);
 
 	const textArray = makeArray(text);
 
@@ -20,7 +20,7 @@ export const AitInfo = ({ text }: AitInfoProps) => {
 			<div className={styles.aiInfoContent}>
 				<ParagraphLabel>
 					<SvgIconSparkle color={WHITE} size={22} />
-					<span className={styles.label}>AI Integration:</span>
+					<span className={styles.label}>AI Integration</span>
 				</ParagraphLabel>
 				{expanded && <ParagraphList paragraphs={textArray} />}
 			</div>

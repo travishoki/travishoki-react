@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { AitInfo } from 'src/pages/SingleProjectPage/ProjectContent/ProjectInfoSection/AiInfo/AiInfo';
+import { Link } from 'react-router-dom';
 
+import { AitInfo } from '~components/AiInfo/AiInfo';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable/ImageMaximizable';
 import ImgFoodCards from '~images/websites/thumbnail/food-cards.jpg';
 import { SvgIconSparkle } from '~svg/SvgIconSparkle';
@@ -18,17 +19,24 @@ export const AiPoweredProjects = () => {
 			<div className="boxed boxed-lg">
 				<h2>
 					<SvgIconSparkle size={28} />
-					AI Powered Projects
+					AI Powered Project
 				</h2>
-				<div className={styles.imageContainer}>
-					<ImageMaximizable
-						alt="Food Cards"
-						dimensions={[THUMBNAIL_SIZE, THUMBNAIL_SIZE]}
-						src={ImgFoodCards}
-					/>
-				</div>
+				<div className={styles.content}>
+					<div className={styles.imageContainer}>
+						<ImageMaximizable
+							alt="Food Cards"
+							dimensions={[THUMBNAIL_SIZE, THUMBNAIL_SIZE]}
+							src={ImgFoodCards}
+						/>
+						<Link className="btn btn-primary" to="/project/food-cards">
+							View Project
+						</Link>
+					</div>
 
-				<AitInfo text={foodCardsAiIntegration} />
+					<div className={styles.aiInfo}>
+						<AitInfo text={foodCardsAiIntegration} />
+					</div>
+				</div>
 			</div>
 		</section>
 	);
