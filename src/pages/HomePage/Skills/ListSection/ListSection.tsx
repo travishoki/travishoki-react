@@ -20,30 +20,32 @@ export const ListSection = () => {
 
 	return (
 		<div className="boxed boxed-md">
-			<div className="row">
-				<div className="col-md-6">
-					<ListColumn items={listA} />
-				</div>
-				<div className="col-md-6">
-					{isMobile ? (
-						<MotionExpand isOpen={expanded}>
+			<div className={styles.container}>
+				<div className="row">
+					<div className="col-md-6">
+						<ListColumn items={listA} />
+					</div>
+					<div className="col-md-6">
+						{isMobile ? (
+							<MotionExpand isOpen={expanded}>
+								<ListColumn items={listB} />
+							</MotionExpand>
+						) : (
 							<ListColumn items={listB} />
-						</MotionExpand>
-					) : (
-						<ListColumn items={listB} />
-					)}
+						)}
+					</div>
 				</div>
-			</div>
 
-			{isMobile && (
-				<div className={styles.readMoreWrapper}>
-					<ReadMoreButton
-						className={styles.listSectionReadMore}
-						expanded={expanded}
-						onToggle={() => setExpanded(!expanded)}
-					/>
-				</div>
-			)}
+				{isMobile && (
+					<div className={styles.readMoreWrapper}>
+						<ReadMoreButton
+							className={styles.listSectionReadMore}
+							expanded={expanded}
+							onToggle={() => setExpanded(!expanded)}
+						/>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };
