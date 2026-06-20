@@ -6,21 +6,9 @@
 	color: white;
 	left: 0;
 	margin: 0;
-	min-height: 36px;
-	padding: 8px 40px 8px 10px;
 	position: absolute;
 	right: 0;
 	z-index: $z-index-image-caption;
-}
-
-.sm {
-	@extend %caption-base;
-	font-size: 12px;
-}
-
-.lg {
-	@extend %caption-base;
-	font-size: 16px;
 }
 
 %icon-button-base {
@@ -32,21 +20,57 @@
 	color: white;
 	cursor: pointer;
 	display: flex;
-	font-size: 11px;
-	height: 24px;
 	justify-content: center;
 	position: absolute;
-	right: 8px;
-	width: 24px;
 	z-index: $z-index-image-caption-button;
 }
 
-.iconButton {
-	@extend %icon-button-base;
-	top: 8px;
+.sm {
+	@extend %caption-base;
+	font-size: 12px;
+	min-height: 36px;
+	padding: 8px 40px 8px 10px;
+
+	.iconButton {
+		@extend %icon-button-base;
+		font-size: 11px;
+		height: 24px;
+		right: 8px;
+		top: 8px;
+		width: 24px;
+	}
+}
+
+.lg {
+	@extend %caption-base;
+	font-size: 24px;
+	min-height: 72px;
+	padding: 16px 80px 16px 20px;
+
+	.iconButton {
+		@extend %icon-button-base;
+		font-size: 22px;
+		height: 48px;
+		right: 16px;
+		top: 16px;
+		width: 48px;
+	}
 }
 
 .iconButtonBottom {
 	@extend %icon-button-base;
 	bottom: 8px;
+	font-size: 11px;
+	height: 24px;
+	right: 8px;
+	width: 24px;
+}
+
+.iconButtonBottomLg {
+	@extend %icon-button-base;
+	bottom: 16px;
+	font-size: 22px;
+	height: 48px;
+	right: 16px;
+	width: 48px;
 }

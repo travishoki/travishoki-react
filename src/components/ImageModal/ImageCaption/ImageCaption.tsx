@@ -12,7 +12,12 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 
 	if (!visible) {
 		return (
-			<button className={styles.iconButtonBottom} onClick={toggle}>
+			<button
+				className={
+					size === 'lg' ? styles.iconButtonBottomLg : styles.iconButtonBottom
+				}
+				onClick={toggle}
+			>
 				<i className="fa fa-info" />
 			</button>
 		);
