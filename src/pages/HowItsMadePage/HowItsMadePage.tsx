@@ -13,8 +13,8 @@ export const HowItsMadePage = () => {
 	return (
 		<div id="container">
 			<PageSeo seoData={PAGE_SEO[ROUTES.HOW_ITS_MADE]} />
+			<h1>How This Site Was Made</h1>
 			<section className={styles.howItsMadePage}>
-				<h2>How This Site Was Made</h2>
 				<HowItsMadeLinks />
 				<HowItsMadeList />
 			</section>
