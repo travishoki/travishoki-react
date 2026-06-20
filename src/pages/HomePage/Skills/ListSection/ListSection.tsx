@@ -19,7 +19,7 @@ export const ListSection = () => {
 	const isMobile = useIsMobile();
 
 	return (
-		<div className="boxed boxed-lg">
+		<div className="boxed boxed-md">
 			<div className="row">
 				<div className="col-md-6">
 					<ListColumn items={listA} />

@@ -7,7 +7,6 @@ export const Skills = () => {
 	return (
 		<section className="primary-three">
 			<Title />
-
 			<ListSection />
 		</section>
 	);
