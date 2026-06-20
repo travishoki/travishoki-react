@@ -24,11 +24,7 @@ export const ProjectInfoSection = ({ project }: ProjectInfoSectionProps) => {
 
 	return (
 		<>
-			{aiIntegration && (
-				<div className={styles.aiIntegration}>
-					<AitInfo text={aiIntegration} />
-				</div>
-			)}
+			{aiIntegration && <AitInfo text={aiIntegration} />}
 
 			{date && <ProjectInfo label="Date Range" text={date} />}
 

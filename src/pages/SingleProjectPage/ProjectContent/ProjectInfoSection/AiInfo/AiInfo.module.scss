@@ -1,5 +1,26 @@
 @use 'styles' as *;
 
-.readMoreButton {
-	color: $primary-zero;
+.aiInfo {
+	margin-bottom: 20px;
+}
+
+.aiInfoContent {
+	background: $secondary-three;
+	padding: 20px;
+}
+
+.toggleButton {
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	font-size: 12px;
+	height: 25px;
+	justify-content: center;
+	margin: 0 !important;
+	padding: 0 0 3px 0;
+	width: 100px;
+
+	i {
+		margin-right: 5px;
+	}
 }

@@ -9,11 +9,11 @@
 }
 
 .btn-secondary {
-	background: $primary-four;
+	background: $secondary-three;
 	border: none;
 	transition: background 0.3s ease;
 
 	&:hover {
-		background: $primary-three;
+		background: $secondary-four;
 	}
 }
