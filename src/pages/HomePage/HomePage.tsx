@@ -6,6 +6,7 @@ import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ROUTES } from '~const/Routes.const';
 
 import { About } from './About/About';
+import { AiPoweredProjects } from './AiPoweredProjects/AiPoweredProjects';
 import { Banner } from './Banner/Banner';
 import { CurrentTechInterests } from './CurrentTechInterests/CurrentTechInterests';
 import { FeaturedProjects } from './FeaturedProjects/FeaturedProjects';
@@ -20,6 +21,7 @@ export const HomePage = () => (
 		<About />
 		<TechTiles />
 		<FeaturedProjects />
+		<AiPoweredProjects />
 		<Skills />
 		<CurrentTechInterests />
 		<Education />
