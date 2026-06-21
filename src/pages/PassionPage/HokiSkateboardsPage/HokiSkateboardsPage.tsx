@@ -33,10 +33,10 @@ export const HokiSkateboardsPage = () => (
 		<section>
 			<div className="boxed boxed-lg">
 				<div className="row gy-3">
-					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+					<div className="col-sm-6">
 						<RetailWebsiteColumn />
 					</div>
-					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+					<div className="col-sm-6">
 						<ChildrensBookColumn />
 					</div>
 				</div>
