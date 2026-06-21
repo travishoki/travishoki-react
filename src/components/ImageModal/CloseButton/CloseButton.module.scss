@@ -1,28 +1,7 @@
 @use 'styles' as *;
 
 .closeIcon {
-	$size: 50px;
-	@include border-radius(50%);
-	align-items: center;
-	background: black;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	height: $size;
-	justify-content: center;
 	position: fixed;
 	right: 20px;
 	top: 15px;
-	width: $size;
-
-	svg {
-		color: $white;
-		font-size: 40px;
-	}
-
-	&:hover {
-		svg {
-			color: $gray-one;
-		}
-	}
 }

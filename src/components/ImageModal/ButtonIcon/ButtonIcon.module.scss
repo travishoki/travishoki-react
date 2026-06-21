@@ -1,0 +1,25 @@
+@use 'styles' as *;
+
+.buttonIcon {
+	$size: 50px;
+	@include border-radius(50%);
+	align-items: center;
+	background: black;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	height: $size;
+	justify-content: center;
+	width: $size;
+
+	svg {
+		color: $white;
+		font-size: 40px;
+	}
+
+	&:hover {
+		svg {
+			color: $gray-one;
+		}
+	}
+}
