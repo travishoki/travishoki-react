@@ -2,9 +2,8 @@ import React from 'react';
 
 import { TechFilterType, TechKey } from '~const/Tech.const';
 
-import { FilterItem } from './FilterItem/FilterItem';
+import { ItemContent } from '../ItemContent/ItemContent';
 
-import stylesFilter from './FilterItem/FilterItem.module.scss';
 import styles from './FilterList.module.scss';
 
 export const FilterList = ({
@@ -26,22 +25,24 @@ export const FilterList = ({
 	}
 
 	return (
-		<ul className={styles.filterList}>
+		<div className={styles.filterList}>
 			{!filterTerm && (
-				<li className={stylesFilter.filterItem} onClick={onClearAndCloseFilter}>
-					<p className="m-0">All</p>
-				</li>
+				<ItemContent
+					label="All"
+					onClick={onClearAndCloseFilter}
+					techKey="all"
+				/>
 			)}
 
 			{filterListFiltered.map((item) => (
-				<FilterItem
+				<ItemContent
 					key={item}
-					filter={filter}
-					item={item}
-					onSelectFilter={onSelectFilter}
+					label={item}
+					onClick={onSelectFilter}
+					techKey={item}
 				/>
 			))}
-		</ul>
+		</div>
 	);
 };
 

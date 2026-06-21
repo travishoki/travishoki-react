@@ -1,0 +1,20 @@
+@use 'styles' as *;
+@use '../Filter.variables' as *;
+
+.content {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	gap: 15px;
+	height: $filter-height;
+	justify-content: flex-start;
+	padding: 0 10px;
+
+	&:hover {
+		background: $gray-three;
+	}
+}
+
+.label {
+	margin: 0;
+}

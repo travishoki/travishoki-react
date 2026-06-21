@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { TECH, TechFilterType, TechKey } from '~const/Tech.const';
 
 import { FilterContainer } from '../FilterContainer/FilterContainer';
-import { ItemContent } from './ItemContent/ItemContent';
+import { ItemContent } from '../ItemContent/ItemContent';
 
 import styles from './CurrentFilter.module.scss';
 
