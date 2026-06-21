@@ -29,13 +29,13 @@ export const FightForYourDreamsPage = () => (
 				<CoverImage />
 				<BookHeading />
 				<div className="row gy-3">
-					<div className="col-sm-6 pt-3">
+					<div className="col-sm-6">
 						<div className="boxed boxed-lg">
 							<About />
 							<ImageGallery images={BOOK_LAUCH_GALLERY} />
 						</div>
 					</div>
-					<div className="col-sm-6 pt-3">
+					<div className="col-sm-6">
 						<a
 							href={AMAZON_HREF}
 							rel="noreferrer"
