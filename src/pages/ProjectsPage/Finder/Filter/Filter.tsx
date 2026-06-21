@@ -37,7 +37,6 @@ export const Filter = ({
 					onClearAndCloseFilter={onClearAndCloseFilter}
 				/>
 				<FilterList
-					filter={filter}
 					filterList={filterList}
 					filterTerm={filterTerm}
 					onClearAndCloseFilter={onClearAndCloseFilter}

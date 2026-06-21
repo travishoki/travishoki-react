@@ -7,7 +7,6 @@ import { ItemContent } from '../ItemContent/ItemContent';
 import styles from './FilterList.module.scss';
 
 export const FilterList = ({
-	filter,
 	filterList,
 	filterTerm,
 	onClearAndCloseFilter,
@@ -47,7 +46,6 @@ export const FilterList = ({
 };
 
 type FilterItemsProps = {
-	filter: TechFilterType;
 	filterList: TechKey[];
 	filterTerm: string | null;
 	onClearAndCloseFilter: () => void;
