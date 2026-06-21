@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import { faCircleInfo, faXmark } from '@fortawesome/free-solid-svg-icons';
-import classNames from 'classnames';
 
 import { ButtonIcon } from '../ButtonIcon/ButtonIcon';
 
@@ -10,17 +9,16 @@ import styles from './ImageCaption.module.scss';
 export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 	const [visible, setVisible] = useState(true);
 
-	const toggle = (e: React.MouseEvent) => {
-		e.stopPropagation();
+	const toggle = () => {
 		setVisible((v) => !v);
 	};
 
-	const buttonClass = size === 'sm' ? styles.buttonShowSm : styles.buttonShowLg;
+	const isSmall = size === 'sm';
 
 	if (!visible) {
 		return (
 			<ButtonIcon
-				className={classNames(styles.buttonShow, buttonClass)}
+				className={isSmall ? styles.buttonShowSm : styles.buttonShowLg}
 				icon={faCircleInfo}
 				label="Show Caption"
 				onClick={toggle}
@@ -30,10 +28,10 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 	}
 
 	return (
-		<div className={size === 'sm' ? styles.captionSm : styles.captionLg}>
+		<div className={isSmall ? styles.captionSm : styles.captionLg}>
 			{children}
 			<ButtonIcon
-				className={classNames(styles.buttonHide, buttonClass)}
+				className={isSmall ? styles.buttonHideSm : styles.buttonHideLg}
 				icon={faXmark}
 				label="Hide Caption"
 				onClick={toggle}
