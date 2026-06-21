@@ -21,9 +21,15 @@ export const CurrentFilter = ({
 	const { label } = tech;
 
 	return (
-		<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
-			<TechIcon className={styles.techIcon} name={techKey} />
-			<p>{label}</p>
+		<FilterContainer
+			className={styles.container}
+			icon={faXmark}
+			onClickIcon={onClearAndCloseFilter}
+		>
+			<div className={styles.content}>
+				<TechIcon name={techKey} />
+				<p className={styles.label}>{label}</p>
+			</div>
 		</FilterContainer>
 	);
 };

@@ -1,0 +1,24 @@
+@use 'styles' as *;
+@use '../Filter.variables' as *;
+
+.form {
+	background: $gray-five;
+	flex: 1;
+	margin: 0;
+}
+
+.input {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: white;
+	height: $filter-height;
+	line-height: $filter-height;
+	outline: none;
+	padding: 0 20px;
+	width: 100%;
+
+	&:focus {
+		border-color: $gray-two;
+	}
+}

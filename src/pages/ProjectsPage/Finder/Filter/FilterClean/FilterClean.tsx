@@ -3,19 +3,11 @@ import React from 'react';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { FilterContainer } from '../FilterContainer/FilterContainer';
-
-import styles from './FilterClean.module.scss';
+import { FilterInput } from '../FilterInput/FilterInput';
 
 export const FilterClean = ({ toggleOpenFilter }: FilterCleanProps) => (
 	<FilterContainer icon={faChevronDown} onClickIcon={toggleOpenFilter}>
-		<form className={styles.filterClean}>
-			<input
-				onClick={toggleOpenFilter}
-				placeholder="Filter by Tech"
-				readOnly
-				type="text"
-			/>
-		</form>
+		<FilterInput onClick={toggleOpenFilter} readOnly />
 	</FilterContainer>
 );
 

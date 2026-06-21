@@ -1,0 +1,14 @@
+@use '../../Filter.variables' as *;
+
+.iconContainer {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	height: $filter-height;
+	justify-content: center;
+	width: $filter-height;
+}
+
+.icon {
+	font-size: 26px;
+}

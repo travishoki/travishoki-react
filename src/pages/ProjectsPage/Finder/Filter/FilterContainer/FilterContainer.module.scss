@@ -1,24 +1,14 @@
 @use 'styles' as *;
+@use '../Filter.variables' as *;
 
 .filterContainer {
 	align-items: center;
-	border: solid 1px $gray-two;
-	border: solid 2px red;
 	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-
-	p {
-		margin: 0;
-	}
+	flex-direction: row;
+	height: $filter-height;
+	justify-content: center;
 }
 
 .content {
-	align-items: center;
-	display: flex;
-}
-
-.icon {
-	cursor: pointer;
-	font-size: 26px;
+	flex: 1;
 }
