@@ -2,10 +2,10 @@ import React from 'react';
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import { TechIcon } from '~components/TechIcon/TechIcon';
 import { TECH, TechFilterType, TechKey } from '~const/Tech.const';
 
 import { FilterContainer } from '../FilterContainer/FilterContainer';
+import { ItemContent } from './ItemContent/ItemContent';
 
 import styles from './CurrentFilter.module.scss';
 
@@ -26,10 +26,7 @@ export const CurrentFilter = ({
 			icon={faXmark}
 			onClickIcon={onClearAndCloseFilter}
 		>
-			<div className={styles.content}>
-				<TechIcon name={techKey} />
-				<p className={styles.label}>{label}</p>
-			</div>
+			<ItemContent label={label} techKey={techKey} />
 		</FilterContainer>
 	);
 };

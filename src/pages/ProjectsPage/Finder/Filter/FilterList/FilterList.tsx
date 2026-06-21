@@ -4,6 +4,7 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { FilterItem } from './FilterItem/FilterItem';
 
+import stylesFilter from './FilterItem/FilterItem.module.scss';
 import styles from './FilterList.module.scss';
 
 export const FilterList = ({
@@ -27,7 +28,7 @@ export const FilterList = ({
 	return (
 		<ul className={styles.filterList}>
 			{!filterTerm && (
-				<li className="filterItem" onClick={onClearAndCloseFilter}>
+				<li className={stylesFilter.filterItem} onClick={onClearAndCloseFilter}>
 					<p className="m-0">All</p>
 				</li>
 			)}
