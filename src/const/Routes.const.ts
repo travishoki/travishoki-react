@@ -10,6 +10,7 @@ export const ROUTES = {
 	PROJECT: '/project',
 	PROJECTS: '/projects',
 	RESUME: '/resume',
+	SKATE_BOOK: '/passion/skate-book',
 } as const;
 
 export const ROUTE_PATTERNS = {

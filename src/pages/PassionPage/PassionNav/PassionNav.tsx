@@ -32,6 +32,14 @@ export const PassionNav = () => (
 				className={({ isActive }) =>
 					classNames(styles.navButton, { [styles.active]: isActive })
 				}
+				to={ROUTES.SKATE_BOOK}
+			>
+				Skate Book <FontAwesomeIcon icon={faBook} />
+			</NavLink>
+			<NavLink
+				className={({ isActive }) =>
+					classNames(styles.navButton, { [styles.active]: isActive })
+				}
 				to={ROUTES.FIGHT_FOR_YOUR_DREAMS}
 			>
 				Fight Book <FontAwesomeIcon icon={faBook} />

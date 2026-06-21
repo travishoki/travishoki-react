@@ -6,7 +6,6 @@ import { PageSeo } from '~components/PageSeo/PageSeo';
 import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ROUTES } from '~const/Routes.const';
 
-import { ChildrensBookColumn } from './ChildrensBookColumn/ChildrensBookColumn';
 import { CoverImage } from './CoverImage/CoverImage';
 import { Logo } from './Logo/Logo';
 import { RetailWebsiteColumn } from './RetailWebsiteColumn/RetailWebsiteColumn';
@@ -35,9 +34,6 @@ export const HokiSkateboardsPage = () => (
 				<div className="row gy-3">
 					<div className="col-sm-6">
 						<RetailWebsiteColumn />
-					</div>
-					<div className="col-sm-6">
-						<ChildrensBookColumn />
 					</div>
 				</div>
 			</div>

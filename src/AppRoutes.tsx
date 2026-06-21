@@ -39,6 +39,11 @@ const HokiSkateboardsPage = React.lazy(() =>
 		(m) => ({ default: m.HokiSkateboardsPage }),
 	),
 );
+const SkateBookPage = React.lazy(() =>
+	import('./pages/PassionPage/SkateBookPage/SkateBookPage').then((m) => ({
+		default: m.SkateBookPage,
+	})),
+);
 const PassionPage = React.lazy(() =>
 	import('./pages/PassionPage/PassionPage').then((m) => ({
 		default: m.PassionPage,
@@ -105,6 +110,7 @@ export const AppRoutes = () => (
 							path="fight-for-your-dreams"
 						/>
 						<Route element={<MobileAppPage />} path="mobile-app" />
+						<Route element={<SkateBookPage />} path="skate-book" />
 					</Route>
 					<Route element={<NotFoundPage />} path="*" />
 				</Routes>
