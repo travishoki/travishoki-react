@@ -16,36 +16,38 @@ import {
 	AMAZON_HREF,
 	BOOK_LAUCH_GALLERY,
 	techSoftwareList,
-} from './FightForYourDreams.const';
+} from './FightForYourDreamsPage.const';
 import { Logo } from './Logo/Logo';
 import { ProjectImage } from '../HokiSkateboardsPage/ProjectImage/ProjectImage';
 
 export const FightForYourDreamsPage = () => (
 	<>
 		<PageSeo seoData={PAGE_SEO[ROUTES.FIGHT_FOR_YOUR_DREAMS]} />
-		<section className="boxed boxed-lg">
-			<Logo />
-			<CoverImage />
-			<BookHeading />
-			<div className="row gy-3">
-				<div className="col-sm-6 pt-3">
-					<div className="boxed boxed-lg">
-						<About />
-						<ImageGallery images={BOOK_LAUCH_GALLERY} />
+		<section>
+			<div className="boxed boxed-lg">
+				<Logo />
+				<CoverImage />
+				<BookHeading />
+				<div className="row gy-3">
+					<div className="col-sm-6 pt-3">
+						<div className="boxed boxed-lg">
+							<About />
+							<ImageGallery images={BOOK_LAUCH_GALLERY} />
+						</div>
 					</div>
-				</div>
-				<div className="col-sm-6 pt-3">
-					<a
-						href={AMAZON_HREF}
-						rel="noreferrer"
-						target="_blank"
-						title="Fight For Your Dreams"
-					>
-						<ProjectImage alt="Fight For Your Dreams" src={ImgCover} />
-					</a>
-					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
-					<Description />
-					<SoftwareCatalogue list={techSoftwareList} />
+					<div className="col-sm-6 pt-3">
+						<a
+							href={AMAZON_HREF}
+							rel="noreferrer"
+							target="_blank"
+							title="Fight For Your Dreams"
+						>
+							<ProjectImage alt="Fight For Your Dreams" src={ImgCover} />
+						</a>
+						<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
+						<Description />
+						<SoftwareCatalogue list={techSoftwareList} />
+					</div>
 				</div>
 			</div>
 		</section>
