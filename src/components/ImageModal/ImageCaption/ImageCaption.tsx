@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
 import { faCircleInfo, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
+
+import { ButtonIcon } from '../ButtonIcon/ButtonIcon';
 
 import styles from './ImageCaption.module.scss';
 
@@ -13,25 +15,38 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 		setVisible((v) => !v);
 	};
 
+	const buttonClass = {
+		[styles.buttonShowSm]: size === 'sm',
+		[styles.buttonShowLg]: size === 'lg',
+	};
+
 	if (!visible) {
 		return (
-			<button
-				className={
-					size === 'lg' ? styles.iconButtonBottomLg : styles.iconButtonBottom
-				}
+			<ButtonIcon
+				className={classNames(styles.buttonShow, buttonClass)}
+				icon={faCircleInfo}
+				label="Show Caption"
 				onClick={toggle}
-			>
-				<FontAwesomeIcon icon={faCircleInfo} />
-			</button>
+				size={size}
+			/>
 		);
 	}
 
 	return (
-		<div className={styles[size]}>
+		<div
+			className={classNames(styles.caption, {
+				[styles.captionSm]: size === 'sm',
+				[styles.captionLg]: size === 'lg',
+			})}
+		>
 			{children}
-			<button className={styles.iconButton} onClick={toggle}>
-				<FontAwesomeIcon icon={faXmark} />
-			</button>
+			<ButtonIcon
+				className={classNames(styles.buttonHide, buttonClass)}
+				icon={faXmark}
+				label="Hide Caption"
+				onClick={toggle}
+				size={size}
+			/>
 		</div>
 	);
 };
