@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import classNames from 'classnames';
 
 import { TechFilterType } from '~const/Tech.const';
 
@@ -15,7 +14,7 @@ export const FilterForm = ({
 	onClearAndCloseFilter,
 }: FilterFormProps) => (
 	<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
-		<form className={classNames('m-0', styles.filterForm)}>
+		<form className={styles.filterForm}>
 			<input
 				autoFocus
 				maxLength={25}
