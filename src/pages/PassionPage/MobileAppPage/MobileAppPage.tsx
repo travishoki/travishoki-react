@@ -23,37 +23,39 @@ export const MobileAppPage = () => {
 	return (
 		<>
 			<PageSeo seoData={PAGE_SEO[ROUTES.MOBILE_APP]} />
-			<section className="boxed boxed-lg">
-				<div className="row mb-4">
-					<div className="col-sm-7">
-						<Title title="React Native Mobile App" />
-						<AppIcon />
-						<ParagraphBlock
-							label="Description"
-							text={hokiSkateboardsMobileAppDescription}
-						/>
-
-						<div className="mb-3">
-							<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
-						</div>
-					</div>
-					<div className="col-sm-5">
-						<div className={styles.gallery}>
-							<ImageGallery
-								images={hokiSkateboardsMobileAppGallery}
-								square={false}
+			<section>
+				<div className="boxed boxed-lg">
+					<div className="row mb-4">
+						<div className="col-sm-7">
+							<Title title="React Native Mobile App" />
+							<AppIcon />
+							<ParagraphBlock
+								label="Description"
+								text={hokiSkateboardsMobileAppDescription}
 							/>
+
+							<div className="mb-3">
+								<TechListCatalogue list={hokiSkateboardsMobileAppTechAppList} />
+							</div>
+						</div>
+						<div className="col-sm-5">
+							<div className={styles.gallery}>
+								<ImageGallery
+									images={hokiSkateboardsMobileAppGallery}
+									square={false}
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div className="row gy-3">
-					<div className="col-sm-auto">
-						<MobileAppVideo />
-					</div>
-					<div className="col-sm">
-						<AppIcon />
-						<DownloadAppSection />
+					<div className="row gy-3">
+						<div className="col-sm-auto">
+							<MobileAppVideo />
+						</div>
+						<div className="col-sm">
+							<AppIcon />
+							<DownloadAppSection />
+						</div>
 					</div>
 				</div>
 			</section>
