@@ -15,10 +15,7 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 		setVisible((v) => !v);
 	};
 
-	const buttonClass = {
-		[styles.buttonShowSm]: size === 'sm',
-		[styles.buttonShowLg]: size === 'lg',
-	};
+	const buttonClass = size === 'sm' ? styles.buttonShowSm : styles.buttonShowLg;
 
 	if (!visible) {
 		return (
@@ -33,12 +30,7 @@ export const ImageCaption = ({ children, size = 'sm' }: ImageCaptionProps) => {
 	}
 
 	return (
-		<div
-			className={classNames(styles.caption, {
-				[styles.captionSm]: size === 'sm',
-				[styles.captionLg]: size === 'lg',
-			})}
-		>
+		<div className={size === 'sm' ? styles.captionSm : styles.captionLg}>
 			{children}
 			<ButtonIcon
 				className={classNames(styles.buttonHide, buttonClass)}
