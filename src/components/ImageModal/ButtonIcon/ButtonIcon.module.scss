@@ -1,11 +1,13 @@
 @use 'styles' as *;
 
+$size: 50px;
+
 .buttonIcon {
-	$size: 50px;
 	@include border-radius(50%);
 	align-items: center;
 	background: black;
 	border: none;
+	box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 	display: flex;
 	height: $size;
