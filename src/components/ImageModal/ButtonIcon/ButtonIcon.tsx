@@ -11,10 +11,11 @@ export const ButtonIcon = ({
 	icon,
 	label,
 	onClick,
+	size = 'sm',
 }: ButtonIconProps) => (
 	<button
 		aria-label={label}
-		className={classNames(styles.buttonIcon, className)}
+		className={classNames(styles.buttonIcon, styles[size], className)}
 		onClick={(event) => {
 			event.stopPropagation();
 			onClick(event);
@@ -29,4 +30,5 @@ type ButtonIconProps = {
 	icon: IconDefinition;
 	label: string;
 	onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+	size?: 'sm' | 'lg';
 };
