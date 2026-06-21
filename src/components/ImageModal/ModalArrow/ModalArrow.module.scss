@@ -14,14 +14,15 @@
 	top: 50%;
 	transform: translateY(-50%);
 	width: $size;
+	z-index: $z-index-modal-arrow;
 
-	i {
+	svg {
 		color: $white;
 		font-size: 30px;
 	}
 
 	&:hover {
-		i {
+		svg {
 			color: $gray-one;
 		}
 	}

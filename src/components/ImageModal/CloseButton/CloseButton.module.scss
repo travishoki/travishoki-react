@@ -3,23 +3,25 @@
 .closeIcon {
 	$size: 50px;
 	@include border-radius(50%);
+	align-items: center;
 	background: black;
 	border: none;
 	cursor: pointer;
+	display: flex;
 	height: $size;
+	justify-content: center;
 	position: fixed;
 	right: 20px;
-	text-align: center;
 	top: 15px;
 	width: $size;
 
-	i {
+	svg {
 		color: $white;
 		font-size: 40px;
 	}
 
 	&:hover {
-		i {
+		svg {
 			color: $gray-one;
 		}
 	}
