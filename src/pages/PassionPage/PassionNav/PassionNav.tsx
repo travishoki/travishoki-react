@@ -18,7 +18,7 @@ export const PassionNav = () => (
 				}
 				to={ROUTES.HOKI_SKATEBOARDS}
 			>
-				Skate Book <FontAwesomeIcon icon={faBook} />
+				Skate Company
 			</NavLink>
 			<NavLink
 				className={({ isActive }) =>
