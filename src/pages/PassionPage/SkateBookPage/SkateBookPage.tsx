@@ -24,14 +24,19 @@ export const SkateBookPage = () => (
 						src={ImgYouShouldAlwaysSkateboard}
 						title="You Should Always Skateboard"
 					/>
+					<ParagraphBlock
+						label="Book Description"
+						text={[
+							'Have you ever gone skateboarding on the moon? Or tried to skate through a snowstorm? How about boarding through the jungle trees with monkeys? Join Axle on an adventure of trying to skateboard in the most unlikely places.',
+						]}
+					/>
 					<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 				</div>
 				<div className="col-sm-6">
 					<ParagraphBlock
-						label="Description"
+						label="Project Description"
 						text={[
-							"Illustrated kid's book about skateboarding.",
-							'Self authored, illustrated, and published. Successfully Kickstarter backed.',
+							"Illustrated kid's book about skateboarding. Self authored, illustrated, and published. Successfully Kickstarter backed.",
 						]}
 					/>
 					<SoftwareCatalogue list={appSoftwareList} />
