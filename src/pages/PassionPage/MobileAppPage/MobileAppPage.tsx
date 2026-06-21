@@ -25,9 +25,9 @@ export const MobileAppPage = () => {
 			<PageSeo seoData={PAGE_SEO[ROUTES.MOBILE_APP]} />
 			<section>
 				<div className="boxed boxed-lg">
+					<Title title="React Native Mobile App" />
 					<div className="row mb-4">
 						<div className="col-sm-7">
-							<Title title="React Native Mobile App" />
 							<AppIcon />
 							<ParagraphBlock
 								label="Description"
