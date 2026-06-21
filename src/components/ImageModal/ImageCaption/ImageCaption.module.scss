@@ -41,18 +41,15 @@
 	right: 15px;
 }
 
-%button-show-base {
-	position: fixed;
-}
-
 .buttonShowSm {
-	@extend %button-show-base;
 	bottom: 10px;
+	position: absolute;
 	right: 10px;
+	z-index: $z-index-image-caption-button;
 }
 
 .buttonShowLg {
-	@extend %button-show-base;
 	bottom: 15px;
+	position: fixed;
 	right: 15px;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import classNames from 'classnames';
 
@@ -15,6 +15,7 @@ export const Image = ({
 	square = true,
 }: ImageProps) => {
 	const { alt, caption, filename } = image;
+	const [hovered, setHovered] = useState(false);
 
 	const onLoad = (event: React.SyntheticEvent<HTMLImageElement>) =>
 		setDimensions([
@@ -28,8 +29,10 @@ export const Image = ({
 				styles.imageWrapper,
 				!square && styles.imageWrapperRect,
 			)}
+			onMouseEnter={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
 		>
-			<OverlayWithIcon onClick={() => setModalOpen(true)} />
+			<OverlayWithIcon onClick={() => setModalOpen(true)} visible={hovered} />
 			<img
 				alt={alt}
 				className={classNames(styles.image, !square && styles.imageRect)}
