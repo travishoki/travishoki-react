@@ -1,3 +1,5 @@
+@use 'styles' as *;
+
 $gap: 12px;
 $item-max-width: 180px;
 
@@ -8,6 +10,11 @@ $item-max-width: 180px;
 	list-style: none;
 	margin: $gap $gap 0 $gap;
 	padding: 0;
+
+	@include phone-sm-down {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 	&.techCatalogueListCollapsed {
 		gap: $gap;
@@ -21,6 +28,10 @@ $item-max-width: 180px;
 		// item shrink below the cap on very narrow screens so it can't overflow.
 		// justify-content centers the leftover space across the row.
 		grid-template-columns: repeat(auto-fill, min(#{$item-max-width}, 100%));
+
+		@include phone-sm-down {
+			grid-template-columns: repeat(auto-fill, min(#{$item-max-width}, 50%));
+		}
 		row-gap: 20px;
 	}
 }

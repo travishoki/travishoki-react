@@ -1,8 +1,16 @@
+@use 'styles' as *;
+
 $iconW: 40px;
+$iconW-sm: 34px;
 
 .icon {
 	height: $iconW;
 	width: $iconW;
+
+	@include phone-sm-down {
+		height: $iconW-sm;
+		width: $iconW-sm;
+	}
 
 	&.circle {
 		border-radius: 50%;

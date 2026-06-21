@@ -1,5 +1,11 @@
 $nav-breakpoint: 900px;
 
+@mixin phone-sm-down {
+	@media (max-width: 500px) {
+		@content;
+	}
+}
+
 @mixin phone-down {
 	@media (max-width: 767px) {
 		@content;

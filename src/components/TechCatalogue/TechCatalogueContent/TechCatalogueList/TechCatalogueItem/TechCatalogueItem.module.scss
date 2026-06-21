@@ -40,6 +40,11 @@ $gap: 15px;
 	font-size: 14px;
 	line-height: 18px;
 	margin: 0;
+
+	@include phone-sm-down {
+		font-size: 12px;
+		line-height: 16px;
+	}
 }
 
 .crossedOut {
