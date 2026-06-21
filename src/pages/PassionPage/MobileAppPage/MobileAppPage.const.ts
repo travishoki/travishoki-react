@@ -20,9 +20,8 @@ export const hokiSkateboardsMobileAppTechAppList: TECH.TechKey[] = [
 export const hokiSkateboardsMobileAppDescription = [
 	"Hoki Skateboards is my passion project. I'm teaching myself React Native through this project.",
 	"My first 2 years of college was in the Gaming and Animation program, this projects has been super fun being able to flex and build upon those skills. I illustrated all of the graphics myself. This is the perfect application to advertise both the products that I sell, and the kid's book that I created.",
-	"I've really enjoyed learning Firebase. The document database is just what I needed for this project.",
-	"Kid's skateboarding game. Built in React Native, this game is deployed in both of the major mobile app stores.",
-	'My son helped me test and brainstorm features. It was fun to include him in the process.',
+	"I've really enjoyed learning Firebase. The document database is just what I needed for this project. Built in React Native, this game is deployed in both of the major mobile app stores.",
+	"My son helped me test and brainstorm features. It was fun to include him in the process. This is a kid's skateboarding game, he made sure that it was fun to play.",
 	"It's so exciting to see this app come together! I'm really proud of it!",
 ];
 

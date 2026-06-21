@@ -15,7 +15,10 @@ const AMAZON_HREF =
 export const SkateBookPage = () => (
 	<section>
 		<div className="boxed boxed-lg">
-			<Title title="Children's Book" />
+			<div className="mb-3">
+				<Title className="m-0" title="Children's Book" />
+				<p className="center">Written and Illustrated by Travis Hoki</p>
+			</div>
 			<div className="row gy-3">
 				<div className="col-sm-6">
 					<ProjectImageLink
