@@ -12,6 +12,7 @@ export const CloseButton = ({ onClick }: CloseButtonProps) => (
 		icon={faXmark}
 		label="Close Button"
 		onClick={onClick}
+		size="lg"
 	/>
 );
 

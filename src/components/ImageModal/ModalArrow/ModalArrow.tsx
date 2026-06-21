@@ -24,6 +24,7 @@ export const ModalArrow = ({ direction, onClick }: ModalArrowProps) => {
 			icon={icon}
 			label={label}
 			onClick={onClick}
+			size="lg"
 		/>
 	);
 };
