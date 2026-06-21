@@ -1,19 +1,9 @@
 @use 'styles' as *;
 
 .modalArrow {
-	$size: 50px;
-	@include border-radius(50%);
-	align-items: center;
-	background: black;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	height: $size;
-	justify-content: center;
 	position: fixed;
 	top: 50%;
 	transform: translateY(-50%);
-	width: $size;
 	z-index: $z-index-modal-arrow;
 
 	svg {

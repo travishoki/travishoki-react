@@ -4,27 +4,27 @@ import {
 	faChevronLeft,
 	faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
+
+import { ButtonIcon } from '../ButtonIcon/ButtonIcon';
 
 import styles from './ModalArrow.module.scss';
 
 export const ModalArrow = ({ direction, onClick }: ModalArrowProps) => {
+	const label = direction === 'next' ? 'Next' : 'Previous';
+	const className = {
+		[styles.next]: direction === 'next',
+		[styles.prev]: direction === 'prev',
+	};
+	const icon = direction === 'prev' ? faChevronLeft : faChevronRight;
+
 	return (
-		<button
-			className={classNames(styles.modalArrow, {
-				[styles.next]: direction === 'next',
-				[styles.prev]: direction === 'prev',
-			})}
-			onClick={(event) => {
-				event.stopPropagation();
-				onClick();
-			}}
-		>
-			<FontAwesomeIcon
-				icon={direction === 'prev' ? faChevronLeft : faChevronRight}
-			/>
-		</button>
+		<ButtonIcon
+			className={classNames(styles.modalArrow, className)}
+			icon={icon}
+			label={label}
+			onClick={onClick}
+		/>
 	);
 };
 
