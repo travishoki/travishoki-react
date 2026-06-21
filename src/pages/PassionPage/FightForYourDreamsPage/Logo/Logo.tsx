@@ -5,7 +5,7 @@ import ImgLogo from '~images/passion/fight-for-your-dreams/fight-for-your-dreams
 
 export const Logo = () => (
 	<ImgPopIn
-		alt="Hoki Skateboards"
+		alt="Fight For Your Dreams Logo"
 		className="center"
 		height="132px"
 		src={ImgLogo}

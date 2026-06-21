@@ -10,7 +10,7 @@ const SMALL_HEIGHT = 797;
 
 export const CoverImage = () => (
 	<ImageMaximizable
-		alt="Hoki Skateboards"
+		alt="Fight For Your Dreams"
 		className={styles.coverImage}
 		dimensions={[SMALL_WIDTH, SMALL_HEIGHT]}
 		src={ImgKaytlinTravis}
