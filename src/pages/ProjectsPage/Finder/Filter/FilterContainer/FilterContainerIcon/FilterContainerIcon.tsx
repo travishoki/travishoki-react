@@ -9,8 +9,8 @@ export const FilterContainerIcon = ({
 	icon,
 	onClick,
 }: FilterContainerIconProps) => (
-	<div className={styles.iconContainer}>
-		<FontAwesomeIcon className={styles.icon} icon={icon} onClick={onClick} />
+	<div className={styles.iconContainer} onClick={onClick}>
+		<FontAwesomeIcon className={styles.icon} icon={icon} />
 	</div>
 );
 

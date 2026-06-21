@@ -36,6 +36,7 @@ export const FilterList = ({
 			{filterListFiltered.map((item) => (
 				<ItemContent
 					key={item}
+					className={styles.listOption}
 					label={item}
 					onClick={onSelectFilter}
 					techKey={item}

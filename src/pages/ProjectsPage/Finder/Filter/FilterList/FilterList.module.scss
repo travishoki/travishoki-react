@@ -7,19 +7,8 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 	padding: 0;
+}
 
-	li {
-		align-items: center;
-		cursor: pointer;
-		display: flex;
-		margin: 0;
-
-		&:hover {
-			background: $gray-three;
-		}
-
-		&:last-child {
-			margin: 0;
-		}
-	}
+.listOption {
+	border-top: solid 1px $gray-three;
 }
