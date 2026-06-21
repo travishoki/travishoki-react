@@ -4,8 +4,8 @@ import { TechFilterType, TechKey } from '~const/Tech.const';
 
 import { CurrentFilter } from './CurrentFilter/CurrentFilter';
 import { FilterClean } from './FilterClean/FilterClean';
-import { FilterForm } from './FilterForm/FilterForm';
 import { FilterList } from './FilterList/FilterList';
+import { FilterOpen } from './FilterOpen/FilterOpen';
 
 export const Filter = ({
 	filter,
@@ -31,7 +31,7 @@ export const Filter = ({
 	if (isFilterOpen) {
 		return (
 			<>
-				<FilterForm
+				<FilterOpen
 					filterTerm={filterTerm}
 					onChangeFilter={onChangeFilter}
 					onClearAndCloseFilter={onClearAndCloseFilter}
