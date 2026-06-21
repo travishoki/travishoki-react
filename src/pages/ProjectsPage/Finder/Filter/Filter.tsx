@@ -16,39 +16,39 @@ export const Filter = ({
 	onClearAndCloseFilter,
 	onSelectFilter,
 	toggleOpenFilter,
-}: FilterProps) => (
-	<div>
-		{filter && filter !== 'all' && filter !== 'null' && (
+}: FilterProps) => {
+	const filterIsDefined = filter !== 'all' && filter !== 'null';
+
+	if (filter && filterIsDefined) {
+		return (
 			<CurrentFilter
 				filter={filter}
 				onClearAndCloseFilter={onClearAndCloseFilter}
 			/>
-		)}
+		);
+	}
 
-		{!filter && (
+	if (isFilterOpen) {
+		return (
 			<>
-				{isFilterOpen ? (
-					<>
-						<FilterForm
-							filterTerm={filterTerm}
-							onChangeFilter={onChangeFilter}
-							onClearAndCloseFilter={onClearAndCloseFilter}
-						/>
-						<FilterList
-							filter={filter}
-							filterList={filterList}
-							filterTerm={filterTerm}
-							onClearAndCloseFilter={onClearAndCloseFilter}
-							onSelectFilter={onSelectFilter}
-						/>
-					</>
-				) : (
-					<FilterClean toggleOpenFilter={toggleOpenFilter} />
-				)}
+				<FilterForm
+					filterTerm={filterTerm}
+					onChangeFilter={onChangeFilter}
+					onClearAndCloseFilter={onClearAndCloseFilter}
+				/>
+				<FilterList
+					filter={filter}
+					filterList={filterList}
+					filterTerm={filterTerm}
+					onClearAndCloseFilter={onClearAndCloseFilter}
+					onSelectFilter={onSelectFilter}
+				/>
 			</>
-		)}
-	</div>
-);
+		);
+	}
+
+	return <FilterClean toggleOpenFilter={toggleOpenFilter} />;
+};
 
 type FilterProps = {
 	filter: TechFilterType;
