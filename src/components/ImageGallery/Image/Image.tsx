@@ -9,6 +9,7 @@ import { OverlayWithIcon } from '~components/OverlayWithIcon/OverlayWithIcon';
 import styles from './Image.module.scss';
 
 export const Image = ({
+	className,
 	image,
 	setDimensions,
 	setModalOpen,
@@ -28,6 +29,7 @@ export const Image = ({
 			className={classNames(
 				styles.imageWrapper,
 				!square && styles.imageWrapperRect,
+				className,
 			)}
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
@@ -45,6 +47,7 @@ export const Image = ({
 };
 
 type ImageProps = {
+	className?: string;
 	image: GalleryImage;
 	setDimensions: (size: number[]) => void;
 	setModalOpen: (isOpen: boolean) => void;
