@@ -1,6 +1,8 @@
 @use 'styles' as *;
 
 .listColumn {
+	margin: 0;
+
 	@include phone-down {
 		display: block;
 	}

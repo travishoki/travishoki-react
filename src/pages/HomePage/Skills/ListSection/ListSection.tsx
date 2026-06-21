@@ -21,7 +21,7 @@ export const ListSection = () => {
 	return (
 		<div className="boxed boxed-md">
 			<div className={styles.container}>
-				<div className="row gy-3">
+				<div className="row">
 					<div className="col-md-6">
 						<ListColumn items={listA} />
 					</div>
