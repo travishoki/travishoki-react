@@ -23,7 +23,7 @@ export const AiPoweredProjects = () => {
 	const { aiIntegration } = AI_POWERED_FOOD as ProjectType;
 
 	return (
-		<section className={styles.aiPoweredProjects}>
+		<section>
 			<div className="boxed boxed-lg">
 				<h2>
 					<motion.span
