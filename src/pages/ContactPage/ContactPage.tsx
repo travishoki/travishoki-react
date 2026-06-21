@@ -14,7 +14,7 @@ export const ContactPage = () => (
 		<h1>Contact Me</h1>
 		<div className="boxed boxed-lg">
 			<div className="pt-4">
-				<div className="row">
+				<div className="row gy-3">
 					<div className="col-sm-6">
 						<ImgPopIn
 							alt="Travis Hoki Profile Picture"

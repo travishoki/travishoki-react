@@ -3,8 +3,4 @@
 .gallery {
 	margin: 0 auto;
 	max-width: 300px;
-
-	@include phone-down {
-		margin-bottom: 30px;
-	}
 }

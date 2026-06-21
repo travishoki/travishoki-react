@@ -14,7 +14,7 @@ export const FightForYourDreams = () => {
 		<section className="boxed boxed-lg p-3">
 			<BookHeading />
 			<CoverImage />
-			<div className="row">
+			<div className="row gy-3">
 				<div className="col-sm-6 pt-3">
 					<div className="boxed boxed-lg">
 						<About />

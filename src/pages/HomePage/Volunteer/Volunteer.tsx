@@ -22,8 +22,8 @@ export const Volunteer = () => (
 			width="177"
 		/>
 		<h3 className="mb-2">Volunteering in Cub Scouts Since 2025</h3>
-		<div className={classNames('row', styles.leaderPositions)}>
-			<div className={classNames('col-auto', styles.leaderPosition)}>
+		<div className={classNames('row gy-3', styles.leaderPositions)}>
+			<div className="col-auto">
 				<p>Bear&apos;s Assistant Den Leader</p>
 				<p>Since Spring of 2025</p>
 			</div>

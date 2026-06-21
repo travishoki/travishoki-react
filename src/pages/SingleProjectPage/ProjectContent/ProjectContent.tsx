@@ -32,7 +32,7 @@ export const ProjectContent = ({ project }: ProjectContentProps) => {
 				subtitle={subtitle}
 			/>
 
-			<div className="row">
+			<div className="row gy-3">
 				<div className="col-sm-5">
 					{gallery.length > 1 ? (
 						<ImageGallery images={images} />

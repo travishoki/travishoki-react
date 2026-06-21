@@ -29,7 +29,7 @@ export const HokiSkateboardsPage = () => (
 		</section>
 		<section className="boxed boxed-lg">
 			<div className={classNames(styles.hokiSkateboardsInnerContent, 'mb-3')}>
-				<div className="row">
+				<div className="row gy-3">
 					<div className={classNames('col-sm-6 pt-3', styles.column)}>
 						<RetailWebsiteColumn />
 					</div>

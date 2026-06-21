@@ -47,7 +47,7 @@ export const MobileAppPage = () => {
 					</div>
 				</div>
 
-				<div className="row">
+				<div className="row gy-3">
 					<div className="col-sm-auto">
 						<MobileAppVideo />
 					</div>
