@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+%button-hide-base {
+	position: absolute;
+}
+
+.sm {
+	@extend %button-hide-base;
+	bottom: 10px;
+	right: 10px;
+}
+
+.lg {
+	@extend %button-hide-base;
+	bottom: 15px;
+	right: 15px;
+}
