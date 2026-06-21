@@ -1,8 +1,8 @@
 import React, { InputHTMLAttributes } from 'react';
 
-import styles from './FilterInput.module.scss';
+import styles from './FilterForm.module.scss';
 
-export const FilterInput = (props: InputHTMLAttributes<HTMLInputElement>) => (
+export const FilterForm = (props: InputHTMLAttributes<HTMLInputElement>) => (
 	<form className={styles.form}>
 		<input
 			className={styles.input}

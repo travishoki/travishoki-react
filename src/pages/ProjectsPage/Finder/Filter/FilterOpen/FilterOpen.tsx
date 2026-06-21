@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { TechFilterType } from '~const/Tech.const';
 
 import { FilterContainer } from '../FilterContainer/FilterContainer';
-import { FilterInput } from '../FilterInput/FilterInput';
+import { FilterForm } from '../FilterForm/FilterForm';
 
 export const FilterOpen = ({
 	filterTerm,
@@ -13,7 +13,7 @@ export const FilterOpen = ({
 	onClearAndCloseFilter,
 }: FilterOpenProps) => (
 	<FilterContainer icon={faXmark} onClickIcon={onClearAndCloseFilter}>
-		<FilterInput autoFocus onChange={onChangeFilter} value={filterTerm || ''} />
+		<FilterForm autoFocus onChange={onChangeFilter} value={filterTerm || ''} />
 	</FilterContainer>
 );
 
