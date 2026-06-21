@@ -32,14 +32,12 @@ export const HokiSkateboardsPage = () => (
 		</section>
 		<section>
 			<div className="boxed boxed-lg">
-				<div className={classNames(styles.hokiSkateboardsInnerContent, 'mb-3')}>
-					<div className="row gy-3">
-						<div className={classNames('col-sm-6 pt-3', styles.column)}>
-							<RetailWebsiteColumn />
-						</div>
-						<div className={classNames('col-sm-6 pt-3', styles.column)}>
-							<ChildrensBookColumn />
-						</div>
+				<div className="row gy-3">
+					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+						<RetailWebsiteColumn />
+					</div>
+					<div className={classNames('col-sm-6 pt-3', styles.column)}>
+						<ChildrensBookColumn />
 					</div>
 				</div>
 			</div>
