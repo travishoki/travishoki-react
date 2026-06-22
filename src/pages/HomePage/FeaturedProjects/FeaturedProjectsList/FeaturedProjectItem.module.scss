@@ -59,7 +59,7 @@
 	}
 
 	img {
-		@extend %centered-block;
+		@include centered-block;
 
 		@media (max-width: #{$featured-projects-large - 1}) {
 			height: 100%;

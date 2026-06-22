@@ -29,6 +29,6 @@
 }
 
 .viewProjectButton {
-	@extend %centered-block;
+	@include centered-block;
 	width: fit-content;
 }

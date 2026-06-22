@@ -14,7 +14,7 @@
 
 	img {
 		@media (max-width: 499px) {
-			@extend %centered-block;
+			@include centered-block;
 		}
 	}
 }

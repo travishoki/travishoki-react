@@ -1,6 +1,6 @@
 @use 'styles' as *;
 
 .careerOverviewParagraph {
-	@extend %centered-block;
+	@include centered-block;
 	max-width: 600px;
 }
