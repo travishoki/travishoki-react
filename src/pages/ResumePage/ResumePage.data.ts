@@ -153,6 +153,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Room Choice',
 		dateEnd: 'Sept. 2015',
 		dateStart: 'Dec. 2014',
+		description:
+			'Working within a agile, fast-paced team, we moved quickly gathering feedback from the owners, marketing, and customer. As we scaled the software to accommodate a rapidly growing number of students and accounts, I focused heavily on performance optimization, learning how to write highly efficient code at scale. I strived to become an expert in Angular, ensuring our implementation was as streamlined as possible. This role also provided my first experience collaborating with an international team of developers, which taught me how to work effectively across global time zones and cultures.',
 		img: ImgRoomChoice,
 		position: 'Full Stack Web-App Developer',
 		tasks: [
