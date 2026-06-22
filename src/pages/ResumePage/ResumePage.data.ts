@@ -96,6 +96,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		},
 		dateEnd: 'Aug. 2021',
 		dateStart: 'Dec. 2020',
+		description:
+			'I really enjoyed being able to mentor and pair program with other developers. I found the most fulfillment working with my peers and building those relationships. I liked building out infrastructure, collaborating on conventions and best practices, and having technical discussions.',
 		img: ImgXant,
 		position: 'Senior Software Engineer',
 		tasks: [
@@ -111,6 +113,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		title: 'Chatbooks',
 		dateEnd: 'Aug. 2020',
 		dateStart: 'Mar. 2019',
+		description:
+			'As a member of the web team, I helped to build out the Chatbooks website. We build out the desktop experience for users that want to create products, specifically photo albums, on their computer. We collaborated cross-functionally with backend and mobile teams to deliver a consistent web experience across devices.',
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
