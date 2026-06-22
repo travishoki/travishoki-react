@@ -2,6 +2,13 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
+const widths: Record<string, string> = {
+	boxed: '600px',
+	'boxed-lg': '900px',
+	'boxed-sm': '300px',
+	'boxed-xl': '1024px',
+};
+
 const BoxedSwatch = ({ className }: { className: string }) => (
 	<section className="gray-three">
 		<div
@@ -9,7 +16,7 @@ const BoxedSwatch = ({ className }: { className: string }) => (
 			style={{ background: '#fff', color: '#333', padding: '10px' }}
 		>
 			<p style={{ margin: 0 }}>
-				<code>.{className}</code>
+				<code>.{className}</code> — max-width: {widths[className]}
 			</p>
 		</div>
 	</section>
@@ -26,7 +33,7 @@ const AllBoxed = () => (
 
 const meta: Meta<typeof AllBoxed> = {
 	component: AllBoxed,
-	title: 'Global Styles/Boxed',
+	title: 'Design System/Boxed',
 };
 
 export default meta;

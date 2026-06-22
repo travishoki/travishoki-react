@@ -28,7 +28,7 @@ const AllSections = () => (
 
 const meta: Meta<typeof AllSections> = {
 	component: AllSections,
-	title: 'Global Styles/Sections',
+	title: 'Design System/Sections',
 };
 
 export default meta;
