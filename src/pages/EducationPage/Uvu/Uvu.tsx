@@ -19,7 +19,7 @@ const LARGE_HEIGHT = 800;
 
 export const Uvu = () => (
 	<section className="white">
-		<div className="boxed boxed-xl">
+		<div className="boxed-xl">
 			<Panels>
 				<Panel>
 					<div className={styles.uvu}>

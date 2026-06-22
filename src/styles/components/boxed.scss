@@ -1,17 +1,27 @@
-.boxed {
+%boxed {
 	margin: 0 auto;
-	max-width: 600px;
 	padding: 0 10px;
+}
 
-	&.boxed-sm {
-		max-width: 300px;
-	}
+.boxed-sm,
+.boxed,
+.boxed-lg,
+.boxed-xl {
+	@extend %boxed;
+}
 
-	&.boxed-xl {
-		max-width: 900px;
-	}
+.boxed-sm {
+	max-width: 300px;
+}
 
-	&.boxed-xl {
-		max-width: 1024px;
-	}
+.boxed {
+	max-width: 600px;
+}
+
+.boxed-lg {
+	max-width: 900px;
+}
+
+.boxed-xl {
+	max-width: 1024px;
 }

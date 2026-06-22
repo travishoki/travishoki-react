@@ -7,7 +7,7 @@ import styles from './Header.module.scss';
 
 export const Header = () => (
 	<div className={styles.header}>
-		<div className="boxed boxed-xl">
+		<div className="boxed-xl">
 			<Title />
 			<Nav />
 		</div>

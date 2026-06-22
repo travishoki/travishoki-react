@@ -11,7 +11,7 @@ import ImgProfilePic from '~images/global/travis-hoki.jpg';
 import styles from './Banner.module.scss';
 
 export const Banner = () => (
-	<div className={classNames('boxed boxed-xl', styles.homeBanner)}>
+	<div className={classNames('boxed-xl', styles.homeBanner)}>
 		<img
 			alt="Travis Hoki Profile Picture"
 			className={styles.bannerPic}

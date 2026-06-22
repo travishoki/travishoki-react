@@ -24,7 +24,7 @@ export const AiPoweredProjects = () => {
 
 	return (
 		<section>
-			<div className="boxed boxed-xl">
+			<div className="boxed-xl">
 				<h2>
 					<motion.span
 						animate={{ color: SPARKLE_COLORS }}
