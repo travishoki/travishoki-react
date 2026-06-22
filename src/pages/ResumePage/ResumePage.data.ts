@@ -128,6 +128,8 @@ export const RESUME_DATA: ResumeDataType[] = [
 		},
 		dateEnd: 'Mar. 2019',
 		dateStart: 'Sept. 2015',
+		description:
+			'I was a Front End Developer on the User Generated Content team. We created, enhanced, and maintained sections of the site that the user contributes to, such as product rating and reviews, as well as questions and answers. I was able to contribute to a number of projects including the introduction of User Generated Product Images as well as implementing a variety of SEO boosting enhancements.',
 		img: ImgOverstock,
 		position: 'Front-end Developer',
 		tasks: [
@@ -227,6 +229,7 @@ export type ResumeDataType = {
 	};
 	dateEnd: string;
 	dateStart: string;
+	description?: string;
 	img: string;
 	position: string;
 	tasks: string[];

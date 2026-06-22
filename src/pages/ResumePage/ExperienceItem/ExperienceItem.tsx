@@ -19,6 +19,7 @@ export const ExperienceItem = ({
 	affiliatedCompany,
 	dateEnd,
 	dateStart,
+	description,
 	img,
 	position,
 	tasks,
@@ -43,8 +44,9 @@ export const ExperienceItem = ({
 		<InfoBox>
 			<h3 className="m-0">{title}</h3>
 			<SubLine dateEnd={dateEnd} dateStart={dateStart} position={position} />
-			<BulletedList list={tasks} />
 			<AffiliatedCompany affiliatedCompany={affiliatedCompany} />
+			<BulletedList list={tasks} />
+			{description && <p className="indent">{description}</p>}
 			<TechListCatalogue list={techs} />
 		</InfoBox>
 	</StaggeredItem>
