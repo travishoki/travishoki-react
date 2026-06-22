@@ -85,3 +85,9 @@ export const Typescript = () => (
 		Typescript
 	</ItemLink>
 );
+
+export const Vite = () => (
+	<ItemLink href="https://vite.dev" title="Vite">
+		Vite
+	</ItemLink>
+);

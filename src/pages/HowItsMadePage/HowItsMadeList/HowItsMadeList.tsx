@@ -15,7 +15,7 @@ export const HowItsMadeList = () => {
 				<h3>List of the Tech Used</h3>
 				<ul>
 					<li>
-						Built with <Link.ReactJS />
+						Built with <Link.ReactJS /> and bundled with <Link.Vite />
 					</li>
 					<li>
 						<Link.Typescript /> typed Javascript
