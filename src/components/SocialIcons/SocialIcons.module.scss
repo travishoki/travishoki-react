@@ -3,10 +3,8 @@
 $size: 32px;
 
 .socialIcons {
-	align-items: center;
-	display: flex;
+	@extend %flex-center;
 	gap: 10px;
-	justify-content: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;

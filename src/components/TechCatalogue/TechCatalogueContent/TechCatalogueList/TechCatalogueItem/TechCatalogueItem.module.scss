@@ -3,8 +3,8 @@
 $gap: 15px;
 
 .techCatalogueItem {
+	@extend %flex-center-h;
 	align-items: center;
-	display: flex;
 	position: relative;
 
 	&[data-tooltip]:hover::after {
@@ -80,8 +80,6 @@ $gap: 15px;
 
 .labalContainer {
 	align-items: flex-start;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	margin-left: 10px;
 }

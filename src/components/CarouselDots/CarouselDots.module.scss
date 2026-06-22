@@ -1,9 +1,8 @@
 @use 'styles' as *;
 
 .carouselDots {
-	display: flex;
+	@extend %flex-center-h;
 	gap: 15px;
-	justify-content: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;
