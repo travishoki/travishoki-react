@@ -14,12 +14,12 @@ export const SubFooter = () => (
 	// `data-app-footer` marks the top of the footer region so layout helpers can
 	// measure the space above it (see NotFoundPage Video.helpers).
 	<div className={styles.subfooter} data-app-footer>
-		<div className={classNames(styles.contactInfo, 'm-2')}>
+		<div className={classNames('m-2', styles.contactInfo)}>
 			<div className={styles.socialContainer}>
 				<SocialIcons reverseColors />
 			</div>
 			<NavLink
-				className={classNames(styles.contactLink, 'active ms-3')}
+				className={classNames('active ms-3', styles.contactLink)}
 				to={ROUTES.CONTACT}
 			>
 				Contact
