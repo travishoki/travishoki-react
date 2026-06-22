@@ -1,6 +1,13 @@
 section {
 	color: $white;
-	padding: 20px;
+
+	@include phone-down {
+		padding: 15px;
+	}
+
+	@include tablet-up {
+		padding: 20px;
+	}
 
 	&.white {
 		background: $white;
