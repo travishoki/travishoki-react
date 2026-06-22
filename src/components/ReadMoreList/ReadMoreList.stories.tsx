@@ -30,8 +30,11 @@ const meta: Meta<typeof ReadMoreList> = {
 export default meta;
 type Story = StoryObj<typeof ReadMoreList>;
 
+const COLLAPSED_COUNT = 3;
+
 export const Collapsed: Story = {
 	args: {
+		collapsedCount: COLLAPSED_COUNT,
 		items,
 	},
 	play: async ({ canvas }) => {
@@ -42,6 +45,7 @@ export const Collapsed: Story = {
 
 export const Expanded: Story = {
 	args: {
+		collapsedCount: COLLAPSED_COUNT,
 		initiallyExpanded: true,
 		items,
 	},
@@ -53,6 +57,7 @@ export const Expanded: Story = {
 
 export const FewItems: Story = {
 	args: {
+		collapsedCount: COLLAPSED_COUNT,
 		items: items.slice(0, 2),
 	},
 	play: async ({ canvas }) => {
