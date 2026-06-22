@@ -6,9 +6,7 @@
 }
 
 .contactInfo {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 
 	@media (min-width: 500px) {
 		float: left;

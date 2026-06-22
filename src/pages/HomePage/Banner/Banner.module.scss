@@ -1,9 +1,7 @@
 @use 'styles' as *;
 
 .homeBanner {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 	position: relative;
 
 	@include phone-down {

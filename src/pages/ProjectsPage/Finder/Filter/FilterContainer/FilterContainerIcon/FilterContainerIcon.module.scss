@@ -2,12 +2,10 @@
 @use '../../Filter.variables' as *;
 
 .iconContainer {
-	align-items: center;
+	@extend %flex-center;
 	background: $gray-three;
 	cursor: pointer;
-	display: flex;
 	height: $filter-height;
-	justify-content: center;
 	width: $filter-height;
 }
 

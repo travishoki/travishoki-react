@@ -1,7 +1,6 @@
+@use 'styles' as *;
 .appBadges {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 
 	img {
 		width: auto;

@@ -1,7 +1,6 @@
+@use 'styles' as *;
 .mobileAppVideo {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 	margin-bottom: 20px;
 
 	video {

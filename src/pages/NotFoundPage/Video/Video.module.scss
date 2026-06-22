@@ -1,9 +1,7 @@
 @use 'styles' as *;
 
 .videoContainer {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 	position: relative;
 
 	video {

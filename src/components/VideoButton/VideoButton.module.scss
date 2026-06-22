@@ -36,14 +36,12 @@ $border-width: 5px;
 }
 
 .videoButtonIcon {
-	align-items: center;
+	@extend %flex-center;
 	background: $primary-three;
 	border: $border-width solid $border-color;
 	border-radius: 50%;
 	bottom: 0;
 	color: $white;
-	display: flex;
-	justify-content: center;
 	position: absolute;
 	right: 0;
 	z-index: $z-index-video-button-icon;
