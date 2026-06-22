@@ -7,7 +7,7 @@ import styles from './HowItsMadeLinkList.module.scss';
 
 export const HowItsMadeLinkList = () => {
 	return (
-		<section className="primary-three">
+		<section className="primary-three p-0">
 			<div className="boxed">
 				<div className={styles.howItsMadeLinks}>
 					{HOW_ITS_MADE_LINKS.map(

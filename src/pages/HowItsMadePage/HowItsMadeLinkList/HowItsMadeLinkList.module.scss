@@ -2,10 +2,15 @@
 
 .howItsMadeLinks {
 	display: flex;
-	gap: 20px;
 
 	@include phone-down {
-		gap: 8px;
+		gap: 10px;
+		padding: 10px 0;
+	}
+
+	@include tablet-up {
+		gap: 20px;
+		padding: 20px 0;
 	}
 }
 
