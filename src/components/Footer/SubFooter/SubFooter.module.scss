@@ -6,7 +6,7 @@
 }
 
 .contactInfo {
-	@extend %flex-center;
+	@include flex-center;
 
 	@media (min-width: 500px) {
 		float: left;

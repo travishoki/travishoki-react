@@ -1,6 +1,6 @@
 @use 'styles' as *;
 .appBadges {
-	@extend %flex-center;
+	@include flex-center;
 
 	img {
 		width: auto;

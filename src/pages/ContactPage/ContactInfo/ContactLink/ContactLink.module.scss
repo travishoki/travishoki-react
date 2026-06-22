@@ -36,7 +36,7 @@ $height: 50px;
 }
 
 .icon {
-	@extend %flex-center;
+	@include flex-center;
 	background: $primary-four;
 	flex: 0 0 $height;
 	height: $height;

@@ -2,7 +2,7 @@
 @use '../../Filter.variables' as *;
 
 .iconContainer {
-	@extend %flex-center;
+	@include flex-center;
 	background: $gray-three;
 	cursor: pointer;
 	height: $filter-height;

@@ -35,7 +35,7 @@ $border-width: 5px;
 }
 
 .videoButtonIcon {
-	@extend %flex-center;
+	@include flex-center;
 	background: $primary-three;
 	border: $border-width solid $border-color;
 	border-radius: 50%;

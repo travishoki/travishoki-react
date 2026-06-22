@@ -2,7 +2,7 @@
 @use '../Filter.variables' as *;
 
 .filterContainer {
-	@extend %flex-center;
+	@include flex-center;
 	flex-direction: row;
 	height: $filter-height;
 }

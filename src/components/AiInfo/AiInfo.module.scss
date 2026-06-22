@@ -10,7 +10,7 @@
 }
 
 .toggleButton {
-	@extend %flex-center;
+	@include flex-center;
 	border-radius: 0 0 10px 10px;
 	font-size: 12px;
 	height: 25px;

@@ -1,4 +1,4 @@
 @use 'styles' as *;
 .diplomaContainer {
-	@extend %flex-center;
+	@include flex-center;
 }

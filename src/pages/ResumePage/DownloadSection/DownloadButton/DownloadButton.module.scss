@@ -31,7 +31,7 @@ $secondary-height: 56px;
 	}
 
 	.icon {
-		@extend %flex-center;
+		@include flex-center;
 	}
 
 	&:hover {

@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .imageModal {
-	@extend %flex-center;
+	@include flex-center;
 	background: rgba(0, 0, 0, 0.9);
 	height: 100%;
 	left: 0;

@@ -3,7 +3,7 @@
 $gap: 15px;
 
 .techCatalogueItem {
-	@extend %flex-center-h;
+	@include flex-center-h;
 	align-items: center;
 	position: relative;
 

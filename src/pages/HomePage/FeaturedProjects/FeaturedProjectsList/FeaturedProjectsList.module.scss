@@ -21,7 +21,7 @@
 	}
 
 	@media (min-width: $featured-projects-large) {
-		@extend %flex-center-h;
+		@include flex-center-h;
 		gap: 20px;
 	}
 }

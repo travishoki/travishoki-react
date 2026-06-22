@@ -1,14 +1,14 @@
 @use 'styles' as *;
 
 .overlayWithIcon {
-	@extend %flex-center;
+	@include flex-center;
 	background: rgba(0, 0, 0, 0.75);
 	cursor: pointer;
 	height: 100%;
 	opacity: 0;
 	pointer-events: auto;
 	position: absolute;
-	@extend %opacity-transition;
+	@include opacity-transition;
 	width: 100%;
 	z-index: 1;
 

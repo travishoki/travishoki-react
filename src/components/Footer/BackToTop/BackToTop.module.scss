@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .backToTop {
-	@extend %flex-center;
+	@include flex-center;
 	background: $primary-three;
 	border: none;
 	@include circle(44px);

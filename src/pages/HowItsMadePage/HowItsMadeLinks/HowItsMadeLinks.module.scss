@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .howItsMadeLinks {
-	@extend %flex-center;
+	@include flex-center;
 	gap: 20px;
 
 	p {

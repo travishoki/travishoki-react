@@ -22,7 +22,7 @@ $gapTablet: 20px;
 
 .heroRow,
 .secondaryRow {
-	@extend %flex-center;
+	@include flex-center;
 	width: 100%;
 }
 

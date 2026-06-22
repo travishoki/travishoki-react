@@ -1,22 +1,23 @@
-%opacity-transition {
-	transition: opacity 0.3s ease;
-}
+// Mixins used in place of placeholders — @extend is not allowed inside media queries
 
-%flex-center {
+@mixin flex-center {
 	align-items: center;
 	display: flex;
 	justify-content: center;
 }
 
-%flex-center-h {
+@mixin flex-center-h {
 	display: flex;
 	justify-content: center;
 }
 
-// Use mixins instead of placeholders — @extend is not allowed inside media queries
 @mixin centered-block {
 	display: block;
 	margin: 0 auto;
+}
+
+@mixin opacity-transition {
+	transition: opacity 0.3s ease;
 }
 
 @mixin circle($size) {

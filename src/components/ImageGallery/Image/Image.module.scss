@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .imageWrapper {
-	@extend %flex-center;
+	@include flex-center;
 	aspect-ratio: 1 / 1;
 	background-color: black;
 	position: relative;

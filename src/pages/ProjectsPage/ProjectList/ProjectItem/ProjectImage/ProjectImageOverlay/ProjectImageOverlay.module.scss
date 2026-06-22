@@ -8,7 +8,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	@extend %opacity-transition;
+	@include opacity-transition;
 
 	&:hover {
 		opacity: 1;

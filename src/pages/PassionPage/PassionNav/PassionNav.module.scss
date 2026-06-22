@@ -1,7 +1,7 @@
 @use 'styles' as *;
 
 .passionNav {
-	@extend %flex-center-h;
+	@include flex-center-h;
 	margin: 20px auto;
 
 	@include phone-down {
