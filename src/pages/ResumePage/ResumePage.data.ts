@@ -133,7 +133,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		tasks: [
 			'Enhanced customer review functionality across high-traffic retail pages.',
 			'Managed the front-end for all user-generated content, including reviews, product images, and Q&A.',
-			'Features A/B tested and proven positive for revenue.',
+			'A/B tested features and proved positive impact on revenue.',
 			'Integrated tracking pixels for retargeting and third-party platforms',
 			'Pioneered the affiliate links program',
 		],
@@ -186,7 +186,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		position: 'Office Manager / Web Master',
 		tasks: [
 			'Scheduled and dispatched customer deliveries',
-			'Collected bills, register operation, and invoice creation',
+			'Collected bills, operated the register, and created invoices',
 			'Provided customer service and performed clerical work',
 		],
 		techs: [],
@@ -200,7 +200,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		tasks: [
 			'Developed and executed breakdance curriculum',
 			'Mentored and prepared students for successful recitals',
-			'Alongside the students, break it down with sweet dance moves',
+			'Broke it down alongside students with sweet dance moves',
 		],
 		techs: [],
 	},
