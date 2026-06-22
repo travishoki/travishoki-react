@@ -19,7 +19,7 @@ const IMG_HEIGHT = 400;
 
 export const Timpanogos = () => (
 	<section className={classNames('white', styles.timpanogos)}>
-		<div className="boxed boxed-lg">
+		<div className="boxed boxed-xl">
 			<Panels reverse>
 				<Panel>
 					<h2>Timpanogos High School</h2>

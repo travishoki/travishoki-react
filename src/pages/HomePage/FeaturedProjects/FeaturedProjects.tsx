@@ -9,7 +9,7 @@ import styles from './FeaturedProjects.module.scss';
 
 export const FeaturedProjects = () => (
 	<section className={classNames('gray-three', styles.featuredProjects)}>
-		<div className="boxed boxed-lg">
+		<div className="boxed boxed-xl">
 			<h2>Featured Projects</h2>
 			<FeaturedProjectsList />
 			<ViewAllButton />

@@ -10,7 +10,7 @@ import { SocialMedia } from './SocialMedia/SocialMedia';
 export const HokiSkateboardsPage = () => (
 	<>
 		<section>
-			<div className="boxed boxed-lg">
+			<div className="boxed boxed-xl">
 				<Logo />
 				<CoverImage />
 				<p className="boxed indent mb-3">
@@ -23,7 +23,7 @@ export const HokiSkateboardsPage = () => (
 			</div>
 		</section>
 		<section>
-			<div className="boxed boxed-lg">
+			<div className="boxed boxed-xl">
 				<div className="row gy-3">
 					<div className="col-sm-6">
 						<RetailWebsiteColumn />

@@ -21,13 +21,13 @@ import { ProjectImage } from '../HokiSkateboardsPage/ProjectImage/ProjectImage';
 export const FightForYourDreamsPage = () => (
 	<>
 		<section>
-			<div className="boxed boxed-lg">
+			<div className="boxed boxed-xl">
 				<Logo />
 				<CoverImage />
 				<BookHeading />
 				<div className="row gy-3">
 					<div className="col-sm-6">
-						<div className="boxed boxed-lg">
+						<div className="boxed boxed-xl">
 							<About />
 							<ImageGallery images={BOOK_LAUCH_GALLERY} />
 						</div>

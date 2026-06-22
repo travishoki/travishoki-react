@@ -20,7 +20,7 @@ export const MobileAppPage = () => {
 	return (
 		<>
 			<section>
-				<div className="boxed boxed-lg">
+				<div className="boxed boxed-xl">
 					<Title title="React Native Mobile App" />
 					<div className="row mb-4">
 						<div className="col-sm-7">

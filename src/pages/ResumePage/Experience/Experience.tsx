@@ -12,7 +12,7 @@ const DIVIDER_POSITION = 3;
 
 export const Experience = () => (
 	<section className="experience">
-		<div className="boxed boxed-lg">
+		<div className="boxed boxed-xl">
 			<h2>Experience</h2>
 			<StaggeredList className={styles.staggeredList}>
 				{RESUME_DATA.map((job, index) => {

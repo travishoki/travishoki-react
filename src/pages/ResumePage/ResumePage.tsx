@@ -17,7 +17,7 @@ export const ResumePage = () => (
 		<DownloadSection />
 		<CareerOverview />
 		<Experience />
-		<div className="boxed boxed-lg">
+		<div className="boxed boxed-xl">
 			<TechDivider text="Tech Experience" />
 		</div>
 		<TechTiles />
