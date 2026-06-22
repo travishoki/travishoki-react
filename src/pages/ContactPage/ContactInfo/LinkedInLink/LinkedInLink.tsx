@@ -21,7 +21,7 @@ export const LinkedInLink = () => (
 				src={ImgProfilePic}
 				width="50"
 			/>
-			<p>Connect with me on</p>
+			<p className="center">Connect with me on</p>
 		</div>
 	</ContactLink>
 );

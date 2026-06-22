@@ -1,5 +1,12 @@
 .content {
 	align-items: center;
 	display: flex;
-	justify-content: center;
+
+	img {
+		flex: 0 0 50px;
+	}
+
+	p {
+		flex: 1;
+	}
 }
