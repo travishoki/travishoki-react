@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
+import classNames from 'classnames';
+
 import { MotionExpand } from '~animations/MotionExpand';
 import { ParagraphList } from '~components/ParagraphList/ParagraphList';
 import { ReadMoreButton } from '~components/ReadMoreButton/ReadMoreButton';
 
 export const TextWithReadMore = ({
 	buttonClassName,
+	className,
 	initiallyExpanded = false,
 	paragraphs,
 }: TextWithReadMoreProps) => {
@@ -16,7 +19,7 @@ export const TextWithReadMore = ({
 	const [firstParagraph, ...restParagraphs] = paragraphs;
 
 	return (
-		<>
+		<div className={classNames('mb-3', className)}>
 			<ParagraphList paragraphs={[firstParagraph]} />
 
 			<MotionExpand isOpen={expanded}>
@@ -30,12 +33,13 @@ export const TextWithReadMore = ({
 					onToggle={() => setExpanded(!expanded)}
 				/>
 			)}
-		</>
+		</div>
 	);
 };
 
 type TextWithReadMoreProps = {
 	buttonClassName?: string;
+	className?: string;
 	initiallyExpanded?: boolean;
 	paragraphs: string[];
 };

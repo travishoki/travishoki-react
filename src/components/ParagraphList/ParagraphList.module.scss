@@ -1,7 +1,3 @@
 p.paragraph {
-	margin-bottom: 8px;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
+	margin: 0 0 8px 0;
 }
