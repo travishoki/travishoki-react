@@ -2,15 +2,16 @@
 
 .subfooter {
 	background: $gray-three;
-	overflow: hidden;
+
+	@media (min-width: 500px) {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .contactInfo {
 	@include flex-center;
-
-	@media (min-width: 500px) {
-		float: left;
-	}
 }
 
 .contactLink {
@@ -20,8 +21,4 @@
 	&:hover {
 		color: $gray-one;
 	}
-}
-
-.socialContainer {
-	float: left;
 }

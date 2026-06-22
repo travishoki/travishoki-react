@@ -55,8 +55,6 @@ export const Finder = ({
 				toggleOpenFilter={toggleOpenFilter}
 			/>
 
-			<div className="clearfix" />
-
 			<SearchForm
 				onChangeSearch={onChangeSearch}
 				onClearSearchTerm={onClearSearchTerm}
