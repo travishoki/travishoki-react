@@ -9,8 +9,14 @@
 	justify-content: center;
 }
 
-// Use mixin instead of placeholder — @extend is not allowed inside media queries
+// Use mixins instead of placeholders — @extend is not allowed inside media queries
 @mixin centered-block {
 	display: block;
 	margin: 0 auto;
+}
+
+@mixin circle($size) {
+	border-radius: 50%;
+	height: $size;
+	width: $size;
 }

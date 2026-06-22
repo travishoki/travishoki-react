@@ -16,7 +16,7 @@ $size: 32px;
 }
 
 .link {
-	@include border-radius(50%);
+	border-radius: 50%;
 	cursor: pointer;
 	display: block;
 	height: 100%;

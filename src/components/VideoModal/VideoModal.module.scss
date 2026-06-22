@@ -22,10 +22,10 @@
 
 .videoModalClose {
 	$size: 50px;
-
-	@include border-radius(50%);
 	background: black;
 	border: none;
+
+	border-radius: 50%;
 	cursor: pointer;
 	height: $size;
 	position: fixed;

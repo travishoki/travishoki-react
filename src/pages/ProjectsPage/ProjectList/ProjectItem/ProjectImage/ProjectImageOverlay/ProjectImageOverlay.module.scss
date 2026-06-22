@@ -34,7 +34,7 @@
 	z-index: 1;
 
 	img {
-		@include border-radius(50%);
+		border-radius: 50%;
 		display: block;
 		height: 80px;
 		margin: 0 auto;
