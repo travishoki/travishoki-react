@@ -10,7 +10,7 @@ export const LinkedInLink = () => (
 	<ContactLink
 		href="https://www.linkedin.com/in/travishoki"
 		icon={faLinkedin}
-		title="Travis's Linked In"
+		title="Travis's LinkedIn"
 	>
 		<img
 			alt="LinkedIn Profile Picture"
