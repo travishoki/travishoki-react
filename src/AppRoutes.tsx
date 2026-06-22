@@ -7,9 +7,24 @@ import {
 	Routes,
 } from 'react-router-dom';
 
-import { ROUTE_PATTERNS } from '~const/Routes.const';
+import { PageSeo, SeoData } from '~components/PageSeo/PageSeo';
+import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
+import { ROUTE_PATTERNS, ROUTES } from '~const/Routes.const';
 
 import { App } from './App';
+
+const SeoRoute = ({
+	element,
+	route,
+}: {
+	element: React.ReactNode;
+	route: string;
+}) => (
+	<>
+		<PageSeo seoData={PAGE_SEO[route] as SeoData} />
+		{element}
+	</>
+);
 
 const AboutPage = React.lazy(() =>
 	import('./pages/AboutPage/AboutPage').then((m) => ({ default: m.AboutPage })),
@@ -83,20 +98,51 @@ export const AppRoutes = () => (
 		<App>
 			<Suspense fallback={null}>
 				<Routes>
-					<Route element={<HomePage />} path={ROUTE_PATTERNS.HOME} />
-					<Route element={<ProjectsPage />} path={ROUTE_PATTERNS.PROJECTS} />
+					<Route
+						element={<SeoRoute element={<HomePage />} route={ROUTES.HOME} />}
+						path={ROUTE_PATTERNS.HOME}
+					/>
+					<Route
+						element={
+							<SeoRoute element={<ProjectsPage />} route={ROUTES.PROJECTS} />
+						}
+						path={ROUTE_PATTERNS.PROJECTS}
+					/>
 					<Route
 						element={<SingleProjectPage />}
 						path={ROUTE_PATTERNS.PROJECT}
 					/>
-					<Route element={<ResumePage />} path={ROUTE_PATTERNS.RESUME} />
 					<Route
-						element={<HowItsMadePage />}
+						element={
+							<SeoRoute element={<ResumePage />} route={ROUTES.RESUME} />
+						}
+						path={ROUTE_PATTERNS.RESUME}
+					/>
+					<Route
+						element={
+							<SeoRoute
+								element={<HowItsMadePage />}
+								route={ROUTES.HOW_ITS_MADE}
+							/>
+						}
 						path={ROUTE_PATTERNS.HOW_ITS_MADE}
 					/>
-					<Route element={<EducationPage />} path={ROUTE_PATTERNS.EDUCATION} />
-					<Route element={<ContactPage />} path={ROUTE_PATTERNS.CONTACT} />
-					<Route element={<AboutPage />} path={ROUTE_PATTERNS.ABOUT} />
+					<Route
+						element={
+							<SeoRoute element={<EducationPage />} route={ROUTES.EDUCATION} />
+						}
+						path={ROUTE_PATTERNS.EDUCATION}
+					/>
+					<Route
+						element={
+							<SeoRoute element={<ContactPage />} route={ROUTES.CONTACT} />
+						}
+						path={ROUTE_PATTERNS.CONTACT}
+					/>
+					<Route
+						element={<SeoRoute element={<AboutPage />} route={ROUTES.ABOUT} />}
+						path={ROUTE_PATTERNS.ABOUT}
+					/>
 					<Route element={<PassionPage />} path="/passion">
 						<Route
 							element={
@@ -104,12 +150,33 @@ export const AppRoutes = () => (
 							}
 							index
 						/>
-						<Route element={<HokiSkateboardsPage />} path="hoki-skateboards" />
 						<Route
-							element={<FightForYourDreamsPage />}
+							element={
+								<SeoRoute
+									element={<HokiSkateboardsPage />}
+									route={ROUTES.HOKI_SKATEBOARDS}
+								/>
+							}
+							path="hoki-skateboards"
+						/>
+						<Route
+							element={
+								<SeoRoute
+									element={<FightForYourDreamsPage />}
+									route={ROUTES.FIGHT_FOR_YOUR_DREAMS}
+								/>
+							}
 							path="fight-for-your-dreams"
 						/>
-						<Route element={<MobileAppPage />} path="mobile-app" />
+						<Route
+							element={
+								<SeoRoute
+									element={<MobileAppPage />}
+									route={ROUTES.MOBILE_APP}
+								/>
+							}
+							path="mobile-app"
+						/>
 						<Route element={<SkateBookPage />} path="skate-book" />
 					</Route>
 					<Route element={<NotFoundPage />} path="*" />

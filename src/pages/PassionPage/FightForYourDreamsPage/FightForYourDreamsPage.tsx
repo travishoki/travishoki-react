@@ -1,10 +1,7 @@
 import React from 'react';
 
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
-import { PageSeo } from '~components/PageSeo/PageSeo';
-import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
-import { ROUTES } from '~const/Routes.const';
 import ImgCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams.jpg';
 
 import { ButtonLink } from '../ButtonLink/ButtonLink';
@@ -22,7 +19,6 @@ import { ProjectImage } from '../HokiSkateboardsPage/ProjectImage/ProjectImage';
 
 export const FightForYourDreamsPage = () => (
 	<>
-		<PageSeo seoData={PAGE_SEO[ROUTES.FIGHT_FOR_YOUR_DREAMS]} />
 		<section>
 			<div className="boxed boxed-lg">
 				<Logo />

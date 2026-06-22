@@ -1,9 +1,6 @@
 import React from 'react';
 
 import { Education } from '~components/Education/Education';
-import { PageSeo } from '~components/PageSeo/PageSeo';
-import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
-import { ROUTES } from '~const/Routes.const';
 
 import { About } from './About/About';
 import { AiPoweredProjects } from './AiPoweredProjects/AiPoweredProjects';
@@ -16,7 +13,6 @@ import { Volunteer } from './Volunteer/Volunteer';
 
 export const HomePage = () => (
 	<div className="home" id="container">
-		<PageSeo seoData={PAGE_SEO[ROUTES.HOME]} />
 		<Banner />
 		<About />
 		<TechTiles />

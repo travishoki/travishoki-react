@@ -2,10 +2,6 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { PageSeo } from '~components/PageSeo/PageSeo';
-import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
-import { ROUTES } from '~const/Routes.const';
-
 import { CoverImage } from './CoverImage/CoverImage';
 import { Logo } from './Logo/Logo';
 import { RetailWebsiteColumn } from './RetailWebsiteColumn/RetailWebsiteColumn';
@@ -13,7 +9,6 @@ import { SocialMedia } from './SocialMedia/SocialMedia';
 
 export const HokiSkateboardsPage = () => (
 	<>
-		<PageSeo seoData={PAGE_SEO[ROUTES.HOKI_SKATEBOARDS]} />
 		<section>
 			<div className="boxed boxed-lg">
 				<Logo />

@@ -1,11 +1,8 @@
 import React from 'react';
 
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
-import { PageSeo } from '~components/PageSeo/PageSeo';
-import { PAGE_SEO } from '~components/PageSeo/PageSeo.data';
 import { ParagraphBlock } from '~components/ParagraphBlock/ParagraphBlock';
 import { TechListCatalogue } from '~components/TechListCatalogue/TechListCatalogue';
-import { ROUTES } from '~const/Routes.const';
 
 import { AppIcon } from './AppIcon/AppIcon';
 import { DownloadAppSection } from './DownloadAppSection/DownloadAppSection';
@@ -22,7 +19,6 @@ import styles from './MobileApp.module.scss';
 export const MobileAppPage = () => {
 	return (
 		<>
-			<PageSeo seoData={PAGE_SEO[ROUTES.MOBILE_APP]} />
 			<section>
 				<div className="boxed boxed-lg">
 					<Title title="React Native Mobile App" />
