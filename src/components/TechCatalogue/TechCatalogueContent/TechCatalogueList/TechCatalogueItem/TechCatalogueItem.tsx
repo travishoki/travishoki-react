@@ -46,7 +46,7 @@ export const TechCatalogueItem = ({
 			/>
 
 			{expanded && (
-				<div className={styles.labalContainer}>
+				<div className={styles.labelContainer}>
 					<p
 						className={classNames(styles.label, {
 							[styles.crossedOut]: legacy,
