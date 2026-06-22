@@ -1,10 +1,8 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
-import { ExternalLink } from '~components/ExternalLink/ExternalLink';
-
+import { HowItsMadeLink } from './HowItsMadeLink/HowItsMadeLink';
 import { HOW_ITS_MADE_LINKS } from './HowItsMadeLinks.data';
 
 import styles from './HowItsMadeLinks.module.scss';
@@ -15,15 +13,13 @@ export const HowItsMadeLinks = () => {
 			<div className={classNames('center', styles.howItsMadeLinks)}>
 				{HOW_ITS_MADE_LINKS.map(
 					({ description, href, icon, itemKey, label }) => (
-						<ExternalLink
+						<HowItsMadeLink
 							key={itemKey}
-							className={styles.howItsMadeLink}
+							description={description}
 							href={href}
-						>
-							<FontAwesomeIcon icon={icon} />
-							<p className={styles.howItsMadeLinkLabel}>{label}</p>
-							<p className={styles.howItsMadeLinkDescription}>{description}</p>
-						</ExternalLink>
+							icon={icon}
+							label={label}
+						/>
 					),
 				)}
 			</div>

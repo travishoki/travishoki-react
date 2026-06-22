@@ -1,0 +1,28 @@
+@use 'styles' as *;
+
+.howItsMadeLink {
+	color: $white;
+	flex-direction: column;
+	text-decoration: none;
+
+	svg {
+		font-size: 40px;
+		margin-bottom: 5px;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.label {
+	color: $white;
+	font-size: 16px;
+	margin: 0;
+}
+
+.description {
+	color: $gray-one;
+	font-size: 12px;
+	margin: 0;
+}

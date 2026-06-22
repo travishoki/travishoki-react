@@ -3,33 +3,4 @@
 .howItsMadeLinks {
 	@include flex-center;
 	gap: 20px;
-
-	p {
-		margin: 0;
-	}
-}
-
-.howItsMadeLinkLabel {
-	color: $white;
-	font-size: 16px;
-}
-
-.howItsMadeLinkDescription {
-	color: $gray-one;
-	font-size: 12px;
-}
-
-.howItsMadeLink {
-	color: $white;
-	flex-direction: column;
-	text-decoration: none;
-
-	svg {
-		font-size: 40px;
-		margin-bottom: 5px;
-	}
-
-	&:hover {
-		opacity: 0.8;
-	}
 }
