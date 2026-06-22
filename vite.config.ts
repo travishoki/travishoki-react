@@ -4,6 +4,19 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+	build: {
+		rollupOptions: {
+			output: {
+				assetFileNames: (assetInfo) => {
+					const name = assetInfo.names?.[0] ?? '';
+					if (/\.(png|jpe?g|gif|svg|webp|ico)$/i.test(name))
+						return 'assets/images/[name]-[hash][extname]';
+
+					return 'assets/[name]-[hash][extname]';
+				},
+			},
+		},
+	},
 	css: {
 		preprocessorOptions: {
 			scss: {
