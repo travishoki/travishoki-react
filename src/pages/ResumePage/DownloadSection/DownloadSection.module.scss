@@ -1,24 +1,50 @@
 @use 'styles' as *;
 
 .resumeButtons {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 600px;
+
+	@include phone-down {
+		gap: 10px;
+	}
+
+	@include tablet-up {
+		gap: 20px;
+	}
+}
+
+.heroRow,
+.secondaryRow {
+	align-items: center;
 	display: flex;
 	justify-content: center;
+}
+
+.heroRow {
+	flex-direction: column;
+	width: 100%;
+
+	@include tablet-up {
+		max-width: 400px;
+	}
+}
+
+.secondaryRow {
+	display: flex;
+	max-width: 600px;
+	width: 100%;
 
 	@include phone-down {
 		flex-direction: column;
 		gap: 10px;
+		width: 100%;
 	}
 
 	@include tablet-up {
 		flex-direction: row;
 		gap: 20px;
 	}
-}
-
-.caption {
-	color: $white;
-	font-size: 12px;
-	margin: 0;
-	margin-bottom: 2px;
-	text-align: center;
 }

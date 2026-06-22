@@ -1,0 +1,113 @@
+@use 'styles' as *;
+
+$hero-height: 72px;
+$secondary-height: 56px;
+
+.downloadButton {
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+
+	.buttonText {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.caption {
+		display: block;
+		font-weight: normal;
+		line-height: 1;
+	}
+
+	.label {
+		display: block;
+		line-height: 1;
+	}
+
+	.icon {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&.hero {
+		color: $secondary-four;
+		font-size: 22px;
+
+		.buttonText,
+		.icon {
+			height: $hero-height;
+			line-height: $hero-height;
+		}
+
+		.buttonText {
+			background: $secondary-one;
+		}
+
+		.icon {
+			background: $secondary-two;
+			color: $secondary-four;
+			flex: 0 0 $hero-height;
+			height: $hero-height;
+			width: $hero-height;
+		}
+
+		.iconSvg {
+			height: 36px;
+			width: 36px;
+		}
+
+		.caption {
+			font-size: 13px;
+		}
+
+		.label {
+			margin-bottom: 4px;
+		}
+	}
+
+	&.secondary {
+		color: $primary-five;
+		font-size: 18px;
+
+		.buttonText,
+		.icon {
+			height: $secondary-height;
+		}
+
+		.buttonText {
+			background: $primary-one;
+		}
+
+		.icon {
+			background: $primary-three;
+			color: $primary-five;
+			flex: 0 0 $secondary-height;
+			height: $secondary-height;
+			width: $secondary-height;
+		}
+
+		.iconSvg {
+			height: 24px;
+			width: 24px;
+		}
+
+		.caption {
+			font-size: 13px;
+		}
+
+		.label {
+			margin-bottom: 2px;
+		}
+	}
+}
