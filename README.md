@@ -5,23 +5,53 @@ Resume website
 
 ## Setup
 
-nvm use
-yarn install
+`nvm use`
+`yarn install`
 
 ## Development
 
-yarn start
+`yarn start` — starts the Vite dev server
 
 ## Build
 
-yarn build
+`yarn build` — compiles and bundles the app for production
 
-## Storybook Launch
+`yarn preview` — locally preview the production build
 
-yarn storybook
+## Testing
 
-## Storybook Build (for deployment)
+`yarn test` — run the Jest test suite
 
-yarn build-storybook
+`yarn test:coverage` — run tests with a coverage report
 
-Upload the `storybook-static/`directory via FTP to the root directory at [travishoki.com/storybook-static](https://travishoki.com/storybook-static).
+`yarn test:watch` — run tests in watch mode
+
+## Linting & Formatting
+
+`yarn lint` — lint JS/TS/TSX files with ESLint
+
+`yarn lint:css` — lint SCSS files with Stylelint
+
+`yarn lint:css:fix` — lint and auto-fix SCSS files
+
+`yarn format` — format TS, TSX, and SCSS files with Prettier
+
+`yarn ts-check` — run the TypeScript compiler check
+
+## Storybook
+
+`yarn storybook` — launch Storybook on port 6006
+
+`yarn build-storybook` — build Storybook for deployment
+
+Upload the `storybook-static/` directory via FTP to the root directory at [travishoki.com/storybook-static](https://travishoki.com/storybook-static).
+
+## Utilities
+
+`yarn bounce` — delete `node_modules` and reinstall dependencies
+
+`yarn stats` — run the bundle stats script
+
+`yarn deadcode-find` — list potentially unused exports via ts-prune
+
+`yarn deadcode-count` — count the number of potentially unused exports
