@@ -1,15 +1,14 @@
 import React from 'react';
 
 import { ImgPopIn } from '~animations/ImgPopIn';
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
 import styles from './Logo.module.scss';
 
 export const Logo = () => (
-	<a
+	<ExternalLink
 		className={styles.link}
 		href="https://hokiskateboards.com"
-		rel="noreferrer"
-		target="_blank"
 		title="Hoki Skateboards"
 	>
 		<ImgPopIn
@@ -19,5 +18,5 @@ export const Logo = () => (
 			src="http://links.hokiskateboards.com/images/logo.png"
 			width="275px"
 		/>
-	</a>
+	</ExternalLink>
 );

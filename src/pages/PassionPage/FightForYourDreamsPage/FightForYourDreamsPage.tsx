@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 import { ImageGallery } from '~components/ImageGallery/ImageGallery';
 import { SoftwareCatalogue } from '~components/SoftwareCatalogue/SoftwareCatalogue';
 import ImgCover from '~images/passion/fight-for-your-dreams/book-gallery/fight-for-your-dreams.jpg';
@@ -32,14 +33,9 @@ export const FightForYourDreamsPage = () => (
 						</div>
 					</div>
 					<div className="col-sm-6">
-						<a
-							href={AMAZON_HREF}
-							rel="noreferrer"
-							target="_blank"
-							title="Fight For Your Dreams"
-						>
+						<ExternalLink href={AMAZON_HREF} title="Fight For Your Dreams">
 							<ProjectImage alt="Fight For Your Dreams" src={ImgCover} />
-						</a>
+						</ExternalLink>
 						<ButtonLink href={AMAZON_HREF} text="View on Amazon" />
 						<Description />
 						<SoftwareCatalogue list={techSoftwareList} />

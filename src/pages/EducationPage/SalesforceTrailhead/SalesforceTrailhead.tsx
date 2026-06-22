@@ -2,6 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 import ImgRanger from '~images/education/ranger.png';
 
 import { SalesforceIcon } from '../SalesforceIcon/SalesforceIcon';
@@ -19,27 +20,23 @@ export const SalesforceTrailhead = () => (
 			<div className={styles.earned}>
 				<h2>Salesforce&apos;s Ranger Status</h2>
 				<p>Earned July 25, 2024</p>
-				<a
+				<ExternalLink
 					href="https://www.salesforce.com/trailblazer/nyzvvx5htc3badv2b1"
-					rel="noreferrer"
-					target="_blank"
 					title="Trailblazer"
 				>
 					<SalesforceIcon />
 					View my profile
-				</a>
+				</ExternalLink>
 			</div>
 			<div className={styles.rank}>
 				<h3>What are Trailblazer Ranks?</h3>
 				<p>
-					<a
+					<ExternalLink
 						href="https://trailhead.salesforce.com/trailblazer-ranks"
-						rel="noreferrer"
-						target="_blank"
 						title="Trailblazer Ranks"
 					>
 						Trailblazer Ranks
-					</a>{' '}
+					</ExternalLink>{' '}
 					showcase where you are on your Trailhead learning journey. Each module
 					you complete earns you a badge and points that go towards your
 					Trailblazer Rank. Climb the ranks and learn new skills.

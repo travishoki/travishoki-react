@@ -1,11 +1,9 @@
 import React from 'react';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
+
 export const MikeShinoda = () => (
-	<a
-		href="https://en.wikipedia.org/wiki/Mike_Shinoda"
-		rel="noreferrer"
-		target="_blank"
-	>
+	<ExternalLink href="https://en.wikipedia.org/wiki/Mike_Shinoda">
 		Mike Shinoda
-	</a>
+	</ExternalLink>
 );

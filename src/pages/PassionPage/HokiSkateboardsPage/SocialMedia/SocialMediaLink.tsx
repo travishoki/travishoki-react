@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 import { WHITE } from '~const/colors.const';
 
 import { SocialMediaItemData } from './SocialMedia.data';
@@ -16,14 +17,8 @@ export const SocialMediaLink = ({
 	title,
 }: SocialMediaItemData) => (
 	<li>
-		<a
-			aria-label={ariaLabel}
-			href={href}
-			rel="noreferrer"
-			target="_blank"
-			title={title}
-		>
+		<ExternalLink aria-label={ariaLabel} href={href} title={title}>
 			<Icon {...iconProps} />
-		</a>
+		</ExternalLink>
 	</li>
 );

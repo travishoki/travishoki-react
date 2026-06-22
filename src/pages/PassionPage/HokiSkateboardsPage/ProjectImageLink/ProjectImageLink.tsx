@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
+
 import { ProjectImage } from '../ProjectImage/ProjectImage';
 
 import styles from './ProjectImageLink.module.scss';
@@ -11,15 +13,9 @@ export const ProjectImageLink = ({
 	title,
 }: ProjectImageLinkProps) => (
 	<div className={styles.wrapper}>
-		<a
-			className={styles.link}
-			href={href}
-			rel="noreferrer"
-			target="_blank"
-			title={title}
-		>
+		<ExternalLink className={styles.link} href={href} title={title}>
 			<ProjectImage alt={alt} src={src} />
-		</a>
+		</ExternalLink>
 	</div>
 );
 

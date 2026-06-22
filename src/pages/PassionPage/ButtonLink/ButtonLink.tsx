@@ -1,17 +1,14 @@
 import React from 'react';
 
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
+
 import styles from './ButtonLink.module.scss';
 
 export const ButtonLink = ({ href, text }: ButtonLinkProps) => {
 	return (
-		<a
-			className={styles.buttonLink}
-			href={href}
-			rel="noreferrer"
-			target="_blank"
-		>
+		<ExternalLink className={styles.buttonLink} href={href}>
 			{text}
-		</a>
+		</ExternalLink>
 	);
 };
 
