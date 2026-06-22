@@ -24,7 +24,17 @@ $height: 50px;
 }
 
 .content {
+	align-items: center;
+	display: flex;
 	flex: 1;
+
+	img {
+		flex: 0 0 50px;
+	}
+
+	p {
+		flex: 1;
+	}
 }
 
 .icon {
