@@ -2,21 +2,6 @@
 
 $height: 50px;
 
-.icon {
-	align-items: center;
-	background: $primary-four;
-	display: flex;
-	flex: 0 0 $height;
-	height: $height;
-	justify-content: center;
-	width: $height;
-}
-
-.iconSvg {
-	color: $white;
-	font-size: 20px;
-}
-
 .contactLink {
 	background: $gray-three;
 	display: flex;
@@ -37,4 +22,23 @@ $height: 50px;
 		margin: 0;
 		padding: 0 20px;
 	}
+}
+
+.content {
+	flex: 1;
+}
+
+.icon {
+	align-items: center;
+	background: $primary-four;
+	display: flex;
+	flex: 0 0 $height;
+	height: $height;
+	justify-content: center;
+	width: $height;
+}
+
+.iconSvg {
+	color: $white;
+	font-size: 20px;
 }

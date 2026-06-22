@@ -10,6 +10,6 @@ export const GitLink = () => (
 		icon={faGit}
 		title="Travis's Github"
 	>
-		<p>Some of my repos on</p>
+		<p className="center">Some of my repos on</p>
 	</ContactLink>
 );

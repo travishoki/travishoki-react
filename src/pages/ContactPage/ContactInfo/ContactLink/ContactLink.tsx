@@ -20,7 +20,7 @@ export const ContactLink = ({
 		target="_blank"
 		title={title}
 	>
-		{children}
+		<div className={styles.content}>{children}</div>
 		<div className={styles.icon}>
 			<FontAwesomeIcon className={styles.iconSvg} icon={icon} />
 		</div>
