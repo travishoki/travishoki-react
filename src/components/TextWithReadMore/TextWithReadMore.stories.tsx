@@ -1,3 +1,4 @@
+import { LOREM_IPSUM } from 'src/stories/const';
 import { expect } from 'storybook/test';
 
 import { TextWithReadMore } from './TextWithReadMore';
@@ -11,9 +12,6 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
-const LOREM_IPSUM =
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna ligula, gravida non purus ac, viverra accumsan velit. Nunc vitae imperdiet nisl, vitae congue turpis. Nunc euismod mauris at ligula congue ultrices. In quis condimentum augue. Sed pharetra neque a augue hendrerit blandit.';
 
 export const SingleParagraph: Story = {
 	args: {
