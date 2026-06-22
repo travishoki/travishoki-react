@@ -3,6 +3,7 @@ import React from 'react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
@@ -11,7 +12,7 @@ import styles from './HowItsMadeLinks.module.scss';
 export const HowItsMadeLinks = () => {
 	return (
 		<section className="primary-three">
-			<div className={styles.howItsMadeLinks}>
+			<div className={classNames('center', styles.howItsMadeLinks)}>
 				<ExternalLink
 					className={styles.howItsMadeLink}
 					href="https://github.com/travishoki/travishoki-react"

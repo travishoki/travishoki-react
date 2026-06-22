@@ -6,7 +6,6 @@
 
 	p {
 		margin: 0;
-		text-align: center;
 	}
 }
 
@@ -31,16 +30,6 @@
 	}
 
 	&:hover {
-		svg {
-			color: $gray-one;
-		}
-
-		.howItsMadeLinkLabel {
-			color: $primary-one;
-		}
-
-		.howItsMadeLinkDescription {
-			color: $gray-two;
-		}
+		opacity: 0.8;
 	}
 }
