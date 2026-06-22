@@ -5,8 +5,7 @@
 }
 
 .staggeredItemImage {
-	display: block;
-	margin: 0 auto;
+	@extend %centered-block;
 	overflow: hidden;
 }
 

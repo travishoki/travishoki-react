@@ -26,8 +26,7 @@
 }
 
 .homeBannerBtn {
-	display: block;
-	margin: 0 auto;
+	@extend %centered-block;
 
 	@include phone-down {
 		margin-top: 10px;

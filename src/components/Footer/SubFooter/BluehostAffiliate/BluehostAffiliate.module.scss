@@ -14,8 +14,7 @@
 
 	img {
 		@media (max-width: 499px) {
-			display: block;
-			margin: 0 auto;
+			@extend %centered-block;
 		}
 	}
 }
