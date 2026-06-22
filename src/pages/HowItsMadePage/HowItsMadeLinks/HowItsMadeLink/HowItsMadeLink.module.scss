@@ -1,13 +1,21 @@
 @use 'styles' as *;
 
 .howItsMadeLink {
+	background: $blue-four;
 	color: $white;
+	display: block;
 	flex-direction: column;
+	padding: 20px 0;
 	text-decoration: none;
+	width: 100%;
 
 	svg {
 		font-size: 40px;
 		margin-bottom: 5px;
+
+		@include phone-down {
+			font-size: 24px;
+		}
 	}
 
 	&:hover {
@@ -19,10 +27,18 @@
 	color: $white;
 	font-size: 16px;
 	margin: 0;
+
+	@include phone-down {
+		font-size: 12px;
+	}
 }
 
 .description {
 	color: $gray-one;
 	font-size: 12px;
 	margin: 0;
+
+	@include phone-down {
+		font-size: 10px;
+	}
 }

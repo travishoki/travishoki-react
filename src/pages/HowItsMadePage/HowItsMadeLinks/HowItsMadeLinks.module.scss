@@ -1,6 +1,14 @@
 @use 'styles' as *;
 
 .howItsMadeLinks {
-	@include flex-center;
+	display: flex;
 	gap: 20px;
+
+	@include phone-down {
+		gap: 8px;
+	}
+}
+
+.howItsMadeLinkItem {
+	flex: 1;
 }
