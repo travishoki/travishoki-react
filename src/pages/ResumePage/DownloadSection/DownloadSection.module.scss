@@ -1,18 +1,22 @@
 @use 'styles' as *;
 
+$gapPhone: 10px;
+$gapTablet: 20px;
+
 .resumeButtons {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	max-width: 600px;
 
 	@include phone-down {
-		gap: 10px;
+		gap: $gapPhone;
+		max-width: 400px;
 	}
 
 	@include tablet-up {
-		gap: 20px;
+		gap: $gapTablet;
+		max-width: 600px;
 	}
 }
 
@@ -21,30 +25,22 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 .heroRow {
-	flex-direction: column;
-	width: 100%;
-
-	@include tablet-up {
-		max-width: 400px;
-	}
+	max-width: 400px;
 }
 
 .secondaryRow {
-	display: flex;
-	max-width: 600px;
-	width: 100%;
-
 	@include phone-down {
 		flex-direction: column;
-		gap: 10px;
+		gap: $gapPhone;
 		width: 100%;
 	}
 
 	@include tablet-up {
 		flex-direction: row;
-		gap: 20px;
+		gap: $gapTablet;
 	}
 }
