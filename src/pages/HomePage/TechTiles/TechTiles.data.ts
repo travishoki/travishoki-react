@@ -28,6 +28,7 @@ import {
 	SQL,
 	TechKey,
 	TYPESCRIPT,
+	VITE,
 	WEBPACK,
 	WORDPRESS,
 	CLAUDE_CODE,
@@ -77,6 +78,7 @@ export const DISPLAYED_LIST: TechKey[] = [
 	GITHUB,
 	CYPRESS,
 	PHP_MY_ADMIN,
+	VITE,
 	WEBPACK,
 	GRUNT,
 ];

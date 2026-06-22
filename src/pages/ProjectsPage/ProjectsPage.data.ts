@@ -57,6 +57,7 @@ const PROJECTS: ProjectInput[] = [
 			TECH.CLAUDE_CODE,
 			TECH.CURSOR_AI,
 			TECH.STORYBOOK,
+			TECH.VITE,
 		],
 		url: 'https://food-cards.travishoki.com/',
 	},

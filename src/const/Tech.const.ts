@@ -38,6 +38,7 @@ import ImgSql from '~images/icons/tech-icons/sql.jpg';
 import ImgStorybook from '~images/icons/tech-icons/storybook.jpg';
 import ImgStripe from '~images/icons/tech-icons/stripe.jpg';
 import ImgTypescript from '~images/icons/tech-icons/typescript.jpg';
+import ImgVite from '~images/icons/tech-icons/vite.jpg';
 import ImgWebpack from '~images/icons/tech-icons/webpack.jpg';
 import ImgWooCommerce from '~images/icons/tech-icons/woo-commerce.jpg';
 import ImgWordpress from '~images/icons/tech-icons/wordpress.jpg';
@@ -76,6 +77,7 @@ export const SQL = 'SQL';
 export const STRIPE = 'STRIPE';
 export const STORYBOOK = 'STORYBOOK';
 export const TYPESCRIPT = 'TYPESCRIPT';
+export const VITE = 'VITE';
 export const WEBPACK = 'WEBPACK';
 export const WOO_COMMERCE = 'WOO_COMMERCE';
 export const WORDPRESS = 'WORDPRESS';
@@ -229,6 +231,7 @@ export const TECH: Record<string, TechInfo> = {
 		level: LEVEL.EXPERT,
 		type: TYPES.FRONTEND,
 	},
+	VITE: { image: ImgVite, label: 'Vite', type: TYPES.TOOL },
 	WEBPACK: { image: ImgWebpack, label: 'Webpack', type: TYPES.TOOL },
 	WOO_COMMERCE: {
 		image: ImgWooCommerce,
