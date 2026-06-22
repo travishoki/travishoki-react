@@ -2,17 +2,32 @@
 
 $height: 50px;
 
-a.contactLink {
+.icon {
 	align-items: center;
+	background: $primary-four;
+	display: flex;
+	flex: 0 0 $height;
+	height: $height;
+	justify-content: center;
+	width: $height;
+}
+
+.iconSvg {
+	color: $white;
+	font-size: 20px;
+}
+
+.contactLink {
 	background: $gray-three;
 	display: flex;
 	height: $height;
 	margin: 0 auto 20px;
+	max-width: 300px;
 	text-decoration: none;
-	width: fit-content;
+	width: 100%;
 
 	&:hover {
-		background: $gray-five;
+		opacity: 0.8;
 	}
 
 	p {
@@ -21,29 +36,5 @@ a.contactLink {
 		line-height: $height;
 		margin: 0;
 		padding: 0 20px;
-	}
-
-	&:hover {
-		p {
-			color: $gray-one;
-		}
-		img {
-			opacity: 0.8;
-		}
-	}
-
-	i {
-		align-items: center;
-		background: $primary-three;
-		color: $white;
-		display: flex;
-		font-size: 20px;
-		height: $height;
-		justify-content: center;
-		width: $height;
-	}
-
-	&:hover i {
-		background: $primary-four;
 	}
 }
