@@ -10,10 +10,13 @@ export default defineConfig({
 				assetFileNames: (assetInfo) => {
 					const name = assetInfo.names?.[0] ?? '';
 					if (/\.(png|jpe?g|gif|svg|webp|ico)$/i.test(name))
-						return 'assets/images/[name]-[hash][extname]';
+						return 'images/[name]-[hash][extname]';
+					if (/\.css$/i.test(name)) return 'assets/css/[name]-[hash][extname]';
 
 					return 'assets/[name]-[hash][extname]';
 				},
+				chunkFileNames: 'assets/js/[name]-[hash].js',
+				entryFileNames: 'assets/js/[name]-[hash].js',
 			},
 		},
 	},
