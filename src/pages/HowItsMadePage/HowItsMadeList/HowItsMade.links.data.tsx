@@ -2,6 +2,12 @@ import React from 'react';
 
 import { ItemLink } from './ItemLink/ItemLink';
 
+export const Bootstrap = () => (
+	<ItemLink href="https://getbootstrap.com" title="Bootstrap">
+		Bootstrap
+	</ItemLink>
+);
+
 export const AxeDevTools = () => (
 	<ItemLink
 		href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"
@@ -32,6 +38,12 @@ export const CssModules = () => (
 	</ItemLink>
 );
 
+export const FontAwesome = () => (
+	<ItemLink href="https://fontawesome.com" title="Font Awesome">
+		FontAwesome
+	</ItemLink>
+);
+
 export const Eslint = () => (
 	<ItemLink href="https://eslint.org" title="Eslint">
 		Eslint
@@ -56,9 +68,21 @@ export const Motion = () => (
 	</ItemLink>
 );
 
+export const Prettier = () => (
+	<ItemLink href="https://prettier.io" title="Prettier">
+		Prettier
+	</ItemLink>
+);
+
 export const Pingdom = () => (
 	<ItemLink href="https://tools.pingdom.com" title="Pingdom Website Speed Test">
 		Pingdom
+	</ItemLink>
+);
+
+export const ReactRouter = () => (
+	<ItemLink href="https://reactrouter.com" title="React Router">
+		React Router
 	</ItemLink>
 );
 
@@ -77,6 +101,12 @@ export const Scss = () => (
 export const Storybook = () => (
 	<ItemLink href="https://storybook.js.org" title="Storybook">
 		Storybook
+	</ItemLink>
+);
+
+export const Stylelint = () => (
+	<ItemLink href="https://stylelint.io" title="Stylelint">
+		Stylelint
 	</ItemLink>
 );
 

@@ -21,10 +21,22 @@ export const HowItsMadeList = () => {
 						<Link.Typescript /> typed Javascript
 					</li>
 					<li>
+						Routed with <Link.ReactRouter />
+					</li>
+					<li>
+						<Link.Bootstrap /> for responsive grid and base UI styles
+					</li>
+					<li>
+						<Link.FontAwesome /> for icons
+					</li>
+					<li>
 						Unit tested with <Link.Jest />
 					</li>
 					<li>
-						<Link.Eslint /> for consistent coding style
+						<Link.Eslint /> and <Link.Prettier /> for consistent coding style
+					</li>
+					<li>
+						<Link.Stylelint /> for consistent CSS style
 					</li>
 					<li>
 						<Link.Storybook /> for component management
