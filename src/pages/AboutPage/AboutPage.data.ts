@@ -132,7 +132,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgBreakdance,
 		imgLargeDimensions: [620, 413],
 		imgSmall: ImgBreakdanceSmall,
-		video: 'videos/green-man.MP4',
+		video: 'videos/green-man.mp4',
 	},
 	{
 		title: 'Ballroom Dance',
