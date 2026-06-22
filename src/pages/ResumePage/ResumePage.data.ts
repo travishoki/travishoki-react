@@ -137,7 +137,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		dateEnd: 'Mar. 2019',
 		dateStart: 'Sept. 2015',
 		description:
-			'I was a Front End Developer on the User Generated Content team. We created, enhanced, and maintained sections of the site that the user contributes to, such as product rating and reviews, as well as questions and answers. I was able to contribute to a number of projects including the introduction of User Generated Product Images as well as implementing a variety of SEO boosting enhancements.',
+			'As a Frontend Developer on the User Generated Content team, I helped build, enhance, and maintain the interactive sections of the site, including product ratings, reviews, and Q&A modules. During my time on the team, I drove several key initiatives, such as introducing user-generated product images and implementing a variety of targeted SEO enhancements to boost search visibility.',
 		img: ImgOverstock,
 		position: 'Front-end Developer',
 		tasks: [
