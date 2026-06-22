@@ -5,9 +5,6 @@
 	max-width: 400px;
 
 	input {
-		@include border-radius(0);
-		@include box-shadow(none);
-		border-bottom: solid 1px $gray-four;
 		color: $white;
 	}
 }
