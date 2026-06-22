@@ -54,6 +54,9 @@ export const HowItsMadeList = () => {
 						Animated with <Link.Motion />
 					</li>
 					<li>
+						Website hosted with <Link.Bluehost />
+					</li>
+					<li>
 						ADA accessibility optimized using <Link.AxeDevTools />
 						<ViewScreenShot
 							alt="Axe DevTools Report"
@@ -70,9 +73,6 @@ export const HowItsMadeList = () => {
 							dimensions={[2048, 1220]}
 							src={ImgPingdomSpeedTestReport}
 						/>
-					</li>
-					<li>
-						Website hosted with <Link.Bluehost />
 					</li>
 				</ul>
 			</div>
