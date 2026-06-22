@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
-import { HowItsMadeLink as HowItsMadeLinkType } from '../HowItsMadeLinks.data';
+import { HowItsMadeLink as HowItsMadeLinkType } from '../HowItsMadeLinkList.data';
 
 import styles from './HowItsMadeLink.module.scss';
 

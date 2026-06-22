@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { HowItsMadeLink } from './HowItsMadeLink/HowItsMadeLink';
-import { HOW_ITS_MADE_LINKS } from './HowItsMadeLinks.data';
+import { HOW_ITS_MADE_LINKS } from './HowItsMadeLinkList.data';
 
-import styles from './HowItsMadeLinks.module.scss';
+import styles from './HowItsMadeLinkList.module.scss';
 
-export const HowItsMadeLinks = () => {
+export const HowItsMadeLinkList = () => {
 	return (
 		<section className="primary-three">
 			<div className="boxed">
