@@ -2,7 +2,6 @@
 // Modules consume these with `@use 'styles' as *;` (src is on the Sass load
 // path via craco.config.js), so they never re-import the individual partials.
 @forward 'variables';
-@forward 'mixins';
 @forward 'responsive';
 @forward 'z-index';
 @forward 'placeholders';
