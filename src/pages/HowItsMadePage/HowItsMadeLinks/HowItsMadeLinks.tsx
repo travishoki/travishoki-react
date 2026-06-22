@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
@@ -20,6 +20,14 @@ export const HowItsMadeLinks = () => {
 					<FontAwesomeIcon icon={faGithub} />
 					<p className={styles.howItsMadeLinkLabel}>Github</p>
 					<p className={styles.howItsMadeLinkDescription}>Source Code</p>
+				</ExternalLink>
+				<ExternalLink
+					className={styles.howItsMadeLink}
+					href="https://github.com/travishoki/travishoki-react/blob/master/package.json"
+				>
+					<FontAwesomeIcon icon={faBoxOpen} />
+					<p className={styles.howItsMadeLinkLabel}>package.json</p>
+					<p className={styles.howItsMadeLinkDescription}>Dependencies</p>
 				</ExternalLink>
 				<ExternalLink
 					className={styles.howItsMadeLink}
