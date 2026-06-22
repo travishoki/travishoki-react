@@ -3,14 +3,14 @@
 .howItsMadeList {
 	h3 {
 		margin: 0 0 10px 0;
-		text-align: left;
 	}
 
 	ul {
 		display: block;
 		list-style: none;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
+		width: fit-content;
 	}
 
 	li {
