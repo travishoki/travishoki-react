@@ -171,14 +171,3 @@ const GALLERY: Record<string, string> = {
 
 export const websiteGalleryImageSrc = (filename: string): string =>
 	GALLERY[filename] ?? ImgMissingImages;
-
-// Last-resort fallback if a resolved gallery image fails to load at runtime.
-export const handleGalleryError = (
-	event: React.SyntheticEvent<HTMLImageElement>,
-) => {
-	const img = event.currentTarget;
-
-	// Stop listening so a missing fallback can't retrigger this handler.
-	img.onerror = null;
-	img.src = ImgMissingImages;
-};
