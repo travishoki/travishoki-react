@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBook, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
+
+import { HOW_ITS_MADE_LINKS } from './HowItsMadeLinks.data';
 
 import styles from './HowItsMadeLinks.module.scss';
 
@@ -13,30 +13,19 @@ export const HowItsMadeLinks = () => {
 	return (
 		<section className="primary-three">
 			<div className={classNames('center', styles.howItsMadeLinks)}>
-				<ExternalLink
-					className={styles.howItsMadeLink}
-					href="https://github.com/travishoki/travishoki-react"
-				>
-					<FontAwesomeIcon icon={faGithub} />
-					<p className={styles.howItsMadeLinkLabel}>Github</p>
-					<p className={styles.howItsMadeLinkDescription}>Source Code</p>
-				</ExternalLink>
-				<ExternalLink
-					className={styles.howItsMadeLink}
-					href="https://github.com/travishoki/travishoki-react/blob/master/package.json"
-				>
-					<FontAwesomeIcon icon={faBoxOpen} />
-					<p className={styles.howItsMadeLinkLabel}>package.json</p>
-					<p className={styles.howItsMadeLinkDescription}>Dependencies</p>
-				</ExternalLink>
-				<ExternalLink
-					className={styles.howItsMadeLink}
-					href="https://travishoki.com/storybook-static"
-				>
-					<FontAwesomeIcon icon={faBook} />
-					<p className={styles.howItsMadeLinkLabel}>Storybook</p>
-					<p className={styles.howItsMadeLinkDescription}>Component Library</p>
-				</ExternalLink>
+				{HOW_ITS_MADE_LINKS.map(
+					({ description, href, icon, itemKey, label }) => (
+						<ExternalLink
+							key={itemKey}
+							className={styles.howItsMadeLink}
+							href={href}
+						>
+							<FontAwesomeIcon icon={icon} />
+							<p className={styles.howItsMadeLinkLabel}>{label}</p>
+							<p className={styles.howItsMadeLinkDescription}>{description}</p>
+						</ExternalLink>
+					),
+				)}
 			</div>
 		</section>
 	);
