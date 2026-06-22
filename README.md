@@ -14,7 +14,9 @@ Resume website
 
 ## Build
 
-`yarn build` — compiles and bundles the app for production
+`yarn build` — compiles and bundles the app for production into the `dist/` directory
+
+After building, upload the contents of `dist/` via FTP to the root directory at [travishoki.com](https://travishoki.com/).
 
 `yarn preview` — locally preview the production build
 
