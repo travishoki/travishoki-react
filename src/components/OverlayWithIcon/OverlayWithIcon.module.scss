@@ -8,7 +8,7 @@
 	opacity: 0;
 	pointer-events: auto;
 	position: absolute;
-	transition: opacity 0.3s ease;
+	@extend %opacity-transition;
 	width: 100%;
 	z-index: 1;
 

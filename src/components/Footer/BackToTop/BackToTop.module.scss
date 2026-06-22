@@ -14,8 +14,9 @@
 	pointer-events: none;
 	position: fixed;
 	right: 15px;
-	transition: background 0.3s ease;
-	transition: opacity 0.3s ease;
+	transition:
+		background 0.3s ease,
+		opacity 0.3s ease;
 	z-index: $z-index-back-to-top;
 
 	svg {
