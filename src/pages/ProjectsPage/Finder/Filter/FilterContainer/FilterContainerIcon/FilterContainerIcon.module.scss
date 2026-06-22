@@ -1,7 +1,9 @@
+@use 'styles' as *;
 @use '../../Filter.variables' as *;
 
 .iconContainer {
 	align-items: center;
+	background: $gray-three;
 	cursor: pointer;
 	display: flex;
 	height: $filter-height;
