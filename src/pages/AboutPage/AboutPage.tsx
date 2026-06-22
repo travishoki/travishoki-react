@@ -11,7 +11,7 @@ export const AboutPage = () => {
 		<div className="about" id="container">
 			<h1>About Me</h1>
 			<Intro />
-			<div className="boxed-xl">
+			<div className="boxed-lg">
 				<StaggeredList>
 					{ABOUT_PAGE_DATA.map((item) => (
 						<AboutItem key={item.itemKey} {...item} />
