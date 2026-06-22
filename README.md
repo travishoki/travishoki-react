@@ -1,6 +1,6 @@
 # Travis Hoki
 
-Resume website
+Resume/Portfolio website
 [travishoki.com](https://travishoki.com/)
 
 ## Setup
