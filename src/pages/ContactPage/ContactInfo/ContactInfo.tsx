@@ -14,9 +14,10 @@ export const ContactInfo = () => (
 	<>
 		<div className={classNames(styles.contactInfoHeader, 'mb-3')}>
 			<h2>Get In Touch With Me</h2>
-			<p>
-				<Typewriter text="Travis Hoki" />
+			<p className="m-0">
+				<Typewriter className={styles.name} text="Travis Hoki" />
 			</p>
+			<p>Senior Software Development Engineer</p>
 		</div>
 
 		<ContactInfoGrid />
