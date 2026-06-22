@@ -14,7 +14,7 @@
 		}
 
 		&:nth-child(2) {
-			@include box-shadow(0 0 20px 0 #000000);
+			box-shadow: 0 0 20px 0 #000000;
 			left: 50%;
 			position: absolute;
 			top: 0;

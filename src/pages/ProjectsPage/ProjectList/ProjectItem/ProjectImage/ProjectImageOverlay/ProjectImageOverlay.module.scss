@@ -49,10 +49,10 @@
 }
 
 .projectImageOverlayOverlay {
-	@include opacity(0.8);
 	background: $gray-four;
 	bottom: 0;
 	left: 0;
+	opacity: 0.8;
 	position: absolute;
 	right: 0;
 	top: 0;
