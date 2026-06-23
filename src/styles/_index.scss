@@ -1,7 +1,7 @@
 // Single entry point for the global, output-free Sass tokens & mixins.
 // Modules consume these with `@use 'styles' as *;` (src is on the Sass load
 // path via craco.config.js), so they never re-import the individual partials.
-@forward 'variables';
+@forward 'colors';
 @forward 'responsive';
 @forward 'z-index';
 @forward 'placeholders';
