@@ -18,21 +18,21 @@ const images = [
 	{
 		alt: 'First image',
 		caption: 'Caption for first image',
-		filename: 'https://placehold.co/800x600',
+		filename: 'https://placehold.co/500x300/333/f00',
 	},
 	{
 		alt: 'Second image',
 		caption: 'Caption for second image',
-		filename: 'https://placehold.co/800x600/333/fff',
+		filename: 'https://placehold.co/500x300/666/0f0',
 	},
 	{
 		alt: 'Third image',
 		caption: 'Caption for third image',
-		filename: 'https://placehold.co/800x600/666/fff',
+		filename: 'https://placehold.co/500x300/999/00f',
 	},
 ];
 
-export const Default: Story = {
+export const Square: Story = {
 	args: {
 		images,
 	},
