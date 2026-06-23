@@ -54,7 +54,6 @@ export const ImageGallery = ({ images, square = true }: ImageGalleryProps) => {
 			)}
 
 			<Image
-				className="mb-3"
 				image={image}
 				setDimensions={setDimensions}
 				setModalOpen={setModalOpen}
