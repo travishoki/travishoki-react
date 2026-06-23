@@ -28,7 +28,7 @@ export const SingleText: Story = {
 	},
 };
 
-export const MultipleTexts: Story = {
+export const MultipleParagraphs: Story = {
 	args: {
 		label: 'Details',
 		text: [
