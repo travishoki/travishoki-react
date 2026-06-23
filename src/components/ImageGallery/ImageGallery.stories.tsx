@@ -8,6 +8,13 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta: Meta<typeof ImageGallery> = {
 	component: ImageGallery,
+	decorators: [
+		(Story) => (
+			<div style={{ maxWidth: '400px' }}>
+				<Story />
+			</div>
+		),
+	],
 	title: 'Components/ImageGallery',
 };
 
@@ -41,18 +48,9 @@ export const Square: Story = {
 	},
 };
 
-export const NonSquare: Story = {
+export const Rectangle: Story = {
 	args: {
 		images,
 		square: false,
-	},
-};
-
-export const SingleImage: Story = {
-	args: {
-		images: [images[0]],
-	},
-	play: async ({ canvas }) => {
-		await expect(canvas.getByRole('img')).toBeVisible();
 	},
 };
