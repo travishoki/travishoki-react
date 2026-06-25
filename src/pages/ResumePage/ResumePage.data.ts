@@ -122,7 +122,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		img: ImgChatbooks,
 		position: 'Web Developer',
 		tasks: [
-			'Engineered customer-facing components and core features for high-traffic Books and Cards product lines.',
+			'Engineered customer-facing Reactcomponents and core features for high-traffic Books and Cards product lines.',
 			'Executed a flawless, progressive migration from legacy AngularJS to ReactJS with zero downtime, preserving production stability.',
 			'Created and maintained web features and projects for the Books and Cards teams.',
 		],

@@ -17,7 +17,7 @@ const COMPETENCIES = [
 	},
 	{
 		items:
-			'Enterprise Architecture, Unit Testing, Server-Side Rendering (SSR), Responsive UI',
+			'Enterprise Architecture, Unit Testing, Server-Side Rendering (SSR), Responsive UI, RESTful API Integration',
 		label: 'Methodologies',
 	},
 ];
