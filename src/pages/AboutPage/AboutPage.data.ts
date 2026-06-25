@@ -82,6 +82,7 @@ export const ABOUT_PAGE_DATA: AboutType[] = [
 		imgLarge: ImgStandupComedy,
 		imgLargeDimensions: [1440, 1440],
 		imgSmall: ImgStandupComedySmall,
+		video: 'videos/standup-comedy.mp4',
 	},
 	{
 		title: 'Doggo',
