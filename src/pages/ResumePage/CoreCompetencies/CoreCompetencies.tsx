@@ -29,7 +29,8 @@ export const CoreCompetencies = () => {
 			<ul className={styles.list}>
 				{COMPETENCIES.map(({ items, label }) => (
 					<li key={label}>
-						<strong>{label}:</strong> {items}
+						<p className={styles.label}>{label}:</p>
+						<p>{items}</p>
 					</li>
 				))}
 			</ul>
