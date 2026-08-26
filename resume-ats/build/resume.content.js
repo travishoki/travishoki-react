@@ -10,16 +10,16 @@ module.exports = {
 	],
 
 	summary:
-		'Senior Software Engineer with 14+ years building and evolving web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
 			'AI-Assisted Development',
-			'Claude Code, Cursor AI, AI pair programming in production codebases',
+			'Claude Code, Cursor AI, AI-assisted production development',
 		],
 		[
 			'Languages',
-			'TypeScript, JavaScript (ES6+), PHP, Python, Ruby, SQL, HTML5, CSS3, Sass/SCSS, Less',
+			'TypeScript, JavaScript (ES6+), HTML5, CSS3, Sass/SCSS, Less, PHP, Python, SQL, Ruby',
 		],
 		[
 			'Frontend',
@@ -27,7 +27,7 @@ module.exports = {
 		],
 		[
 			'Backend & Data',
-			'Node.js, Express, Django, PostgreSQL, MySQL, Firebase/Firestore, GraphQL, RESTful API design and integration, Stripe',
+			'Node.js, Express, Django, PostgreSQL, MySQL, Firebase/Firestore, GraphQL, REST APIs and API integration, Stripe',
 		],
 		[
 			'Testing & Code Quality',
@@ -46,7 +46,7 @@ module.exports = {
 			dates: 'Mar. 2024 – May 2026',
 			note: 'Stayed on for two years after Salesforce acquired Spiff in March 2024, scaling the product for enterprise accounts.',
 			bullets: [
-				'Raised the codebase to Salesforce’s post-acquisition unit-test coverage standard, expanding Jest test suites across the frontend. Established strict ESLint rule sets that drove company-wide TypeScript adoption.',
+				'Raised the frontend codebase to Salesforce’s post-acquisition quality standards, expanding Jest coverage and establishing strict ESLint rule sets. That work helped drive TypeScript adoption across the engineering organization.',
 				'Adopted Claude Code and Cursor AI into daily development, pair programming with them on refactors, debugging, and test-coverage work.',
 				'Shipped a document composer on the Lexical editor framework after evaluating several WYSIWYG options, customizing it heavily for document workflows. Added a Handlebars-style merge-field system that resolves placeholders to live profile values at render time. Extended the server-side Ruby layer to customize PDF output.',
 			],
@@ -58,8 +58,8 @@ module.exports = {
 			dates: 'Aug. 2021 – Mar. 2024',
 			note: 'Built core platform infrastructure at the startup, through to acquisition.',
 			bullets: [
-				'Architected the frontend internationalization infrastructure from the ground up and migrated thousands of hardcoded strings across the application. Launched the product in Japanese, Spanish, and additional locales, a top-priority value driver for Spiff and Salesforce.',
-				'Created a dev-mode pseudo-localization toggle that renders every translated string as X’s. It became the team’s standard pre-merge check, letting any engineer spot untranslated UI in seconds.',
+				'Architected the frontend internationalization infrastructure from the ground up and migrated thousands of hardcoded strings across the application. Launched the product in Japanese, Spanish, and additional locales, supporting a major expansion priority for Spiff and Salesforce.',
+				'Created a pseudo-localization tool that became the team’s standard pre-merge check for untranslated UI. It renders every translated string as X’s, letting any engineer spot gaps in seconds.',
 				'Wrote custom automated tooling scripts (dead-code detection, unused-export pruning, lint enforcement) that systematically drove down technical debt across the repository.',
 				'Designed a recursive component tree that renders company org hierarchies at any depth, powering team-based commission structures for enterprise accounts.',
 				'Developed features against GraphQL APIs and practiced TDD, writing Jest and React Testing Library specs before implementation.',
@@ -73,7 +73,7 @@ module.exports = {
 			bullets: [
 				'Authored the frontend architectural standards adopted across the engineering organization, defining code conventions, lint rules, and component structure.',
 				'Mentored mid-level and junior developers through pair programming, working alongside them on their own projects to unblock delivery and grow their skills.',
-				'Modernized legacy core technologies and syntax paradigms, improving runtime performance and reducing maintenance burden.',
+				'Modernized legacy frontend architecture and JavaScript patterns, improving runtime performance and reducing ongoing maintenance burden.',
 			],
 		},
 		{
@@ -129,7 +129,7 @@ module.exports = {
 			meta: 'food-cards.travishoki.com',
 			href: 'https://food-cards.travishoki.com/',
 			stack: 'React, TypeScript, Firebase, Anthropic Claude API',
-			desc: 'A safe-foods catalog built for my son, who has food avoidance issues. Integrated Claude via the Anthropic SDK (@anthropic-ai/sdk) so users filter the collection in plain English. “Easy breakfast ideas” resolves to category, difficulty, sort order, and keyword filters at once. Prompt engineering enforces strict JSON output, and every response is schema-validated before use. Ambiguous output degrades gracefully rather than breaking the UI. Also implemented scored fuzzy search.',
+			desc: 'A safe-foods catalog built for my son, who has food avoidance issues. Integrated Claude via the Anthropic SDK (@anthropic-ai/sdk) so users filter the collection in plain English. “Easy breakfast ideas” resolves to category, difficulty, sort order, and keyword filters at once. Prompt engineering enforces schema-validated JSON, so ambiguous output degrades gracefully rather than breaking the UI. Also implemented scored fuzzy search.',
 		},
 		{
 			name: 'Hoki Skateboards Website',
@@ -173,5 +173,5 @@ module.exports = {
 	],
 
 	beyond:
-		'Illustrated and self-published two children’s books, one Kickstarter-funded. Improv Broadway stand-up comedy graduate. Volunteer Cub Scouts den leader.',
+		'Illustrator and self-published author of two children’s books, one Kickstarter-funded. Improv Broadway stand-up comedy graduate and volunteer Cub Scouts den leader.',
 };
