@@ -7,11 +7,7 @@ ROOT="$(cd .. && pwd)"
 
 cp _template.content.js "$ROOT/content.js"
 cat > "$ROOT/job-description.md" <<'EOF'
-# Job Description
-
-Paste the posting below, then ask Claude to draft the letter.
-
-## Company
+# Company Name
 
 ## Role
 
