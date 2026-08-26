@@ -9,7 +9,8 @@ cover-letters/
 │   ├── _template.content.js   starter content
 │   ├── build-html.js          renderer
 │   ├── build.sh               content.js -> dist/<slug>-cover-letter.pdf
-│   ├── job-description.js     parses company and role out of the posting
+│   ├── _job-description.md    the blank form, copied by reset.sh
+│   ├── job-description.js     parses the form
 │   └── reset.sh               clear the desk for the next application
 ├── job-description.md         paste the posting here      (gitignored)
 ├── content.js                 the letter                  (gitignored)
@@ -26,7 +27,8 @@ single application.
 bash cover-letters/build/reset.sh
 ```
 
-Paste the posting into `job-description.md`, then ask Claude:
+That drops a blank `job-description.md` in place, a short form with
+instructions. Fill it in, then ask Claude:
 
 > Draft the cover letter from `cover-letters/job-description.md`.
 

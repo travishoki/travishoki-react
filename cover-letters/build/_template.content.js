@@ -1,8 +1,8 @@
-// Starter for a new cover letter. Copy into a folder named
-// YYYY-MM-DD-company/content.js and edit.
-const profile = require('../../shared/profile.js');
+// Starter content. reset.sh copies this to cover-letters/content.js, so the
+// require paths below are relative to that location, not to build/.
+const profile = require('../shared/profile.js');
 
-const { company, role, salutation, slug } = require('./job-description.js');
+const { company, role, salutation, slug } = require('./build/job-description.js');
 
 module.exports = {
 	slug,

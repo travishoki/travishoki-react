@@ -6,14 +6,5 @@ cd "$(dirname "$0")"
 ROOT="$(cd .. && pwd)"
 
 cp _template.content.js "$ROOT/content.js"
-cat > "$ROOT/job-description.md" <<'EOF'
-# Company Name
-
-## Hiring Manager
-
-## Role
-
-## Posting
-
-EOF
+cp _job-description.md "$ROOT/job-description.md"
 echo "Reset content.js and job-description.md. Paste the posting, then ask Claude to draft it."

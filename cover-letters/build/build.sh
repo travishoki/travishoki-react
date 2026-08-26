@@ -11,7 +11,11 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 [ -f "$ROOT/content.js" ] || { echo "error: no content.js in $ROOT" >&2; exit 1; }
 
-SLUG="$(node -p "require('$ROOT/content.js').slug")"
+if ! SLUG="$(node -p "require('$ROOT/content.js').slug" 2>/dev/null)" || [ -z "$SLUG" ]; then
+	echo "error: job-description.md is not filled in yet." >&2
+	echo "       Put the company under '# Company Name' and the title under '## Role'." >&2
+	exit 1
+fi
 COMPANY="$(node -p "require('$ROOT/content.js').company")"
 BASE="${SLUG}-cover-letter"
 mkdir -p "$ROOT/dist"

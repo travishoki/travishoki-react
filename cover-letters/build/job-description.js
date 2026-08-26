@@ -12,7 +12,11 @@ const field = (heading) => {
 	const re = new RegExp(`^#{1,6}\\s*${heading}\\s*$([\\s\\S]*?)(?=^#{1,6}\\s|$(?![\\s\\S]))`, 'im');
 	const m = md.match(re);
 	if (!m) return '';
-	const line = m[1].split('\n').map((l) => l.trim()).find(Boolean);
+	const line = m[1]
+		.split('\n')
+		.map((l) => l.trim())
+		// Skip the blockquote instructions in the blank form.
+		.find((l) => l && !l.startsWith('>') && !l.startsWith('<!--'));
 	return line || '';
 };
 
