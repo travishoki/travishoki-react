@@ -6,7 +6,7 @@ module.exports = {
 
 	name: 'TRAVIS HOKI',
 	title: 'Senior Software Engineer',
-	// Kept identical to resume-ats/build/resume.content.js so both documents
+	// Kept identical to resume/build/resume.content.js so both documents
 	// present the same header.
 	contact: [
 		[{ text: 'Pleasant Grove, Utah' }, { text: '801-691-2373', href: 'tel:+18016912373' }, { text: 'travis.hoki@gmail.com', href: 'mailto:travis.hoki@gmail.com' }],

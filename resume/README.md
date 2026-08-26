@@ -7,7 +7,7 @@ never drift apart.
 
 ```
 travishoki-react/
-└── resume-ats/
+└── resume/
 ├── build/                     tooling + content (the source of truth)
 │   ├── resume.content.js      all resume copy lives here
 │   ├── build-docx.js          content -> .docx
@@ -24,11 +24,11 @@ The builders depend on the `docx` package, and `node_modules/` is not tracked,
 so install once per checkout:
 
 ```bash
-npm install --prefix resume-ats/build
+npm install --prefix resume/build
 ```
 
 Nothing else in the repo depends on this. It is separate from the app's own
-`package.json`, and the app's tooling never scans `resume-ats/`.
+`package.json`, and the app's tooling never scans `resume/`.
 
 ## Revising
 
@@ -55,7 +55,7 @@ Copies the **newest** dated folder's files into the site's `public/` dir as
 `travis-hoki-resume.pdf` and `travis-hoki-resume.docx`. The names are
 deliberately undated so the CDN URL never changes. Older versions are ignored.
 
-`resume-ats/` lives inside the `travishoki-react` repo, so `public/` is found
+`resume/` lives inside the `travishoki-react` repo, so `public/` is found
 automatically. Override with `SITE=/other/checkout` if needed.
 
 `yarn build` runs this automatically, before Vite, so `public/` and `dist/`

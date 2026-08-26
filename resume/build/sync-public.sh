@@ -10,7 +10,7 @@ set -e
 cd "$(dirname "$0")"
 
 ROOT="$(cd .. && pwd)"
-# resume-ats/ lives inside the site repo, so public/ is two levels up.
+# resume/ lives inside the site repo, so public/ is two levels up.
 SITE="${SITE:-$(cd ../.. && pwd)}"
 PUBLIC="$SITE/public"
 
