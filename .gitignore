@@ -60,7 +60,8 @@ Thumbs.db
 *storybook.log
 storybook-static
 
-# Individual cover letters are one-off artifacts for a single application,
-# not versioned source. Only the shared tooling in build/ is tracked.
-cover-letters/*/
-!cover-letters/build/
+# The working cover letter is a one-off for a single application. Only the
+# shared tooling in cover-letters/build/ is versioned. (dist/ is already
+# covered by the rule above.)
+cover-letters/content.js
+cover-letters/job-description.md

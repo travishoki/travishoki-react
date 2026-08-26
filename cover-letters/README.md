@@ -1,56 +1,51 @@
 # Cover Letters
 
-One folder per letter, named `YYYY-MM-DD-company`. Each holds its own
-`content.js`; the renderer in `build/` is shared.
+One working letter at a time. Paste a job posting, have Claude draft it,
+build the PDF.
 
 ```
 cover-letters/
 ├── build/
-│   ├── _template.content.js   starter, copied by new-letter.sh
-│   ├── build-html.js          shared renderer
-│   ├── build.sh
-│   └── new-letter.sh          scaffolds a letter folder
-└── 2026-08-26-class-dojo/
-    ├── job-description.md     the posting this was written against
-    ├── content.js             the letter
-    └── dist/
-        └── cover-letter-class-dojo.pdf   (generated, untracked)
+│   ├── _template.content.js   starter content
+│   ├── build-html.js          renderer
+│   ├── build.sh               content.js -> dist/<slug>-cover-letter.pdf
+│   └── reset.sh               clear the desk for the next application
+├── job-description.md         paste the posting here      (gitignored)
+├── content.js                 the letter                  (gitignored)
+└── dist/
+    └── class-dojo-cover-letter.pdf                        (gitignored)
 ```
 
-Identity (name, title, contact) comes from `shared/profile.js`, which the
-resume uses too. Change it once and both rebuild correctly.
+Only `build/` and this README are versioned. Each letter is a one-off for a
+single application.
 
-## Writing a new one
+## Writing one
 
 ```bash
-bash cover-letters/build/new-letter.sh acme "Acme Corp"
+bash cover-letters/build/reset.sh
 ```
 
-That creates `<today>-acme/` with a `content.js` and an empty
-`job-description.md`. Paste the posting into the latter, then either edit
-`content.js` by hand or ask Claude:
+Paste the posting into `job-description.md`, then ask Claude:
 
-> Here's the job description for <company>, in
-> `cover-letters/<date>-<slug>/job-description.md`. Draft the cover letter.
+> Draft the cover letter from `cover-letters/job-description.md`.
 
-Claude reads the posting, fills in `content.js` against the actual resume
-content, builds it, and checks the PDF still parses cleanly. Then:
+Claude reads the posting, writes `content.js` against the real resume
+content in `resume/build/resume.content.js`, builds it, and confirms the
+PDF still parses cleanly for ATS.
 
 ```bash
-bash cover-letters/build/build.sh 2026-09-01-acme
+bash cover-letters/build/build.sh
 ```
-
-Run `bash cover-letters/build/build.sh` with no argument to rebuild every letter.
 
 The output filename comes from `slug` in `content.js`.
 
 ## Notes
 
-- Letter folders are gitignored. Each one is a one-off for a single
-  application, so only the shared tooling in `build/` is versioned.
+- Identity (name, title, contact) comes from `shared/profile.js`, which the
+  resume uses too. Change it once and both rebuild correctly.
 - Section headings interpolate `company`, so "Why I think X is awesome!"
   fills itself in.
 - Letters are ATS-friendly by construction: single column, no images, real
   text layer, Arial, and a header matching the resume.
-- The header contact block is kept in sync with `resume/build/resume.content.js`
-  by hand. If one changes, change both.
+- Finished PDFs accumulate in `dist/`. Move any you want to keep long-term
+  somewhere outside the repo.
