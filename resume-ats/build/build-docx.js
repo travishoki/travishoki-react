@@ -42,7 +42,9 @@ const SUB = 24;     // 12pt
 const CONTACT = 18; // 9pt
 const HEAD = 22;    // 11pt
 
-const LINE = 264; // matches original line spacing (1.1)
+// Pages honours these once paragraphs are styled, so the docx needs slightly
+// tighter values than the PDF's CSS to land on 2 pages.
+const LINE = 240;
 
 const t = (text, opts = {}) => new TextRun({ text, font: FONT, size: BODY, ...opts });
 
@@ -55,26 +57,52 @@ const link = (text, href, opts = {}) => {
 
 const heading = (text) =>
 	new Paragraph({
-		spacing: { before: 160, after: 60, line: LINE, lineRule: 'auto' },
-		border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: NAVY, space: 0 } },
+		style: 'SectionHeading',
+		spacing: { before: 120, after: 50, line: LINE, lineRule: 'auto' },
 		children: [new TextRun({ text: text.toUpperCase(), font: FONT, size: HEAD, color: NAVY, bold: true })],
 	});
 
 const bullet = (text) =>
-	new Paragraph({
+	new Paragraph({ style: 'Normal',
 		numbering: { reference: 'resume-bullets', level: 0 },
-		spacing: { after: 40, line: LINE, lineRule: 'auto' },
+		spacing: { after: 20, line: LINE, lineRule: 'auto' },
 		children: [t(text)],
 	});
 
 const body = (text, links) =>
-	new Paragraph({
-		spacing: { before: 20, after: 80, line: LINE, lineRule: 'auto' },
+	new Paragraph({ style: 'Normal',
+		spacing: { before: 20, after: 50, line: LINE, lineRule: 'auto' },
 		children: segments(text, links).map((s) => link(s.text, s.href)),
 	});
 
 const doc = new Document({
 	creator: 'Travis Hoki',
+	// The rule lives on a named style, not on the paragraph: Pages drops direct
+	// paragraph borders on unstyled paragraphs. No basedOn/next here, since a
+	// dangling reference to an undefined 'Normal' style bleeds the heading
+	// formatting into the paragraphs that follow.
+	styles: {
+		paragraphStyles: [
+			{
+				// Pages continues the previous paragraph's style into unstyled
+				// paragraphs, so a concrete Normal must exist to fall back to.
+				id: 'Normal',
+				name: 'Normal',
+				run: { font: FONT, size: BODY },
+			},
+			{
+				id: 'SectionHeading',
+				basedOn: 'Normal',
+				next: 'Normal',
+				name: 'Section Heading',
+				quickFormat: true,
+				run: { font: FONT, size: HEAD, bold: true, color: NAVY },
+				paragraph: {
+					border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: NAVY, space: 0 } },
+				},
+			},
+		],
+	},
 	title: 'Travis Hoki  –  Senior Software Engineer Resume',
 	numbering: {
 		config: [{
@@ -96,18 +124,18 @@ const doc = new Document({
 			},
 		},
 		children: [
-			new Paragraph({
+			new Paragraph({ style: 'Normal',
 				alignment: AlignmentType.CENTER,
 				spacing: { after: 20, line: LINE, lineRule: 'auto' },
 				children: [new TextRun({ text: C.name, font: FONT, size: NAME, color: NAVY, bold: true })],
 			}),
-			new Paragraph({
+			new Paragraph({ style: 'Normal',
 				alignment: AlignmentType.CENTER,
 				spacing: { after: 60, line: LINE, lineRule: 'auto' },
 				children: [new TextRun({ text: C.title, font: FONT, size: SUB, color: GRAY })],
 			}),
 			...C.contact.map((parts, i) =>
-				new Paragraph({
+				new Paragraph({ style: 'Normal',
 					alignment: AlignmentType.CENTER,
 					spacing: { after: i === C.contact.length - 1 ? 160 : 20, line: LINE, lineRule: 'auto' },
 					children: parts.flatMap((part, j) => [
@@ -121,7 +149,7 @@ const doc = new Document({
 
 			heading('Skills & Tools'),
 			...C.skills.map(([label, rest]) =>
-				new Paragraph({
+				new Paragraph({ style: 'Normal',
 					numbering: { reference: 'resume-bullets', level: 0 },
 					spacing: { after: 40, line: LINE, lineRule: 'auto' },
 					children: [
@@ -132,7 +160,7 @@ const doc = new Document({
 
 			heading('Work History'),
 			...C.jobs.flatMap((j) => [
-				new Paragraph({
+				new Paragraph({ style: 'Normal',
 					spacing: { before: 140, after: 20, line: LINE, lineRule: 'auto' },
 					children: [
 						new TextRun({ text: j.position, font: FONT, size: BODY, bold: true, color: NAVY }),
@@ -145,7 +173,7 @@ const doc = new Document({
 					],
 				}),
 				...(j.note
-					? [new Paragraph({
+					? [new Paragraph({ style: 'Normal',
 						spacing: { after: 50, line: LINE, lineRule: 'auto' },
 						children: [new TextRun({ text: j.note, font: FONT, size: BODY, italics: true, color: GRAY })],
 					})]
@@ -155,7 +183,7 @@ const doc = new Document({
 
 			heading('Passion Projects'),
 			...C.projects.flatMap((p) => [
-				new Paragraph({
+				new Paragraph({ style: 'Normal',
 					spacing: { before: 120, after: 20, line: LINE, lineRule: 'auto' },
 					children: [
 						link(p.name, p.href, { bold: true, color: NAVY }),
@@ -171,7 +199,7 @@ const doc = new Document({
 
 			heading('Education'),
 			...C.education.map(([degree, rest]) =>
-				new Paragraph({
+				new Paragraph({ style: 'Normal',
 					spacing: { before: 20, after: 40, line: LINE, lineRule: 'auto' },
 					children: [new TextRun({ text: degree, font: FONT, size: BODY, bold: true }), t(rest)],
 				})),
@@ -180,7 +208,7 @@ const doc = new Document({
 			body(C.beyond),
 
 			heading('Portfolio'),
-			new Paragraph({
+			new Paragraph({ style: 'Normal',
 				spacing: { before: 120, after: 20, line: LINE, lineRule: 'auto' },
 				children: [
 					link(C.portfolio.name, C.portfolio.href, { bold: true, color: NAVY }),
