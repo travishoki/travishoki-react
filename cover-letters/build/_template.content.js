@@ -2,9 +2,11 @@
 // YYYY-MM-DD-company/content.js and edit.
 const profile = require('../../shared/profile.js');
 
+const company = 'Company Name';
+
 module.exports = {
 	slug: 'company-name',
-	company: 'Company Name',
+	company,
 	role: 'Senior Software Engineer',
 
 	...profile,
@@ -16,7 +18,7 @@ module.exports = {
 
 	sections: [
 		{
-			heading: 'Why I think you are awesome!',
+			heading: `Why I think ${company} is awesome!`,
 			body: 'ClassDojo reaches teachers, students, and families every day, and it has to work for all three without any of them being technical. That is a hard product problem and a hard engineering problem, and getting it right has real consequences in a classroom. My first engineering job was building eLearning software, a learning management system with course authoring and user progress tracking, so I have some sense of how much care that audience deserves.',
 		},
 		{
@@ -24,7 +26,7 @@ module.exports = {
 			body: 'For more than 14 years I have built modern web applications with a focus on maintainable, scalable frontend architecture. I have led React migrations, raised code quality through TypeScript, ESLint, and automated testing, and built the internationalization infrastructure that launched a product into new markets. I mentor through pair programming, which is the part of the job I enjoy most. I also ship mobile: a React Native game running on iOS and Android from a single codebase.',
 		},
 		{
-			heading: 'Why we would be awesome together!',
+			heading: `Why we would be awesome together!`,
 			body: 'ClassDojo needs engineers who can move a product forward while keeping a growing codebase healthy. That has been my work at Spiff and through its acquisition by Salesforce, where I helped raise a startup codebase to enterprise standards while continuing to ship features. I would like to bring that to software my own kids might one day use.',
 		},
 	],

@@ -59,3 +59,8 @@ Thumbs.db
 
 *storybook.log
 storybook-static
+
+# Individual cover letters are one-off artifacts for a single application,
+# not versioned source. Only the shared tooling in build/ is tracked.
+cover-letters/*/
+!cover-letters/build/

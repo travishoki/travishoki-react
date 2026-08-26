@@ -46,8 +46,10 @@ The output filename comes from `slug` in `content.js`.
 
 ## Notes
 
-- Output lands in each letter's `dist/`, covered by the repo's existing
-  `dist/` ignore. `content.js` is the source of truth.
+- Letter folders are gitignored. Each one is a one-off for a single
+  application, so only the shared tooling in `build/` is versioned.
+- Section headings interpolate `company`, so "Why I think X is awesome!"
+  fills itself in.
 - Letters are ATS-friendly by construction: single column, no images, real
   text layer, Arial, and a header matching the resume.
 - The header contact block is kept in sync with `resume/build/resume.content.js`
