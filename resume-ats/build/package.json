@@ -1,0 +1,12 @@
+{
+  "name": "travis-hoki-resume-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds travis-hoki-resume.docx/.html/.pdf from a single content file.",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
