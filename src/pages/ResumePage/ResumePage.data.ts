@@ -50,7 +50,7 @@ export const RESUME_DATA: ResumeDataType[] = [
 		tasks: [
 			'Architected the frontend internationalization infrastructure from the ground up and migrated hundreds of hardcoded strings across the application, launching the product in Japanese, Spanish, and additional locales.',
 			'Built a dev-mode pseudo-localization toggle that renders every translated string as X’s, letting any engineer spot untranslated UI in seconds.',
-			'Shipped a homegrown document composer with a Handlebars-style merge-field system resolving placeholders to live profile values at render time; extended the server-side Ruby layer to customize PDF output.',
+			'Built a document composer on the Lexical editor framework, customizing it heavily for document workflows and adding a Handlebars-style merge-field system that resolves placeholders to live profile values at render time; extended the server-side Ruby layer to customize PDF output.',
 			'Authored custom automated tooling scripts (dead-code detection, unused-export pruning, lint enforcement) that systematically drove down technical debt.',
 			'Raised the codebase to Salesforce’s post-acquisition unit-test coverage bar, expanding Jest test suites and establishing strict ESLint rule sets that drove company-wide TypeScript adoption.',
 			'Built a recursive component tree rendering company org hierarchies at arbitrary depth, powering team-based commission structures for enterprise accounts.',
