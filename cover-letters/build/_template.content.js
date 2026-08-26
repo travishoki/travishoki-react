@@ -2,7 +2,7 @@
 // YYYY-MM-DD-company/content.js and edit.
 const profile = require('../../shared/profile.js');
 
-const { company, role, slug } = require('./job-description.js');
+const { company, role, salutation, slug } = require('./job-description.js');
 
 module.exports = {
 	slug,
@@ -11,7 +11,7 @@ module.exports = {
 
 	...profile,
 
-	salutation: 'Dear Hiring Manager,',
+	salutation,
 
 	intro:
 		'I have spent fourteen years building web applications, and most of what I build outside of work is for children: two children’s books I illustrated and self-published, a mobile game I designed and shipped to the App Store, and a food catalog I built for my son. ClassDojo is a product where those two halves of my work overlap, which is why I am writing.',

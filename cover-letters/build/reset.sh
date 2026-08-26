@@ -9,6 +9,8 @@ cp _template.content.js "$ROOT/content.js"
 cat > "$ROOT/job-description.md" <<'EOF'
 # Company Name
 
+## Hiring Manager
+
 ## Role
 
 ## Posting

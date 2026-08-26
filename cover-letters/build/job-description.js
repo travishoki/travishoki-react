@@ -19,6 +19,11 @@ const field = (heading) => {
 const company = field('Company Name');
 const role = field('Role');
 
+// Optional. Falls back to the generic greeting when the posting does not name
+// anyone, which is the common case.
+const hiringManager = field('Hiring Manager');
+const salutation = hiringManager ? `Dear ${hiringManager},` : 'Dear Hiring Manager,';
+
 // "ClassDojo" -> "class-dojo", "Acme Corp" -> "acme-corp"
 const slug = company
 	.replace(/([a-z0-9])([A-Z])/g, '$1-$2')
@@ -33,4 +38,4 @@ if (!role) {
 	throw new Error(`No "Role" heading with a value in ${FILE}`);
 }
 
-module.exports = { company, role, slug };
+module.exports = { company, hiringManager, role, salutation, slug };

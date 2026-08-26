@@ -44,9 +44,12 @@ The output filename comes from the company name in `job-description.md`.
 
 - Identity (name, title, contact) comes from `shared/profile.js`, which the
   resume uses too. Change it once and both rebuild correctly.
-- Company and role are read from `job-description.md`: the `# Company Name`
-  and `## Role` headings. They are never typed into `content.js`, and the
-  output filename follows from the company (ClassDojo -> class-dojo).
+- Company, role, and hiring manager are read from `job-description.md`: the
+  `# Company Name`, `## Role`, and `## Hiring Manager` headings. They are
+  never typed into `content.js`, and the output filename follows from the
+  company (ClassDojo -> class-dojo).
+- `## Hiring Manager` is optional. Put a name under it for "Dear Jane Smith,";
+  leave it blank for "Dear Hiring Manager,".
 - Section headings interpolate `company`, so "Why I think X is awesome!"
   fills itself in.
 - Letters are ATS-friendly by construction: single column, no images, real
