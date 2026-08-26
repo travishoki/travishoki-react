@@ -27,6 +27,7 @@ import ImgLessCss from '~images/icons/tech-icons/less-css.jpg';
 import ImgNodeJs from '~images/icons/tech-icons/node-js.jpg';
 import ImgPhpMyAdmin from '~images/icons/tech-icons/php-my-admin.jpg';
 import ImgPhp from '~images/icons/tech-icons/php.jpg';
+import ImgPostgresql from '~images/icons/tech-icons/postgresql.jpg';
 import ImgPython from '~images/icons/tech-icons/python.jpg';
 import ImgReactJs from '~images/icons/tech-icons/react-js.jpg';
 import ImgReactNative from '~images/icons/tech-icons/react-native.jpg';
@@ -66,6 +67,7 @@ export const LESS_CSS = 'LESS_CSS';
 export const NODE_JS = 'NODE_JS';
 export const PHP = 'PHP';
 export const PHP_MY_ADMIN = 'PHP_MY_ADMIN';
+export const POSTGRESQL = 'POSTGRESQL';
 export const PYTHON = 'PYTHON';
 export const REACT_JS = 'REACT_JS';
 export const REACT_NATIVE = 'REACT_NATIVE';
@@ -179,6 +181,11 @@ export const TECH: Record<string, TechInfo> = {
 		image: ImgPhpMyAdmin,
 		label: 'phpMyAdmin',
 		type: TYPES.TOOL,
+	},
+	POSTGRESQL: {
+		image: ImgPostgresql,
+		label: 'PostgreSQL',
+		type: TYPES.BACKEND,
 	},
 	PYTHON: {
 		image: ImgPython,
