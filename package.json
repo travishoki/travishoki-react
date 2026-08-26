@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"start": "vite",
-		"build": "vite build",
+		"build": "yarn resume:sync && vite build",
+		"resume:sync": "bash resume-ats/build/sync-public.sh",
 		"preview": "vite preview",
 		"test": "jest",
 		"test:coverage": "jest --coverage",

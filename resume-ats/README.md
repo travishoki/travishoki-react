@@ -58,6 +58,9 @@ deliberately undated so the CDN URL never changes. Older versions are ignored.
 `resume-ats/` lives inside the `travishoki-react` repo, so `public/` is found
 automatically. Override with `SITE=/other/checkout` if needed.
 
+`yarn build` runs this automatically, before Vite, so `public/` and `dist/`
+always ship the newest resume. Run it on its own with `yarn resume:sync`.
+
 ## Notes
 
 - The `travishoki-react` repo tracks the `.docx` and `.pdf` in every dated
