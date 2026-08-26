@@ -6,21 +6,37 @@ One folder per letter, named `YYYY-MM-DD-company`. Each holds its own
 ```
 cover-letters/
 ├── build/
-│   ├── _template.content.js   starter to copy
+│   ├── _template.content.js   starter, copied by new-letter.sh
 │   ├── build-html.js          shared renderer
-│   └── build.sh
+│   ├── build.sh
+│   └── new-letter.sh          scaffolds a letter folder
 └── 2026-08-26-class-dojo/
+    ├── job-description.md     the posting this was written against
     ├── content.js             the letter
     └── dist/
         └── cover-letter-class-dojo.pdf   (generated, untracked)
 ```
 
+Identity (name, title, contact) comes from `shared/profile.js`, which the
+resume uses too. Change it once and both rebuild correctly.
+
 ## Writing a new one
 
 ```bash
-mkdir cover-letters/2026-09-01-acme
-cp cover-letters/build/_template.content.js cover-letters/2026-09-01-acme/content.js
-# edit content.js, then:
+bash cover-letters/build/new-letter.sh acme "Acme Corp"
+```
+
+That creates `<today>-acme/` with a `content.js` and an empty
+`job-description.md`. Paste the posting into the latter, then either edit
+`content.js` by hand or ask Claude:
+
+> Here's the job description for <company>, in
+> `cover-letters/<date>-<slug>/job-description.md`. Draft the cover letter.
+
+Claude reads the posting, fills in `content.js` against the actual resume
+content, builds it, and checks the PDF still parses cleanly. Then:
+
+```bash
 bash cover-letters/build/build.sh 2026-09-01-acme
 ```
 

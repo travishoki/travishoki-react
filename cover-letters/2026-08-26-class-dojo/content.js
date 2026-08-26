@@ -1,17 +1,12 @@
 // Content for one cover letter. Copy this file per application and edit.
+const profile = require('../../shared/profile.js');
+
 module.exports = {
 	slug: 'class-dojo',
 	company: 'ClassDojo',
 	role: 'Senior Software Engineer',
 
-	name: 'TRAVIS HOKI',
-	title: 'Senior Software Engineer',
-	// Kept identical to resume/build/resume.content.js so both documents
-	// present the same header.
-	contact: [
-		[{ text: 'Pleasant Grove, Utah' }, { text: '801-691-2373', href: 'tel:+18016912373' }, { text: 'travis.hoki@gmail.com', href: 'mailto:travis.hoki@gmail.com' }],
-		[{ text: 'TravisHoki.com', href: 'https://travishoki.com' }, { text: 'linkedin.com/in/travishoki', href: 'https://www.linkedin.com/in/travishoki' }, { text: 'github.com/travishoki', href: 'https://github.com/travishoki' }],
-	],
+	...profile,
 
 	salutation: 'Dear Hiring Manager,',
 

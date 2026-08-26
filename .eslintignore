@@ -5,3 +5,6 @@ resume/
 
 # Standalone Node build tooling for cover letters, not application source.
 cover-letters/
+
+# Shared identity data for the resume and cover letters, not app source.
+shared/

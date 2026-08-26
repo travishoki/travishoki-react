@@ -1,13 +1,10 @@
 // Single source of truth for the ATS resume.
 // Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
 
+const profile = require('../../shared/profile.js');
+
 module.exports = {
-	name: 'TRAVIS HOKI',
-	title: 'Senior Software Engineer',
-	contact: [
-		[{ text: 'Pleasant Grove, Utah' }, { text: '801-691-2373', href: 'tel:+18016912373' }, { text: 'travis.hoki@gmail.com', href: 'mailto:travis.hoki@gmail.com' }],
-		[{ text: 'TravisHoki.com', href: 'https://travishoki.com' }, { text: 'linkedin.com/in/travishoki', href: 'https://www.linkedin.com/in/travishoki' }, { text: 'github.com/travishoki', href: 'https://github.com/travishoki' }],
-	],
+	...profile,
 
 	summary:
 		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
