@@ -1,7 +1,8 @@
 // Renders the cover letter to print-ready HTML. Styling matches the ATS resume.
 const fs = require('fs');
 const path = require('path');
-const C = require('./cover-letter.content.js');
+// Content path comes from argv so one renderer serves every letter.
+const C = require(path.resolve(process.argv[2]));
 
 const esc = (s) =>
 	String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -63,6 +64,6 @@ ${C.sections.map((s) => `<h2>${esc(s.heading)}</h2>\n<p>${esc(s.body)}</p>`).joi
 </html>
 `;
 
-const out = path.resolve(process.argv[2] || 'cover-letter.html');
+const out = path.resolve(process.argv[3]);
 fs.writeFileSync(out, html);
-console.log('wrote ' + out);
+
