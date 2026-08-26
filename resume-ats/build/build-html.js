@@ -81,7 +81,7 @@ const html = `<!doctype html>
 <h2>Professional Summary</h2>
 <p>${esc(C.summary)}</p>
 
-<h2>Tools &amp; Stacks</h2>
+<h2>Skills &amp; Tools</h2>
 <ul>
 ${C.skills.map(([l, r]) => `<li><strong>${esc(l)}:</strong> ${esc(r)}</li>`).join('\n')}
 </ul>

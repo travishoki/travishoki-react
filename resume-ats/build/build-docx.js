@@ -119,7 +119,7 @@ const doc = new Document({
 			heading('Professional Summary'),
 			body(C.summary),
 
-			heading('Tools & Stacks'),
+			heading('Skills & Tools'),
 			...C.skills.map(([label, rest]) =>
 				new Paragraph({
 					numbering: { reference: 'resume-bullets', level: 0 },
