@@ -93,7 +93,7 @@ ${j.note ? `<p class="note">${esc(j.note)}</p>` : ''}
 ${j.bullets.map((b) => `\t<li>${esc(b)}</li>`).join('\n')}
 </ul>`).join('\n')}
 
-<h2>Passion Projects</h2>
+<h2>Personal Projects</h2>
 ${C.projects.map((p) => `<p class="projhead">${p.href ? `<a href="${esc(p.href)}">${esc(p.name)}</a>` : esc(p.name)}<span class="stackinline">  –  ${esc(p.stack)}</span><span class="meta">  |  ${p.href && isUrl(p.meta) ? `<a href="${esc(p.href)}">${esc(p.meta)}</a>` : esc(p.meta)}</span></p>
 <p>${rich(p.desc, p.descLinks)}</p>`).join('\n')}
 

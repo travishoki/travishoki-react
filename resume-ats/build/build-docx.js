@@ -181,7 +181,7 @@ const doc = new Document({
 				...j.bullets.map(bullet),
 			]),
 
-			heading('Passion Projects'),
+			heading('Personal Projects'),
 			...C.projects.flatMap((p) => [
 				new Paragraph({ style: 'Normal',
 					spacing: { before: 120, after: 20, line: LINE, lineRule: 'auto' },

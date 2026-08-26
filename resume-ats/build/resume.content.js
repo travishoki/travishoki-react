@@ -46,7 +46,7 @@ module.exports = {
 			dates: 'Mar. 2024 – May 2026',
 			note: 'Stayed on for two years after Salesforce acquired Spiff in March 2024, scaling the product for enterprise accounts.',
 			bullets: [
-				'Raised the frontend codebase to Salesforce’s post-acquisition quality standards, expanding Jest coverage and establishing strict ESLint rule sets. That work helped drive TypeScript adoption across the engineering organization.',
+				'Raised the frontend codebase to Salesforce’s post-acquisition quality standards, expanding Jest coverage and establishing strict ESLint rule sets. That work drove company-wide TypeScript adoption.',
 				'Adopted Claude Code and Cursor AI into daily development, pair programming with them on refactors, debugging, and test-coverage work.',
 				'Shipped a document composer on the Lexical editor framework after evaluating several WYSIWYG options, customizing it heavily for document workflows. Added a Handlebars-style merge-field system that resolves placeholders to live profile values at render time. Extended the server-side Ruby layer to customize PDF output.',
 			],
