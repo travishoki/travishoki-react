@@ -11,7 +11,8 @@ cover-letters/
 │   └── build.sh
 └── 2026-08-26-class-dojo/
     ├── content.js             the letter
-    └── cover-letter-class-dojo.pdf   (generated, untracked)
+    └── dist/
+        └── cover-letter-class-dojo.pdf   (generated, untracked)
 ```
 
 ## Writing a new one
@@ -29,7 +30,8 @@ The output filename comes from `slug` in `content.js`.
 
 ## Notes
 
-- The PDFs are build output and are gitignored; `content.js` is the source.
+- Output lands in each letter's `dist/`, covered by the repo's existing
+  `dist/` ignore. `content.js` is the source of truth.
 - Letters are ATS-friendly by construction: single column, no images, real
   text layer, Arial, and a header matching the resume.
 - The header contact block is kept in sync with `resume/build/resume.content.js`

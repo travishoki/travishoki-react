@@ -13,22 +13,24 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 build_one() {
 	local dir="$1"
 	[ -f "$dir/content.js" ] || { echo "error: no content.js in $dir" >&2; return 1; }
-	local slug base tmp
+	local slug base tmp out
 	slug="$(node -p "require('$dir/content.js').slug")"
 	base="cover-letter-${slug}"
 	tmp="$(mktemp -d)"
+	out="$dir/dist"
+	mkdir -p "$out"
 
 	node build-html.js "$dir/content.js" "$tmp/$base.html"
 	"$CHROME" --headless --disable-gpu --no-pdf-header-footer \
-		--print-to-pdf="$dir/$base.pdf" "file://$tmp/$base.html" 2>/dev/null
+		--print-to-pdf="$out/$base.pdf" "file://$tmp/$base.html" 2>/dev/null
 
 	if command -v exiftool >/dev/null 2>&1; then
 		exiftool -overwrite_original -q \
 			-Title="Travis Hoki - Cover Letter - $(node -p "require('$dir/content.js').company")" \
-			-Author="Travis Hoki" "$dir/$base.pdf"
+			-Author="Travis Hoki" "$out/$base.pdf"
 	fi
 	rm -rf "$tmp"
-	echo "  $(basename "$dir")/$base.pdf"
+	echo "  $(basename "$dir")/dist/$base.pdf"
 }
 
 echo "Built:"

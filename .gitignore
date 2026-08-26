@@ -59,6 +59,3 @@ Thumbs.db
 
 *storybook.log
 storybook-static
-
-# Cover letter PDFs are build output; the content.js beside each one is the source.
-cover-letters/**/*.pdf
