@@ -3,7 +3,7 @@
 #
 #   bash cover-letters/build/build.sh
 #
-# Reads ../content.js and writes ../dist/<slug>-cover-letter.pdf
+# Reads ../content.js and writes ../dist/travis-hoki-cover-letter-<slug>.pdf
 set -e
 cd "$(dirname "$0")"
 ROOT="$(cd .. && pwd)"
@@ -17,7 +17,7 @@ if ! SLUG="$(node -p "require('$ROOT/content.js').slug" 2>/dev/null)" || [ -z "$
 	exit 1
 fi
 COMPANY="$(node -p "require('$ROOT/content.js').company")"
-BASE="${SLUG}-cover-letter"
+BASE="travis-hoki-cover-letter-${SLUG}"
 mkdir -p "$ROOT/dist"
 
 TMP="$(mktemp -d)"

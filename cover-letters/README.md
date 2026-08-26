@@ -8,7 +8,7 @@ cover-letters/
 ├── build/
 │   ├── _template.content.js   starter content
 │   ├── build-html.js          renderer
-│   ├── build.sh               content.js -> dist/<slug>-cover-letter.pdf
+│   ├── build.sh               content.js -> dist/travis-hoki-cover-letter-<slug>.pdf
 │   ├── _job-description.md    the blank form, copied by reset.sh
 │   ├── job-description.js     parses the form
 │   └── reset.sh               clear the desk for the next application
@@ -40,7 +40,8 @@ PDF still parses cleanly for ATS.
 bash cover-letters/build/build.sh
 ```
 
-The output filename comes from the company name in `job-description.md`.
+The output is named `travis-hoki-cover-letter-<company>.pdf`. Name first so a
+recruiter's folder sorts by candidate rather than by document type.
 
 ## Notes
 
@@ -49,7 +50,7 @@ The output filename comes from the company name in `job-description.md`.
 - Company, role, and hiring manager are read from `job-description.md`: the
   `# Company Name`, `## Role`, and `## Hiring Manager` headings. They are
   never typed into `content.js`, and the output filename follows from the
-  company (ClassDojo -> class-dojo).
+  company (ClassDojo -> travis-hoki-cover-letter-class-dojo.pdf).
 - `## Hiring Manager` is optional. Put a name under it for "Dear Jane Smith,";
   leave it blank for "Dear Hiring Manager,".
 - Section headings interpolate `company`, so "Why I think X is awesome!"
