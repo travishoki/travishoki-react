@@ -14,7 +14,7 @@ travishoki-react/
 │   ├── build-html.js          content -> print-ready .html
 │   ├── build.sh              build both deliverables
 │   └── sync-public.sh        newest build -> site public/ dir
-├── 2026-06/                   history, never edited in place
+├── 2026-06-25/                history, never edited in place
 └── 2026-08-25/                each revision gets its own dated folder
 ```
 
