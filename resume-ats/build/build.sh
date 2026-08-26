@@ -25,5 +25,15 @@ node build-html.js "$TMP/$BASE.html"
 	--print-to-pdf="$OUT_DIR/$BASE.pdf" \
 	"file://$TMP/$BASE.html" 2>/dev/null
 
+# Chrome leaves /Title and /Author empty. Some ATS and every file manager
+# read them, so stamp them. /Creator and /Producer are baked in by Chrome
+# and cannot be overwritten this way; they are cosmetic and no ATS uses them.
+if command -v exiftool >/dev/null 2>&1; then
+	exiftool -overwrite_original -q \
+		-Title="Travis Hoki - Senior Software Engineer Resume" \
+		-Author="Travis Hoki" \
+		"$OUT_DIR/$BASE.pdf"
+fi
+
 echo "Done:"
 ls -1 "$OUT_DIR/$BASE".{docx,pdf}
