@@ -2,12 +2,12 @@
 // YYYY-MM-DD-company/content.js and edit.
 const profile = require('../../shared/profile.js');
 
-const company = 'Company Name';
+const { company, role, slug } = require('./job-description.js');
 
 module.exports = {
-	slug: 'company-name',
+	slug,
 	company,
-	role: 'Senior Software Engineer',
+	role,
 
 	...profile,
 
