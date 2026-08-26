@@ -18,6 +18,18 @@ travishoki-react/
 └── 2026-08-25/                each revision gets its own dated folder
 ```
 
+## Setup
+
+The builders depend on the `docx` package, and `node_modules/` is not tracked,
+so install once per checkout:
+
+```bash
+npm install --prefix resume-ats/build
+```
+
+Nothing else in the repo depends on this. It is separate from the app's own
+`package.json`, and the app's tooling never scans `resume-ats/`.
+
 ## Revising
 
 Edit `build/resume.content.js`, then:
