@@ -8,7 +8,7 @@ const {
 	LevelFormat, convertInchesToTwip, ExternalHyperlink,
 } = require('docx');
 
-const C = require('./resume.content.js');
+const C = require(process.env.CONTENT_FILE || './resume.content.js');
 
 // A bare domain/path in `meta` gets linked; descriptive text does not.
 // Split a string into [{text}, {text, href}, ...] around any linked phrases.

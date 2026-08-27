@@ -16,8 +16,10 @@ PUBLIC="$SITE/public"
 
 [ -d "$PUBLIC" ] || { echo "error: no public dir at $PUBLIC (set SITE=...)" >&2; exit 1; }
 
-# Dated dirs are YYYY-MM or YYYY-MM-DD, so lexical sort is chronological.
-LATEST="$(find "$ROOT" -maxdepth 1 -type d -name '[0-9][0-9][0-9][0-9]-*' | sort | tail -1)"
+# Plain dated dirs are YYYY-MM or YYYY-MM-DD, so lexical sort is chronological.
+# Company-tailored dirs (YYYY-MM-DD-CompanyName) are excluded on purpose so a
+# one-off tailored resume never gets synced to the public site by accident.
+LATEST="$(find "$ROOT" -maxdepth 1 -type d \( -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]' -o -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]' \) | sort | tail -1)"
 [ -n "$LATEST" ] || { echo "error: no dated resume directories in $ROOT" >&2; exit 1; }
 
 PDF="$(find "$LATEST" -maxdepth 1 -name '*.pdf' | head -1)"

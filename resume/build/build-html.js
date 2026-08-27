@@ -2,7 +2,7 @@
 // Usage: node build-html.js ../travis-hoki-resume.html
 const fs = require('fs');
 const path = require('path');
-const C = require('./resume.content.js');
+const C = require(process.env.CONTENT_FILE || './resume.content.js');
 
 // Split a string into [{text}, {text, href}, ...] around any linked phrases.
 const segments = (text, links = []) => {

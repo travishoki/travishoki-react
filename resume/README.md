@@ -15,7 +15,8 @@ travishoki-react/
 │   ├── build.sh              build both deliverables
 │   └── sync-public.sh        newest build -> site public/ dir
 ├── 2026-06-25/                history, never edited in place
-└── 2026-08-25/                each revision gets its own dated folder
+├── 2026-08-25/                each revision gets its own dated folder
+└── 2026-08-27-Acme/           company-tailored one-offs: date + company name
 ```
 
 ## Setup
@@ -41,6 +42,19 @@ bash build/build.sh
 That writes `travis-hoki-resume-<today>.{docx,pdf}` into `../<today>/`, creating
 the folder if needed. Older dated folders are history and are never modified.
 Build a specific date with `DATE=2026-09-01 bash build/build.sh`.
+
+For a resume tailored to one job application, use `NAME` (which overrides
+`DATE`) together with `CONTENT_FILE` pointing at a per-company content module
+that overrides fields from `resume.content.js`, e.g. `resume.content.acme.js`:
+
+```bash
+NAME=2026-08-27-Acme CONTENT_FILE=./resume.content.acme.js bash build/build.sh
+```
+
+Prefix `NAME` with the date (`YYYY-MM-DD-CompanyName`) so tailored builds
+still sort chronologically alongside the plain dated folders. `sync-public.sh`
+only matches plain `YYYY-MM-DD`/`YYYY-MM` folders, so a tailored build never
+gets picked up as the site's public resume.
 
 The intermediate `.html` is written to a temp dir, so dated folders hold only
 the two deliverables.
