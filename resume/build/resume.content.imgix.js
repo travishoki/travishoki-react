@@ -1,5 +1,10 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the Imgix Senior Full Stack Engineer
+// application. One minimal, honest edit on top of the master
+// resume.content.js: the summary leads with UI craft, multi-language
+// backend experience (Node, Ruby, Python/Django), specific AI-tooling
+// fluency, and the client-side image-handling work at Overstock, since
+// those are exactly the pillars this posting screens for. Job history,
+// bullets, projects, skills, and education are unchanged from the master.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +12,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React and TypeScript with a strong sense of UI craft, backed by ADA-compliant work and client-side image-handling experience at Overstock, plus a personal background in illustration and design. I have shipped backend work in Node.js, Ruby, and Python with Django, and I bring specific AI-tooling experience: daily production use of Claude Code and Cursor AI, and a shipped LLM integration with schema-validated output so ambiguous responses degrade gracefully. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -145,10 +150,6 @@ module.exports = {
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
-				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
 		},

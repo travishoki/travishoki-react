@@ -1,5 +1,11 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the Ladders "Senior Software Engineer,
+// Fullstack - FanX AI" application. One minimal, honest edit on top of the
+// master resume.content.js: the summary leads with genuine shipped AI-UX
+// experience (Food Cards, Claude Code/Cursor AI in production) and design
+// sensibility (accessibility, illustration/animation background), since
+// this posting is explicitly about frontend leadership centered on
+// generative AI and UI/product principles. Job history, bullets, projects,
+// skills, and education are unchanged from the master.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +13,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React and TypeScript with genuine, shipped experience building AI-powered user experiences: I integrated the Anthropic Claude API into a production app with careful prompt engineering and schema-validated output, and I use Claude Code and Cursor AI daily in production development. I also bring real design sensibility to product work, ADA-accessible interfaces, responsive UI, and a background in illustration and animation. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -129,13 +135,6 @@ module.exports = {
 			desc: 'A safe-foods catalog built for my son, who has food avoidance issues. Integrated Claude via the Anthropic SDK (@anthropic-ai/sdk) so users filter the collection in plain English. “Easy breakfast ideas” resolves to category, difficulty, sort order, and keyword filters at once. Prompt engineering enforces schema-validated JSON, so ambiguous output degrades gracefully rather than breaking the UI. Also implemented scored fuzzy search.',
 		},
 		{
-			name: 'Hoki Skateboards Website',
-			meta: 'hokiskateboards.com',
-			href: 'https://hokiskateboards.com/',
-			stack: 'PHP, WordPress, WooCommerce, JavaScript, Stripe',
-			desc: 'Founded a skateboard company selling skateboards, apparel, and a self-published children’s book. Designed the brand and built the storefront on a custom WordPress theme, with WooCommerce and Stripe handling retail and checkout.',
-		},
-		{
 			name: 'Hoki Skateboards App',
 			meta: 'hokiskateboards.com/app',
 			href: 'https://www.hokiskateboards.com/app/',
@@ -146,11 +145,14 @@ module.exports = {
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
 				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
-				},
 			],
+		},
+		{
+			name: 'Hoki Skateboards Website',
+			meta: 'hokiskateboards.com',
+			href: 'https://hokiskateboards.com/',
+			stack: 'PHP, WordPress, WooCommerce, JavaScript, Stripe',
+			desc: 'Founded a skateboard company selling skateboards, apparel, and a self-published children’s book. Designed the brand and built the storefront on a custom WordPress theme, with WooCommerce and Stripe handling retail and checkout.',
 		},
 	],
 

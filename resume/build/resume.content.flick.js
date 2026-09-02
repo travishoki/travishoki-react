@@ -1,5 +1,19 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the Flick Senior/Staff Frontend Engineer
+// application (founding front-end engineer for an AI-native filmmaking
+// editor: canvas, timeline, node graph, playback). Honest edits on top of
+// the master resume.content.js:
+// - Summary leads with editor/architecture ownership from the ground up and
+//   the art/animation background, since Flick pairs an engineer with a
+//   filmmaker and wants both halves.
+// - Frontend skills line adds the Canvas/Physics UI work already true of the
+//   Hoki Skateboards App project below.
+// - The Hoki Skateboards App project description is expanded with the
+//   specifics (physics engine, illustrated assets, solo design+build) that
+//   speak directly to "editors, canvases, visual builders" experience.
+// - "beyond" adds the Gaming and Animation program start and Premiere Pro
+//   video editing, both real and both directly relevant here, neither of
+//   which is on the master resume.
+// Job history, dates, and all other bullets are unchanged from the master.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +21,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React and TypeScript who has led platform architecture from the ground up, from a Lexical-based WYSIWYG document editor to internationalization infrastructure built from scratch at Spiff, a startup I joined early and stayed with through its acquisition by Salesforce. Trained in animation and illustration before software, I still design, illustrate, and build my own creative projects end to end.',
 
 	skills: [
 		[
@@ -20,7 +34,7 @@ module.exports = {
 		],
 		[
 			'Frontend',
-			'React, React Native, Redux, AngularJS, jQuery, Handlebars, Lexical, Storybook, Server-Side Rendering (SSR), Responsive UI, Internationalization (i18n/l10n), Accessibility',
+			'React, React Native, Redux, AngularJS, jQuery, Handlebars, Lexical, Canvas/Physics UI (react-native-game-engine, Matter.js), Storybook, Server-Side Rendering (SSR), Responsive UI, Internationalization (i18n/l10n), Accessibility',
 		],
 		[
 			'Backend & Data',
@@ -122,35 +136,24 @@ module.exports = {
 
 	projects: [
 		{
-			name: 'Food Cards',
-			meta: 'food-cards.travishoki.com',
-			href: 'https://food-cards.travishoki.com/',
-			stack: 'React, TypeScript, Firebase, Anthropic Claude API',
-			desc: 'A safe-foods catalog built for my son, who has food avoidance issues. Integrated Claude via the Anthropic SDK (@anthropic-ai/sdk) so users filter the collection in plain English. “Easy breakfast ideas” resolves to category, difficulty, sort order, and keyword filters at once. Prompt engineering enforces schema-validated JSON, so ambiguous output degrades gracefully rather than breaking the UI. Also implemented scored fuzzy search.',
-		},
-		{
-			name: 'Hoki Skateboards Website',
-			meta: 'hokiskateboards.com',
-			href: 'https://hokiskateboards.com/',
-			stack: 'PHP, WordPress, WooCommerce, JavaScript, Stripe',
-			desc: 'Founded a skateboard company selling skateboards, apparel, and a self-published children’s book. Designed the brand and built the storefront on a custom WordPress theme, with WooCommerce and Stripe handling retail and checkout.',
-		},
-		{
 			name: 'Hoki Skateboards App',
 			meta: 'hokiskateboards.com/app',
 			href: 'https://www.hokiskateboards.com/app/',
 			stack: 'React Native, TypeScript, React Native Game Engine, Matter.js, Firebase',
-			desc: 'Designed, illustrated, and built a mobile game in React Native, shipping one codebase to iOS and Android as real native UI. Published on the Apple App Store and Google Play.',
+			desc: 'Designed every screen, illustrated all character and environment art, and built this physics-driven mobile game solo. Shipped one codebase to iOS and Android as real native UI, published on the Apple App Store and Google Play.',
 			descLinks: [
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
 				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
-				},
 			],
+		},
+		{
+			name: 'Food Cards',
+			meta: 'food-cards.travishoki.com',
+			href: 'https://food-cards.travishoki.com/',
+			stack: 'React, TypeScript, Firebase, Anthropic Claude API',
+			desc: 'A safe-foods catalog built for my son, who has food avoidance issues. Integrated Claude via the Anthropic SDK (@anthropic-ai/sdk) so users filter the collection in plain English. “Easy breakfast ideas” resolves to category, difficulty, sort order, and keyword filters at once. Prompt engineering enforces schema-validated JSON, so ambiguous output degrades gracefully rather than breaking the UI. Also implemented scored fuzzy search.',
 		},
 	],
 
@@ -174,5 +177,5 @@ module.exports = {
 	],
 
 	beyond:
-		'Illustrator and self-published author of two children’s books, one Kickstarter-funded. Improv Broadway stand-up comedy graduate and volunteer Cub Scouts den leader.',
+		'Illustrator and self-published author of two children’s books, one Kickstarter-funded; started my Digital Media major with a Gaming & Animation emphasis before switching to Web Development. Edit my own skateboarding videos in Premiere Pro. Improv Broadway stand-up comedy graduate and volunteer Cub Scouts den leader.',
 };

@@ -1,5 +1,15 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the Adobe Firefly Web Growth Engineering
+// application. Three minimal, honest edits on top of the master
+// resume.content.js, all surfacing A/B-testing and experimentation work that
+// already exists in the Overstock bullets but wasn't foregrounded:
+//   1. Summary: "shopping features" -> "conversion-focused, A/B-tested
+//      features" (same job, more accurate to what was actually built).
+//   2. Overstock bullets reordered so the feature-flags/A/B-test bullet
+//      leads instead of sitting third.
+//   3. "A/B testing, feature flags" added to the Testing & Code Quality
+//      skill line, since that's literally what the Overstock work was.
+// No new claims, no reworded job history beyond bullet order. See
+// resume.content.js for the master version other applications build from.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +17,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to conversion-focused, A/B-tested features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -28,7 +38,7 @@ module.exports = {
 		],
 		[
 			'Testing & Code Quality',
-			'Jest, Vitest, React Testing Library, Cypress, TDD, ESLint (custom rule sets), Prettier, Stylelint, Husky pre-commit hooks, coverage enforcement',
+			'Jest, Vitest, React Testing Library, Cypress, TDD, A/B testing, feature flags, ESLint (custom rule sets), Prettier, Stylelint, Husky pre-commit hooks, coverage enforcement',
 		],
 		[
 			'Build & Platform',
@@ -90,10 +100,10 @@ module.exports = {
 			companyNote: 'now Bed Bath & Beyond',
 			dates: 'Sept. 2015 – Mar. 2019',
 			bullets: [
-				'Owned the frontend for all User Generated Content on a high-traffic national e-commerce site: ratings, reviews, customer photos, and Q&A. Brought these templates into ADA accessibility compliance.',
-				'Launched customer review images end to end, validating and formatting uploads client-side before pushing to AWS S3. Real customer photos let shoppers see products in use before buying.',
 				'Led the site-wide migration of star ratings behind feature flags, coordinating simultaneous multi-department deploys. Introduced rating-only reviews, measurably increasing review volume.',
 				'Rebuilt the responsive See All Reviews page and embedded a reusable React Add To Cart module into the mobile review flow. A two-week A/B test showed conversion lift.',
+				'Owned the frontend for all User Generated Content on a high-traffic national e-commerce site: ratings, reviews, customer photos, and Q&A. Brought these templates into ADA accessibility compliance.',
+				'Launched customer review images end to end, validating and formatting uploads client-side before pushing to AWS S3. Real customer photos let shoppers see products in use before buying.',
 				'Delivered an internal SEO admin portal (React, Redux, Node.js, Express) letting business users manage SEO titles and taxonomy display names.',
 				'Ported featured-product logic into an AMP search page using amp-bind, optimizing CSS to meet strict AMP size limits. Rearchitected a WordPress plugin into the embeddable affiliate-links widget that launched the affiliate program.',
 			],
@@ -145,10 +155,6 @@ module.exports = {
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
-				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
 		},

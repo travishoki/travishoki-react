@@ -1,5 +1,11 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the 1Password Senior Developer (Growth
+// Team) application. One minimal, honest edit on top of the master
+// resume.content.js: the summary leads with SaaS/React-TypeScript depth and
+// the experimentation track record already documented in the Overstock
+// bullets below, since that's exactly what a Growth team screens for.
+// Job history, bullets, projects, skills, and education are unchanged from
+// the master, they already carry the A/B-testing and backend evidence this
+// posting asks about.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +13,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing production SaaS and consumer web products. Deep React and TypeScript expertise in customer-facing applications, backed by real backend experience in Node.js, Express, and Ruby. A recurring thread across my career is experimentation: shipping changes, A/B testing them, and letting the data decide, rather than opinion. Joined Spiff as an early frontend engineer in its B2B SaaS product and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -145,10 +151,6 @@ module.exports = {
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
-				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
 		},

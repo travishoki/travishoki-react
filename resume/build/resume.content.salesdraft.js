@@ -1,5 +1,10 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the SalesDraft Senior Software Engineer
+// application. One minimal, honest edit on top of the master
+// resume.content.js: the summary leads with the Node.js/React/TypeScript +
+// daily AI-tooling combination this posting names directly, and with the
+// sales-tech SaaS domain experience (Spiff, XANT) that's a direct match for
+// a company building recruiting software for sales teams. Job history,
+// bullets, projects, skills, and education are unchanged from the master.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +12,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React and TypeScript with real production experience in Node.js and Express, and genuine day-to-day use of AI coding tools: Claude Code and Cursor AI in production work, plus a shipped product integrating the Anthropic Claude API with real prompt engineering. I have the startup pattern this role is asking for: joined Spiff as an early engineer building platform infrastructure from scratch, and stayed through its acquisition by Salesforce, shipping a multi-tenant B2B SaaS product for enterprise accounts throughout. My background also includes sales-tech SaaS specifically, commission software at Spiff and sales-acceleration tooling at XANT, formerly InsideSales.com.',
 
 	skills: [
 		[
@@ -145,10 +150,6 @@ module.exports = {
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
-				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
 		},

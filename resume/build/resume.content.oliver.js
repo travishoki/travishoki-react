@@ -1,5 +1,10 @@
-// Single source of truth for the ATS resume.
-// Consumed by build-docx.js and build-html.js so the .docx and .pdf can never drift.
+// Tailored ATS resume content for the Oliver Senior Software Engineer
+// application. Two minimal, honest edits on top of the master resume.content.js:
+// the summary leads with full-stack (Oliver requires full-stack; the master
+// summary opens "Frontend specialist"), and the existing Claude Code/Cursor
+// bullet names "AI context engineering" since that's their exact required
+// phrase and it's already true of the work described. Everything else
+// (job history, dates, bullets, projects) is unchanged from the master.
 
 const profile = require('../../shared/profile.js');
 
@@ -7,7 +12,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Full-stack engineer with deep React and TypeScript expertise, plus hands-on backend experience across Node.js, Python, PHP, and Ruby. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -44,7 +49,7 @@ module.exports = {
 			note: 'Stayed on for two years after Salesforce acquired Spiff in March 2024, scaling the product for enterprise accounts.',
 			bullets: [
 				'Raised the frontend codebase to Salesforce’s post-acquisition quality standards, expanding Jest coverage and establishing strict ESLint rule sets. That work drove company-wide TypeScript adoption.',
-				'Adopted Claude Code and Cursor AI into daily development, pair programming with them on refactors, debugging, and test-coverage work.',
+				'Adopted Claude Code and Cursor AI into daily development, structuring repo and task context for reliable AI-assisted development while pair programming with them on refactors, debugging, and test-coverage work.',
 				'Shipped a document composer on the Lexical editor framework after evaluating several WYSIWYG options, customizing it heavily for document workflows. Added a Handlebars-style merge-field system that resolves placeholders to live profile values at render time. Extended the server-side Ruby layer to customize PDF output.',
 			],
 		},
@@ -145,10 +150,6 @@ module.exports = {
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
-				},
-				{
-					phrase: 'Google Play',
-					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
 		},
