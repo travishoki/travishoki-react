@@ -1,21 +1,16 @@
 import React from 'react';
 
-import { ParagraphList } from '~components/ParagraphList/ParagraphList';
-
 import { AppBadges } from '../AppBadges';
 
 import styles from './DownloadAppSection.module.scss';
 
-const paragraphs = [
-	'Built in React Native with Typescript, using the react-native-game-engine and MatterJs.',
-	'Currently in the Apple Store, will be back in the Google Play store soon!',
-];
-
 export const DownloadAppSection = () => (
 	<div className={styles.downloadAppSection}>
 		<h3>Download My App!</h3>
-
-		<ParagraphList paragraphs={paragraphs} />
+		<p className="indent">
+			Built in React Native with Typescript, using the react-native-game-engine
+			and MatterJs.
+		</p>
 
 		<AppBadges />
 
