@@ -57,7 +57,7 @@ const html = `<!doctype html>
 <p>${esc(C.salutation)}</p>
 <p>${esc(C.intro)}</p>
 
-${C.sections.map((s) => `<h2>${esc(s.heading)}</h2>\n<p>${esc(s.body)}</p>`).join('\n')}
+${C.sections.map((s) => `<h2>${esc(s.heading)}</h2>\n${(Array.isArray(s.body) ? s.body : [s.body]).map((p) => `<p>${esc(p)}</p>`).join('\n')}`).join('\n')}
 
 <p class="sign">${esc(C.closing)}<br><span class="name">Travis Hoki</span></p>
 </body>
