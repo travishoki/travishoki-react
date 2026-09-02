@@ -15,6 +15,7 @@ import ImgCypress from '~images/icons/tech-icons/cypress.jpg';
 import ImgDjango from '~images/icons/tech-icons/django.jpg';
 import ImgExpress from '~images/icons/tech-icons/express.jpg';
 import ImgFirebase from '~images/icons/tech-icons/firebase.jpg';
+import ImgFirestore from '~images/icons/tech-icons/firestore.jpg';
 import ImgGithub from '~images/icons/tech-icons/github.jpg';
 import ImgGraphQl from '~images/icons/tech-icons/graphql.jpg';
 import ImgGrunt from '~images/icons/tech-icons/grunt.jpg';
@@ -55,6 +56,7 @@ export const CYPRESS = 'CYPRESS';
 export const DJANGO = 'DJANGO';
 export const EXPRESS = 'EXPRESS';
 export const FIREBASE = 'FIREBASE';
+export const FIRESTORE = 'FIRESTORE';
 export const GITHUB = 'GITHUB';
 export const GRAPHQL = 'GRAPHQL';
 export const GRUNT = 'GRUNT';
@@ -132,6 +134,11 @@ export const TECH: Record<string, TechInfo> = {
 	},
 	EXPRESS: { image: ImgExpress, label: 'Express', type: TYPES.BACKEND },
 	FIREBASE: { image: ImgFirebase, label: 'Firebase', type: TYPES.BACKEND },
+	FIRESTORE: {
+		image: ImgFirestore,
+		label: 'Cloud Firestore',
+		type: TYPES.BACKEND,
+	},
 	GITHUB: {
 		image: ImgGithub,
 		label: 'GitHub',

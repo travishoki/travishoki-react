@@ -12,6 +12,7 @@ export const hokiSkateboardsMobileAppTechAppList: TECH.TechKey[] = [
 	TECH.CSS,
 	TECH.HTML,
 	TECH.FIREBASE,
+	TECH.FIRESTORE,
 	TECH.CLAUDE_CODE,
 	TECH.CURSOR_AI,
 	TECH.STORYBOOK,
