@@ -140,14 +140,14 @@ module.exports = {
 			meta: 'hokiskateboards.com/app',
 			href: 'https://www.hokiskateboards.com/app/',
 			stack: 'React Native, TypeScript, React Native Game Engine, Matter.js, Firebase',
-			desc: 'Designed, illustrated, and built a mobile game in React Native, shipping one codebase to iOS and Android as real native UI. Published on the Apple App Store and Google Play.',
+			desc: 'Designed, illustrated, and built a mobile game in React Native, shipping one codebase to iOS and Android as real native UI. Published on the Apple App Store and Google Play Store.',
 			descLinks: [
 				{
 					phrase: 'Apple App Store',
 					href: 'https://apps.apple.com/us/app/hoki-skateboards/id1622675312',
 				},
 				{
-					phrase: 'Google Play',
+					phrase: 'Google Play Store',
 					href: 'https://play.google.com/store/apps/details?id=com.hokiskateboards.app',
 				},
 			],
