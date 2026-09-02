@@ -2,6 +2,9 @@
 	"name": "travis-hoki-react",
 	"version": "0.1.0",
 	"private": true,
+	"engines": {
+		"node": ">=22"
+	},
 	"scripts": {
 		"start": "vite",
 		"build": "yarn resume:sync && vite build",
