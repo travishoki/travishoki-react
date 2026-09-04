@@ -10,8 +10,8 @@ import { FeaturedProjectItem } from './FeaturedProjectItem';
 import styles from './FeaturedProjectsList.module.scss';
 
 const currentProjects = orderTopThreeInPodium(
-	FEATURED_ITEM_KEYS.map(
-		(key) => PROJECTS_DATA.find((p) => p.itemKey === key)!,
+	FEATURED_ITEM_KEYS.map((key) =>
+		PROJECTS_DATA.find((p) => p.itemKey === key)!,
 	),
 );
 
