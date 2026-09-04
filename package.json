@@ -8,7 +8,7 @@
 	"scripts": {
 		"start": "vite",
 		"build": "yarn resume:sync && vite build",
-		"resume:sync": "bash resume/build/sync-public.sh",
+		"resume:sync": "bash job-applications/build/sync-public.sh",
 		"preview": "vite preview",
 		"test": "jest",
 		"test:coverage": "jest --coverage",

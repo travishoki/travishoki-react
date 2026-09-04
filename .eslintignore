@@ -1,10 +1,5 @@
-# Standalone Node build tooling for the resume, not application source.
-# The app's React/TS conventions (sort-keys in particular) do not apply here:
-# docx option objects read better in semantic order than alphabetical.
-resume/
-
-# Standalone Node build tooling for cover letters, not application source.
-cover-letters/
-
-# Shared identity data for the resume and cover letters, not app source.
-shared/
+# Standalone Node build tooling for job applications (resume + cover
+# letters), not application source. The app's React/TS conventions
+# (sort-keys in particular) do not apply here: docx option objects read
+# better in semantic order than alphabetical.
+job-applications/

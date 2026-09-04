@@ -61,7 +61,7 @@ Thumbs.db
 storybook-static
 
 # The working cover letter is a one-off for a single application. Only the
-# shared tooling in cover-letters/build/ is versioned. (dist/ is already
-# covered by the rule above.)
-cover-letters/content.js
-cover-letters/job-description.md
+# shared tooling in job-applications/build/ and the dated per-application
+# folders (resume + cover letter + combined PDF) are versioned.
+job-applications/content.js
+job-applications/job-description.md

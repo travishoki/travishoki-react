@@ -1,0 +1,14 @@
+{
+  "name": "travis-hoki-job-application-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the tailored resume (.docx/.html/.pdf) and cover letter (.pdf) for a job application from content files, and merges them into one combined PDF.",
+  "scripts": {
+    "build": "./build.sh",
+    "build:cover-letter": "./cover-letter-build.sh"
+  },
+  "dependencies": {
+    "docx": "^9.0.0",
+    "pdf-lib": "^1.17.1"
+  }
+}
