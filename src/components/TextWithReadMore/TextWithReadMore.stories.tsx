@@ -1,7 +1,7 @@
-import { LOREM_IPSUM } from 'src/stories/const';
 import { expect } from 'storybook/test';
 
 import { TextWithReadMore } from './TextWithReadMore';
+import { LOREM_IPSUM } from '../../stories/const';
 
 import type { Meta, StoryObj } from '@storybook/react-vite';
 

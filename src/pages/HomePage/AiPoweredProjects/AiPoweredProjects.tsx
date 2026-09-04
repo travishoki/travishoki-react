@@ -3,7 +3,6 @@ import React from 'react';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
 
 import { ImgPopIn } from '~animations/ImgPopIn';
 import { AitInfo } from '~components/AiInfo/AiInfo';
@@ -12,6 +11,7 @@ import ImgFoodCards from '~images/websites/thumbnail/food-cards.jpg';
 import { SvgIconSparkle } from '~svg/SvgIconSparkle';
 
 import { AI_POWERED_FOOD } from './AiPoweredProjects.const';
+import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
 import styles from './AiPoweredProjects.module.scss';
 

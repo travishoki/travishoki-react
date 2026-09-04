@@ -1,11 +1,11 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { Signature } from 'src/pages/HomePage/About/Signature/Signature';
 
 import { getYearsSince } from '~helpers/years';
 
 import { MikeShinoda } from './MikeShinoda/MikeShinoda';
+import { Signature } from './Signature/Signature';
 
 import styles from './About.module.scss';
 

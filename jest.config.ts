@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from 'jest';
+
+const config: Config = {
 	collectCoverage: true,
 	collectCoverageFrom: ['src/**/*.{js,ts}'],
 	coverageDirectory: './jest-coverage',
@@ -37,3 +39,5 @@ module.exports = {
 	// crawling; disabling it just makes Jest use its Node-based crawler.
 	watchman: false,
 };
+
+export default config;

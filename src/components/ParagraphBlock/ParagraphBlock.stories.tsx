@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { LOREM_IPSUM } from 'src/stories/const';
 import { expect } from 'storybook/test';
 
 import { ParagraphBlock } from './ParagraphBlock';
+import { LOREM_IPSUM } from '../../stories/const';
 
 import type { Meta, StoryObj } from '@storybook/react-vite';
 

@@ -10,7 +10,6 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ESNext",
-		"baseUrl": ".",
 		"typeRoots": ["node_modules/@types", "src/types"],
 		"paths": {
 			"~animations/*": ["./src/animations/*"],

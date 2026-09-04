@@ -1,4 +1,4 @@
-import { ProjectType } from 'src/pages/ProjectsPage/ProjectsPage.types';
+import { ProjectType } from '../../ProjectsPage/ProjectsPage.types';
 
 export const FEATURED_ITEM_KEYS = [
 	'hoki-skateboards-react-native-game',
