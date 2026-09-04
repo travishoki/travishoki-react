@@ -13,7 +13,7 @@
 		"test": "jest",
 		"test:coverage": "jest --coverage",
 		"test:watch": "jest --watch",
-		"lint": "eslint --ext .js,.ts,.tsx src/",
+		"lint": "eslint \"src/**/*.{js,ts,tsx}\"",
 		"lint:css": "stylelint \"src/**/*.scss\"",
 		"lint:css:fix": "stylelint \"src/**/*.scss\" --fix",
 		"format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
@@ -49,11 +49,6 @@
 		"typescript": "^6.0.3",
 		"web-vitals": "^6.0.0"
 	},
-	"eslintConfig": {
-		"extends": [
-			"plugin:storybook/recommended"
-		]
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",
@@ -67,6 +62,8 @@
 		]
 	},
 	"devDependencies": {
+		"@eslint/eslintrc": "^3.3.7",
+		"@eslint/js": "^9.39.5",
 		"@storybook/addon-a11y": "^10.4.2",
 		"@storybook/addon-docs": "^10.4.2",
 		"@storybook/addon-onboarding": "^10.4.2",
@@ -79,7 +76,7 @@
 		"@vitest/browser": "^4.1.8",
 		"@vitest/browser-playwright": "^4.1.8",
 		"console-table-printer": "^2.16.1",
-		"eslint": "8",
+		"eslint": "^9.39.5",
 		"eslint-config-prettier": "^10.0.0",
 		"eslint-import-resolver-alias": "^1.1.2",
 		"eslint-import-resolver-typescript": "^4.0.0",
