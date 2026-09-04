@@ -15,7 +15,7 @@ export const CountUp = ({ className, suffix, value }: CountUpProps) => {
 	// otherwise fire the animation while it's really still below the fold.
 	const [isLoaded, setIsLoaded] = useState(false);
 	const ref = useRef<HTMLSpanElement>(null);
-	const controlsRef = useRef<ReturnType<typeof animate>>();
+	const controlsRef = useRef<ReturnType<typeof animate>>(undefined);
 	const hasRun = useRef(false);
 	// Non-latching (no `once`) so a transient intersection during load can't stick;
 	// `hasRun` is what guarantees the count animation only ever plays once.
