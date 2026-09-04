@@ -1,5 +1,0 @@
-# Standalone Node build tooling for job applications (resume + cover
-# letters), not application source. The app's React/TS conventions
-# (sort-keys in particular) do not apply here: docx option objects read
-# better in semantic order than alphabetical.
-job-applications/
