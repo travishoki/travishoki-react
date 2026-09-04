@@ -31,4 +31,9 @@ module.exports = {
 		'.(ts|tsx)': 'ts-jest',
 	},
 	transformIgnorePatterns: ['node_modules'],
+	// This machine's Homebrew watchman install is broken (missing icu4c
+	// dylib), and Jest 30 fails the whole run instead of falling back the
+	// way Jest 29 did. Watchman only speeds up --watch mode's file
+	// crawling; disabling it just makes Jest use its Node-based crawler.
+	watchman: false,
 };
