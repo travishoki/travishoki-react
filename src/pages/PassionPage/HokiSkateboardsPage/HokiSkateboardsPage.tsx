@@ -16,8 +16,8 @@ export const HokiSkateboardsPage = () => (
 				<p className="boxed indent mb-3">
 					Hoki Skateboards is my passion project. Through the years I have
 					enjoyed building to my little company. I&apos;ve made and sold
-					skateboards, wrote a children&apos;s book, an app, and met so many
-					cool people.
+					skateboards, wrote a children&apos;s book, built a mobile game, and
+					met so many cool people.
 				</p>
 				<SocialMedia />
 			</div>
