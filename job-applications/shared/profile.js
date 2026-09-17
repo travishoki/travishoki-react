@@ -1,7 +1,7 @@
 // Single source of truth for identity shared by the resume and every cover
 // letter. Change a phone number or profile URL here and both rebuild correctly.
 module.exports = {
-	name: 'TRAVIS HOKI',
+	name: 'Travis Hoki',
 	title: 'Senior Software Engineer',
 	contact: [
 		[
