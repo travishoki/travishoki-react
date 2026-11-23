@@ -3,14 +3,17 @@
 #
 #   bash build.sh                                    -> writes ../<today>/travis-hoki-resume-<today>.{docx,pdf}
 #   DATE=2026-09-01 bash build.sh                     -> writes ../2026-09-01/...
-#   NAME=2026-09-01-Acme CONTENT_FILE=./resume.content.acme.js bash build.sh
-#                                                      -> writes ../2026-09-01-Acme/travis-hoki-resume-2026-09-01-Acme.{docx,pdf}
+#   NAME=2026-09-01-Acme CONTENT_FILE=../applications/_content/resume.content.acme.js bash build.sh
+#                                                      -> writes ../applications/2026-09-01-Acme/travis-hoki-resume-2026-09-01-Acme.{docx,pdf}
 #                                                         from a tailored content file instead of the master
 #
 # NAME overrides DATE for the output folder/filename (for company-tailored
 # one-off builds; prefix it with the date so it still sorts chronologically).
-# CONTENT_FILE overrides which content module the builders read from; the
-# master resume.content.js is left untouched.
+# A NAME that is just a date (YYYY-MM or YYYY-MM-DD) is a master version and
+# is written to ../<NAME>/, which is versioned. Any NAME with a company suffix
+# is written to ../applications/<NAME>/, which is local only (gitignored).
+# CONTENT_FILE overrides which content module the builders read from, relative
+# to this build/ folder; the master resume.content.js is left untouched.
 #
 # The intermediate .html is built in a temp dir so only the two deliverables
 # land in the output directory.
@@ -18,7 +21,11 @@ set -e
 cd "$(dirname "$0")"
 
 NAME="${NAME:-${DATE:-$(date +%F)}}"
-OUT_DIR="$(cd .. && pwd)/$NAME"
+if [[ "$NAME" =~ ^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$ ]]; then
+	OUT_DIR="$(cd .. && pwd)/$NAME"
+else
+	OUT_DIR="$(cd .. && pwd)/applications/$NAME"
+fi
 BASE="travis-hoki-resume-${NAME}"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 CONTENT_FILE="${CONTENT_FILE:-./resume.content.js}"

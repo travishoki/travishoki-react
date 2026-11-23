@@ -7,7 +7,7 @@ module.exports = {
 	...profile,
 
 	summary:
-		'Senior Software Engineer with 14+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
+		'Senior Software Engineer with 15+ years of experience building, scaling, and modernizing web applications. Frontend specialist in React, TypeScript, and JavaScript, with working experience across backend services and React Native mobile. My work spans internal developer tooling and customer-facing product, from platform systems that took products into new markets to shopping features on a major retail site. Joined Spiff as an early frontend engineer and stayed through its acquisition by Salesforce.',
 
 	skills: [
 		[
@@ -38,7 +38,7 @@ module.exports = {
 
 	jobs: [
 		{
-			position: 'Senior Member of the Technical Staff',
+			position: 'Senior Member of the Technical Staff (Senior Software Engineer)',
 			company: 'Salesforce',
 			dates: 'Mar. 2024 – May 2026',
 			note: 'Stayed on for two years after Salesforce acquired Spiff in March 2024, scaling the product for enterprise accounts.',
@@ -55,7 +55,7 @@ module.exports = {
 			dates: 'Aug. 2021 – Mar. 2024',
 			note: 'Built core platform infrastructure at the startup, through to acquisition.',
 			bullets: [
-				'Architected the frontend internationalization infrastructure from the ground up and migrated thousands of hardcoded strings across the application. Launched the product in Japanese, Spanish, and additional locales, supporting a major expansion priority for Spiff and Salesforce.',
+				'Helped build the frontend internationalization infrastructure from the ground up and migrated hardcoded strings across the application. Launched the product in multiple new languages and locales, supporting a major expansion priority for Spiff and Salesforce.',
 				'Created a pseudo-localization tool that became the team’s standard pre-merge check for untranslated UI. It renders every translated string as X’s, letting any engineer spot gaps in seconds.',
 				'Wrote custom automated tooling scripts (dead-code detection, unused-export pruning, lint enforcement) that systematically drove down technical debt across the repository.',
 				'Designed a recursive component tree that renders company org hierarchies at any depth, powering team-based commission structures for enterprise accounts.',
@@ -68,7 +68,7 @@ module.exports = {
 			companyNote: 'formerly InsideSales.com',
 			dates: 'Dec. 2020 – Aug. 2021',
 			bullets: [
-				'Authored the frontend architectural standards adopted across the engineering organization, defining code conventions, lint rules, and component structure.',
+				'Helped define the frontend architectural standards adopted across the engineering organization, contributing code conventions, lint rules, and component structure.',
 				'Mentored mid-level and junior developers through pair programming, working alongside them on their own projects to unblock delivery and grow their skills.',
 				'Modernized legacy frontend architecture and JavaScript patterns, improving runtime performance and reducing ongoing maintenance burden.',
 			],

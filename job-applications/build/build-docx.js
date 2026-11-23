@@ -158,7 +158,7 @@ const doc = new Document({
 					],
 				})),
 
-			heading('Work History'),
+			heading('Work Experience'),
 			...C.jobs.flatMap((j) => [
 				new Paragraph({ style: 'Normal',
 					spacing: { before: 140, after: 20, line: LINE, lineRule: 'auto' },
@@ -167,7 +167,7 @@ const doc = new Document({
 						new TextRun({ text: '  –  ', font: FONT, size: BODY }),
 						new TextRun({ text: j.company, font: FONT, size: BODY, italics: true, bold: true }),
 						...(j.companyNote
-							? [new TextRun({ text: `, ${j.companyNote}`, font: FONT, size: BODY, italics: true, color: GRAY })]
+							? [new TextRun({ text: ` (${j.companyNote})`, font: FONT, size: BODY, italics: true, color: GRAY })]
 							: []),
 						new TextRun({ text: `  (${j.dates})`, font: FONT, size: BODY, color: GRAY }),
 					],

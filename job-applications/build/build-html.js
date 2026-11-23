@@ -86,8 +86,8 @@ const html = `<!doctype html>
 ${C.skills.map(([l, r]) => `<li><strong>${esc(l)}:</strong> ${esc(r)}</li>`).join('\n')}
 </ul>
 
-<h2>Work History</h2>
-${C.jobs.map((j) => `<p class="jobhead"><span class="title">${esc(j.position)}</span>  –  <span class="cname">${esc(j.company)}</span>${j.companyNote ? `<span class="cnote">, ${esc(j.companyNote)}</span>` : ''}<span class="dates">  (${esc(j.dates)})</span></p>
+<h2>Work Experience</h2>
+${C.jobs.map((j) => `<p class="jobhead"><span class="title">${esc(j.position)}</span>  –  <span class="cname">${esc(j.company)}</span>${j.companyNote ? `<span class="cnote"> (${esc(j.companyNote)})</span>` : ''}<span class="dates">  (${esc(j.dates)})</span></p>
 ${j.note ? `<p class="note">${esc(j.note)}</p>` : ''}
 <ul>
 ${j.bullets.map((b) => `\t<li>${esc(b)}</li>`).join('\n')}

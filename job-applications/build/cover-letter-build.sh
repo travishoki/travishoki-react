@@ -3,11 +3,12 @@
 # the same application if one is already sitting in the same dated folder.
 #
 #   bash build/cover-letter-build.sh                    -> writes ../<today>/travis-hoki-cover-letter-<today>.pdf
-#   NAME=2026-09-01-Acme bash build/cover-letter-build.sh -> writes ../2026-09-01-Acme/travis-hoki-cover-letter-2026-09-01-Acme.pdf
+#   NAME=2026-09-01-Acme bash build/cover-letter-build.sh -> writes ../applications/2026-09-01-Acme/travis-hoki-cover-letter-2026-09-01-Acme.pdf
 #
 # NAME should match the NAME used for the resume build (build.sh) for this
-# same application, so both land in the same dated folder alongside each
-# other. Reads ../content.js.
+# same application, so both land in the same folder alongside each other. A
+# NAME with a company suffix goes to ../applications/<NAME>/ (local only,
+# gitignored); a plain date goes to ../<NAME>/. Reads ../content.js.
 set -e
 cd "$(dirname "$0")"
 ROOT="$(cd .. && pwd)"
@@ -23,7 +24,11 @@ fi
 COMPANY="$(node -p "require('$ROOT/content.js').company")"
 
 NAME="${NAME:-$(date +%F)}"
-OUT_DIR="$ROOT/$NAME"
+if [[ "$NAME" =~ ^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$ ]]; then
+	OUT_DIR="$ROOT/$NAME"
+else
+	OUT_DIR="$ROOT/applications/$NAME"
+fi
 BASE="travis-hoki-cover-letter-${NAME}"
 mkdir -p "$OUT_DIR"
 

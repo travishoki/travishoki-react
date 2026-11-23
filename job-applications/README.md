@@ -1,16 +1,16 @@
 # Job Applications
 
 Resume and cover letter, generated from content files so the `.docx` and
-`.pdf` can never drift apart, packaged one dated folder per application.
+`.pdf` can never drift apart. Only the **master** resume is versioned in git;
+everything for a single application stays local.
 
 ## Layout
 
 ```
 travishoki-react/
 └── job-applications/
-    ├── build/                          tooling + content (the source of truth)
+    ├── build/                          tooling + master content (versioned)
     │   ├── resume.content.js           master resume copy
-    │   ├── resume.content.<company>.js tailored resume copy for one application
     │   ├── build-docx.js               resume content -> .docx
     │   ├── build-html.js               resume content -> print-ready .html
     │   ├── build.sh                    build the resume .docx + .pdf
@@ -26,13 +26,22 @@ travishoki-react/
     │   └── profile.js                  identity (name, contact) shared by both
     ├── content.js                      the working cover letter    (gitignored)
     ├── job-description.md              paste the posting here      (gitignored)
-    ├── 2026-06-25/                     plain dated resume, history, never edited in place
-    └── 2026-08-27-Acme/                one job application: resume + cover letter + combined
-        ├── travis-hoki-resume-2026-08-27-Acme.docx
-        ├── travis-hoki-resume-2026-08-27-Acme.pdf
-        ├── travis-hoki-cover-letter-2026-08-27-Acme.pdf
-        └── travis-hoki-application-2026-08-27-Acme.pdf   (cover letter + resume, one PDF)
+    ├── 2026-06-25/                     plain dated MASTER resume (versioned), never edited in place
+    └── applications/                   LOCAL ONLY, gitignored: nothing in here is versioned
+        ├── _content/
+        │   └── resume.content.<company>.js   tailored resume copy for one application
+        └── 2026-08-27-Acme/            one job application: resume + cover letter + combined
+            ├── travis-hoki-resume-2026-08-27-Acme.docx
+            ├── travis-hoki-resume-2026-08-27-Acme.pdf
+            ├── travis-hoki-cover-letter-2026-08-27-Acme.pdf
+            └── travis-hoki-application-2026-08-27-Acme.pdf   (cover letter + resume, one PDF)
 ```
+
+The build scripts decide where output goes from `NAME`: a plain date
+(`2026-11-22`) is a master version and goes to `job-applications/<date>/`; a
+name with a company suffix (`2026-11-22-Acme`) goes to
+`job-applications/applications/<name>/`. Because `applications/` is gitignored,
+back it up separately if you want a copy outside this machine.
 
 ## Setup
 
@@ -61,7 +70,9 @@ never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`
 ## Building one job application (resume + cover letter)
 
 1. **Tailor the resume.** Copy `build/resume.content.js` to
-   `build/resume.content.<company>.js` (never edit the master), and make
+   `applications/_content/resume.content.<company>.js` (never edit the
+   master; in the copy, change the `require` to `'../../shared/profile.js'`
+   since it sits one level deeper), and make
    minimal, honest edits, usually just the summary, sometimes a skills line
    or a project reorder. Re-read the current `resume.content.js` fresh
    before branching; don't reuse an old copy, since the master may have
@@ -71,7 +82,7 @@ never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`
    sorts chronologically) and `CONTENT_FILE` pointing at the tailored module:
 
    ```bash
-   NAME=2026-09-01-Acme CONTENT_FILE=./resume.content.acme.js bash build/build.sh
+   NAME=2026-09-01-Acme CONTENT_FILE=../applications/_content/resume.content.acme.js bash build/build.sh
    ```
 
 3. **Write the cover letter.** Fill in `job-description.md` (`# Company
@@ -109,8 +120,9 @@ bash build/sync-public.sh
 Copies the **newest plain-dated** folder's resume files into the site's
 `public/` dir as `travis-hoki-resume.pdf` and `travis-hoki-resume.docx`. The
 names are deliberately undated so the CDN URL never changes. Company-tailored
-folders (`YYYY-MM-DD-CompanyName`) are excluded on purpose, so a one-off
-tailored resume never gets synced to the public site by accident.
+folders (`YYYY-MM-DD-CompanyName`) live in the gitignored `applications/`
+folder, so a one-off tailored resume never gets synced to the public site by
+accident.
 
 `job-applications/` lives inside the `travishoki-react` repo, so `public/` is
 found automatically. Override with `SITE=/other/checkout` if needed.
@@ -120,9 +132,11 @@ always ship the newest resume. Run it on its own with `yarn resume:sync`.
 
 ## Notes
 
-- The `travishoki-react` repo tracks the `.docx` and `.pdf` (and any cover
-  letter/combined PDFs) in every dated folder, so each sent application
-  stays recoverable.
+- The `travishoki-react` repo tracks only the master: the tooling in `build/`
+  and the plain-dated resume folders (`.docx` and `.pdf`). Per-application
+  folders and tailored sources live in `applications/`, which is gitignored,
+  so they exist on this machine only. Earlier per-application folders are still
+  in git history from before this change.
 - The PDF is produced by headless Chrome printing the generated HTML.
 - Target resume length is 2 pages; the layout is tuned so it just fits.
   Adding ~4 lines of content tips it to 3.
