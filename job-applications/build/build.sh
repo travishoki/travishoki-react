@@ -3,7 +3,7 @@
 #
 #   bash build.sh                                    -> writes ../<today>/travis-hoki-resume-<today>.{docx,pdf}
 #   DATE=2026-09-01 bash build.sh                     -> writes ../2026-09-01/...
-#   NAME=2026-09-01-Acme CONTENT_FILE=../applications/_content/resume.content.acme.js bash build.sh
+#   NAME=2026-09-01-Acme CONTENT_FILE=../applications/2026-09-01-Acme/resume.content.acme.js bash build.sh
 #                                                      -> writes ../applications/2026-09-01-Acme/travis-hoki-resume-2026-09-01-Acme.{docx,pdf}
 #                                                         from a tailored content file instead of the master
 #

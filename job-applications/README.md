@@ -28,9 +28,8 @@ travishoki-react/
     ├── job-description.md              paste the posting here      (gitignored)
     ├── 2026-06-25/                     plain dated MASTER resume (versioned), never edited in place
     └── applications/                   LOCAL ONLY, gitignored: nothing in here is versioned
-        ├── _content/
-        │   └── resume.content.<company>.js   tailored resume copy for one application
-        └── 2026-08-27-Acme/            one job application: resume + cover letter + combined
+        └── 2026-08-27-Acme/            one job application, everything together
+            ├── resume.content.acme.js          the tailored resume source
             ├── travis-hoki-resume-2026-08-27-Acme.docx
             ├── travis-hoki-resume-2026-08-27-Acme.pdf
             ├── travis-hoki-cover-letter-2026-08-27-Acme.pdf
@@ -70,9 +69,10 @@ never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`
 ## Building one job application (resume + cover letter)
 
 1. **Tailor the resume.** Copy `build/resume.content.js` to
-   `applications/_content/resume.content.<company>.js` (never edit the
-   master; in the copy, change the `require` to `'../../shared/profile.js'`
-   since it sits one level deeper), and make
+   `applications/<NAME>/resume.content.<company>.js` (create the folder
+   first, and never edit the master; in the copy, change the `require` to
+   `'../../shared/profile.js'`), so the source lives beside the PDFs it
+   produces, and make
    minimal, honest edits, usually just the summary, sometimes a skills line
    or a project reorder. Re-read the current `resume.content.js` fresh
    before branching; don't reuse an old copy, since the master may have
@@ -82,7 +82,7 @@ never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`
    sorts chronologically) and `CONTENT_FILE` pointing at the tailored module:
 
    ```bash
-   NAME=2026-09-01-Acme CONTENT_FILE=../applications/_content/resume.content.acme.js bash build/build.sh
+   NAME=2026-09-01-Acme CONTENT_FILE=../applications/2026-09-01-Acme/resume.content.acme.js bash build/build.sh
    ```
 
 3. **Write the cover letter.** Fill in `job-description.md` (`# Company
