@@ -19,8 +19,8 @@ PUBLIC="$SITE/public"
 # Plain dated dirs are YYYY-MM or YYYY-MM-DD, so lexical sort is chronological.
 # Company-tailored dirs (YYYY-MM-DD-CompanyName) are excluded on purpose so a
 # one-off tailored resume never gets synced to the public site by accident.
-LATEST="$(find "$ROOT" -maxdepth 1 -type d \( -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]' -o -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]' \) | sort | tail -1)"
-[ -n "$LATEST" ] || { echo "error: no dated resume directories in $ROOT" >&2; exit 1; }
+LATEST="$(find "$ROOT/master" -maxdepth 1 -type d \( -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]' -o -name '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]' \) | sort | tail -1)"
+[ -n "$LATEST" ] || { echo "error: no dated resume directories in $ROOT/master" >&2; exit 1; }
 
 PDF="$(find "$LATEST" -maxdepth 1 -name 'travis-hoki-resume-*.pdf' | head -1)"
 DOCX="$(find "$LATEST" -maxdepth 1 -name 'travis-hoki-resume-*.docx' | head -1)"

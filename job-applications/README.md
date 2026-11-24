@@ -26,7 +26,8 @@ travishoki-react/
     │   └── profile.js                  identity (name, contact) shared by both
     ├── content.js                      the working cover letter    (gitignored)
     ├── job-description.md              paste the posting here      (gitignored)
-    ├── 2026-06-25/                     plain dated MASTER resume (versioned), never edited in place
+    ├── master/                         MASTER resumes (versioned)
+    │   └── 2026-06-25/                 plain dated, never edited in place
     └── applications/                   LOCAL ONLY, gitignored: nothing in here is versioned
         └── 2026-08-27-Acme/            one job application, everything together
             ├── resume.content.acme.js          the tailored resume source
@@ -37,7 +38,7 @@ travishoki-react/
 ```
 
 The build scripts decide where output goes from `NAME`: a plain date
-(`2026-11-22`) is a master version and goes to `job-applications/<date>/`; a
+(`2026-11-22`) is a master version and goes to `job-applications/master/<date>/`; a
 name with a company suffix (`2026-11-22-Acme`) goes to
 `job-applications/applications/<name>/`. Because `applications/` is gitignored,
 back it up separately if you want a copy outside this machine.
@@ -62,7 +63,7 @@ Edit `build/resume.content.js`, then:
 bash build/build.sh
 ```
 
-That writes `travis-hoki-resume-<today>.{docx,pdf}` into `../<today>/`,
+That writes `travis-hoki-resume-<today>.{docx,pdf}` into `../master/<today>/`,
 creating the folder if needed. Older dated folders are history and are
 never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`.
 

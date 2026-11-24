@@ -61,7 +61,7 @@ Thumbs.db
 storybook-static
 
 # Only the shared tooling in job-applications/build/ and the plain dated MASTER
-# resume folders (job-applications/YYYY-MM-DD/) are versioned. Everything for a
+# resume folders (job-applications/master/YYYY-MM-DD/) are versioned. Everything for a
 # single application stays local: the working cover letter and posting, plus
 # job-applications/applications/ (company folders and tailored resume sources).
 job-applications/content.js
