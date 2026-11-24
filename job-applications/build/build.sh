@@ -1,17 +1,17 @@
 #!/bin/bash
 # Regenerate the ATS resume (.docx + .pdf) from resume.content.js
 #
-#   bash build.sh                                    -> writes ../master/<today>/travis-hoki-resume-<today>.{docx,pdf}
+#   bash build.sh                                    -> writes ../applications-master/<today>/travis-hoki-resume-<today>.{docx,pdf}
 #   DATE=2026-09-01 bash build.sh                     -> writes ../2026-09-01/...
-#   NAME=2026-09-01-Acme CONTENT_FILE=../applications/2026-09-01-Acme/resume.content.acme.js bash build.sh
-#                                                      -> writes ../applications/2026-09-01-Acme/travis-hoki-resume-2026-09-01-Acme.{docx,pdf}
+#   NAME=2026-09-01-Acme CONTENT_FILE=../applications-custom/2026-09-01-Acme/resume.content.acme.js bash build.sh
+#                                                      -> writes ../applications-custom/2026-09-01-Acme/travis-hoki-resume-2026-09-01-Acme.{docx,pdf}
 #                                                         from a tailored content file instead of the master
 #
 # NAME overrides DATE for the output folder/filename (for company-tailored
 # one-off builds; prefix it with the date so it still sorts chronologically).
 # A NAME that is just a date (YYYY-MM or YYYY-MM-DD) is a master version and
-# is written to ../master/<NAME>/, which is versioned. Any NAME with a company suffix
-# is written to ../applications/<NAME>/, which is local only (gitignored).
+# is written to ../applications-master/<NAME>/, which is versioned. Any NAME with a company suffix
+# is written to ../applications-custom/<NAME>/, which is local only (gitignored).
 # CONTENT_FILE overrides which content module the builders read from, relative
 # to this build/ folder; the master resume.content.js is left untouched.
 #
@@ -22,9 +22,9 @@ cd "$(dirname "$0")"
 
 NAME="${NAME:-${DATE:-$(date +%F)}}"
 if [[ "$NAME" =~ ^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$ ]]; then
-	OUT_DIR="$(cd .. && pwd)/master/$NAME"
+	OUT_DIR="$(cd .. && pwd)/applications-master/$NAME"
 else
-	OUT_DIR="$(cd .. && pwd)/applications/$NAME"
+	OUT_DIR="$(cd .. && pwd)/applications-custom/$NAME"
 fi
 BASE="travis-hoki-resume-${NAME}"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"

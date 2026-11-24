@@ -2,13 +2,13 @@
 # Build the current cover letter, and merge it with the tailored resume for
 # the same application if one is already sitting in the same dated folder.
 #
-#   bash build/cover-letter-build.sh                    -> writes ../master/<today>/travis-hoki-cover-letter-<today>.pdf
-#   NAME=2026-09-01-Acme bash build/cover-letter-build.sh -> writes ../applications/2026-09-01-Acme/travis-hoki-cover-letter-2026-09-01-Acme.pdf
+#   bash build/cover-letter-build.sh                    -> writes ../applications-master/<today>/travis-hoki-cover-letter-<today>.pdf
+#   NAME=2026-09-01-Acme bash build/cover-letter-build.sh -> writes ../applications-custom/2026-09-01-Acme/travis-hoki-cover-letter-2026-09-01-Acme.pdf
 #
 # NAME should match the NAME used for the resume build (build.sh) for this
 # same application, so both land in the same folder alongside each other. A
-# NAME with a company suffix goes to ../applications/<NAME>/ (local only,
-# gitignored); a plain date goes to ../master/<NAME>/. Reads ../content.js.
+# NAME with a company suffix goes to ../applications-custom/<NAME>/ (local only,
+# gitignored); a plain date goes to ../applications-master/<NAME>/. Reads ../content.js.
 set -e
 cd "$(dirname "$0")"
 ROOT="$(cd .. && pwd)"
@@ -25,9 +25,9 @@ COMPANY="$(node -p "require('$ROOT/content.js').company")"
 
 NAME="${NAME:-$(date +%F)}"
 if [[ "$NAME" =~ ^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$ ]]; then
-	OUT_DIR="$ROOT/master/$NAME"
+	OUT_DIR="$ROOT/applications-master/$NAME"
 else
-	OUT_DIR="$ROOT/applications/$NAME"
+	OUT_DIR="$ROOT/applications-custom/$NAME"
 fi
 BASE="travis-hoki-cover-letter-${NAME}"
 mkdir -p "$OUT_DIR"

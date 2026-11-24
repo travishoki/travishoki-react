@@ -26,9 +26,9 @@ travishoki-react/
     │   └── profile.js                  identity (name, contact) shared by both
     ├── content.js                      the working cover letter    (gitignored)
     ├── job-description.md              paste the posting here      (gitignored)
-    ├── master/                         MASTER resumes (versioned)
+    ├── applications-master/            MASTER resumes (versioned)
     │   └── 2026-06-25/                 plain dated, never edited in place
-    └── applications/                   LOCAL ONLY, gitignored: nothing in here is versioned
+    └── applications-custom/            LOCAL ONLY, gitignored: nothing in here is versioned
         └── 2026-08-27-Acme/            one job application, everything together
             ├── resume.content.acme.js          the tailored resume source
             ├── travis-hoki-resume-2026-08-27-Acme.docx
@@ -38,9 +38,9 @@ travishoki-react/
 ```
 
 The build scripts decide where output goes from `NAME`: a plain date
-(`2026-11-22`) is a master version and goes to `job-applications/master/<date>/`; a
+(`2026-11-22`) is a master version and goes to `job-applications/applications-master/<date>/`; a
 name with a company suffix (`2026-11-22-Acme`) goes to
-`job-applications/applications/<name>/`. Because `applications/` is gitignored,
+`job-applications/applications-custom/<name>/`. Because `applications-custom/` is gitignored,
 back it up separately if you want a copy outside this machine.
 
 ## Setup
@@ -63,14 +63,14 @@ Edit `build/resume.content.js`, then:
 bash build/build.sh
 ```
 
-That writes `travis-hoki-resume-<today>.{docx,pdf}` into `../master/<today>/`,
+That writes `travis-hoki-resume-<today>.{docx,pdf}` into `../applications-master/<today>/`,
 creating the folder if needed. Older dated folders are history and are
 never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`.
 
 ## Building one job application (resume + cover letter)
 
 1. **Tailor the resume.** Copy `build/resume.content.js` to
-   `applications/<NAME>/resume.content.<company>.js` (create the folder
+   `applications-custom/<NAME>/resume.content.<company>.js` (create the folder
    first, and never edit the master; in the copy, change the `require` to
    `'../../shared/profile.js'`), so the source lives beside the PDFs it
    produces, and make
@@ -83,7 +83,7 @@ never modified. Build a specific date with `DATE=2026-09-01 bash build/build.sh`
    sorts chronologically) and `CONTENT_FILE` pointing at the tailored module:
 
    ```bash
-   NAME=2026-09-01-Acme CONTENT_FILE=../applications/2026-09-01-Acme/resume.content.acme.js bash build/build.sh
+   NAME=2026-09-01-Acme CONTENT_FILE=../applications-custom/2026-09-01-Acme/resume.content.acme.js bash build/build.sh
    ```
 
 3. **Write the cover letter.** Fill in `job-description.md` (`# Company
@@ -121,7 +121,7 @@ bash build/sync-public.sh
 Copies the **newest plain-dated** folder's resume files into the site's
 `public/` dir as `travis-hoki-resume.pdf` and `travis-hoki-resume.docx`. The
 names are deliberately undated so the CDN URL never changes. Company-tailored
-folders (`YYYY-MM-DD-CompanyName`) live in the gitignored `applications/`
+folders (`YYYY-MM-DD-CompanyName`) live in the gitignored `applications-custom/`
 folder, so a one-off tailored resume never gets synced to the public site by
 accident.
 
@@ -135,7 +135,7 @@ always ship the newest resume. Run it on its own with `yarn resume:sync`.
 
 - The `travishoki-react` repo tracks only the master: the tooling in `build/`
   and the plain-dated resume folders (`.docx` and `.pdf`). Per-application
-  folders and tailored sources live in `applications/`, which is gitignored,
+  folders and tailored sources live in `applications-custom/`, which is gitignored,
   so they exist on this machine only. Earlier per-application folders are still
   in git history from before this change.
 - The PDF is produced by headless Chrome printing the generated HTML.
